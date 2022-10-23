@@ -30,7 +30,7 @@
         >
           <router-link to="/">
             <img
-              src="../../assets/images/product/syrup/syrup-pineapple.png"
+              src="../../assets/images/product/powder/powder-greentea.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
@@ -96,7 +96,7 @@
         >
           <router-link to="/powder-syrup">
             <img
-              src="../../assets/images/product/syrup/syrup-banana.png"
+              src="../../assets/images/product/powder/powder-tiramisu.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
