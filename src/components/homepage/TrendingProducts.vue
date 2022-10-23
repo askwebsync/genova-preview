@@ -45,7 +45,7 @@
         <div class="flex flex-col h-fit">
           <a href="#">
             <img
-              src="../../assets/images/product/syrup/syrup-lychee.png"
+              src="../../assets/images/product/fruit-bland/fruit_bland_kiwi.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
@@ -54,7 +54,7 @@
             <p
               class="text-lg font-semibold text-black truncate block capitalize"
             >
-              Lychee Syrup
+              Fruit Bland Kiwi
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="">
