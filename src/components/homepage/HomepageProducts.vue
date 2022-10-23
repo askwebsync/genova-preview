@@ -12,7 +12,7 @@
         >
           <router-link to="/liquid-syrup" class="p-2">
             <img
-              src="../../assets/images/product/syrup/syrup-bluecuracao.png"
+              src="../../assets/images/product/fruit-bland/fruit_bland_pineapple.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
