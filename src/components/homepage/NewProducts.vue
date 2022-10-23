@@ -59,7 +59,7 @@
         <div class="flex flex-col h-fit bg-white">
           <a href="#">
             <img
-              src="../../assets/images/product/Syrup/syrup_tiramisu-removebg-preview.png"
+              src="../../assets/images/product/Syrup/syrup-tiramisu.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
@@ -81,7 +81,7 @@
         <div class="flex flex-col h-fit bg-white">
           <a href="#">
             <img
-              src="../../assets/images/product/syrup/syrup_coconut-removebg-preview.png"
+              src="../../assets/images/product/syrup/syrup-coconut.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
