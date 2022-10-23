@@ -13,7 +13,7 @@
         <div class="flex flex-col h-fit bg-white">
           <a href="#">
             <img
-              src="../../assets/images/product/syrup/syrup-pineapple.png"
+              src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
@@ -36,7 +36,7 @@
         <div class="flex flex-col h-fit bg-white">
           <a href="#">
             <img
-              src="../../assets/images/product/syrup/syrup-raspberry.png"
+              src="../../assets/images/product/powder/powder-mochaccino.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
@@ -59,7 +59,7 @@
         <div class="flex flex-col h-fit bg-white">
           <a href="#">
             <img
-              src="../../assets/images/product/syrup/syrup-tiramisu.png"
+              src="../../assets/images/product/powder/powder-vanilla.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
@@ -81,7 +81,7 @@
         <div class="flex flex-col h-fit bg-white">
           <a href="#">
             <img
-              src="../../assets/images/product/syrup/syrup-coconut.png"
+              src="../../assets/images/product/powder/powder-matchapremium.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
