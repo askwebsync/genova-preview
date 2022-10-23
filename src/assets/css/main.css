@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.background-yellow {
+  background: #fff6d2;
+}
+
+.background-yellow-light {
+  background: #fff2bb;
+}
+
+.background-navbar {
+  background-color: lightgray;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.center {
+  text-align: -webkit-center;
+}
+
+.height-banner {
+  height: 60vh;
+}
+
+.checked {
+  color: orange;
+}
+
+.border-yellow {
+  border-style: solid 2px;
+  border-color: #fff2bb;
+}
