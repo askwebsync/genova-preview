@@ -96,7 +96,7 @@
         >
           <router-link to="/powder-syrup">
             <img
-              src="../../assets/images/product/syrup/syrup_banana-removebg-preview.png"
+              src="../../assets/images/product/syrup/syrup-banana.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />

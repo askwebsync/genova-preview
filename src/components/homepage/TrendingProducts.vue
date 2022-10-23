@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="container mx-auto background">
+  <section class="container mx-auto background-yellow-light">
     <div class="p-6 lg:px-6 lg:py-12 xl:px-12">
       <div class="flex flex-row">
         <h1 class="text-left text-black mb-2 font-semibold text-xl">
@@ -156,130 +156,7 @@ export default {
       transitioning: false,
     };
   },
-  //   mounted() {
-  //     this.setStep();
-  //     this.resetTranslate();
-  //   },
-
-  //   methods: {
-  //     setStep() {
-  //       const innerWidth = this.$refs.inner.scrollWidth;
-  //       const totalCards = this.cards.length;
-  //       this.step = `${innerWidth / totalCards}px`;
-  //     },
-
-  //     next() {
-  //       if (this.transitioning) return;
-
-  //       this.transitioning = true;
-
-  //       this.moveLeft();
-
-  //       this.afterTransition(() => {
-  //         const card = this.cards.shift();
-  //         this.cards.push(card);
-  //         this.resetTranslate();
-  //         this.transitioning = false;
-  //       });
-  //     },
-
-  //     prev() {
-  //       if (this.transitioning) return;
-
-  //       this.transitioning = true;
-
-  //       this.moveRight();
-
-  //       this.afterTransition(() => {
-  //         const card = this.cards.pop();
-  //         this.cards.unshift(card);
-  //         this.resetTranslate();
-  //         this.transitioning = false;
-  //       });
-  //     },
-
-  //     moveLeft() {
-  //       this.innerStyles = {
-  //         transform: `translateX(-${this.step})
-  //                     translateX(-${this.step})`,
-  //       };
-  //     },
-
-  //     moveRight() {
-  //       this.innerStyles = {
-  //         transform: `translateX(${this.step})
-  //                     translateX(-${this.step})`,
-  //       };
-  //     },
-
-  //     afterTransition(callback) {
-  //       const listener = () => {
-  //         callback();
-  //         this.$refs.inner.removeEventListener("transitionend", listener);
-  //       };
-  //       this.$refs.inner.addEventListener("transitionend", listener);
-  //     },
-
-  //     resetTranslate() {
-  //       this.innerStyles = {
-  //         transition: "none",
-  //         transform: `translateX(-${this.step})`,
-  //       };
-  //     },
-  //   },
 };
 </script>
 
-<style scoped>
-.carousel {
-  width: 170px;
-  overflow: hidden;
-}
-
-.inner {
-  transition: transform 0.2s;
-  white-space: nowrap;
-}
-
-/* optional */
-button {
-  margin-right: 5px;
-  margin-top: 10px;
-}
-.background {
-  background: #fffbe8;
-}
-
-.rating {
-  width: 40.19px;
-  height: 42.98px;
-  left: 403px;
-  top: 40px;
-}
-.slider1 {
-  width: 29.96px;
-  height: 4px;
-  left: 414.97px;
-  top: 68px;
-  background: #ffd31d;
-  border-radius: 8px;
-  transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
-}
-.slider2 {
-  width: 16px;
-  height: 3.99px;
-  left: 403px;
-  top: 56px;
-  background: #ffd31d;
-  border-radius: 8px;
-  transform: rotate(-90deg);
-}
-.slider3 {
-  width: 15.96px;
-  height: 4px;
-  left: 426.94px;
-  top: 79px;
-  background: #ffd31d;
-  border-radius: 8px;
-}
-</style>
+<style scoped></style>

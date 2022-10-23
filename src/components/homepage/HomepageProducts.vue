@@ -107,7 +107,7 @@
         >
           <router-link to="/fruit-bland" class="p-2">
             <img
-              src="../../assets/images/product/syrup/syrup_butterscotch.png"
+              src="../../assets/images/product/fruit-bland/fruit_bland_kiwi.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
