@@ -45,7 +45,7 @@
         <div class="flex flex-col h-fit">
           <a href="#">
             <img
-              src="../../assets/images/product/syrup/syrup-banana.png"
+              src="../../assets/images/product/syrup/syrup-lychee.png"
               alt="Product"
               class="h-60 w-56 object-contain rounded-t-xl"
             />
