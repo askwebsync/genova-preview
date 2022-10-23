@@ -15,7 +15,7 @@
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="h-60 w-56 object-contain rounded-t-xl"
+              class="h-52 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -38,7 +38,7 @@
             <img
               src="../../assets/images/product/powder/powder-mochaccino.png"
               alt="Product"
-              class="h-60 w-56 object-contain rounded-t-xl"
+              class="h-52 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -61,7 +61,7 @@
             <img
               src="../../assets/images/product/powder/powder-vanilla.png"
               alt="Product"
-              class="h-60 w-56 object-contain rounded-t-xl"
+              class="h-52 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -83,7 +83,7 @@
             <img
               src="../../assets/images/product/powder/powder-matchapremium.png"
               alt="Product"
-              class="h-60 w-56 object-contain rounded-t-xl"
+              class="h-52 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">

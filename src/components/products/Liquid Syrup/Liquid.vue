@@ -59,7 +59,7 @@
               <img
                 :src="product.image"
                 :alt="product.name"
-                class="h-60 w-56 object-contain rounded-t-xl"
+                class="h-52 w-40 object-contain rounded-t-xl"
               />
             </a>
             <div class="flex flex-col gap-3 p-6">
