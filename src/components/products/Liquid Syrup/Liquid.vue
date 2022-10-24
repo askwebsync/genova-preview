@@ -48,27 +48,25 @@
         </div>
       </div>
 
-      <div
-        class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center justify-center gap-24 mt-10 mb-5"
-      >
+      <div class="grid grid-cols-2 gap-6 my-6 md:grid-cols-3 lg:grid-cols-4">
         <div v-for="product in resultQuery" :key="product.id">
           <div
-            class="flex flex-col h-fit max-w-xs mx-4 background-yellow p-6 md:rounded-xl"
+            class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg background-yellow-light"
           >
-            <a href="#">
-              <img
-                :src="product.image"
-                :alt="product.name"
-                class="h-52 w-40 object-contain rounded-t-xl"
-              />
-            </a>
-            <div class="flex flex-col gap-3 p-6">
-              <p
-                class="text-base md:text-lg font-semibold text-black truncate block capitalize"
+            <img
+              :src="product.image"
+              :alt="product.name"
+              class="w-full h-48 object-contain rounded-t-xl"
+            />
+            <div class="px-6 py-4">
+              <h4
+                class="mb-3 text-xl font-semibold tracking-tight text-gray-800"
               >
                 {{ product.name }}
+              </h4>
+              <p class="leading-normal text-gray-700">
+                RP. {{ product.price }}
               </p>
-              <p class=":text-lg text-gray-600">RP. {{ product.price }}</p>
             </div>
           </div>
         </div>
@@ -232,6 +230,7 @@ export default {
           price: "97,000",
         },
       ],
+      searchQuery: "",
     };
   },
   computed: {

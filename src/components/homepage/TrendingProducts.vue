@@ -17,12 +17,12 @@
       <div
         class="grid grid-cols-2 md:grid-cols-4 justify-items-center justify-center gap-12 mt-10 mb-5"
       >
-        <div class="flex flex-col h-fit">
+        <div class="flex flex-col max-w-lg mx-4">
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-matchalatte.png"
               alt="Product"
-              class="h-52 w-40 object-contain rounded-t-xl"
+              class="h-52 w-44 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -42,12 +42,12 @@
           </div>
         </div>
 
-        <div class="flex flex-col h-fit">
+        <div class="flex flex-col max-w-lg mx-4">
           <a href="#">
             <img
               src="../../assets/images/product/fruit-bland/fruit_bland_kiwi.png"
               alt="Product"
-              class="h-52 w-40 object-contain rounded-t-xl"
+              class="h-52 w-44 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -67,12 +67,12 @@
           </div>
         </div>
 
-        <div class="flex flex-col h-fit">
+        <div class="flex flex-col max-w-lg mx-4">
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-darkchocolate.png"
               alt="Product"
-              class="h-52 w-40 object-contain rounded-t-xl"
+              class="h-52 w-44 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -91,12 +91,12 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col h-fit">
+        <div class="flex flex-col max-w-lg mx-4">
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="h-52 w-40 object-contain rounded-t-xl"
+              class="h-52 w-44 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">

@@ -1,9 +1,11 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <Banner></Banner>
-  <TrendingProducts />
-  <NewProducts />
-  <HomepageProducts />
+  <div class="flex flex-col gap-4">
+    <Banner></Banner>
+    <TrendingProducts />
+    <NewProducts />
+    <HomepageProducts />
+  </div>
 </template>
 
 <script>

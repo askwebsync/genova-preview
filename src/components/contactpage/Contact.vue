@@ -22,31 +22,29 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-6 pb-6 px-4 lg:px-6">
-        <div class="contact-info">
-          <div class="card">
-            <i class="card-icon far fa-envelope"></i>
-            <p class="text-base font-semibold">
-              genovaindonesiaofficial@gmail.com
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="card-icon fas fa-phone"></i>
-            <p class="text-base font-semibold">
-              <a href="tel:081212128171" class="hover:text-blue-400"
-                >081212128171</a
-              >
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="card-icon fas fa-map-marker-alt"></i>
-            <p class="text-base font-semibold">
-              Komplek PU jln B no 18 RC Veteran - tanah kusir jakarta Selatan
-              12330
-            </p>
-          </div>
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 self-center gap-6 p-6 md:flex-row lg:px-12"
+      >
+        <div class="flex flex-col items-center gap-6 card p-6 max-w-lg">
+          <i class="card-icon far fa-envelope"></i>
+          <p class="text-base md:text-lg font-semibold text-white mt-6">
+            genovaindonesiaofficial@gmail.com
+          </p>
+        </div>
+        <div class="flex flex-col items-center gap-6 card p-6 max-w-lg">
+          <i class="card-icon fas fa-phone"></i>
+          <p class="text-base md:text-lg font-semibold text-white mt-6">
+            <a href="tel:081212128171" class="hover:text-blue-400"
+              >081212128171</a
+            >
+          </p>
+        </div>
+        <div class="flex flex-col items-center gap-6 card p-6 max-w-lg">
+          <i class="card-icon fas fa-map-marker-alt"></i>
+          <p class="text-base md:text-lg font-semibold text-white mt-6">
+            Komplek PU jln B no 18 RC Veteran - tanah kusir jakarta Selatan
+            12330
+          </p>
         </div>
       </div>
     </div>
@@ -54,29 +52,14 @@
 </template>
 
 <style scoped>
-.contact-info {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
 .card {
   background: #2f3542;
-  margin: 0 15px;
-  width: calc(33% - 20px);
-  height: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  cursor: pointer;
 }
 
 .card-icon {
+  margin-top: 12px;
   font-size: 28px;
-  background: black;
+  background: white;
   width: 60px;
   height: 60px;
   text-align: center;
@@ -86,13 +69,10 @@
 }
 
 .card:hover .card-icon {
-  background: none;
   transform: scale(1.6);
 }
 
 .card p {
-  margin-top: 20px;
-  letter-spacing: 2px;
   max-height: 0;
   opacity: 0;
   transition: 0.3s linear;
@@ -101,16 +81,5 @@
 .card:hover p {
   max-height: 40px;
   opacity: 1;
-}
-
-@media screen and (max-width: 800px) {
-  .contact-info {
-    flex-direction: column;
-  }
-  .card {
-    width: 100%;
-    max-width: 300px;
-    margin: 15px 0;
-  }
 }
 </style>

@@ -6,8 +6,10 @@
       <div
         class="flex flex-col items-center justify-between gap-6 md:gap-12 lg:flex-row"
       >
-        <div class="text-center mb-10 lg:text-left lg:max-w-lg lg:pr-5 lg:mb-0">
-          <div class="flex flex-col gap-3 max-w-lg mb-6">
+        <div
+          class="max-w-xs text-center mb-10 lg:text-left lg:max-w-lg lg:pr-5 lg:mb-0"
+        >
+          <div class="flex flex-col gap-3 max-w-md mb-6">
             <h1
               class="mb-6 text-3xl tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
             >
