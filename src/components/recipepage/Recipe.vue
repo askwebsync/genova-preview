@@ -296,7 +296,7 @@ export default {
 
 <style scoped>
 .border {
-  border: 4px solid #ffd31d;
+  border: 4px solid darkseagreen;
   border-radius: 6px;
 }
 .plus {

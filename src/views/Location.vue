@@ -43,6 +43,6 @@ export default {
 <style scoped>
 li {
   border-style: solid 2px;
-  border-color: #fff2bb;
+  border-color: darkseagreen;
 }
 </style>

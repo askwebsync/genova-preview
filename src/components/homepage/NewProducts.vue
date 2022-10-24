@@ -34,7 +34,7 @@
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300"
+                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
               >
                 See More
               </button>
@@ -59,7 +59,7 @@
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300"
+                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
               >
                 See More
               </button>
@@ -84,7 +84,7 @@
             <p class="text-lg text-gray-600">RP. 109,000</p>
             <div class="">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300"
+                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
               >
                 See More
               </button>
@@ -109,7 +109,7 @@
             <div class="">
               <router-link to="/detail-product">
                 <button
-                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300"
+                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
                 >
                   See More
                 </button>

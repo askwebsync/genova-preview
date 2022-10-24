@@ -31,10 +31,10 @@
             >
               Matcha Latte
             </p>
-            <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="">
+            <p class="text-lg text-grey-800">RP. 97,000</p>
+            <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300"
+                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
               >
                 See More
               </button>
@@ -56,10 +56,10 @@
             >
               Fruit Bland Kiwi
             </p>
-            <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="">
+            <p class="text-lg text-grey-800">RP. 97,000</p>
+            <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300"
+                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
               >
                 See More
               </button>
@@ -81,10 +81,10 @@
             >
               Dark Chocolate
             </p>
-            <p class="text-lg text-gray-600">RP. 109,000</p>
-            <div class="">
+            <p class="text-lg text-grey-800">RP. 109,000</p>
+            <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300"
+                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
               >
                 See More
               </button>
@@ -105,11 +105,11 @@
             >
               Red Velvet
             </p>
-            <p class="text-lg text-gray-600">RP. 109,000</p>
-            <div class="">
+            <p class="text-lg text-grey-800">RP. 109,000</p>
+            <div class="mt-2">
               <router-link to="/detail-product">
                 <button
-                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300"
+                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
                 >
                   See More
                 </button>

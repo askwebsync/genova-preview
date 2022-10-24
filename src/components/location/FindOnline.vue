@@ -23,7 +23,7 @@
         </h5> -->
         <a href="https://www.tokopedia.com/genovaindonesia"
           ><button
-            class="w-full mt-5 rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300"
+            class="w-full mt-5 rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
           >
             <h5
               class="text-2xl font-bold tracking-tight text-gray-900 text-center divide-y"
