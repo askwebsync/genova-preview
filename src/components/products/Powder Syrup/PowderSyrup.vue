@@ -1,10 +1,10 @@
 <template>
   <section class="container mx-auto">
-    <div class="mt-2 p-8 lg:px-6 lg:py-12 xl:px-12">
+    <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
-        <div class="">
+        <div class="p-2">
           <h1
             class="text-left text-black mb-2 font-semibold text-xl md:text-2xl"
           >

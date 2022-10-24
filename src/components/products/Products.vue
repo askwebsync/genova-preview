@@ -23,7 +23,7 @@
             <img
               src="../../assets/images/product/powder/powder-tiramisu.png"
               alt="Product"
-              class="h-52 w-44 object-contain rounded-t-xl"
+              class="h-48 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -41,7 +41,7 @@
             <img
               src="../../assets/images/product/powder/powder-cottoncandy.png"
               alt="Product"
-              class="h-52 w-44 object-contain rounded-t-xl"
+              class="h-48 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -59,7 +59,7 @@
             <img
               src="../../assets/images/product/powder/powder-cookiescream.png"
               alt="Product"
-              class="h-52 w-44 object-contain rounded-t-xl"
+              class="h-48 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -77,7 +77,7 @@
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="h-52 w-44 object-contain rounded-t-xl"
+              class="h-48 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -95,7 +95,7 @@
             <img
               src="../../assets/images/product/powder/powder-cookiescream.png"
               alt="Product"
-              class="h-52 w-44 object-contain rounded-t-xl"
+              class="h-48 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -113,7 +113,7 @@
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="h-52 w-44 object-contain rounded-t-xl"
+              class="h-48 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">

@@ -2,7 +2,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="container mx-auto background-yellow-light">
-    <div class="p-6 lg:px-6 lg:py-12 xl:px-12">
+    <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="flex flex-row">
         <h1 class="text-left text-black mb-2 font-semibold text-xl">
           TRENDING PRODUCTS
@@ -22,7 +22,7 @@
             <img
               src="../../assets/images/product/powder/powder-matchalatte.png"
               alt="Product"
-              class="h-52 w-44 object-contain rounded-t-xl"
+              class="h-48 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -47,7 +47,7 @@
             <img
               src="../../assets/images/product/fruit-bland/fruit_bland_kiwi.png"
               alt="Product"
-              class="h-52 w-44 object-contain rounded-t-xl"
+              class="h-48 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -72,7 +72,7 @@
             <img
               src="../../assets/images/product/powder/powder-darkchocolate.png"
               alt="Product"
-              class="h-52 w-44 object-contain rounded-t-xl"
+              class="h-48 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -96,7 +96,7 @@
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="h-52 w-44 object-contain rounded-t-xl"
+              class="h-48 w-40 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
