@@ -14,16 +14,16 @@
       </div>
       <hr class="h-1 rounded w-32 bg-black border-0" />
       <div
-        class="grid grid-cols-2 md:grid-cols-3 justify-items-center justify-center gap-12 mt-10 mb-5"
+        class="grid md:grid-cols-3 justify-items-center justify-center gap-12 mt-12 mb-5"
       >
         <div
-          class="flex flex-col max-w-lg background-yellow-light p-6 justify-center"
+          class="flex flex-col max-w-lg p-4 background-yellow-light md:p-6 justify-center"
         >
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-tiramisu.png"
               alt="Product"
-              class="h-48 w-40 object-contain rounded-t-xl"
+              class="w-40 h-40 md:w-52 h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -35,13 +35,13 @@
           </div>
         </div>
         <div
-          class="flex flex-col max-w-lg background-yellow-light p-6 justify-center"
+          class="flex flex-col max-w-lg p-4 background-yellow-light md:p-6 justify-center"
         >
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-cottoncandy.png"
               alt="Product"
-              class="h-48 w-40 object-contain rounded-t-xl"
+              class="w-40 h-40 md:w-52 h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -53,13 +53,13 @@
           </div>
         </div>
         <div
-          class="flex flex-col max-w-lg background-yellow-light p-6 justify-center"
+          class="flex flex-col max-w-lg p-4 background-yellow-light md:p-6 justify-center"
         >
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-cookiescream.png"
               alt="Product"
-              class="h-48 w-40 object-contain rounded-t-xl"
+              class="w-40 h-40 md:w-52 h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -71,13 +71,13 @@
           </div>
         </div>
         <div
-          class="flex flex-col max-w-lg background-yellow-light p-6 justify-center"
+          class="flex flex-col max-w-lg p-4 background-yellow-light md:p-6 justify-center"
         >
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="h-48 w-40 object-contain rounded-t-xl"
+              class="w-40 h-40 md:w-52 h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -89,13 +89,13 @@
           </div>
         </div>
         <div
-          class="flex flex-col max-w-lg background-yellow-light p-6 justify-center"
+          class="flex flex-col max-w-lg p-4 background-yellow-light md:p-6 justify-center"
         >
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-cookiescream.png"
               alt="Product"
-              class="h-48 w-40 object-contain rounded-t-xl"
+              class="w-40 h-40 md:w-52 h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -107,13 +107,13 @@
           </div>
         </div>
         <div
-          class="flex flex-col max-w-lg background-yellow-light p-6 justify-center"
+          class="flex flex-col max-w-lg p-4 background-yellow-light md:p-6 justify-center"
         >
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="h-48 w-40 object-contain rounded-t-xl"
+              class="w-40 h-40 md:w-52 h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">

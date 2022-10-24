@@ -3,8 +3,8 @@
   <!-- Tabs -->
   <section class="container mx-auto">
     <div class="my-12">
-      <ul class="flex flex-col md:flex-row justify-center gap-6">
-        <li class="text-center border-4 border-yellow-200 mx-8 p-2">
+      <ul class="flex flex-row justify-center gap-6">
+        <li class="text-center mx-8 p-2">
           <h2
             class="text-xl lg:text-2xl cursor-pointer block rounded py-3 px-4 transition"
             @click.prevent="tab = 'offline'"
@@ -12,7 +12,7 @@
             Offline Store
           </h2>
         </li>
-        <li class="text-center border-4 border-yellow-200 mx-8 p-2">
+        <li class="text-center mx-8 p-2">
           <h2
             class="text-lg lg:text-2xl cursor-pointer block rounded py-3 px-4 transition"
             @click.prevent="tab = 'online'"
@@ -41,8 +41,8 @@ export default {
 </script>
 
 <style scoped>
-li {
-  border-style: solid 2px;
-  border-color: darkseagreen;
+ul li.active-link > h2 {
+  text-decoration: underline;
+  color: YOUR-LINK-COLOR;
 }
 </style>

@@ -5,12 +5,10 @@
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1
-            class="text-left text-black mb-2 font-semibold text-xl md:text-2xl"
-          >
+          <h1 class="text-left pcolor mb-2 font-semibold text-xl md:text-2xl">
             FRUIT BLEND
           </h1>
-          <hr class="h-1 rounded w-28 bg-black border-0" />
+          <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
 
         <div class="flex justify-between pb-3 gap-2">
@@ -47,7 +45,9 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-6 my-6 md:grid-cols-3 lg:grid-cols-4">
+      <div
+        class="grid grid-cols-2 gap-3 md:gap-6 my-6 md:grid-cols-3 lg:grid-cols-4"
+      >
         <div v-for="product in resultQuery" :key="product.id">
           <div
             class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg background-yellow-light"
@@ -58,12 +58,10 @@
               class="w-full h-48 object-contain rounded-t-xl"
             />
             <div class="px-6 py-4">
-              <h4
-                class="mb-3 text-xl font-semibold tracking-tight text-gray-800"
-              >
+              <h4 class="mb-5 text-xl font-semibold tracking-tight text-white">
                 {{ product.name }}
               </h4>
-              <p class="leading-normal text-gray-700">
+              <p class="leading-normal text-gray-700 text-lg">
                 RP. {{ product.price }}
               </p>
             </div>

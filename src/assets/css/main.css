@@ -37,12 +37,24 @@ h3 {
 .background-navbar {
   background-color: darkseagreen;
 }
-
 p {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
+.pcolor {
+  color: darkseagreen;
+}
+.card-color-dua {
+  background-color: #72966f;
+}
+.card-color-satu {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.card-shadow-tiga {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;

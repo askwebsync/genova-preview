@@ -4,7 +4,7 @@
   <section class="container mx-auto background-yellow-light">
     <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="flex flex-row">
-        <h1 class="text-left text-black mb-2 font-semibold text-xl">
+        <h1 class="text-left text-white mb-2 font-semibold text-xl">
           TRENDING PRODUCTS
         </h1>
         <!-- <div class="rating space-y-6">
@@ -13,28 +13,28 @@
           <p class="slider3"></p>
         </div> -->
       </div>
-      <hr class="h-1 rounded w-32 bg-black border-0" />
+      <hr class="h-1 rounded w-32 bg-white border-0" />
       <div
-        class="grid grid-cols-2 md:grid-cols-4 justify-items-center justify-center gap-12 mt-10 mb-5"
+        class="grid md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-12 mt-12 mb-5"
       >
-        <div class="flex flex-col max-w-lg mx-4">
+        <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-matchalatte.png"
               alt="Product"
-              class="h-48 w-40 object-contain rounded-t-xl"
+              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
             <p
-              class="text-lg font-semibold text-black truncate block capitalize"
+              class="text-lg font-semibold text-white truncate block capitalize"
             >
               Matcha Latte
             </p>
-            <p class="text-lg text-grey-800">RP. 97,000</p>
+            <p class="text-lg text-gray-700">RP. 97,000</p>
             <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
+                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -42,24 +42,24 @@
           </div>
         </div>
 
-        <div class="flex flex-col max-w-lg mx-4">
+        <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
           <a href="#">
             <img
               src="../../assets/images/product/fruit-bland/fruit_bland_kiwi.png"
               alt="Product"
-              class="h-48 w-40 object-contain rounded-t-xl"
+              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
             <p
-              class="text-lg font-semibold text-black truncate block capitalize"
+              class="text-lg font-semibold text-white truncate block capitalize"
             >
               Fruit Bland Kiwi
             </p>
-            <p class="text-lg text-grey-800">RP. 97,000</p>
+            <p class="text-lg text-gray-700">RP. 97,000</p>
             <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
+                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -67,49 +67,49 @@
           </div>
         </div>
 
-        <div class="flex flex-col max-w-lg mx-4">
+        <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-darkchocolate.png"
               alt="Product"
-              class="h-48 w-40 object-contain rounded-t-xl"
+              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
             <p
-              class="text-lg font-semibold text-black truncate block capitalize"
+              class="text-lg font-semibold text-white truncate block capitalize"
             >
               Dark Chocolate
             </p>
-            <p class="text-lg text-grey-800">RP. 109,000</p>
+            <p class="text-lg text-gray-700">RP. 109,000</p>
             <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
+                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
             </div>
           </div>
         </div>
-        <div class="flex flex-col max-w-lg mx-4">
+        <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="h-48 w-40 object-contain rounded-t-xl"
+              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
             <p
-              class="text-lg font-semibold text-black truncate block capitalize"
+              class="text-lg font-semibold text-white truncate block capitalize"
             >
               Red Velvet
             </p>
-            <p class="text-lg text-grey-800">RP. 109,000</p>
+            <p class="text-lg text-gray-700">RP. 109,000</p>
             <div class="mt-2">
               <router-link to="/detail-product">
                 <button
-                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300"
+                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -159,4 +159,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+</style>

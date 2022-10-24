@@ -4,27 +4,38 @@
     <div class="container-awal py-12">
       <div class="about-section">
         <div class="inner-container inner-container-shadow justify-center p-24">
-          <h1 class="text-lg md:text-3xl lg:text-4xl">About Us</h1>
-          <p class="font-semibold mt-12">
-            GENOVA adalah perusahaan yang bergerak memproduksi Premium Sirup,
-            Powder Drink dan Fruitblend dengan harga yang terjangkau.
-            Menggunakan bahan baku impor berkualitas, bersertifikasi halal serta
-            diproduksi di Jakarta, Indonesia.Sehingga ketersediaan stock untuk
-            pasokan bahan baku minuman selalu terjaga.<br /><br />
-
-            Produk Genova juga sudah memiliki sertifikat BPOM di beberapa produk
-            unggulan dan terus mengupdate semua produknya agar memiliki
-            sertifikat BPOM. Sehingga produk kami aman untuk digunakan sebagai
-            bahan baku minuman<br /><br />
-
-            GENOVA saat ini sudah dipercaya oleh lebih dari 1000 pelanggan setia
-            dari hotel bintang lima maupun cafe papan atas di seluruh
-            Indonesia.<br /><br />
-
-            Product GENOVA banyak digunakan untuk campuran pembuatan mocktail,
-            cocktail, milkshake, ice blend, hot drink dan lain-lain. Tersedia
-            dalam ragam varian rasa.<br /><br />
-          </p>
+          <div class="text-left">
+            <h1 class="mb-1 text-2xl md:text-3xl lg:text-4xl">About Us</h1>
+            <hr class="h-1 rounded w-32 bg-black border-0" />
+          </div>
+          <ul class="text-left mt-12 space-y-12">
+            <li>
+              <p class="leading-6 font-semibold tracking-wide">
+                GENOVA adalah perusahaan yang bergerak memproduksi Premium
+                Sirup, Powder Drink dan Fruitblend dengan harga yang terjangkau.
+                Menggunakan bahan baku impor berkualitas, bersertifikasi halal
+                serta diproduksi di Jakarta, Indonesia.Sehingga ketersediaan
+                stock untuk pasokan bahan baku minuman selalu terjaga.
+              </p>
+            </li>
+            <li>
+              <p class="leading-6 font-semibold tracking-wide">
+                Produk Genova juga sudah memiliki sertifikat BPOM di beberapa
+                produk unggulan dan terus mengupdate semua produknya agar
+                memiliki sertifikat BPOM. Sehingga produk kami aman untuk
+                digunakan sebagai bahan baku minuman
+              </p>
+            </li>
+            <li>
+              <p class="leading-6 font-semibold tracking-wide">
+                GENOVA saat ini sudah dipercaya oleh lebih dari 1000 pelanggan
+                setia dari hotel bintang lima maupun cafe papan atas di seluruh
+                Indonesia. Product GENOVA banyak digunakan untuk campuran
+                pembuatan mocktail, cocktail, milkshake, ice blend, hot drink
+                dan lain-lain. Tersedia dalam ragam varian rasa.
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -45,6 +56,7 @@
   background-color: #fdfdfd;
   overflow: hidden;
   padding: 100px 0;
+  border-radius: 10px;
 }
 
 .inner-container {
