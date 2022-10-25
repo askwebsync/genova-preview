@@ -1,119 +1,122 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="container mx-auto background-yellow-light">
-    <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
-      <div class="flex flex-row">
-        <h1 class="text-left text-white mb-2 font-semibold text-xl">
-          TRENDING PRODUCTS
-        </h1>
-        <!-- <div class="rating space-y-6">
+  <section class="background-yellow-light">
+    <div class="container mx-auto">
+      <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
+        <div class="flex flex-row">
+          <h1 class="text-left text-white mb-2 font-semibold text-xl">
+            TRENDING FLAVOUR
+          </h1>
+          <!-- <div class="rating space-y-6">
           <p class="slider1"></p>
           <p class="slider2"></p>
           <p class="slider3"></p>
         </div> -->
-      </div>
-      <hr class="h-1 rounded w-32 bg-white border-0" />
-      <div
-        class="grid md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-12 mt-12 mb-5"
-      >
-        <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
-          <a href="#">
-            <img
-              src="../../assets/images/product/powder/powder-matchalatte.png"
-              alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
-            />
-          </a>
-          <div class="flex flex-col gap-3 p-5">
-            <p
-              class="text-lg font-semibold text-white truncate block capitalize"
-            >
-              Matcha Latte
-            </p>
-            <p class="text-lg text-gray-700">RP. 97,000</p>
-            <div class="mt-2">
-              <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
-              >
-                See More
-              </button>
-            </div>
-          </div>
         </div>
+        <hr class="h-1 rounded w-32 bg-white border-0" />
+        <div
+          class="grid md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-12 mt-12 mb-5"
+        >
+          <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
+            <router-link to="/">
+              <img
+                src="../../assets/images/product/powder/powder-matchalatte.png"
+                alt="Product"
+                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              />
 
-        <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
-          <a href="#">
-            <img
-              src="../../assets/images/product/fruit-bland/fruit_bland_kiwi.png"
-              alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
-            />
-          </a>
-          <div class="flex flex-col gap-3 p-5">
-            <p
-              class="text-lg font-semibold text-white truncate block capitalize"
-            >
-              Fruit Bland Kiwi
-            </p>
-            <p class="text-lg text-gray-700">RP. 97,000</p>
-            <div class="mt-2">
-              <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
-              >
-                See More
-              </button>
-            </div>
+              <div class="flex flex-col gap-3 p-5">
+                <p
+                  class="text-lg font-semibold text-white truncate block capitalize"
+                >
+                  Matcha Latte
+                </p>
+                <p class="text-lg text-gray-700">RP. 169,000</p>
+                <div class="mt-2">
+                  <button
+                    class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
+            </router-link>
           </div>
-        </div>
 
-        <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
-          <a href="#">
-            <img
-              src="../../assets/images/product/powder/powder-darkchocolate.png"
-              alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
-            />
-          </a>
-          <div class="flex flex-col gap-3 p-5">
-            <p
-              class="text-lg font-semibold text-white truncate block capitalize"
-            >
-              Dark Chocolate
-            </p>
-            <p class="text-lg text-gray-700">RP. 109,000</p>
-            <div class="mt-2">
-              <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+          <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
+            <a href="#">
+              <img
+                src="../../assets/images/product/syrup/syrup-lychee.png"
+                alt="Product"
+                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              />
+            </a>
+            <div class="flex flex-col gap-3 p-5">
+              <p
+                class="text-lg font-semibold text-white truncate block capitalize"
               >
-                See More
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
-          <a href="#">
-            <img
-              src="../../assets/images/product/powder/powder-redvelvet.png"
-              alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
-            />
-          </a>
-          <div class="flex flex-col gap-3 p-5">
-            <p
-              class="text-lg font-semibold text-white truncate block capitalize"
-            >
-              Red Velvet
-            </p>
-            <p class="text-lg text-gray-700">RP. 109,000</p>
-            <div class="mt-2">
-              <router-link to="/detail-product">
+                Lychee
+              </p>
+              <p class="text-lg text-gray-700">RP. 97,000</p>
+              <div class="mt-2">
                 <button
                   class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
-              </router-link>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
+            <a href="#">
+              <img
+                src="../../assets/images/product/powder/powder-darkchocolate.png"
+                alt="Product"
+                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              />
+            </a>
+            <div class="flex flex-col gap-3 p-5">
+              <p
+                class="text-lg font-semibold text-white truncate block capitalize"
+              >
+                Dark Chocolate
+              </p>
+              <p class="text-lg text-gray-700">RP. 139,000</p>
+              <div class="mt-2">
+                <button
+                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                >
+                  See More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
+            <a href="#">
+              <img
+                src="../../assets/images/product/powder/powder-redvelvet.png"
+                alt="Product"
+                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              />
+            </a>
+            <div class="flex flex-col gap-3 p-5">
+              <p
+                class="text-lg font-semibold text-white truncate block capitalize"
+              >
+                Red Velvet
+              </p>
+              <p class="text-lg text-gray-700">RP. 139,000</p>
+              <div class="mt-2">
+                <router-link to="/detail-product">
+                  <button
+                    class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                  >
+                    See More
+                  </button>
+                </router-link>
+              </div>
             </div>
           </div>
         </div>

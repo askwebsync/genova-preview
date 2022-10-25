@@ -6,12 +6,10 @@
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1
-            class="text-left text-black mb-2 font-semibold text-xl md:text-2xl"
-          >
+          <h1 class="text-left pcolor mb-2 font-semibold text-xl md:text-2xl">
             LIQUID SYRUP
           </h1>
-          <hr class="h-1 rounded w-28 bg-black border-0" />
+          <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
 
         <div class="flex justify-between pb-3 gap-2">
@@ -48,7 +46,9 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-6 my-6 md:grid-cols-3 lg:grid-cols-4">
+      <div
+        class="mt-6 grid grid-cols-2 gap-6 my-6 md:grid-cols-3 lg:grid-cols-4"
+      >
         <div v-for="product in resultQuery" :key="product.id">
           <div
             class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg background-yellow-light"
@@ -59,14 +59,18 @@
               class="w-full h-48 object-contain rounded-t-xl"
             />
             <div class="px-6 py-4">
-              <h4
-                class="mb-3 text-xl font-semibold tracking-tight text-gray-800"
-              >
+              <h4 class="mb-3 text-xl font-semibold tracking-tight text-white">
                 {{ product.name }}
               </h4>
-              <p class="leading-normal text-gray-700">
-                RP. {{ product.price }}
-              </p>
+              <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+              <div class="mt-2">
+                <button
+                  @click="shareData()"
+                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                >
+                  Buy
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -82,151 +86,151 @@ export default {
         {
           id: 1,
           name: "Syrup Pineapple",
-          image: "syrup pineapple.png",
+          image: "../syrup pineapple.png",
           price: "97,000",
         },
         {
           id: 2,
           name: "Syrup Raspberry",
-          image: "syrup raspberry.png",
+          image: "../syrup raspberry.png",
           price: "97,000",
         },
         {
           id: 4,
           name: "Syrup Banana",
-          image: "syrup_banana-removebg-preview.png",
+          image: "../syrup_banana-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 5,
           name: "Syrup Blue Curacao",
-          image: "syrup_blue_curacao-removebg-preview.png",
+          image: "../syrup_blue_curacao-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 6,
           name: "Syrup Bubblegum",
-          image: "syrup_bubble_gum-removebg-preview.png",
+          image: "../syrup_bubble_gum-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 7,
           name: "Syrup Butterscotch",
-          image: "syrup_butterscotch-removebg-preview.png",
+          image: "../syrup_butterscotch-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 8,
           name: "Syrup Caramel",
-          image: "syrup_caramel-removebg-preview.png",
+          image: "../syrup_caramel-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 9,
           name: "Syrup Coconut",
-          image: "syrup_coconut-removebg-preview.png",
+          image: "../syrup_coconut-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 10,
           name: "Syrup Ginger",
-          image: "syrup_ginger-removebg-preview.png",
+          image: "../syrup_ginger-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 11,
           name: "Syrup Green Apple",
-          image: "syrup_green_apple-removebg-preview.png",
+          image: "../syrup_green_apple-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 12,
           name: "Syrup Hazelnut",
-          image: "syrup_hazelnut-removebg-preview.png",
+          image: "../syrup_hazelnut-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 13,
           name: "Syrup Irish",
-          image: "syrup_irish-removebg-preview.png",
+          image: "../syrup_irish-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 14,
           name: "Syrup Kiwi",
-          image: "syrup_kiwi-removebg-preview.png",
+          image: "../syrup_kiwi-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 15,
           name: "Syrup Lemon",
-          image: "syrup_lemon-removebg-preview.png",
+          image: "../syrup_lemon-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 16,
           name: "Syrup Lemongrass",
-          image: "syrup_lemongrass-removebg-preview.png",
+          image: "../syrup_lemongrass-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 17,
           name: "Syrup Lychee",
-          image: "syrup_lychee-removebg-preview.png",
+          image: "../syrup_lychee-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 18,
           name: "Syrup Manggo",
-          image: "syrup_mango-removebg-preview.png",
+          image: "../syrup_mango-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 19,
           name: "Syrup Mojito",
-          image: "syrup_mojito_mint-removebg-preview.png",
+          image: "../syrup_mojito_mint-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 20,
           name: "Syrup Pandan",
-          image: "syrup_pandan-removebg-preview.png",
+          image: "../syrup_pandan-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 21,
           name: "Syrup Passion Fruit",
-          image: "syrup_passion_fruit-removebg-preview.png",
+          image: "../syrup_passion_fruit-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 22,
           name: "Syrup Peach",
-          image: "syrup_peach-removebg-preview.png",
+          image: "../syrup_peach-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 23,
           name: "Syrup Peppermint",
-          image: "syrup_peppermint-removebg-preview.png",
+          image: "../syrup_peppermint-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 24,
           name: "Syrup Strawberry",
-          image: "syrup_strawberry-removebg-preview.png",
+          image: "../syrup_strawberry-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 25,
           name: "Syrup Tiramisu",
-          image: "syrup_tiramisu-removebg-preview.png",
+          image: "../syrup_tiramisu-removebg-preview.png",
           price: "97,000",
         },
         {
           id: 26,
           name: "Syrup Vanilla",
-          image: "syrup_vanilla-removebg-preview.png",
+          image: "../syrup_vanilla-removebg-preview.png",
           price: "97,000",
         },
       ],

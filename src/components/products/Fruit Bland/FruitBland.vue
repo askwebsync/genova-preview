@@ -46,7 +46,7 @@
       </div>
 
       <div
-        class="grid grid-cols-2 gap-3 md:gap-6 my-6 md:grid-cols-3 lg:grid-cols-4"
+        class="mt-6 grid grid-cols-2 gap-3 md:gap-6 my-6 md:grid-cols-3 lg:grid-cols-4"
       >
         <div v-for="product in resultQuery" :key="product.id">
           <div
@@ -57,13 +57,19 @@
               :alt="product.name"
               class="w-full h-48 object-contain rounded-t-xl"
             />
-            <div class="px-6 py-4">
+            <div class="flex flex-col gap-2 px-6 py-4">
               <h4 class="mb-5 text-xl font-semibold tracking-tight text-white">
                 {{ product.name }}
               </h4>
-              <p class="leading-normal text-gray-700 text-lg">
-                RP. {{ product.price }}
-              </p>
+              <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+              <div class="mt-2">
+                <button
+                  @click="shareData()"
+                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                >
+                  Buy
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -79,37 +85,37 @@ export default {
         {
           id: 1,
           name: "Fruit Bland Kiwi",
-          image: "fruit_bland_kiwi.png",
+          image: "../fruit_bland_kiwi.png",
           price: "109,000",
         },
         {
           id: 2,
           name: "Fruit Bland Manggo",
-          image: "fruit_bland_mango.png",
+          image: "../fruit_bland_mango.png",
           price: "109,000",
         },
         {
           id: 3,
           name: "Fruit Bland Passion",
-          image: "fruit_bland_passion.png",
+          image: "../fruit_bland_passion.png",
           price: "109,000",
         },
         {
           id: 4,
           name: "Fruit Bland Pineapple",
-          image: "fruit_bland_pineapple.png",
+          image: "../fruit_bland_pineapple.png",
           price: "109,000",
         },
         {
           id: 5,
           name: "Fruit Bland Raspberry",
-          image: "fruit_bland_raspberry.png",
+          image: "../fruit_bland_raspberry.png",
           price: "109,000",
         },
         {
           id: 6,
           name: "Fruit Bland Strawberry",
-          image: "fruit_bland_strawberry.png",
+          image: "../fruit_bland_strawberry.png",
           price: "109,000",
         },
       ],
@@ -131,21 +137,7 @@ export default {
       }
     },
   },
-  methods: {
-    shareData() {
-      // this.$router.push({
-      //   name: "detail-product",
-      //   // eslint-disable-next-line no-undef
-      //   params: JSON.stringify(product),
-      // });
-      this.$router.push({
-        name: "detail-product",
-        // params: {
-        //   objectParam: JSON.stringify({ a: "a" }),
-        // },
-      });
-    },
-  },
+  methods: {},
 };
 </script>
 

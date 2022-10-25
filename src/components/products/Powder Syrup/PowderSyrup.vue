@@ -5,12 +5,10 @@
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1
-            class="text-left text-black mb-2 font-semibold text-xl md:text-2xl"
-          >
+          <h1 class="text-left pcolor mb-2 font-semibold text-xl md:text-2xl">
             POWDER SYRUP
           </h1>
-          <hr class="h-1 rounded w-28 bg-black border-0" />
+          <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
 
         <div class="flex justify-between pb-3 gap-2">
@@ -47,7 +45,9 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-6 my-6 md:grid-cols-3 lg:grid-cols-4">
+      <div
+        class="mt-6 grid grid-cols-2 gap-6 my-6 md:grid-cols-3 lg:grid-cols-4"
+      >
         <div v-for="product in resultQuery" :key="product.id">
           <div
             class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg background-yellow-light p-4"
@@ -57,15 +57,21 @@
               :alt="product.name"
               class="w-full h-48 object-contain rounded-t-xl"
             />
-            <div class="px-6 py-4">
+            <div class="px-6 py-4 max-w-xs">
               <h4
                 class="mb-3 text-xl font-semibold tracking-tight text-gray-800"
               >
                 {{ product.name }}
               </h4>
-              <p class="leading-normal text-gray-700">
-                RP. {{ product.price }}
-              </p>
+              <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+              <div class="mt-2">
+                <button
+                  @click="shareData()"
+                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                >
+                  Buy
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -83,103 +89,103 @@ export default {
         {
           id: 1,
           name: "Powder Avocado",
-          image: "powder-avocado.png",
+          image: "../powder-avocado.png",
           price: "150,000",
         },
         {
           id: 2,
           name: "Powder Cappuccino",
-          image: "powder-cappuccino.png",
+          image: "../powder-cappuccino.png",
           price: "139,000",
         },
         {
           id: 4,
           name: "Powder Charcoal",
-          image: "powder-charcoal.png",
+          image: "../powder-charcoal.png",
           price: "159,000",
         },
         {
           id: 5,
           name: "Powder Chocolate",
-          image: "powder-chocolateclassic.png",
+          image: "../powder-chocolateclassic.png",
           price: "139,000",
         },
         {
           id: 6,
           name: "Powder Cookies",
-          image: "powder-cookiescream.png",
+          image: "../powder-cookiescream.png",
           price: "155,000",
         },
         {
           id: 7,
           name: "Powder Cotton Candy",
-          image: "powder-cottoncandy.png",
+          image: "../powder-cottoncandy.png",
           price: "139,000",
         },
         {
           id: 8,
           name: "Powder Dark Chocolate",
-          image: "powder-darkchocolate.png",
+          image: "../powder-darkchocolate.png",
           price: "139,000",
         },
         {
           id: 9,
           name: "Powder Frappe Base",
-          image: "powder-frappebase.png",
+          image: "../powder-frappebase.png",
           price: "139,000",
         },
         {
           id: 10,
           name: "Powder Greentea",
-          image: "powder-greentea.png",
+          image: "../powder-greentea.png",
           price: "150,000",
         },
         {
           id: 11,
           name: "Powder Macchiato",
-          image: "powder-macchiato.png",
+          image: "../powder-macchiato.png",
           price: "139,000",
         },
         {
           id: 12,
           name: "Powder Matcha Latte",
-          image: "powder-matchalatte.png",
+          image: "../powder-matchalatte.png",
           price: "169,000",
         },
         {
           id: 13,
           name: "Powder Matcha Premium",
-          image: "powder-matchapremium.png",
+          image: "../powder-matchapremium.png",
           price: "245,000",
         },
         {
           id: 14,
           name: "Powder Mocha",
-          image: "powder-mocha.png",
+          image: "../powder-mocha.png",
           price: "139,000",
         },
         {
           id: 15,
           name: "Powder Mochaccino",
-          image: "powder-mochaccino.png",
+          image: "../powder-mochaccino.png",
           price: "139,000",
         },
         {
           id: 16,
           name: "Powder Red Velvet",
-          image: "powder-redvelvet.png",
+          image: "../powder-redvelvet.png",
           price: "139,000",
         },
         {
           id: 17,
           name: "Powder Thai Tea",
-          image: "powder-thaitea.png",
+          image: "../powder-thaitea.png",
           price: "139,000",
         },
         {
           id: 18,
           name: "Powder Tiramisu",
-          image: "powder-tiramisu.png",
+          image: "../powder-tiramisu.png",
           price: "139,000",
         },
       ],

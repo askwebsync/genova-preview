@@ -15,7 +15,10 @@
         <div class="w-1/2 flex flex-col gap-2">
           <!-- Name + Info -->
           <div class="flex flex-col gap-6 my-4 text-left max-w-xl">
-            <h1 class="text-4xl pcolor md:text5xl">Genova Syrup</h1>
+            <h1 class="text-4xl pcolor md:text5xl">
+              {{ JSON.parse(product) }}
+            </h1>
+
             <p class="text-lg p-1">
               Syrup GENOVA Hazelnut 750 ML Syrup Hazelnut GENOVA adalah salah
               satu dari tiga rasa flavour kopi spesial teratas, bersama dengan
@@ -41,7 +44,7 @@
               </div>
               <div class=""><p class="text-lg">(4,9)</p></div>
             </div>
-            <p class="text-xl text-gray-600">RP. 109,000</p>
+            <p class="text-xl text-gray-600">{{}}</p>
             <!-- Button-->
             <div class="text-left md:mt-2">
               <button
@@ -495,7 +498,34 @@ export default {
           productLink: "",
         },
       ],
+      productID: 0,
+      productShow: [
+        {
+          id: 0,
+          name: "",
+          image: "",
+          price: "",
+          categoryId: 0,
+          productInfo: "",
+          productLink: "",
+        },
+      ],
     };
+  },
+  created() {
+    this.checkID;
+  },
+  methods: {
+    checkID() {
+      console.log(this.$route.params.id);
+      for (let i = 0; i < this.products.length; i++) {
+        if (this.$route.params.id === this.products.id) {
+          this.productShow.push(this.products);
+          console.log(this.productShow);
+          return this.productShow;
+        }
+      }
+    },
   },
 };
 </script>

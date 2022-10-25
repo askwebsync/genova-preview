@@ -2,16 +2,16 @@
 <template>
   <section class="container mx-auto mb-4">
     <div class="p-6 lg:px-6 lg:py-12 xl:px-12">
-      <h1 class="text-left text-black mb-2 text-lg md:text-2xl">
+      <h1 class="text-left pcolor mb-2 font-semibold text-2xl">
         Standart Recipe
       </h1>
-      <hr class="h-1 rounded w-32 bg-black border-0" />
+      <hr class="h-1 rounded w-32 background-navbar border-0" />
       <div class="flex flex-col my-12 gap-8">
         <div
           class="flex flex-col md:flex border p-4 gap-10 md:gap-24 items-center"
         >
           <div class="max-w-lg">
-            <h3 class="text-lg lg:text-2xl">Ice Shakes</h3>
+            <h3 class="text-lg lg:text-2xl font-bold underline">Ice Shakes</h3>
           </div>
           <div
             class="flex flex-col mx-5 md:flex-row gap-6 lg:gap-12 items-center"
@@ -60,7 +60,7 @@
           class="flex flex-col md:flex border p-4 gap-12 md:gap-24 items-center"
         >
           <div class="max-w-lg">
-            <h3 class="text-lg lg:text-2xl">Ice Blended</h3>
+            <h3 class="text-lg lg:text-2xl font-bold underline">Ice Blended</h3>
           </div>
           <div
             class="flex flex-col mx-5 md:flex-row gap-6 lg:gap-12 items-center"
@@ -109,7 +109,7 @@
           class="flex flex-col md:flex border p-4 gap-12 md:gap-24 items-center"
         >
           <div class="">
-            <h3 class="text-lg lg:text-2xl">Mocktail</h3>
+            <h3 class="text-lg lg:text-2xl font-bold underline">Mocktail</h3>
           </div>
           <div
             class="flex flex-col mx-5 md:flex-row gap-6 lg:gap-12 items-center"
@@ -158,7 +158,9 @@
           class="flex flex-col md:flex border p-4 gap-12 md:gap-24 items-center"
         >
           <div class="">
-            <h3 class="text-lg lg:text-2xl">Fruit Smoothies</h3>
+            <h3 class="text-lg lg:text-2xl font-bold underline">
+              Fruit Smoothies
+            </h3>
           </div>
           <div
             class="flex flex-col mx-5 md:flex-row gap-6 lg:gap-12 items-center"
@@ -207,7 +209,7 @@
           class="flex flex-col md:flex border p-4 gap-12 md:gap-24 items-center"
         >
           <div class="">
-            <h3 class="text-lg lg:text-2xl">Special Tea</h3>
+            <h3 class="text-lg lg:text-2xl font-bold underline">Special Tea</h3>
           </div>
           <div
             class="flex flex-col mx-5 md:flex-row gap-6 lg:gap-12 items-center"

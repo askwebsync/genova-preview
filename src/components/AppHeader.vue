@@ -37,31 +37,31 @@
         >
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-white hover:text-blue-400"
+            class="text-base md:text-lg font-semibold text-white hover:text-blue-400"
           >
             <router-link to="/products">Product</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-white hover:text-blue-400"
+            class="text-base md:text-lg font-semibold text-white hover:text-blue-400"
           >
             <router-link to="/recipe">Recipe</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-white hover:text-blue-400"
+            class="text-base md:text-lg font-semibold text-white hover:text-blue-400"
           >
             <router-link to="/about">About Us</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-white hover:text-blue-400"
+            class="text-base md:text-lg font-semibold text-white hover:text-blue-400"
           >
             <router-link to="/contact">Contact</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-white hover:text-blue-400"
+            class="text-base md:text-lg font-semibold text-white hover:text-blue-400"
           >
             <router-link to="/location">Location</router-link>
           </li>

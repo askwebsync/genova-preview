@@ -2,11 +2,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="container mx-auto">
-    <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
+    <div class="mt-2 p-6 md:px-2 lg:px-6 lg:py-12 xl:px-12">
       <div class="flex flex-row">
-        <h1 class="text-left pcolor mb-2 font-semibold text-xl">
-          NEW PRODUCTS
-        </h1>
+        <h1 class="text-left pcolor mb-2 font-semibold text-xl">NEW FLAVOUR</h1>
         <!-- <div class="rating space-y-6">
           <p class="slider1"></p>
           <p class="slider2"></p>
@@ -17,10 +15,12 @@
       <div
         class="grid md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-12 mt-10 mb-5"
       >
-        <div class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6">
+        <div
+          class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6 items-center"
+        >
           <router-link to="/detail-product">
             <img
-              src="../../assets/images/product/powder/powder-tiramisu.png"
+              src="../../assets/images/product/powder/powder-cookiescream.png"
               alt="Product"
               class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
@@ -29,7 +29,34 @@
             <p
               class="text-lg font-semibold text-black truncate block capitalize"
             >
-              Matcha Latte
+              Cookies & Cream
+            </p>
+            <p class="text-lg text-gray-600">RP. 155,000</p>
+            <div class="">
+              <button
+                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white"
+              >
+                See More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6 items-center"
+        >
+          <a href="#">
+            <img
+              src="../../assets/images/product/syrup/syrup-pineapple.png"
+              alt="Product"
+              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+            />
+          </a>
+          <div class="flex flex-col gap-3 p-5">
+            <p
+              class="text-lg font-semibold text-black truncate block capitalize"
+            >
+              Pineapple
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="">
@@ -42,10 +69,12 @@
           </div>
         </div>
 
-        <div class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6">
+        <div
+          class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6 items-center"
+        >
           <a href="#">
             <img
-              src="../../assets/images/product/powder/powder-cottoncandy.png"
+              src="../../assets/images/product/syrup/syrup-raspberry.png"
               alt="Product"
               class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
@@ -54,7 +83,7 @@
             <p
               class="text-lg font-semibold text-black truncate block capitalize"
             >
-              Fruit Bland Kiwi
+              Raspberry
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="">
@@ -66,11 +95,12 @@
             </div>
           </div>
         </div>
-
-        <div class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6">
+        <div
+          class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6 items-center"
+        >
           <a href="#">
             <img
-              src="../../assets/images/product/powder/powder-cookiescream.png"
+              src="../../assets/images/product/syrup/syrup-tiramisu.png"
               alt="Product"
               class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
@@ -79,33 +109,9 @@
             <p
               class="text-lg font-semibold text-black truncate block capitalize"
             >
-              Dark Chocolate
+              Tiramisu
             </p>
-            <p class="text-lg text-gray-600">RP. 109,000</p>
-            <div class="">
-              <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white"
-              >
-                See More
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6">
-          <a href="#">
-            <img
-              src="../../assets/images/product/powder/powder-redvelvet.png"
-              alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
-            />
-          </a>
-          <div class="flex flex-col gap-3 p-5">
-            <p
-              class="text-lg font-semibold text-black truncate block capitalize"
-            >
-              Red Velvet
-            </p>
-            <p class="text-lg text-gray-600">RP. 109,000</p>
+            <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="">
               <router-link to="/detail-product">
                 <button

@@ -17,42 +17,42 @@ export default {
         <div class="px-5 py-2">
           <router-link
             to="/products"
-            class="text-base leading-6 text-gray-500 hover:text-blue-400"
+            class="text-lg md:text-xl leading-6 text-gray-500 hover:text-blue-400"
           >
             Product
           </router-link>
         </div>
         <div class="px-5 py-2">
-          <a
-            href="#"
-            class="text-base leading-6 text-gray-500 hover:text-blue-400"
+          <router-link
+            to="/recipe"
+            class="text-lg md:text-xl leading-6 text-gray-500 hover:text-blue-400"
           >
             Recipe
-          </a>
+          </router-link>
         </div>
         <div class="px-5 py-2">
           <router-link
             to="/about"
-            class="text-base leading-6 text-gray-500 hover:text-blue-400"
+            class="text-lg md:text-xl leading-6 text-gray-500 hover:text-blue-400"
           >
             About
           </router-link>
         </div>
         <div class="px-5 py-2">
-          <a
-            href="#"
-            class="text-base leading-6 text-gray-500 hover:text-blue-400"
+          <router-link
+            to="/contact"
+            class="text-lg md:text-xl leading-6 text-gray-500 hover:text-blue-400"
           >
             Contact
-          </a>
+          </router-link>
         </div>
         <div class="px-5 py-2">
-          <a
-            href="#"
-            class="text-base leading-6 text-gray-500 hover:text-blue-400"
+          <router-link
+            to="/location"
+            class="text-lg md:text-xl leading-6 text-gray-500 hover:text-blue-400"
           >
-            Location
-          </a>
+            Product
+          </router-link>
         </div>
       </nav>
       <div class="flex justify-center mt-8 space-x-6">

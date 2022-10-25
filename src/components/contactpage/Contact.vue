@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="container mx-auto">
-    <div class="flex flex-col py-6">
+    <div class="flex flex-col py-12">
       <div class="max-w-xl sm:mx-auto lg:max-w-2xl mt-12">
         <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
           <h2
