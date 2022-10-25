@@ -6,7 +6,7 @@
       <ul class="flex flex-row justify-center gap-6">
         <li class="text-center mx-8 p-2">
           <h2
-            class="text-xl lg:text-2xl cursor-pointer block rounded py-3 px-4 transition"
+            class="text-xl lg:text-2xl cursor-pointer block rounded py-3 px-4 transition underline"
             @click.prevent="tab = 'offline'"
           >
             Offline Store

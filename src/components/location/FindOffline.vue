@@ -40,12 +40,13 @@
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
-        <div class="flex flex-col border p-4 gap-6">
+        <div class="flex flex-col border p-4 gap-6 shadow-location md:p-8">
           <h3
-            class="text-2xl tracking-tight text-gray-900 text-left font-semibold"
+            class="text-2xl tracking-tight text-gray-900 font-semibold text-center"
           >
             Genova Jakarta
           </h3>
+
           <div class="flex flex-col gap-2">
             <div
               class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
@@ -126,12 +127,13 @@
             >
           </div>
         </div>
-        <div class="flex flex-col border p-4 gap-6">
+        <div class="flex flex-col border p-4 gap-6 shadow-location md:p-8">
           <h3
-            class="text-2xl tracking-tight text-gray-900 text-left font-semibold"
+            class="text-2xl tracking-tight text-gray-900 font-semibold text-center"
           >
             Genova Palangkaraya
           </h3>
+          <h4 class="text-lg font-semibold">About Something Coffee Roastery</h4>
           <div class="flex flex-col gap-2">
             <div
               class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
@@ -212,12 +214,13 @@
             >
           </div>
         </div>
-        <div class="flex flex-col border p-4 gap-6">
+        <div class="flex flex-col border p-4 gap-6 shadow-location md:p-8">
           <h3
-            class="text-2xl tracking-tight text-gray-900 text-left font-semibold"
+            class="text-2xl tracking-tight text-gray-900 font-semibold text-center"
           >
             Genova Riau
           </h3>
+          <h4 class="text-lg font-semibold">Samula Coffee & Eatry</h4>
           <div class="flex flex-col gap-2">
             <div
               class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
@@ -297,9 +300,9 @@
             >
           </div>
         </div>
-        <div class="flex flex-col border p-4 gap-6">
+        <div class="flex flex-col border p-4 gap-6 shadow-location md:p-8">
           <h3
-            class="text-2xl tracking-tight text-gray-900 text-left font-semibold"
+            class="text-2xl tracking-tight text-gray-900 font-semibold text-center"
           >
             Genova Bogor
           </h3>
@@ -405,5 +408,8 @@ td {
 }
 p {
   color: white;
+}
+.shadow-location {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 </style>
