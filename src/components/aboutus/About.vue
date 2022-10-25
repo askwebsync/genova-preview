@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 1200px) {
   .inner-container {
-    padding: 80px;
+    padding: 70px;
   }
 }
 
