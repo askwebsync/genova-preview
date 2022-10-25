@@ -46,7 +46,7 @@
       </div>
 
       <div
-        class="mt-6 grid grid-cols-2 gap-6 my-6 md:grid-cols-3 lg:grid-cols-4"
+        class="grid md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-12 mt-12 mb-5"
       >
         <div v-for="product in resultQuery" :key="product.id">
           <div
