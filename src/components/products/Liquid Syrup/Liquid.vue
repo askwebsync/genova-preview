@@ -59,9 +59,9 @@
               class="w-full h-48 object-contain rounded-t-xl"
             />
             <div class="px-6 py-4">
-              <h4 class="mb-3 text-xl font-semibold tracking-tight text-white">
+              <h2 class="mb-3 text-xl font-semibold tracking-tight text-black">
                 {{ product.name }}
-              </h4>
+              </h2>
               <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
               <div class="mt-2">
                 <button

@@ -47,7 +47,7 @@
           <div class="flex flex-col p-4 max-w-lg mx-4 card-shadow md:p-6">
             <a href="#">
               <img
-                src="../../assets/images/product/syrup/syrup-lychee.png"
+                src="../../assets/images/product/syrup/syrup_lychee.png"
                 alt="Product"
                 class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
               />

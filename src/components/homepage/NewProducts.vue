@@ -47,7 +47,7 @@
         >
           <a href="#">
             <img
-              src="../../assets/images/product/syrup/syrup-pineapple.png"
+              src="../../assets/images/product/syrup/syrup_pineapple.png"
               alt="Product"
               class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
@@ -74,7 +74,7 @@
         >
           <a href="#">
             <img
-              src="../../assets/images/product/syrup/syrup-raspberry.png"
+              src="../../assets/images/product/syrup/syrup_raspberry.png"
               alt="Product"
               class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
@@ -100,7 +100,7 @@
         >
           <a href="#">
             <img
-              src="../../assets/images/product/syrup/syrup-tiramisu.png"
+              src="../../assets/images/product/syrup/syrup_tiramisu.png"
               alt="Product"
               class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
             />

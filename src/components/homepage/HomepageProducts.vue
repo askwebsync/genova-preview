@@ -84,7 +84,7 @@
         <div class="flex flex-col max-w-lg p-4 md:p-6 items-center">
           <router-link to="/product/liquid-syrup">
             <img
-              src="../../assets/images/product/syrup/syrup-bluecuracao.png"
+              src="../../assets/images/product/syrup/syrup_bluecuracao.png"
               alt="Product"
               class="w-40 h-40 md:w-52 h-52 object-contain rounded-t-xl"
             />

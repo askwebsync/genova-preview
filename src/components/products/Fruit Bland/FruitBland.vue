@@ -58,9 +58,9 @@
               class="w-full h-48 object-contain rounded-t-xl"
             />
             <div class="flex flex-col gap-2 px-6 py-4">
-              <h4 class="mb-5 text-xl font-semibold tracking-tight text-white">
+              <h2 class="mb-5 text-xl font-semibold tracking-tight text-black">
                 {{ product.name }}
-              </h4>
+              </h2>
               <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
               <div class="mt-2">
                 <button
@@ -84,37 +84,37 @@ export default {
       products: [
         {
           id: 1,
-          name: "Fruit Bland Kiwi",
+          name: "Fruit Blend Kiwi",
           image: "../fruit_bland_kiwi.png",
           price: "109,000",
         },
         {
           id: 2,
-          name: "Fruit Bland Manggo",
+          name: "Fruit Blend Manggo",
           image: "../fruit_bland_mango.png",
           price: "109,000",
         },
         {
           id: 3,
-          name: "Fruit Bland Passion",
+          name: "Fruit Blend Passion",
           image: "../fruit_bland_passion.png",
           price: "109,000",
         },
         {
           id: 4,
-          name: "Fruit Bland Pineapple",
+          name: "Fruit Blend Pineapple",
           image: "../fruit_bland_pineapple.png",
           price: "109,000",
         },
         {
           id: 5,
-          name: "Fruit Bland Raspberry",
+          name: "Fruit Blend Raspberry",
           image: "../fruit_bland_raspberry.png",
           price: "109,000",
         },
         {
           id: 6,
-          name: "Fruit Bland Strawberry",
+          name: "Fruit Blend Strawberry",
           image: "../fruit_bland_strawberry.png",
           price: "109,000",
         },
