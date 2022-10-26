@@ -35,7 +35,7 @@
                 <p class="text-lg text-gray-700">RP. 169,000</p>
                 <div class="mt-2">
                   <button
-                    class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                    class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                   >
                     See More
                   </button>
@@ -61,7 +61,7 @@
               <p class="text-lg text-gray-700">RP. 97,000</p>
               <div class="mt-2">
                 <button
-                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -86,7 +86,7 @@
               <p class="text-lg text-gray-700">RP. 139,000</p>
               <div class="mt-2">
                 <button
-                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -110,13 +110,11 @@
               </p>
               <p class="text-lg text-gray-700">RP. 139,000</p>
               <div class="mt-2">
-                <router-link to="/detail-product">
-                  <button
-                    class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
-                  >
-                    See More
-                  </button>
-                </router-link>
+                <button
+                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                >
+                  See More
+                </button>
               </div>
             </div>
           </div>
@@ -138,7 +136,7 @@
                 <p class="text-lg text-gray-700">RP. 169,000</p>
                 <div class="mt-2">
                   <button
-                    class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                    class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                   >
                     See More
                   </button>
@@ -164,7 +162,7 @@
               <p class="text-lg text-gray-700">RP. 97,000</p>
               <div class="mt-2">
                 <button
-                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -189,7 +187,7 @@
               <p class="text-lg text-gray-700">RP. 139,000</p>
               <div class="mt-2">
                 <button
-                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -213,13 +211,11 @@
               </p>
               <p class="text-lg text-gray-700">RP. 139,000</p>
               <div class="mt-2">
-                <router-link to="/detail-product">
-                  <button
-                    class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
-                  >
-                    See More
-                  </button>
-                </router-link>
+                <button
+                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                >
+                  See More
+                </button>
               </div>
             </div>
           </div>
@@ -241,7 +237,7 @@
                 <p class="text-lg text-gray-700">RP. 169,000</p>
                 <div class="mt-2">
                   <button
-                    class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                    class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                   >
                     See More
                   </button>
@@ -267,7 +263,7 @@
               <p class="text-lg text-gray-700">RP. 97,000</p>
               <div class="mt-2">
                 <button
-                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>

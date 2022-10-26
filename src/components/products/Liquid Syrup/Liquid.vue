@@ -65,10 +65,9 @@
               <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
               <div class="mt-2">
                 <button
-                  @click="shareData()"
-                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
-                  Buy
+                  See More
                 </button>
               </div>
             </div>

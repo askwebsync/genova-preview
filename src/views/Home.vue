@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="flex flex-col gap-4">
-    <NewProducts />
     <TrendingProducts />
+    <NewProducts />
     <HomepageProducts />
   </div>
 </template>

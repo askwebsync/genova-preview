@@ -36,27 +36,22 @@ h4 {
 }
 
 .background-yellow {
-  background: darkseagreen;
-}
-
-.background-yellow-light {
-  background: darkseagreen;
+  background: #bdb76b;
 }
 
 .background-navbar {
-  background-color: darkseagreen;
+  background-color: #bdb76b;
 }
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
 .pcolor {
-  color: darkseagreen;
+  color: #bdb76b;
 }
-.card-color-dua {
-  background-color: #72966f;
-}
+
 .card-color-satu {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;

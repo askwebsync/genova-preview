@@ -31,9 +31,9 @@
               Cookies & Cream
             </p>
             <p class="text-lg text-gray-600">RP. 155,000</p>
-            <div class="">
+            <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -58,9 +58,9 @@
               Pineapple
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="">
+            <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -85,9 +85,9 @@
               Raspberry
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="">
+            <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -111,14 +111,12 @@
               Tiramisu
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="">
-              <router-link to="/detail-product">
-                <button
-                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white"
-                >
-                  See More
-                </button>
-              </router-link>
+            <div class="mt-2">
+              <button
+                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+              >
+                See More
+              </button>
             </div>
           </div>
         </div>
@@ -139,9 +137,9 @@
               Coconut
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="">
+            <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -166,9 +164,9 @@
               Butterscotch
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="">
+            <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -192,14 +190,12 @@
               Lemon
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="">
-              <router-link to="/detail-product">
-                <button
-                  class="rounded-lg px-4 py-2 bg-green-400 hover:bg-green-600 duration-300 text-white"
-                >
-                  See More
-                </button>
-              </router-link>
+            <div class="mt-2">
+              <button
+                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+              >
+                See More
+              </button>
             </div>
           </div>
         </div>

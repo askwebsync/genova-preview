@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="background-navbar">
+  <section class="">
     <div class="container mx-auto">
       <div class="p-6 md:px-2 lg:px-6 lg:py-12 xl:px-12">
         <div class="flex flex-row">
