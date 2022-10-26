@@ -1,26 +1,27 @@
 <template>
   <div>
-    <div class="">
+    <div class="bg-white-100">
       <nav
-        class="container p-5 mx-auto lg:flex lg:justify-between lg:items-center lg:px-6 xl:px-12"
+        class="container p-6 lg::p-7 mx-auto lg::flex lg::justify-between lg::items-center"
       >
         <div class="flex items-center justify-between">
           <router-link
             to="/"
-            class="text-xl font-bold text-gray-800 lg:text-2xl hover:text-blue-400"
+            class="text-xl font-bold text-gray-800 lg::text-2xl hover:text-blue-400"
             ><img
               src="../assets/images/logo/Genova_Logo_no_bg.png"
               alt=""
-              class="w-32 h-22"
+              height="100"
+              width="100"
             />
           </router-link>
           <!-- Mobile menu button -->
-          <div @click="showMenu = !showMenu" class="flex lg:hidden">
+          <div @click="showMenu = !showMenu" class="flex lg::hidden">
             <button
               type="button"
               class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
             >
-              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current text-black">
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                 <path
                   fill-rule="evenodd"
                   d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
@@ -30,39 +31,65 @@
           </div>
         </div>
 
-        <div
-          class="p-2 flex items-center rounded-lg border-2 bg-white overflow-hidden order-2"
-        >
-          <div class="grid place-items-center h-full w-12 text-gray-300">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+        <div class="flex lg::order-2">
+          <div :class="showMenu ? 'flex' : 'hidden'" class="hidden relative">
+            <div
+              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
+              <svg
+                class="w-5 h-5 text-gray-500"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
           </div>
-
-          <input
-            class="peer h-full w-full outline-none text-sm text-gray-700 pr-2"
-            type="text"
-            id="search"
-            placeholder="Search something.."
-          />
         </div>
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <ul
           :class="showMenu ? 'flex' : 'hidden'"
-          class="flex-col mt-8 space-y-4 lg:flex lg:space-y-0 lg:flex-row lg:items-center lg:space-x-10 lg:mt-0 lg:order-1 lg:mr-6"
+          class="flex-col mt-8 space-y-4 lg::flex lg::space-y-0 lg::flex-row lg::items-center lg::space-x-10 lg::mt-0 lg::order-1"
         >
+          <li v-if="showMenu" class="relative mt-3 lg::hidden">
+            <div
+              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </li>
           <li
             @click="showMenu = !showMenu"
             class="text-base font-semibold text-black hover:text-blue-400"

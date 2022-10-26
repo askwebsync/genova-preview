@@ -15,77 +15,54 @@
         </div> -->
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
-        <div
-          class="justify-items-center justify-center gap-12 mt-12 mb-5 mx-auto"
-        >
-          <vueper-slides
-            class="no-shadow"
-            :breakpoints="{
-              1400: {
-                slideRatio: 1 / 1,
-                visibleSlides: 3,
-                slideMultiple: 3,
-              },
-              1200: {
-                slideRatio: 1 / 1,
-                visibleSlides: 3,
-                slideMultiple: 3,
-              },
-              900: {
-                slideRatio: 1 / 1,
-                visibleSlides: 2,
-                slideMultiple: 2,
-              },
-              600: {
-                slideRatio: 1 / 1,
-                visibleSlides: 1,
-                slideMultiple: 1,
-              },
-            }"
-            :dragging-distance="70"
+        <div class="my-12">
+          <Carousel
+            :navigation="true"
+            :startAutoPlay="true"
+            :timeout="5000"
+            v-slot="{ currentSlide }"
           >
-            <vueper-slide v-for="product in products" :key="product.id">
-              <template #content>
-                <div
-                  class="mx-4 mb-2 rounded-lg p-4 text-center items-center justify-center"
-                >
-                  <div class="">
-                    <img
-                      :src="product.image"
-                      :alt="product.name"
-                      class="w-full h-40 md:h-52 object-contain rounded-t-xl"
-                    />
-                  </div>
-                  <div class="px-6 py-4">
-                    <h3
-                      class="mb-3 text-lg md:text-xl font-semibold tracking-tight text-black"
+            <Slide v-for="product in products" :key="product.id">
+              <div
+                v-show="currentSlide === product.id + 1"
+                class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg background-yellow-light slide-info"
+              >
+                <img
+                  :src="product.image"
+                  :alt="product.name"
+                  class="w-full h-48 object-contain rounded-t-xl"
+                />
+                <div class="px-6 py-4">
+                  <h2
+                    class="mb-3 text-xl font-semibold tracking-tight text-black"
+                  >
+                    {{ product.name }}
+                  </h2>
+                  <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+                  <div class="mt-2">
+                    <a
+                      v-bind:href="product.link"
+                      class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                     >
-                      {{ product.name }}
-                    </h3>
-                    <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
-                    <div class="mt-2">
-                      <button
-                        class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
-                      >
-                        See More
-                      </button>
-                    </div>
+                      See More
+                    </a>
                   </div>
                 </div>
-              </template>
-            </vueper-slide>
-          </vueper-slides>
+              </div>
+            </Slide>
+          </Carousel>
         </div>
       </div>
     </div>
   </section>
 </template>
+
 <script>
-import { VueperSlides, VueperSlide } from "vueperslides";
-import "vueperslides/dist/vueperslides.css";
+import Carousel from "../Carousel.vue";
+import Slide from "../Slide.vue";
 
 export default {
-  components: { VueperSlides, VueperSlide },
+  components: { Carousel, Slide },
   data() {
     return {
       products: [
@@ -108,66 +85,77 @@ export default {
           name: "Syrup Banana",
           image: "syrup_banana-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 5,
           name: "Syrup Blue Curacao",
           image: "syrup_blue_curacao-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 6,
           name: "Syrup Bubblegum",
           image: "syrup_bubble_gum-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 7,
           name: "Syrup Butterscotch",
           image: "syrup_butterscotch-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 8,
           name: "Syrup Caramel",
           image: "syrup_caramel-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 9,
           name: "Syrup Coconut",
           image: "syrup_coconut-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 10,
           name: "Syrup Ginger",
           image: "syrup_ginger-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 11,
           name: "Syrup Green Apple",
           image: "syrup_green_apple-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 12,
           name: "Syrup Hazelnut",
           image: "syrup_hazelnut-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 13,
           name: "Syrup Irish",
           image: "syrup_irish-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 14,
           name: "Syrup Kiwi",
           image: "syrup_kiwi-removebg-preview.png",
           price: "97,000",
+          link: "https://www.websync.id/",
         },
         {
           id: 15,
@@ -247,4 +235,17 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.carousel {
+  position: relative;
+  height: 50vh;
+}
+.carousel .slide-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+</style>
