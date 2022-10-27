@@ -15,7 +15,7 @@
         </div> -->
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
-        <div class="justify-items-center justify-center gap-12 mt-10 mb-5">
+        <div class="justify-items-center justify-center mt-10 mb-5">
           <carousel :settings="settings" :breakpoints="breakpoints">
             <slide v-for="product in products" :key="product.id">
               <div class="mx-4 mb-2 rounded-lg shadow-lg">
@@ -24,19 +24,20 @@
                   :alt="product.name"
                   class="w-full h-40 md:h-48 object-contain rounded-t-xl"
                 />
-                <div class="px-6 py-4">
+                <div class="p-5">
                   <h2
                     class="mb-3 text-xl font-semibold tracking-tight text-black"
                   >
                     {{ product.name }}
                   </h2>
                   <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
-                  <div class="mt-2">
-                    <button
+                  <div class="my-4">
+                    <a
+                      :href="product.link"
                       class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                     >
-                      See More
-                    </button>
+                      Buy Now
+                    </a>
                   </div>
                 </div>
               </div>
@@ -66,10 +67,6 @@ export default {
   },
   data() {
     return {
-      settings: {
-        itemsToShow: 1,
-        snapAlign: "center",
-      },
       products: [
         {
           id: 1,
@@ -251,9 +248,17 @@ export default {
           snapAlign: "start",
         },
       },
+      settings: {
+        itemsToShow: 1,
+        snapAlign: "center",
+      },
     };
   },
 };
 </script>
 
-<style scoped></style>
+<style>
+.carousel__slide {
+  padding: 10px;
+}
+</style>
