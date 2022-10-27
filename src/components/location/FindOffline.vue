@@ -120,7 +120,7 @@
             <a href="#"
               ><button
                 @click.prevent="map = 'default'"
-                class="rounded-lg px-4 py-3 bg-green-400 hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-3 background-yellow hover:bg-green-600 duration-300 text-white"
               >
                 Direction
               </button></a
@@ -207,7 +207,7 @@
             <a href="#"
               ><button
                 @click.prevent="map = 'palangkaraya'"
-                class="rounded-lg px-4 py-3 bg-green-400 hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-3 background-yellow hover:bg-green-600 duration-300 text-white"
               >
                 Direction
               </button></a
@@ -293,7 +293,7 @@
             <a href="#"
               ><button
                 @click.prevent="map = 'riau'"
-                class="rounded-lg px-4 py-3 bg-green-400 hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-3 background-yellow hover:bg-green-600 duration-300 text-white"
               >
                 Direction
               </button></a
@@ -379,7 +379,7 @@
             <a href="#"
               ><button
                 @click.prevent="map = 'bogor'"
-                class="rounded-lg px-4 py-3 bg-green-400 hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-3 background-yellow hover:bg-green-600 duration-300 text-white"
               >
                 Direction
               </button></a

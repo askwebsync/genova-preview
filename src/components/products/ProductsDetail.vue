@@ -48,7 +48,7 @@
             <!-- Button-->
             <div class="text-left md:mt-2">
               <button
-                class="rounded-md px-4 py-2 text-white bg-green-400 hover:bg-green-600 duration-300"
+                class="rounded-md px-4 py-2 text-white background-yellow hover:bg-green-600 duration-300"
               >
                 Buy Now
               </button>

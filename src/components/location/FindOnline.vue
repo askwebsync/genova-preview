@@ -19,7 +19,7 @@
 
         <a
           href="https://www.tokopedia.com/genovaindonesia"
-          class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+          class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
         >
           <h5
             class="text-2xl font-bold tracking-tight text-white text-center divide-y"

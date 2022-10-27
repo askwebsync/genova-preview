@@ -33,7 +33,7 @@
                   <div class="my-4">
                     <a
                       :href="product.link"
-                      class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                      class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                     >
                       Buy Now
                     </a>

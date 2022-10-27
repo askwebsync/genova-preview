@@ -33,7 +33,7 @@
             <p class="text-lg text-gray-600">RP. 155,000</p>
             <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -60,7 +60,7 @@
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -87,7 +87,7 @@
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -113,7 +113,7 @@
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -139,7 +139,7 @@
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -166,7 +166,7 @@
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -192,7 +192,7 @@
             <p class="text-lg text-gray-600">RP. 97,000</p>
             <div class="mt-2">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>

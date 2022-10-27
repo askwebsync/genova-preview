@@ -27,7 +27,7 @@
           >
             <div class="mt-6">
               <button
-                class="rounded-lg px-5 py-3 bg-green-400 hover:bg-green-600 duration-300"
+                class="rounded-lg px-5 py-3 background-yellow hover:bg-green-600 duration-300"
               >
                 Explore Now
               </button>
