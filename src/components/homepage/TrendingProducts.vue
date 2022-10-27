@@ -15,22 +15,23 @@
         </div> -->
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
-        <div class="my-12">
+        <div class="relative justify-items-center justify-center mt-12 mb-5">
           <Carousel
             :navigation="true"
             :startAutoPlay="true"
             :timeout="5000"
+            class="carousel"
             v-slot="{ currentSlide }"
           >
             <Slide v-for="product in products" :key="product.id">
               <div
                 v-show="currentSlide === product.id + 1"
-                class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg background-yellow-light slide-info"
+                class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg slide-info text-center items-center self-center justify-center"
               >
                 <img
                   :src="product.image"
                   :alt="product.name"
-                  class="w-full h-48 object-contain rounded-t-xl"
+                  class="w-full h-40 md:h-48 object-contain rounded-t-xl"
                 />
                 <div class="px-6 py-4">
                   <h2
@@ -242,8 +243,6 @@ export default {
 }
 .carousel .slide-info {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   max-height: 100%;
   height: 100%;

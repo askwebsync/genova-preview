@@ -51,7 +51,7 @@ export default {
             to="/location"
             class="text-lg md:text-xl leading-6 text-gray-500 hover:text-yellow-600"
           >
-            Product
+            Location
           </router-link>
         </div>
       </nav>

@@ -5,7 +5,7 @@
 
     <!-- Navigation -->
     <div v-if="navEnabled" class="navigate">
-      <div class="toggle-page float-left justif">
+      <div class="toggle-page float-left">
         <i @click="prevSlide" class="fas fa-chevron-left"></i>
       </div>
       <div class="toggle-page float-right right">
@@ -109,7 +109,7 @@ export default {
   background-color: goldenrod;
   color: #fff;
 }
-.pagination {
+/* .pagination {
   position: absolute;
   bottom: 24px;
   width: 100%;
@@ -128,5 +128,5 @@ export default {
 }
 .pagination .active {
   background-color: #6347c7;
-}
+} */
 </style>
