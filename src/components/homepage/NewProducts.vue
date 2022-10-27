@@ -17,7 +17,7 @@
             :wrap-around="true"
           >
             <slide v-for="product in products" :key="product.id">
-              <div class="mx-4 mb-2 rounded-lg shadow carousel__item">
+              <div class="p-2 mx-4 mb-2 rounded-lg shadow carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
