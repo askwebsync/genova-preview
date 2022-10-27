@@ -2,7 +2,7 @@
   <div>
     <div class="bg-white-100">
       <nav
-        class="container p-6 md::p-7 mx-auto md::flex md::justify-between md::items-center"
+        class="container p-7 md::p-7 mx-auto md::flex md::justify-between md::items-center"
       >
         <div class="flex items-center justify-between">
           <router-link
