@@ -2,12 +2,12 @@
   <div>
     <div class="bg-white-100">
       <nav
-        class="container p-6 lg::p-7 mx-auto lg::flex lg::justify-between lg::items-center"
+        class="container p-6 md::p-7 mx-auto md::flex md::justify-between md::items-center"
       >
         <div class="flex items-center justify-between">
           <router-link
             to="/"
-            class="text-xl font-bold text-gray-800 lg::text-2xl hover:text-blue-400"
+            class="text-xl font-bold text-gray-800 md::text-2xl hover:text-blue-400"
             ><img
               src="../assets/images/logo/Genova_Logo_no_bg.png"
               alt=""
@@ -16,7 +16,7 @@
             />
           </router-link>
           <!-- Mobile menu button -->
-          <div @click="showMenu = !showMenu" class="flex lg::hidden">
+          <div @click="showMenu = !showMenu" class="flex md::hidden">
             <button
               type="button"
               class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <div class="flex lg::order-2">
+        <div class="flex md::order-2">
           <div :class="showMenu ? 'flex' : 'hidden'" class="hidden relative">
             <div
               class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
@@ -54,7 +54,7 @@
             <input
               type="text"
               id="search-navbar"
-              class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-md border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search..."
             />
           </div>
@@ -63,9 +63,9 @@
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <ul
           :class="showMenu ? 'flex' : 'hidden'"
-          class="flex-col mt-8 space-y-4 lg::flex lg::space-y-0 lg::flex-row lg::items-center lg::space-x-10 lg::mt-0 lg::order-1"
+          class="flex-col mt-8 space-y-4 md::flex md::space-y-0 md::flex-row md::items-center md::space-x-10 md::mt-0 md::order-1"
         >
-          <li v-if="showMenu" class="relative mt-3 lg::hidden">
+          <li v-if="showMenu" class="relative mt-3 md::hidden">
             <div
               class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
             >
@@ -86,7 +86,7 @@
             <input
               type="text"
               id="search-navbar"
-              class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-md border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search..."
             />
           </li>
