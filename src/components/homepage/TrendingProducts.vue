@@ -11,9 +11,13 @@
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center mt-10 mb-5">
-          <carousel :settings="settings" :breakpoints="breakpoints">
+          <carousel
+            :settings="settings"
+            :breakpoints="breakpoints"
+            :wrap-around="true"
+          >
             <slide v-for="product in products" :key="product.id">
-              <div class="mx-4 mb-2 rounded-lg shadow-lg">
+              <div class="mx-4 mb-2 rounded-lg shadow carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
@@ -39,7 +43,7 @@
             </slide>
 
             <template #addons>
-              <navigation />
+              <pagination />
             </template>
           </carousel>
         </div>
@@ -51,14 +55,14 @@
 <script>
 // If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
 import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Navigation } from "vue3-carousel";
+import { Carousel, Slide, Pagination } from "vue3-carousel";
 
 export default {
   name: "App",
   components: {
     Carousel,
     Slide,
-    Navigation,
+    Pagination,
   },
   data() {
     return {
@@ -94,7 +98,7 @@ export default {
         {
           id: 5,
           name: "Powder Charchoal Frappe",
-          image: "powder-charchoal.png",
+          image: "powder-charcoal.png",
           price: "159,000",
           link: "https://www.tokopedia.com/genovaindonesia/genova-charcoal-frappe-powder-1000-gram?extParam=whid%3D8872969",
         },
@@ -106,131 +110,17 @@ export default {
           link: "https://www.tokopedia.com/genovaindonesia/genova-pandan-syrup-750-ml?extParam=whid%3D8872969",
         },
         {
-          id: 8,
-          name: "Syrup Caramel",
-          image: "syrup_caramel-removebg-preview.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
-        },
-        {
-          id: 9,
-          name: "Syrup Coconut",
-          image: "syrup_coconut-removebg-preview.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
-        },
-        {
-          id: 10,
-          name: "Syrup Ginger",
-          image: "syrup_ginger-removebg-preview.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
-        },
-        {
-          id: 11,
-          name: "Syrup Green Apple",
-          image: "syrup_green_apple-removebg-preview.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
-        },
-        {
-          id: 12,
-          name: "Syrup Hazelnut",
-          image: "syrup_hazelnut-removebg-preview.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
-        },
-        {
-          id: 13,
-          name: "Syrup Irish",
-          image: "syrup_irish-removebg-preview.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
-        },
-        {
-          id: 14,
-          name: "Syrup Kiwi",
-          image: "syrup_kiwi-removebg-preview.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
-        },
-        {
-          id: 15,
-          name: "Syrup Lemon",
-          image: "syrup_lemon-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 16,
-          name: "Syrup Lemongrass",
-          image: "syrup_lemongrass-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 17,
-          name: "Syrup Lychee",
-          image: "syrup_lychee-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 18,
-          name: "Syrup Manggo",
-          image: "syrup_mango-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 19,
-          name: "Syrup Mojito",
-          image: "syrup_mojito_mint-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 20,
-          name: "Syrup Pandan",
-          image: "syrup_pandan-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 21,
-          name: "Syrup Passion Fruit",
-          image: "syrup_passion_fruit-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 22,
-          name: "Syrup Peach",
-          image: "syrup_peach-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 23,
-          name: "Syrup Peppermint",
-          image: "syrup_peppermint-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 24,
-          name: "Syrup Strawberry",
-          image: "syrup_strawberry-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 25,
-          name: "Syrup Tiramisu",
-          image: "syrup_tiramisu-removebg-preview.png",
-          price: "97,000",
-        },
-        {
-          id: 26,
-          name: "Syrup Vanilla",
-          image: "syrup_vanilla-removebg-preview.png",
-          price: "97,000",
+          id: 7,
+          name: "Fruit Bland Strawberry",
+          image: "fruit_bland_strawberry.png",
+          price: "109,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-fruit-blend-strawberry-750-ml-fruit-puree?extParam=whid%3D8872969",
         },
       ],
       breakpoints: {
         // 700px and up
         400: {
-          itemsToShow: 1,
+          itemsToShow: 2,
           snapAlign: "center",
         },
         700: {
@@ -239,14 +129,14 @@ export default {
         },
         // 1024 and up
         1024: {
-          itemsToShow: 4,
+          itemsToShow: 3,
           snapAlign: "start",
         },
       },
-      settings: {
-        itemsToShow: 1,
-        snapAlign: "center",
-      },
+      // settings: {
+      //   itemsToShow: 1,
+      //   snapAlign: "center",
+      // },
     };
   },
 };
@@ -254,6 +144,47 @@ export default {
 
 <style>
 .carousel__slide {
-  padding: 10px;
+  padding: 5px;
+}
+
+.carousel__viewport {
+  perspective: 2000px;
+}
+
+.carousel__track {
+  transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+  transition: 0.5s;
+}
+
+.carousel__slide {
+  opacity: 0.9;
+  transform: rotateY(-20deg) scale(0.9);
+}
+
+.carousel__slide--active ~ .carousel__slide {
+  transform: rotateY(20deg) scale(0.9);
+}
+
+.carousel__slide--prev {
+  opacity: 1;
+  transform: rotateY(-10deg) scale(0.95);
+}
+
+.carousel__slide--next {
+  opacity: 1;
+  transform: rotateY(10deg) scale(0.95);
+}
+
+.carousel__slide--active {
+  opacity: 1;
+  transform: rotateY(0) scale(1.1);
+}
+
+.shadoww {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 </style>

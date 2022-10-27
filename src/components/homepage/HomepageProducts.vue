@@ -16,7 +16,9 @@
       <div
         class="grid grid-cols-2 md:grid-cols-3 justify-center gap-12 mt-10 mb-5"
       >
-        <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
+        <div
+          class="flex flex-col max-w-lg shadow p-4 md:p-6 items-center center"
+        >
           <router-link to="/product/trending-product">
             <img
               src="../../assets/images/product/powder/powder-tiramisu.png"
@@ -33,7 +35,9 @@
             </div>
           </router-link>
         </div>
-        <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
+        <div
+          class="flex flex-col max-w-lg shadow p-4 md:p-6 items-center center"
+        >
           <router-link to="/product/new-product">
             <img
               src="../../assets/images/product/powder/powder-cottoncandy.png"
@@ -51,7 +55,9 @@
           </router-link>
         </div>
 
-        <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
+        <div
+          class="flex flex-col max-w-lg shadow p-4 md:p-6 items-center center"
+        >
           <a href="#">
             <img
               src="../../assets/images/product/powder/powder-cookiescream.png"
@@ -67,7 +73,9 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
+        <div
+          class="flex flex-col max-w-lg shadow p-4 md:p-6 items-center center"
+        >
           <router-link to="/product/fruit-bland">
             <img
               src="../../assets/images/product/fruit-bland/fruit_bland_passion.png"
@@ -83,7 +91,9 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
+        <div
+          class="flex flex-col max-w-lg shadow p-4 md:p-6 items-center center"
+        >
           <router-link to="/product/liquid-syrup">
             <img
               src="../../assets/images/product/syrup/syrup_bluecuracao.png"
@@ -99,7 +109,9 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
+        <div
+          class="flex flex-col max-w-lg shadow p-4 md:p-6 items-center center"
+        >
           <router-link to="/product/powder-syrup">
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
@@ -127,4 +139,8 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+</style>
