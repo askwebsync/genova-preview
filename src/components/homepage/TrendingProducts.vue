@@ -8,11 +8,6 @@
           <h1 class="text-left pcolor mb-2 font-semibold text-xl">
             TRENDING FLAVOUR
           </h1>
-          <!-- <div class="rating space-y-6">
-          <p class="slider1"></p>
-          <p class="slider2"></p>
-          <p class="slider3"></p>
-        </div> -->
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center mt-10 mb-5">
@@ -70,45 +65,45 @@ export default {
       products: [
         {
           id: 1,
-          name: "Syrup Pineapple",
-          image: "syrup pineapple.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
+          name: "Powder Matcha Latte",
+          image: "powder-matchalatte.png",
+          price: "169,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-latte-frappe-powder-1000-gram?extParam=whid%3D8872969",
         },
         {
           id: 2,
-          name: "Syrup Raspberry",
-          image: "syrup raspberry.png",
+          name: "Syrup Lychee",
+          image: "syrup_lychee.png",
           price: "97,000",
-          link: "https://www.websync.id/",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-lychee-syrup-750-ml?extParam=whid%3D8872969",
+        },
+        {
+          id: 3,
+          name: "Powder Dark Chocholate",
+          image: "powder-darkchocolate.png",
+          price: "139,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-dark-chocolate-frappe-powder-1000-gram?extParam=whid%3D8872969",
         },
         {
           id: 4,
-          name: "Syrup Banana",
-          image: "syrup_banana-removebg-preview.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
+          name: "Powder Red Velvet",
+          image: "powder-redvelvet.png",
+          price: "139,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-red-velvet-frappe-powder-1000-gram?extParam=whid%3D8872969",
         },
         {
           id: 5,
-          name: "Syrup Blue Curacao",
-          image: "syrup_blue_curacao-removebg-preview.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
+          name: "Powder Charchoal Frappe",
+          image: "powder-charchoal.png",
+          price: "159,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-charcoal-frappe-powder-1000-gram?extParam=whid%3D8872969",
         },
         {
           id: 6,
-          name: "Syrup Bubblegum",
-          image: "syrup_bubble_gum-removebg-preview.png",
+          name: "Syrup Pandan",
+          image: "syrup_pandan.png",
           price: "97,000",
-          link: "https://www.websync.id/",
-        },
-        {
-          id: 7,
-          name: "Syrup Butterscotch",
-          image: "syrup_butterscotch-removebg-preview.png",
-          price: "97,000",
-          link: "https://www.websync.id/",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-pandan-syrup-750-ml?extParam=whid%3D8872969",
         },
         {
           id: 8,
