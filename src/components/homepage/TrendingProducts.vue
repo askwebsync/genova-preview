@@ -17,11 +17,11 @@
             :wrap-around="true"
           >
             <slide v-for="product in products" :key="product.id">
-              <div class="p-2 mx-4 mb-2 rounded-lg shadow carousel__item">
+              <div class="p-5 mx-4 mb-2 bg-gray-300 shadow carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
-                  class="w-full h-40 md:h-48 object-contain rounded-t-xl"
+                  class="w-full h-40 lg:h-48 object-contain rounded-t-xl"
                 />
                 <div class="p-5">
                   <h2
@@ -30,7 +30,7 @@
                     {{ product.name }}
                   </h2>
                   <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
-                  <div class="my-4">
+                  <div class="mt-6">
                     <a
                       :href="product.link"
                       class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
@@ -71,7 +71,7 @@ export default {
       products: [
         {
           id: 1,
-          name: "Powder Matcha Latte",
+          name: "Matcha Latte",
           image: "powder-matchalatte.png",
           price: "169,000",
           link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-latte-frappe-powder-1000-gram?extParam=whid%3D8872969",
@@ -85,21 +85,21 @@ export default {
         },
         {
           id: 3,
-          name: "Powder Dark Chocholate",
+          name: "Dark Chocholate",
           image: "powder-darkchocolate.png",
           price: "139,000",
           link: "https://www.tokopedia.com/genovaindonesia/genova-dark-chocolate-frappe-powder-1000-gram?extParam=whid%3D8872969",
         },
         {
           id: 4,
-          name: "Powder Red Velvet",
+          name: "Red Velvet",
           image: "powder-redvelvet.png",
           price: "139,000",
           link: "https://www.tokopedia.com/genovaindonesia/genova-red-velvet-frappe-powder-1000-gram?extParam=whid%3D8872969",
         },
         {
           id: 5,
-          name: "Powder Charchoal Frappe",
+          name: "Charchoal Frappe",
           image: "powder-charcoal.png",
           price: "159,000",
           link: "https://www.tokopedia.com/genovaindonesia/genova-charcoal-frappe-powder-1000-gram?extParam=whid%3D8872969",

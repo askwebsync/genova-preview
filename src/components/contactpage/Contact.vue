@@ -18,13 +18,17 @@
       <div
         class="grid md:grid-cols-2 lg:grid-cols-3 self-center gap-6 p-6 md:flex-row lg:px-12"
       >
-        <div class="flex flex-col items-center gap-6 card p-6 max-w-xl">
+        <div
+          class="flex flex-col items-center gap-6 background-yellow p-6 max-w-xl"
+        >
           <i class="card-icon far fa-envelope"></i>
           <h3 class="text-lg font-semibold text-white mt-6">
             genovaindonesiaofficial@gmail.com
           </h3>
         </div>
-        <div class="flex flex-col items-center gap-6 card p-6 max-w-xl">
+        <div
+          class="flex flex-col items-center gap-6 background-yellow p-6 max-w-xl"
+        >
           <i class="card-icon fas fa-phone"></i>
           <h3 class="text-lg font-semibold text-white mt-6">
             <a href="tel:081212128171" class="hover:text-blue-400"
@@ -32,7 +36,9 @@
             >
           </h3>
         </div>
-        <div class="flex flex-col items-center gap-6 card p-6 max-w-xl">
+        <div
+          class="flex flex-col items-center gap-6 background-yellow p-6 max-w-xl"
+        >
           <i class="card-icon fas fa-map-marker-alt"></i>
 
           <h3 class="text-lg font-semibold text-white mt-6">
@@ -46,10 +52,6 @@
 </template>
 
 <style scoped>
-.card {
-  background: darkseagreen;
-}
-
 .card-icon {
   margin-top: 12px;
   font-size: 28px;

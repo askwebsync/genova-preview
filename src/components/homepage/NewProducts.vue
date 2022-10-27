@@ -17,11 +17,11 @@
             :wrap-around="true"
           >
             <slide v-for="product in products" :key="product.id">
-              <div class="p-2 mx-4 mb-2 rounded-lg shadow carousel__item">
+              <div class="p-5 mx-4 mb-2 bg-gray-300 shadow carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
-                  class="w-full h-40 md:h-48 object-contain rounded-t-xl"
+                  class="w-full h-40 lg:h-48 object-contain rounded-t-xl"
                 />
                 <div class="p-5">
                   <h2
@@ -30,7 +30,7 @@
                     {{ product.name }}
                   </h2>
                   <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
-                  <div class="my-4">
+                  <div class="mt-6">
                     <a
                       :href="product.link"
                       class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
