@@ -15,19 +15,10 @@
         </div> -->
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
-        <div class="relative justify-items-center justify-center mt-12 mb-5">
-          <Carousel
-            :navigation="true"
-            :startAutoPlay="true"
-            :timeout="5000"
-            class="carousel"
-            v-slot="{ currentSlide }"
-          >
-            <Slide v-for="product in products" :key="product.id">
-              <div
-                v-show="currentSlide === product.id + 1"
-                class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg slide-info text-center items-center self-center justify-center"
-              >
+        <div class="justify-items-center justify-center gap-12 mt-10 mb-5">
+          <carousel :settings="settings" :breakpoints="breakpoints">
+            <slide v-for="product in products" :key="product.id">
+              <div class="mx-4 mb-2 rounded-lg shadow-lg">
                 <img
                   :src="product.image"
                   :alt="product.name"
@@ -41,17 +32,20 @@
                   </h2>
                   <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
                   <div class="mt-2">
-                    <a
-                      v-bind:href="product.link"
+                    <button
                       class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
                     >
                       See More
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
-            </Slide>
-          </Carousel>
+            </slide>
+
+            <template #addons>
+              <navigation />
+            </template>
+          </carousel>
         </div>
       </div>
     </div>
@@ -59,13 +53,23 @@
 </template>
 
 <script>
-import Carousel from "../Carousel.vue";
-import Slide from "../Slide.vue";
+// If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
 
 export default {
-  components: { Carousel, Slide },
+  name: "App",
+  components: {
+    Carousel,
+    Slide,
+    Navigation,
+  },
   data() {
     return {
+      settings: {
+        itemsToShow: 1,
+        snapAlign: "center",
+      },
       products: [
         {
           id: 1,
@@ -231,20 +235,25 @@ export default {
           price: "97,000",
         },
       ],
+      breakpoints: {
+        // 700px and up
+        400: {
+          itemsToShow: 1,
+          snapAlign: "center",
+        },
+        700: {
+          itemsToShow: 3,
+          snapAlign: "center",
+        },
+        // 1024 and up
+        1024: {
+          itemsToShow: 4,
+          snapAlign: "start",
+        },
+      },
     };
   },
 };
 </script>
 
-<style scoped>
-.carousel {
-  position: relative;
-  height: 50vh;
-}
-.carousel .slide-info {
-  position: absolute;
-  width: 100%;
-  max-height: 100%;
-  height: 100%;
-}
-</style>
+<style scoped></style>

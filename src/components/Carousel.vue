@@ -20,7 +20,7 @@ import { ref, onMounted } from "vue";
 export default {
   props: ["startAutoPlay", "timeout", "navigation"],
   setup(props) {
-    const currentSlide = ref(1);
+    const currentSlide = ref(2);
     const getSlideCount = ref(null);
     const autoPlayEnabled = ref(
       props.startAutoPlay === undefined ? true : props.startAutoPlay
@@ -87,7 +87,6 @@ export default {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .right {
@@ -96,7 +95,7 @@ export default {
 }
 .navigate .toggle-page {
   display: flex;
-  flex: 1;
+  flex: auto;
 }
 .navigate i {
   cursor: pointer;
