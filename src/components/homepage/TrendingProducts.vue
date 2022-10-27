@@ -43,6 +43,7 @@
             </slide>
 
             <template #addons>
+              <navigation />
               <pagination />
             </template>
           </carousel>
@@ -55,13 +56,14 @@
 <script>
 // If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
 import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Pagination } from "vue3-carousel";
+import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 
 export default {
   name: "App",
   components: {
     Carousel,
     Slide,
+    Navigation,
     Pagination,
   },
   data() {
@@ -182,9 +184,11 @@ export default {
   opacity: 1;
   transform: rotateY(0) scale(1.1);
 }
-
-.shadoww {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+.carousel__pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  line-height: 0;
+  margin: 20px 0 0;
 }
 </style>

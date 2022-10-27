@@ -3,7 +3,7 @@
   <section class="container mx-auto">
     <div class="p-5 md:px-2 lg:px-6 lg:py-12 xl:px-12">
       <div class="flex flex-row">
-        <h1 class="text-left text-black mb-2 pproduct text-xl pcolor">
+        <h1 class="text-left text-black mb-2 pproduct text-lg pcolor">
           PRODUCTS
         </h1>
         <!-- <div class="rating space-y-6">
@@ -14,7 +14,7 @@
       </div>
       <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
       <div
-        class="grid grid-cols-2 md:grid-cols-3 justify-center gap-12 mt-10 mb-5"
+        class="grid grid-cols-2 md:grid-cols-3 justify-center gap-4 md:gap-12 mt-10 mb-5"
       >
         <div
           class="flex flex-col max-w-lg shadow p-4 md:p-6 items-center center"
@@ -28,7 +28,7 @@
 
             <div class="p-2 mt-2">
               <p
-                class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
+                class="text-lg md:text-2xl pproduct text-black truncate block capitalize"
               >
                 Trending Flavour
               </p>
@@ -47,7 +47,7 @@
 
             <div class="max-w-lg p-2 mt-2">
               <p
-                class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
+                class="text-lg md:text-2xl pproduct text-black truncate block capitalize"
               >
                 New Flavour
               </p>
@@ -67,7 +67,7 @@
           </a>
           <div class="max-w-lg p-2 mt-2">
             <p
-              class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
+              class="text-lg md:text-2xl pproduct text-black truncate block capitalize"
             >
               Beverage Boost
             </p>
@@ -85,7 +85,7 @@
           </router-link>
           <div class="max-w-lg p-2 mt-2">
             <p
-              class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
+              class="text-lg md:text-2xl pproduct text-black truncate block capitalize"
             >
               Fruit Blend
             </p>
@@ -103,7 +103,7 @@
           </router-link>
           <div class="max-w-lg p-2 mt-2">
             <p
-              class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
+              class="text-lg md:text-2xl pproduct text-black truncate block capitalize"
             >
               Liquid Syrup
             </p>
@@ -121,7 +121,7 @@
           </router-link>
           <div class="max-w-lg p-2 mt-2">
             <p
-              class="text-xl md:text-2xl pproduct text-black truncate block capitalizee"
+              class="text-lg md:text-2xl pproduct text-black truncate block capitalizee"
             >
               Powder Syrup
             </p>

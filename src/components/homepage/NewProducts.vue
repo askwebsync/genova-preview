@@ -11,15 +11,19 @@
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center mt-10 mb-5">
-          <carousel :settings="settings" :breakpoints="breakpoints">
+          <carousel
+            :settings="settings"
+            :breakpoints="breakpoints"
+            :wrap-around="true"
+          >
             <slide v-for="product in products" :key="product.id">
-              <div class="mx-4 mb-2 rounded-lg shadow-lg">
+              <div class="mx-4 mb-2 rounded-lg shadow carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
                   class="w-full h-40 md:h-48 object-contain rounded-t-xl"
                 />
-                <div class="p-5 md:p-7">
+                <div class="p-5">
                   <h2
                     class="mb-3 text-xl font-semibold tracking-tight text-black"
                   >
@@ -40,6 +44,7 @@
 
             <template #addons>
               <navigation />
+              <pagination />
             </template>
           </carousel>
         </div>
@@ -51,7 +56,7 @@
 <script>
 // If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
 import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Navigation } from "vue3-carousel";
+import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
 
 export default {
   name: "App",
@@ -59,6 +64,7 @@ export default {
     Carousel,
     Slide,
     Navigation,
+    Pagination,
   },
   data() {
     return {
