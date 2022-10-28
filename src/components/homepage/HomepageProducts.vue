@@ -22,7 +22,7 @@
 
             <div class="p-2 mt-2">
               <p
-                class="text-lg md:text-2xl pproduct text-black truncate block capitalize"
+                class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
               >
                 Trending Flavour
               </p>
@@ -41,7 +41,7 @@
 
             <div class="max-w-lg p-2 mt-2">
               <p
-                class="text-lg md:text-2xl pproduct text-black truncate block capitalize"
+                class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
               >
                 New Flavour
               </p>
@@ -61,7 +61,7 @@
           </a>
           <div class="max-w-lg p-2 mt-2">
             <p
-              class="text-lg md:text-2xl pproduct text-black truncate block capitalize"
+              class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
             >
               Beverage Boost
             </p>
@@ -79,13 +79,13 @@
 
             <div class="p-2 my-2">
               <p
-                class="text-lg md:text-2xl pproduct text-black truncate block capitalizee"
+                class="text-xl md:text-2xl pproduct text-black truncate block capitalizee"
               >
                 Fruit Bland
               </p>
               <div class="mt-4 md:mt-6">
                 <button
-                  class="rounded-lg p-2 md:p-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  class="rounded-lg p-3 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -105,13 +105,13 @@
 
             <div class="p-2 my-2">
               <p
-                class="text-lg md:text-2xl pproduct text-black truncate block capitalizee"
+                class="text-xl md:text-2xl pproduct text-black truncate block capitalizee"
               >
                 Liquid Syrup
               </p>
               <div class="mt-4 md:mt-6">
                 <button
-                  class="rounded-lg p-2 md:p-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  class="rounded-lg p-3 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -131,13 +131,13 @@
 
             <div class="p-2 my-2">
               <p
-                class="text-lg md:text-2xl pproduct text-black truncate block capitalizee"
+                class="text-xl md:text-2xl pproduct text-black truncate block capitalizee"
               >
                 Powder Syrup
               </p>
               <div class="mt-4 md:mt-6">
                 <button
-                  class="rounded-lg p-2 md:p-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  class="rounded-lg p-3 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
