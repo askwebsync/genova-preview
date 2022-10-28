@@ -6,7 +6,7 @@
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1 class="text-left pcolor mb-6 text-xs md:text-sm">LIQUID SYRUP</h1>
+          <h1 class="text-left pcolor mb-3 text-xs md:text-sm">LIQUID SYRUP</h1>
           <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
 
@@ -49,7 +49,7 @@
       >
         <div v-for="product in resultQuery" :key="product.id">
           <div
-            class="max-w-xs mx-4 mb-6 rounded-lg shadow-lg background-yellow-light"
+            class="max-w-xs mx-4 mb-3 rounded-lg shadow-lg background-yellow-light"
           >
             <img
               :src="product.image"

@@ -5,7 +5,7 @@
     <div class="container mx-auto">
       <div class="mt-12 p-4 lg:p-6 lg:py-12 xl:p-12">
         <div class="flex flex-row">
-          <h1 class="text-left pcolor mb-6 text-xs md:text-sm">
+          <h1 class="text-left pcolor mb-3 text-xs md:text-sm">
             TRENDING FLAVOUR
           </h1>
           <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
@@ -14,7 +14,7 @@
         <div class="justify-items-center justify-center my-12">
           <carousel :settings="settings" :breakpoints="breakpoints">
             <slide v-for="product in products" :key="product.id">
-              <div class="p-5 mx-4 mb-6 carousel__item">
+              <div class="p-5 mx-4 mb-3 carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"

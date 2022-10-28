@@ -3,7 +3,7 @@
   <section class="container mx-auto">
     <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="flex flex-row">
-        <h1 class="text-left pcolor mb-6 text-xs md:text-sm">
+        <h1 class="text-left pcolor mb-3 text-xs md:text-sm">
           PRODUCT CATEGORY
         </h1>
         <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->

@@ -2,7 +2,9 @@
 <template>
   <section class="container mx-auto mb-4">
     <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
-      <h1 class="text-left pcolor mb-6">Standart Recipe</h1>
+      <h1 class="text-left pcolor mb-3 text-xs md:text-sm lg:text-lg">
+        Standart Recipe
+      </h1>
       <hr class="h-1 rounded w-32 background-navbar border-0" />
       <div class="flex flex-col my-12 gap-8">
         <div
