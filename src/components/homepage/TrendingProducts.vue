@@ -5,18 +5,16 @@
     <div class="container mx-auto">
       <div class="mt-12 p-4 lg:p-6 lg:py-12 xl:p-12">
         <div class="flex flex-row">
-          <h1 class="text-left pcolor mb-6">TRENDING FLAVOUR</h1>
+          <h1 class="text-left pcolor mb-6 text-xs md:text-sm">
+            TRENDING FLAVOUR
+          </h1>
           <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center my-12">
-          <carousel
-            :settings="settings"
-            :breakpoints="breakpoints"
-            :wrap-around="true"
-          >
+          <carousel :settings="settings" :breakpoints="breakpoints">
             <slide v-for="product in products" :key="product.id">
-              <div class="p-5 mx-4 mb-6 bg-gray-300 shadow carousel__item">
+              <div class="p-5 mx-4 mb-6 carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
@@ -119,18 +117,17 @@ export default {
         },
       ],
       breakpoints: {
-        // 700px and up
         400: {
           itemsToShow: 1,
           snapAlign: "center",
         },
         700: {
-          itemsToShow: 3,
+          itemsToShow: 2,
           snapAlign: "center",
         },
-        // 1024 and up
+
         1024: {
-          itemsToShow: 4,
+          itemsToShow: 3,
           snapAlign: "start",
         },
       },
@@ -138,10 +135,6 @@ export default {
         itemsToShow: 1,
         snapAlign: "center",
       },
-      // settings: {
-      //   itemsToShow: 1,
-      //   snapAlign: "center",
-      // },
     };
   },
 };
@@ -156,11 +149,11 @@ export default {
   margin: 20px 0 0;
 }
 .carousel__next {
-  right: -10px;
+  right: -20px;
   background-color: #bdb76b;
 }
 .carousel__prev {
-  left: -10px;
+  left: -20px;
   background-color: #bdb76b;
 }
 </style>

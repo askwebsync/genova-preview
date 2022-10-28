@@ -8,9 +8,7 @@
         </div>
         <hr class="h-1 rounded w-32 background-navbar border-0" />
         <div class="grid md:grid-cols-3 justify-center gap-12 mt-10 mb-5">
-          <div
-            class="flex flex-col max-w-lg p-4 md:p-6 items-center background-navbar shadow-page-product center"
-          >
+          <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
             <router-link to="/product/trending-product">
               <img
                 src="../../assets/images/product/powder/powder-tiramisu.png"
@@ -20,16 +18,14 @@
 
               <div class="max-w-lg p-2 mt-2">
                 <p
-                  class="text-2xl md:text-2xl pproduct text-white truncate block capitalize"
+                  class="text-2xl md:text-2xl pproduct text-black truncate block capitalize"
                 >
                   Trending Product
                 </p>
               </div>
             </router-link>
           </div>
-          <div
-            class="flex flex-col max-w-lg p-4 md:p-6 items-center background-navbar shadow-page-product center"
-          >
+          <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
             <router-link to="/product/new-product">
               <img
                 src="../../assets/images/product/powder/powder-cottoncandy.png"
@@ -39,16 +35,14 @@
 
               <div class="max-w-lg p-2 mt-2">
                 <p
-                  class="text-2xl md:text-2xl pproduct text-white truncate block capitalize"
+                  class="text-2xl md:text-2xl pproduct text-black truncate block capitalize"
                 >
                   New Product
                 </p>
               </div>
             </router-link>
           </div>
-          <div
-            class="flex flex-col max-w-lg p-4 md:p-6 items-center background-navbar shadow-page-product center"
-          >
+          <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
             <a href="#">
               <img
                 src="../../assets/images/product/powder/powder-cookiescream.png"
@@ -58,15 +52,13 @@
             </a>
             <div class="max-w-lg p-2 mt-2">
               <p
-                class="text-2xl md:text-2xl pproduct text-white truncate block capitalize"
+                class="text-2xl md:text-2xl pproduct text-black truncate block capitalize"
               >
                 Beverage Boost
               </p>
             </div>
           </div>
-          <div
-            class="flex flex-col max-w-lg p-4 md:p-6 items-center background-navbar shadow-page-product center"
-          >
+          <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
             <router-link to="/product/fruit-bland">
               <img
                 src="../../assets/images/product/fruit-bland/fruit_bland_passion.png"
@@ -76,15 +68,13 @@
             </router-link>
             <div class="max-w-lg p-2 mt-2">
               <p
-                class="text-2xl md:text-2xl pproduct text-white truncate block capitalize"
+                class="text-2xl md:text-2xl pproduct text-black truncate block capitalize"
               >
                 Fruit Blend
               </p>
             </div>
           </div>
-          <div
-            class="flex flex-col max-w-lg p-4 md:p-6 items-center background-navbar shadow-page-product center"
-          >
+          <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
             <router-link to="/product/liquid-syrup">
               <img
                 src="../../assets/images/product/syrup/syrup_bluecuracao.png"
@@ -94,15 +84,13 @@
             </router-link>
             <div class="max-w-lg p-2 mt-2">
               <p
-                class="text-2xl md:text-2xl pproduct text-white truncate block capitalize"
+                class="text-2xl md:text-2xl pproduct text-black truncate block capitalize"
               >
                 Liquid Syrup
               </p>
             </div>
           </div>
-          <div
-            class="flex flex-col max-w-lg p-4 md:p-6 items-center background-navbar shadow-page-product center"
-          >
+          <div class="flex flex-col max-w-lg p-4 md:p-6 items-center center">
             <router-link to="/product/powder-syrup">
               <img
                 src="../../assets/images/product/powder/powder-redvelvet.png"
@@ -112,7 +100,7 @@
             </router-link>
             <div class="max-w-lg p-2 mt-2">
               <p
-                class="text-2xl md:text-2xl pproduct text-white truncate block capitalizee"
+                class="text-2xl md:text-2xl pproduct text-black truncate block capitalizee"
               >
                 Powder Syrup
               </p>
