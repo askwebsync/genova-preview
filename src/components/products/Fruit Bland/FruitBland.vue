@@ -1,11 +1,11 @@
 <template>
   <section class="container mx-auto">
-    <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
+    <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1 class="text-left pcolor mb-2 font-semibold text-xl md:text-2xl">
+          <h1 class="text-left pcolor mb-6 font-semibold text-xl md:text-2xl">
             FRUIT BLEND
           </h1>
           <hr class="h-1 rounded w-28 background-navbar border-0" />
@@ -50,7 +50,7 @@
       >
         <div v-for="product in resultQuery" :key="product.id">
           <div
-            class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg background-yellow-light"
+            class="max-w-xs mx-4 mb-6 rounded-lg shadow-lg background-yellow-light"
           >
             <img
               :src="product.image"
@@ -62,9 +62,9 @@
                 {{ product.name }}
               </h2>
               <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
-              <div class="mt-2">
+              <div class="mt-6">
                 <button
-                  class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>

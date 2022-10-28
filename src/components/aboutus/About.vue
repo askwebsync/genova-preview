@@ -1,14 +1,16 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="container mx-auto">
-    <div class="container-awal py-12">
+    <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
+      <div class="my-4 text-center center mb-12">
+        <h1 class="pcolor mb-4">About Us</h1>
+        <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
+      </div>
       <div class="about-section">
-        <div class="inner-container inner-container-shadow justify-center p-24">
-          <div class="text-left">
-            <h1 class="mb-1 text-2xl md:text-3xl lg:text-4xl">About Us</h1>
-            <hr class="h-1 rounded w-32 bg-black border-0" />
-          </div>
-          <ul class="text-left mt-12 space-y-12">
+        <div
+          class="inner-container bg-gray-300 inner-container-shadow justify-center p-24"
+        >
+          <ul class="text-left mt- space-y-12">
             <li>
               <p class="leading-6 font-semibold tracking-wide">
                 GENOVA adalah perusahaan yang bergerak memproduksi Premium
@@ -61,13 +63,11 @@
 
 .inner-container {
   width: 55%;
-  background-color: #fdfdfd;
 }
 
 .inner-container-shadow {
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -91,7 +91,7 @@
     padding: 0;
   }
   .inner-container {
-    padding: 60px;
+    padding: 50px;
   }
 }
 </style>

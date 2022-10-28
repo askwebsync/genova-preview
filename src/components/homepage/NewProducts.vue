@@ -1,253 +1,162 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="container mx-auto">
-    <div class="mt-2 p-6 md:px-2 lg:px-6 lg:py-12 xl:px-12">
-      <div class="flex flex-row">
-        <h1 class="text-left pcolor mb-2 font-semibold text-xl">NEW FLAVOUR</h1>
-        <!-- <div class="rating space-y-6">
-          <p class="slider1"></p>
-          <p class="slider2"></p>
-          <p class="slider3"></p>
-        </div> -->
-      </div>
-      <hr class="h-1 rounded w-32 background-navbar border-0" />
-      <div
-        class="grid md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-12 mt-10 mb-5"
-      >
-        <div
-          class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6 items-center"
-        >
-          <router-link to="/detail-product">
-            <img
-              src="../../assets/images/product/powder/powder-cookiescream.png"
-              alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
-            />
-          </router-link>
-          <div class="flex flex-col gap-3 p-5">
-            <p
-              class="text-lg font-semibold text-black truncate block capitalize"
-            >
-              Cookies & Cream
-            </p>
-            <p class="text-lg text-gray-600">RP. 155,000</p>
-            <div class="mt-2">
-              <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
-              >
-                See More
-              </button>
-            </div>
-          </div>
+  <section class="">
+    <div class="container mx-auto">
+      <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
+        <div class="flex flex-row">
+          <h1 class="text-left pcolor mb-6 text-xs md:text-sm">NEW FLAVOUR</h1>
+          <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
         </div>
+        <hr class="h-1 rounded w-32 background-yellow border-0" />
+        <div class="justify-items-center justify-center mt-10 mb-5">
+          <carousel :settings="settings" :breakpoints="breakpoints">
+            <slide v-for="product in products" :key="product.id">
+              <div class="p-5 mx-4 mb-6 carousel__item">
+                <img
+                  :src="product.image"
+                  :alt="product.name"
+                  class="w-full h-40 lg:h-48 object-contain rounded-t-xl"
+                />
+                <div class="p-5">
+                  <h2
+                    class="mb-3 text-xl font-semibold tracking-tight text-black"
+                  >
+                    {{ product.name }}
+                  </h2>
+                  <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+                  <div class="mt-6">
+                    <a
+                      :href="product.link"
+                      class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </slide>
 
-        <div
-          class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6 items-center"
-        >
-          <a href="#">
-            <img
-              src="../../assets/images/product/syrup/syrup_pineapple.png"
-              alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
-            />
-          </a>
-          <div class="flex flex-col gap-3 p-5">
-            <p
-              class="text-lg font-semibold text-black truncate block capitalize"
-            >
-              Pineapple
-            </p>
-            <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="mt-2">
-              <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
-              >
-                See More
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6 items-center"
-        >
-          <a href="#">
-            <img
-              src="../../assets/images/product/syrup/syrup_raspberry.png"
-              alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
-            />
-          </a>
-          <div class="flex flex-col gap-3 p-5">
-            <p
-              class="text-lg font-semibold text-black truncate block capitalize"
-            >
-              Raspberry
-            </p>
-            <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="mt-2">
-              <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
-              >
-                See More
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex flex-col max-w-lg mx-4 p-4 card-color-satu md:p-6 items-center"
-        >
-          <a href="#">
-            <img
-              src="../../assets/images/product/syrup/syrup_tiramisu.png"
-              alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
-            />
-          </a>
-          <div class="flex flex-col gap-3 p-5">
-            <p
-              class="text-lg font-semibold text-black truncate block capitalize"
-            >
-              Tiramisu
-            </p>
-            <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="mt-2">
-              <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
-              >
-                See More
-              </button>
-            </div>
-          </div>
+            <template #addons>
+              <navigation />
+              <pagination />
+            </template>
+          </carousel>
         </div>
       </div>
     </div>
   </section>
 </template>
+
 <script>
+// If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
+
 export default {
+  name: "App",
+  components: {
+    Carousel,
+    Slide,
+    Navigation,
+    Pagination,
+  },
   data() {
     return {
-      cards: [1, 2, 3, 4, 5, 6, 7, 8],
-      //   products: [
-      //     {
-      //       productTitle: "ABCN",
-      //       image: [
-      //         require("../../assets/images/fruit bland mango.png"),
-      //         require("../../assets/images/fruit bland mango.png"),
-      //       ],
-      //       productId: 1,
-      //     },
-      //     {
-      //       productTitle: "KARMA",
-      //       image: [require("../../assets/images/fruit bland mango.png")],
-      //       productId: 2,
-      //     },
-      //     {
-      //       productTitle: "Tino",
-      //       image: [require("../../assets/images/fruit bland mango.png")],
-      //       productId: 3,
-      //     },
-      //     {
-      //       productTitle: "EFG",
-      //       image: [require("../../assets/images/fruit bland mango.png")],
-      //       productId: 4,
-      //     },
-      //   ],
-      innerStyles: {},
-      step: "",
-      transitioning: false,
+      products: [
+        {
+          id: 1,
+          name: "Cookies & Cream",
+          image: "powder-cookiescream.png",
+          price: "155,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-cookies-cream-frappe-powder-1000-gram?extParam=whid%3D8872969",
+        },
+        {
+          id: 2,
+          name: "Syrup Pineapple",
+          image: "syrup_pineapple.png",
+          price: "97,000",
+          link: "https://www.tokopedia.com/genovaindonesia/syrup-genova-pineapple-750-ml?extParam=whid%3D8872969",
+        },
+        {
+          id: 4,
+          name: "Syrup Raspberry",
+          image: "syrup_raspberry.png",
+          price: "97,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-rasbery-syrup-750-ml?extParam=whid%3D8872969",
+        },
+        {
+          id: 5,
+          name: "Syrup Tiramisu",
+          image: "syrup_tiramisu.png",
+          price: "97,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-tiramisu-syrup-750-ml?extParam=whid%3D8872969",
+        },
+        {
+          id: 6,
+          name: "Syrup Coconut",
+          image: "syrup_coconut.png",
+          price: "97,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-coconut-syrup-750-ml?extParam=whid%3D8872969",
+        },
+        {
+          id: 7,
+          name: "Syrup Butterscotch",
+          image: "syrup_butterscotch.png",
+          price: "97,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-butterscotch-syrup-750-ml?extParam=whid%3D8872969",
+        },
+        {
+          id: 8,
+          name: "Syrup Lemon",
+          image: "syrup_lemon.png",
+          price: "97,000",
+          link: "https://www.tokopedia.com/genovaindonesia/genova-lemon-syrup-750-ml?extParam=whid%3D8872969",
+        },
+      ],
+      breakpoints: {
+        400: {
+          itemsToShow: 1,
+          snapAlign: "center",
+        },
+        700: {
+          itemsToShow: 2,
+          snapAlign: "center",
+        },
+
+        1024: {
+          itemsToShow: 3,
+          snapAlign: "start",
+        },
+      },
+      settings: {
+        itemsToShow: 1,
+        snapAlign: "center",
+      },
     };
   },
-  //   mounted() {
-  //     this.setStep();
-  //     this.resetTranslate();
-  //   },
-
-  //   methods: {
-  //     setStep() {
-  //       const innerWidth = this.$refs.inner.scrollWidth;
-  //       const totalCards = this.cards.length;
-  //       this.step = `${innerWidth / totalCards}px`;
-  //     },
-
-  //     next() {
-  //       if (this.transitioning) return;
-
-  //       this.transitioning = true;
-
-  //       this.moveLeft();
-
-  //       this.afterTransition(() => {
-  //         const card = this.cards.shift();
-  //         this.cards.push(card);
-  //         this.resetTranslate();
-  //         this.transitioning = false;
-  //       });
-  //     },
-
-  //     prev() {
-  //       if (this.transitioning) return;
-
-  //       this.transitioning = true;
-
-  //       this.moveRight();
-
-  //       this.afterTransition(() => {
-  //         const card = this.cards.pop();
-  //         this.cards.unshift(card);
-  //         this.resetTranslate();
-  //         this.transitioning = false;
-  //       });
-  //     },
-
-  //     moveLeft() {
-  //       this.innerStyles = {
-  //         transform: `translateX(-${this.step})
-  //                     translateX(-${this.step})`,
-  //       };
-  //     },
-
-  //     moveRight() {
-  //       this.innerStyles = {
-  //         transform: `translateX(${this.step})
-  //                     translateX(-${this.step})`,
-  //       };
-  //     },
-
-  //     afterTransition(callback) {
-  //       const listener = () => {
-  //         callback();
-  //         this.$refs.inner.removeEventListener("transitionend", listener);
-  //       };
-  //       this.$refs.inner.addEventListener("transitionend", listener);
-  //     },
-
-  //     resetTranslate() {
-  //       this.innerStyles = {
-  //         transition: "none",
-  //         transform: `translateX(-${this.step})`,
-  //       };
-  //     },
-  //   },
 };
 </script>
 
-<style scoped>
-.carousel {
-  width: 170px;
-  overflow: hidden;
+<style>
+.carousel__pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  line-height: 0;
+  margin: 20px 0 0;
 }
-
-.inner {
-  transition: transform 0.2s;
-  white-space: nowrap;
+.carousel__next {
+  right: -20px;
+  background-color: #bdb76b;
 }
-
-/* optional */
-button {
-  margin-right: 5px;
-  margin-top: 10px;
+.carousel__prev {
+  left: -20px;
+  background-color: #bdb76b;
+}
+.carousel__icon {
+  width: var(--vc-icn-width);
+  height: var(--vc-icn-width);
+  fill: white;
 }
 </style>

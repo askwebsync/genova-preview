@@ -1,9 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="container mx-auto">
-    <div class="mt-2 p-6 md:px-2 lg:px-6 lg:py-12 xl:px-12">
+    <div class="mt-6 p-6 md:px-2 lg:px-6 lg:py-12 xl:px-12">
       <div class="flex flex-row">
-        <h1 class="text-left pcolor mb-2 font-semibold text-xl">NEW FLAVOUR</h1>
+        <h1 class="text-left pcolor mb-6 font-semibold text-xl">NEW FLAVOUR</h1>
         <!-- <div class="rating space-y-6">
           <p class="slider1"></p>
           <p class="slider2"></p>
@@ -21,7 +21,7 @@
             <img
               src="../../assets/images/product/powder/powder-cookiescream.png"
               alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </router-link>
           <div class="flex flex-col gap-3 p-5">
@@ -31,9 +31,9 @@
               Cookies & Cream
             </p>
             <p class="text-lg text-gray-600">RP. 155,000</p>
-            <div class="mt-2">
+            <div class="mt-6">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -48,7 +48,7 @@
             <img
               src="../../assets/images/product/syrup/syrup_pineapple.png"
               alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -58,9 +58,9 @@
               Pineapple
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="mt-2">
+            <div class="mt-6">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -75,7 +75,7 @@
             <img
               src="../../assets/images/product/syrup/syrup_raspberry.png"
               alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -85,9 +85,9 @@
               Raspberry
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="mt-2">
+            <div class="mt-6">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -101,7 +101,7 @@
             <img
               src="../../assets/images/product/syrup/syrup_tiramisu.png"
               alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -111,9 +111,9 @@
               Tiramisu
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="mt-2">
+            <div class="mt-6">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -127,7 +127,7 @@
             <img
               src="../../assets/images/product/syrup/syrup_coconut.png"
               alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -137,9 +137,9 @@
               Coconut
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="mt-2">
+            <div class="mt-6">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -154,7 +154,7 @@
             <img
               src="../../assets/images/product/syrup/syrup_butterscotch.png"
               alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -164,9 +164,9 @@
               Butterscotch
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="mt-2">
+            <div class="mt-6">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
@@ -180,7 +180,7 @@
             <img
               src="../../assets/images/product/syrup/syrup_lemon.png"
               alt="Product"
-              class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+              class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
             />
           </a>
           <div class="flex flex-col gap-3 p-5">
@@ -190,9 +190,9 @@
               Lemon
             </p>
             <p class="text-lg text-gray-600">RP. 97,000</p>
-            <div class="mt-2">
+            <div class="mt-6">
               <button
-                class="rounded-lg px-4 py-2 bg-yellow-400 hover:bg-yellow-600 duration-300 text-white font-bold"
+                class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
               >
                 See More
               </button>
