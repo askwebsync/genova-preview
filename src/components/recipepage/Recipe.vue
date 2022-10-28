@@ -6,13 +6,13 @@
       <hr class="h-1 rounded w-32 background-navbar border-0" />
       <div class="flex flex-col my-12 gap-8">
         <div
-          class="flex flex-col border md:flex p-4 gap-10 md:gap-24 items-center background-yellow"
+          class="flex flex-col border md:flex p-4 gap-12 items-center background-yellow"
         >
-          <div class="max-w-lg">
+          <div class="max-w-lg my-4">
             <h3 class="text-lg lg:text-2xl font-bold underline">Ice Shakes</h3>
           </div>
           <div
-            class="flex flex-col mx-5 md:flex-row gap-6 lg:gap-12 items-center"
+            class="flex flex-col mx-5 md:flex-row gap-2 lg:gap-12 items-center"
           >
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-powder.png" />
@@ -55,13 +55,13 @@
           </div>
         </div>
         <div
-          class="flex flex-col md:flex border p-4 gap-12 md:gap-24 items-center"
+          class="flex flex-col border md:flex p-4 gap-12 items-center background-yellow"
         >
-          <div class="max-w-lg">
+          <div class="max-w-lg my-4">
             <h3 class="text-lg lg:text-2xl font-bold underline">Ice Blended</h3>
           </div>
           <div
-            class="flex flex-col mx-5 md:flex-row gap-6 lg:gap-12 items-center"
+            class="flex flex-col mx-5 md:flex-row gap-2 lg:gap-12 items-center"
           >
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-powder.png" />
@@ -104,13 +104,13 @@
           </div>
         </div>
         <div
-          class="flex flex-col md:flex border p-4 gap-12 md:gap-24 items-center"
+          class="flex flex-col border md:flex p-4 gap-12 items-center background-yellow"
         >
-          <div class="">
+          <div class="max-w-lg my-4">
             <h3 class="text-lg lg:text-2xl font-bold underline">Mocktail</h3>
           </div>
           <div
-            class="flex flex-col mx-5 md:flex-row gap-6 lg:gap-12 items-center"
+            class="flex flex-col mx-5 md:flex-row gap-2 lg:gap-12 items-center"
           >
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-fruit-blend.png" />
@@ -153,15 +153,15 @@
           </div>
         </div>
         <div
-          class="flex flex-col md:flex border p-4 gap-12 md:gap-24 items-center"
+          class="flex flex-col border md:flex p-4 gap-12 items-center background-yellow"
         >
-          <div class="">
+          <div class="max-w-lg my-4">
             <h3 class="text-lg lg:text-2xl font-bold underline">
               Fruit Smoothies
             </h3>
           </div>
           <div
-            class="flex flex-col mx-5 md:flex-row gap-6 lg:gap-12 items-center"
+            class="flex flex-col mx-5 md:flex-row gap-2 lg:gap-12 items-center"
           >
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-fruit-blend.png" />
@@ -204,13 +204,13 @@
           </div>
         </div>
         <div
-          class="flex flex-col md:flex border p-4 gap-12 md:gap-24 items-center"
+          class="flex flex-col border md:flex p-4 gap-12 items-center background-yellow"
         >
-          <div class="">
+          <div class="max-w-lg my-4">
             <h3 class="text-lg lg:text-2xl font-bold underline">Special Tea</h3>
           </div>
           <div
-            class="flex flex-col mx-5 md:flex-row gap-6 lg:gap-12 items-center"
+            class="flex flex-col mx-5 md:flex-row gap-2 lg:gap-12 items-center"
           >
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-syrup.png" />
