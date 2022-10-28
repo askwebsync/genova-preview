@@ -6,8 +6,8 @@
         <!-- image-->
         <div class="w-1/2 center card-shadow-tiga">
           <img
-            :src="dataProduk.image"
-            alt="Product"
+            :src="productShow[1].image"
+            :alt="productShow[1].name"
             class="w-96 h-full object-contain rounded-t-xl"
           />
         </div>
@@ -15,8 +15,8 @@
         <div class="w-1/2 flex flex-col gap-2">
           <!-- Name + Info -->
           <div class="flex flex-col gap-6 my-4 text-left max-w-xl">
-            <h1 class="text-4xl pcolor md:text5xl">
-              {{ this.dataProduk }}
+            <h1 class="pcolor mb-3 text-xs md:text-base lg:text-lg xl:text-xl">
+              {{ productShow[1].name }}
             </h1>
 
             <p class="text-lg p-1">
@@ -44,14 +44,17 @@
               </div>
               <div class=""><p class="text-lg">(4,9)</p></div>
             </div>
-            <p class="text-xl text-gray-600">{{ this.dataProduk }}</p>
+            <p class="text-xl text-gray-600">
+              {{ "RP" + " " + productShow[1].price }}
+            </p>
             <!-- Button-->
             <div class="text-left md:mt-6">
-              <button
+              <a
+                :href="productShow[1].link"
                 class="rounded-md px-4 py-2 text-white background-yellow hover:bg-yellow-600 duration-300"
               >
                 Buy Now
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -62,9 +65,9 @@
 <script>
 export default {
   name: "ProductDetailPage",
-  // props: {
-  //   dataProduk: Object,
-  // },
+  props: {
+    dataProduk: String,
+  },
   components: {},
   data() {
     return {
@@ -515,22 +518,20 @@ export default {
         },
       ],
       // dataProduk: this.$router.query.dataProduk,
-      dataProduk: JSON.parse(this.$router.query.dataProduk),
+      // dataProduk: JSON.parse({this.$router.query.dataProduk}),
     };
   },
   created() {
-    this.checkID;
+    this.productShow.push(JSON.parse(this.dataProduk));
+    console.log(this.productShow);
+    return this.productShow;
   },
   methods: {
     checkID() {
-      // console.log(dataProduk);
-      for (let i = 0; i < this.products.length; i++) {
-        if (this.dataProduk === this.products.name) {
-          this.productShow.push(this.products);
-          console.log(this.productShow);
-          return this.productShow;
-        }
-      }
+      // console.log(this.dataProduk);
+      // if this.productShow[1].name
+      // console.log(this.productShow);
+      // return this.productShow;
     },
   },
 };
