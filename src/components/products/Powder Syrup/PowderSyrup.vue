@@ -5,9 +5,7 @@
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1 class="text-left pcolor mb-6 font-semibold text-xl md:text-2xl">
-            POWDER SYRUP
-          </h1>
+          <h1 class="text-left pcolor mb-6 text-xs md:text-sm">POWDER SYRUP</h1>
           <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
 

@@ -5,9 +5,7 @@
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1 class="text-left pcolor mb-6 font-semibold text-xl md:text-2xl">
-            FRUIT BLEND
-          </h1>
+          <h1 class="text-left pcolor mb-6 text-xs md:text-sm">FRUIT BLEND</h1>
           <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
 
@@ -63,11 +61,24 @@
               </h2>
               <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
               <div class="mt-6">
-                <button
-                  class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                <router-link
+                  :to="{
+                    name: 'productDetailPage',
+                    query: {
+                      dataProduk: JSON.stringify({
+                        name: product.name,
+                        price: product.price,
+                        link: product.image,
+                      }),
+                    },
+                  }"
                 >
-                  See More
-                </button>
+                  <button
+                    class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  >
+                    See More
+                  </button>
+                </router-link>
               </div>
             </div>
           </div>
