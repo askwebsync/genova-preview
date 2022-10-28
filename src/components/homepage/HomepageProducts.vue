@@ -3,18 +3,12 @@
   <section class="container mx-auto">
     <div class="p-5 md:px-2 lg:px-6 lg:py-12 xl:px-12">
       <div class="flex flex-row">
-        <h1 class="text-left text-black mb-2 pproduct text-lg pcolor">
-          PRODUCTS
-        </h1>
-        <!-- <div class="rating space-y-6">
-          <p class="slider1"></p>
-          <p class="slider2"></p>
-          <p class="slider3"></p>
-        </div> -->
+        <h1 class="text-left pcolor mb-2">PRODUCT CATEGORY</h1>
+        <img src="../../assets/images/icon/star.png" class="ml-4" />
       </div>
       <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
       <div
-        class="grid grid-cols-2 md:grid-cols-3 justify-center gap-4 md:gap-12 mt-10 mb-5"
+        class="grid grid-cols-2 md:grid-cols-3 justify-center gap-4 md:gap-12 my-10"
       >
         <!-- <div
           class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center"
@@ -23,7 +17,7 @@
             <img
               src="../../assets/images/product/powder/powder-tiramisu.png"
               alt="Product"
-              class="w-24 h-24 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-contain rounded-t-xl"
             />
 
             <div class="p-2 mt-2">
@@ -42,7 +36,7 @@
             <img
               src="../../assets/images/product/powder/powder-cottoncandy.png"
               alt="Product"
-              class="w-24 h-24 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-contain rounded-t-xl"
             />
 
             <div class="max-w-lg p-2 mt-2">
@@ -62,7 +56,7 @@
             <img
               src="../../assets/images/product/powder/powder-cookiescream.png"
               alt="Product"
-              class="w-24 h-24 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-contain rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-2">
@@ -80,7 +74,7 @@
             <img
               src="../../assets/images/product/fruit-bland/fruit_bland_mango.png"
               alt="Product"
-              class="w-24 h-24 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-contain rounded-t-xl"
             />
 
             <div class="p-2 my-2">
@@ -106,7 +100,7 @@
             <img
               src="../../assets/images/product/syrup/syrup_banana.png"
               alt="Product"
-              class="w-24 h-24 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-contain rounded-t-xl"
             />
 
             <div class="p-2 my-2">
@@ -132,7 +126,7 @@
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="w-24 h-24 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-contain rounded-t-xl"
             />
 
             <div class="p-2 my-2">

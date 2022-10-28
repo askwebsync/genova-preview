@@ -3,14 +3,13 @@
 <template>
   <section class="">
     <div class="container mx-auto">
-      <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
+      <div class="mt-12 p-4 lg:p-6 lg:py-12 xl:p-12">
         <div class="flex flex-row">
-          <h1 class="text-left pcolor mb-2 font-semibold text-xl">
-            TRENDING FLAVOUR
-          </h1>
+          <h1 class="text-left pcolor mb-2">TRENDING FLAVOUR</h1>
+          <img src="../../assets/images/icon/star.png" class="ml-4" />
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
-        <div class="justify-items-center justify-center mt-10 mb-5">
+        <div class="justify-items-center justify-center my-12">
           <carousel
             :settings="settings"
             :breakpoints="breakpoints"
@@ -155,5 +154,13 @@ export default {
   list-style: none;
   line-height: 0;
   margin: 20px 0 0;
+}
+.carousel__next {
+  right: -10px;
+  background-color: #bdb76b;
+}
+.carousel__prev {
+  left: -10px;
+  background-color: #bdb76b;
 }
 </style>
