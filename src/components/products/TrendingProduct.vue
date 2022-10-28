@@ -3,9 +3,9 @@
 <template>
   <section class="t">
     <div class="container mx-auto">
-      <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
+      <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
         <div class="flex flex-row">
-          <h1 class="text-left pcolor mb-2 font-semibold text-xl">
+          <h1 class="text-left pcolor mb-6 font-semibold text-xl">
             TRENDING FLAVOUR
           </h1>
           <!-- <div class="rating space-y-6">
@@ -23,7 +23,7 @@
               <img
                 src="../../assets/images/product/powder/powder-matchalatte.png"
                 alt="Product"
-                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+                class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
               />
 
               <div class="flex flex-col gap-3 p-5">
@@ -33,7 +33,7 @@
                   Matcha Latte
                 </p>
                 <p class="text-lg text-gray-700">RP. 169,000</p>
-                <div class="mt-2">
+                <div class="mt-6">
                   <button
                     class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                   >
@@ -49,7 +49,7 @@
               <img
                 src="../../assets/images/product/syrup/syrup_lychee.png"
                 alt="Product"
-                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+                class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
               />
             </a>
             <div class="flex flex-col gap-3 p-5">
@@ -59,7 +59,7 @@
                 Lychee
               </p>
               <p class="text-lg text-gray-700">RP. 97,000</p>
-              <div class="mt-2">
+              <div class="mt-6">
                 <button
                   class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
@@ -74,7 +74,7 @@
               <img
                 src="../../assets/images/product/powder/powder-darkchocolate.png"
                 alt="Product"
-                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+                class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
               />
             </a>
             <div class="flex flex-col gap-3 p-5">
@@ -84,7 +84,7 @@
                 Dark Chocolate
               </p>
               <p class="text-lg text-gray-700">RP. 139,000</p>
-              <div class="mt-2">
+              <div class="mt-6">
                 <button
                   class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
@@ -99,7 +99,7 @@
               <img
                 src="../../assets/images/product/powder/powder-redvelvet.png"
                 alt="Product"
-                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+                class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
               />
             </a>
             <div class="flex flex-col gap-3 p-5">
@@ -109,7 +109,7 @@
                 Red Velvet
               </p>
               <p class="text-lg text-gray-700">RP. 139,000</p>
-              <div class="mt-2">
+              <div class="mt-6">
                 <button
                   class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
@@ -124,7 +124,7 @@
               <img
                 src="../../assets/images/product/powder/powder-charcoal.png"
                 alt="Product"
-                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+                class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
               />
 
               <div class="flex flex-col gap-3 p-5">
@@ -134,7 +134,7 @@
                   Charcoal
                 </p>
                 <p class="text-lg text-gray-700">RP. 169,000</p>
-                <div class="mt-2">
+                <div class="mt-6">
                   <button
                     class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                   >
@@ -150,7 +150,7 @@
               <img
                 src="../../assets/images/product/syrup/syrup_pandan.png"
                 alt="Product"
-                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+                class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
               />
             </a>
             <div class="flex flex-col gap-3 p-5">
@@ -160,7 +160,7 @@
                 Pandan
               </p>
               <p class="text-lg text-gray-700">RP. 97,000</p>
-              <div class="mt-2">
+              <div class="mt-6">
                 <button
                   class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
@@ -175,7 +175,7 @@
               <img
                 src="../../assets/images/product/fruit-bland/fruit_bland_passion.png"
                 alt="Product"
-                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+                class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
               />
             </a>
             <div class="flex flex-col gap-3 p-5">
@@ -185,7 +185,7 @@
                 Passion Fruit
               </p>
               <p class="text-lg text-gray-700">RP. 139,000</p>
-              <div class="mt-2">
+              <div class="mt-6">
                 <button
                   class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
@@ -200,7 +200,7 @@
               <img
                 src="../../assets/images/product/powder/powder-greentea.png"
                 alt="Product"
-                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+                class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
               />
             </a>
             <div class="flex flex-col gap-3 p-5">
@@ -210,7 +210,7 @@
                 Greentea
               </p>
               <p class="text-lg text-gray-700">RP. 139,000</p>
-              <div class="mt-2">
+              <div class="mt-6">
                 <button
                   class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
@@ -225,7 +225,7 @@
               <img
                 src="../../assets/images/product/fruit-bland/fruit_bland_mango.png"
                 alt="Product"
-                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+                class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
               />
 
               <div class="flex flex-col gap-3 p-5">
@@ -235,7 +235,7 @@
                   Manggo
                 </p>
                 <p class="text-lg text-gray-700">RP. 169,000</p>
-                <div class="mt-2">
+                <div class="mt-6">
                   <button
                     class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                   >
@@ -251,7 +251,7 @@
               <img
                 src="../../assets/images/product/syrup/syrup_caramel.png"
                 alt="Product"
-                class="w-40 h-40 md:w-52 md:h-52 object-contain rounded-t-xl"
+                class="w28 h-28 md:w-52 md:h-52 object-contain rounded-t-xl"
               />
             </a>
             <div class="flex flex-col gap-3 p-5">
@@ -261,7 +261,7 @@
                 Lychee
               </p>
               <p class="text-lg text-gray-700">RP. 97,000</p>
-              <div class="mt-2">
+              <div class="mt-6">
                 <button
                   class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >

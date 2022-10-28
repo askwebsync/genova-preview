@@ -46,7 +46,7 @@
             </div>
             <p class="text-xl text-gray-600">{{}}</p>
             <!-- Button-->
-            <div class="text-left md:mt-2">
+            <div class="text-left md:mt-6">
               <button
                 class="rounded-md px-4 py-2 text-white background-yellow hover:bg-green-600 duration-300"
               >

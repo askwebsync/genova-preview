@@ -2,24 +2,18 @@
 <template>
   <section class="container mx-auto">
     <div class="flex flex-col py-12">
-      <div class="max-w-xl sm:mx-auto lg:max-w-2xl mt-12">
-        <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
-          <h2
-            class="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
-          >
-            Contact Us
-          </h2>
-          <p class="text-lg text-gray-800 md:text-xl">
-            Get in touch with us for more information
-          </p>
-        </div>
+      <div class="flex flex-col text-center mb-8">
+        <h1 class="pcolor mb-6">Contact Us</h1>
+        <p class="text-lg text-gray-800 md:text-xl">
+          Get in touch with us for more information
+        </p>
       </div>
 
       <div
-        class="grid md:grid-cols-2 lg:grid-cols-3 self-center gap-6 p-6 md:flex-row lg:px-12"
+        class="grid md:grid-cols-2 lg:grid-cols-3 self-center gap-8 p-6 md:flex-row lg:px-12"
       >
         <div
-          class="flex flex-col items-center gap-6 background-yellow p-6 max-w-xl"
+          class="flex flex-col items-center gap-4 background-yellow p-8 card"
         >
           <i class="card-icon far fa-envelope"></i>
           <h3 class="text-lg font-semibold text-white mt-6">
@@ -27,22 +21,22 @@
           </h3>
         </div>
         <div
-          class="flex flex-col items-center gap-6 background-yellow p-6 max-w-xl"
+          class="flex flex-col items-center gap-4 background-yellow p-8 card"
         >
           <i class="card-icon fas fa-phone"></i>
           <h3 class="text-lg font-semibold text-white mt-6">
             <a href="tel:081212128171" class="hover:text-blue-400"
-              >081212128171</a
+              >+62 812-1212-8171</a
             >
           </h3>
         </div>
         <div
-          class="flex flex-col items-center gap-6 background-yellow p-6 max-w-xl"
+          class="flex flex-col items-center gap-4 background-yellow p-8 card"
         >
           <i class="card-icon fas fa-map-marker-alt"></i>
 
-          <h3 class="text-lg font-semibold text-white mt-6">
-            Komplek PU jln B no 18 RC Veteran - tanah kusir jakarta Selatan
+          <h3 class="text-lg font-semibold text-white my-6">
+            Komplek PU Jl. B No. 18 RC Veteran - Tanah Kusir, Jakarta Selatan
             12330
           </h3>
         </div>

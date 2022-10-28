@@ -3,9 +3,9 @@
 <template>
   <section class="">
     <div class="container mx-auto">
-      <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
+      <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
         <div class="flex flex-row">
-          <h1 class="text-left pcolor mb-2">NEW FLAVOUR</h1>
+          <h1 class="text-left pcolor mb-6">NEW FLAVOUR</h1>
           <img src="../../assets/images/icon/star.png" class="ml-4" />
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
@@ -16,7 +16,7 @@
             :wrap-around="true"
           >
             <slide v-for="product in products" :key="product.id">
-              <div class="p-5 mx-4 mb-2 bg-gray-300 shadow carousel__item">
+              <div class="p-5 mx-4 mb-6 bg-gray-300 shadow carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"

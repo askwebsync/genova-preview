@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto">
-    <div class="mt-2 p-4 lg:p-6 lg:py-12 xl:p-12">
+    <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="text-center border-h2 p-2">
         <h2
           class="text-4xl tracking-tight leading-10 font-medium sm:text-4xl sm:leading-none md:text-5xl md:mb-7 sm:mb-4"

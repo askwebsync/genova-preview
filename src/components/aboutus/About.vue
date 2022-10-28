@@ -1,12 +1,12 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="container mx-auto">
-    <div class="container-awal py-12">
+    <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="about-section">
         <div class="inner-container inner-container-shadow justify-center p-24">
           <div class="text-left">
-            <h1 class="mb-1 text-2xl md:text-3xl lg:text-4xl">About Us</h1>
-            <hr class="h-1 rounded w-32 bg-black border-0" />
+            <h1 class="text-left pcolor mb-6">About Us</h1>
+            <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
           </div>
           <ul class="text-left mt-12 space-y-12">
             <li>
@@ -91,7 +91,7 @@
     padding: 0;
   }
   .inner-container {
-    padding: 60px;
+    padding: 50px;
   }
 }
 </style>
