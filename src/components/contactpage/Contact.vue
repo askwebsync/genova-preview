@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="container mx-auto">
-    <div class="flex flex-col py-12">
-      <div class="flex flex-col text-center mb-8">
+    <div class="flex flex-col my-12">
+      <div class="flex flex-col text-center mb-12 mt-6 max-w-xs center mx-6">
         <h1 class="pcolor mb-6">Contact Us</h1>
         <p class="text-lg text-gray-800 md:text-xl">
           Get in touch with us for more information
@@ -10,7 +10,7 @@
       </div>
 
       <div
-        class="grid md:grid-cols-2 lg:grid-cols-3 self-center gap-8 p-6 md:flex-row lg:px-12"
+        class="grid md:grid-cols-2 lg:grid-cols-3 self-center gap-12 p-6 md:flex-row lg:px-12"
       >
         <div
           class="flex flex-col items-center gap-4 background-yellow p-8 card"

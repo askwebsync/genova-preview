@@ -2,15 +2,15 @@
 <template>
   <section class="container mx-auto">
     <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
+      <div class="my-4 text-center center mb-12">
+        <h1 class="pcolor mb-4">About Us</h1>
+        <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
+      </div>
       <div class="about-section">
         <div
           class="inner-container bg-gray-300 inner-container-shadow justify-center p-24"
         >
-          <div class="text-left">
-            <h1 class="text-left pcolor mb-6">About Us</h1>
-            <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
-          </div>
-          <ul class="text-left mt-12 space-y-12">
+          <ul class="text-left mt- space-y-12">
             <li>
               <p class="leading-6 font-semibold tracking-wide">
                 GENOVA adalah perusahaan yang bergerak memproduksi Premium
