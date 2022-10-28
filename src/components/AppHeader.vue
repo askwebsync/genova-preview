@@ -13,14 +13,12 @@
               alt=""
               height="120"
               width="120"
+              class="focus:outline-none"
             />
           </router-link>
           <!-- Mobile menu button -->
           <div @click="showMenu = !showMenu" class="flex md:hidden">
-            <button
-              type="button"
-              class="text-gray-800 hover:text-gray-400 focus:outline-none"
-            >
+            <button type="button" class="text-black focus:outline-none">
               <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                 <path
                   fill-rule="evenodd"
@@ -73,7 +71,7 @@
               class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
             >
               <svg
-                class="w-5 h-5 text-gray-500"
+                class="w-5 h-5"
                 aria-hidden="true"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -95,31 +93,31 @@
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-black hover:text-yellow-600"
+            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/products">Product</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-black hover:text-yellow-600"
+            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/recipe">Recipe</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-black hover:text-yellow-600"
+            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/about">About Us</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-black hover:text-yellow-600"
+            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/contact">Contact</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-black hover:text-yellow-600"
+            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/location">Location</router-link>
           </li>

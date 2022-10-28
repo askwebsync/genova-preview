@@ -15,12 +15,12 @@
               <img
                 src="../../assets/images/product/powder/powder-tiramisu.png"
                 alt="Product"
-                class="w28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
+                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
               />
 
-              <div class="max-w-lg p-2 mt-6">
+              <div class="max-w-lg p-2 mt-2">
                 <p
-                  class="text-xl md:text-2xl pproduct text-white truncate block capitalize"
+                  class="text-2xl md:text-2xl pproduct text-white truncate block capitalize"
                 >
                   Trending Product
                 </p>
@@ -34,12 +34,12 @@
               <img
                 src="../../assets/images/product/powder/powder-cottoncandy.png"
                 alt="Product"
-                class="w28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
+                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
               />
 
-              <div class="max-w-lg p-2 mt-6">
+              <div class="max-w-lg p-2 mt-2">
                 <p
-                  class="text-xl md:text-2xl pproduct text-white truncate block capitalize"
+                  class="text-2xl md:text-2xl pproduct text-white truncate block capitalize"
                 >
                   New Product
                 </p>
@@ -53,12 +53,12 @@
               <img
                 src="../../assets/images/product/powder/powder-cookiescream.png"
                 alt="Product"
-                class="w28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
+                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
               />
             </a>
-            <div class="max-w-lg p-2 mt-6">
+            <div class="max-w-lg p-2 mt-2">
               <p
-                class="text-xl md:text-2xl pproduct text-white truncate block capitalize"
+                class="text-2xl md:text-2xl pproduct text-white truncate block capitalize"
               >
                 Beverage Boost
               </p>
@@ -71,12 +71,12 @@
               <img
                 src="../../assets/images/product/fruit-bland/fruit_bland_passion.png"
                 alt="Product"
-                class="w28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
+                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
               />
             </router-link>
-            <div class="max-w-lg p-2 mt-6">
+            <div class="max-w-lg p-2 mt-2">
               <p
-                class="text-xl md:text-2xl pproduct text-white truncate block capitalize"
+                class="text-2xl md:text-2xl pproduct text-white truncate block capitalize"
               >
                 Fruit Blend
               </p>
@@ -89,12 +89,12 @@
               <img
                 src="../../assets/images/product/syrup/syrup_bluecuracao.png"
                 alt="Product"
-                class="w28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
+                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
               />
             </router-link>
-            <div class="max-w-lg p-2 mt-6">
+            <div class="max-w-lg p-2 mt-2">
               <p
-                class="text-xl md:text-2xl pproduct text-white truncate block capitalize"
+                class="text-2xl md:text-2xl pproduct text-white truncate block capitalize"
               >
                 Liquid Syrup
               </p>
@@ -107,12 +107,12 @@
               <img
                 src="../../assets/images/product/powder/powder-redvelvet.png"
                 alt="Product"
-                class="w28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
+                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
               />
             </router-link>
-            <div class="max-w-lg p-2 mt-6">
+            <div class="max-w-lg p-2 mt-2">
               <p
-                class="text-xl md:text-2xl pproduct text-white truncate block capitalizee"
+                class="text-2xl md:text-2xl pproduct text-white truncate block capitalizee"
               >
                 Powder Syrup
               </p>

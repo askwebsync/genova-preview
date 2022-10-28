@@ -49,7 +49,7 @@
 
           <div class="flex flex-col gap-2">
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@
               </p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,13 +80,13 @@
                 />
               </svg>
               <p>
-                <a href="tel:081212128171" class="hover:text-blue-400"
+                <a href="tel:081212128171" class="hover:text-gray-400"
                   >081212128171 ( Bu Novi )</a
                 >
               </p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@
               <p>10:00 AM - 17:00 PM</p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@
             <a href="#"
               ><button
                 @click.prevent="map = 'default'"
-                class="rounded-lg px-4 py-3 background-yellow hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-3 background-yellow hover:bg-yellow-600 duration-300 text-white"
               >
                 Direction
               </button></a
@@ -133,10 +133,12 @@
           >
             Genova Palangkaraya
           </h3>
-          <h4 class="text-lg font-semibold">About Something Coffee Roastery</h4>
+          <h4 class="text-lg font-semibold">
+            ( About Something Coffee Roastery )
+          </h4>
           <div class="flex flex-col gap-2">
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +156,7 @@
               </p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -167,13 +169,13 @@
                 />
               </svg>
               <p>
-                <a href="tel:0812-1747-275" class="hover:text-blue-400">
+                <a href="tel:0812-1747-275" class="hover:text-gray-400">
                   0812-1747-275 ( Bp Ibnu )
                 </a>
               </p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +190,7 @@
               <p>10:00 AM - 17:00 PM</p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +209,7 @@
             <a href="#"
               ><button
                 @click.prevent="map = 'palangkaraya'"
-                class="rounded-lg px-4 py-3 background-yellow hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-3 background-yellow hover:bg-yellow-600 duration-300 text-white"
               >
                 Direction
               </button></a
@@ -220,10 +222,10 @@
           >
             Genova Riau
           </h3>
-          <h4 class="text-lg font-semibold">Samula Coffee & Eatry</h4>
+          <h4 class="text-lg font-semibold">( Samula Coffee & Eatry )</h4>
           <div class="flex flex-col gap-2">
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +242,7 @@
               </p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -253,13 +255,13 @@
                 />
               </svg>
               <p>
-                <a href="tel:081399021010" class="hover:text-blue-400">
+                <a href="tel:081399021010" class="hover:text-gray-400">
                   0813 9902 1010 (Bp Migo / Ibu jurike )
                 </a>
               </p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +276,7 @@
               <p>10:00 AM - 17:00 PM</p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +295,7 @@
             <a href="#"
               ><button
                 @click.prevent="map = 'riau'"
-                class="rounded-lg px-4 py-3 background-yellow hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-3 background-yellow hover:bg-yellow-600 duration-300 text-white"
               >
                 Direction
               </button></a
@@ -308,7 +310,7 @@
           </h3>
           <div class="flex flex-col gap-2">
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -326,7 +328,7 @@
               </p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -339,13 +341,13 @@
                 />
               </svg>
               <p>
-                <a href="tel:081380367558" class="hover:text-blue-400">
+                <a href="tel:081380367558" class="hover:text-gray-400">
                   0813 80367558 ( Bpk Hendra )
                 </a>
               </p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -360,7 +362,7 @@
               <p>10:00 AM - 17:00 PM</p>
             </div>
             <div
-              class="inline-flex space-x-6 background-yellow p-2 md:p-4 text-left"
+              class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -379,7 +381,7 @@
             <a href="#"
               ><button
                 @click.prevent="map = 'bogor'"
-                class="rounded-lg px-4 py-3 background-yellow hover:bg-green-600 duration-300 text-white"
+                class="rounded-lg px-4 py-3 background-yellow hover:bg-yellow-600 duration-300 text-white"
               >
                 Direction
               </button></a

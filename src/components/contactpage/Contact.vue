@@ -25,7 +25,7 @@
         >
           <i class="card-icon fas fa-phone"></i>
           <h3 class="text-lg font-semibold text-white mt-6">
-            <a href="tel:081212128171" class="hover:text-blue-400"
+            <a href="tel:081212128171" class="hover:text-gray-400"
               >+62 812-1212-8171</a
             >
           </h3>

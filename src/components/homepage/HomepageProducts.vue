@@ -4,14 +4,14 @@
     <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="flex flex-row">
         <h1 class="text-left pcolor mb-6">PRODUCT CATEGORY</h1>
-        <img src="../../assets/images/icon/star.png" class="ml-4" />
+        <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
       </div>
       <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
       <div
         class="grid grid-cols-2 md:grid-cols-3 justify-center gap-4 md:gap-12 my-10"
       >
         <!-- <div
-          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center"
+          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center focus:outline-none"
         >
           <router-link to="/product/trending-product">
             <img
@@ -30,7 +30,7 @@
           </router-link>
         </div>
         <div
-          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center"
+          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center focus:outline-none"
         >
           <router-link to="/product/new-product">
             <img
@@ -50,7 +50,7 @@
         </div>
 
         <div
-          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center"
+          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center focus:outline-none"
         >
           <a href="#">
             <img
@@ -68,7 +68,7 @@
           </div>
         </div> -->
         <div
-          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center"
+          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center focus:outline-none"
         >
           <router-link to="/product/fruit-bland">
             <img
@@ -85,7 +85,7 @@
               </p>
               <div class="mt-4 md:mt-6">
                 <button
-                  class="rounded-lg p-3 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-3 py-2 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -94,7 +94,7 @@
           </router-link>
         </div>
         <div
-          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center"
+          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center focus:outline-none"
         >
           <router-link to="/product/liquid-syrup">
             <img
@@ -111,7 +111,7 @@
               </p>
               <div class="mt-4 md:mt-6">
                 <button
-                  class="rounded-lg p-3 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-3 py-2 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -120,7 +120,7 @@
           </router-link>
         </div>
         <div
-          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center"
+          class="flex flex-col max-w-lg bg-gray-300 p-4 md:p-5 items-center center focus:outline-none"
         >
           <router-link to="/product/powder-syrup">
             <img
@@ -137,7 +137,7 @@
               </p>
               <div class="mt-4 md:mt-6">
                 <button
-                  class="rounded-lg p-3 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-3 py-2 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
