@@ -1,7 +1,7 @@
 <template>
-  <section class="container mx-auto">
+  <section class="">
     <div
-      class="relative w-full height-banner background flex items-center justify-center text-center bg-cover bg-center opacity-60"
+      class="relative w-full height-banner background flex items-center justify-center text-center bg-cover bg-center opacity-75"
     >
       <main class="px-4 sm:px-6 lg:px-8 z-10">
         <div class="text-center border-h2 p-2">
@@ -30,5 +30,17 @@ export default {
 .border-h2 {
   border: 2px solid #997f11;
   border-radius: 8px;
+}
+h2 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 160%;
+  /* identical to box height, or 69px */
+
+  /* Accents/Yellow/7 */
+
+  color: #997f11;
 }
 </style>

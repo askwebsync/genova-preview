@@ -3,9 +3,7 @@
   <section class="container mx-auto">
     <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="flex flex-row">
-        <h1 class="text-left pcolor mb-3 text-xs md:text-sm">
-          PRODUCT CATEGORY
-        </h1>
+        <h1 class="pcolor mb-3 text-xs md:text-base">PRODUCT CATEGORY</h1>
         <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
       </div>
       <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
@@ -24,7 +22,7 @@
 
             <div class="p-2 mt-6">
               <p
-                class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
+                class="text-lg lg:text-xl pproduct text-black truncate block capitalize"
               >
                 Trending Flavour
               </p>
@@ -43,7 +41,7 @@
 
             <div class="max-w-lg p-2 mt-6">
               <p
-                class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
+                class="text-lg lg:text-xl pproduct text-black truncate block capitalize"
               >
                 New Flavour
               </p>
@@ -63,7 +61,7 @@
           </a>
           <div class="max-w-lg p-2 mt-6">
             <p
-              class="text-xl md:text-2xl pproduct text-black truncate block capitalize"
+              class="text-lg lg:text-xl pproduct text-black truncate block capitalize"
             >
               Beverage Boost
             </p>
@@ -79,15 +77,15 @@
               class="w-28 h-28 md:w-48 md:h-48 object-contain rounded-t-xl"
             />
 
-            <div class="p-2 my-2">
+            <div class="p-4">
               <p
-                class="text-xl md:text-2xl pproduct text-black truncate block capitalizee"
+                class="text-lg lg:text-xl pproduct text-black truncate block capitalizee"
               >
                 Fruit Bland
               </p>
               <div class="mt-4 md:mt-6">
                 <button
-                  class="rounded-lg px-3 py-2 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -105,15 +103,15 @@
               class="w-28 h-28 md:w-48 md:h-48 object-contain rounded-t-xl"
             />
 
-            <div class="p-2 my-2">
+            <div class="p-4">
               <p
-                class="text-xl md:text-2xl pproduct text-black truncate block capitalizee"
+                class="text-lg lg:text-xl pproduct text-black truncate block capitalizee"
               >
                 Liquid Syrup
               </p>
               <div class="mt-4 md:mt-6">
                 <button
-                  class="rounded-lg px-3 py-2 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>
@@ -131,15 +129,15 @@
               class="w-28 h-28 md:w-48 md:h-48 object-contain rounded-t-xl"
             />
 
-            <div class="p-2 my-2">
+            <div class="p-4">
               <p
-                class="text-xl md:text-2xl pproduct text-black truncate block capitalizee"
+                class="text-lg lg:text-xl pproduct text-black truncate block capitalizee"
               >
                 Powder Syrup
               </p>
               <div class="mt-4 md:mt-6">
                 <button
-                  class="rounded-lg px-3 py-2 md:p-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                 >
                   See More
                 </button>

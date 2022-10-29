@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto">
+  <section class="">
     <div
       class="relative w-full height-banner background flex items-center justify-center text-center bg-cover bg-center opacity-75"
     >

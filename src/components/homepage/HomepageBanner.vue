@@ -1,56 +1,51 @@
 <template>
   <section class="container mx-auto">
-    <div
-      class="px-4 py-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-12"
-    >
-      <div
-        class="flex flex-col items-center justify-between gap-6 md:gap-12 lg:flex-row"
-      >
-        <div
-          class="max-w-xs text-center mb-10 lg:text-left lg:max-w-lg lg:pr-5 lg:mb-0"
-        >
-          <div class="flex flex-col gap-3 max-w-md mb-3">
-            <h1
-              class="mb-3 text-3xl tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
-            >
-              The quick, brown fox<br class="hidden md:block" />
-              jumps over
-            </h1>
-            <p class="text-base text-gray-700 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
-            </p>
-          </div>
-          <div
-            class="flex flex-col items-center justify-center md:flex-row lg:justify-start"
-          >
-            <div class="mt-6">
-              <button
-                class="rounded-lg px-5 py-3 background-yellow hover:bg-yellow-600 duration-300"
-              >
-                Explore Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="relative lg:w-1/2">
+    <div class="px-4 md:px-6 xl:px-12">
+      <Carousel :autoplay="2000" :wrap-around="true">
+        <Slide v-for="image in images" :key="image.id">
           <img
-            class="object-contain w-full h-56 rounded sm:h-96"
-            src="../../assets/images/banner/homepage-banner.png"
-            alt=""
+            :src="image.url"
+            :alt="image.alt"
+            class="w-full h-full object-contain"
           />
-        </div>
-      </div>
+        </Slide>
+
+        <template #addons>
+          <Pagination />
+        </template>
+      </Carousel>
     </div>
   </section>
 </template>
 <script>
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination } from "vue3-carousel";
+
 export default {
-  components: {},
+  name: "HomepageBanner",
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+  },
   data() {
-    return {};
+    return {
+      slide: [
+        "home_1.png",
+        "home_2.png",
+        "home_3.png",
+        "home_4.png",
+        "home_5.png",
+      ],
+      images: [
+        { url: "home_1.png", alt: "I love you nature" },
+        { url: "home_2.png", alt: "Now with dog - Rosé" },
+        { url: "home_3.png", alt: "Jeg er i Danmark" },
+        { url: "home_4.png", alt: "Badabimbadabum" },
+        { url: "home_5.png", alt: "Goodmorning el mundo" },
+      ],
+    };
   },
 };
 </script>
-<style scoped></style>
+<style></style>

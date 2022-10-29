@@ -2,20 +2,9 @@
   <div>
     <div class="background-navbar">
       <nav
-        class="container px-4 py-7 mx-auto md:px-6 md:flex md:justify-between md:items-center lg:px-8 xl:px-12"
+        class="container px-4 py-7 mx-auto md:px-6 md:items-center lg:px-8 xl:px-12"
       >
         <div class="flex items-center justify-between">
-          <router-link
-            to="/"
-            class="text-xl font-bold text-gray-800 md:text-2xl hover:text-yellow-600"
-            ><img
-              src="../assets/images/logo/Genova_Logo_no_bg.png"
-              alt=""
-              height="120"
-              width="120"
-              class="focus:outline-none"
-            />
-          </router-link>
           <!-- Mobile menu button -->
           <div @click="showMenu = !showMenu" class="flex md:hidden">
             <button type="button" class="text-black focus:outline-none">
@@ -27,9 +16,77 @@
               </svg>
             </button>
           </div>
-        </div>
+          <router-link
+            to="/"
+            class="text-xl font-bold text-gray-800 md:text-2xl hover:text-yellow-600"
+            ><img
+              src="../assets/images/logo/Genova_Logo_no_bg.png"
+              alt=""
+              height="120"
+              width="120"
+              class="focus:outline-none"
+            />
+          </router-link>
 
-        <div class="flex md:order-2">
+          <div class="flex md:order-2 md:w-7/12 md:mx-auto">
+            <div
+              :class="showMenu ? 'flex' : 'hidden'"
+              class="hidden relative md:block w-full"
+            >
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-gray-500"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="sr-only">Search icon</span>
+              </div>
+              <input
+                type="text"
+                id="search-navbar"
+                class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search..."
+                v-model="searchQuery"
+                @focusout="showDiv = !showDiv"
+                @focusin="showDiv = !showDiv"
+              />
+            </div>
+          </div>
+          <!-- list search item -->
+          <div
+            :class="showDiv ? 'fixed ' : 'hidden'"
+            class="w-6/12 h-1/4 overflow-auto bg-slate-500 flex-col z-[100]"
+          >
+            <div
+              v-for="product in resultQuery"
+              :key="product.id"
+              class="flex flex-col border"
+            >
+              <div class="item fruit">
+                <div class="flex justify-around items-center py-1">
+                  <img
+                    :src="product.image"
+                    :alt="product.name"
+                    class="w-20 h-20"
+                  />
+                  <p>{{ product.name }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- search bar -->
+        <!-- <div class="flex md:order-2">
           <div
             :class="showMenu ? 'flex' : 'hidden'"
             class="hidden relative md:block"
@@ -62,34 +119,11 @@
               @focusin="showDiv = !showDiv"
             />
           </div>
-        </div>
-        <!-- list search item -->
-        <div
-          :class="showDiv ? 'fixed' : 'hidden'"
-          class="w-4/12 bg-slate-500 my-1 flex-col z-[100]"
-        >
-          <div
-            v-for="product in resultQuery"
-            :key="product.id"
-            class="flex flex-col border"
-          >
-            <div class="item fruit">
-              <div class="flex justify-around items-center py-1">
-                <img
-                  :src="product.image"
-                  :alt="product.name"
-                  class="w-20 h-20"
-                />
-                <p>{{ product.name }}</p>
-              </div>
-              <!-- <p class="border w-full py-1">{{ fruit }}</p> -->
-            </div>
-          </div>
-        </div>
+        </div> -->
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <ul
           :class="showMenu ? 'flex' : 'hidden'"
-          class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 md:order-1"
+          class="flex-col md:justify-around mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-4 md:order-1"
         >
           <li v-if="showMenu" class="relative mt-3 md:hidden">
             <div
@@ -112,8 +146,11 @@
             <input
               type="text"
               id="search-navbar"
+              v-model="searchQuery"
               class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search..."
+              @focusout="showDiv = !showDiv"
+              @focusin="showDiv = !showDiv"
             />
           </li>
           <li

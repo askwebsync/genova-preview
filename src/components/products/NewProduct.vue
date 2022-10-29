@@ -3,7 +3,9 @@
   <section class="container mx-auto">
     <div class="mt-6 p-6 md:px-2 lg:px-6 lg:py-12 xl:px-12">
       <div class="flex flex-row">
-        <h1 class="text-left pcolor mb-3 font-semibold text-xl">NEW FLAVOUR</h1>
+        <h1 class="text-left pcolor mb-3 font-text-xs md:text-sm">
+          NEW FLAVOUR
+        </h1>
         <!-- <div class="rating space-y-6">
           <p class="slider1"></p>
           <p class="slider2"></p>

@@ -5,9 +5,7 @@
     <div class="container mx-auto">
       <div class="mt-12 p-4 lg:p-6 lg:py-12 xl:p-12">
         <div class="flex flex-row">
-          <h1 class="text-left pcolor mb-3 text-xs md:text-sm">
-            TRENDING FLAVOUR
-          </h1>
+          <h1 class="pcolor mb-3 text-xs md:text-base">TRENDING FLAVOUR</h1>
           <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
@@ -30,7 +28,7 @@
                   <div class="mt-6">
                     <a
                       :href="product.link"
-                      class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                      class="rounded-lg px-3 py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                     >
                       Buy Now
                     </a>
