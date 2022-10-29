@@ -14,10 +14,10 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col h-screen" id="app">
+  <div class="min-h-screen" id="app">
     <AppHeader class="" />
     <router-view />
-    <AppFooter class="" />
+    <AppFooter class="sticky top-[100vh]" />
   </div>
 </template>
 
