@@ -129,7 +129,7 @@
                 />
               </div>
               <div
-                class="results cursor-pointer overflow-y-scroll h-32 zterang"
+                class="results relative md:absolute cursor-pointer overflow-y-scroll h-32 zterang"
                 v-if="toggle"
               >
                 <div
@@ -664,15 +664,11 @@ input {
 }
 
 .contain .results {
-  position: absolute;
   width: 100%;
   background: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.contain .results .result {
-  padding: 20px 0.75rem;
-}
 .contain .results .result:hover {
   background: #efefef;
 }
