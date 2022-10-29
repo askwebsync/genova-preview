@@ -170,7 +170,7 @@ export default {
     search(val) {
       this.newProducts = [];
       this.products.forEach((element) => {
-        if (element.name.includes(val) && val != "") {
+        if (element.name.toLowerCase().includes(val.toLowerCase()) && val != "") {
           this.newProducts.push(element);
         }
       });
