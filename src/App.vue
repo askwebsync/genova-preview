@@ -14,10 +14,10 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col h-screen justify-between" id="app">
-    <AppHeader class="top-0" />
+  <div class="flex flex-col h-screen" id="app">
+    <AppHeader class="" />
     <router-view />
-    <AppFooter class="bottom-0" />
+    <AppFooter class="" />
   </div>
 </template>
 
