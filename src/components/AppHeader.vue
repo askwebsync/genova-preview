@@ -1,10 +1,11 @@
+<!-- eslint-disable vue/require-v-for-key -->
 <template>
   <div>
     <div class="">
       <nav
-        class="container px-4 py-7 mx-auto md:px-6 md:items-center lg:px-8 xl:px-12"
+        class="container px-4 py-7 mx-auto md:flex justify-between md:px-6 md:items-center lg:px-8 xl:px-12"
       >
-        <div class="flex items-center justify-between gap-6">
+        <div class="flex items-center justify-between gap-x-24">
           <!-- Mobile menu button -->
           <div @click="showMenu = !showMenu" class="flex md:hidden">
             <button type="button" class="text-black focus:outline-none">
@@ -27,138 +28,78 @@
               class="focus:outline-none"
             />
           </router-link>
-          <ul
-            :class="showMenu ? 'flex' : 'hidden'"
-            class="flex-col md:justify-around mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-4 md:order-1"
-          >
-            <li v-if="showMenu" class="relative mt-3 md:hidden">
-              <div
-                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  class="w-5 h-5"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </div>
-              <input
-                type="text"
-                id="search-navbar"
-                v-model="searchQuery"
-                class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Search..."
-                @focusout="showDiv = !showDiv"
-                @focusin="showDiv = !showDiv"
-              />
-            </li>
-            <li
-              @click="showMenu = !showMenu"
-              class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
-            >
-              <router-link to="/products">Product</router-link>
-            </li>
-            <li
-              @click="showMenu = !showMenu"
-              class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
-            >
-              <router-link to="/recipe">Recipe</router-link>
-            </li>
-            <li
-              @click="showMenu = !showMenu"
-              class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
-            >
-              <router-link to="/about">About Us</router-link>
-            </li>
-            <li
-              @click="showMenu = !showMenu"
-              class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
-            >
-              <router-link to="/contact">Contact</router-link>
-            </li>
-            <li
-              @click="showMenu = !showMenu"
-              class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
-            >
-              <router-link to="/location">Location</router-link>
-            </li>
-          </ul>
 
-          <div class="flex md:order-2 md:w-7/12 md:mx-auto">
+          <div class="flex md:order-2 md:mx-auto">
             <div
               :class="showMenu ? 'flex' : 'hidden'"
               class="hidden relative md:block w-full"
             >
               <div
                 class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  class="w-5 h-5 text-gray-500"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="sr-only">Search icon</span>
-              </div>
-              <input
-                type="text"
-                id="search-navbar"
-                class="block p-2 ml-12 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Search..."
-                v-model="searchQuery"
-                @focusout="showDiv = !showDiv"
-                @focusin="showDiv = !showDiv"
-              />
-            </div>
-          </div>
-          <!-- list search item -->
-          <div
-            :class="showDiv ? 'fixed ' : 'hidden'"
-            class="w-6/12 h-1/4 overflow-auto bg-slate-500 flex-col z-[100]"
-          >
-            <div
-              v-for="product in resultQuery"
-              :key="product.id"
-              class="flex flex-col border"
-            >
-              <div class="item fruit">
-                <div class="flex justify-around items-center py-1">
-                  <img
-                    :src="product.image"
-                    :alt="product.name"
-                    class="w-20 h-20"
+              ></div>
+              <div class="contain">
+                <!-- <input
+                  type="text"
+                  class="w-full"
+                  placeholder="Search Item"
+                  v-model="search"
+                  @blur="toggle = false"
+                  @focus="toggle = true"
+                /> -->
+                <div class="relative text-gray-600">
+                  <input
+                    type="text"
+                    class="block w-full"
+                    placeholder="Search Item"
+                    v-model="search"
+                    @blur="toggle = false"
+                    @focus="toggle = true"
                   />
-                  <p>{{ product.name }}</p>
+                </div>
+                <div
+                  class="results cursor-pointer overflow-y-scroll h-32 zterang"
+                  v-if="toggle"
+                >
+                  <div
+                    class="result cursor-pointer"
+                    v-for="(product, id) in newProducts"
+                    :key="id"
+                  >
+                    <div @click="selectResult(product)" @mousedown.prevent>
+                      <router-link
+                        :to="{
+                          name: 'productDetailPage',
+                          query: {
+                            dataProduk: JSON.stringify({
+                              name: product.name,
+                              price: product.price,
+                              link: product.image,
+                            }),
+                          },
+                        }"
+                      >
+                        <div class="cursor-pointer" @click="toggle = false">
+                          {{ product.name }}
+                        </div>
+                      </router-link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- search bar -->
-        <!-- <div class="flex md:order-2">
-          <div
-            :class="showMenu ? 'flex' : 'hidden'"
-            class="hidden relative md:block"
-          >
+
+        <ul
+          :class="showMenu ? 'flex' : 'hidden'"
+          class="flex-col md:justify-around mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
+        >
+          <li v-if="showMenu" class="relative mt-3 md:hidden">
             <div
               class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
             >
               <svg
-                class="w-5 h-5 text-gray-500"
+                class="w-5 h-5"
                 aria-hidden="true"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -170,29 +111,68 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span class="sr-only">Search icon</span>
             </div>
             <input
               type="text"
               id="search-navbar"
+              v-model="searchQuery"
               class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search..."
-              v-model="searchQuery"
               @focusout="showDiv = !showDiv"
               @focusin="showDiv = !showDiv"
             />
-          </div>
-        </div> -->
-        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+          </li>
+          <li
+            @click="showMenu = !showMenu"
+            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
+          >
+            <router-link to="/products">Product</router-link>
+          </li>
+          <li
+            @click="showMenu = !showMenu"
+            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
+          >
+            <router-link to="/recipe">Recipe</router-link>
+          </li>
+          <li
+            @click="showMenu = !showMenu"
+            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
+          >
+            <router-link to="/about">About Us</router-link>
+          </li>
+          <li
+            @click="showMenu = !showMenu"
+            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
+          >
+            <router-link to="/contact">Contact</router-link>
+          </li>
+          <li
+            @click="showMenu = !showMenu"
+            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
+          >
+            <router-link to="/location">Location</router-link>
+          </li>
+        </ul>
       </nav>
     </div>
   </div>
 </template>
 <script>
 export default {
+  watch: {
+    search(val) {
+      this.newProducts = [];
+      this.products.forEach((element) => {
+        if (element.name.includes(val) && val != "") {
+          this.newProducts.push(element);
+        }
+      });
+    },
+  },
   data() {
     return {
-      searchQuery: null,
+      search: "",
+      toggle: false,
       products: [
         {
           id: 1,
@@ -627,6 +607,7 @@ export default {
           productLink: "",
         },
       ],
+      newProducts: [],
       showMenu: false,
       showDiv: false,
     };
@@ -650,5 +631,42 @@ export default {
     this.showMenu = !this.showMenu;
     this.showDiv = !this.showDiv;
   },
+  methods: {
+    selectResult(product) {
+      this.search = product.name;
+    },
+  },
 };
 </script>
+<style scoped>
+input {
+  width: 150%;
+  border: none;
+  height: 38px;
+  padding-left: 10px;
+  padding-right: -10px;
+  box-shadow: inset 0 0 0 1px #b2b2b2;
+  border-radius: 4px;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.contain input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #ffb300;
+}
+
+.contain .results {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.contain .results .result {
+  padding: 20px 0.75rem;
+}
+.contain .results .result:hover {
+  background: #efefef;
+}
+</style>

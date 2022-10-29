@@ -96,3 +96,10 @@ p {
   border-style: solid 2px;
   border-color: #bdb76b;
 }
+.z {
+  z-index: -2;
+}
+
+.zterang {
+  z-index: 2;
+}
