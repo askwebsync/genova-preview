@@ -5,7 +5,7 @@
     <div class="container mx-auto">
       <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
         <div class="flex flex-row">
-          <h1 class="text-left pcolor mb-6 font-semibold text-xl">
+          <h1 class="text-left pcolor mb-3 font-semibold text-xl">
             TRENDING FLAVOUR
           </h1>
           <!-- <div class="rating space-y-6">

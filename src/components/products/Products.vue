@@ -4,7 +4,7 @@
     <div class="container mx-auto">
       <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
         <div class="flex flex-row">
-          <h1 class="text-left pcolor mb-6">PRODUCTS</h1>
+          <h1 class="text-left pcolor mb-3">PRODUCTS</h1>
         </div>
         <hr class="h-1 rounded w-32 background-navbar border-0" />
         <div class="grid md:grid-cols-3 justify-center gap-12 mt-10 mb-5">

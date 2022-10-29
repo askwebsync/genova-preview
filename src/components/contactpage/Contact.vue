@@ -4,8 +4,10 @@
     <div class="flex flex-col my-12">
       <div class="text-center mb-12 mt-6 center mx-6">
         <div class="flex flex-col max-w-xs">
-          <h1 class="pcolor mb-6">Contact Us</h1>
-          <p class="text-lg text-gray-800 md:text-xl">
+          <h1 class="pcolor mb-3 text-xs md:text-base lg:text-lg">
+            Contact Us
+          </h1>
+          <p class="text-xs md:text-base lg:text-lg">
             Get in touch with us for more information
           </p>
         </div>

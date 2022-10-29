@@ -62,8 +62,11 @@ const router = createRouter({
     },
     {
       path: "/detail-product",
-      name: "detail-product",
-      props: true,
+      name: "productDetailPage",
+      props: (route) => ({
+        dataProduk: route.query.dataProduk,
+        ...route.query,
+      }),
       component: () => import("../views/ProductDetailPage.vue"),
     },
   ],
