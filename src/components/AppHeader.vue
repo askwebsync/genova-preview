@@ -5,17 +5,6 @@
         class="container px-4 py-7 mx-auto md:px-6 md:items-center lg:px-8 xl:px-12"
       >
         <div class="flex items-center justify-between">
-          <router-link
-            to="/"
-            class="text-xl font-bold text-gray-800 md:text-2xl hover:text-yellow-600"
-            ><img
-              src="../assets/images/logo/Genova_Logo_no_bg.png"
-              alt=""
-              height="120"
-              width="120"
-              class="focus:outline-none"
-            />
-          </router-link>
           <!-- Mobile menu button -->
           <div @click="showMenu = !showMenu" class="flex md:hidden">
             <button type="button" class="text-black focus:outline-none">
@@ -27,8 +16,19 @@
               </svg>
             </button>
           </div>
+          <router-link
+            to="/"
+            class="text-xl font-bold text-gray-800 md:text-2xl hover:text-yellow-600"
+            ><img
+              src="../assets/images/logo/Genova_Logo_no_bg.png"
+              alt=""
+              height="120"
+              width="120"
+              class="focus:outline-none"
+            />
+          </router-link>
 
-          <div class="flex md:order-2 w-7/12">
+          <div class="flex md:order-2 md:w-7/12 md:mx-auto">
             <div
               :class="showMenu ? 'flex' : 'hidden'"
               class="hidden relative md:block w-full"
@@ -60,6 +60,28 @@
                 @focusout="showDiv = !showDiv"
                 @focusin="showDiv = !showDiv"
               />
+            </div>
+          </div>
+          <!-- list search item -->
+          <div
+            :class="showDiv ? 'fixed ' : 'hidden'"
+            class="w-6/12 h-1/4 overflow-auto bg-slate-500 flex-col z-[100]"
+          >
+            <div
+              v-for="product in resultQuery"
+              :key="product.id"
+              class="flex flex-col border"
+            >
+              <div class="item fruit">
+                <div class="flex justify-around items-center py-1">
+                  <img
+                    :src="product.image"
+                    :alt="product.name"
+                    class="w-20 h-20"
+                  />
+                  <p>{{ product.name }}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -98,33 +120,10 @@
             />
           </div>
         </div> -->
-
-        <!-- list search item -->
-        <div
-          :class="showDiv ? 'fixed top-5 right-0' : 'hidden'"
-          class="w-4/12 h-1/4 overflow-auto bg-slate-500 mt-14 mr-auto flex-col z-[100]"
-        >
-          <div
-            v-for="product in resultQuery"
-            :key="product.id"
-            class="flex flex-col border"
-          >
-            <div class="item fruit">
-              <div class="flex justify-around items-center py-1">
-                <img
-                  :src="product.image"
-                  :alt="product.name"
-                  class="w-20 h-20"
-                />
-                <p>{{ product.name }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <ul
           :class="showMenu ? 'flex' : 'hidden'"
-          class="flex-col md:justify-around mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-2 md:order-1"
+          class="flex-col md:justify-around mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-4 md:order-1"
         >
           <li v-if="showMenu" class="relative mt-3 md:hidden">
             <div
