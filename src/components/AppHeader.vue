@@ -672,6 +672,10 @@ input {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.container .results .result {
+  padding: 20px 0.75rem;
+}
+
 .contain .results .result:hover {
   background: #efefef;
 }
