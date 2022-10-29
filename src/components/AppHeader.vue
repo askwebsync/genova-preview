@@ -49,7 +49,7 @@
                   />
                 </div>
                 <div
-                  class="results cursor-pointer overflow-y-scroll h-32 zterang"
+                  class="results relative md:absolute cursor-pointer overflow-y-scroll h-32 zterang"
                   v-if="toggle"
                 >
                   <div
@@ -170,7 +170,10 @@ export default {
     search(val) {
       this.newProducts = [];
       this.products.forEach((element) => {
-        if (element.name.includes(val) && val != "") {
+        if (
+          element.name.toLowerCase().includes(val.toLowerCase()) &&
+          val != ""
+        ) {
           this.newProducts.push(element);
         }
       });
