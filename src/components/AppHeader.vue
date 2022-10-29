@@ -38,14 +38,6 @@
                 class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
               ></div>
               <div class="contain">
-                <!-- <input
-                  type="text"
-                  class="w-full"
-                  placeholder="Search Item"
-                  v-model="search"
-                  @blur="toggle = false"
-                  @focus="toggle = true"
-                /> -->
                 <div class="relative text-gray-600">
                   <input
                     type="text"
@@ -94,34 +86,6 @@
           :class="showMenu ? 'flex' : 'hidden'"
           class="flex-col md:justify-around mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
         >
-          <li v-if="showMenu" class="relative mt-3 md:hidden">
-            <div
-              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-            >
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
-            <input
-              type="text"
-              id="search-navbar"
-              v-model="searchQuery"
-              class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Search..."
-              @focusout="showDiv = !showDiv"
-              @focusin="showDiv = !showDiv"
-            />
-          </li>
           <li
             @click="showMenu = !showMenu"
             class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
@@ -151,6 +115,49 @@
             class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/location">Location</router-link>
+          </li>
+          <li v-if="showMenu" class="relative mt-3 center md:hidden">
+            <div class="contain w-1/2">
+              <div class="relative text-gray-600">
+                <input
+                  type="text"
+                  class="block w-full"
+                  placeholder="Search Item"
+                  v-model="search"
+                  @blur="toggle = false"
+                  @focus="toggle = true"
+                />
+              </div>
+              <div
+                class="results cursor-pointer overflow-y-scroll h-32 zterang"
+                v-if="toggle"
+              >
+                <div
+                  class="result cursor-pointer"
+                  v-for="(product, id) in newProducts"
+                  :key="id"
+                >
+                  <div @click="selectResult(product)" @mousedown.prevent>
+                    <router-link
+                      :to="{
+                        name: 'productDetailPage',
+                        query: {
+                          dataProduk: JSON.stringify({
+                            name: product.name,
+                            price: product.price,
+                            link: product.image,
+                          }),
+                        },
+                      }"
+                    >
+                      <div class="cursor-pointer" @click="toggle = false">
+                        {{ product.name }}
+                      </div>
+                    </router-link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -640,7 +647,7 @@ export default {
 </script>
 <style scoped>
 input {
-  width: 150%;
+  width: 100%;
   border: none;
   height: 38px;
   padding-left: 10px;
