@@ -1,15 +1,15 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="container mx-auto">
-    <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
+    <div class="p-4 lg:p-6 lg:py-12 xl:p-12">
       <div
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1 class="text-left pcolor mb-3 text-xs md:text-sm">LIQUID SYRUP</h1>
+          <h1 class="pcolor mb-3 text-xs md:text-base">LIQUID SYRUP</h1>
           <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
-
+        <!-- 
         <div class="flex justify-between pb-3 gap-2">
           <div class="max-w-md mx-auto">
             <div
@@ -41,35 +41,43 @@
               />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div
-        class="grid md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-12 mt-12 mb-5"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-y-6 md:gap-12 mt-12 mb-5"
       >
         <div v-for="product in resultQuery" :key="product.id">
-          <div
-            class="max-w-xs mx-4 mb-3 rounded-lg shadow-lg background-yellow-light"
+          <router-link
+            :to="{
+              name: 'productDetailPage',
+              query: {
+                dataProduk: JSON.stringify({
+                  name: product.name,
+                  price: product.price,
+                  link: product.image,
+                }),
+              },
+            }"
           >
-            <img
-              :src="product.image"
-              :alt="product.name"
-              class="w-full h-48 object-contain rounded-t-xl"
-            />
-            <div class="px-6 py-4">
-              <h2 class="mb-3 text-xl font-semibold tracking-tight text-black">
-                {{ product.name }}
-              </h2>
-              <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
-              <div class="mt-6">
-                <button
-                  class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+            <div
+              class="max-w-xs mx-4 mb-3 rounded-lg shadow-lg background-yellow-light"
+            >
+              <img
+                :src="product.image"
+                :alt="product.name"
+                class="w-full h-48 object-contain rounded-t-xl"
+              />
+              <div class="flex flex-col gap-2 px-6 py-4">
+                <h2
+                  class="mb-5 text-xl font-semibold tracking-tight text-black"
                 >
-                  See More
-                </button>
+                  {{ product.name }}
+                </h2>
+                <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
               </div>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
     </div>

@@ -34,10 +34,29 @@
         </div>
 
         <div class="contain mt-6 md:mt-0">
-          <div class="relative text-gray-600">
+          <div
+            class="relative flex items-center w-full h-12 rounded-lg border-2 bg-white overflow-hidden"
+          >
+            <div class="grid place-items-center h-full w-12 text-gray-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </div>
+
             <input
+              class="peer h-full w-full outline-none text-sm text-gray-700 pr-2"
               type="text"
-              class="block w-full"
               placeholder="Search Item"
               v-model="search"
               @blur="toggle = false"
@@ -45,7 +64,7 @@
             />
           </div>
           <div
-            class="results relative md:absolute cursor-pointer overflow-y-scroll h-32 w-32 zterang"
+            class="results relative w-1/2 md:w-full md:absolute cursor-pointer overflow-y-scroll h-32 zterang"
             v-if="toggle"
           >
             <div
@@ -599,18 +618,6 @@ export default {
 };
 </script>
 <style scoped>
-input {
-  width: 100%;
-  border: none;
-  height: 38px;
-  padding-left: 10px;
-  padding-right: -10px;
-  box-shadow: inset 0 0 0 1px #b2b2b2;
-  border-radius: 4px;
-  background: transparent;
-  transition: all 0.2s ease;
-}
-
 .contain input:focus {
   outline: none;
   box-shadow: inset 0 0 0 2px #ffb300;

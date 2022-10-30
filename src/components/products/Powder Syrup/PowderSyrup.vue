@@ -1,14 +1,14 @@
 <template>
   <section class="container mx-auto">
-    <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
+    <div class="p-4 lg:p-6 lg:py-12 xl:p-12">
       <div
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1 class="text-left pcolor mb-3 text-xs md:text-sm">POWDER SYRUP</h1>
+          <h1 class="pcolor mb-3 text-xs md:text-base">POWDER SYRUP</h1>
           <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
-
+        <!-- 
         <div class="flex justify-between pb-3 gap-2">
           <div class="max-w-md mx-auto">
             <div
@@ -40,35 +40,43 @@
               />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div
-        class="grid md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-12 mt-12 mb-5"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-y-6 md:gap-12 mt-12 mb-5"
       >
         <div v-for="product in resultQuery" :key="product.id">
-          <div
-            class="max-w-xs mx-4 mb-3 rounded-lg shadow-lg background-yellow-light p-4"
+          <router-link
+            :to="{
+              name: 'productDetailPage',
+              query: {
+                dataProduk: JSON.stringify({
+                  name: product.name,
+                  price: product.price,
+                  link: product.image,
+                }),
+              },
+            }"
           >
-            <img
-              :src="product.image"
-              :alt="product.name"
-              class="w-full h-48 object-contain rounded-t-xl"
-            />
-            <div class="px-6 py-4 max-w-xs">
-              <h3 class="mb-3 text-xl font-semibold tracking-tight text-black">
-                {{ product.name }}
-              </h3>
-              <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
-              <div class="mt-6">
-                <button
-                  class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+            <div
+              class="max-w-xs mx-4 mb-3 rounded-lg shadow-lg background-yellow-light"
+            >
+              <img
+                :src="product.image"
+                :alt="product.name"
+                class="w-full h-48 object-contain rounded-t-xl"
+              />
+              <div class="flex flex-col gap-2 px-6 py-4">
+                <h2
+                  class="mb-5 text-xl font-semibold tracking-tight text-black"
                 >
-                  See More
-                </button>
+                  {{ product.name }}
+                </h2>
+                <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
               </div>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -84,103 +92,103 @@ export default {
         {
           id: 1,
           name: "Powder Avocado",
-          image: "../powder-avocado.png",
+          image: "powder-avocado.png",
           price: "150,000",
         },
         {
           id: 2,
           name: "Powder Cappuccino",
-          image: "../powder-cappuccino.png",
+          image: "powder-cappuccino.png",
           price: "139,000",
         },
         {
           id: 4,
           name: "Powder Charcoal",
-          image: "../powder-charcoal.png",
+          image: "powder-charcoal.png",
           price: "159,000",
         },
         {
           id: 5,
           name: "Powder Chocolate",
-          image: "../powder-chocolateclassic.png",
+          image: "powder-chocolateclassic.png",
           price: "139,000",
         },
         {
           id: 6,
           name: "Powder Cookies",
-          image: "../powder-cookiescream.png",
+          image: "powder-cookiescream.png",
           price: "155,000",
         },
         {
           id: 7,
           name: "Powder Cotton Candy",
-          image: "../powder-cottoncandy.png",
+          image: "powder-cottoncandy.png",
           price: "139,000",
         },
         {
           id: 8,
           name: "Powder Dark Chocolate",
-          image: "../powder-darkchocolate.png",
+          image: "powder-darkchocolate.png",
           price: "139,000",
         },
         {
           id: 9,
           name: "Powder Frappe Base",
-          image: "../powder-frappebase.png",
+          image: "powder-frappebase.png",
           price: "139,000",
         },
         {
           id: 10,
           name: "Powder Greentea",
-          image: "../powder-greentea.png",
+          image: "powder-greentea.png",
           price: "150,000",
         },
         {
           id: 11,
           name: "Powder Macchiato",
-          image: "../powder-macchiato.png",
+          image: "powder-macchiato.png",
           price: "139,000",
         },
         {
           id: 12,
           name: "Powder Matcha Latte",
-          image: "../powder-matchalatte.png",
+          image: "powder-matchalatte.png",
           price: "169,000",
         },
         {
           id: 13,
           name: "Powder Matcha Premium",
-          image: "../powder-matchapremium.png",
+          image: "powder-matchapremium.png",
           price: "245,000",
         },
         {
           id: 14,
           name: "Powder Mocha",
-          image: "../powder-mocha.png",
+          image: "powder-mocha.png",
           price: "139,000",
         },
         {
           id: 15,
           name: "Powder Mochaccino",
-          image: "../powder-mochaccino.png",
+          image: "powder-mochaccino.png",
           price: "139,000",
         },
         {
           id: 16,
           name: "Powder Red Velvet",
-          image: "../powder-redvelvet.png",
+          image: "powder-redvelvet.png",
           price: "139,000",
         },
         {
           id: 17,
           name: "Powder Thai Tea",
-          image: "../powder-thaitea.png",
+          image: "powder-thaitea.png",
           price: "139,000",
         },
         {
           id: 18,
           name: "Powder Tiramisu",
-          image: "../powder-tiramisu.png",
+          image: "powder-tiramisu.png",
           price: "139,000",
         },
       ],
