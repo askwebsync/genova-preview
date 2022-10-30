@@ -3,23 +3,12 @@
   <div>
     <div class="">
       <nav
-        class="container px-4 py-7 mx-auto md:flex justify-between md:px-6 md:items-center lg:px-8 xl:px-12"
+        class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center lg:px-8 xl:px-12"
       >
-        <div class="flex items-center justify-between gap-x-24">
-          <!-- Mobile menu button -->
-          <div @click="showMenu = !showMenu" class="flex md:hidden">
-            <button type="button" class="text-black focus:outline-none">
-              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
-                <path
-                  fill-rule="evenodd"
-                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
+        <div class="flex items-center justify-between">
           <router-link
             to="/"
-            class="text-xl font-bold text-gray-800 md:text-2xl hover:text-yellow-600"
+            class="text-xl font-bold md:text-2xl hover:text-yellow-600"
             ><img
               src="../assets/images/logo/Genova_Logo_no_bg.png"
               alt=""
@@ -28,136 +17,97 @@
               class="focus:outline-none"
             />
           </router-link>
-
-          <div class="flex md:order-2 md:mx-auto">
-            <div
-              :class="showMenu ? 'flex' : 'hidden'"
-              class="hidden relative md:block w-full"
+          <!-- Mobile menu button -->
+          <div @click="showMenu = !showMenu" class="flex md:hidden">
+            <button
+              type="button"
+              class="hover:text-gray-700 focus:outline-none focus:text-gray-400"
             >
-              <div
-                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-              ></div>
-              <div class="contain">
-                <div class="relative text-gray-600">
-                  <input
-                    type="text"
-                    class="block w-full"
-                    placeholder="Search Item"
-                    v-model="search"
-                    @blur="toggle = false"
-                    @focus="toggle = true"
-                  />
-                </div>
-                <div
-                  class="results relative md:absolute cursor-pointer overflow-y-scroll h-32 zterang"
-                  v-if="toggle"
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="contain mt-6 md:mt-0">
+          <div class="relative text-gray-600">
+            <input
+              type="text"
+              class="block w-full"
+              placeholder="Search Item"
+              v-model="search"
+              @blur="toggle = false"
+              @focus="toggle = true"
+            />
+          </div>
+          <div
+            class="results relative md:absolute cursor-pointer overflow-y-scroll h-32 w-32 zterang"
+            v-if="toggle"
+          >
+            <div
+              class="result cursor-pointer"
+              v-for="(product, id) in newProducts"
+              :key="id"
+            >
+              <div @click="selectResult(product)" @mousedown.prevent>
+                <router-link
+                  :to="{
+                    name: 'productDetailPage',
+                    query: {
+                      dataProduk: JSON.stringify({
+                        name: product.name,
+                        price: product.price,
+                        link: product.image,
+                      }),
+                    },
+                  }"
                 >
-                  <div
-                    class="result cursor-pointer"
-                    v-for="(product, id) in newProducts"
-                    :key="id"
-                  >
-                    <div @click="selectResult(product)" @mousedown.prevent>
-                      <router-link
-                        :to="{
-                          name: 'productDetailPage',
-                          query: {
-                            dataProduk: JSON.stringify({
-                              name: product.name,
-                              price: product.price,
-                              link: product.image,
-                            }),
-                          },
-                        }"
-                      >
-                        <div class="cursor-pointer" @click="toggle = false">
-                          {{ product.name }}
-                        </div>
-                      </router-link>
-                    </div>
+                  <div class="cursor-pointer" @click="toggle = false">
+                    {{ product.name }}
                   </div>
-                </div>
+                </router-link>
               </div>
             </div>
           </div>
         </div>
-
+        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <ul
           :class="showMenu ? 'flex' : 'hidden'"
-          class="flex-col md:justify-around mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
+          class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-5 lg:space-x-10 md:mt-0"
         >
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
+            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/products">Product</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
+            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/recipe">Recipe</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
+            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/about">About Us</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
+            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/contact">Contact</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-base font-semibold text-black hover:text-yellow-600 focus:outline-none"
+            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/location">Location</router-link>
-          </li>
-          <li v-if="showMenu" class="relative mt-3 center md:hidden">
-            <div class="contain w-1/2">
-              <div class="relative text-gray-600">
-                <input
-                  type="text"
-                  class="block w-full"
-                  placeholder="Search Item"
-                  v-model="search"
-                  @blur="toggle = false"
-                  @focus="toggle = true"
-                />
-              </div>
-              <div
-                class="results relative md:absolute cursor-pointer overflow-y-scroll h-32 zterang"
-                v-if="toggle"
-              >
-                <div
-                  class="result cursor-pointer"
-                  v-for="(product, id) in newProducts"
-                  :key="id"
-                >
-                  <div @click="selectResult(product)" @mousedown.prevent>
-                    <router-link
-                      :to="{
-                        name: 'productDetailPage',
-                        query: {
-                          dataProduk: JSON.stringify({
-                            name: product.name,
-                            price: product.price,
-                            link: product.image,
-                          }),
-                        },
-                      }"
-                    >
-                      <div class="cursor-pointer" @click="toggle = false">
-                        {{ product.name }}
-                      </div>
-                    </router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </li>
         </ul>
       </nav>
