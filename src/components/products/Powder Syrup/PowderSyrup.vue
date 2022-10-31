@@ -92,13 +92,13 @@ export default {
         {
           id: 1,
           name: "Powder Avocado",
-          image: "powder-avocado.png",
+          image: "../powder-avocado.png",
           price: "150,000",
         },
         {
           id: 2,
           name: "Powder Cappuccino",
-          image: "powder-cappuccino.png",
+          image: "../powder-cappuccino.png",
           price: "139,000",
         },
         {
