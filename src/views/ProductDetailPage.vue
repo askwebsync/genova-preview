@@ -2,7 +2,10 @@
 <template>
   <section class="container mx-auto">
     <div class="py-6 px-4 lg:px-6 lg:py-12 xl:px-12">
-      <div class="flex flex-col my-12 px-4 gap items-center" v-if="productShow">
+      <div
+        class="flex flex-col my-12 px-4 gap-y-6 items-center"
+        v-if="productShow"
+      >
         <div class="flex flex-col md:flex-row mb-12 gap-12">
           <!-- image-->
           <div
@@ -73,55 +76,63 @@
             </div>
           </div>
         </div>
-        <div class="w-100 mt-4">
-          <h1 class="pcolor mb-2 text-xs md:text-base lg:text-lg xl:text-xxl">
-            Details
-          </h1>
-          <table class="text-left">
-            <tr class="border-b-2 border-yellow h-16">
-              <td class="w-1/2 md:w-1/6">
-                <p class="text-md mt-1">Rating</p>
-              </td>
-              <td><p class="text-md mt-1">94</p></td>
-            </tr>
-            <tr class="border-b-2 border-yellow h-16">
-              <td class="w-1/2 md:w-1/6">
-                <p class="text-md mt-1">Ingredient</p>
-              </td>
-              <td>
-                <p class="text-md mt-1">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
-                  ratione sequi, saepe enim id suscipit illum ipsa vero nisi,
-                  dolorem blanditiis! Explicabo expedita id nulla adipisci ipsum
-                  aspernatur omnis repellat.
-                </p>
-              </td>
-            </tr>
-            <tr class="border-b-2 border-yellow h-16">
-              <td class="w-1/2 md:w-1/6">
-                <p class="text-md mt-1">Tasting Notes</p>
-              </td>
-              <td>
-                <p class="text-md mt-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestiae, expedita placeat, officia ex, earum minima libero
-                  nisi corrupti labore sit laudantium porro possimus magnam
-                  facere nulla repellat itaque corporis pariatur.
-                </p>
-              </td>
-            </tr>
-            <tr class="border-b-2 border-yellow h-16">
-              <td class="w-1/2 md:w-1/6"><p class="text-md mt-1">Color</p></td>
-              <td>
-                <p class="text-md mt-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus distinctio saepe quibusdam perspiciatis dolorem animi,
-                  adipisci rem natus! Cupiditate aliquid, reiciendis quibusdam
-                  ipsa et velit quas atque praesentium iure nesciunt.
-                </p>
-              </td>
-            </tr>
-          </table>
+        <div class="background-yellow">
+          <div class="w-100 mt-4 mx-2">
+            <!-- <h1
+              class="text-white mb-4 text-xs md:text-base lg:text-lg xl:text-xxl"
+            >
+              Details
+            </h1> -->
+
+            <table class="text-left">
+              <tr class="border-b-2 border-white h-16">
+                <td class="w-1/2 md:w-1/6">
+                  <p class="text-md my-1">Rating</p>
+                </td>
+                <td><p class="text-md my-1">94</p></td>
+              </tr>
+              <tr class="border-b-2 border-white h-16">
+                <td class="w-1/2 md:w-1/6">
+                  <p class="text-md my-1">Ingredient</p>
+                </td>
+                <td>
+                  <p class="text-md my-1">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nam ratione sequi, saepe enim id suscipit illum ipsa vero
+                    nisi, dolorem blanditiis! Explicabo expedita id nulla
+                    adipisci ipsum aspernatur omnis repellat.
+                  </p>
+                </td>
+              </tr>
+              <tr class="border-b-2 border-white h-16">
+                <td class="w-1/2 md:w-1/6">
+                  <p class="text-md my-1">Tasting Notes</p>
+                </td>
+                <td>
+                  <p class="text-md my-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, expedita placeat, officia ex, earum minima libero
+                    nisi corrupti labore sit laudantium porro possimus magnam
+                    facere nulla repellat itaque corporis pariatur.
+                  </p>
+                </td>
+              </tr>
+              <tr class="h-16">
+                <td class="w-1/2 md:w-1/6">
+                  <p class="text-md my-1">Color</p>
+                </td>
+                <td>
+                  <p class="text-md my-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus distinctio saepe quibusdam perspiciatis dolorem
+                    animi, adipisci rem natus! Cupiditate aliquid, reiciendis
+                    quibusdam ipsa et velit quas atque praesentium iure
+                    nesciunt.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
