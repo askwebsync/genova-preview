@@ -81,7 +81,7 @@
               <p
                 class="text-lg lg:text-xl pproduct text-black truncate block capitalizee"
               >
-                Fruit Bland
+                Fruit Blend
               </p>
               <div class="mt-4 md:mt-6">
                 <button
