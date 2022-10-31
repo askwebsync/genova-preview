@@ -11,7 +11,7 @@
           <img
             :src="productShow[1].image"
             :alt="productShow[1].name"
-            class="w-96 h-full object-contain rounded-t-xl"
+            class="w-full h-40 lg:h-48 object-contain rounded-t-xl"
           />
         </div>
         <!-- items detail -->
