@@ -513,7 +513,14 @@ export default {
     };
   },
   created() {
-    this.checkID;
+    console.log(this.$route.params.id);
+    for (let i = 0; i < this.products.length; i++) {
+      if (this.$route.params.id === this.products.id) {
+        this.productShow.push(JSON.parse(this.products));
+        console.log(this.productShow);
+        return this.productShow;
+      }
+    }
   },
   methods: {
     checkID() {
