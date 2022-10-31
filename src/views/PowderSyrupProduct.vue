@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names
 <template>
   <PowderSyrup />
 </template>
@@ -14,4 +13,4 @@ export default {
 };
 </script>
 
-<style scoped></style> -->
+<style scoped></style>

@@ -1,4 +1,4 @@
-<!-- eslint-disable vue/multi-word-component-names -->
+<!-- eslint-disable vue/multi-word-component-names
 <template>
   <TrendingProduct />
 </template>
@@ -14,4 +14,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped></style> -->
