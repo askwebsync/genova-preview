@@ -13,62 +13,6 @@
           <div
             class="flex flex-col max-w-lg p-4 md:p-5 items-center center focus:outline-none"
           >
-            <router-link to="/product/trending-product">
-              <img
-                src="../../assets/images/product/powder/powder-tiramisu.png"
-                alt="Product"
-                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
-              />
-
-              <div class="max-w-lg p-2 mt-2">
-                <p
-                  class="text-2xl md:text-2xl pproduct text-black truncate block capitalize"
-                >
-                  Trending Product
-                </p>
-              </div>
-            </router-link>
-          </div>
-          <div
-            class="flex flex-col max-w-lg p-4 md:p-5 items-center center focus:outline-none"
-          >
-            <router-link to="/product/new-product">
-              <img
-                src="../../assets/images/product/powder/powder-cottoncandy.png"
-                alt="Product"
-                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
-              />
-
-              <div class="max-w-lg p-2 mt-2">
-                <p
-                  class="text-2xl md:text-2xl pproduct text-black truncate block capitalize"
-                >
-                  New Product
-                </p>
-              </div>
-            </router-link>
-          </div>
-          <div
-            class="flex flex-col max-w-lg p-4 md:p-5 items-center center focus:outline-none"
-          >
-            <a href="#">
-              <img
-                src="../../assets/images/product/powder/powder-cookiescream.png"
-                alt="Product"
-                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
-              />
-            </a>
-            <div class="max-w-lg p-2 mt-2">
-              <p
-                class="text-2xl md:text-2xl pproduct text-black truncate block capitalize"
-              >
-                Beverage Boost
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex flex-col max-w-lg p-4 md:p-5 items-center center focus:outline-none"
-          >
             <router-link to="/product/fruit-bland">
               <img
                 src="../../assets/images/product/fruit-bland/fruit_bland_passion.png"
