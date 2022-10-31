@@ -33,7 +33,7 @@
           </div>
         </div>
 
-        <div class="contain mt-6 md:mt-0 md:w-2/6">
+        <div class="contain mt-6 md:mt-0 md:w-1/6 lg:w-2/6">
           <div class="relative text-gray-600 w-full">
             <input
               type="text"
@@ -45,7 +45,7 @@
             />
           </div>
           <div
-            class="results relative md:absolute cursor-pointer overflow-y-scroll h-32 w-100 zterang md:w-[27%]"
+            class="results relative md:absolute cursor-pointer overflow-y-scroll h-32 w-100 zterang md:w-[30%] lg:w-[27%]"
             v-if="toggle"
           >
             <div
@@ -77,7 +77,7 @@
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <ul
           :class="showMenu ? 'flex' : 'hidden'"
-          class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-5 lg:space-x-10 md:mt-0"
+          class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-5 xl:space-x-10 md:mt-0"
         >
           <li
             @click="showMenu = !showMenu"

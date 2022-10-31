@@ -5,7 +5,9 @@
       <div class="flex flex-col my-12 px-4 gap items-center" v-if="productShow">
         <div class="flex flex-col md:flex-row mb-12 gap-12">
           <!-- image-->
-          <div class="w-1/2 center card-shadow-tiga max-w-xl self-start">
+          <div
+            class="w-full md:w-1/2 center card-shadow-tiga max-w-xl self-start"
+          >
             <img
               :src="productShow[1].image"
               :alt="productShow[1].name"
@@ -14,7 +16,7 @@
           </div>
 
           <!-- items detail -->
-          <div class="w-1/2 flex flex-col gap-2 md:ml-5">
+          <div class="w-full md:w-1/2 flex flex-col gap-2 md:ml-5">
             <!-- Name + Info -->
             <div class="flex flex-col my-4 text-left max-w-xl">
               <div class="mb-6">
@@ -71,7 +73,7 @@
             </div>
           </div>
         </div>
-        <div class="w-100">
+        <div class="w-100 mt-4">
           <h1 class="pcolor mb-2 text-xs md:text-base lg:text-lg xl:text-xxl">
             Details
           </h1>

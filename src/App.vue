@@ -16,7 +16,11 @@ export default {
 <template>
   <div class="min-h-screen" id="app">
     <AppHeader class="" />
-    <router-view />
+    <router-view v-slot="{ Component }">
+      <transition name="fade">
+        <component :is="Component" />
+      </transition>
+    </router-view>
     <AppFooter class="sticky top-[100vh]" />
   </div>
 </template>
