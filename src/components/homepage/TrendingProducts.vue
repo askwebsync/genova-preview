@@ -31,7 +31,8 @@
                         dataProduk: JSON.stringify({
                           name: product.name,
                           price: product.price,
-                          link: product.image,
+                          image: product.image,
+                          link: product.link,
                         }),
                       },
                     }"
@@ -81,7 +82,6 @@ export default {
           image: "../powder-matchalatte.png",
           price: "169,000",
           link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-latte-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          linkImage: "",
         },
         {
           id: 2,

@@ -55,7 +55,8 @@
                 dataProduk: JSON.stringify({
                   name: product.name,
                   price: product.price,
-                  link: product.image,
+                  image: product.image,
+                  link: product.link,
                 }),
               },
             }"
@@ -66,7 +67,7 @@
               <img
                 :src="product.image"
                 :alt="product.name"
-                class="w-full h-48 object-contain rounded-t-xl"
+                class="w-full h-40 lg:h-48 object-contain rounded-t-xl"
               />
               <div class="flex flex-col gap-2 px-6 py-4">
                 <h2

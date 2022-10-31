@@ -11,7 +11,7 @@
           <img
             :src="productShow[1].image"
             :alt="productShow[1].name"
-            class="w-full h-40 lg:h-48 object-contain rounded-t-xl"
+            class="object-contain rounded-t-xl"
           />
         </div>
         <!-- items detail -->
@@ -93,6 +93,7 @@ export default {
           id: 0,
           name: "",
           image: "",
+          imageDetail: "",
           price: "",
           categoryId: 0,
           productInfo: "",

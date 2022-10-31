@@ -5,42 +5,9 @@
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1 class="pcolor mb-3 text-xs md:text-base">POWDER SYRUP</h1>
+          <h1 class="pcolor mb-3 text-xs md:text-base">FRUIT BLEND</h1>
           <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
-        <!-- 
-        <div class="flex justify-between pb-3 gap-2">
-          <div class="max-w-md mx-auto">
-            <div
-              class="relative flex items-center w-full h-12 rounded-lg border-2 bg-white overflow-hidden"
-            >
-              <div class="grid place-items-center h-full w-12 text-gray-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </div>
-
-              <input
-                v-model="searchQuery"
-                class="peer h-full w-full outline-none text-sm text-gray-700 pr-2"
-                type="text"
-                id="search"
-                placeholder="Search something.."
-              />
-            </div>
-          </div>
-        </div> -->
       </div>
 
       <div
@@ -54,7 +21,8 @@
                 dataProduk: JSON.stringify({
                   name: product.name,
                   price: product.price,
-                  link: product.image,
+                  image: product.image,
+                  link: product.link,
                 }),
               },
             }"
@@ -65,7 +33,7 @@
               <img
                 :src="product.image"
                 :alt="product.name"
-                class="w-full h-48 object-contain rounded-t-xl"
+                class="w-full h-40 lg:h-48 object-contain rounded-t-xl"
               />
               <div class="flex flex-col gap-2 px-6 py-4">
                 <h2
@@ -104,91 +72,91 @@ export default {
         {
           id: 4,
           name: "Powder Charcoal",
-          image: "powder-charcoal.png",
+          image: "../powder-charcoal.png",
           price: "159,000",
         },
         {
           id: 5,
           name: "Powder Chocolate",
-          image: "powder-chocolateclassic.png",
+          image: "../powder-chocolateclassic.png",
           price: "139,000",
         },
         {
           id: 6,
           name: "Powder Cookies",
-          image: "powder-cookiescream.png",
+          image: "../powder-cookiescream.png",
           price: "155,000",
         },
         {
           id: 7,
           name: "Powder Cotton Candy",
-          image: "powder-cottoncandy.png",
+          image: "../powder-cottoncandy.png",
           price: "139,000",
         },
         {
           id: 8,
           name: "Powder Dark Chocolate",
-          image: "powder-darkchocolate.png",
+          image: "../powder-darkchocolate.png",
           price: "139,000",
         },
         {
           id: 9,
           name: "Powder Frappe Base",
-          image: "powder-frappebase.png",
+          image: "../powder-frappebase.png",
           price: "139,000",
         },
         {
           id: 10,
           name: "Powder Greentea",
-          image: "powder-greentea.png",
+          image: "../powder-greentea.png",
           price: "150,000",
         },
         {
           id: 11,
           name: "Powder Macchiato",
-          image: "powder-macchiato.png",
+          image: "../powder-macchiato.png",
           price: "139,000",
         },
         {
           id: 12,
           name: "Powder Matcha Latte",
-          image: "powder-matchalatte.png",
+          image: "../powder-matchalatte.png",
           price: "169,000",
         },
         {
           id: 13,
           name: "Powder Matcha Premium",
-          image: "powder-matchapremium.png",
+          image: "../powder-matchapremium.png",
           price: "245,000",
         },
         {
           id: 14,
           name: "Powder Mocha",
-          image: "powder-mocha.png",
+          image: "../powder-mocha.png",
           price: "139,000",
         },
         {
           id: 15,
           name: "Powder Mochaccino",
-          image: "powder-mochaccino.png",
+          image: "../powder-mochaccino.png",
           price: "139,000",
         },
         {
           id: 16,
           name: "Powder Red Velvet",
-          image: "powder-redvelvet.png",
+          image: "../powder-redvelvet.png",
           price: "139,000",
         },
         {
           id: 17,
           name: "Powder Thai Tea",
-          image: "powder-thaitea.png",
+          image: "../powder-thaitea.png",
           price: "139,000",
         },
         {
           id: 18,
           name: "Powder Tiramisu",
-          image: "powder-tiramisu.png",
+          image: "../powder-tiramisu.png",
           price: "139,000",
         },
       ],
