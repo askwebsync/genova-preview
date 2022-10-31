@@ -25,14 +25,27 @@
                     {{ product.name }}
                   </h2>
                   <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
-                  <div class="mt-6">
-                    <a
-                      :href="product.link"
-                      class="rounded-lg px-3 py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
-                    >
-                      Buy Now
-                    </a>
-                  </div>
+                  <router-link
+                    :to="{
+                      name: 'productDetailPage',
+                      query: {
+                        dataProduk: JSON.stringify({
+                          name: product.name,
+                          price: product.price,
+                          link: product.image,
+                        }),
+                      },
+                    }"
+                  >
+                    <div class="mt-6">
+                      <button
+                        :href="product.link"
+                        class="rounded-lg px-3 py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                      >
+                        Buy Now
+                      </button>
+                    </div>
+                  </router-link>
                 </div>
               </div>
             </slide>
