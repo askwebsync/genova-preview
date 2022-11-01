@@ -74,40 +74,42 @@
             <table class="w-full">
               <tr class="border-b-2 border-white h-16">
                 <td class="w-1/2 md:w-1/6 text-left">
-                  <p class="text-md my-1 details">Size</p>
+                  <p class="m-2 text-lg lg:text-xl lg:m-4 details">Size</p>
                 </td>
                 <td class="text-left">
-                  <p class="text-md my-1">
+                  <p class="m-2 text-lg lg:text-xl lg:m-4">
                     {{ productShow[1].packaging }}
                   </p>
                 </td>
               </tr>
               <tr class="border-b-2 border-white h-16">
                 <td class="w-1/2 md:w-1/6 text-left">
-                  <p class="text-md my-1 details">Weight</p>
+                  <p class="m-2 text-lg lg:text-xl lg:m-4 details">Weight</p>
                 </td>
                 <td class="text-left">
-                  <p class="text-md my-1">
+                  <p class="m-2 text-lg lg:text-xl lg:m-4">
                     {{ productShow[1].weight }}
                   </p>
                 </td>
               </tr>
               <tr class="h-16">
                 <td class="w-1/2 md:w-1/6 text-left">
-                  <p class="text-md my-1 details">Serving Suggestions</p>
+                  <p class="m-2 text-lg lg:text-xl lg:m-4 details">
+                    Serving Suggestions
+                  </p>
                 </td>
                 <td class="text-left">
-                  <p class="text-md my-1">
+                  <p class="m-2 text-lg lg:text-xl lg:m-4">
                     {{ productShow[1].serving }}
                   </p>
                 </td>
               </tr>
               <!-- <tr class="h-16">
                 <td class="w-1/2 md:w-1/6 text-left">
-                  <p class="text-md my-1">Packaging</p>
+                  <p class="m-2 text-lg lg:text-xl lg:m-4 ">Packaging</p>
                 </td>
                 <td class="text-left">
-                  <p class="text-md my-1">
+                  <p class="m-2 text-lg lg:text-xl lg:m-4 ">
                     {{ productShow[1].size }}
                   </p>
                 </td>

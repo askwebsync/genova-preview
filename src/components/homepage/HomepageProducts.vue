@@ -19,7 +19,7 @@
             <img
               src="../../assets/images/product/powder/powder-tiramisu.png"
               alt="Product"
-              class="w-28 h28 md:w-48 md:h-48 object-fit rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-cover rounded-t-xl"
             />
 
             <div class="p-2 mt-6">
@@ -38,7 +38,7 @@
             <img
               src="../../assets/images/product/powder/powder-cottoncandy.png"
               alt="Product"
-              class="w-28 h28 md:w-48 md:h-48 object-fit rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-cover rounded-t-xl"
             />
 
             <div class="max-w-lg p-2 mt-6">
@@ -58,7 +58,7 @@
             <img
               src="../../assets/images/product/powder/powder-cookiescream.png"
               alt="Product"
-              class="w-28 h28 md:w-48 md:h-48 object-fit rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-cover rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-6">
@@ -70,13 +70,13 @@
           </div>
         </div> -->
         <div
-          class="col-span-1 flex flex-col bg-white border-2 p-4 items-center center focus:outline-none"
+          class="col-span-1 flex flex-col bg-white border-2 p-4 md:p-5 items-center center focus:outline-none"
         >
           <router-link to="/product/fruit-bland">
             <img
               src="../../assets/images/product/fruit-bland/fruit_bland_pineapple.png"
               alt="Product"
-              class="W-44 h-52 md:w-48 object-fit rounded-t-xl"
+              class="W-44 h-52 md:w-48 object-cover rounded-t-xl"
             />
 
             <div class="p-4">
@@ -96,13 +96,13 @@
           </router-link>
         </div>
         <div
-          class="col-span-1 flex flex-col bg-white border-2 p-4 items-center center focus:outline-none"
+          class="col-span-1 flex flex-col bg-white border-2 p-4 md:p-5 items-center center focus:outline-none"
         >
           <router-link to="/product/liquid-syrup">
             <img
               src="../../assets/images/product/syrup/syrup_bluecuracao.png"
               alt="Product"
-              class="W-44 h-52 md:w-48 object-fit rounded-t-xl"
+              class="W-44 h-52 md:w-48 object-cover rounded-t-xl"
             />
 
             <div class="p-4">
@@ -122,13 +122,13 @@
           </router-link>
         </div>
         <div
-          class="col-span-1 flex flex-col bg-white border-2 p-4 items-center center focus:outline-none"
+          class="col-span-1 flex flex-col bg-white border-2 p-4 md:p-5 items-center center focus:outline-none"
         >
           <router-link to="/product/powder-syrup">
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="W-44 h-52 md:w-48 object-fit rounded-t-xl"
+              class="W-44 h-52 md:w-48 object-cover rounded-t-xl"
             />
             <div class="p-4">
               <p
