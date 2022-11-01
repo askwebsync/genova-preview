@@ -76,6 +76,7 @@ export default {
           serving: "20 ml",
           color: "Hijau gelap intens, deep undertone",
           tasting: "",
+          size: "750ml",
         },
         {
           id: 19,
@@ -90,6 +91,7 @@ export default {
           serving: "20 ml",
           color: "Oranye terang dengan kilau kuning",
           tasting: "",
+          size: "750ml",
         },
         {
           id: 20,
@@ -104,6 +106,7 @@ export default {
           serving: "20 ml",
           color: "Oranye tua",
           tasting: "",
+          size: "750ml",
         },
         {
           id: 21,
@@ -118,6 +121,7 @@ export default {
           serving: "20 ml",
           color: "Kuning bertekstur cerah",
           tasting: "",
+          size: "750ml",
         },
         {
           id: 22,
@@ -132,6 +136,7 @@ export default {
           serving: "20 ml",
           color: "Merah gelap dengan ungu, kilau merah muda.",
           tasting: "",
+          size: "750ml",
         },
         {
           id: 23,
@@ -146,6 +151,7 @@ export default {
           serving: "20 ml",
           color: "Merah ruby tua dengan beberapa kilau merah tembaga",
           tasting: "",
+          size: "750ml",
         },
       ],
       searchQuery: "",

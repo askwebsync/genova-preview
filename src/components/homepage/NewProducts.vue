@@ -98,6 +98,7 @@ export default {
             "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
           color: "",
           tasting: "",
+          size: "750ml",
         },
         {
           id: 24,
@@ -113,6 +114,7 @@ export default {
           color: "Kuning berawan",
           tasting:
             "Awal: Nanas segar, Tengah: Rasa nanas yang juicy dan segar, Panjang di Mulut: Buah dengan rasa sedikit asam",
+          size: "750ml",
         },
         {
           id: 25,
@@ -128,6 +130,7 @@ export default {
           color: "Warna alami jus raspberry",
           tasting:
             "Awal: raspberry matang, Tengah: sedikit asam, Panjang di mulut: rasa permen raspberry.",
+          size: "750ml",
         },
         {
           id: 47,
@@ -143,6 +146,7 @@ export default {
           color: "Cokelat pekat",
           tasting:
             "Awal: Cokelat dengan sedikit biskuit, Tengah: Cokelat dengan aroma kacang, Belakang: Terasa panjang rasa kacang di mulut",
+          size: "750ml",
         },
         {
           id: 31,
@@ -158,6 +162,7 @@ export default {
           color: "Putih berawan",
           tasting:
             "Rasa kelapa yang sangat kuat, pekat, dan tahan lama yang membawa Anda pergi ke daerah tropis, di bawah rayuan pohon kelapa...",
+          size: "750ml",
         },
         {
           id: 29,
@@ -172,6 +177,7 @@ export default {
           serving: "20 ml",
           color: "Warna bening dengan kilau kuning",
           tasting: "Awal: Mentega dan karamel",
+          size: "750ml",
         },
         {
           id: 37,
@@ -187,6 +193,7 @@ export default {
           color: "kuning berawan",
           tasting:
             "Hidung: Seimbang antara rasa lemon dan jeruk nipis segar, Tengah: Asam, perasan jeruk nipis, Panjang di Mulut: Menyegarkan",
+          size: "750ml",
         },
       ],
       breakpoints: {

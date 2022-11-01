@@ -98,6 +98,7 @@ export default {
             "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
           color: "",
           tasting: "",
+          size: "750ml",
         },
         {
           id: 39,
@@ -128,6 +129,7 @@ export default {
             "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
           color: "",
           tasting: "",
+          size: "750ml",
         },
         {
           id: 15,
@@ -143,6 +145,7 @@ export default {
             "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
           color: "",
           tasting: "",
+          size: "750ml",
         },
         {
           id: 42,

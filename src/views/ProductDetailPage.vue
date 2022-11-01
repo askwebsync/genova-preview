@@ -78,7 +78,7 @@
                 </td>
                 <td>
                   <p class="text-md my-1 details">
-                    {{ productShow[1].size }}
+                    {{ productShow[1].packaging }}
                   </p>
                 </td>
               </tr>

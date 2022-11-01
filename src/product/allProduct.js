@@ -13,7 +13,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 2,
@@ -29,7 +28,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 3,
@@ -45,7 +43,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 4,
@@ -61,7 +58,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 5,
@@ -77,7 +73,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 6,
@@ -93,7 +88,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 7,
@@ -109,7 +103,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 8,
@@ -125,7 +118,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 9,
@@ -141,7 +133,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 10,
@@ -157,7 +148,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 11,
@@ -173,7 +163,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 12,
@@ -189,7 +178,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 13,
@@ -205,7 +193,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 14,
@@ -221,7 +208,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 15,
@@ -237,7 +223,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 16,
@@ -253,7 +238,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 17,
@@ -269,7 +253,6 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
-    size: "750ml",
   },
   {
     id: 18,
