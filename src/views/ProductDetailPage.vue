@@ -74,50 +74,44 @@
             <table class="text-left">
               <tr class="border-b-2 border-white h-16">
                 <td class="w-1/2 md:w-1/6">
-                  <p class="text-md my-1">Rating</p>
-                </td>
-                <td><p class="text-md my-1">94</p></td>
-              </tr>
-              <tr class="border-b-2 border-white h-16">
-                <td class="w-1/2 md:w-1/6">
-                  <p class="text-md my-1">Ingredient</p>
+                  <p class="text-md my-1 details">Size</p>
                 </td>
                 <td>
-                  <p class="text-md my-1">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam ratione sequi, saepe enim id suscipit illum ipsa vero
-                    nisi, dolorem blanditiis! Explicabo expedita id nulla
-                    adipisci ipsum aspernatur omnis repellat.
+                  <p class="text-md my-1 details">
+                    {{ productShow[1].size }}
                   </p>
                 </td>
               </tr>
               <tr class="border-b-2 border-white h-16">
                 <td class="w-1/2 md:w-1/6">
-                  <p class="text-md my-1">Tasting Notes</p>
+                  <p class="text-md my-1 details">Weight</p>
                 </td>
                 <td>
-                  <p class="text-md my-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae, expedita placeat, officia ex, earum minima libero
-                    nisi corrupti labore sit laudantium porro possimus magnam
-                    facere nulla repellat itaque corporis pariatur.
+                  <p class="text-md my-1 details">
+                    {{ productShow[1].weight }}
                   </p>
                 </td>
               </tr>
-              <tr class="h-16">
+              <tr class="border-b-2 border-white h-16">
                 <td class="w-1/2 md:w-1/6">
-                  <p class="text-md my-1">Color</p>
+                  <p class="text-md my-1 details">Serving Suggestions</p>
                 </td>
                 <td>
-                  <p class="text-md my-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ducimus distinctio saepe quibusdam perspiciatis dolorem
-                    animi, adipisci rem natus! Cupiditate aliquid, reiciendis
-                    quibusdam ipsa et velit quas atque praesentium iure
-                    nesciunt.
+                  <p class="text-md my-1 details">
+                    {{ productShow[1].serving }}
                   </p>
                 </td>
               </tr>
+              <!-- <tr class="h-16">
+                <td class="w-1/2 md:w-1/6">
+                  <p class="text-md my-1">Size</p>
+                </td>
+                <td>
+                  <p class="text-md my-1">
+                    {{ productShow[1].size }}
+                  </p>
+                </td>
+              </tr> -->
             </table>
           </div>
         </div>
@@ -184,4 +178,8 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+p .details {
+  max-width: 5px;
+}
+</style>

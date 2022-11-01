@@ -57,9 +57,14 @@
                 dataProduk: JSON.stringify({
                   name: product.name,
                   price: product.price,
+                  info: product.info,
+                  packaging: product.packaging,
+                  weight: product.weight,
+                  color: product.color,
+                  size: product.size,
                   image: product.image,
                   link: product.link,
-                  info: product.info,
+                  serving: product.serving,
                 }),
               },
             }"

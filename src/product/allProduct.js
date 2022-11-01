@@ -13,6 +13,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 2,
@@ -28,6 +29,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 3,
@@ -43,6 +45,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 4,
@@ -58,6 +61,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 5,
@@ -73,6 +77,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 6,
@@ -88,6 +93,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 7,
@@ -103,6 +109,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 8,
@@ -118,6 +125,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 9,
@@ -133,6 +141,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 10,
@@ -148,6 +157,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 11,
@@ -163,6 +173,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 12,
@@ -178,6 +189,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 13,
@@ -193,6 +205,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 14,
@@ -208,6 +221,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 15,
@@ -223,6 +237,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 16,
@@ -238,6 +253,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 17,
@@ -253,6 +269,7 @@
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
+    size: "750ml",
   },
   {
     id: 18,
@@ -511,7 +528,8 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Coklat tua",
-    tasting: "Awal: mentega dengan sedikit kopi panggang, Tengah: lembut dengan kopi panggang yang kuat, Panjang di Mulut: mocha",
+    tasting:
+      "Awal: mentega dengan sedikit kopi panggang, Tengah: lembut dengan kopi panggang yang kuat, Panjang di Mulut: mocha",
   },
   {
     id: 36,
@@ -525,7 +543,7 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Hijau terang",
-    tasting: "Rasa awal kiwi matang, rasa kiwi juicy dan menyegarkan"
+    tasting: "Rasa awal kiwi matang, rasa kiwi juicy dan menyegarkan",
   },
   {
     id: 37,
@@ -539,7 +557,8 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "kuning berawan",
-    tasting: "Hidung: Seimbang antara rasa lemon dan jeruk nipis segar, Tengah: Asam, perasan jeruk nipis, Panjang di Mulut: Menyegarkan"
+    tasting:
+      "Hidung: Seimbang antara rasa lemon dan jeruk nipis segar, Tengah: Asam, perasan jeruk nipis, Panjang di Mulut: Menyegarkan",
   },
   {
     id: 38,
@@ -553,7 +572,8 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Transparan dengan sedikit kekaburan",
-    tasting: "Genova Lemongrass adalah pendamping yang hebat untuk membuat mocktail dan banyak lagi. Di Asia Tenggara, kami senang memadukannya dengan jeruk nipis, daun jeruk purut, mint, asam untuk menciptakan pengalaman Asia yang otentik."
+    tasting:
+      "Genova Lemongrass adalah pendamping yang hebat untuk membuat mocktail dan banyak lagi. Di Asia Tenggara, kami senang memadukannya dengan jeruk nipis, daun jeruk purut, mint, asam untuk menciptakan pengalaman Asia yang otentik.",
   },
   {
     id: 39,
@@ -567,7 +587,8 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Bening putih",
-    tasting: "Awal: Aroma buah, Tengah: Rasa leci asli sedikit asam, Panjang di Mulut: halus manis"
+    tasting:
+      "Awal: Aroma buah, Tengah: Rasa leci asli sedikit asam, Panjang di Mulut: halus manis",
   },
   {
     id: 40,
@@ -581,7 +602,8 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Kuning",
-    tasting: "Rasa awal buah mangga eksotis ringan, rasa mangga manis dengan sedikit keasaman"
+    tasting:
+      "Rasa awal buah mangga eksotis ringan, rasa mangga manis dengan sedikit keasaman",
   },
   {
     id: 41,
@@ -595,7 +617,8 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Transparan",
-    tasting: "Aroma spearmint, rasa gula tebu dan spearmint yang sangat seimbang."
+    tasting:
+      "Aroma spearmint, rasa gula tebu dan spearmint yang sangat seimbang.",
   },
   {
     id: 42,
@@ -609,7 +632,8 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Rumput hijau tua",
-    tasting: "Awal: aroma nabati yang wangi, Tengah: pandan masak hijau manis, Panjang di Mulut: tradisional daun pandan"
+    tasting:
+      "Awal: aroma nabati yang wangi, Tengah: pandan masak hijau manis, Panjang di Mulut: tradisional daun pandan",
   },
   {
     id: 43,
@@ -623,7 +647,8 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Kuning berawan",
-    tasting: "Aroma buah yang eksotis, rasa manis dan asam yang akan membuat Anda merasa ingin memakan buah markisa yang segar."
+    tasting:
+      "Aroma buah yang eksotis, rasa manis dan asam yang akan membuat Anda merasa ingin memakan buah markisa yang segar.",
   },
   {
     id: 44,
@@ -637,7 +662,7 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Cemerlang, warna oranye emas muda",
-    tasting: "Sensasi dan rasa persik putih tahan lama"
+    tasting: "Sensasi dan rasa persik putih tahan lama",
   },
   {
     id: 45,
@@ -651,7 +676,7 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Bening",
-    tasting: "Bau peppermint yang kuat, rasa mint yang menyegarkan di mulut"
+    tasting: "Bau peppermint yang kuat, rasa mint yang menyegarkan di mulut",
   },
   {
     id: 46,
@@ -665,7 +690,8 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Merah intens",
-    tasting: "Rasa stroberi segar yang kaya, rasa lembut dan lembut dengan sentuhan rasa stroberi."
+    tasting:
+      "Rasa stroberi segar yang kaya, rasa lembut dan lembut dengan sentuhan rasa stroberi.",
   },
   {
     id: 47,
@@ -679,6 +705,7 @@
     weight: "1.4 kg",
     serving: "20 ml",
     color: "Cokelat pekat",
-    tasting: "Awal: Cokelat dengan sedikit biskuit, Tengah: Cokelat dengan aroma kacang, Belakang: Terasa panjang rasa kacang di mulut"
+    tasting:
+      "Awal: Cokelat dengan sedikit biskuit, Tengah: Cokelat dengan aroma kacang, Belakang: Terasa panjang rasa kacang di mulut",
   },
 ];
