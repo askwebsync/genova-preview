@@ -3,9 +3,7 @@
   <section class="container mx-auto">
     <div class="flex flex-col my-12">
       <div class="flex flex-col my-4 text-center center">
-        <h1 class="text-left pcolor mb-3 font-text-xs md:text-sm">
-          Contact Us
-        </h1>
+        <h1 class="pcolor mb-3 text-lg md:text-xl lg:text-xxl">Contact Us</h1>
 
         <div class="my-2">
           <p class="text-lg">Get in touch with us for more information</p>

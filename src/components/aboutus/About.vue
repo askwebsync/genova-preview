@@ -3,7 +3,7 @@
   <section class="container mx-auto">
     <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="mt-4 text-center center mb-12 center">
-        <h1 class="pcolor mb-4 text-xs md:text-sm lg:text-lg">About Us</h1>
+        <h1 class="pcolor mb-3 text-lg md:text-xl lg:text-xxl">About Us</h1>
         <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
       </div>
       <div class="about-section">

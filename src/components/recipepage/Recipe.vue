@@ -3,7 +3,7 @@
   <section class="container mx-auto mb-4">
     <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="flex flex-row">
-        <h1 class="text-left pcolor mb-3 font-text-xs md:text-sm">
+        <h1 class="pcolor mb-2 text-lg md:text-xl lg:text-xxl">
           Standart Recipe
         </h1>
         <!-- <div class="rating space-y-6">
