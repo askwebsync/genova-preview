@@ -19,36 +19,23 @@
           </div>
 
           <!-- items detail -->
-          <div class="w-full md:w-1/2 flex flex-col gap-2 md:ml-5">
+          <div class="w-full md:w-1/2 flex flex-col md:ml-5">
             <!-- Name + Info -->
             <div class="flex flex-col my-4 text-left max-w-xl">
               <div class="mb-6">
-                <h1
-                  class="pcolor mb-2 text-xs md:text-base lg:text-lg xl:text-xxl"
-                >
+                <h1 class="pcolor mb-2 text-lg md:text-xl lg:text-2xl">
                   {{ productShow[1].name }}
                 </h1>
                 <hr class="h-1 rounded w-28 background-navbar border-0" />
               </div>
 
               <div class="flex flex-col gap-1 mb-6">
-                <h2>Description:</h2>
-                <p class="text-md mt-1">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy. Various versions have evolved over the years,
-                  sometimes by accident, sometimes on purpose (injected humour
-                  and the like).
+                <p class="text-lg md:text-xl">
+                  {{ productShow[1].info }}
                 </p>
               </div>
             </div>
-            <hr class="h-1 rounded w-full background-navbar border-0" />
+
             <!-- Rating + price -->
             <div class="flex flex-col gap-3 text-left my-2">
               <div class="flex gap-2">
@@ -56,12 +43,12 @@
                   <span class="fa fa-star checked fa-sm md:fa-2x"></span>
                   <span class="fa fa-star checked fa-sm md:fa-2x"></span>
                   <span class="fa fa-star checked fa-sm md:fa-2x"></span>
-                  <span class="fa fa-star fa-sm md:fa-2x"></span>
+                  <span class="fa fa-star checked fa-sm md:fa-2x"></span>
                   <span class="fa fa-star fa-sm md:fa-2x"></span>
                 </div>
                 <div class=""><p class="text-lg">(4,9)</p></div>
               </div>
-              <p class="text-xl text-gray-600">
+              <p class="text-xl text-black">
                 {{ "RP" + " " + productShow[1].price }}
               </p>
               <!-- Button-->
