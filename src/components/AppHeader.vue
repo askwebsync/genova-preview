@@ -68,7 +68,7 @@
             <router-link to="/location">Location</router-link>
           </li>
         </ul>
-        <div class="contain mt-6 md:mt-0 md:w-1/6 lg:w-2/6 z">
+        <div class="contain mt-6 md:mt-0 md:w-1/6 lg:w-2/6">
           <div class="relative text-gray-600 w-full">
             <input
               type="text"
