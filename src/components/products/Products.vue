@@ -9,16 +9,17 @@
         <hr class="h-1 rounded w-32 background-navbar border-0" />
         <div class="grid md:grid-cols-3 justify-center gap-4 md:gap-12 my-10">
           <div
-            class="flex flex-col max-w-lg p-4 md:p-5 items-center center focus:outline-none"
+            class="flex flex-col p-4 md:p-5 items-center center focus:outline-none"
           >
             <router-link to="/product/fruit-bland">
               <img
                 src="../../assets/images/product/fruit-bland/fruit_bland_passion.png"
-                alt="Product"
-                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
+                alt="Fruit Bland Product"
+                loading="lazy"
+                class="w-full h-48 object-cover"
               />
             </router-link>
-            <div class="max-w-lg p-2 mt-2">
+            <div class="flex-1 p-6">
               <p
                 class="text-2xl md:text-2xl pproduct text-black truncate block capitalize"
               >
@@ -27,16 +28,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col max-w-lg p-4 md:p-5 items-center center focus:outline-none"
+            class="flex flex-col p-4 md:p-5 items-center center focus:outline-none"
           >
             <router-link to="/product/liquid-syrup">
               <img
                 src="../../assets/images/product/syrup/syrup_bluecuracao.png"
-                alt="Product"
-                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
+                alt="Liquid Syrup Product"
+                loading="lazy"
+                class="w-full h-48 object-cover"
               />
             </router-link>
-            <div class="max-w-lg p-2 mt-2">
+            <div class="flex-1 p-6">
               <p
                 class="text-2xl md:text-2xl pproduct text-black truncate block capitalize"
               >
@@ -45,16 +47,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col max-w-lg p-4 md:p-5 items-center center focus:outline-none"
+            class="flex flex-col p-4 md:p-5 items-center center focus:outline-none"
           >
             <router-link to="/product/powder-syrup">
               <img
                 src="../../assets/images/product/powder/powder-redvelvet.png"
-                alt="Product"
-                class="w-28 h-28 md:w-52 h-52 object-contain rounded-t-xl"
+                alt="Powder Syrup Product"
+                loading="lazy"
+                class="w-full h-48 object-cover"
               />
             </router-link>
-            <div class="max-w-lg p-2 mt-2">
+            <div class="flex-1 p-6">
               <p
                 class="text-2xl md:text-2xl pproduct text-black truncate block capitalizee"
               >
