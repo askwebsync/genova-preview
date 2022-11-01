@@ -6,7 +6,7 @@
         class="flex flex-col my-12 px-4 gap-y-6 items-center"
         v-if="productShow"
       >
-        <div class="flex flex-col md:flex-row mb-12 gap-12">
+        <div class="flex flex-col md:flex-row mb-12 gap-12 lg:gap-24">
           <!-- image-->
           <div
             class="w-full md:w-1/2 center card-shadow-tiga max-w-xl self-start"
@@ -92,7 +92,7 @@
                   </p>
                 </td>
               </tr>
-              <tr class="border-b-2 border-white h-16">
+              <tr class="h-16">
                 <td class="w-1/2 md:w-1/6 text-left">
                   <p class="text-md my-1 details">Serving Suggestions</p>
                 </td>
@@ -102,16 +102,16 @@
                   </p>
                 </td>
               </tr>
-              <tr class="h-16">
+              <!-- <tr class="h-16">
                 <td class="w-1/2 md:w-1/6 text-left">
-                  <p class="text-md my-1">Size</p>
+                  <p class="text-md my-1">Packaging</p>
                 </td>
                 <td class="text-left">
                   <p class="text-md my-1">
                     {{ productShow[1].size }}
                   </p>
                 </td>
-              </tr>
+              </tr> -->
             </table>
           </div>
         </div>
