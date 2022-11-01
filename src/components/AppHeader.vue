@@ -32,8 +32,43 @@
             </button>
           </div>
         </div>
-
-        <div class="contain mt-6 md:mt-0 md:w-1/6 lg:w-2/6">
+        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+        <ul
+          :class="showMenu ? 'flex' : 'hidden'"
+          class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-5 xl:space-x-10 md:mt-0 zterang"
+        >
+          <li
+            @click="showMenu = !showMenu"
+            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
+          >
+            <router-link to="/products">Product</router-link>
+          </li>
+          <li
+            @click="showMenu = !showMenu"
+            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
+          >
+            <router-link to="/recipe">Recipe</router-link>
+          </li>
+          <li
+            @click="showMenu = !showMenu"
+            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
+          >
+            <router-link to="/about">About Us</router-link>
+          </li>
+          <li
+            @click="showMenu = !showMenu"
+            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
+          >
+            <router-link to="/contact">Contact</router-link>
+          </li>
+          <li
+            @click="showMenu = !showMenu"
+            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
+          >
+            <router-link to="/location">Location</router-link>
+          </li>
+        </ul>
+        <div class="contain mt-6 md:mt-0 md:w-1/6 lg:w-2/6 z">
           <div class="relative text-gray-600 w-full">
             <input
               type="text"
@@ -81,42 +116,6 @@
             </div>
           </div>
         </div>
-        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-        <ul
-          :class="showMenu ? 'flex' : 'hidden'"
-          class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-5 xl:space-x-10 md:mt-0"
-        >
-          <li
-            @click="showMenu = !showMenu"
-            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
-          >
-            <router-link to="/products">Product</router-link>
-          </li>
-          <li
-            @click="showMenu = !showMenu"
-            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
-          >
-            <router-link to="/recipe">Recipe</router-link>
-          </li>
-          <li
-            @click="showMenu = !showMenu"
-            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
-          >
-            <router-link to="/about">About Us</router-link>
-          </li>
-          <li
-            @click="showMenu = !showMenu"
-            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
-          >
-            <router-link to="/contact">Contact</router-link>
-          </li>
-          <li
-            @click="showMenu = !showMenu"
-            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
-          >
-            <router-link to="/location">Location</router-link>
-          </li>
-        </ul>
       </nav>
     </div>
   </div>
