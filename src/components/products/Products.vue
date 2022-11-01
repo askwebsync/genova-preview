@@ -4,12 +4,10 @@
     <div class="container mx-auto">
       <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
         <div class="flex flex-row">
-          <h1 class="pcolor mb-3 text-xs md:text-base">PRODUCTS</h1>
+          <h1 class="pcolor mb-3 text-lg md:text-xl lg:text-2xl">PRODUCTS</h1>
         </div>
         <hr class="h-1 rounded w-32 background-navbar border-0" />
-        <div
-          class="grid grid-cols-2 md:grid-cols-3 justify-center gap-4 md:gap-12 my-10"
-        >
+        <div class="grid md:grid-cols-3 justify-center gap-4 md:gap-12 my-10">
           <div
             class="flex flex-col max-w-lg p-4 md:p-5 items-center center focus:outline-none"
           >

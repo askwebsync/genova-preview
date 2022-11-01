@@ -3,28 +3,29 @@
 <template>
   <section class="">
     <div class="container mx-auto">
-      <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
+      <div class="mt-6 p-4 lg:p-6 lg:pb-12 xl:p-12">
         <div class="flex flex-row">
-          <h1 class="pcolor mb-3 text-lg md:text-xl">NEW FLAVOUR</h1>
-          <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
+          <h1 class="pcolor mb-3 text-lg md:text-xl lg:text-2xl">
+            NEW FLAVOUR
+          </h1>
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
-        <div class="justify-items-center justify-center mt-10 mb-5">
+        <div class="justify-items-center justify-center my-12">
           <carousel :settings="settings" :breakpoints="breakpoints">
             <slide v-for="product in products" :key="product.id">
-              <div class="p-5 mx-4 mb-3 carousel__item">
+              <div class="md:p-5 md:mx-4 mb-3 carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
-                  class="w-full h-40 lg:h-48 object-contain rounded-t-xl"
+                  class="w-full h-56 md:h-48 object-contain rounded-t-xl"
                 />
-                <div class="p-5">
+                <div class="p-2 md:p-5">
                   <h2
-                    class="mb-3 text-xl font-semibold tracking-tight text-black"
+                    class="mb-3 text-2xl font-semibold tracking-tight text-black"
                   >
                     {{ product.name }}
                   </h2>
-                  <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+                  <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
                   <router-link
                     :to="{
                       name: 'productDetailPage',
@@ -38,9 +39,8 @@
                       },
                     }"
                   >
-                    <div class="mt-6">
+                    <div class="mt-4">
                       <button
-                        :href="product.link"
                         class="rounded-lg px-3 py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                       >
                         Buy Now

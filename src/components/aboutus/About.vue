@@ -3,7 +3,7 @@
   <section class="container mx-auto">
     <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="mt-4 text-center center mb-12 center">
-        <h1 class="pcolor mb-3 text-lg md:text-xl lg:text-xxl">About Us</h1>
+        <h1 class="pcolor mb-2 text-lg md:text-xl lg:text-xxl">About Us</h1>
         <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
       </div>
       <div class="about-section">
@@ -12,16 +12,16 @@
         >
           <ul class="text-left mt- space-y-12">
             <li>
-              <p class="leading-6 font-semibold tracking-wide">
+              <p class="leading-6 tracking-wide">
                 GENOVA adalah perusahaan yang bergerak memproduksi Premium
-                Sirup, Powder Drink dan Fruitblend dengan harga yang terjangkau.
+                Syrup, Powder Drink dan Fruitblend dengan harga yang terjangkau.
                 Menggunakan bahan baku impor berkualitas, bersertifikasi halal
                 serta diproduksi di Jakarta, Indonesia.Sehingga ketersediaan
                 stock untuk pasokan bahan baku minuman selalu terjaga.
               </p>
             </li>
             <li>
-              <p class="leading-6 font-semibold tracking-wide">
+              <p class="leading-6 tracking-wide">
                 Produk Genova juga sudah memiliki sertifikat BPOM di beberapa
                 produk unggulan dan terus mengupdate semua produknya agar
                 memiliki sertifikat BPOM. Sehingga produk kami aman untuk
@@ -29,7 +29,7 @@
               </p>
             </li>
             <li>
-              <p class="leading-6 font-semibold tracking-wide">
+              <p class="leading-6 tracking-wide">
                 GENOVA saat ini sudah dipercaya oleh lebih dari 1000 pelanggan
                 setia dari hotel bintang lima maupun cafe papan atas di seluruh
                 Indonesia. Product GENOVA banyak digunakan untuk campuran
