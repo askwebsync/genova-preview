@@ -63,55 +63,55 @@
             </div>
           </div>
         </div>
-        <div class="background-yellow">
-          <div class="w-100 mt-4 mx-2">
+        <div class="background-yellow self-start w-full">
+          <div class="mt-4 mx-2">
             <!-- <h1
               class="text-white mb-4 text-xs md:text-base lg:text-lg xl:text-xxl"
             >
               Details
             </h1> -->
 
-            <table class="text-left">
+            <table class="w-full">
               <tr class="border-b-2 border-white h-16">
-                <td class="w-1/2 md:w-1/6">
+                <td class="w-1/2 md:w-1/6 text-left">
                   <p class="text-md my-1 details">Size</p>
                 </td>
-                <td>
-                  <p class="text-md my-1 details">
+                <td class="text-left">
+                  <p class="text-md my-1">
                     {{ productShow[1].packaging }}
                   </p>
                 </td>
               </tr>
               <tr class="border-b-2 border-white h-16">
-                <td class="w-1/2 md:w-1/6">
+                <td class="w-1/2 md:w-1/6 text-left">
                   <p class="text-md my-1 details">Weight</p>
                 </td>
-                <td>
-                  <p class="text-md my-1 details">
+                <td class="text-left">
+                  <p class="text-md my-1">
                     {{ productShow[1].weight }}
                   </p>
                 </td>
               </tr>
               <tr class="border-b-2 border-white h-16">
-                <td class="w-1/2 md:w-1/6">
+                <td class="w-1/2 md:w-1/6 text-left">
                   <p class="text-md my-1 details">Serving Suggestions</p>
                 </td>
-                <td>
-                  <p class="text-md my-1 details">
+                <td class="text-left">
+                  <p class="text-md my-1">
                     {{ productShow[1].serving }}
                   </p>
                 </td>
               </tr>
-              <!-- <tr class="h-16">
-                <td class="w-1/2 md:w-1/6">
+              <tr class="h-16">
+                <td class="w-1/2 md:w-1/6 text-left">
                   <p class="text-md my-1">Size</p>
                 </td>
-                <td>
+                <td class="text-left">
                   <p class="text-md my-1">
                     {{ productShow[1].size }}
                   </p>
                 </td>
-              </tr> -->
+              </tr>
             </table>
           </div>
         </div>
@@ -179,7 +179,7 @@ export default {
 };
 </script>
 <style scoped>
-p .details {
-  max-width: 5px;
+.details {
+  max-width: 20px;
 }
 </style>

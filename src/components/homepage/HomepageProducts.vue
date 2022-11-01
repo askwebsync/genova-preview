@@ -76,7 +76,7 @@
             <img
               src="../../assets/images/product/fruit-bland/fruit_bland_pineapple.png"
               alt="Product"
-              class="W-44 md:w-48 object-fit rounded-t-xl"
+              class="W-44 h-52 md:w-48 object-fit rounded-t-xl"
             />
 
             <div class="p-4">
@@ -102,7 +102,7 @@
             <img
               src="../../assets/images/product/syrup/syrup_bluecuracao.png"
               alt="Product"
-              class="W-44 md:w-48 object-fit rounded-t-xl"
+              class="W-44 h-52 md:w-48 object-fit rounded-t-xl"
             />
 
             <div class="p-4">
@@ -128,7 +128,7 @@
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="W-44 md:w-48 object-fit rounded-t-xl"
+              class="W-44 h-52 md:w-48 object-fit rounded-t-xl"
             />
             <div class="p-4">
               <p
