@@ -19,7 +19,7 @@
             <img
               src="../../assets/images/product/powder/powder-tiramisu.png"
               alt="Product"
-              class="w-28 h28 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-fit rounded-t-xl"
             />
 
             <div class="p-2 mt-6">
@@ -38,7 +38,7 @@
             <img
               src="../../assets/images/product/powder/powder-cottoncandy.png"
               alt="Product"
-              class="w-28 h28 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-fit rounded-t-xl"
             />
 
             <div class="max-w-lg p-2 mt-6">
@@ -58,7 +58,7 @@
             <img
               src="../../assets/images/product/powder/powder-cookiescream.png"
               alt="Product"
-              class="w-28 h28 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="w-28 h28 md:w-48 md:h-48 object-fit rounded-t-xl"
             />
           </a>
           <div class="max-w-lg p-2 mt-6">
@@ -74,9 +74,9 @@
         >
           <router-link to="/product/fruit-bland">
             <img
-              src="../../assets/images/product/fruit-bland/fruit_bland_mango.png"
+              src="../../assets/images/product/fruit-bland/fruit_bland_pineapple.png"
               alt="Product"
-              class="W-44 h-44 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="W-44 h-44 md:w-48 object-fit rounded-t-xl"
             />
 
             <div class="p-4">
@@ -100,9 +100,9 @@
         >
           <router-link to="/product/liquid-syrup">
             <img
-              src="../../assets/images/product/syrup/syrup_banana.png"
+              src="../../assets/images/product/syrup/syrup_butterscotch.png"
               alt="Product"
-              class="W-44 h-44 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="W-44 h-44 md:w-48 object-fit rounded-t-xl"
             />
 
             <div class="p-4">
@@ -128,9 +128,8 @@
             <img
               src="../../assets/images/product/powder/powder-redvelvet.png"
               alt="Product"
-              class="W-44 h-44 md:w-48 md:h-48 object-contain rounded-t-xl"
+              class="W-44 h-44 md:w-48 md:h-48 object-fit rounded-t-xl"
             />
-
             <div class="p-4">
               <p
                 class="text-xl md:text-2xl pproduct text-black truncate block capitalizee"
