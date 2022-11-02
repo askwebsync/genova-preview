@@ -8,9 +8,7 @@
       >
         <div class="flex flex-col md:flex-row mb-12 gap-12 lg:gap-24">
           <!-- image-->
-          <div
-            class="w-full md:w-1/2 center card-shadow-tiga max-w-xl self-start"
-          >
+          <div class="w-full md:w-1/2 center max-w-xl self-start">
             <img
               :src="productShow[1].image"
               :alt="productShow[1].name"
@@ -23,7 +21,7 @@
             <!-- Name + Info -->
             <div class="flex flex-col my-4 text-left max-w-xl">
               <div class="mb-6">
-                <h1 class="pcolor mb-2 text-lg md:text-xl lg:text-2xl">
+                <h1 class="pcolor mb-2 text-xl lg:text-2xl">
                   {{ productShow[1].name }}
                 </h1>
                 <hr class="h-1 rounded w-28 background-navbar border-0" />
@@ -64,47 +62,46 @@
           </div>
         </div>
         <div class="background-yellow self-start w-full">
-          <div class="mt-4 mx-2">
-            <!-- <h1
+          <!-- <h1
               class="text-white mb-4 text-xs md:text-base lg:text-lg xl:text-xxl"
             >
               Details
             </h1> -->
 
-            <table class="w-full">
-              <tr class="border-b-2 border-white h-16">
-                <td class="w-1/2 md:w-1/6 text-left">
-                  <p class="m-2 text-lg lg:text-xl lg:m-4 details">Size</p>
-                </td>
-                <td class="text-left">
-                  <p class="m-2 text-lg lg:text-xl lg:m-4">
-                    {{ productShow[1].packaging }}
-                  </p>
-                </td>
-              </tr>
-              <tr class="border-b-2 border-white h-16">
-                <td class="w-1/2 md:w-1/6 text-left">
-                  <p class="m-2 text-lg lg:text-xl lg:m-4 details">Weight</p>
-                </td>
-                <td class="text-left">
-                  <p class="m-2 text-lg lg:text-xl lg:m-4">
-                    {{ productShow[1].weight }}
-                  </p>
-                </td>
-              </tr>
-              <tr class="h-16">
-                <td class="w-1/2 md:w-1/6 text-left">
-                  <p class="m-2 text-lg lg:text-xl lg:m-4 details">
-                    Serving Suggestions
-                  </p>
-                </td>
-                <td class="text-left">
-                  <p class="m-2 text-lg lg:text-xl lg:m-4">
-                    {{ productShow[1].serving }}
-                  </p>
-                </td>
-              </tr>
-              <!-- <tr class="h-16">
+          <table class="w-full m-4">
+            <tr class="border-b-2 border-white h-16">
+              <td class="w-1/2 md:w-1/6 text-left">
+                <p class="m-2 text-lg lg:text-xl lg:m-4 details">Size</p>
+              </td>
+              <td class="text-left">
+                <p class="m-2 text-lg lg:text-xl lg:m-4">
+                  {{ productShow[1].packaging }}
+                </p>
+              </td>
+            </tr>
+            <tr class="border-b-2 border-white h-16">
+              <td class="w-1/2 md:w-1/6 text-left">
+                <p class="m-2 text-lg lg:text-xl lg:m-4 details">Weight</p>
+              </td>
+              <td class="text-left">
+                <p class="m-2 text-lg lg:text-xl lg:m-4">
+                  {{ productShow[1].weight }}
+                </p>
+              </td>
+            </tr>
+            <tr class="h-16">
+              <td class="w-1/2 md:w-1/6 text-left">
+                <p class="m-2 text-lg lg:text-xl lg:m-4 details">
+                  Serving Suggestions
+                </p>
+              </td>
+              <td class="text-left">
+                <p class="m-2 text-lg lg:text-xl lg:m-4">
+                  {{ productShow[1].serving }}
+                </p>
+              </td>
+            </tr>
+            <!-- <tr class="h-16">
                 <td class="w-1/2 md:w-1/6 text-left">
                   <p class="m-2 text-lg lg:text-xl lg:m-4 ">Packaging</p>
                 </td>
@@ -114,8 +111,7 @@
                   </p>
                 </td>
               </tr> -->
-            </table>
-          </div>
+          </table>
         </div>
       </div>
     </div>
