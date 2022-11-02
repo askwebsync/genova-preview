@@ -149,7 +149,7 @@ export default {
       function () {
         this.isLoaded = !this.isLoaded;
       }.bind(this),
-      5000
+      3000
     );
     if (this.productShow.length != 0) {
       this.products.push(this.productShow.slice(-1));
