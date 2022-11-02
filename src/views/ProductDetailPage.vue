@@ -3,11 +3,8 @@
     <div v-if="isLoaded">
       <PageLoader />
     </div>
-    <div class="py-6 px-4 lg:px-6 lg:py-12 xl:px-12" v-if="!isLoaded">
-      <div
-        class="flex flex-col my-12 px-4 gap-y-6 items-center"
-        v-if="productShow"
-      >
+    <div class="my-12 px-4 lg:px-6 lg:py-12 xl:px-12" v-if="!isLoaded">
+      <div class="flex flex-col px-4 gap-y-6 items-center" v-if="productShow">
         <div class="flex flex-col md:flex-row mb-12 gap-12 lg:gap-24">
           <!-- image-->
           <div class="w-full md:w-1/2 center max-w-xl self-start">
@@ -21,15 +18,15 @@
           <!-- items detail -->
           <div class="w-full md:w-1/2 flex flex-col md:ml-5">
             <!-- Name + Info -->
-            <div class="flex flex-col my-4 text-left max-w-xl">
+            <div class="flex flex-col text-left max-w-xl">
               <div class="mb-6">
-                <h1 class="pcolor mb-2 text-xl lg:text-2xl">
+                <h1 class="pcolor mb-2 text-2xl lg:text-2xl">
                   {{ productShow[1].name }}
                 </h1>
-                <hr class="h-1 rounded w-28 background-navbar border-0" />
+                <hr class="h-1 rounded w-44 background-navbar border-0" />
               </div>
 
-              <div class="flex flex-col gap-1 mb-6">
+              <div class="flex flex-col gap-1 mb-2">
                 <p class="text-lg md:text-xl">
                   {{ productShow[1].info }}
                 </p>
@@ -52,10 +49,10 @@
                 {{ "RP" + " " + productShow[1].price }}
               </p>
               <!-- Button-->
-              <div class="text-left mt-3 md:mt-6 cursor-pointer">
+              <div class="text-left mt-4 md:mt-6 cursor-pointer">
                 <a
                   :href="productShow[1].link"
-                  class="rounded-md px-4 py-3 text-white background-yellow hover:bg-yellow-600 duration-300"
+                  class="rounded-md p-4 text-white background-yellow hover:bg-yellow-600 duration-300"
                 >
                   Buy Now
                 </a>
