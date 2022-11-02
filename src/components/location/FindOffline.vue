@@ -46,7 +46,7 @@
           >
             Genova Jakarta
           </h3>
-          <h4 class="text-lg font-semibold">( Coming Soon )</h4>
+          <h4 class="text-lg font-semibold">Coming Soon</h4>
 
           <div class="flex flex-col gap-2">
             <div
@@ -82,8 +82,8 @@
               </svg>
               <p>
                 <a href="tel:081212128171" class="hover:text-gray-400"
-                  >081212128171 ( Bu Novi )</a
-                >
+                  >+6281212128171
+                </a>
               </p>
             </div>
             <div
@@ -134,9 +134,7 @@
           >
             Genova Palangkaraya
           </h3>
-          <h4 class="text-lg font-semibold">
-            ( About Something Coffee Roastery )
-          </h4>
+          <h4 class="text-lg font-semibold">About Something Coffee Roastery</h4>
           <div class="flex flex-col gap-2">
             <div
               class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
@@ -171,7 +169,7 @@
               </svg>
               <p>
                 <a href="tel:0812-1747-275" class="hover:text-gray-400">
-                  0812-1747-275 ( Bp Ibnu )
+                  +628121747275
                 </a>
               </p>
             </div>
@@ -223,7 +221,7 @@
           >
             Genova Riau
           </h3>
-          <h4 class="text-lg font-semibold">( Samula Coffee & Eatry )</h4>
+          <h4 class="text-lg font-semibold">Samula Coffee & Eatry</h4>
           <div class="flex flex-col gap-2">
             <div
               class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
@@ -257,7 +255,7 @@
               </svg>
               <p>
                 <a href="tel:081399021010" class="hover:text-gray-400">
-                  0813 9902 1010 (Bp Migo / Ibu jurike )
+                  +6281399021010
                 </a>
               </p>
             </div>
@@ -309,7 +307,7 @@
           >
             Genova Bogor
           </h3>
-          <h4 class="text-lg font-semibold">( Coming Soon )</h4>
+          <h4 class="text-lg font-semibold">Coming Soon</h4>
           <div class="flex flex-col gap-2">
             <div
               class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
@@ -344,7 +342,7 @@
               </svg>
               <p>
                 <a href="tel:081380367558" class="hover:text-gray-400">
-                  0813 80367558 ( Bpk Hendra )
+                  +6281380367558
                 </a>
               </p>
             </div>

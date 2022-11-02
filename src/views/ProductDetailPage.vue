@@ -62,41 +62,33 @@
           </div>
         </div>
         <div class="background-yellow self-start w-full">
-          <!-- <h1
-              class="text-white mb-4 text-xs md:text-base lg:text-lg xl:text-xxl"
-            >
-              Details
-            </h1> -->
-
           <table class="w-full m-4">
             <tr class="border-b-2 border-white h-16">
               <td class="w-1/2 md:w-1/6 text-left">
-                <p class="m-2 text-lg lg:text-xl lg:m-4 details">Size</p>
+                <p class="m-2 text-xl lg:m-4 details">Size</p>
               </td>
               <td class="text-left">
-                <p class="m-2 text-lg lg:text-xl lg:m-4">
+                <p class="m-2 text-xl lg:m-4">
                   {{ productShow[1].packaging }}
                 </p>
               </td>
             </tr>
             <tr class="border-b-2 border-white h-16">
               <td class="w-1/2 md:w-1/6 text-left">
-                <p class="m-2 text-lg lg:text-xl lg:m-4 details">Weight</p>
+                <p class="m-2 text-xl lg:m-4 details">Weight</p>
               </td>
               <td class="text-left">
-                <p class="m-2 text-lg lg:text-xl lg:m-4">
+                <p class="m-2 text-xl lg:m-4">
                   {{ productShow[1].weight }}
                 </p>
               </td>
             </tr>
             <tr class="h-16">
               <td class="w-1/2 md:w-1/6 text-left">
-                <p class="m-2 text-lg lg:text-xl lg:m-4 details">
-                  Serving Suggestions
-                </p>
+                <p class="m-2 text-xl lg:m-4 details">Serving Suggestions</p>
               </td>
               <td class="text-left">
-                <p class="m-2 text-lg lg:text-xl lg:m-4">
+                <p class="m-2 text-xl lg:m-4">
                   {{ productShow[1].serving }}
                 </p>
               </td>
