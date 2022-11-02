@@ -26,7 +26,7 @@ export default {
 .container {
   align-items: center;
   -webkit-align-items: center;
-  background-color: #000;
+  background-color: transparent;
   color: #fff;
   opacity: 0.5;
   box-sizing: border-box;

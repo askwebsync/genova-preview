@@ -64,10 +64,15 @@
           </div>
         </div>
         <div class="background-yellow self-start w-full">
-          <table class="w-full md:m-4">
-            <tr class="border-b-2 border-white h-16">
+          <h1
+            class="my-2 ml-7 text-white underline underline-offset-8 decoration-white text-xl lg:text-2xl"
+          >
+            Details
+          </h1>
+          <table class="w-auto md:m-4">
+            <tr class="border-b-2 border-white h-auto text-white">
               <td class="w-1/2 md:w-1/6 text-left">
-                <p class="m-2 text-lg md:text-xl lg:m-4 details">Size</p>
+                <p class="m-2 text-lg md:text-xl lg:m-4 details ">Size</p>
               </td>
               <td class="text-left">
                 <p class="m-2 text-lg md:text-xl lg:m-4">
@@ -75,7 +80,7 @@
                 </p>
               </td>
             </tr>
-            <tr class="border-b-2 border-white h-16">
+            <tr class="border-b-2 border-white h-16 text-white">
               <td class="w-1/2 md:w-1/6 text-left">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Weight</p>
               </td>
@@ -85,7 +90,7 @@
                 </p>
               </td>
             </tr>
-            <tr class="h-16">
+            <tr class="h-16 text-white">
               <td class="w-1/2 md:w-1/6 text-left">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">
                   Serving Suggestions
@@ -149,7 +154,7 @@ export default {
       function () {
         this.isLoaded = !this.isLoaded;
       }.bind(this),
-      3000
+      1500
     );
     if (this.productShow.length != 0) {
       this.products.push(this.productShow.slice(-1));
