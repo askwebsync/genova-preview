@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto">
-    <div class="px-4 md:px-6 xl:px-12 z">
+    <div class="px-4 md:px-6 xl:px-12 z height">
       <Carousel :autoplay="2000" :wrap-around="true">
         <Slide v-for="image in images" :key="image.id">
           <img
@@ -48,4 +48,7 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+.height {
+}
+</style>

@@ -46,47 +46,57 @@
         </div> -->
       </div>
 
-      <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-y-6 md:gap-12 mt-12 mb-5"
-      >
-        <div v-for="product in resultQuery" :key="product.id">
-          <router-link
-            :to="{
-              name: 'productDetailPage',
-              query: {
-                dataProduk: JSON.stringify({
-                  name: product.name,
-                  price: product.price,
-                  info: product.info,
-                  packaging: product.packaging,
-                  weight: product.weight,
-                  color: product.color,
-                  size: product.size,
-                  image: product.image,
-                  link: product.link,
-                  serving: product.serving,
-                }),
-              },
-            }"
+      <div class="py-10 px-12">
+        <div
+          class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
+          <div
+            v-for="product in resultQuery"
+            :key="product.id"
+            class="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300 hover:-translate-y-1"
           >
-            <div
-              class="max-w-xs mx-4 mb-3 rounded-lg shadow-lg background-yellow-light"
+            <router-link
+              :to="{
+                name: 'productDetailPage',
+                query: {
+                  dataProduk: JSON.stringify({
+                    name: product.name,
+                    price: product.price,
+                    info: product.info,
+                    packaging: product.packaging,
+                    weight: product.weight,
+                    color: product.color,
+                    size: product.size,
+                    image: product.image,
+                    link: product.link,
+                    serving: product.serving,
+                  }),
+                },
+              }"
             >
-              <img
-                :src="product.image"
-                :alt="product.name"
-                class="w-full h-40 lg:h-48 object-contain rounded-t-xl"
-              />
-              <div class="flex flex-col gap-2 px-6 py-4">
-                <h2
-                  class="mb-5 text-xl font-semibold tracking-tight text-black"
-                >
-                  {{ product.name }}
-                </h2>
-                <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+              <div class="cursor-pointer">
+                <figure>
+                  <!-- Image -->
+                  <img
+                    :src="product.image + '?auto=format&fit=crop&w=400&q=50'"
+                    :alt="product.name"
+                    class="rounded-t h-72 w-full object-contain"
+                  />
+
+                  <figcaption class="p-4">
+                    <!-- Title -->
+                    <h2
+                      class="text-xl mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300"
+                    >
+                      {{ product.name }}
+                    </h2>
+
+                    <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+                  </figcaption>
+                </figure>
               </div>
-            </div>
-          </router-link>
+            </router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -100,7 +110,7 @@ export default {
         {
           id: 24,
           name: "Syrup Pineapple",
-          image: "../syrup pineapple.png",
+          image: "../syrup_pineapple.png",
           price: "97,000",
           categoryId: 3,
           info: "Nanas diyakini berasal dari hutan hujan Brasil. Nanas dipanen oleh suku asli dan menyebar ke seluruh Amerika Selatan dan Tengah. Ketika Christopher Columbus mendarat di dunia baru pada tahun 1493, orang Spanyol menamai buah itu 'piña' karena kemiripannya dengan biji pinus dari pohon konifer. Nanas adalah buah oval besar yang tumbuh di negara-negara tropis. Buah ini manis, berair, dan kuning di dalamnya, dan memiliki kulit kecoklatan yang tebal. Sirup Pineapple GENOVA dibuat untuk menambahkan minuman anda dengan sentuhan tropis pada banyak minuman dingin, soda, dan teh.",
@@ -115,7 +125,7 @@ export default {
         {
           id: 25,
           name: "Syrup Raspberry",
-          image: "../syrup raspberry.png",
+          image: "../syrup_raspberry.png",
           price: "97,000",
           categoryId: 3,
           info: "Raspberry adalah buah yang asam dan manis juga lezat secara bersamaan, dan mereka tidak terlalu asam seperti blackberry. Namun, mereka bisa menjadi sedikit asam, terutama jika dipetik sebelum matang sepenuhnya. Semakin manis dan kuat rasanya, semakin matang mereka. Berry kecil berwarna dalam yang memiliki tekstur lembut, rasa manis yang lembut dan aroma yang menyenangkan. Musim puncak raspberry adalah selama pertengahan musim panas, tetapi mereka tersedia sepanjang tahun di beberapa pasar baik segar maupun beku. Varietas yang paling umum dan paling banyak dibudidayakan adalah Raspberry merah. Rasa sirup GENOVA Raspberry yang matang dan seimbang menjadikannya tambahan yang lezat untuk mocktail, soda, dan minuman kopi. Sirup Raspberry GENOVA menghadirkan cita rasa yang luar biasa pada es teh, mocktail special, atau minuman dingin",
@@ -144,7 +154,7 @@ export default {
         {
           id: 27,
           name: "Syrup Blue Curacao",
-          image: "../syrup_blue_curacao.png",
+          image: "../syrup_blue.png",
           price: "97,000",
           categoryId: 3,
           info: "Konon tempat kelahiran minuman ini adalah pulau Curacao, yang terletak di Laut Karibia dan merupakan bagian dari Kepulauan Belanda. Di sanalah jeruk pahit tumbuh - komponen minuman tak terpisahkan. Tapi di pasar dunia, minuman itu muncul tidak begitu lama - pertama kali diluncurkan pada tahun 1920 oleh De Kiper. Syrup Blue Curaçao dikenal dengan warna biru tua, rasa jeruk asam, dan ciri khas tropis. Warna biru tua yang menakjubkan dari sirup GENOVA Blue Curaçao membangkitkan lautan yang mengarungi pantai-pantai Curaçao yang indah dan menambahkan sentuhan eksotis pada mocktail dan soda dengan aroma kulit jeruk yang aromatik dan rasa manis yang sedikit asam.",
@@ -158,7 +168,7 @@ export default {
         {
           id: 28,
           name: "Syrup Bubblegum",
-          image: "../syrup_bubble_gum.png",
+          image: "../syrup_bubblegum.png",
           price: "97,000",
           categoryId: 3,
           info: "",
@@ -231,7 +241,7 @@ export default {
         {
           id: 33,
           name: "Syrup Green Apple",
-          image: "../syrup_green_apple.png",
+          image: "../syrup_greenapple.png",
           price: "97,000",
           categoryId: 3,
           info: "Buah apel adalah salah satu buah yang banyak digemari oleh masyarakat dunia. Rasanya yang manis dan segar adalah alasan yang membuat buah ini istimewa. Varietas yang paling terkenal dari jenis buah apel yaitu apel hijau yang buahnya renyah, berair dan manis asam dan sangat baik dimakan mentah atau dimasak dalam puding. Sirup apel hijau yang menyegarkan dapat lebih dinikmati dengan mencampur sirup varian asam atau manis lainnya dari Syrup Genova Syrup Green Apple GENOVA cocok juga untuk mocktail buah segar, limun, soda, dan teh dengan rasa buah apel yang menyegarkan",
@@ -350,7 +360,7 @@ export default {
         {
           id: 41,
           name: "Syrup Mojito",
-          image: "../syrup_mojito_mint.png",
+          image: "../syrup_mojitomint.png",
           price: "97,000",
           categoryId: 3,
           info: "Sirup Genova merupakan sirup yang biasa digunakan di hotel, restaurant, dan cafe sebagai sirup gourmet. Dengan minuman rasa Mojito Mint ini membuat pencampuran Mojito lebih mudah. Dengan sirup GENOVA Mojito Mint anda dapat mengurangi waktu dan persiapan, dan mulai menikmati minuman campuran atau minuman dingin favorit Anda. Sirup GENOVA Mojito Mint adalah tambahan yang sempurna untuk mocktail dingin, dan minuman segar lainnya",
@@ -380,7 +390,7 @@ export default {
         {
           id: 43,
           name: "Syrup Passion Fruit",
-          image: "../syrup_passion_fruit.png",
+          image: "../syrup_passionfruit.png",
           price: "97,000",
           categoryId: 3,
           info: "Buah markisa adalah buah tropis seukuran telur dengan cangkang lunak berwarna kuning kemerahan yang membungkus biji renyah dan daging berair lembut, yang memiliki sensasi rasa yang unik juga rasa yang kuat dan harum. Buah markisa berasal dari Amerika Latin, terutama Brasil, kemudian menyebar ke daerah-daerah tropis di dunia termasuk Indonesia. Di Indonesia, markisa banyak ditanam di dataran tinggi di Goa, Malino (Sulawesi Selatan) dan Brastagi (Sumatera Utara). Untuk sensasi rasa tropis, tambahkan aroma buah dan rasa manis dan asam dari sirup Passion Fruit GENOVA ke mocktail, soda, limun, fruit punch, dan smoothie.",

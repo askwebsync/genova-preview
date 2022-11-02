@@ -12,47 +12,57 @@
         </div>
       </div>
 
-      <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center justify-center gap-y-6 md:gap-12 mt-12 mb-5"
-      >
-        <div v-for="product in resultQuery" :key="product.id">
-          <router-link
-            :to="{
-              name: 'productDetailPage',
-              query: {
-                dataProduk: JSON.stringify({
-                  name: product.name,
-                  price: product.price,
-                  info: product.info,
-                  packaging: product.packaging,
-                  weight: product.weight,
-                  color: product.color,
-                  size: product.size,
-                  image: product.image,
-                  link: product.link,
-                  serving: product.serving,
-                }),
-              },
-            }"
+      <div class="py-10 px-12">
+        <div
+          class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
+          <div
+            v-for="product in resultQuery"
+            :key="product.id"
+            class="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300 hover:-translate-y-1"
           >
-            <div
-              class="max-w-xs mx-4 mb-3 rounded-lg shadow-lg background-yellow-light"
+            <router-link
+              :to="{
+                name: 'productDetailPage',
+                query: {
+                  dataProduk: JSON.stringify({
+                    name: product.name,
+                    price: product.price,
+                    info: product.info,
+                    packaging: product.packaging,
+                    weight: product.weight,
+                    color: product.color,
+                    size: product.size,
+                    image: product.image,
+                    link: product.link,
+                    serving: product.serving,
+                  }),
+                },
+              }"
             >
-              <img
-                :src="product.image"
-                :alt="product.name"
-                class="w-full h-40 lg:h-48 object-contain rounded-t-xl"
-              />
-              <div class="flex flex-col gap-2 px-6 py-4">
-                <h2
-                  class="mb-5 text-xl font-semibold tracking-tight text-black"
-                >
-                  {{ product.name }}
-                </h2>
-                <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+              <div class="cursor-pointer">
+                <figure>
+                  <!-- Image -->
+                  <img
+                    :src="product.image + '?auto=format&fit=crop&w=400&q=50'"
+                    :alt="product.name"
+                    class="rounded-t h-72 w-full object-contain"
+                  />
+
+                  <figcaption class="p-4">
+                    <!-- Title -->
+                    <h2
+                      class="text-xl mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300"
+                    >
+                      {{ product.name }}
+                    </h2>
+
+                    <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+                  </figcaption>
+                </figure>
               </div>
-            </div>
-          </router-link>
+            </router-link>
+          </div>
         </div>
       </div>
     </div>
