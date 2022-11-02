@@ -26,7 +26,9 @@ export default {
 .container {
   align-items: center;
   -webkit-align-items: center;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #000;
+  color: #fff;
+  opacity: 0.5;
   box-sizing: border-box;
   display: flex;
   display: -webkit-flex;
