@@ -13,9 +13,7 @@
         <div
           class="grid grid-flow-row gap-8 lg:gap-12 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
         >
-          <div
-            class="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300 hover:-translate-y-1"
-          >
+          <div class="my-8 rounded shadow-lg duration-300 hover:-translate-y-1">
             <router-link to="/product/fruit-bland">
               <div class="cursor-pointer">
                 <figure>
