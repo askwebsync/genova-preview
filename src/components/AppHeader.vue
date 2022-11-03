@@ -71,7 +71,7 @@
         <div class="contain mt-6 md:mt-0 md:w-1/6 lg:w-2/6">
           <div class="pt-2 relative mx-auto text-gray-600 w-full">
             <input
-              class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+              class="border-2 border-gray-600 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
               placeholder="Search Item"
               type="text"
               v-model="search"

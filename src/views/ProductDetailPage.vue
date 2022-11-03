@@ -62,14 +62,14 @@
         </div>
         <div class="background-yellow self-start w-full">
           <h1
-            class="my-2 ml-7 text-white underline underline-offset-8 decoration-white text-xl lg:text-2xl"
+            class="mt-2 mb-6 ml- text-white underline underline-offset-8 decoration-white text-xl lg:text-2xl"
           >
             Details
           </h1>
           <table class="w-auto md:m-4">
             <tr class="border-b-2 border-white h-auto text-white">
               <td class="w-1/2 md:w-1/6 text-left">
-                <p class="m-2 text-lg md:text-xl lg:m-4 details ">Size</p>
+                <p class="m-2 text-lg md:text-xl lg:m-4 details">Size</p>
               </td>
               <td class="text-left">
                 <p class="m-2 text-lg md:text-xl lg:m-4">
