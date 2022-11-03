@@ -75,6 +75,7 @@
               placeholder="Search Item"
               type="text"
               v-model="search"
+              @input="onQueryChange"
               @blur="toggle = false"
               @focus="toggle = true"
             />
@@ -882,6 +883,12 @@ export default {
       // this.showMenu = !this.showMenu;
       // this.showDiv = !this.showDiv;
       this.toggle = !this.toggle;
+    },
+    onQueryChange(event) {
+      // can be this.query.length === 0 as well
+      if (this.search.length === 0) {
+        this.response = null;
+      }
     },
   },
 };
