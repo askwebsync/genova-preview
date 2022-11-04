@@ -225,6 +225,10 @@ export default {
   list-style: none;
   line-height: 0;
   margin: 20px 0 0;
+  color: #bdb76b;
+}
+.carousel__pagination-button::after {
+  background-color: #bdb76b;
 }
 .carousel__next {
   right: -20px;

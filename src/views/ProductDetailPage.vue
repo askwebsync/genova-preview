@@ -7,11 +7,13 @@
       <div class="flex flex-col px-4 gap-y-6 items-center" v-if="productShow">
         <div class="flex flex-col md:flex-row mb-12 gap-12 lg:gap-24">
           <!-- image-->
-          <div class="w-full md:w-1/2 center max-w-xl self-start">
+          <div
+            class="w-full md:w-1/2 center max-w-xl self-start lg:self-center lg:mr-12"
+          >
             <img
               :src="productShow[1].image"
               :alt="productShow[1].name"
-              class="w-full h-72 md:h-full object-contain rounded-t-xl"
+              class="w-full h-72 md:h-96 object-contain rounded-t-xl"
             />
           </div>
 
@@ -27,15 +29,15 @@
               </div>
 
               <div class="flex flex-col gap-1 mb-2">
-                <p class="text-lg md:text-xl text-gray-500">
+                <p class="text-lg text-gray-400">
                   {{ productShow[1].info }}
                 </p>
               </div>
             </div>
 
             <!-- Rating + price -->
-            <div class="flex flex-col gap-3 text-left my-2">
-              <div class="flex gap-2">
+            <div class="flex flex-col gap-3 mt-2">
+              <!-- <div class="flex gap-2 text-center">
                 <div>
                   <span class="fa fa-star checked fa-sm md:fa-2x"></span>
                   <span class="fa fa-star checked fa-sm md:fa-2x"></span>
@@ -44,23 +46,23 @@
                   <span class="fa fa-star fa-sm md:fa-2x"></span>
                 </div>
                 <div class=""><p class="text-lg">(4,9)</p></div>
-              </div>
-              <p class="text-xl text-black">
-                {{ "RP" + " " + productShow[1].price }}
+              </div> -->
+              <p class="text-2xl text-black text-left">
+                {{ "RP." + " " + productShow[1].price }}
               </p>
               <!-- Button-->
-              <div class="text-left mt-4 md:mt-6 cursor-pointer">
-                <a
-                  :href="productShow[1].link"
-                  class="rounded-md p-4 text-white background-yellow hover:bg-yellow-600 duration-300"
-                >
-                  Buy Now
-                </a>
-              </div>
+            </div>
+            <div class="mt-6 md:mt-6 cursor-pointer w-full">
+              <a
+                :href="productShow[1].link"
+                class="block text-center rounded-md p-3 text-white background-yellow hover:bg-yellow-600 duration-300"
+              >
+                Buy Now
+              </a>
             </div>
           </div>
         </div>
-        <div class="background-yellow self-start w-full">
+        <div class="background-yellow self-start w-full mt-4">
           <h1
             class="mt-3 mb-8 text-white underline text-center underline-offset-8 decoration-white text-xl lg:text-2xl"
           >

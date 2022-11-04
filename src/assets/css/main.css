@@ -51,6 +51,12 @@ p {
 .pcolor {
   color: #bdb76b;
 }
+::placeholder {
+  color: #bdb76b;
+}
+:-ms-input-placeholder {
+  color: #bdb76b;
+}
 
 .card-color-satu {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
@@ -92,7 +98,7 @@ p {
 }
 
 .border-yellow {
-  border-style: solid 2px;
+  border-style: solid;
   border-color: #bdb76b;
 }
 .z {

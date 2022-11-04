@@ -39,39 +39,39 @@
         >
           <li
             @click="showMenu = !showMenu"
-            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
+            class="text-sm lg:text-md pcolor hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/products">Product</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
+            class="text-sm lg:text-md pcolor hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/recipe">Recipe</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
+            class="text-sm lg:text-md pcolor hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/about">About Us</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
+            class="text-sm lg:text-md pcolor hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/contact">Contact</router-link>
           </li>
           <li
             @click="showMenu = !showMenu"
-            class="text-sm lg:text-md text-black hover:text-yellow-600 focus:outline-none"
+            class="text-sm lg:text-md pcolor hover:text-yellow-600 focus:outline-none"
           >
             <router-link to="/location">Location</router-link>
           </li>
         </ul>
         <div class="contain mt-6 md:mt-0 md:w-1/6 lg:w-2/6">
-          <div class="pt-2 relative mx-auto text-gray-600 w-full">
+          <div class="pt-2 relative mx-auto w-full">
             <input
-              class="border-2 border-gray-600 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+              class="border-2 border-yellow h-10 px-5 pr-16 rounded-lg text-sm hover:outline-none focus:outline-none"
               placeholder="Search Item"
               type="text"
               v-model="search"
@@ -81,7 +81,7 @@
             />
             <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
               <svg
-                class="text-gray-600 h-4 w-4 fill-current"
+                class="pcolor h-4 w-4 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 version="1.1"
@@ -897,19 +897,15 @@ export default {
 <style scoped>
 input {
   width: 100%;
-  border: none;
   height: 38px;
   padding-left: 10px;
   padding-right: -10px;
-  box-shadow: inset 0 0 0 1px #b2b2b2;
   border-radius: 4px;
-  background: transparent;
   transition: all 0.2s ease;
 }
 
 .contain input:focus {
   outline: none;
-  box-shadow: inset 0 0 0 2px #ffb300;
 }
 
 .contain .results {
@@ -923,5 +919,11 @@ input {
 
 .contain .results .result:hover {
   background: #efefef;
+}
+::placeholder {
+  color: #bdb76b;
+}
+:-ms-input-placeholder {
+  color: #bdb76b;
 }
 </style>
