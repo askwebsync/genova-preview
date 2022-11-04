@@ -20,7 +20,7 @@
             <!-- Name + Info -->
             <div class="flex flex-col text-left max-w-xl">
               <div class="mb-6">
-                <h1 class="pcolor mb-2 text-2xl lg:text-2xl">
+                <h1 class="pcolor mb-1 text-2xl lg:text-2xl">
                   {{ productShow[1].name }}
                 </h1>
                 <hr class="h-1 rounded w-44 background-navbar border-0" />
@@ -62,11 +62,11 @@
         </div>
         <div class="background-yellow self-start w-full">
           <h1
-            class="mt-2 mb-6 ml- text-white underline underline-offset-8 decoration-white text-xl lg:text-2xl"
+            class="mt-3 mb-8 text-white underline text-center underline-offset-8 decoration-white text-xl lg:text-2xl"
           >
             Details
           </h1>
-          <table class="w-auto md:m-4">
+          <table class="w-auto m-1 md:m-4">
             <tr class="border-b-2 border-white h-auto text-white">
               <td class="w-1/2 md:w-1/6 text-left">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Size</p>

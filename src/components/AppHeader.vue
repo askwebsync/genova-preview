@@ -884,12 +884,13 @@ export default {
       // this.showDiv = !this.showDiv;
       this.toggle = !this.toggle;
     },
-    onQueryChange(event) {
-      // can be this.query.length === 0 as well
-      if (this.search.length === 0) {
-        this.response = null;
-      }
-    },
+    // // eslint-disable-next-line no-unused-vars
+    // onQueryChange(event) {
+    //   // can be this.query.length === 0 as well
+    //   if (this.search.length === 0) {
+    //     this.response = null;
+    //   }
+    // },
   },
 };
 </script>

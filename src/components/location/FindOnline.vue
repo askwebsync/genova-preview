@@ -2,7 +2,7 @@
   <section class="container mx-auto">
     <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="center">
-        <div class="flex flex-col gap-2 max-w-lg border border-2 p-4">
+        <div class="flex flex-col max-w-lg border border-2 p-4">
           <div class="flex justify-center">
             <img
               src="../../assets/images/logo/logo_tokopedia.png"
@@ -16,7 +16,7 @@
             class="rounded-lg px-4 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
           >
             <h5
-              class="text-2xl font-bold tracking-tight text-white text-center divide-y"
+              class="text-lg font-bold tracking-tight text-white text-center divide-y"
             >
               Genova Indonesia
             </h5>

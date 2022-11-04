@@ -51,12 +51,12 @@
                   <figcaption class="p-4">
                     <!-- Title -->
                     <h2
-                      class="text-xl mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300"
+                      class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"
                     >
                       {{ product.name }}
                     </h2>
 
-                    <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
+                    <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
                   </figcaption>
                 </figure>
               </div>

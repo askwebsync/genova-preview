@@ -3,11 +3,9 @@
 <template>
   <section class="">
     <div class="container mx-auto">
-      <div class="mt-6 p-4 lg:p-6 lg:pb-12 xl:p-12">
+      <div class="mt-4 p-4 lg:p-6 xl:px-12 xl:pb-6">
         <div class="flex flex-row">
-          <h1 class="pcolor mb-3 text-lg md:text-xl lg:text-2xl">
-            TRENDING FLAVOUR
-          </h1>
+          <h1 class="pcolor mb-1 text-xl lg:text-2xl">TRENDING FLAVOUR</h1>
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center my-12">
@@ -21,7 +19,7 @@
                 />
                 <div class="p-2 md:p-5">
                   <h2
-                    class="mb-3 text-2xl font-semibold tracking-tight text-black"
+                    class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"
                   >
                     {{ product.name }}
                   </h2>

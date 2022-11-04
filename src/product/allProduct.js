@@ -40,7 +40,7 @@
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
+      "-Masukkan 20-30 Gram Powder \n-Dicampur 120-150ML Susu \n-Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
   },

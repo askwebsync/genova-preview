@@ -15,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 li > a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -24,25 +25,19 @@ h1 {
   font-family: "Fira Sans", sans-serif;
   text-align: left;
 }
-
 h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
 }
-
-.pproduct {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-}
-
 h3 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
 }
-
 h4 {
   font-family: "Fuzzy Bubbles", cursive;
   font: 400;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 .background-yellow {
@@ -51,11 +46,6 @@ h4 {
 
 .background-navbar {
   background-color: #bdb76b;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
 }
 
 .pcolor {
