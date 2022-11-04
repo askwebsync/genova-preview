@@ -11,7 +11,7 @@
             <img
               :src="productShow[1].image"
               :alt="productShow[1].name"
-              class="w-full h-full object-contain rounded-t-xl"
+              class="w-full h-72 md:h-full object-contain rounded-t-xl"
             />
           </div>
 
@@ -27,7 +27,7 @@
               </div>
 
               <div class="flex flex-col gap-1 mb-2">
-                <p class="text-lg md:text-xl">
+                <p class="text-lg md:text-xl text-gray-500">
                   {{ productShow[1].info }}
                 </p>
               </div>
