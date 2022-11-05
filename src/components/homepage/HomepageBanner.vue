@@ -53,6 +53,7 @@ export default {
   display: block;
   border: 0;
   margin: 1px;
+  padding: 1px;
   cursor: pointer;
   background: transparent;
 }

@@ -417,7 +417,7 @@
   {
     id: 24,
     name: "Syrup Pineapple",
-    image: "../syrup pineapple.jpg",
+    image: "../syrup_pineapple.jpg",
     price: "97,000",
     category: "liquid",
     info: "Nanas diyakini berasal dari hutan hujan Brasil. Nanas dipanen oleh suku asli dan menyebar ke seluruh Amerika Selatan dan Tengah. Ketika Christopher Columbus mendarat di dunia baru pada tahun 1493, orang Spanyol menamai buah itu 'piña' karena kemiripannya dengan biji pinus dari pohon konifer. Nanas adalah buah oval besar yang tumbuh di negara-negara tropis. Buah ini manis, berair, dan kuning di dalamnya, dan memiliki kulit kecoklatan yang tebal. Sirup Pineapple GENOVA dibuat untuk menambahkan minuman anda dengan sentuhan tropis pada banyak minuman dingin, soda, dan teh.",
@@ -434,7 +434,7 @@
   {
     id: 25,
     name: "Syrup Raspberry",
-    image: "../syrup raspberry.jpg",
+    image: "../syrup_raspberry.jpg",
     price: "97,000",
     category: "liquid",
     info: "Raspberry adalah buah yang asam dan manis juga lezat secara bersamaan, dan mereka tidak terlalu asam seperti blackberry. Namun, mereka bisa menjadi sedikit asam, terutama jika dipetik sebelum matang sepenuhnya. Semakin manis dan kuat rasanya, semakin matang mereka. Berry kecil berwarna dalam yang memiliki tekstur lembut, rasa manis yang lembut dan aroma yang menyenangkan. Musim puncak raspberry adalah selama pertengahan musim panas, tetapi mereka tersedia sepanjang tahun di beberapa pasar baik segar maupun beku. Varietas yang paling umum dan paling banyak dibudidayakan adalah Raspberry merah. Rasa sirup GENOVA Raspberry yang matang dan seimbang menjadikannya tambahan yang lezat untuk mocktail, soda, dan minuman kopi. Sirup Raspberry GENOVA menghadirkan cita rasa yang luar biasa pada es teh, mocktail special, atau minuman dingin",
@@ -467,7 +467,7 @@
   {
     id: 27,
     name: "Syrup Blue Curacao",
-    image: "../syrup_blue_curacao.jpg",
+    image: "../syrup_bluecuracao.jpg",
     price: "97,000",
     category: "liquid",
     info: "Konon tempat kelahiran minuman ini adalah pulau Curacao, yang terletak di Laut Karibia dan merupakan bagian dari Kepulauan Belanda. Di sanalah jeruk pahit tumbuh - komponen minuman tak terpisahkan. Tapi di pasar dunia, minuman itu muncul tidak begitu lama - pertama kali diluncurkan pada tahun 1920 oleh De Kiper. Syrup Blue Curaçao dikenal dengan warna biru tua, rasa jeruk asam, dan ciri khas tropis. Warna biru tua yang menakjubkan dari sirup GENOVA Blue Curaçao membangkitkan lautan yang mengarungi pantai-pantai Curaçao yang indah dan menambahkan sentuhan eksotis pada mocktail dan soda dengan aroma kulit jeruk yang aromatik dan rasa manis yang sedikit asam.",
@@ -483,7 +483,7 @@
   {
     id: 28,
     name: "Syrup Bubblegum",
-    image: "../syrup_bubble_gum.jpg",
+    image: "../syrup_bubblegum.jpg",
     price: "97,000",
     category: "liquid",
     info: "",
@@ -566,7 +566,7 @@
   {
     id: 33,
     name: "Syrup Green Apple",
-    image: "../syrup_green_apple.jpg",
+    image: "../syrup_greenapple.jpg",
     price: "97,000",
     category: "liquid",
     info: "Buah apel adalah salah satu buah yang banyak digemari oleh masyarakat dunia. Rasanya yang manis dan segar adalah alasan yang membuat buah ini istimewa. Varietas yang paling terkenal dari jenis buah apel yaitu apel hijau yang buahnya renyah, berair dan manis asam dan sangat baik dimakan mentah atau dimasak dalam puding. Sirup apel hijau yang menyegarkan dapat lebih dinikmati dengan mencampur sirup varian asam atau manis lainnya dari Syrup Genova Syrup Green Apple GENOVA cocok juga untuk mocktail buah segar, limun, soda, dan teh dengan rasa buah apel yang menyegarkan",
@@ -701,7 +701,7 @@
   {
     id: 41,
     name: "Syrup Mojito",
-    image: "../syrup_mojito_mint.jpg",
+    image: "../syrup_mojitomint.jpg",
     price: "97,000",
     category: "liquid",
     info: "Sirup Genova merupakan sirup yang biasa digunakan di hotel, restaurant, dan cafe sebagai sirup gourmet. Dengan minuman rasa Mojito Mint ini membuat pencampuran Mojito lebih mudah. Dengan sirup GENOVA Mojito Mint anda dapat mengurangi waktu dan persiapan, dan mulai menikmati minuman campuran atau minuman dingin favorit Anda. Sirup GENOVA Mojito Mint adalah tambahan yang sempurna untuk mocktail dingin, dan minuman segar lainnya",
