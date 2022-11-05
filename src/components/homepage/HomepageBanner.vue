@@ -49,6 +49,11 @@ export default {
 };
 </script>
 <style>
-.height {
+.carousel__pagination-button {
+  display: block;
+  border: 0;
+  margin: 1px;
+  cursor: pointer;
+  background: transparent;
 }
 </style>
