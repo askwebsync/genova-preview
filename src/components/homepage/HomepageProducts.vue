@@ -42,7 +42,7 @@
             </router-link>
           </div>
           <div
-            class="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300 hover:-translate-y-1"
+            class="my-8 rounded shadow-lg bg-white duration-300 hover:-translate-y-1"
           >
             <router-link to="/product/liquid-syrup">
               <div class="cursor-pointer">
@@ -74,7 +74,7 @@
             </router-link>
           </div>
           <div
-            class="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300 hover:-translate-y-1"
+            class="my-8 rounded shadow-lg bg-white duration-300 hover:-translate-y-1"
           >
             <router-link to="/product/powder-syrup">
               <div class="cursor-pointer">
