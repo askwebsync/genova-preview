@@ -78,7 +78,7 @@ export default {
         {
           id: 1,
           name: "Powder Avocado",
-          image: "../powder-avocado.png",
+          image: "../powder_avocado.jpg",
           price: "150,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -93,7 +93,7 @@ export default {
         {
           id: 2,
           name: "Powder Cappuccino",
-          image: "../powder-cappuccino.png",
+          image: "../powder_cappuccino.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -108,7 +108,7 @@ export default {
         {
           id: 3,
           name: "Powder Charcoal",
-          image: "../powder-charcoal.png",
+          image: "../powder_charcoal.jpg",
           price: "159,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -123,7 +123,7 @@ export default {
         {
           id: 4,
           name: "Powder Chocolate",
-          image: "../powder-chocolateclassic.png",
+          image: "../powder_chocolateclassic.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -138,7 +138,7 @@ export default {
         {
           id: 5,
           name: "Powder Cookies",
-          image: "../powder-cookiescream.png",
+          image: "../powder_cookiescream.jpg",
           price: "155,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -153,7 +153,7 @@ export default {
         {
           id: 6,
           name: "Powder Cotton Candy",
-          image: "../powder-cottoncandy.png",
+          image: "../powder_cottoncandy.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -168,7 +168,7 @@ export default {
         {
           id: 7,
           name: "Powder Dark Chocolate",
-          image: "../powder-darkchocolate.png",
+          image: "../powder_darkchocolate.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -183,7 +183,7 @@ export default {
         {
           id: 8,
           name: "Powder Frappe Base",
-          image: "../powder-frappebase.png",
+          image: "../powder_frappebase.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -198,7 +198,7 @@ export default {
         {
           id: 9,
           name: "Powder Greentea",
-          image: "../powder-greentea.png",
+          image: "../powder_greentea.jpg",
           price: "150,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -213,7 +213,7 @@ export default {
         {
           id: 10,
           name: "Powder Macchiato",
-          image: "../powder-macchiato.png",
+          image: "../powder_macchiato.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -228,7 +228,7 @@ export default {
         {
           id: 11,
           name: "Powder Matcha Latte",
-          image: "../powder-matchalatte.png",
+          image: "../powder_matchalatte.jpg",
           price: "169,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -243,7 +243,7 @@ export default {
         {
           id: 12,
           name: "Powder Matcha Premium",
-          image: "../powder-matchapremium.png",
+          image: "../powder_matchapremium.jpg",
           price: "245,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -258,7 +258,7 @@ export default {
         {
           id: 13,
           name: "Powder Mocha",
-          image: "../powder-mocha.png",
+          image: "../powder_mocha.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -273,7 +273,7 @@ export default {
         {
           id: 14,
           name: "Powder Mochaccino",
-          image: "../powder-mochaccino.png",
+          image: "../powder_mochaccino.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -288,7 +288,7 @@ export default {
         {
           id: 15,
           name: "Powder Red Velvet",
-          image: "../powder-redvelvet.png",
+          image: "../powder_redvelvet.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -303,7 +303,7 @@ export default {
         {
           id: 16,
           name: "Powder Thai Tea",
-          image: "../powder-thaitea.png",
+          image: "../powder_thaitea.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -318,7 +318,7 @@ export default {
         {
           id: 17,
           name: "Powder Tiramisu",
-          image: "../powder-tiramisu.png",
+          image: "../powder_tiramisu.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",

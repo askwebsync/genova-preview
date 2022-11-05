@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto">
-    <div class="px-4 md:px-6 xl:px-12 z height">
+    <div class="px-4 md:px-6 xl:px-12 z">
       <Carousel :autoplay="2000" :wrap-around="true">
         <Slide v-for="image in images" :key="image.id">
           <img
@@ -49,6 +49,11 @@ export default {
 };
 </script>
 <style>
-.height {
+.carousel__pagination-button {
+  display: block;
+  border: 0;
+  margin: 1px;
+  cursor: pointer;
+  background: transparent;
 }
 </style>

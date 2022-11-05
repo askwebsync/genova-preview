@@ -5,7 +5,7 @@
     <div class="container mx-auto">
       <div class="mt-4 p-4 lg:p-6 xl:px-12 xl:pb-6">
         <div class="flex flex-row">
-          <h1 class="pcolor mb-1 text-xl lg:text-2xl">TRENDING FLAVOUR</h1>
+          <h1 class="pcolor mb-1 text-xl lg:text-2xl">Trending Flavour</h1>
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center my-12">
@@ -85,7 +85,7 @@ export default {
         {
           id: 11,
           name: "Powder Matcha Latte",
-          image: "../powder-matchalatte.png",
+          image: "../powder_matchalatte.jpg",
           price: "169,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -101,7 +101,7 @@ export default {
         {
           id: 39,
           name: "Syrup Lychee",
-          image: "../syrup_lychee.png",
+          image: "../syrup_lychee.jpg",
           price: "97,000",
           categoryId: 3,
           info: "Lychee atau Litchi atau Buah leci adalah buah yang berasal dari pohon tropis dan sub tropis yang berasal dari daerah provinsi Fujian dan Guangdong, Cina. Kabarnya, pohon leci sudah dikembangbiakkan sejak abad ke-11 silam. Selain Cina, kawasan penghasil buah leci terbesar di dunia adalah India, Madagaskar, dan Afrika Selatan. Syrup GENOVA Lychee memiliki rasa aroma lychee yang kuat dan sensasi asam manis layaknya menikmati buah leci sehingga memiliki cita rasa sendiri khas product Genova Indonesia. Syrup GENOVA Lychee saat ini sudah menjadi sirup pilihan ter favorit pilihan customer setia Genova Indonesia. Tambahkan sirup ini untuk berbagai minuman teh, moctail, susu yakult, serta minuman dingin lainnya.",
@@ -116,7 +116,7 @@ export default {
         {
           id: 7,
           name: "Powder Dark Chocolate",
-          image: "../powder-darkchocolate.png",
+          image: "../powder_darkchocolate.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -132,7 +132,7 @@ export default {
         {
           id: 15,
           name: "Powder Red Velvet",
-          image: "../powder-redvelvet.png",
+          image: "../powder_redvelvet.jpg",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -148,7 +148,7 @@ export default {
         {
           id: 42,
           name: "Syrup Pandan",
-          image: "../syrup_pandan.png",
+          image: "../syrup_pandan.jpg",
           price: "97,000",
           categoryId: 3,
           info: "Pandan di perkirakan berasal dari kepulauan di Lautan Pasifik, dengan penyebaran terbesar di Madagaskar dan Malesia. Untuk penyebarannya, Terdapat hampir di seluruh Indonesia, karena tumbuhan ini mudah tumbuh. Pandan banyak dibudidayakan karena biasa digunakan sebagai penambah rasa di banyak hidangan manis dan gurih. Sirup GENOVA Pandan memiliki aroma ringan dan menyegarkan dengan sentuhan aroma yang manis. Sangat cocok untuk membuat minuman teh susu, atau es teh sederhana dengan rasa manis yang seimbang. Sirup ini menjadi viral untuk campuran teh di Asia Tenggara hari ini dan menciptakan resep unik dengan rasa yang luar biasa.",
@@ -163,7 +163,7 @@ export default {
         {
           id: 23,
           name: "Fruit Blend Strawberry",
-          image: "../fruit_bland_strawberry.png",
+          image: "../fruit_bland_strawberry.jpg",
           price: "109,000",
           categoryId: 2,
           info: "Juicy, cerah, dan rasa manis yang tepat;  tidak heran jika stroberi segar adalah favorit di musim panas.  Nikmati sensasi musim panas sepanjang tahun ketika Anda menggunakan Genova Fruit Blend Strawberry untuk membuat mocktail, lemonade, es teh, dan smoothie. GENOVA Fruit Blend Strawberry memberikan rasa strawberry yang menyegarkan dan juicy..!",
