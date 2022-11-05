@@ -4,18 +4,30 @@
   <section class="container mx-auto">
     <div class="my-12">
       <ul class="flex flex-row justify-center">
-        <li class="text-center mx-6">
+        <li class="text-center mx-6" @click.prevent="tab = 'offline'">
           <h2
             class="text-xl lg:text-2xl cursor-pointer block rounded py-3 px-4 transition underline"
-            @click.prevent="tab = 'offline'"
+            v-if="tab === 'offline'"
+          >
+            Offline Store
+          </h2>
+          <h2
+            class="text-xl lg:text-2xl cursor-pointer block rounded py-3 px-4 transition"
+            v-else
           >
             Offline Store
           </h2>
         </li>
-        <li class="text-center mx-6">
+        <li class="text-center mx-6" @click.prevent="tab = 'online'">
           <h2
             class="text-lg lg:text-2xl cursor-pointer block rounded py-3 px-4 transition"
-            @click.prevent="tab = 'online'"
+            v-if="tab === 'offline'"
+          >
+            Online Store
+          </h2>
+          <h2
+            class="text-lg lg:text-2xl cursor-pointer block rounded py-3 px-4 transition underline"
+            v-else
           >
             Online Store
           </h2>
