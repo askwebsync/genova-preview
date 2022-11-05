@@ -5,7 +5,7 @@
     <div class="container mx-auto">
       <div class="p-4 lg:p-6 xl:px-12 xl:pb-6">
         <div class="flex flex-row">
-          <h1 class="pcolor mb-1 text-xl lg:text-2xl">NEW FLAVOUR</h1>
+          <h1 class="pcolor mb-1 text-xl lg:text-2xl">New Flavour</h1>
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center my-12">
@@ -85,7 +85,7 @@ export default {
         {
           id: 5,
           name: "Powder Cookies",
-          image: "../powder-cookiescream.png",
+          image: "../powder_cookiescream.jpg",
           price: "155,000",
           category: 0,
           info: "Cocok Digunakan untuk Untuk Meng-explore Minuman Terkini, Pembuatan Kue, Pembuatan Minuman dan Aneka Olahan Lainnya. Cara Penyimpanan: - Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung - Hindari dari tempat yang berbau tajam.",
@@ -101,7 +101,7 @@ export default {
         {
           id: 24,
           name: "Syrup Pineapple",
-          image: "../syrup_pineapple.png",
+          image: "../syrup_pineapple.jpg",
           price: "97,000",
           categoryId: 3,
           info: "Nanas diyakini berasal dari hutan hujan Brasil. Nanas dipanen oleh suku asli dan menyebar ke seluruh Amerika Selatan dan Tengah. Ketika Christopher Columbus mendarat di dunia baru pada tahun 1493, orang Spanyol menamai buah itu 'piña' karena kemiripannya dengan biji pinus dari pohon konifer. Nanas adalah buah oval besar yang tumbuh di negara-negara tropis. Buah ini manis, berair, dan kuning di dalamnya, dan memiliki kulit kecoklatan yang tebal. Sirup Pineapple GENOVA dibuat untuk menambahkan minuman anda dengan sentuhan tropis pada banyak minuman dingin, soda, dan teh.",
@@ -117,7 +117,7 @@ export default {
         {
           id: 25,
           name: "Syrup Raspberry",
-          image: "../syrup_raspberry.png",
+          image: "../syrup_raspberry.jpg",
           price: "97,000",
           categoryId: 3,
           info: "Raspberry adalah buah yang asam dan manis juga lezat secara bersamaan, dan mereka tidak terlalu asam seperti blackberry. Namun, mereka bisa menjadi sedikit asam, terutama jika dipetik sebelum matang sepenuhnya. Semakin manis dan kuat rasanya, semakin matang mereka. Berry kecil berwarna dalam yang memiliki tekstur lembut, rasa manis yang lembut dan aroma yang menyenangkan. Musim puncak raspberry adalah selama pertengahan musim panas, tetapi mereka tersedia sepanjang tahun di beberapa pasar baik segar maupun beku. Varietas yang paling umum dan paling banyak dibudidayakan adalah Raspberry merah. Rasa sirup GENOVA Raspberry yang matang dan seimbang menjadikannya tambahan yang lezat untuk mocktail, soda, dan minuman kopi. Sirup Raspberry GENOVA menghadirkan cita rasa yang luar biasa pada es teh, mocktail special, atau minuman dingin",
@@ -133,7 +133,7 @@ export default {
         {
           id: 47,
           name: "Syrup Tiramisu",
-          image: "../syrup_tiramisu.png",
+          image: "../syrup_tiramisu.jpg",
           price: "97,000",
           categoryId: 3,
           info: "Syrup Tiramisu awalnya terinspirasi dari sebuah cake legendaris yang nikmat yg berasal dari Siena, Italy. Syrup Tiramisu adalah krim yang nikmat dan simbol kesenangan masyarakat Italia dalam pengetahuan kuliner saat ini. Resepnya cukup sederhana, memadukan rasa biskuit, kopi, kakao, rasa marsala dan mascarpone, untuk hasil yang kaya dan creamy, penuh rasa. Sirup GENOVA Tiramisu menawarkan rasa tiramisu asli, dengan perpaduan aroma yang lembut dan menggugah selera untuk minuman istimewa yang tiada bandingnya.",
@@ -149,7 +149,7 @@ export default {
         {
           id: 31,
           name: "Syrup Coconut",
-          image: "../syrup_coconut.png",
+          image: "../syrup_coconut.jpg",
           price: "97,000",
           categoryId: 3,
           info: "Terinspirasi dari kelapa asli yang berasal dari negara tropis dan sub-tropis seperti Indonesia, India dan Thailand, di mana kelapa dianggap sangat diperlukan dan berguna dalam banyak hal. Rasanya yang serbaguna menyegarkan. Juga rasa manis dan intensnya cocok untuk berbagai minuman tropis. Nikmati cita rasa minuman tropis ini dengan menambahkan sirup Coconut GENOVA ke dalam mocktail, kopi, smoothie, dan fruit punch, lalu hanyut di bawah naungan pohon kelapa",
@@ -165,7 +165,7 @@ export default {
         {
           id: 29,
           name: "Syrup Butterscotch",
-          image: "../syrup_butterscotch.png",
+          image: "../syrup_butterscotch.jpg",
           price: "97,000",
           categoryId: 3,
           info: "Syrup Butterscotch sebagian besar terbuat dari mentega dan gula merah, itulah sebabnya rasanya luar biasa enak. Krim kental, vanila, dan garam juga bisa ditambahkan. Gula merah memberikan rasa yang lebih kompleks karena molase yang dikandungnya, dibandingkan dengan gula pasir, yang digunakan karamel. Resep paling awal yang diketahui, pada pertengahan abad ke-19 Yorkshire, bekas tetes (molase) sebagai pengganti atau sebagai tambahan gula. Butterscotch mirip dengan gula-gula, tetapi untuk butterscotch, gula direbus hingga menjadi retak lembut panggang, tidak retak keras seperti toffee. Sering dikreditkan dengan penemuan mereka, Parkinson of Doncaster membuat permen rebus butterscotch dan menjualnya dalam kaleng, yang menjadi salah satu ekspor kota yang paling terkenal. Mereka menjadi terkenal pada tahun 1851 ketika Ratu Victoria disajikan dengan kaleng ketika dia mengunjungi kota. Saus butterscotch, terbuat dari butterscotch dan krim, digunakan sebagai taburan es krim (terutama sundae ). Sempurna sebagai topping es krim sundae yang indah, sirup GENOVA Butterscotch juga akan menciptakan minuman pencuci mulut panas dan dingin yang mewah",
@@ -180,7 +180,7 @@ export default {
         {
           id: 37,
           name: "Syrup Lemon",
-          image: "../syrup_lemon.png",
+          image: "../syrup_lemon.jpg",
           price: "97,000",
           categoryId: 3,
           info: "Dari beberapa data diterangkan jika minuman lemon ini sebenarnya berasal dari Mesir yang pertama kali dibuat oleh bangsa Mesir sekitar 1.500 tahun yang lalu. Namun, ada keterangan lainnya yang berpendapat, jika minuman lemon pertama kali diperkenalkan di Perancis pada abad ke-16. Buah yang konon berasal dari kaki bukit Himalaya, timur laut India ini kemudian tersebar ke seluruh daerah Timur Tengah, Cina, Burma, benua Eropa, Amerika, bahkan juga sampai benua Afrika. Sedangkan di Irak dan Mesir, mulai 700 tahun sebelum Masehi. Syrup GENOVA Lemon ini sangat dibutuhkan oleh para bartender yang menggunakan rasa dan kenyamanan yang sebenarnya sebagai pengganti jus lemon.",

@@ -3,7 +3,7 @@
   <section class="container mx-auto">
     <div class="p-4 lg:p-6 lg:py-12 xl:p-12">
       <div class="flex flex-row">
-        <h1 class="pcolor mb-1 text-xl lg:text-2xl">PRODUCT CATEGORY</h1>
+        <h1 class="pcolor mb-1 text-xl lg:text-2xl">Product Category</h1>
         <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
       </div>
       <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
@@ -49,7 +49,7 @@
                 <figure>
                   <!-- Image -->
                   <img
-                    src="../../assets/images/product/syrup/syrup_bluecuracao.png"
+                    src="../../assets/images/product/syrup/syrup_bluecuracao.jpg"
                     alt="Product"
                     class="rounded-t h-52 w-full object-contain"
                   />
@@ -81,7 +81,7 @@
                 <figure>
                   <!-- Image -->
                   <img
-                    src="../../assets/images/product/powder/powder-tiramisu.png "
+                    src="../../assets/images/product/powder/powder_tiramisu.jpg"
                     alt="Product"
                     class="rounded-t h-52 w-full object-contain"
                   />
