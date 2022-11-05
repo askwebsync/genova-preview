@@ -6,13 +6,13 @@
       <ul class="flex flex-row justify-center">
         <li class="text-center mx-6" @click.prevent="tab = 'offline'">
           <h2
-            class="text-xl lg:text-2xl cursor-pointer block rounded py-3 px-4 transition underline"
+            class="text-xl lg:text-2xl cursor-pointer block rounded py-3 px-4 transition underline pcolor hover:text-yellow-600"
             v-if="tab === 'offline'"
           >
             Offline Store
           </h2>
           <h2
-            class="text-xl lg:text-2xl cursor-pointer block rounded py-3 px-4 transition"
+            class="text-xl lg:text-2xl cursor-pointer block rounded py-3 px-4 transition pcolor hover:text-yellow-600"
             v-else
           >
             Offline Store
@@ -20,13 +20,13 @@
         </li>
         <li class="text-center mx-6" @click.prevent="tab = 'online'">
           <h2
-            class="text-lg lg:text-2xl cursor-pointer block rounded py-3 px-4 transition"
+            class="text-lg lg:text-2xl cursor-pointer block rounded py-3 px-4 transition pcolor hover:text-yellow-600"
             v-if="tab === 'offline'"
           >
             Online Store
           </h2>
           <h2
-            class="text-lg lg:text-2xl cursor-pointer block rounded py-3 px-4 transition underline"
+            class="text-lg lg:text-2xl cursor-pointer block rounded py-3 px-4 transition underline pcolor hover:text-yellow-600"
             v-else
           >
             Online Store
