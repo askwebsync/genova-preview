@@ -6,7 +6,7 @@
           <img
             :src="image.url"
             :alt="image.alt"
-            class="w-full h-full object-contain"
+            class="w-full h-full object-cover"
           />
         </Slide>
 
@@ -56,5 +56,15 @@ export default {
   padding: 1px;
   cursor: pointer;
   background: transparent;
+}
+.carousel__slide {
+  scroll-snap-stop: auto;
+  flex-shrink: 0;
+  margin: 0;
+  position: relative;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

@@ -54,7 +54,7 @@
                   <figure>
                     <!-- Image -->
                     <img
-                      src="../../assets/images/product/syrup/syrup_bluecuracao.png"
+                      src="../../assets/images/product/syrup/syrup_bluecuracao.jpg"
                       alt="Product"
                       class="rounded-t h-72 w-full object-contain"
                     />
@@ -86,7 +86,7 @@
                   <figure>
                     <!-- Image -->
                     <img
-                      src="../../assets/images/product/powder/powder-tiramisu.png "
+                      src="../../assets/images/product/powder/powder_tiramisu.jpg"
                       alt="Product"
                       class="rounded-t h-72 w-full object-contain"
                     />
