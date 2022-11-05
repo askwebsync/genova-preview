@@ -14,7 +14,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 3,
@@ -48,7 +48,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 4,
@@ -65,7 +65,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 5,
@@ -82,7 +82,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 6,
@@ -99,7 +99,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 7,
@@ -116,7 +116,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 8,
@@ -133,7 +133,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 9,
@@ -150,7 +150,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 10,
@@ -167,7 +167,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 11,
@@ -184,7 +184,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 12,
@@ -201,7 +201,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 13,
@@ -218,7 +218,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 14,
@@ -235,7 +235,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 15,
@@ -252,7 +252,7 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 16,
@@ -285,7 +285,7 @@
     tasting: "",
   },
   {
-    id: 16,
+    id: 18,
     name: "Powder Thai Tea",
     image: "../powder_thaitea.jpg",
     price: "139,000",
@@ -299,10 +299,10 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 17,
+    id: 19,
     name: "Powder Tiramisu",
     image: "../powder_tiramisu.jpg",
     price: "139,000",
@@ -316,12 +316,12 @@
     color: "",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 18,
+    id: 20,
     name: "Fruit Blend Kiwi",
-    image: "../fruit_bland_kiwi.jpg",
+    image: "../fruitbland_kiwi.jpg",
     price: "109,000",
     category: "fruitBlend",
     info: "Velvety, sedikit asam, dan asam, buah kecil ini merupakan pemberi semangat revitalisasi yang menjadikannya sebagai tambahan yang bagus untuk menu minuman musim panas.  Bagikan keceriaan dan kesenangan dari GENOVA Fruit Blend Kiwi dalam minuman dingin, es teh, smoothie, dan soda, paling cocok untuk hari-hari ekstra panas sebagai minuman bermanfaat. Sedikit Tips dari kami Kita suka memadukannya dengan buah markisa dan irisan jeruk untuk mengawinkan rasa eksotis semuanya dalam campuran sebuah gelas.",
@@ -332,12 +332,12 @@
     color: "Hijau gelap intens, deep undertone",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 19,
+    id: 21,
     name: "Fruit Blend Manggo",
-    image: "../fruit_bland_mango.jpg",
+    image: "../fruitbland_mango.jpg",
     price: "109,000",
     category: "fruitBlend",
     info: "Buah Tropis, manis dan sangat lezat. Kita bersyukur mangga tumbuh di pohon.  Cabut cabangnya dan nikmati rasa mangga segar yang otentik dan baru ketika Anda menambahkan GENOVA Fruit Blend Mango ke dalam teh, lemonade, smoothie, atau koktail. Jadikan minuman mu itu mangga-licious..! GENOVA Fruit Blend Mango menghadirkan rasa mangga matang tropis dan tekstur lembut ke teh, limun, smoothie, mocktail, dan banyak lagi.",
@@ -348,12 +348,12 @@
     color: "Oranye terang dengan kilau kuning",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 20,
-    name: "Fruit Blend Passion",
-    image: "../fruit_bland_passion.jpg",
+    id: 22,
+    name: "Fruit Blend Passion Fruit",
+    image: "../fruitbland_passionfruit.jpg",
     price: "109,000",
     category: "fruitBlend",
     info: "Tidak ada yang bisa meniru cita rasa tropis seperti rasa eksotis dari buah Markisa. Buah kaya yang manis, tajam dan wangi pada dasarnya adalah rasa yang menyenangkan untuk selera anda dan GENOVA Fruit Blend Passion Fruit akan membawa kesegaran pada mocktail, lemonade, es teh, dan smoothie dalam perjalanan sensasi menyenangkan dahaga anda. Passion Fruit is Perfection..!",
@@ -364,12 +364,12 @@
     color: "Oranye tua",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 21,
+    id: 23,
     name: "Fruit Blend Pineapple",
-    image: "../fruit_bland_pineapple.jpg",
+    image: "../fruitbland_pineapple.jpg",
     price: "109,000",
     category: "fruitBlend",
     info: "Buah Nanas mencuri perhatian, bukan hanya oleh penampilan saja tetapi juga oleh jus rasa yang kuat dan asam yang membawa sensasi tropis anda di manapun anda berada di dunia. Temukan sensasi sinar matahari di GENOVA Fruit Blend Pineapple dan campur menjadi lemonade, es teh, dan smoothie untuk sentuhan tropis yang lembut.",
@@ -380,12 +380,12 @@
     color: "Kuning bertekstur cerah",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 22,
+    id: 24,
     name: "Fruit Blend Raspberry",
-    image: "../fruit_bland_raspberry.jpg",
+    image: "../fruitbland_raspberry.jpg",
     price: "109,000",
     category: "fruitBlend",
     info: "Halus dan lezat. Selembut rasa asli, fruit blend raspberry benar-benar memberikan rasa yang luar biasa.  Nikmati rasa juicy segar dan manis dari raspberry segar ketika Anda menggunakan GENOVA Fruit Blend Raspberry untuk membuat lemonade, teh, smoothie, mocktail, dan banyak lagi. GENOVA Fruit Blend Raspberry adalah minuman lezat buah berry yang tak tertahankan segarnya dan aromanya untuk diaplikasikan pada minuman-minuman segar anda",
@@ -396,12 +396,12 @@
     color: "Merah gelap dengan ungu, kilau merah muda.",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 23,
+    id: 25,
     name: "Fruit Blend Strawberry",
-    image: "../fruit_bland_strawberry.jpg",
+    image: "../fruitbland_strawberry.jpg",
     price: "109,000",
     category: "fruitBlend",
     info: "Juicy, cerah, dan rasa manis yang tepat;  tidak heran jika stroberi segar adalah favorit di musim panas.  Nikmati sensasi musim panas sepanjang tahun ketika Anda menggunakan Genova Fruit Blend Strawberry untuk membuat mocktail, lemonade, es teh, dan smoothie. GENOVA Fruit Blend Strawberry memberikan rasa strawberry yang menyegarkan dan juicy..!",
@@ -412,10 +412,10 @@
     color: "Merah ruby tua dengan beberapa kilau merah tembaga",
     tasting: "",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "-Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n-Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 24,
+    id: 26,
     name: "Syrup Pineapple",
     image: "../syrup_pineapple.jpg",
     price: "97,000",
@@ -429,10 +429,10 @@
     tasting:
       "Awal: Nanas segar\n Tengah: Rasa nanas yang juicy dan segar\n Panjang di Mulut: Buah dengan rasa sedikit asam",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 25,
+    id: 27,
     name: "Syrup Raspberry",
     image: "../syrup_raspberry.jpg",
     price: "97,000",
@@ -446,10 +446,10 @@
     tasting:
       "Awal: raspberry matang\n Tengah: sedikit asam\n Panjang di mulut: rasa permen raspberry.",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 26,
+    id: 28,
     name: "Syrup Banana",
     image: "../syrup_banana.jpg",
     price: "97,000",
@@ -462,10 +462,10 @@
     color: "Emas terang bening",
     tasting: "Awal: rasa yang kuat dari pisang matang",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 27,
+    id: 29,
     name: "Syrup Blue Curacao",
     image: "../syrup_bluecuracao.jpg",
     price: "97,000",
@@ -478,10 +478,10 @@
     color: "Biru tua bahkan ketika diencerkan",
     tasting: "Rasa kulit jeruk, permen rasa jeruk segar",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 28,
+    id: 30,
     name: "Syrup Bubblegum",
     image: "../syrup_bubblegum.jpg",
     price: "97,000",
@@ -495,10 +495,10 @@
     tasting:
       "Rasa awal permen, rasa Bubble Gum yang kuat dan manis mengingatkan Anda akan masa kecil Anda.",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 29,
+    id: 31,
     name: "Syrup Butterscotch",
     image: "../syrup_butterscotch.jpg",
     price: "97,000",
@@ -511,10 +511,10 @@
     color: "Warna bening dengan kilau kuning",
     tasting: "Awal: Mentega dan karamel",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 30,
+    id: 32,
     name: "Syrup Caramel",
     image: "../syrup_caramel.jpg",
     price: "97,000",
@@ -528,10 +528,10 @@
     tasting:
       "Awal: Karamel yang intens dengan nada bulat dari permen karamel\n Tengah: Kaya dan rasa krim dengan nada asin\n Panjang di mulut: karamel mentega asin",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 31,
+    id: 33,
     name: "Syrup Coconut",
     image: "../syrup_coconut.jpg",
     price: "97,000",
@@ -545,10 +545,10 @@
     tasting:
       "Rasa kelapa yang sangat kuat, pekat, dan tahan lama yang membawa Anda pergi ke daerah tropis, di bawah rayuan pohon kelapa...",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 32,
+    id: 34,
     name: "Syrup Ginger",
     image: "../syrup_ginger.jpg",
     price: "97,000",
@@ -561,10 +561,10 @@
     color: "Sedikit berawan",
     tasting: "Sedikit berawan",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 33,
+    id: 35,
     name: "Syrup Green Apple",
     image: "../syrup_greenapple.jpg",
     price: "97,000",
@@ -578,10 +578,10 @@
     tasting:
       "Hidung apel hijau yang baru dipotong; asam, manis dan juicy rasa apel hijau, sangat menyegarkan",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 34,
+    id: 36,
     name: "Syrup Hazelnut",
     image: "../syrup_hazelnut.jpg",
     price: "97,000",
@@ -595,10 +595,10 @@
     tasting:
       "Awal: Kacang segar dan bunga\nTengah: Rasa hazelnut segar dan nabati\n Panjang di Mulut: Sentuhan halus almond dan vanila",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 35,
+    id: 37,
     name: "Syrup Irish",
     image: "../syrup_irish.jpg",
     price: "97,000",
@@ -612,10 +612,10 @@
     tasting:
       "Awal: mentega dengan sedikit kopi panggang\n Tengah: lembut dengan kopi panggang yang kuat\n Panjang di Mulut: mocha",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 36,
+    id: 38,
     name: "Syrup Kiwi",
     image: "../syrup_kiwi.jpg",
     price: "97,000",
@@ -628,10 +628,10 @@
     color: "Hijau terang",
     tasting: "Rasa awal kiwi matang, rasa kiwi juicy dan menyegarkan",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 37,
+    id: 39,
     name: "Syrup Lemon",
     image: "../syrup_lemon.jpg",
     price: "97,000",
@@ -645,10 +645,10 @@
     tasting:
       "Hidung: Seimbang antara rasa lemon dan jeruk nipis segar\n Tengah: Asam, perasan jeruk nipis\n Panjang di Mulut: Menyegarkan",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 38,
+    id: 40,
     name: "Syrup Lemongrass",
     image: "../syrup_lemongrass.jpg",
     price: "97,000",
@@ -662,10 +662,10 @@
     tasting:
       "Genova Lemongrass adalah pendamping yang hebat untuk membuat mocktail dan banyak lagi. Di Asia Tenggara, kami senang memadukannya dengan jeruk nipis, daun jeruk purut, mint, asam untuk menciptakan pengalaman Asia yang otentik.",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 39,
+    id: 41,
     name: "Syrup Lychee",
     image: "../syrup_lychee.jpg",
     price: "97,000",
@@ -679,10 +679,10 @@
     tasting:
       "Awal: Aroma buah\n Tengah: Rasa leci asli sedikit asam\n Panjang di Mulut: halus manis",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 40,
+    id: 42,
     name: "Syrup Manggo",
     image: "../syrup_mango.jpg",
     price: "97,000",
@@ -696,10 +696,10 @@
     tasting:
       "Rasa awal buah mangga eksotis ringan, rasa mangga manis dengan sedikit keasaman",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 41,
+    id: 43,
     name: "Syrup Mojito",
     image: "../syrup_mojitomint.jpg",
     price: "97,000",
@@ -713,10 +713,10 @@
     tasting:
       "Aroma spearmint, rasa gula tebu dan spearmint yang sangat seimbang.",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 42,
+    id: 44,
     name: "Syrup Pandan",
     image: "../syrup_pandan.jpg",
     price: "97,000",
@@ -730,10 +730,10 @@
     tasting:
       "Awal: aroma nabati yang wangi\n Tengah: pandan masak hijau manis\n Panjang di Mulut: tradisional daun pandan",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 43,
+    id: 45,
     name: "Syrup Passion Fruit",
     image: "../syrup_passion_fruit.jpg",
     price: "97,000",
@@ -747,10 +747,10 @@
     tasting:
       "Aroma buah yang eksotis, rasa manis dan asam yang akan membuat Anda merasa ingin memakan buah markisa yang segar.",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 44,
+    id: 46,
     name: "Syrup Peach",
     image: "../syrup_peach.jpg",
     price: "97,000",
@@ -763,10 +763,10 @@
     color: "Cemerlang, warna oranye emas muda",
     tasting: "Sensasi dan rasa persik putih tahan lama",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 45,
+    id: 47,
     name: "Syrup Peppermint",
     image: "../syrup_peppermint.jpg",
     price: "97,000",
@@ -779,10 +779,10 @@
     color: "Bening",
     tasting: "Bau peppermint yang kuat, rasa mint yang menyegarkan di mulut",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 46,
+    id: 48,
     name: "Syrup Strawberry",
     image: "../syrup_strawberry.jpg",
     price: "97,000",
@@ -796,10 +796,10 @@
     tasting:
       "Rasa stroberi segar yang kaya, rasa lembut dan lembut dengan sentuhan rasa stroberi.",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
   {
-    id: 47,
+    id: 49,
     name: "Syrup Tiramisu",
     image: "../syrup_tiramisu.jpg",
     price: "97,000",
@@ -813,6 +813,6 @@
     tasting:
       "Awal: Cokelat dengan sedikit biskuit\n Tengah: Cokelat dengan aroma kacang\n Belakang: Terasa panjang rasa kacang di mulut",
     penyimpanan:
-      "Cara Penyimpanan: \n- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
   },
 ];

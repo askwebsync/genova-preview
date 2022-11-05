@@ -22,7 +22,7 @@
                   <figure>
                     <!-- Image -->
                     <img
-                      src="../../assets/images/product/fruit-bland/fruit_bland_pineapple.png"
+                      src="../../assets/images/product/fruit-bland/fruitbland_pineapple.jpg"
                       alt="Product"
                       class="rounded-t h-72 w-full object-contain"
                     />
