@@ -89,7 +89,17 @@
                 </p>
               </td>
             </tr>
-            <tr class="h-16 text-white">
+            <tr class="border-b-2 border-white h-16 text-white">
+              <td class="w-1/2 md:w-1/6 text-left">
+                <p class="m-2 text-lg md:text-xl lg:m-4 details">Color</p>
+              </td>
+              <td class="text-left">
+                <p class="m-2 text-lg md:text-xl lg:m-4">
+                  {{ productShow[1].color }}
+                </p>
+              </td>
+            </tr>
+            <tr class="border-b-2 border-white h-16 text-white">
               <td class="w-1/2 md:w-1/6 text-left">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">
                   Serving Suggestions
@@ -98,6 +108,18 @@
               <td class="text-left">
                 <p class="m-2 text-lg md:text-xl lg:m-4">
                   {{ productShow[1].serving }}
+                </p>
+              </td>
+            </tr>
+            <tr class="h-16 text-white">
+              <td class="w-1/2 md:w-1/6 text-left">
+                <p class="m-2 text-lg md:text-xl lg:m-4 details">
+                  Keeping Suggestions
+                </p>
+              </td>
+              <td class="text-left">
+                <p class="m-2 text-lg md:text-xl lg:m-4">
+                  {{ productShow[1].penyimpanan }}
                 </p>
               </td>
             </tr>
