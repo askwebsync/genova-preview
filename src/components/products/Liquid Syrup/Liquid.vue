@@ -430,7 +430,7 @@ export default {
         {
           id: 45,
           name: "Syrup Passion Fruit",
-          image: "../syrup_passion_fruit.jpg",
+          image: "../syrup_passionfruit.jpg",
           price: "97,000",
           category: "liquid",
           info: "Buah markisa adalah buah tropis seukuran telur dengan cangkang lunak berwarna kuning kemerahan yang membungkus biji renyah dan daging berair lembut, yang memiliki sensasi rasa yang unik juga rasa yang kuat dan harum. Buah markisa berasal dari Amerika Latin, terutama Brasil, kemudian menyebar ke daerah-daerah tropis di dunia termasuk Indonesia. Di Indonesia, markisa banyak ditanam di dataran tinggi di Goa, Malino (Sulawesi Selatan) dan Brastagi (Sumatera Utara). Untuk sensasi rasa tropis, tambahkan aroma buah dan rasa manis dan asam dari sirup Passion Fruit GENOVA ke mocktail, soda, limun, fruit punch, dan smoothie.",

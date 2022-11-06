@@ -16,7 +16,7 @@ export default {
       <nav class="flex flex-wrap justify-center -mx-5 -my-2">
         <div class="px-5 py-2">
           <router-link
-            to="/products"
+            :to="{ name: 'products' }"
             class="pcolor mb-3 text-base md:text-lg leading-6"
           >
             Product
@@ -24,7 +24,7 @@ export default {
         </div>
         <div class="px-5 py-2">
           <router-link
-            to="/recipe"
+            :to="{ name: 'recipe' }"
             class="pcolor mb-3 text-base md:text-lg leading-6"
           >
             Recipe
@@ -32,7 +32,7 @@ export default {
         </div>
         <div class="px-5 py-2">
           <router-link
-            to="/about"
+            :to="{ name: 'about' }"
             class="pcolor mb-3 text-base md:text-lg leading-6"
           >
             About
@@ -40,7 +40,7 @@ export default {
         </div>
         <div class="px-5 py-2">
           <router-link
-            to="/contact"
+            :to="{ name: 'contact' }"
             class="pcolor mb-3 text-base md:text-lg leading-6"
           >
             Contact
@@ -48,7 +48,7 @@ export default {
         </div>
         <div class="px-5 py-2">
           <router-link
-            to="/location"
+            :to="{ name: 'location' }"
             class="pcolor mb-3 text-base md:text-lg leading-6"
           >
             Location

@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="min-h-screen" id="app">
+  <div class="min-h-screen">
     <AppHeader class="" />
     <router-view v-slot="{ Component }" :key="$route.fullPath">
       <transition name="fade">
