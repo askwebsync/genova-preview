@@ -1,10 +1,15 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="flex flex-col gap-4">
-    <HomepageBanner />
-    <TrendingProducts />
-    <NewProducts />
-    <HomepageProducts />
+    <div class="mx-auto" v-if="isLoaded">
+      <PageLoader />
+    </div>
+    <div v-if="!isLoaded">
+      <HomepageBanner />
+      <TrendingProducts />
+      <NewProducts />
+      <HomepageProducts />
+    </div>
   </div>
 </template>
 
@@ -13,6 +18,7 @@ import TrendingProducts from "../components/homepage/TrendingProducts.vue";
 import HomepageProducts from "../components/homepage/HomepageProducts.vue";
 import NewProducts from "../components/homepage/NewProducts.vue";
 import HomepageBanner from "../components/homepage/HomepageBanner.vue";
+import PageLoader from "../components/PageLoader.vue";
 
 export default {
   components: {
@@ -20,9 +26,20 @@ export default {
     HomepageProducts,
     NewProducts,
     HomepageBanner,
+    PageLoader,
   },
   data() {
-    return {};
+    return {
+      isLoaded: true,
+    };
+  },
+  mounted() {
+    setTimeout(
+      function () {
+        this.isLoaded = !this.isLoaded;
+      }.bind(this),
+      1500
+    );
   },
 };
 </script>
