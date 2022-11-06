@@ -70,7 +70,7 @@
           </h1>
           <table class="w-auto m-1 md:m-4">
             <tr class="border-b-2 border-white h-auto text-white">
-              <td class="w-1/2 md:w-1/6 text-left">
+              <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Category</p>
               </td>
               <td class="text-left">
@@ -80,7 +80,7 @@
               </td>
             </tr>
             <tr class="border-b-2 border-white h-auto text-white">
-              <td class="w-1/2 md:w-1/6 text-left">
+              <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Packaging</p>
               </td>
               <td class="text-left">
@@ -90,7 +90,7 @@
               </td>
             </tr>
             <tr class="border-b-2 border-white h-16 text-white">
-              <td class="w-1/2 md:w-1/6 text-left">
+              <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Weight</p>
               </td>
               <td class="text-left">
@@ -100,7 +100,7 @@
               </td>
             </tr>
             <tr class="border-b-2 border-white h-16 text-white">
-              <td class="w-1/2 md:w-1/6 text-left">
+              <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Color</p>
               </td>
               <td class="text-left">
@@ -110,7 +110,7 @@
               </td>
             </tr>
             <tr class="border-b-2 border-white h-16 text-white">
-              <td class="w-1/2 md:w-1/6 text-left">
+              <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Tasting</p>
               </td>
               <td class="text-left">
@@ -120,7 +120,7 @@
               </td>
             </tr>
             <tr class="border-b-2 border-white h-16 text-white">
-              <td class="w-1/2 md:w-1/6 text-left">
+              <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">
                   Serving Suggestions
                 </p>
@@ -132,7 +132,7 @@
               </td>
             </tr>
             <tr class="h-16 text-white">
-              <td class="w-1/2 md:w-1/6 text-left">
+              <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">
                   Keeping Suggestions
                 </p>
