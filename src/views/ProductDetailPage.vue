@@ -73,7 +73,7 @@
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Category</p>
               </td>
-              <td class="text-left">
+              <td class="text-left px-2 md:px-4 lg:px-6">
                 <p class="m-2 text-lg md:text-xl lg:m-4">
                   {{ productShow[1].category }}
                 </p>
@@ -83,7 +83,7 @@
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Packaging</p>
               </td>
-              <td class="text-left">
+              <td class="text-left px-2 md:px-4 lg:px-6">
                 <p class="m-2 text-lg md:text-xl lg:m-4">
                   {{ productShow[1].packaging }}
                 </p>
@@ -93,7 +93,7 @@
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Weight</p>
               </td>
-              <td class="text-left">
+              <td class="text-left px-2 md:px-4 lg:px-6">
                 <p class="m-2 text-lg md:text-xl lg:m-4">
                   {{ productShow[1].weight }}
                 </p>
@@ -103,7 +103,7 @@
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Color</p>
               </td>
-              <td class="text-left">
+              <td class="text-left px-2 md:px-4 lg:px-6">
                 <p class="m-2 text-lg md:text-xl lg:m-4">
                   {{ productShow[1].color }}
                 </p>
@@ -113,7 +113,7 @@
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Tasting</p>
               </td>
-              <td class="text-left">
+              <td class="text-left px-2 md:px-4 lg:px-6">
                 <p class="m-2 text-lg md:text-xl lg:m-4">
                   {{ productShow[1].tasting }}
                 </p>
@@ -125,7 +125,7 @@
                   Serving Suggestions
                 </p>
               </td>
-              <td class="text-left">
+              <td class="text-left px-2 md:px-4 lg:px-6">
                 <p class="m-2 text-lg md:text-xl lg:m-4">
                   {{ productShow[1].serving }}
                 </p>
@@ -137,7 +137,7 @@
                   Keeping Suggestions
                 </p>
               </td>
-              <td class="text-left">
+              <td class="text-left px-2 md:px-4 lg:px-6">
                 <p class="m-2 text-lg md:text-xl lg:m-4">
                   {{ productShow[1].penyimpanan }}
                 </p>
@@ -147,7 +147,7 @@
                 <td class="w-1/2 md:w-1/6 text-left">
                   <p class="m-2 text-lg lg:text-xl lg:m-4 ">Packaging</p>
                 </td>
-                <td class="text-left">
+                <td class="text-left px-2 md:px-4 lg:px-6">
                   <p class="m-2 text-lg lg:text-xl lg:m-4 ">
                     {{ productShow[1].size }}
                   </p>
