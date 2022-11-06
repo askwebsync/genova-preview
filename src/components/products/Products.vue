@@ -22,7 +22,7 @@
                     class="rounded-t h-52 w-full object-contain"
                   />
 
-                  <figcaption class="p-4">
+                  <figcaption class="p-4 center">
                     <!-- Title -->
                     <h2
                       class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"
@@ -54,7 +54,7 @@
                     class="rounded-t h-52 w-full object-contain"
                   />
 
-                  <figcaption class="p-4">
+                  <figcaption class="p-4 center">
                     <!-- Title -->
                     <h2
                       class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"
@@ -86,7 +86,7 @@
                     class="rounded-t h-52 w-full object-contain"
                   />
 
-                  <figcaption class="p-4">
+                  <figcaption class="p-4 center">
                     <!-- Title -->
                     <h2
                       class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"

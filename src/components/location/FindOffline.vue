@@ -40,7 +40,9 @@
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
-        <div class="flex flex-col border p-4 gap-6 shadow-location md:p-8">
+        <div
+          class="flex flex-col border p-4 gap-6 items-center items-center shadow-location md:p-8"
+        >
           <h3
             class="text-xl tracking-tight text-gray-900 font-semibold text-center"
           >
@@ -128,13 +130,17 @@
             >
           </div>
         </div>
-        <div class="flex flex-col border p-4 gap-6 shadow-location md:p-8">
+        <div
+          class="flex flex-col border p-4 gap-6 items-center shadow-location md:p-8"
+        >
           <h3
             class="text-xl tracking-tight text-gray-900 font-semibold text-center"
           >
             Genova Palangkaraya
           </h3>
-          <h4 class="text-lg font-semibold">About Something Coffee Roastery</h4>
+          <h4 class="text-lg font-semibold center">
+            About Something Coffee Roastery
+          </h4>
           <div class="flex flex-col gap-2">
             <div
               class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
@@ -215,7 +221,9 @@
             >
           </div>
         </div>
-        <div class="flex flex-col border p-4 gap-6 shadow-location md:p-8">
+        <div
+          class="flex flex-col border p-4 gap-6 items-center shadow-location md:p-8"
+        >
           <h3
             class="text-xl tracking-tight text-gray-900 font-semibold text-center"
           >
@@ -301,7 +309,9 @@
             >
           </div>
         </div>
-        <div class="flex flex-col border p-4 gap-6 shadow-location md:p-8">
+        <div
+          class="flex flex-col border p-4 gap-6 items-center shadow-location md:p-8"
+        >
           <h3
             class="text-xl tracking-tight text-gray-900 font-semibold text-center"
           >
