@@ -2,7 +2,7 @@
 <template>
   <div class="bg-white shadowHeader">
     <nav
-      class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center lg:px-8 xl:px-12"
+      class="container px-6 py-6 mx-auto md:flex md:justify-between md:items-center lg:px-8 xl:px-12"
     >
       <div class="flex items-center justify-between">
         <router-link
