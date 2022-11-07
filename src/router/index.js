@@ -53,7 +53,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/Location.vue"),
   },
   {
-    path: "/flavoured-syrup",
+    path: "/products/flavoured-syrup",
     name: "flavoured-syrup",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -64,7 +64,7 @@ const routes = [
       ),
   },
   {
-    path: "/fruit-bland",
+    path: "/products/fruit-bland",
     name: "fruit-bland",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -73,7 +73,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/FruitBlandProduct.vue"),
   },
   {
-    path: "/powder-syrup",
+    path: "/products/powder-syrup",
     name: "powder-syrup",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
