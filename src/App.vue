@@ -1,5 +1,4 @@
 <script>
-import feather from "feather-icons";
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 
@@ -10,12 +9,6 @@ export default {
   },
   data: () => {
     return {};
-  },
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
   },
 };
 </script>
