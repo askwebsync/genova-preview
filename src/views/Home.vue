@@ -38,7 +38,7 @@ export default {
       function () {
         this.isLoaded = !this.isLoaded;
       }.bind(this),
-      1500
+      3500
     );
   },
 };
