@@ -51,6 +51,13 @@ export default {
   cursor: pointer;
   background: transparent;
 }
+.carousel__pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  line-height: 0;
+  margin: 25px 0 0;
+}
 .carousel__slide {
   scroll-snap-stop: auto;
   flex-shrink: 0;

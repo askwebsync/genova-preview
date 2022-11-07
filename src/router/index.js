@@ -10,79 +10,63 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (Contact.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import(/* webpackChunkName: "Contact" */ "../views/About.vue"),
   },
   {
     path: "/contact",
     name: "contact",
-    // route level code-splitting
-    // this generates a separate chunk (Contact.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import(/* webpackChunkName: "Contact" */ "../views/Contact.vue"),
   },
   {
     path: "/products",
     name: "products",
-    // route level code-splitting
-    // this generates a separate chunk (projects.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import(/* webpackChunkName: "projects" */ "../views/Products.vue"),
   },
   {
     path: "/recipe",
     name: "recipe",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Recipe.vue"),
   },
   {
     path: "/location",
     name: "location",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Location.vue"),
   },
   {
-    path: "/flavoured-syrup",
+    path: "/products/flavoured-syrup",
     name: "flavoured-syrup",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import(
         /* webpackChunkName: "about" */ "../views/FlavouredSyrupProduct.vue"
       ),
   },
   {
-    path: "/fruit-bland",
+    path: "/products/fruit-bland",
     name: "fruit-bland",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/FruitBlandProduct.vue"),
   },
   {
-    path: "/powder-syrup",
+    path: "/products/powder-syrup",
     name: "powder-syrup",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/PowderSyrupProduct.vue"),
   },
   {
-    path: "/detail-product",
+    path: "/product/detail-product",
     name: "productDetailPage",
     props: (route) => ({
       dataProduk: route.query.dataProduk,
