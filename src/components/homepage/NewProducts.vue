@@ -228,17 +228,17 @@ export default {
 <style>
 .carousel__next {
   right: -20px;
-  background-color: #bdb76b;
+  background-color: #bdb76b !important;
 }
 .carousel__prev {
   left: -20px;
-  background-color: #bdb76b;
+  background-color: #bdb76b !important;
 }
-/* .carousel__icon {
+.carousel__icon {
   width: var(--vc-icn-width);
   height: var(--vc-icn-width);
-  fill: white;
-} */
+  fill: white !important;
+}
 button,
 [type="button"],
 [type="reset"],

@@ -209,13 +209,4 @@ export default {
 };
 </script>
 
-<style>
-.carousel__next {
-  right: -20px;
-  background-color: #bdb76b;
-}
-.carousel__prev {
-  left: -20px;
-  background-color: #bdb76b;
-}
-</style>
+<style></style>
