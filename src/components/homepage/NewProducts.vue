@@ -8,7 +8,7 @@
           <h1 class="pcolor mb-1 text-xl lg:text-2xl">New Flavour</h1>
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
-        <div class="justify-items-center justify-center my-12">
+        <div class="justify-items-center justify-center my-10">
           <carousel :settings="settings" :breakpoints="breakpoints" class="">
             <slide v-for="product in products" :key="product.id">
               <div class="md:p-5 md:mx-4 mb-3 carousel__item">

@@ -1,10 +1,10 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="flex flex-col gap-4">
+  <div class="">
     <div class="mx-auto" v-if="isLoaded">
       <PageLoader />
     </div>
-    <div v-if="!isLoaded">
+    <div v-if="!isLoaded" class="flex flex-col gap-4">
       <HomepageBanner />
       <TrendingProducts />
       <NewProducts />

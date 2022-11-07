@@ -7,7 +7,7 @@
         <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
       </div>
       <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
-      <div class="py-10 px-12">
+      <div class="py-8 px-12">
         <div
           class="grid grid-flow-row gap-8 lg:gap-12 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
         >
