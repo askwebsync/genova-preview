@@ -4,7 +4,7 @@
       <PageLoader />
     </div>
     <div class="my-12 px-4 lg:px-6 lg:py-12 xl:px-12" v-if="!isLoaded">
-      <nav class="flex ml-10 md:my-10" aria-label="Breadcrumb">
+      <nav class="flex ml-10 md:mb-10" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
           <li class="inline-flex items-center">
             <a
@@ -42,6 +42,75 @@
                 ></path>
               </svg>
               Products
+            </a>
+          </li>
+          <li
+            class="inline-flex items-center"
+            v-if="productShow[1].category === 'fruitBlend'"
+          >
+            <a
+              href="/products/fruit-bland"
+              class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
+            >
+              <svg
+                class="w-6 h-6 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Fruit Blend
+            </a>
+          </li>
+          <li
+            class="inline-flex items-center"
+            v-if="productShow[1].category === 'powder'"
+          >
+            <a
+              href="/products/powder-syrup"
+              class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
+            >
+              <svg
+                class="w-6 h-6 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Powder
+            </a>
+          </li>
+          <li
+            class="inline-flex items-center"
+            v-if="productShow[1].category === 'Flavoured'"
+          >
+            <a
+              href="/products/flavoured-syrup"
+              class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
+            >
+              <svg
+                class="w-6 h-6 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Flavoured Syrup
             </a>
           </li>
           <li aria-current="page">
@@ -136,8 +205,23 @@
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Category</p>
               </td>
               <td class="text-left px-2 md:px-4 lg:px-6">
-                <p class="m-2 text-lg md:text-xl lg:m-4">
-                  {{ productShow[1].category }}
+                <p
+                  class="m-2 text-lg md:text-xl lg:m-3"
+                  v-if="productShow[1].category === 'fruitBlend'"
+                >
+                  Fruit Blend
+                </p>
+                <p
+                  class="m-2 text-lg md:text-xl lg:m-3"
+                  v-if="productShow[1].category === 'Flavoured'"
+                >
+                  Flavoured Syrup
+                </p>
+                <p
+                  class="m-2 text-lg md:text-xl lg:m-3"
+                  v-if="productShow[1].category === 'powder'"
+                >
+                  Powder
                 </p>
               </td>
             </tr>
