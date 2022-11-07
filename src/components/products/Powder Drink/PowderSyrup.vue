@@ -19,7 +19,7 @@
           <div
             v-for="product in resultQuery"
             :key="product.id"
-            class="my-8 rounded shadow-lg bg-white hover:-translate-y-1 center"
+            class="my-8 rounded shadow-lg bg-white center"
           >
             <router-link
               :to="{

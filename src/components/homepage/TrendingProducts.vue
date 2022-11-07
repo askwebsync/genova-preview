@@ -9,13 +9,13 @@
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center my-12">
-          <carousel :settings="settings" :breakpoints="breakpoints" class="z">
+          <carousel :settings="settings" :breakpoints="breakpoints" class="">
             <slide v-for="product in products" :key="product.id">
               <div class="md:p-5 md:mx-4 mb-3 carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
-                  class="w-full h-56 md:h-48 object-contain rounded-t-xl"
+                  class="w-full h-56 md:h-48 object-contain rounded-t-xl z"
                 />
                 <div class="p-2 md:p-5">
                   <h2
@@ -58,7 +58,7 @@
             </slide>
 
             <template #addons>
-              <navigation />
+              <navigation class="" />
             </template>
           </carousel>
         </div>
@@ -210,12 +210,12 @@ export default {
 </script>
 
 <style>
-/* .carousel__next {
-  right: 20px;
+.carousel__next {
+  right: -20px;
   background-color: #bdb76b;
 }
 .carousel__prev {
-  left: 20px;
+  left: -20px;
   background-color: #bdb76b;
-} */
+}
 </style>

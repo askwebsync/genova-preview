@@ -104,7 +104,10 @@ p {
 .z {
   z-index: -2;
 }
+.zsatu {
+  z-index: 0;
+}
 
-.zterang {
-  z-index: 2;
+.zdua {
+  z-index: 100001 !important;
 }
