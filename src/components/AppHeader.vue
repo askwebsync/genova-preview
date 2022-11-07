@@ -1,9 +1,9 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <template>
   <div>
-    <div class="">
+    <div class="backgroundHeader">
       <nav
-        class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center lg:px-8 xl:px-12"
+        class="zterang sticky top-0 container px-6 py-8 mx-auto md:flex md:justify-between md:items-center lg:px-8 xl:px-12"
       >
         <div class="flex items-center justify-between">
           <router-link
@@ -1019,6 +1019,9 @@ export default {
 };
 </script>
 <style scoped>
+.backgroundHeader {
+  background-color: aliceblue;
+}
 input {
   width: 100%;
   height: 38px;

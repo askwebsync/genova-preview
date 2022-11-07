@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto">
-    <div class="px-4 md:px-6 xl:px-12 z">
-      <Carousel :autoplay="2000" :wrap-around="true">
+    <div class="px-4 md:px-6 xl:px-12 mt-2">
+      <Carousel :autoplay="2000" :wrap-around="true" class="z">
         <Slide v-for="image in images" :key="image.id">
           <img
             :src="image.url"

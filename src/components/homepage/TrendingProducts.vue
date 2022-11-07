@@ -9,7 +9,7 @@
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center my-12">
-          <carousel :settings="settings" :breakpoints="breakpoints">
+          <carousel :settings="settings" :breakpoints="breakpoints" class="z">
             <slide v-for="product in products" :key="product.id">
               <div class="md:p-5 md:mx-4 mb-3 carousel__item">
                 <img
@@ -58,7 +58,7 @@
             </slide>
 
             <template #addons>
-              <Navigation />
+              <navigation />
             </template>
           </carousel>
         </div>
@@ -73,7 +73,8 @@ import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 
 export default {
-  name: "App",
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Trending Products",
   components: {
     Carousel,
     Slide,
@@ -209,19 +210,12 @@ export default {
 </script>
 
 <style>
-.carousel__pagination {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  line-height: 0;
-  margin: 20px 0 0;
-}
-.carousel__next {
-  right: -20px;
+/* .carousel__next {
+  right: 20px;
   background-color: #bdb76b;
 }
 .carousel__prev {
-  left: -20px;
+  left: 20px;
   background-color: #bdb76b;
-}
+} */
 </style>

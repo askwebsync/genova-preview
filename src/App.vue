@@ -1,5 +1,4 @@
 <script>
-import feather from "feather-icons";
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 
@@ -11,18 +10,12 @@ export default {
   data: () => {
     return {};
   },
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
-  },
 };
 </script>
 
 <template>
   <div class="min-h-screen">
-    <AppHeader class="" />
+    <AppHeader class="sticky top-0" />
     <router-view v-slot="{ Component }" :key="$route.fullPath">
       <transition name="fade">
         <component :is="Component" />

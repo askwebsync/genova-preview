@@ -21,7 +21,7 @@
             <h3 class="text-xl md:text-xxl">Ice Shakes</h3>
           </div>
           <div
-            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center"
+            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
           >
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-powder.png" />
@@ -70,7 +70,7 @@
             <h3 class="text-xl md:text-xxl">Ice Blended</h3>
           </div>
           <div
-            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center"
+            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
           >
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-powder.png" />
@@ -119,7 +119,7 @@
             <h3 class="text-xl md:text-xxl">Mocktail</h3>
           </div>
           <div
-            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center"
+            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
           >
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-fruit-blend.png" />
@@ -168,7 +168,7 @@
             <h3 class="text-xl md:text-xxl">Fruit Smoothies</h3>
           </div>
           <div
-            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center"
+            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
           >
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-fruit-blend.png" />
@@ -217,7 +217,7 @@
             <h3 class="text-xl md:text-xxl">Special Tea</h3>
           </div>
           <div
-            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center"
+            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
           >
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-syrup.png" />
