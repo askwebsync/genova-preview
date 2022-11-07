@@ -14,12 +14,12 @@
 
       <div class="py-10 px-12">
         <div
-          class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          class="grid grid-flow-row gap-12 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
         >
           <div
             v-for="product in resultQuery"
             :key="product.id"
-            class="my-8 rounded shadow-lg bg-white hover:-translate-y-1 center"
+            class="my-8 bg-white center"
           >
             <router-link
               :to="{

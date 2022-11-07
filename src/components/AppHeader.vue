@@ -76,7 +76,6 @@
             v-model="search"
             @input="onQueryChange"
             @blur="toggle = false"
-            @focus="toggle = true"
           />
           <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
             <svg
