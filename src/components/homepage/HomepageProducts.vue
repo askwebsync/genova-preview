@@ -11,7 +11,7 @@
         <div
           class="grid grid-flow-row gap-8 lg:gap-12 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
         >
-          <div class="my-8 rounded shadow-lg duration-300">
+          <div class="my-8 rounded">
             <router-link :to="{ name: 'fruit-bland' }">
               <div class="cursor-pointer">
                 <figure>
@@ -41,7 +41,7 @@
               </div>
             </router-link>
           </div>
-          <div class="my-8 rounded shadow-lg bg-white duration-300">
+          <div class="my-8 rounded">
             <router-link :to="{ name: 'flavoured-syrup' }">
               <div class="cursor-pointer">
                 <figure>
@@ -71,7 +71,7 @@
               </div>
             </router-link>
           </div>
-          <div class="my-8 rounded shadow-lg bg-white duration-300">
+          <div class="my-8 rounded">
             <router-link :to="{ name: 'powder-syrup' }">
               <div class="cursor-pointer">
                 <figure>
