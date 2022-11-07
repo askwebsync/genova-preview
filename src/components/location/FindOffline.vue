@@ -2,7 +2,7 @@
   <section class="container mx-auto">
     <div class="flex flex-col gap-12 my-12 px-6 xl:px-12">
       <div class="">
-        <div class="text-center map-responsive" v-if="map === 'utama'">
+        <div class="text-center map-responsive z" v-if="map === 'utama'">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0203262222835!2d106.76626831485463!3d-6.261052595468134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0556e12d9e1%3A0xb7dee4c20b04d2f6!2sJl.%20RC.%20Veteran%20Raya%20No.18%2C%20RT.4%2FRW.1%2C%20Bintaro%2C%20Kec.%20Pesanggrahan%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012330!5e0!3m2!1sen!2sid!4v1666345801834!5m2!1sen!2sid"
             width="600"
@@ -11,7 +11,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div class="text-center map-responsive" v-if="map === 'palangkaraya'">
+        <div class="text-center map-responsive z" v-if="map === 'palangkaraya'">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8326439098923!2d113.90558411484106!3d-2.2167132983842732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcb2fe5ab00ee5%3A0x4120bbd562d6b809!2sJl.%20Cut%20Nyak%20Dien%2C%20Menteng%2C%20Kec.%20Jekan%20Raya%2C%20Kota%20Palangka%20Raya%2C%20Kalimantan%20Tengah%2074874!5e0!3m2!1sen!2sid!4v1666346107663!5m2!1sen!2sid"
             width="600"
@@ -20,7 +20,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div class="text-center map-responsive" v-if="map === 'riau'">
+        <div class="text-center map-responsive z" v-if="map === 'riau'">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.677324231581!2d101.41036891483925!3d0.4816880996485761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a921c08f56d7%3A0xaa59c49e5ae75d4c!2sJl.%20Wisma%20Pgri%20No.29%2C%20Delima%2C%20Kec.%20Tampan%2C%20Kota%20Pekanbaru%2C%20Riau%2028292!5e0!3m2!1sen!2sid!4v1666355654764!5m2!1sen!2sid"
             width="600"
@@ -29,7 +29,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div class="text-center map-responsive" v-if="map === 'bogor'">
+        <div class="text-center map-responsive z" v-if="map === 'bogor'">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4728142611816!2d106.8844037148563!3d-6.58800029523558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c7a197cd003f%3A0xe7a8d9e110d2823c!2sJl.%20Raya%20Bojong%20Koneng%20No.157%2C%20RT.02%2FRW.01%2C%20Bojong%20Koneng%2C%20Kec.%20Babakan%20Madang%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016810!5e0!3m2!1sen!2sid!4v1666355697729!5m2!1sen!2sid"
             width="600"
