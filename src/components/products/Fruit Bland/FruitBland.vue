@@ -6,7 +6,7 @@
       >
         <div class="p-2">
           <h1 class="pcolor mb-1 text-lg md:text-xl lg:text-2xl">
-            FRUIT BLEND
+            Fruit Blend
           </h1>
           <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
@@ -53,7 +53,7 @@
                   <figcaption class="p-4">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"
+                      class="mb-2 text-xl lg:text-2xl tracking-tight text-black"
                     >
                       {{ product.name }}
                     </h2>
@@ -92,7 +92,7 @@ export default {
         },
         {
           id: 21,
-          name: "Fruit Blend Manggo",
+          name: "Fruit Blend Mango",
           image: "../fruitbland_mango.jpg",
           price: "109,000",
           category: "fruitBlend",

@@ -1,13 +1,13 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <Liquid />
+  <Flavoured />
 </template>
 
 <script>
-import Liquid from "../components/products/Liquid Syrup/Liquid.vue";
+import Flavoured from "../components/products/Flavoured Syrup/Flavoured.vue";
 
 export default {
-  components: { Liquid },
+  components: { Flavoured },
   data() {
     return {};
   },

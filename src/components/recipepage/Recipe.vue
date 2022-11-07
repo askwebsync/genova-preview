@@ -83,7 +83,7 @@
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-sugar.png" />
               <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Sugar Liquid</h2>
+                <h2 class="text-lg lg:text-xl">Sugar Flavoured</h2>
                 <p class="text-lg lg:text-xl text-gray-600">15ml</p>
               </div>
             </div>
@@ -230,7 +230,7 @@
             <div class="flex flex-col items-center">
               <img src="../../assets/images/recipes/recipe-sugar.png" />
               <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Sugar Liquid</h2>
+                <h2 class="text-lg lg:text-xl">Sugar Flavoured</h2>
                 <p class="text-lg lg:text-xl text-gray-600">10gr</p>
               </div>
             </div>

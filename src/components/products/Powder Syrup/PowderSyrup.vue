@@ -6,7 +6,7 @@
       >
         <div class="p-2">
           <h1 class="pcolor mb-1 text-lg md:text-xl lg:text-2xl">
-            POWDER SYRUP
+            Powder Drink
           </h1>
           <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
@@ -19,7 +19,7 @@
           <div
             v-for="product in resultQuery"
             :key="product.id"
-            class="my-8 rounded shadow-lg bg-white hover:-translate-y-1"
+            class="my-8 rounded shadow-lg bg-white hover:-translate-y-1 center"
           >
             <router-link
               :to="{
@@ -48,13 +48,13 @@
                   <img
                     :src="product.image + '?auto=format&fit=crop&w=400&q=50'"
                     :alt="product.name"
-                    class="rounded-t h-72 w-full object-contain"
+                    class="rounded-t h-64 w-full object-contain"
                   />
 
-                  <figcaption class="p-4">
+                  <figcaption class="p-4 mt-2">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"
+                      class="mb-2 text-xl lg:text-2xl tracking-tight text-black"
                     >
                       {{ product.name }}
                     </h2>

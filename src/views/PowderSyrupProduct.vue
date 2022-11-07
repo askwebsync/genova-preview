@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import PowderSyrup from "../components/products/Powder Syrup/PowderSyrup.vue";
+import PowderSyrup from "../components/products/Powder Drink/PowderSyrup.vue";
 
 export default {
   components: { PowderSyrup },

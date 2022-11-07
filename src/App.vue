@@ -28,15 +28,7 @@ export default {
         <component :is="Component" />
       </transition>
     </router-view>
-    <!-- Scroll to top -->
-    <back-to-top
-      visibleoffset="500"
-      right="30px"
-      bottom="20px"
-      class="shadow-lg"
-    >
-      <i data-feather="chevron-up"></i>
-    </back-to-top>
+
     <AppFooter class="sticky top-[100vh]" />
   </div>
 </template>

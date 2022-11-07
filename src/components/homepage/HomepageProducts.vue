@@ -25,13 +25,13 @@
                   <figcaption class="p-4 center">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"
+                      class="mb-2 text-xl lg:text-2xl tracking-tight text-black"
                     >
                       Fruit Blend
                     </h2>
                     <div class="my-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-semibold"
+                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
                       >
                         See More
                       </button>
@@ -44,7 +44,7 @@
           <div
             class="my-8 rounded shadow-lg bg-white duration-300 hover:-translate-y-1"
           >
-            <router-link :to="{ name: 'liquid-syrup' }">
+            <router-link :to="{ name: 'flavoured-syrup' }">
               <div class="cursor-pointer">
                 <figure>
                   <!-- Image -->
@@ -57,13 +57,13 @@
                   <figcaption class="p-4 center">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"
+                      class="mb-2 text-xl lg:text-2xl tracking-tight text-black"
                     >
-                      Liquid Syrup
+                      Flavoured Syrup
                     </h2>
                     <div class="my-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-semibold"
+                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
                       >
                         See More
                       </button>
@@ -89,13 +89,13 @@
                   <figcaption class="p-4 center">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"
+                      class="mb-2 text-xl lg:text-2xl tracking-tight text-black"
                     >
-                      Powder Syrup
+                      Powder Drink
                     </h2>
                     <div class="my-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-semibold"
+                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
                       >
                         See More
                       </button>
