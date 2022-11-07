@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <template>
-  <div class="bg-white">
+  <div class="bg-white shadowHeader">
     <nav
       class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center lg:px-8 xl:px-12"
     >
@@ -1017,8 +1017,9 @@ export default {
 };
 </script>
 <style scoped>
-.backgroundHeader {
-  background-color: aliceblue;
+.shadowHeader {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 input {
   width: 100%;
@@ -1035,7 +1036,8 @@ input {
 
 .contain .results {
   background: #fff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .container .results .result {
