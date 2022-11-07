@@ -9,7 +9,7 @@
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center my-12">
-          <carousel :settings="settings" :breakpoints="breakpoints">
+          <carousel :settings="settings" :breakpoints="breakpoints" class="">
             <slide v-for="product in products" :key="product.id">
               <div class="md:p-5 md:mx-4 mb-3 carousel__item">
                 <img
@@ -25,6 +25,7 @@
                   </h2>
                   <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
                   <router-link
+                    class="focus:outline-none"
                     :to="{
                       name: 'productDetailPage',
                       query: {
@@ -226,28 +227,23 @@ export default {
 </script>
 
 <style>
-.carousel__pagination {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  line-height: 0;
-  margin: 20px 0 0;
-  color: #bdb76b;
-}
-.carousel__pagination-button::after {
-  background-color: #bdb76b;
-}
 .carousel__next {
   right: -20px;
-  background-color: #bdb76b;
+  background-color: #bdb76b !important;
 }
 .carousel__prev {
   left: -20px;
-  background-color: #bdb76b;
+  background-color: #bdb76b !important;
 }
 .carousel__icon {
   width: var(--vc-icn-width);
   height: var(--vc-icn-width);
-  fill: white;
+  fill: white !important;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  background-color: #bdb76b;
 }
 </style>

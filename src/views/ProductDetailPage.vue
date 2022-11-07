@@ -4,7 +4,7 @@
       <PageLoader />
     </div>
     <div class="my-12 px-4 lg:px-6 lg:py-12 xl:px-12" v-if="!isLoaded">
-      <div class="flex flex-col px-4 gap-y-6 items-center" v-if="productShow">
+      <div class="flex flex-col px-4 gap-y-12 items-center" v-if="productShow">
         <div class="flex flex-col md:flex-row mb-12 gap-12 lg:gap-24">
           <!-- image-->
           <div
@@ -29,7 +29,7 @@
               </div>
 
               <div class="flex flex-col gap-1 mb-2">
-                <p class="text-lg text-gray-400">
+                <p class="text-lg text-gray-400 whitespace-pre-wrap">
                   {{ productShow[1].info }}
                 </p>
               </div>

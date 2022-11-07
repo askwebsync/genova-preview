@@ -9,13 +9,13 @@
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
         <div class="justify-items-center justify-center my-12">
-          <carousel :settings="settings" :breakpoints="breakpoints">
+          <carousel :settings="settings" :breakpoints="breakpoints" class="">
             <slide v-for="product in products" :key="product.id">
               <div class="md:p-5 md:mx-4 mb-3 carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
-                  class="w-full h-56 md:h-48 object-contain rounded-t-xl"
+                  class="w-full h-56 md:h-48 object-contain rounded-t-xl z"
                 />
                 <div class="p-2 md:p-5">
                   <h2
@@ -58,7 +58,7 @@
             </slide>
 
             <template #addons>
-              <Navigation />
+              <navigation class="" />
             </template>
           </carousel>
         </div>
@@ -73,7 +73,8 @@ import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 
 export default {
-  name: "App",
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Trending Products",
   components: {
     Carousel,
     Slide,
@@ -88,7 +89,7 @@ export default {
           image: "../powder_matchalatte.jpg",
           price: "169,000",
           categoryId: "powder",
-          info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+          info: "Cocok Digunakan untuk:\n-Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
           link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-latte-frappe-powder-1000-gram?extParam=whid%3D8872969",
           packaging: "1 Pack Powder",
           weight: "1000 Gram",
@@ -208,20 +209,4 @@ export default {
 };
 </script>
 
-<style>
-.carousel__pagination {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  line-height: 0;
-  margin: 20px 0 0;
-}
-.carousel__next {
-  right: -20px;
-  background-color: #bdb76b;
-}
-.carousel__prev {
-  left: -20px;
-  background-color: #bdb76b;
-}
-</style>
+<style></style>

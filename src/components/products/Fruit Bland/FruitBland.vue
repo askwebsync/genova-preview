@@ -11,6 +11,7 @@
           <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
       </div>
+
       <div class="py-10 px-12">
         <div
           class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
@@ -18,7 +19,7 @@
           <div
             v-for="product in resultQuery"
             :key="product.id"
-            class="my-8 rounded shadow-lg bg-white hover:-translate-y-1"
+            class="my-8 rounded shadow-lg bg-white hover:-translate-y-1 center"
           >
             <router-link
               :to="{
@@ -47,10 +48,10 @@
                   <img
                     :src="product.image + '?auto=format&fit=crop&w=400&q=50'"
                     :alt="product.name"
-                    class="rounded-t h-72 w-full object-contain"
+                    class="rounded-t h-64 w-full object-contain"
                   />
 
-                  <figcaption class="p-4">
+                  <figcaption class="p-4 mt-2">
                     <!-- Title -->
                     <h2
                       class="mb-2 text-xl lg:text-2xl tracking-tight text-black"

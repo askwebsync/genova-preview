@@ -22,14 +22,14 @@ li > a {
 }
 
 h1 {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: left;
 }
 h2 {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h3 {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h4 {
   font-family: "Fuzzy Bubbles", cursive;
@@ -37,6 +37,7 @@ h4 {
 }
 p {
   font-family: "Roboto", sans-serif;
+  white-space: pre-wrap;
   font-weight: 400;
 }
 
@@ -104,7 +105,10 @@ p {
 .z {
   z-index: -2;
 }
+.zsatu {
+  z-index: 0;
+}
 
-.zterang {
-  z-index: 2;
+.zdua {
+  z-index: 100001 !important;
 }
