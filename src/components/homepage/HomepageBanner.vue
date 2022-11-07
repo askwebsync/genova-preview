@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto">
     <div class="px-4 md:px-6 xl:px-12">
-      <Carousel :autoplay="2000" :wrap-around="true" class="z">
+      <Carousel :autoplay="4000" :wrap-around="true" class="z">
         <Slide v-for="image in images" :key="image.id">
           <img
             :src="image.url"
@@ -30,19 +30,13 @@ export default {
   },
   data() {
     return {
-      slide: [
-        "home_1.png",
-        "home_2.png",
-        "home_3.png",
-        "home_4.png",
-        "home_5.png",
-      ],
+      slide: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
       images: [
-        { url: "home_1.png", alt: "I love you nature" },
-        { url: "home_2.png", alt: "Now with dog - Rosé" },
-        { url: "home_3.png", alt: "Jeg er i Danmark" },
-        { url: "home_4.png", alt: "Badabimbadabum" },
-        { url: "home_5.png", alt: "Goodmorning el mundo" },
+        { url: "1.jpg", alt: "Banner 1" },
+        { url: "2.jpg", alt: "Banner 2" },
+        { url: "3.jpg", alt: "Banner 3" },
+        { url: "4.jpg", alt: "Banner 4" },
+        { url: "5.jpg", alt: "Banner 5" },
       ],
     };
   },
@@ -62,7 +56,6 @@ export default {
   flex-shrink: 0;
   margin: 0;
   position: relative;
-  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
