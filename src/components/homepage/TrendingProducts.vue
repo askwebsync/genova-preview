@@ -89,7 +89,7 @@ export default {
           image: "../powder_matchalatte.jpg",
           price: "169,000",
           categoryId: "powder",
-          info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+          info: "Cocok Digunakan untuk:\n-Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
           link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-latte-frappe-powder-1000-gram?extParam=whid%3D8872969",
           packaging: "1 Pack Powder",
           weight: "1000 Gram",

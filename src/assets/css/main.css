@@ -37,6 +37,7 @@ h4 {
 }
 p {
   font-family: "Roboto", sans-serif;
+  white-space: pre-wrap;
   font-weight: 400;
 }
 
