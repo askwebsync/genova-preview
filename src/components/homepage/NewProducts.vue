@@ -25,6 +25,7 @@
                   </h2>
                   <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
                   <router-link
+                    class="focus:outline-none"
                     :to="{
                       name: 'productDetailPage',
                       query: {

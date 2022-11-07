@@ -7,7 +7,7 @@
       <div class="flex items-center justify-between">
         <router-link
           :to="{ name: 'home' }"
-          class="text-xl font-bold md:text-2xl hover:text-yellow-600"
+          class="text-xl font-bold md:text-2xl hover:text-yellow-600 focus:outline-none"
           ><img
             src="../assets/images/logo/Genova_Logo_no_bg.png"
             alt=""
@@ -17,11 +17,11 @@
           />
         </router-link>
         <!-- Mobile menu button -->
-        <div @click="showMenu = !showMenu" class="flex md:hidden">
-          <button
-            type="button"
-            class="hover:text-gray-700 focus:outline-none focus:text-gray-400"
-          >
+        <div
+          @click="showMenu = !showMenu"
+          class="flex md:hidden focus:outline-none"
+        >
+          <button type="button" class="hover:text-gray-700 focus:outline-none">
             <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
               <path
                 fill-rule="evenodd"
@@ -34,7 +34,7 @@
       <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
       <ul
         :class="showMenu ? 'flex' : 'hidden'"
-        class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-5 xl:space-x-12 md:mt-0 zterang"
+        class="flex-col mt-8 space-y-4 items-center md:flex md:space-y-0 md:flex-row md:space-x-5 xl:space-x-12 md:mt-0"
       >
         <li
           @click="showMenu = !showMenu"
