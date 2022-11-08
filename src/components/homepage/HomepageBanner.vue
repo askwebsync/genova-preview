@@ -70,6 +70,17 @@
         <p>Some representative placeholder content for the third slide.</p> -->
           </div>
         </div>
+        <div class="carousel-item relative float-left w-full">
+          <img
+            src="../../assets/images/banner/4.jpg"
+            class="block w-full"
+            alt="Woman Reading a Book"
+          />
+          <div class="carousel-caption hidden md:block absolute text-center">
+            <!-- <h5 class="text-xl">Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p> -->
+          </div>
+        </div>
       </div>
       <!-- Inner -->
 
