@@ -4,7 +4,7 @@
       <PageLoader />
     </div>
     <div class="my-6 px-4 lg:px-6 xl:px-12" v-if="!isLoaded">
-      <nav class="flex ml-10 mb-24" aria-label="Breadcrumb">
+      <nav class="flex mb-24" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
           <li class="inline-flex items-center">
             <a

@@ -102,7 +102,6 @@
   </section>
 </template>
 <script>
-import "vue3-carousel/dist/carousel.css";
 // import { Carousel, Slide, Pagination } from "vue3-carousel";
 
 export default {
@@ -114,14 +113,14 @@ export default {
   },
   data() {
     return {
-      slide: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
-      images: [
-        { url: "1.jpg", alt: "Banner 1" },
-        { url: "2.jpg", alt: "Banner 2" },
-        { url: "3.jpg", alt: "Banner 3" },
-        { url: "4.jpg", alt: "Banner 4" },
-        { url: "5.jpg", alt: "Banner 5" },
-      ],
+      // slide: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+      // images: [
+      //   { url: "1.jpg", alt: "Banner 1" },
+      //   { url: "2.jpg", alt: "Banner 2" },
+      //   { url: "3.jpg", alt: "Banner 3" },
+      //   { url: "4.jpg", alt: "Banner 4" },
+      //   { url: "5.jpg", alt: "Banner 5" },
+      // ],
     };
   },
 };
