@@ -45,7 +45,7 @@
                   >
                     <div class="mt-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-gray hover:bg-gray-600 duration-300 text-white font-bold"
+                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                       >
                         Buy Now
                       </button>

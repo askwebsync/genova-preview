@@ -174,14 +174,16 @@
             <div class="mt-6 md:mt-4 cursor-pointer w-full">
               <a
                 :href="productShow[1].link"
-                class="block text-center rounded-md p-3 text-white background-gray hover:bg-gray-600 duration-300"
+                class="block text-center rounded-md p-3 text-white background-yellow hover:bg-yellow-600 duration-300"
               >
                 Buy Now
               </a>
             </div>
           </div>
         </div>
-        <div class="background-gray hover:bg-gray-600 self-start w-full mt-4">
+        <div
+          class="background-yellow hover:bg-yellow-600 self-start w-full mt-4"
+        >
           <h1
             class="mt-3 mb-8 text-white underline text-center underline-offset-8 decoration-white text-xl lg:text-2xl"
           >
