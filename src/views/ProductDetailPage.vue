@@ -174,23 +174,26 @@
             <div class="mt-6 md:mt-4 cursor-pointer w-full">
               <a
                 :href="productShow[1].link"
-                class="block text-center rounded-md p-3 text-white background-yellow hover:bg-yellow-600 duration-300"
+                class="block text-center rounded-md p-3 text-white bg-[#bdb76b] hover:bg-yellow-600 duration-300"
               >
                 Buy Now
               </a>
             </div>
           </div>
         </div>
-        <div
-          class="background-yellow hover:bg-yellow-600 self-start w-full mt-4"
-        >
-          <h1
-            class="mt-3 mb-8 text-white underline text-center underline-offset-8 decoration-white text-xl lg:text-2xl"
-          >
-            Details
-          </h1>
+        <div class="self-start w-full mt-4">
+          <div class="mt-3 mb-8 ml-4">
+            <h1
+              class="md:w-1/6 text-center text-xl lg:text-2xl rounded-t-lg bg-[#bdb76b] text-white py-2"
+            >
+              Details
+            </h1>
+            <hr
+              class="border border-solid border-2 border-[#bdb76b] border-black"
+            />
+          </div>
           <table class="w-auto m-1 md:m-4">
-            <tr class="border-b-2 border-white h-auto text-white">
+            <tr class="border-b-2 h-auto border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Category</p>
               </td>
@@ -215,7 +218,7 @@
                 </p>
               </td>
             </tr>
-            <tr class="border-b-2 border-white h-auto text-white">
+            <tr class="border-b-2 h-auto border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Packaging</p>
               </td>
@@ -225,7 +228,7 @@
                 </p>
               </td>
             </tr>
-            <tr class="border-b-2 border-white h-16 text-white">
+            <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Weight</p>
               </td>
@@ -235,7 +238,7 @@
                 </p>
               </td>
             </tr>
-            <tr class="border-b-2 border-white h-16 text-white">
+            <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Color</p>
               </td>
@@ -245,7 +248,7 @@
                 </p>
               </td>
             </tr>
-            <tr class="border-b-2 border-white h-16 text-white">
+            <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">Tasting</p>
               </td>
@@ -255,7 +258,7 @@
                 </p>
               </td>
             </tr>
-            <tr class="border-b-2 border-white h-16 text-white">
+            <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">
                   Serving Suggestions
@@ -267,7 +270,7 @@
                 </p>
               </td>
             </tr>
-            <tr class="h-16 text-white">
+            <tr class="h-16">
               <td class="w-1/2 md:w-1/6 text-left py-2">
                 <p class="m-2 text-lg md:text-xl lg:m-4 details">
                   Keeping Suggestions
