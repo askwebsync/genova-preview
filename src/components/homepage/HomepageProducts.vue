@@ -19,7 +19,7 @@
                   <img
                     src="../../assets/images/product/fruit-bland/fruitbland_pineapple.jpg"
                     alt="Product"
-                    class="rounded-t h-52 w-full object-contain"
+                    class="rounded-t h-72 w-full object-contain"
                   />
 
                   <figcaption class="p-4 center">
@@ -49,7 +49,7 @@
                   <img
                     src="../../assets/images/product/syrup/syrup_bluecuracao.jpg"
                     alt="Product"
-                    class="rounded-t h-52 w-full object-contain"
+                    class="rounded-t h-72 w-full object-contain"
                   />
 
                   <figcaption class="p-4 center">
@@ -79,7 +79,7 @@
                   <img
                     src="../../assets/images/product/powder/powder_tiramisu.jpg"
                     alt="Product"
-                    class="rounded-t h-52 w-full object-contain"
+                    class="rounded-t h-72 w-full object-contain"
                   />
 
                   <figcaption class="p-4 center">
