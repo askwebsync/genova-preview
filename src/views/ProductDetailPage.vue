@@ -3,8 +3,8 @@
     <div v-if="isLoaded">
       <PageLoader />
     </div>
-    <div class="my-12 px-4 lg:px-6 lg:py-12 xl:px-12" v-if="!isLoaded">
-      <nav class="flex ml-10 md:mb-10" aria-label="Breadcrumb">
+    <div class="my-6 px-4 lg:px-6 xl:px-12" v-if="!isLoaded">
+      <nav class="flex ml-10 mb-24" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
           <li class="inline-flex items-center">
             <a
@@ -160,40 +160,28 @@
               </div>
 
               <div class="flex flex-col gap-1 mb-2">
-                <p class="text-lg text-gray-400 whitespace-pre-wrap">
+                <p class="text-lg text-gray-700 whitespace-pre-wrap">
                   {{ productShow[1].info }}
                 </p>
               </div>
             </div>
 
-            <!-- Rating + price -->
-            <div class="flex flex-col gap-3 mt-2">
-              <!-- <div class="flex gap-2 text-center">
-                <div>
-                  <span class="fa fa-star checked fa-sm md:fa-2x"></span>
-                  <span class="fa fa-star checked fa-sm md:fa-2x"></span>
-                  <span class="fa fa-star checked fa-sm md:fa-2x"></span>
-                  <span class="fa fa-star checked fa-sm md:fa-2x"></span>
-                  <span class="fa fa-star fa-sm md:fa-2x"></span>
-                </div>
-                <div class=""><p class="text-lg">(4,9)</p></div>
-              </div> -->
-              <p class="text-2xl text-black text-left">
+            <div class="flex flex-col gap-3 mt-4">
+              <p class="text-xl text-black text-left">
                 {{ "RP." + " " + productShow[1].price }}
               </p>
-              <!-- Button-->
             </div>
-            <div class="mt-6 md:mt-6 cursor-pointer w-full">
+            <div class="mt-6 md:mt-4 cursor-pointer w-full">
               <a
                 :href="productShow[1].link"
-                class="block text-center rounded-md p-3 text-white background-yellow hover:bg-yellow-600 duration-300"
+                class="block text-center rounded-md p-3 text-white background-gray hover:bg-gray-600 duration-300"
               >
                 Buy Now
               </a>
             </div>
           </div>
         </div>
-        <div class="background-yellow self-start w-full mt-4">
+        <div class="background-gray hover:bg-gray-600 self-start w-full mt-4">
           <h1
             class="mt-3 mb-8 text-white underline text-center underline-offset-8 decoration-white text-xl lg:text-2xl"
           >

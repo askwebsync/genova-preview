@@ -18,9 +18,7 @@
                   class="w-full h-56 md:h-48 object-contain rounded-t-xl z"
                 />
                 <div class="p-2 md:p-5">
-                  <h2
-                    class="mb-2 text-xl lg:text-2xl font-semibold tracking-tight text-black"
-                  >
+                  <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
                     {{ product.name }}
                   </h2>
                   <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
@@ -47,7 +45,7 @@
                   >
                     <div class="mt-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                        class="rounded-lg px-3 py-2 background-gray hover:bg-gray-600 duration-300 text-white font-bold"
                       >
                         Buy Now
                       </button>

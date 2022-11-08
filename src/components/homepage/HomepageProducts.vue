@@ -25,13 +25,13 @@
                   <figcaption class="p-4 center">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-xl lg:text-2xl tracking-tight text-black"
+                      class="mb-2 text-lg lg:text-xl tracking-tight text-black"
                     >
                       Fruit Blend
                     </h2>
                     <div class="my-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
+                        class="rounded-lg px-3 py-2 background-gray hover:bg-gray-600 duration-300 text-white"
                       >
                         See More
                       </button>
@@ -61,7 +61,7 @@
                     </h2>
                     <div class="my-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
+                        class="rounded-lg px-3 py-2 background-gray hover:bg-gray-600 duration-300 text-white"
                       >
                         See More
                       </button>
@@ -91,7 +91,7 @@
                     </h2>
                     <div class="my-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
+                        class="rounded-lg px-3 py-2 background-gray hover:bg-gray-600 duration-300 text-white"
                       >
                         See More
                       </button>

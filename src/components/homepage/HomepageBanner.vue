@@ -1,32 +1,116 @@
 <template>
   <section class="container mx-auto">
-    <div class="px-4 md:px-6 xl:px-12">
-      <Carousel :autoplay="4000" :wrap-around="true" class="z">
-        <Slide v-for="image in images" :key="image.id">
-          <img
-            :src="image.url"
-            :alt="image.alt"
-            class="w-full h-full object-cover"
-          />
-        </Slide>
+    <div
+      id="carouselDarkVariant"
+      class="carousel slide carousel-fade carousel-dark relative"
+      data-bs-ride="carousel"
+    >
+      <!-- Indicators -->
+      <div
+        class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 space-x-4"
+      >
+        <button
+          data-bs-target="#carouselDarkVariant"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          data-bs-target="#carouselDarkVariant"
+          data-bs-slide-to="1"
+          class="ml-2"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          data-bs-target="#carouselDarkVariant"
+          data-bs-slide-to="2"
+          class="ml-2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
 
-        <template #addons>
-          <Pagination />
-        </template>
-      </Carousel>
+      <!-- Inner -->
+      <div class="carousel-inner relative w-full overflow-hidden">
+        <!-- Single item -->
+        <div class="carousel-item active relative float-left w-full">
+          <img
+            src="../../assets/images/banner/1.jpg"
+            class="block w-full"
+            alt="Motorbike Smoke"
+          />
+          <div class="carousel-caption hidden md:block absolute text-center">
+            <!-- <h5 class="text-xl">First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item relative float-left w-full">
+          <img
+            src="../../assets/images/banner/2.jpg"
+            class="block w-full"
+            alt="Mountaintop"
+          />
+          <div class="carousel-caption hidden md:block absolute text-center">
+            <!-- <h5 class="text-xl">Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item relative float-left w-full">
+          <img
+            src="../../assets/images/banner/3.jpg"
+            class="block w-full"
+            alt="Woman Reading a Book"
+          />
+          <div class="carousel-caption hidden md:block absolute text-center">
+            <!-- <h5 class="text-xl">Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p> -->
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <!-- <button
+        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+        type="button"
+        data-bs-target="#carouselDarkVariant"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon inline-block bg-no-repeat"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+        type="button"
+        data-bs-target="#carouselDarkVariant"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon inline-block bg-no-repeat"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
     </div>
   </section>
 </template>
 <script>
 import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Pagination } from "vue3-carousel";
+// import { Carousel, Slide, Pagination } from "vue3-carousel";
 
 export default {
   name: "HomepageBanner",
   components: {
-    Carousel,
-    Slide,
-    Pagination,
+    // Carousel,
+    // Slide,
+    // Pagination,
   },
   data() {
     return {
@@ -43,28 +127,16 @@ export default {
 };
 </script>
 <style>
-.carousel__pagination-button {
-  display: block;
-  border: 0;
-  margin: 1px;
-  padding: 1px;
-  cursor: pointer;
-  background: transparent;
+.carousel-control-next-icon {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  background-position: 50%;
+  background-size: 100% 100%;
 }
-.carousel__pagination {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  line-height: 0;
-  margin: 25px 0 0;
-}
-.carousel__slide {
-  scroll-snap-stop: auto;
-  flex-shrink: 0;
-  margin: 0;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.carousel-control-prev-icon {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  background-position: 50%;
+  background-size: 100% 100%;
 }
 </style>

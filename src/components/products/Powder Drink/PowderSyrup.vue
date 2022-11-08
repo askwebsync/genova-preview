@@ -116,7 +116,7 @@
                   <figcaption class="p-4 mt-2">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-xl lg:text-2xl tracking-tight text-black"
+                      class="mb-2 text-lg lg:text-xl tracking-tight text-black"
                     >
                       {{ product.name }}
                     </h2>

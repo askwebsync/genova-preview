@@ -68,9 +68,7 @@
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
         <div class="p-2">
-          <h1 class="pcolor mb-1 text-lg md:text-xl lg:text-2xl">
-            Flavoured Syrup
-          </h1>
+          <h1 class="pcolor mb-1 text-lg lg:text-xl">Flavoured Syrup</h1>
           <hr class="h-1 rounded w-28 background-navbar border-0" />
         </div>
         <!-- 
