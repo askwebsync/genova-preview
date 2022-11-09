@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto">
-    <nav class="flex ml-10 md:mt-10" aria-label="Breadcrumb">
+    <nav class="flex ml-3 mt-5 mb-10" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">
           <a

@@ -3,7 +3,7 @@
 <template>
   <section class="">
     <div class="container mx-auto">
-      <div class="mt-4 p-4 lg:p-6 xl:px-12 xl:pb-6">
+      <div class="mt-4 px-4 lg:px-6 xl:px-12">
         <div class="flex flex-row">
           <h1 class="pcolor mb-1 text-xl lg:text-2xl">Trending Flavour</h1>
         </div>

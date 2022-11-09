@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="container mx-auto">
-    <div class="p-4 lg:p-6 lg:py-12 xl:p-12">
+    <div class="px-4 lg:px-6 xl:px-12">
       <div class="flex flex-row">
         <h1 class="pcolor mb-1 text-xl lg:text-2xl">Product Category</h1>
         <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->

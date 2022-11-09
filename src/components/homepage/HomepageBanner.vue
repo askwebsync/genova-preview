@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto">
+  <section class="">
     <div
       id="carouselExampleIndicators"
       class="carousel slide relative"
