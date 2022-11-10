@@ -5,16 +5,16 @@
     image: "../powder_avocado.jpg",
     price: "150,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-avocado-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 2,
@@ -22,16 +22,16 @@
     image: "../powder_cappuccino.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-cappuccino-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 3,
@@ -39,16 +39,16 @@
     image: "../powder_charcoal.jpg",
     price: "159,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-charcoal-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "-Masukkan 20-30 Gram Powder \n-Dicampur 120-150ML Susu \n-Aduk/shake hingga tercampur rata dan sajikan",
+      "-Masukkan 20-30 Gram Powder\n-Dicampur 120-150ML Susu\n-Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 4,
@@ -56,16 +56,16 @@
     image: "../powder_chocolateclassic.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-chocolate-classic-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 5,
@@ -73,16 +73,16 @@
     image: "../powder_cookiescream.jpg",
     price: "155,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-cookies-cream-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 6,
@@ -90,16 +90,16 @@
     image: "../powder_cottoncandy.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-cotton-candy-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 7,
@@ -107,16 +107,16 @@
     image: "../powder_darkchocolate.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-dark-chocolate-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 8,
@@ -124,16 +124,16 @@
     image: "../powder_frappebase.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-base-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 9,
@@ -141,16 +141,16 @@
     image: "../powder_greentea.jpg",
     price: "150,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-greentea-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 10,
@@ -158,16 +158,16 @@
     image: "../powder_macchiato.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-macchiato-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 11,
@@ -175,16 +175,16 @@
     image: "../powder_matchalatte.jpg",
     price: "169,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-latte-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 12,
@@ -192,16 +192,16 @@
     image: "../powder_matchapremium.jpg",
     price: "245,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-premium-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 13,
@@ -209,16 +209,16 @@
     image: "../powder_mocha.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-mocha-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 14,
@@ -226,16 +226,16 @@
     image: "../powder_mochaccino.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-mochaccino-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 15,
@@ -243,16 +243,16 @@
     image: "../powder_redvelvet.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-red-velvet-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 16,
@@ -290,16 +290,16 @@
     image: "../powder_thaitea.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-thai-tea-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 19,
@@ -307,16 +307,16 @@
     image: "../powder_tiramisu.jpg",
     price: "139,000",
     categoryId: "powder",
-    info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
+    info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
     link: "https://www.tokopedia.com/genovaindonesia/genova-tiramisu-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
     serving:
-      "- Masukkan 20-30 Gram Powder\n - Dicampur 120-150ML Susu\n - Aduk/shake hingga tercampur rata dan sajikan",
+      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 20,
@@ -332,7 +332,7 @@
     color: "Hijau gelap intens, deep undertone",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 21,
@@ -348,7 +348,7 @@
     color: "Oranye terang dengan kilau kuning",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 22,
@@ -364,7 +364,7 @@
     color: "Oranye tua",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 23,
@@ -380,7 +380,7 @@
     color: "Kuning bertekstur cerah",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 24,
@@ -396,7 +396,7 @@
     color: "Merah gelap dengan ungu, kilau merah muda.",
     tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 25,
@@ -412,7 +412,7 @@
     color: "Merah ruby tua dengan beberapa kilau merah tembaga",
     tasting: "",
     penyimpanan:
-      "-Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n-Hindari dari tempat yang berbau tajam.",
+      "-Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n-Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 26,
@@ -427,9 +427,9 @@
     serving: "20 ml",
     color: "Kuning berawan",
     tasting:
-      "Awal: Nanas segar\n Tengah: Rasa nanas yang juicy dan segar\n Panjang di Mulut: Buah dengan rasa sedikit asam",
+      "Awal: Nanas segar\nTengah: Rasa nanas yang juicy dan segar\nPanjang di Mulut: Buah dengan rasa sedikit asam",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 27,
@@ -444,9 +444,9 @@
     serving: "20 ml",
     color: "Warna alami jus raspberry",
     tasting:
-      "Awal: raspberry matang\n Tengah: sedikit asam\n Panjang di mulut: rasa permen raspberry.",
+      "Awal: raspberry matang\nTengah: sedikit asam\nPanjang di mulut: rasa permen raspberry.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 28,
@@ -462,7 +462,7 @@
     color: "Emas terang bening",
     tasting: "Awal: rasa yang kuat dari pisang matang",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 29,
@@ -478,7 +478,7 @@
     color: "Biru tua bahkan ketika diencerkan",
     tasting: "Rasa kulit jeruk, permen rasa jeruk segar",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 30,
@@ -486,7 +486,7 @@
     image: "../syrup_bubblegum.jpg",
     price: "97,000",
     category: "Flavoured",
-    info: "Dalam warna biru muda yang lucu, sirup GENOVA Bubble Gum mengemas rasa nostalgia masa kanak-kanak dan faktor kesenangan yang terkait dengan penganan yang selalu populer ini. Terinspirasi oleh permen karet Babol asal Indonesia yang legendaris, GENOVA Bubble Gum menghadirkan rasa permen karet asli yang kuat dan manis.\n Syrup GENOVA Bubble Gum memungkinkan Anda membuat kombinasi mocktail baru yang tak ada habisnya. Berani tampil beda dengan sirup GENOVA Bubble Gum dan biarkan imajinasi Anda menjadi liar dengan menambahkan gelembung Anda sendiri untuk membuat soda permen karet untuk pesta anak-anak atau penembak biru cantik untuk malam anak perempuan.",
+    info: "Dalam warna biru muda yang lucu, sirup GENOVA Bubble Gum mengemas rasa nostalgia masa kanak-kanak dan faktor kesenangan yang terkait dengan penganan yang selalu populer ini. Terinspirasi oleh permen karet Babol asal Indonesia yang legendaris, GENOVA Bubble Gum menghadirkan rasa permen karet asli yang kuat dan manis.\nSyrup GENOVA Bubble Gum memungkinkan Anda membuat kombinasi mocktail baru yang tak ada habisnya. Berani tampil beda dengan sirup GENOVA Bubble Gum dan biarkan imajinasi Anda menjadi liar dengan menambahkan gelembung Anda sendiri untuk membuat soda permen karet untuk pesta anak-anak atau penembak biru cantik untuk malam anak perempuan.",
     link: "https://www.tokopedia.com/genovaindonesia/genova-bubble-gum-syrup-750-ml?extParam=whid%3D8872969",
     packaging: "Botol 750 ml",
     weight: "1.4 kg",
@@ -495,7 +495,7 @@
     tasting:
       "Rasa awal permen, rasa Bubble Gum yang kuat dan manis mengingatkan Anda akan masa kecil Anda.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 31,
@@ -511,7 +511,7 @@
     color: "Warna bening dengan kilau kuning",
     tasting: "Awal: Mentega dan karamel",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 32,
@@ -526,9 +526,9 @@
     serving: "20 ml",
     color: "Warna kuning mengkilap dengan kilau kuning tembaga",
     tasting:
-      "Awal: Karamel yang intens dengan nada bulat dari permen karamel\n Tengah: Kaya dan rasa krim dengan nada asin\n Panjang di mulut: karamel mentega asin",
+      "Awal: Karamel yang intens dengan nada bulat dari permen karamel\nTengah: Kaya dan rasa krim dengan nada asin\nPanjang di mulut: karamel mentega asin",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 33,
@@ -545,7 +545,7 @@
     tasting:
       "Rasa kelapa yang sangat kuat, pekat, dan tahan lama yang membawa Anda pergi ke daerah tropis, di bawah rayuan pohon kelapa...",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 34,
@@ -561,7 +561,7 @@
     color: "Sedikit berawan",
     tasting: "Sedikit berawan",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 35,
@@ -578,7 +578,7 @@
     tasting:
       "Hidung apel hijau yang baru dipotong; asam, manis dan juicy rasa apel hijau, sangat menyegarkan",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 36,
@@ -593,9 +593,9 @@
     serving: "20 ml",
     color: "Emas",
     tasting:
-      "Awal: Kacang segar dan bunga\nTengah: Rasa hazelnut segar dan nabati\n Panjang di Mulut: Sentuhan halus almond dan vanila",
+      "Awal: Kacang segar dan bunga\nTengah: Rasa hazelnut segar dan nabati\nPanjang di Mulut: Sentuhan halus almond dan vanila",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 37,
@@ -610,9 +610,9 @@
     serving: "20 ml",
     color: "Coklat tua",
     tasting:
-      "Awal: mentega dengan sedikit kopi panggang\n Tengah: lembut dengan kopi panggang yang kuat\n Panjang di Mulut: mocha",
+      "Awal: mentega dengan sedikit kopi panggang\nTengah: lembut dengan kopi panggang yang kuat\nPanjang di Mulut: mocha",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 38,
@@ -628,7 +628,7 @@
     color: "Hijau terang",
     tasting: "Rasa awal kiwi matang, rasa kiwi juicy dan menyegarkan",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 39,
@@ -643,9 +643,9 @@
     serving: "20 ml",
     color: "kuning berawan",
     tasting:
-      "Hidung: Seimbang antara rasa lemon dan jeruk nipis segar\n Tengah: Asam, perasan jeruk nipis\n Panjang di Mulut: Menyegarkan",
+      "Hidung: Seimbang antara rasa lemon dan jeruk nipis segar\nTengah: Asam, perasan jeruk nipis\nPanjang di Mulut: Menyegarkan",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 40,
@@ -662,7 +662,7 @@
     tasting:
       "Genova Lemongrass adalah pendamping yang hebat untuk membuat mocktail dan banyak lagi. Di Asia Tenggara, kami senang memadukannya dengan jeruk nipis, daun jeruk purut, mint, asam untuk menciptakan pengalaman Asia yang otentik.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 41,
@@ -677,9 +677,9 @@
     serving: "20 ml",
     color: "Bening putih",
     tasting:
-      "Awal: Aroma buah\n Tengah: Rasa leci asli sedikit asam\n Panjang di Mulut: halus manis",
+      "Awal: Aroma buah\nTengah: Rasa leci asli sedikit asam\nPanjang di Mulut: halus manis",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 42,
@@ -696,7 +696,7 @@
     tasting:
       "Rasa awal buah mangga eksotis ringan, rasa mangga manis dengan sedikit keasaman",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 43,
@@ -713,7 +713,7 @@
     tasting:
       "Aroma spearmint, rasa gula tebu dan spearmint yang sangat seimbang.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 44,
@@ -728,9 +728,9 @@
     serving: "20 ml",
     color: "Rumput hijau tua",
     tasting:
-      "Awal: aroma nabati yang wangi\n Tengah: pandan masak hijau manis\n Panjang di Mulut: tradisional daun pandan",
+      "Awal: aroma nabati yang wangi\nTengah: pandan masak hijau manis\nPanjang di Mulut: tradisional daun pandan",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 45,
@@ -747,7 +747,7 @@
     tasting:
       "Aroma buah yang eksotis, rasa manis dan asam yang akan membuat Anda merasa ingin memakan buah markisa yang segar.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 46,
@@ -763,7 +763,7 @@
     color: "Cemerlang, warna oranye emas muda",
     tasting: "Sensasi dan rasa persik putih tahan lama",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 47,
@@ -779,7 +779,7 @@
     color: "Bening",
     tasting: "Bau peppermint yang kuat, rasa mint yang menyegarkan di mulut",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 48,
@@ -796,7 +796,7 @@
     tasting:
       "Rasa stroberi segar yang kaya, rasa lembut dan lembut dengan sentuhan rasa stroberi.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
   {
     id: 49,
@@ -811,8 +811,8 @@
     serving: "20 ml",
     color: "Cokelat pekat",
     tasting:
-      "Awal: Cokelat dengan sedikit biskuit\n Tengah: Cokelat dengan aroma kacang\n Belakang: Terasa panjang rasa kacang di mulut",
+      "Awal: Cokelat dengan sedikit biskuit\nTengah: Cokelat dengan aroma kacang\nBelakang: Terasa panjang rasa kacang di mulut",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
 ];

@@ -151,7 +151,7 @@ export default {
           color: "Hijau gelap intens, deep undertone",
           tasting: "",
           penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
         },
         {
           id: 21,
@@ -167,7 +167,7 @@ export default {
           color: "Oranye terang dengan kilau kuning",
           tasting: "",
           penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
         },
         {
           id: 22,
@@ -183,7 +183,7 @@ export default {
           color: "Oranye tua",
           tasting: "",
           penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
         },
         {
           id: 23,
@@ -199,7 +199,7 @@ export default {
           color: "Kuning bertekstur cerah",
           tasting: "",
           penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
         },
         {
           id: 24,
@@ -215,7 +215,7 @@ export default {
           color: "Merah gelap dengan ungu, kilau merah muda.",
           tasting: "",
           penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
+            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
         },
         {
           id: 25,
@@ -231,7 +231,7 @@ export default {
           color: "Merah ruby tua dengan beberapa kilau merah tembaga",
           tasting: "",
           penyimpanan:
-            "-Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n-Hindari dari tempat yang berbau tajam.",
+            "-Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n-Hindari dari tempat yang berbau tajam.",
         },
       ],
       searchQuery: "",
