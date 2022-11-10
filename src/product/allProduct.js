@@ -486,7 +486,7 @@
     image: "../syrup_bubblegum.jpg",
     price: "97,000",
     category: "Flavoured",
-    info: "",
+    info: "Dalam warna biru muda yang lucu, sirup GENOVA Bubble Gum mengemas rasa nostalgia masa kanak-kanak dan faktor kesenangan yang terkait dengan penganan yang selalu populer ini. Terinspirasi oleh permen karet Babol asal Indonesia yang legendaris, GENOVA Bubble Gum menghadirkan rasa permen karet asli yang kuat dan manis.\n Syrup GENOVA Bubble Gum memungkinkan Anda membuat kombinasi mocktail baru yang tak ada habisnya. Berani tampil beda dengan sirup GENOVA Bubble Gum dan biarkan imajinasi Anda menjadi liar dengan menambahkan gelembung Anda sendiri untuk membuat soda permen karet untuk pesta anak-anak atau penembak biru cantik untuk malam anak perempuan.",
     link: "https://www.tokopedia.com/genovaindonesia/genova-bubble-gum-syrup-750-ml?extParam=whid%3D8872969",
     packaging: "Botol 750 ml",
     weight: "1.4 kg",

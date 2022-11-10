@@ -160,7 +160,7 @@
               </div>
 
               <div class="flex flex-col gap-1 mb-2">
-                <p class="text-lg text-gray-700 whitespace-pre-wrap">
+                <p class="text-lg text-gray-700 whitespace-pre-line">
                   {{ productShow[1].info }}
                 </p>
               </div>
@@ -174,7 +174,7 @@
             <div class="mt-6 md:mt-4 cursor-pointer w-full">
               <a
                 :href="productShow[1].link"
-                class="block text-center rounded-md p-3 text-white bg-[#bdb76b] hover:bg-yellow-600 duration-300"
+                class="block w-full text-center text-xl lg:text-2xl bg-[#bdb76b] text-white py-2 rounded-lg"
               >
                 Buy Now
               </a>
