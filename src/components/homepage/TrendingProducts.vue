@@ -111,7 +111,7 @@ export default {
           serving: "20 ml",
           color: "Bening putih",
           tasting:
-            "Awal: Aroma buah\n Tengah: Rasa leci asli sedikit asam\n Panjang di Mulut: halus manis",
+            "Awal: Aroma buah\nTengah: Rasa leci asli sedikit asam\nPanjang di Mulut: halus manis",
           penyimpanan:
             "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung \n- Hindari dari tempat yang berbau tajam.",
         },
