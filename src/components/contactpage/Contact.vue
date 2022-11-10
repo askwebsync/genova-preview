@@ -45,7 +45,7 @@
     </nav>
     <div class="flex flex-col my-12">
       <div class="flex flex-col mt-4 mb-10 text-center center">
-        <h1 class="pcolor text-xl lg:text-xxl">Contact Us</h1>
+        <h1 class="pcolor text-2xl">Contact Us</h1>
 
         <div class="my-2">
           <p class="text-lg">Get in touch with us for more information</p>
