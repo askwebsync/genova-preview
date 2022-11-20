@@ -17,7 +17,7 @@ export default {
         <div class="px-5 py-2">
           <router-link
             :to="{ name: 'products' }"
-            class="pcolor mb-3 text-base md:text-lg leading-6"
+            class="pcolor mb-3 text-base md:text-lg leading-6 hover:text-yellow-600"
           >
             Product
           </router-link>
@@ -25,7 +25,7 @@ export default {
         <div class="px-5 py-2">
           <router-link
             :to="{ name: 'recipe' }"
-            class="pcolor mb-3 text-base md:text-lg leading-6"
+            class="pcolor mb-3 text-base md:text-lg leading-6 hover:text-yellow-600"
           >
             Recipe
           </router-link>
@@ -33,7 +33,7 @@ export default {
         <div class="px-5 py-2">
           <router-link
             :to="{ name: 'about' }"
-            class="pcolor mb-3 text-base md:text-lg leading-6"
+            class="pcolor mb-3 text-base md:text-lg leading-6 hover:text-yellow-600"
           >
             About
           </router-link>
@@ -41,7 +41,7 @@ export default {
         <div class="px-5 py-2">
           <router-link
             :to="{ name: 'contact' }"
-            class="pcolor mb-3 text-base md:text-lg leading-6"
+            class="pcolor mb-3 text-base md:text-lg leading-6 hover:text-yellow-600"
           >
             Contact
           </router-link>
@@ -49,7 +49,7 @@ export default {
         <div class="px-5 py-2">
           <router-link
             :to="{ name: 'location' }"
-            class="pcolor mb-3 text-base md:text-lg leading-6"
+            class="pcolor mb-3 text-base md:text-lg leading-6 hover:text-yellow-600"
           >
             Location
           </router-link>
