@@ -45,13 +45,13 @@ export default {
 <style>
 
 .fade-enter-active {
-  animation: coming 0.4s;
-  animation-delay: 0.2s;
+  animation: coming 0.5s;
+  animation-delay: 0.3s;
   opacity: 0;
 }
 
 .fade-leave-active {
-  animation: going 0.4s;
+  animation: going 0.5s;
 }
 
 @keyframes going {
@@ -60,7 +60,7 @@ export default {
   }
 
   to {
-    transform: translateX(-10px);
+    transform: translateX(-15px);
     opacity: 0;
   }
 }
