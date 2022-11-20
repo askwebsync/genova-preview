@@ -166,12 +166,12 @@
               </div>
             </div>
 
-            <div class="flex flex-col gap-3 mt-4">
+            <div class="mt-6">
               <p class="text-xl text-black text-left">
                 {{ "RP." + " " + productShow[1].price }}
               </p>
             </div>
-            <div class="mt-6 md:mt-4 cursor-pointer w-full">
+            <div class="mt-3 cursor-pointer w-full">
               <a
                 :href="productShow[1].link"
                 class="block w-full text-center text-xl lg:text-2xl bg-[#bdb76b] text-white py-2 rounded-lg"
@@ -195,23 +195,23 @@
           <table class="w-auto m-1 md:m-4">
             <tr class="border-b-2 h-auto border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-2 text-lg md:text-xl lg:m-4 details">Category</p>
+                <p class="m-4  text-lg md:text-xl md:m-5 details">Category</p>
               </td>
               <td class="text-left px-2 md:px-4 lg:px-6">
                 <p
-                  class="m-2 text-lg md:text-xl lg:m-3"
+                  class="m-3 text-lg md:text-xl"
                   v-if="productShow[1].category === 'fruitBlend'"
                 >
                   Fruit Blend
                 </p>
                 <p
-                  class="m-2 text-lg md:text-xl lg:m-3"
+                  class="m-3 text-lg md:text-xl"
                   v-if="productShow[1].category === 'Flavoured'"
                 >
                   Flavoured Syrup
                 </p>
                 <p
-                  class="m-2 text-lg md:text-xl lg:m-3"
+                  class="m-3 text-lg md:text-xl"
                   v-if="productShow[1].category === 'powder'"
                 >
                   Powder
@@ -220,64 +220,64 @@
             </tr>
             <tr class="border-b-2 h-auto border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-2 text-lg md:text-xl lg:m-4 details">Packaging</p>
+                <p class="m-4  text-lg md:text-xl md:m-5 details">Packaging</p>
               </td>
               <td class="text-left px-2 md:px-4 lg:px-6">
-                <p class="m-2 text-lg md:text-xl lg:m-4">
+                <p class="my-6 text-lg md:text-xl">
                   {{ productShow[1].packaging }}
                 </p>
               </td>
             </tr>
             <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-2 text-lg md:text-xl lg:m-4 details">Weight</p>
+                <p class="m-4  text-lg md:text-xl md:m-5 details">Weight</p>
               </td>
               <td class="text-left px-2 md:px-4 lg:px-6">
-                <p class="m-2 text-lg md:text-xl lg:m-4">
+                <p class="my-6 text-lg md:text-xl">
                   {{ productShow[1].weight }}
                 </p>
               </td>
             </tr>
             <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-2 text-lg md:text-xl lg:m-4 details">Color</p>
+                <p class="m-4  text-lg md:text-xl md:m-5 details">Color</p>
               </td>
               <td class="text-left px-2 md:px-4 lg:px-6">
-                <p class="m-2 text-lg md:text-xl lg:m-4">
+                <p class="my-6 text-lg md:text-xl">
                   {{ productShow[1].color }}
                 </p>
               </td>
             </tr>
             <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-2 text-lg md:text-xl lg:m-4 details">Tasting</p>
+                <p class="m-4  text-lg md:text-xl md:m-5 details">Tasting</p>
               </td>
               <td class="text-left px-2 md:px-4 lg:px-6">
-                <p class="m-2 text-lg md:text-xl lg:m-4">
+                <p class="my-6 text-lg md:text-xl">
                   {{ productShow[1].tasting }}
                 </p>
               </td>
             </tr>
             <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-2 text-lg md:text-xl lg:m-4 details">
+                <p class="m-4  text-lg md:text-xl md:m-5 details">
                   Serving Suggestions
                 </p>
               </td>
               <td class="text-left px-2 md:px-4 lg:px-6">
-                <p class="m-2 text-lg md:text-xl lg:m-4">
+                <p class="my-6 text-lg md:text-xl">
                   {{ productShow[1].serving }}
                 </p>
               </td>
             </tr>
             <tr class="h-16">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-2 text-lg md:text-xl lg:m-4 details">
+                <p class="m-4  text-lg md:text-xl md:m-5 details">
                   Keeping Suggestions
                 </p>
               </td>
               <td class="text-left px-2 md:px-4 lg:px-6">
-                <p class="m-2 text-lg md:text-xl lg:m-4">
+                <p class="my-6 text-lg md:text-xl">
                   {{ productShow[1].penyimpanan }}
                 </p>
               </td>
