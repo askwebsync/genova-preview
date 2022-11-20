@@ -8,20 +8,20 @@
           <h1 class="pcolor mb-1 text-xl lg:text-2xl">Trending Flavour</h1>
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
-        <div class="justify-items-center justify-center my-12">
+        <div class="justify-items-center justify-center my-6">
           <carousel :settings="settings" :breakpoints="breakpoints" class="">
             <slide v-for="product in products" :key="product.id">
               <div class="md:p-5 md:mx-4 mb-3 carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
-                  class="w-full h-56 md:h-48 object-contain rounded-t-xl z"
+                  class="w-full h-52 md:h-48 object-contain rounded-t-xl z"
                 />
-                <div class="p-2 md:p-5">
+                <div class="md:p-5">
                   <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
                     {{ product.name }}
                   </h2>
-                  <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
+                  <p class="text-lg text-gray-800">RP. {{ product.price }}</p>
                   <router-link
                     :to="{
                       name: 'productDetailPage',
@@ -43,7 +43,7 @@
                       },
                     }"
                   >
-                    <div class="mt-4">
+                    <div class="mt-3 md:mt-5">
                       <button
                         class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                       >

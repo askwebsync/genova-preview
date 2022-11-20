@@ -8,16 +8,16 @@
           <h1 class="pcolor mb-1 text-xl lg:text-2xl">New Flavour</h1>
         </div>
         <hr class="h-1 rounded w-32 background-yellow border-0" />
-        <div class="justify-items-center justify-center my-10">
+        <div class="justify-items-center justify-center my-6">
           <carousel :settings="settings" :breakpoints="breakpoints" class="">
             <slide v-for="product in products" :key="product.id">
               <div class="md:p-5 md:mx-4 mb-3 carousel__item">
                 <img
                   :src="product.image"
                   :alt="product.name"
-                  class="w-full h-56 md:h-48 object-contain rounded-t-xl"
+                  class="w-full h-52 md:h-48 object-contain rounded-t-xl"
                 />
-                <div class="p-2 md:p-5">
+                <div class="md:p-5">
                   <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
                     {{ product.name }}
                   </h2>
@@ -44,7 +44,7 @@
                       },
                     }"
                   >
-                    <div class="mt-4">
+                    <div class="mt-5">
                       <button
                         class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                       >
@@ -225,12 +225,34 @@ export default {
 </script>
 
 <style>
+.carousel__prev, .carousel__next {
+    box-sizing: content-box;
+    background: var(--vc-nav-background);
+    border-radius: var(--vc-nav-border-radius);
+    width: var(--vc-nav-width);
+    height: var(--vc-nav-height);
+    text-align: center;
+    font-size: var(--vc-nav-height);
+    padding: 0;
+    color: var(--vc-nav-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: revert;
+    position: absolute;
+    border: 0;
+    cursor: pointer;
+    margin: 0 10px;
+    top: 30% !important;
+    transform: translateY(-50%);
+}
 .carousel__next {
   right: -20px;
+  bottom: -10px;
   background-color: #bdb76b !important;
 }
 .carousel__prev {
   left: -20px;
+  bottom: -10px;
   background-color: #bdb76b !important;
 }
 .carousel__icon {

@@ -4,11 +4,13 @@
     <div class="mx-auto" v-if="isLoaded">
       <PageLoader />
     </div>
-    <div v-if="!isLoaded" class="flex flex-col gap-4">
+    <div v-if="!isLoaded">
       <HomepageBanner />
+      <div class="flex flex-col gap-6">
       <TrendingProducts />
       <NewProducts />
       <HomepageProducts />
+      </div>
     </div>
   </div>
 </template>
