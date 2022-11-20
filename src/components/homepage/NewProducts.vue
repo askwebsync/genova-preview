@@ -247,12 +247,10 @@ export default {
 }
 .carousel__next {
   right: -20px;
-  bottom: -10px;
   background-color: #bdb76b !important;
 }
 .carousel__prev {
   left: -20px;
-  bottom: -10px;
   background-color: #bdb76b !important;
 }
 .carousel__icon {
