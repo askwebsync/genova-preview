@@ -241,8 +241,8 @@ export default {
     position: absolute;
     border: 0;
     cursor: pointer;
-    margin: 0 10px;
-    top: 30% !important;
+    margin: 0 5px;
+    top: 33% !important;
     transform: translateY(-50%);
 }
 .carousel__next {
@@ -254,8 +254,8 @@ export default {
   background-color: #bdb76b !important;
 }
 .carousel__icon {
-  width: var(--vc-icn-width);
-  height: var(--vc-icn-width);
+  width: 30px ;
+  height:  30px;
   fill: white !important;
 }
 button,
