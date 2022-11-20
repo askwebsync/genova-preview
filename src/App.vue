@@ -1,42 +1,48 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
+import PageLoader from "./components/PageLoader.vue";
 
 export default {
   components: {
     AppHeader,
     AppFooter,
+    PageLoader
   },
   data: () => {
-    return {};
+    return {
+      isLoaded: true,
+    };
+  },
+  mounted() {
+    setTimeout(
+      function () {
+        this.isLoaded = !this.isLoaded;
+      }.bind(this),
+      5000
+    );
   },
 };
 </script>
 
 <template>
   <div class="min-h-screen">
-    <AppHeader class="sticky top-0 zdua" />
-    <router-view v-slot="{ Component }" :key="$route.fullPath">
-      <transition name="fade">
-        <component :is="Component" />
-      </transition>
-    </router-view>
-
-    <AppFooter class="sticky top-[100vh]" />
+    <div class="mx-auto" v-if="isLoaded">
+      <PageLoader />
+    </div>
+    <div v-if="!isLoaded">
+      <AppHeader class="sticky top-0 zdua" />
+      <router-view v-slot="{ Component }" :key="$route.fullPath">
+        <transition name="fade">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+      <AppFooter class="sticky top-[100vh]" />
+    </div>
   </div>
 </template>
 
 <style>
-.vue-back-to-top {
-  @apply p-2 bg-yellow-500 hover:bg-yellow-600 text-white transition
-        duration-500
-        ease-in-out
-        transform
-        hover:-translate-y-1 hover:scale-110;
-  border-radius: 50%;
-  font-size: 22px;
-  line-height: 22px;
-}
 
 .fade-enter-active {
   animation: coming 0.4s;
