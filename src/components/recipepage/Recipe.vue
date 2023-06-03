@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="container mx-auto mb-4">
+  <section class="container mx-auto">
     <nav class="flex ml-3 mt-5 mb-10 md:ml-10" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">
@@ -43,7 +43,7 @@
         </li>
       </ol>
     </nav>
-    <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
+    <div class="p-4 lg:p-6 lg:pt-10 pb-12 xl:p-12">
       <div class="flex flex-row">
         <h1 class="pcolor mb-2 text-lg md:text-xl lg:text-xxl">
           Standart Recipe
@@ -317,7 +317,5 @@ export default {
 .border {
   border-style: solid 2px;
   border-color: #bdb76b;
-}
-h3 {
 }
 </style>

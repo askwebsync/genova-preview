@@ -62,7 +62,7 @@
         </li>
       </ol>
     </nav>
-    <div class="p-4 lg:p-6 lg:py-12 xl:p-12">
+    <div class="p-4 lg:p-6 lg:pt-10 pb-12">
       <div
         class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
       >
@@ -74,59 +74,55 @@
         </div>
       </div>
 
-      <div class="py-10 px-12">
+      <div
+        class="p-2 mt-2 grid grid-flow-row gap-12 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+      >
         <div
-          class="grid grid-flow-row gap-12 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          v-for="product in resultQuery"
+          :key="product.id"
+          class="bg-white center shadow"
         >
-          <div
-            v-for="product in resultQuery"
-            :key="product.id"
-            class="my-8 bg-white center"
+          <router-link
+            :to="{
+              name: 'productDetailPage',
+              query: {
+                dataProduk: JSON.stringify({
+                  name: product.name,
+                  price: product.price,
+                  category: product.category,
+                  info: product.info,
+                  packaging: product.packaging,
+                  weight: product.weight,
+                  color: product.color,
+                  image: product.image,
+                  link: product.link,
+                  serving: product.serving,
+                  tasting: product.tasting,
+                  penyimpanan: product.penyimpanan,
+                }),
+              },
+            }"
           >
-            <router-link
-              :to="{
-                name: 'productDetailPage',
-                query: {
-                  dataProduk: JSON.stringify({
-                    name: product.name,
-                    price: product.price,
-                    category: product.category,
-                    info: product.info,
-                    packaging: product.packaging,
-                    weight: product.weight,
-                    color: product.color,
-                    image: product.image,
-                    link: product.link,
-                    serving: product.serving,
-                    tasting: product.tasting,
-                    penyimpanan: product.penyimpanan,
-                  }),
-                },
-              }"
-            >
-              <div class="cursor-pointer">
-                <figure>
-                  <!-- Image -->
-                  <img
-                    :src="product.image + '?auto=format&fit=crop&w=400&q=50'"
-                    :alt="product.name"
-                    class="rounded-t h-64 w-full object-contain"
-                  />
+            <div class="cursor-pointer">
+              <figure>
+                <!-- Image -->
+                <img
+                  :src="product.image + '?auto=format&fit=crop&w=400&q=50'"
+                  :alt="product.name"
+                  class="rounded-t h-56 md:h-64 w-full object-contain"
+                />
 
-                  <figcaption class="p-4 mt-2">
-                    <!-- Title -->
-                    <h2
-                      class="mb-2 text-lg lg:text-xl tracking-tight text-black"
-                    >
-                      {{ product.name }}
-                    </h2>
+                <figcaption class="p-2 md:p-3">
+                  <!-- Title -->
+                  <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
+                    {{ product.name }}
+                  </h2>
 
-                    <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </router-link>
-          </div>
+                  <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
+                </figcaption>
+              </figure>
+            </div>
+          </router-link>
         </div>
       </div>
     </div>

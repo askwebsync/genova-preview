@@ -43,17 +43,18 @@
         </li>
       </ol>
     </nav>
-    <div class="p-4 lg:p-6 lg:py-12 xl:p-12">
-      <div class="flex flex-row">
+    <div class="flex flex-col gap-3 p-4 lg:p-6 lg:pt-10 pb-12 xl:p-12">
+      <div class="">
         <h1 class="pcolor mb-1 text-xl lg:text-2xl">Product Category</h1>
         <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
+        <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
       </div>
-      <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
-      <div class="py-10 px-12">
+
+      <div class="py-4">
         <div
-          class="grid grid-flow-row gap-8 lg:gap-12 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
+          class="grid grid-flow-row gap-8 px-2 lg:px-0 lg:gap-12 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
         >
-          <div class="my-8 rounded">
+          <div class="rounded shadow">
             <router-link :to="{ name: 'fruit-bland' }">
               <div class="cursor-pointer">
                 <figure>
@@ -61,13 +62,13 @@
                   <img
                     src="../../assets/images/product/fruit-bland/fruitbland_pineapple.jpg"
                     alt="Product"
-                    class="rounded-t h-72 w-full object-contain"
+                    class="rounded-t h-56 md:h-72 w-full object-contain"
                   />
 
                   <figcaption class="p-4 center">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-xl lg:text-2xl tracking-tight text-black"
+                      class="mb-2 text-lg lg:text-xl tracking-tight text-black"
                     >
                       Fruit Blend
                     </h2>
@@ -83,7 +84,7 @@
               </div>
             </router-link>
           </div>
-          <div class="my-8 rounded">
+          <div class="rounded shadow">
             <router-link :to="{ name: 'flavoured-syrup' }">
               <div class="cursor-pointer">
                 <figure>
@@ -91,13 +92,13 @@
                   <img
                     src="../../assets/images/product/syrup/syrup_bluecuracao.jpg"
                     alt="Product"
-                    class="rounded-t h-72 w-full object-contain"
+                    class="rounded-t h-56 md:h-72 w-full object-contain"
                   />
 
                   <figcaption class="p-4 center">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-xl lg:text-2xl tracking-tight text-black"
+                      class="mb-2 text-lg lg:text-xl tracking-tight text-black"
                     >
                       Flavoured Syrup
                     </h2>
@@ -113,7 +114,7 @@
               </div>
             </router-link>
           </div>
-          <div class="my-8 rounded">
+          <div class="rounded shadow">
             <router-link :to="{ name: 'powder-syrup' }">
               <div class="cursor-pointer">
                 <figure>
@@ -121,13 +122,13 @@
                   <img
                     src="../../assets/images/product/powder/powder_tiramisu.jpg"
                     alt="Product"
-                    class="rounded-t h-72 w-full object-contain"
+                    class="rounded-t h-56 md:h-72 w-full object-contain"
                   />
 
                   <figcaption class="p-4 center">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-xl lg:text-2xl tracking-tight text-black"
+                      class="mb-2 text-lg lg:text-xl tracking-tight text-black"
                     >
                       Powder Drink
                     </h2>

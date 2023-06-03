@@ -48,7 +48,6 @@
           >
             Genova Jakarta
           </h3>
-          <h4 class="text-lg font-semibold">Coming Soon</h4>
 
           <div class="flex flex-col gap-2">
             <div
@@ -229,7 +228,7 @@
           >
             Genova Riau
           </h3>
-          <h4 class="text-lg font-semibold">Samula Coffee & Eatry</h4>
+          <h4 class="text-lg font-semibold">Samula Coffee & Eatery</h4>
           <div class="flex flex-col gap-2">
             <div
               class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"
@@ -317,7 +316,7 @@
           >
             Genova Bogor
           </h3>
-          <h4 class="text-lg font-semibold">Coming Soon</h4>
+
           <div class="flex flex-col gap-2">
             <div
               class="inline-flex space-x-6 background-yellow p-4 md:p-4 text-left"

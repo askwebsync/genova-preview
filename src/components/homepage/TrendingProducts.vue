@@ -18,10 +18,12 @@
                   class="w-full h-52 md:h-48 object-contain rounded-t-xl z"
                 />
                 <div class="md:p-5">
-                  <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
+                  <h2
+                    class="mb-2 text-lg lg:text-xl tracking-tighter text-black font-medium"
+                  >
                     {{ product.name }}
                   </h2>
-                  <p class="text-lg text-gray-800">RP. {{ product.price }}</p>
+                  <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
                   <router-link
                     :to="{
                       name: 'productDetailPage',
@@ -45,9 +47,9 @@
                   >
                     <div class="mt-3 md:mt-5">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                        class="rounded-lg px-3 py-2 md:px-4 md:py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                       >
-                        Buy Now
+                        Buy
                       </button>
                     </div>
                   </router-link>
@@ -102,7 +104,7 @@ export default {
           id: 39,
           name: "Syrup Lychee",
           image: "../syrup_lychee.jpg",
-          price: "97,000",
+          price: "105,000",
           category: "Flavoured",
           info: "Lychee atau Litchi atau Buah leci adalah buah yang berasal dari pohon tropis dan sub tropis yang berasal dari daerah provinsi Fujian dan Guangdong, Cina. Kabarnya, pohon leci sudah dikembangbiakkan sejak abad ke-11 silam. Selain Cina, kawasan penghasil buah leci terbesar di dunia adalah India, Madagaskar, dan Afrika Selatan. Syrup GENOVA Lychee memiliki rasa aroma lychee yang kuat dan sensasi asam manis layaknya menikmati buah leci sehingga memiliki cita rasa sendiri khas product Genova Indonesia. Syrup GENOVA Lychee saat ini sudah menjadi sirup pilihan ter favorit pilihan customer setia Genova Indonesia. Tambahkan sirup ini untuk berbagai minuman teh, moctail, susu yakult, serta minuman dingin lainnya.",
           link: "https://www.tokopedia.com/genovaindonesia/genova-lychee-syrup-750-ml?extParam=whid%3D8872969",
@@ -153,7 +155,7 @@ export default {
           id: 42,
           name: "Syrup Pandan",
           image: "../syrup_pandan.jpg",
-          price: "97,000",
+          price: "105,000",
           category: "Flavoured",
           info: "Pandan di perkirakan berasal dari kepulauan di Lautan Pasifik, dengan penyebaran terbesar di Madagaskar dan Malesia. Untuk penyebarannya, Terdapat hampir di seluruh Indonesia, karena tumbuhan ini mudah tumbuh. Pandan banyak dibudidayakan karena biasa digunakan sebagai penambah rasa di banyak hidangan manis dan gurih. Sirup GENOVA Pandan memiliki aroma ringan dan menyegarkan dengan sentuhan aroma yang manis. Sangat cocok untuk membuat minuman teh susu, atau es teh sederhana dengan rasa manis yang seimbang. Sirup ini menjadi viral untuk campuran teh di Asia Tenggara hari ini dan menciptakan resep unik dengan rasa yang luar biasa.",
           link: "https://www.tokopedia.com/genovaindonesia/genova-pandan-syrup-750-ml?extParam=whid%3D8872969",
@@ -170,7 +172,7 @@ export default {
           id: 23,
           name: "Fruit Blend Strawberry",
           image: "../fruitbland_strawberry.jpg",
-          price: "109,000",
+          price: "115,000",
           category: "fruitBlend",
           info: "Juicy, cerah, dan rasa manis yang tepat;  tidak heran jika stroberi segar adalah favorit di musim panas.  Nikmati sensasi musim panas sepanjang tahun ketika Anda menggunakan Genova Fruit Blend Strawberry untuk membuat mocktail, lemonade, es teh, dan smoothie. GENOVA Fruit Blend Strawberry memberikan rasa strawberry yang menyegarkan dan juicy..!",
           link: "https://www.tokopedia.com/genovaindonesia/genova-fruit-blend-strawberry-750-ml-fruit-puree?extParam=whid%3D8872969",

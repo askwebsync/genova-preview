@@ -44,22 +44,22 @@
       </ol>
     </nav>
     <div class="flex flex-col my-12">
-      <div class="flex flex-col mt-4 mb-10 text-center center">
+      <div class="mb-12 text-center center">
         <h1 class="pcolor text-2xl">Contact Us</h1>
-
-        <div class="my-2">
+        <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
+        <div class="my-3">
           <p class="text-lg">Get in touch with us for more information</p>
         </div>
       </div>
 
       <div
-        class="grid md:grid-cols-2 lg:grid-cols-3 self-center gap-12 px-12 md:flex-row lg:px-12"
+        class="mb-12 grid md:grid-cols-2 lg:grid-cols-3 self-center gap-12 px-12 md:flex-row lg:px-12"
       >
         <div
           class="flex flex-col items-center gap-4 background-yellow p-8 card"
         >
           <i class="card-icon far fa-envelope"></i>
-          <h3 class="text-lg text-white m-6 max-w-xs block">
+          <h3 class="text-white font-bold center mx-2">
             genovaindonesiaofficial@gmail.com
           </h3>
         </div>
@@ -67,8 +67,8 @@
           class="flex flex-col items-center gap-4 background-yellow p-8 card"
         >
           <i class="card-icon fas fa-phone"></i>
-          <h3 class="text-lg text-white m-6">
-            <a href="tel:081212128171" class="hover:text-gray-400"
+          <h3 class="text-white font-bold center mx-2">
+            <a href="tel:081212128171" class="hover:text-black"
               >+62 812-1212-8171</a
             >
           </h3>
@@ -78,7 +78,7 @@
         >
           <i class="card-icon fas fa-map-marker-alt"></i>
 
-          <h3 class="text-lg text-white m-6">
+          <h3 class="text-white font-bold center mx-2">
             Komplek PU Jl. B No. 18 RC Veteran - Tanah Kusir, Jakarta Selatan
             12330
           </h3>
@@ -87,6 +87,7 @@
     </div>
   </section>
 </template>
+<script></script>
 
 <style scoped>
 .card-icon {
@@ -100,8 +101,11 @@
   border-radius: 50%;
   transition: 0.3s linear;
 }
-
 .card:hover .card-icon {
   transform: scale(1.4);
+}
+
+h3 {
+  font-size: 1rem;
 }
 </style>

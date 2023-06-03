@@ -25,13 +25,13 @@
                   <figcaption class="py-4 px-2 center">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-lg  tracking-tight text-black"
+                      class="mb-2 text-lg lg:text-xl tracking-tighter text-black font-medium"
                     >
                       Fruit Blend
                     </h2>
                     <div class="my-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
+                        class="rounded-lg px-3 py-2 md:px-4 md:py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                       >
                         See More
                       </button>
@@ -55,13 +55,13 @@
                   <figcaption class="py-4 px-2 center">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-lg tracking-tight text-black"
+                      class="mb-2 text-lg lg:text-xl tracking-tighter text-black font-medium"
                     >
                       Flavoured Syrup
                     </h2>
                     <div class="my-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
+                        class="rounded-lg px-3 py-2 md:px-4 md:py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                       >
                         See More
                       </button>
@@ -85,13 +85,13 @@
                   <figcaption class="py-4 px-2 center">
                     <!-- Title -->
                     <h2
-                      class="mb-2 text-lg tracking-tight text-black"
+                      class="mb-2 text-lg lg:text-xl tracking-tighter text-black font-medium"
                     >
                       Powder Drink
                     </h2>
                     <div class="my-4">
                       <button
-                        class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
+                        class="rounded-lg px-3 py-2 md:px-4 md:py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                       >
                         See More
                       </button>

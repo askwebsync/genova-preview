@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto">
-    <div class="mt-6 p-4 lg:p-6 lg:py-12 xl:p-12">
+    <div class="mt-6 p-4 lg:p-6 lg:pt-10 pb-12 xl:p-12">
       <div class="center">
         <div class="flex flex-col max-w-lg border border-2 p-4">
           <div class="flex justify-center">

@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section class="container mx-auto">
     <div
       id="carouselExampleIndicators"
       class="carousel slide relative"
@@ -35,32 +35,32 @@
           aria-label="Slide 4"
         ></button>
       </div>
-      <div class="carousel-inner relative w-full overflow-hidden">
-        <div class="carousel-item active float-left w-full">
+      <div class="carousel-inner relative overflow-hidden">
+        <div class="carousel-item active">
           <img
             src="../../assets/images/banner/1.jpg"
-            class="block w-full"
+            class="w-full h-full object-cover"
             alt="Wild Landscape"
           />
         </div>
-        <div class="carousel-item float-left w-full">
+        <div class="carousel-item">
           <img
             src="../../assets/images/banner/2.jpg"
-            class="block w-full"
+            class="w-full h-full object-cover"
             alt="Camera"
           />
         </div>
-        <div class="carousel-item float-left w-full">
+        <div class="carousel-item">
           <img
             src="../../assets/images/banner/3.jpg"
-            class="block w-full"
+            class="w-full h-full object-cover"
             alt="Exotic Fruits"
           />
         </div>
-        <div class="carousel-item float-left w-full">
+        <div class="carousel-item">
           <img
             src="../../assets/images/banner/4.jpg"
-            class="block w-full"
+            class="w-full h-full object-cover"
             alt="Exotic Fruits"
           />
         </div>
@@ -93,26 +93,11 @@
   </section>
 </template>
 <script>
-// import { Carousel, Slide, Pagination } from "vue3-carousel";
-
 export default {
   name: "HomepageBanner",
-  components: {
-    // Carousel,
-    // Slide,
-    // Pagination,
-  },
+  components: {},
   data() {
-    return {
-      // slide: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
-      // images: [
-      //   { url: "1.jpg", alt: "Banner 1" },
-      //   { url: "2.jpg", alt: "Banner 2" },
-      //   { url: "3.jpg", alt: "Banner 3" },
-      //   { url: "4.jpg", alt: "Banner 4" },
-      //   { url: "5.jpg", alt: "Banner 5" },
-      // ],
-    };
+    return {};
   },
 };
 </script>
@@ -123,10 +108,26 @@ export default {
   background-position: 50%;
   background-size: 100% 100%;
 }
+.carousel-control-prev {
+  z-index: 1;
+  width: 15%;
+  color: black;
+  background: none;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
 .carousel-control-prev-icon {
   width: 1.5rem !important;
   height: 1.5rem !important;
   background-position: 50%;
   background-size: 100% 100%;
+}
+.carousel-control-next {
+  z-index: 1;
+  width: 15%;
+  color: black;
+  background: none;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
 }
 </style>

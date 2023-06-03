@@ -5,7 +5,6 @@
 </template>
 
 <script>
-
 import HeroRecipe from "../components/recipepage/HeroRecipe.vue";
 import Recipe from "../components/recipepage/Recipe.vue";
 

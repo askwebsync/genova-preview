@@ -8,7 +8,7 @@
           <h2
             class="text-4xl tracking-tight leading-10 font-medium sm:text-5xl text-white sm:leading-none md:text-6xl"
           >
-            Lorem Ipsum Tani Tanu Hore Hari
+            Genova Indonesia Product
           </h2>
         </div>
       </main>
@@ -37,10 +37,6 @@ h2 {
   font-weight: 400;
   font-size: 43px;
   line-height: 160%;
-  /* identical to box height, or 69px */
-
-  /* Accents/Yellow/7 */
-
   color: #997f11;
 }
 </style>

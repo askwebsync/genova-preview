@@ -1,11 +1,13 @@
 <template>
-  <div class="container">
-    <div class="large-indicator">
-      <div></div>
-      <div></div>
-      <div></div>
+  <section>
+    <div class="containerr">
+      <div class="large-indicator">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -17,13 +19,13 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.containerr {
   --action-primary-color: rgba(0, 159, 227, 1);
   --alert-watched-color: rgba(255, 255, 0, 1);
   --warning-new-color: rgba(255, 0, 175, 1);
 }
 
-.container {
+.containerr {
   align-items: center;
   -webkit-align-items: center;
   box-sizing: border-box;

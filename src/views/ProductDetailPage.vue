@@ -135,11 +135,11 @@
           </li>
         </ol>
       </nav>
-      <div class="flex flex-col px-4 gap-y-12 items-center" v-if="productShow">
+      <div class="flex flex-col gap-y-12 items-center" v-if="productShow">
         <div class="flex flex-col md:flex-row mb-12 gap-12 lg:gap-24">
           <!-- image-->
           <div
-            class="w-full md:w-1/2 center max-w-xl self-start lg:self-center lg:mr-12"
+            class="w-full lg:w-1/2 center max-w-xl self-start lg:self-center lg:mr-12"
           >
             <img
               :src="productShow[1].image"
@@ -149,7 +149,7 @@
           </div>
 
           <!-- items detail -->
-          <div class="w-full md:w-1/2 flex flex-col md:ml-5">
+          <div class="w-full lg:w-1/2 flex flex-col md:ml-5">
             <!-- Name + Info -->
             <div class="flex flex-col text-left max-w-xl">
               <div class="mb-6">
@@ -160,31 +160,30 @@
               </div>
 
               <div class="flex flex-col gap-1 mb-2">
-                <p class="text-lg text-gray-700 whitespace-pre-line">
+                <p class="lg:text-lg text-gray-700 whitespace-pre-line">
                   {{ productShow[1].info }}
                 </p>
               </div>
             </div>
 
             <div class="mt-6">
-              <p class="text-xl text-black text-left">
-                {{ "RP." + " " + productShow[1].price }}
+              <p class="text-2xl text-black text-left font-semibold">
+                {{ "Rp" + "" + productShow[1].price }}
               </p>
             </div>
-            <div class="mt-3 cursor-pointer w-full">
-              <a
-                :href="productShow[1].link"
-                class="block w-full text-center text-xl lg:text-2xl bg-[#bdb76b] text-white py-2 rounded-lg"
+            <div class="my-3 cursor-pointer w-full self-center">
+              <button
+                class="bg-[#bdb76b] font-semibold hover:text-white p-4 text-white border hover:border-transparent rounded-lg w-full"
               >
-                Buy Now
-              </a>
+                <a :href="productShow[1].link" class=""> Buy Now </a>
+              </button>
             </div>
           </div>
         </div>
-        <div class="self-start w-full mt-4">
-          <div class="mt-3 mb-8 ml-4">
+        <div class="self-start w-full mt-8">
+          <div class="">
             <h1
-              class="md:w-1/6 text-center text-xl lg:text-2xl rounded-t-lg bg-[#bdb76b] text-white py-2"
+              class="text-center text-xl lg:text-2xl rounded-t-lg bg-[#bdb76b] text-white py-2"
             >
               Details
             </h1>
@@ -192,12 +191,14 @@
               class="border border-solid border-2 border-[#bdb76b] border-black"
             />
           </div>
-          <table class="w-auto m-1 md:m-4">
+          <table class="m-1 md:m-2 lg:m-3">
             <tr class="border-b-2 h-auto border-[#bdb76b]">
-              <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-4  text-lg md:text-xl md:m-5 details">Category</p>
+              <td class="w-1/2 md:w-1/6 text-left">
+                <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
+                  Category
+                </p>
               </td>
-              <td class="text-left px-2 md:px-4 lg:px-6">
+              <td class="text-left px-4 lg:px-6">
                 <p
                   class="m-3 text-lg md:text-xl"
                   v-if="productShow[1].category === 'fruitBlend'"
@@ -220,9 +221,11 @@
             </tr>
             <tr class="border-b-2 h-auto border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-4  text-lg md:text-xl md:m-5 details">Packaging</p>
+                <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
+                  Packaging
+                </p>
               </td>
-              <td class="text-left px-2 md:px-4 lg:px-6">
+              <td class="text-left px-4 lg:px-6">
                 <p class="my-6 text-lg md:text-xl">
                   {{ productShow[1].packaging }}
                 </p>
@@ -230,9 +233,11 @@
             </tr>
             <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-4  text-lg md:text-xl md:m-5 details">Weight</p>
+                <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
+                  Weight
+                </p>
               </td>
-              <td class="text-left px-2 md:px-4 lg:px-6">
+              <td class="text-left px-4 lg:px-6">
                 <p class="my-6 text-lg md:text-xl">
                   {{ productShow[1].weight }}
                 </p>
@@ -240,9 +245,11 @@
             </tr>
             <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-4  text-lg md:text-xl md:m-5 details">Color</p>
+                <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
+                  Color
+                </p>
               </td>
-              <td class="text-left px-2 md:px-4 lg:px-6">
+              <td class="text-left px-4 lg:px-6">
                 <p class="my-6 text-lg md:text-xl">
                   {{ productShow[1].color }}
                 </p>
@@ -250,33 +257,35 @@
             </tr>
             <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-4  text-lg md:text-xl md:m-5 details">Tasting</p>
+                <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
+                  Tasting
+                </p>
               </td>
-              <td class="text-left px-2 md:px-4 lg:px-6">
+              <td class="text-left px-4 lg:px-6">
                 <p class="my-6 text-lg md:text-xl">
-                  {{ productShow[1].tasting }}
+                  {{ isON2() }}
                 </p>
               </td>
             </tr>
             <tr class="border-b-2 h-16 border-[#bdb76b]">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-4  text-lg md:text-xl md:m-5 details">
+                <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
                   Serving Suggestions
                 </p>
               </td>
-              <td class="text-left px-2 md:px-4 lg:px-6">
+              <td class="text-left px-4 lg:px-6">
                 <p class="my-6 text-lg md:text-xl">
-                  {{ productShow[1].serving }}
+                  {{ isON() }}
                 </p>
               </td>
             </tr>
             <tr class="h-16">
               <td class="w-1/2 md:w-1/6 text-left py-2">
-                <p class="m-4  text-lg md:text-xl md:m-5 details">
+                <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
                   Keeping Suggestions
                 </p>
               </td>
-              <td class="text-left px-2 md:px-4 lg:px-6">
+              <td class="text-left px-4 lg:px-6">
                 <p class="my-6 text-lg md:text-xl">
                   {{ productShow[1].penyimpanan }}
                 </p>
@@ -286,7 +295,7 @@
                 <td class="w-1/2 md:w-1/6 text-left">
                   <p class="m-2 text-lg lg:text-xl lg:m-4 ">Packaging</p>
                 </td>
-                <td class="text-left px-2 md:px-4 lg:px-6">
+                <td class="text-left px-4 lg:px-6">
                   <p class="m-2 text-lg lg:text-xl lg:m-4 ">
                     {{ productShow[1].size }}
                   </p>
@@ -365,6 +374,18 @@ export default {
       }
       console.log(this.products);
       return this.products;
+    },
+    isON() {
+      if (this.productShow[1].serving) {
+        return this.productShow[1].serving;
+      }
+      return "-";
+    },
+    isON2() {
+      if (this.productShow[1].tasting) {
+        return this.productShow[1].tasting;
+      }
+      return "-";
     },
   },
 };

@@ -1,14 +1,4 @@
-<script>
-export default {
-  components: {},
-  data() {
-    return {};
-  },
-};
-</script>
-
 <template>
-  <!-- Foooter -->
   <section class="bg-footer">
     <div
       class="max-w-screen-xl p-4 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
@@ -74,6 +64,15 @@ export default {
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  components: {},
+  data() {
+    return {};
+  },
+};
+</script>
 
 <style scoped>
 .bg-footer {
