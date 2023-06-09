@@ -1,133 +1,153 @@
 <template>
-  <section class="container mx-auto">
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide relative"
-      data-bs-ride="carousel"
-    >
-      <div
-        class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 space-x-4"
-      >
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
-      </div>
-      <div class="carousel-inner relative overflow-hidden">
-        <div class="carousel-item active">
-          <img
-            src="../../assets/images/banner/1.jpg"
-            class="w-full h-full object-cover"
-            alt="Wild Landscape"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="../../assets/images/banner/2.jpg"
-            class="w-full h-full object-cover"
-            alt="Camera"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="../../assets/images/banner/3.jpg"
-            class="w-full h-full object-cover"
-            alt="Exotic Fruits"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="../../assets/images/banner/4.jpg"
-            class="w-full h-full object-cover"
-            alt="Exotic Fruits"
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span
-          class="carousel-control-prev-icon inline-block bg-no-repeat"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span
-          class="carousel-control-next-icon inline-block bg-no-repeat"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+  <div class="slideshow-container">
+    <div v-for="(slide, index) in slides" :key="index" class="mySlides fade">
+      <img :src="slide.src" :alt="slide.alt" class="image-css" />
     </div>
-  </section>
+    <div class="dot-container">
+      <span
+        v-for="(slide, index) in slides"
+        :key="index"
+        class="dot"
+        @click="currentSlide(index + 1)"
+        :class="{ active: index + 1 === slideIndex }"
+      ></span>
+    </div>
+    <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+    <a class="next" @click="plusSlides(1)">&#10095;</a>
+  </div>
 </template>
+
 <script>
 export default {
-  name: "HomepageBanner",
-  components: {},
   data() {
-    return {};
+    return {
+      slideIndex: 1,
+      slides: [
+        { src: "/assets/images/banner/home1.png", alt: "Image1" },
+        { src: "/assets/images/banner/home_2.png", alt: "Image2" },
+        { src: "/assets/images/banner/home_3.png", alt: "Image3" },
+        { src: "/assets/images/banner/home4.png", alt: "Image4" },
+      ],
+    };
+  },
+  mounted() {
+    this.showSlides();
+    this.startAutoSlide();
+  },
+  methods: {
+    plusSlides(n) {
+      this.showSlides((this.slideIndex += n));
+    },
+    currentSlide(n) {
+      this.showSlides((this.slideIndex = n));
+    },
+    showSlides(n) {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        this.slideIndex = 1;
+      }
+      if (n < 1) {
+        this.slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[this.slideIndex - 1].style.display = "block";
+      dots[this.slideIndex - 1].className += " active";
+    },
+    startAutoSlide() {
+      setInterval(() => {
+        this.plusSlides(1);
+      }, 4000); // Adjust the interval time (in milliseconds) as needed
+    },
   },
 };
 </script>
 <style>
-.carousel-control-next-icon {
-  width: 1.5rem !important;
-  height: 1.5rem !important;
-  background-position: 50%;
-  background-size: 100% 100%;
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  max-height: 400px;
 }
-.carousel-control-prev {
-  z-index: 1;
-  width: 15%;
-  color: black;
-  background: none;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
+
+.image-css {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
-.carousel-control-prev-icon {
-  width: 1.5rem !important;
-  height: 1.5rem !important;
-  background-position: 50%;
-  background-size: 100% 100%;
+
+.mySlides {
+  display: none;
+  width: 100%;
 }
-.carousel-control-next {
-  z-index: 1;
-  width: 15%;
-  color: black;
-  background: none;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot-container {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 </style>

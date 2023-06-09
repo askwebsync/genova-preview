@@ -1,16 +1,17 @@
 <template>
-  <div v-if="isLoaded">
-    <PageLoader />
-  </div>
-  <div class="min-h-screen">
-    <div v-if="!isLoaded">
-      <AppHeader class="sticky top-0 zdua" />
+  <div>
+    <div v-if="isLoaded">
+      <PageLoader />
+    </div>
+
+    <div v-else>
+      <AppHeader class="bg-white border-b-2 sticky top-0 z-10" />
       <router-view v-slot="{ Component }" :key="$route.fullPath">
         <transition name="fade">
           <component :is="Component" />
         </transition>
       </router-view>
-      <AppFooter class="sticky top-[100vh]" />
+      <AppFooter class="app-footer" />
     </div>
   </div>
 </template>
@@ -26,18 +27,15 @@ export default {
     AppFooter,
     PageLoader,
   },
-  data: () => {
+  data() {
     return {
       isLoaded: true,
     };
   },
   mounted() {
-    setTimeout(
-      function () {
-        this.isLoaded = !this.isLoaded;
-      }.bind(this),
-      1500
-    );
+    setTimeout(() => {
+      this.isLoaded = !this.isLoaded;
+    }, 1000);
   },
 };
 </script>

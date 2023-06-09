@@ -1,14 +1,14 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <template>
-  <div class="bg-white shadowHeader">
+  <div class="bg-white shadow-md">
     <nav
-      class="container px-4 py-5 mx-auto md:flex md:justify-between md:items-center lg:px-8 xl:px-12"
+      class="container px-4 py-6 mx-auto md:flex md:justify-between md:items-center lg:px-8 xl:px-10"
     >
       <div class="flex items-center justify-between">
         <router-link :to="{ name: 'home' }"
           ><img
-            src="/logo/logo_transparan.png"
-            class="w-32 h-16 object-contain focus:outline-none"
+            src="/assets/images/logo/logo.webp"
+            class="w-28 h-12 object-contain focus:outline-none"
           />
         </router-link>
         <!-- Mobile menu button -->
@@ -62,10 +62,10 @@
           <router-link :to="{ name: 'location' }">Location</router-link>
         </li>
       </ul>
-      <div class="contain mt-6 md:mt-0 md:w-1/6 lg:w-2/6">
-        <div class="pt-2 relative mx-auto w-full">
+      <div class="contain md:w-1/6">
+        <div class="pt-3 relative w-full">
           <input
-            class="border-2 border-yellow h-10 px-5 pr-16 rounded-lg text-sm hover:outline-none focus:outline-none"
+            class="border-2 border-yellow h-10 px-5 rounded-lg text-sm hover:outline-none focus:outline-none"
             placeholder="Search Item"
             type="text"
             v-model="search"
@@ -1005,10 +1005,6 @@ export default {
 };
 </script>
 <style scoped>
-.shadowHeader {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-}
 input {
   width: 100%;
   height: 38px;

@@ -5,7 +5,7 @@
         <div class="flex flex-col max-w-lg border border-2 p-4">
           <div class="flex justify-center">
             <img
-              src="../../assets/images/logo/logo_tokopedia.png"
+              src="/assets/images/logo/logo_tokopedia.png"
               class="w-2/3 h-1/4"
               alt=""
             />

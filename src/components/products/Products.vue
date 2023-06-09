@@ -46,7 +46,7 @@
     <div class="flex flex-col gap-3 p-4 lg:p-6 lg:pt-10 pb-12 xl:p-12">
       <div class="">
         <h1 class="pcolor mb-1 text-xl lg:text-2xl">Product Category</h1>
-        <!-- <img src="../../assets/images/icon/star.png" class="ml-4" /> -->
+        <!-- <img src="/assets/images/icon/star.png" class="ml-4" /> -->
         <hr class="h-1 rounded background-navbar w-32 bg-black border-0" />
       </div>
 
@@ -60,7 +60,7 @@
                 <figure>
                   <!-- Image -->
                   <img
-                    src="../../assets/images/product/fruit-bland/fruitbland_pineapple.jpg"
+                    src="/assets/images/product/fruit-bland/fruitbland_pineapple.jpg"
                     alt="Product"
                     class="rounded-t h-56 md:h-72 w-full object-contain"
                   />
@@ -90,7 +90,7 @@
                 <figure>
                   <!-- Image -->
                   <img
-                    src="../../assets/images/product/syrup/syrup_bluecuracao.jpg"
+                    src="/assets/images/product/syrup/syrup_bluecuracao.jpg"
                     alt="Product"
                     class="rounded-t h-56 md:h-72 w-full object-contain"
                   />
@@ -120,7 +120,7 @@
                 <figure>
                   <!-- Image -->
                   <img
-                    src="../../assets/images/product/powder/powder_tiramisu.jpg"
+                    src="/assets/images/product/powder/powder_tiramisu.jpg"
                     alt="Product"
                     class="rounded-t h-56 md:h-72 w-full object-contain"
                   />

@@ -51,11 +51,11 @@
           class="text-gray-400 hover:text-gray-500"
         >
           <span class="sr-only">Instagram</span>
-          <img src="../assets/images/icon/instagram.png" />
+          <img src="/assets/images/icon/instagram.png" />
         </a>
         <a href="#" class="text-gray-400 hover:text-gray-500">
           <span class="sr-only">Youtube</span>
-          <img src="../assets/images/icon/youtube.png" />
+          <img src="/assets/images/icon/youtube.png" />
         </a>
       </div>
       <p class="mt-8 text-base leading-6 text-center text-gray-400">

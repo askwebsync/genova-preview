@@ -1,74 +1,75 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="">
-    <div class="container mx-auto">
-      <div class="mt-4 px-4 lg:px-6 xl:px-12">
-        <div class="flex flex-row">
-          <h1 class="pcolor mb-1 text-xl lg:text-2xl">Trending Flavour</h1>
-        </div>
-        <hr class="h-1 rounded w-32 background-yellow border-0" />
-        <div class="justify-items-center justify-center my-6">
-          <carousel :settings="settings" :breakpoints="breakpoints" class="">
-            <slide v-for="product in products" :key="product.id">
-              <div class="md:p-5 md:mx-4 mb-3 carousel__item">
-                <img
-                  :src="product.image"
-                  :alt="product.name"
-                  class="w-full h-52 md:h-48 object-contain rounded-t-xl z"
-                />
-                <div class="md:p-5">
-                  <h2
-                    class="mb-2 text-lg lg:text-xl tracking-tighter text-black font-medium"
-                  >
-                    {{ product.name }}
-                  </h2>
-                  <p class="text-lg text-gray-600">RP. {{ product.price }}</p>
-                  <router-link
-                    :to="{
-                      name: 'productDetailPage',
-                      query: {
-                        dataProduk: JSON.stringify({
-                          name: product.name,
-                          price: product.price,
-                          category: product.category,
-                          info: product.info,
-                          packaging: product.packaging,
-                          weight: product.weight,
-                          color: product.color,
-                          image: product.image,
-                          link: product.link,
-                          serving: product.serving,
-                          tasting: product.tasting,
-                          penyimpanan: product.penyimpanan,
-                        }),
-                      },
-                    }"
-                  >
-                    <div class="mt-3 md:mt-5">
-                      <button
-                        class="rounded-lg px-3 py-2 md:px-4 md:py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
-                      >
-                        Buy
-                      </button>
-                    </div>
-                  </router-link>
-                </div>
+  <div class="container mx-auto px-4 py-6 md:px-8 lg:px-10">
+    <div class="flex flex-col gap-10 lg:gap-20">
+      <div class="flex flex-col items-center lg:items-start">
+        <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">
+          Trending Flavour
+        </h1>
+        <hr
+          class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
+        />
+      </div>
+      <div class="justify-items-center justify-center my-6">
+        <carousel :settings="settings" :breakpoints="breakpoints" class="">
+          <slide v-for="product in products" :key="product.id">
+            <div class="carousel__item">
+              <img
+                :src="product.image"
+                :alt="product.name"
+                class="w-full h-52 md:h-48 object-contain rounded-t-xl z"
+              />
+              <div class="flex flex-col px-4 py-5 gap-3">
+                <h2
+                  class="text-lg lg:text-xl tracking-tighter text-black font-medium"
+                >
+                  {{ product.name }}
+                </h2>
+                <p class="text-lg text-price">RP.{{ product.price }}</p>
+                <router-link
+                  :to="{
+                    name: 'productDetailPage',
+                    query: {
+                      dataProduk: JSON.stringify({
+                        name: product.name,
+                        price: product.price,
+                        category: product.category,
+                        info: product.info,
+                        packaging: product.packaging,
+                        weight: product.weight,
+                        color: product.color,
+                        image: product.image,
+                        link: product.link,
+                        serving: product.serving,
+                        tasting: product.tasting,
+                        penyimpanan: product.penyimpanan,
+                      }),
+                    },
+                  }"
+                >
+                  <div class="">
+                    <button
+                      class="rounded-lg px-6 py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                    >
+                      Buy
+                    </button>
+                  </div>
+                </router-link>
               </div>
-            </slide>
+            </div>
+          </slide>
 
-            <template #addons>
-              <navigation class="" />
-            </template>
-          </carousel>
-        </div>
+          <template #addons>
+            <navigation />
+          </template>
+        </carousel>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-// If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 
@@ -86,7 +87,7 @@ export default {
         {
           id: 11,
           name: "Powder Matcha Latte",
-          image: "../powder_matchalatte.jpg",
+          image: "/assets/images/product/powder/powder_matchalatte.jpg",
           price: "169,000",
           categoryId: "powder",
           info: "Cocok digunakan untuk:\n-Untuk Meng-explore minuman Terkini \n- Pembuatan kue \n- Pembuatan minuman \n- Aneka olahan lainnya",
@@ -103,7 +104,7 @@ export default {
         {
           id: 39,
           name: "Syrup Lychee",
-          image: "../syrup_lychee.jpg",
+          image: "/assets/images/product/syrup/syrup_lychee.jpg",
           price: "105,000",
           category: "Flavoured",
           info: "Lychee atau Litchi atau Buah leci adalah buah yang berasal dari pohon tropis dan sub tropis yang berasal dari daerah provinsi Fujian dan Guangdong, Cina. Kabarnya, pohon leci sudah dikembangbiakkan sejak abad ke-11 silam. Selain Cina, kawasan penghasil buah leci terbesar di dunia adalah India, Madagaskar, dan Afrika Selatan. Syrup GENOVA Lychee memiliki rasa aroma lychee yang kuat dan sensasi asam manis layaknya menikmati buah leci sehingga memiliki cita rasa sendiri khas product Genova Indonesia. Syrup GENOVA Lychee saat ini sudah menjadi sirup pilihan ter favorit pilihan customer setia Genova Indonesia. Tambahkan sirup ini untuk berbagai minuman teh, moctail, susu yakult, serta minuman dingin lainnya.",
@@ -120,7 +121,7 @@ export default {
         {
           id: 7,
           name: "Powder Dark Chocolate",
-          image: "../powder_darkchocolate.jpg",
+          image: "/assets/images/product/powder/powder_darkchocolate.jpg",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
@@ -137,7 +138,7 @@ export default {
         {
           id: 15,
           name: "Powder Red Velvet",
-          image: "../powder_redvelvet.jpg",
+          image: "/assets/images/product/powder/powder_redvelvet.jpg",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
@@ -154,7 +155,7 @@ export default {
         {
           id: 42,
           name: "Syrup Pandan",
-          image: "../syrup_pandan.jpg",
+          image: "/assets/images/product/syrup/syrup_pandan.jpg",
           price: "105,000",
           category: "Flavoured",
           info: "Pandan di perkirakan berasal dari kepulauan di Lautan Pasifik, dengan penyebaran terbesar di Madagaskar dan Malesia. Untuk penyebarannya, Terdapat hampir di seluruh Indonesia, karena tumbuhan ini mudah tumbuh. Pandan banyak dibudidayakan karena biasa digunakan sebagai penambah rasa di banyak hidangan manis dan gurih. Sirup GENOVA Pandan memiliki aroma ringan dan menyegarkan dengan sentuhan aroma yang manis. Sangat cocok untuk membuat minuman teh susu, atau es teh sederhana dengan rasa manis yang seimbang. Sirup ini menjadi viral untuk campuran teh di Asia Tenggara hari ini dan menciptakan resep unik dengan rasa yang luar biasa.",
@@ -171,10 +172,10 @@ export default {
         {
           id: 23,
           name: "Fruit Blend Strawberry",
-          image: "../fruitbland_strawberry.jpg",
+          image: "/assets/images/product/fruit-bland/fruitbland_strawberry.jpg",
           price: "115,000",
           category: "fruitBlend",
-          info: "Juicy, cerah, dan rasa manis yang tepat;  tidak heran jika stroberi segar adalah favorit di musim panas.  Nikmati sensasi musim panas sepanjang tahun ketika Anda menggunakan Genova Fruit Blend Strawberry untuk membuat mocktail, lemonade, es teh, dan smoothie. GENOVA Fruit Blend Strawberry memberikan rasa strawberry yang menyegarkan dan juicy..!",
+          info: "Juicy, cerah, dan rasa manis yang tepat;  tidak heran jika stroberi segar adalah favorit di musim panas.  Nikmati sensasi musim panas sepanjang tahun ketika Anda menggunakan Genova Fruit Blend Strawberry untuk membuat mocktail, lemonade, es teh, dan smoothie. GENOVA Fruit Blend Strawberry memberikan rasa strawberry yang menyegarkan dan juicy/assets/images/product/powder!",
           link: "https://www.tokopedia.com/genovaindonesia/genova-fruit-blend-strawberry-750-ml-fruit-puree?extParam=whid%3D8872969",
           packaging: "Botol 750 ml",
           weight: "1.4 kg",
@@ -186,27 +187,26 @@ export default {
         },
       ],
       breakpoints: {
-        400: {
-          itemsToShow: 1,
-          snapAlign: "center",
-        },
-        700: {
+        600: {
           itemsToShow: 2,
-          snapAlign: "center",
+          snapAlign: "start",
         },
-
-        1024: {
+        800: {
           itemsToShow: 3,
+          snapAlign: "start",
+        },
+        1024: {
+          itemsToShow: 4,
           snapAlign: "start",
         },
       },
       settings: {
         itemsToShow: 1,
-        snapAlign: "center",
+        snapAlign: "start",
       },
     };
   },
 };
 </script>
 
-<style></style>
+<style scoped></style>

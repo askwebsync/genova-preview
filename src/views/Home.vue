@@ -1,13 +1,11 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="">
+  <section>
     <HomepageBanner />
-    <div class="flex flex-col gap-6">
-      <TrendingProducts />
-      <NewProducts />
-      <HomepageProducts />
-    </div>
-  </div>
+    <TrendingProducts />
+    <NewProducts />
+    <HomepageProducts />
+  </section>
 </template>
 
 <script>
@@ -33,7 +31,7 @@ export default {
       function () {
         this.isLoaded = !this.isLoaded;
       }.bind(this),
-      4500
+      2500
     );
   },
 };

@@ -16,6 +16,21 @@
   box-sizing: border-box;
 }
 
+.app-main {
+  flex: 1;
+}
+
+.app-footer {
+  margin-top: auto;
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 li>a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -37,6 +52,10 @@ h3 {
 h4 {
   font-family: "Fuzzy Bubbles", cursive;
   font: 400;
+}
+
+.text-price {
+  color: #494945;
 }
 
 p {
@@ -113,18 +132,6 @@ p {
 .border-yellow {
   border-style: solid;
   border-color: #bdb76b;
-}
-
-.z {
-  z-index: -2;
-}
-
-.zsatu {
-  z-index: 0;
-}
-
-.zdua {
-  z-index: 100001 !important;
 }
 
 .carousel-indicators [data-bs-target] {
