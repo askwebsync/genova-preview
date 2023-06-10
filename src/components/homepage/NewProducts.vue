@@ -1,27 +1,30 @@
-<!-- eslint-disable vue/require-v-for-key -->
-<!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="container mx-auto px-4 py-6 md:px-8 lg:px-10">
-    <div class="flex flex-row">
-      <h1 class="pcolor mb-1 text-xl lg:text-2xl">New Flavour</h1>
-    </div>
-    <hr class="h-1 rounded w-32 background-yellow border-0" />
-    <div class="justify-items-center justify-center my-6">
-      <carousel :settings="settings" :breakpoints="breakpoints" class="">
+  <div class="px-4 py-3 md:py-6 md:px-8 lg:px-24 lg:py-12">
+    <div class="flex flex-col gap-4 md:gap-8 lg:gap-12">
+      <div class="flex flex-col items-center lg:items-start">
+        <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">New Flavour</h1>
+        <hr
+          class="h-1 rounded w-full lg:w-40 background-yellow border-0 mx-auto lg:mx-0"
+        />
+      </div>
+      <carousel :settings="settings" :breakpoints="breakpoints">
         <slide v-for="product in products" :key="product.id">
-          <div class="md:p-5 md:mx-4 mb-3 carousel__item">
+          <div class="flex flex-col items-center px-4 py-5 gap-5">
             <img
               :src="product.image"
               :alt="product.name"
-              class="w-full h-52 md:h-48 object-contain rounded-t-xl"
+              class="w-full h-64 object-cover rounded-t-xl"
             />
-            <div class="px-4 py-5">
-              <h2
-                class="text-lg lg:text-xl tracking-tighter text-black font-medium"
-              >
-                {{ product.name }}
-              </h2>
-              <p class="text-lg text-gray-600">RP.{{ product.price }}</p>
+            <div class="flex flex-col items-center px-4 py-6 gap-5">
+              <div class="">
+                <h3 class="text-lg lg:text-xl tracking-tighter text-black">
+                  {{ product.name }}
+                </h3>
+                <p class="text-md md:text-lg lg:text-xl">
+                  RP.{{ product.price }}
+                </p>
+              </div>
+
               <router-link
                 class="focus:outline-none"
                 :to="{
@@ -44,11 +47,11 @@
                   },
                 }"
               >
-                <div class="mt-3 md:mt-5">
+                <div class="">
                   <button
                     class="rounded-lg px-3 py-2 md:px-4 md:py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
                   >
-                    Buy
+                    Buy Now
                   </button>
                 </div>
               </router-link>
@@ -65,7 +68,6 @@
 </template>
 
 <script>
-// If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 
@@ -203,11 +205,11 @@ export default {
           itemsToShow: 2,
           snapAlign: "start",
         },
-        800: {
+        1100: {
           itemsToShow: 3,
           snapAlign: "start",
         },
-        1024: {
+        1200: {
           itemsToShow: 4,
           snapAlign: "start",
         },
@@ -222,40 +224,6 @@ export default {
 </script>
 
 <style>
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  background: var(--vc-nav-background);
-  border-radius: var(--vc-nav-border-radius);
-  width: var(--vc-nav-width);
-  height: var(--vc-nav-height);
-  text-align: center;
-  font-size: var(--vc-nav-height);
-  padding: 0;
-  color: var(--vc-nav-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: revert;
-  position: absolute;
-  border: 0;
-  cursor: pointer;
-  margin: 0 5px;
-  top: 33% !important;
-  transform: translateY(-50%);
-}
-.carousel__next {
-  right: -20px;
-  background-color: #bdb76b !important;
-}
-.carousel__prev {
-  left: -20px;
-  background-color: #bdb76b !important;
-}
-.carousel__icon {
-  width: 30px;
-  height: 30px;
-  fill: white !important;
-}
 button,
 [type="button"],
 [type="reset"],

@@ -23,10 +23,10 @@ export default {
     return {
       slideIndex: 1,
       slides: [
-        { src: "/assets/images/banner/home1.png", alt: "Image1" },
-        { src: "/assets/images/banner/home_2.png", alt: "Image2" },
-        { src: "/assets/images/banner/home_3.png", alt: "Image3" },
-        { src: "/assets/images/banner/home4.png", alt: "Image4" },
+        { src: "/assets/images/banner/Homepage/1.jpg", alt: "Image1" },
+        { src: "/assets/images/banner/Homepage/2.jpg", alt: "Image2" },
+        { src: "/assets/images/banner/Homepage/3.jpg", alt: "Image3" },
+        { src: "/assets/images/banner/Homepage/4.jpg", alt: "Image4" },
       ],
     };
   },
@@ -93,18 +93,20 @@ export default {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 10px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  background: rgba(43, 43, 40, 0.8);
+  border-radius: 50%; /* Use 50% to create a full circle */
   user-select: none;
+  margin-left: 10px; /* Add left margin of 10px */
+  margin-right: 10px; /* Add right margin of 10px */
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 .prev:hover,
@@ -125,8 +127,10 @@ export default {
   height: 10px;
   width: 10px;
   margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  background: #c79e2a;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 2px #000000;
+  border-radius: 20px;
   display: inline-block;
   transition: background-color 0.6s ease;
 }

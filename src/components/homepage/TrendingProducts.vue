@@ -1,70 +1,70 @@
-<!-- eslint-disable vue/require-v-for-key -->
-<!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="container mx-auto px-4 py-6 md:px-8 lg:px-10">
-    <div class="flex flex-col gap-10 lg:gap-20">
+  <div class="px-4 py-3 md:py-6 md:px-8 lg:px-24 lg:py-12">
+    <div class="flex flex-col gap-4 md:gap-8 lg:gap-12">
       <div class="flex flex-col items-center lg:items-start">
         <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">
           Trending Flavour
         </h1>
         <hr
-          class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
+          class="h-1 rounded w-full lg:w-40 background-yellow border-0 mx-auto lg:mx-0"
         />
       </div>
-      <div class="justify-items-center justify-center my-6">
-        <carousel :settings="settings" :breakpoints="breakpoints" class="">
-          <slide v-for="product in products" :key="product.id">
-            <div class="carousel__item">
-              <img
-                :src="product.image"
-                :alt="product.name"
-                class="w-full h-52 md:h-48 object-contain rounded-t-xl z"
-              />
-              <div class="flex flex-col px-4 py-5 gap-3">
-                <h2
-                  class="text-lg lg:text-xl tracking-tighter text-black font-medium"
-                >
+      <carousel :settings="settings" :breakpoints="breakpoints">
+        <slide v-for="product in products" :key="product.id">
+          <div class="flex flex-col items-center px-4 py-5 gap-5">
+            <img
+              :src="product.image"
+              :alt="product.name"
+              class="w-full h-64 object-cover rounded-t-xl"
+            />
+            <div class="flex flex-col items-center px-4 py-6 gap-5">
+              <div class="">
+                <h3 class="text-lg lg:text-xl tracking-tighter text-black">
                   {{ product.name }}
-                </h2>
-                <p class="text-lg text-price">RP.{{ product.price }}</p>
-                <router-link
-                  :to="{
-                    name: 'productDetailPage',
-                    query: {
-                      dataProduk: JSON.stringify({
-                        name: product.name,
-                        price: product.price,
-                        category: product.category,
-                        info: product.info,
-                        packaging: product.packaging,
-                        weight: product.weight,
-                        color: product.color,
-                        image: product.image,
-                        link: product.link,
-                        serving: product.serving,
-                        tasting: product.tasting,
-                        penyimpanan: product.penyimpanan,
-                      }),
-                    },
-                  }"
-                >
-                  <div class="">
-                    <button
-                      class="rounded-lg px-6 py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
-                    >
-                      Buy
-                    </button>
-                  </div>
-                </router-link>
+                </h3>
+                <p class="text-md md:text-lg lg:text-xl">
+                  RP.{{ product.price }}
+                </p>
               </div>
-            </div>
-          </slide>
 
-          <template #addons>
-            <navigation />
-          </template>
-        </carousel>
-      </div>
+              <router-link
+                class="focus:outline-none"
+                :to="{
+                  name: 'productDetailPage',
+                  query: {
+                    dataProduk: JSON.stringify({
+                      name: product.name,
+                      price: product.price,
+                      category: product.category,
+                      info: product.info,
+                      packaging: product.packaging,
+                      weight: product.weight,
+                      color: product.color,
+                      image: product.image,
+                      link: product.link,
+                      serving: product.serving,
+                      tasting: product.tasting,
+                      penyimpanan: product.penyimpanan,
+                    }),
+                  },
+                }"
+              >
+                <div class="">
+                  <button
+                    class="rounded-lg px-3 py-2 md:px-4 md:py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </router-link>
+            </div>
+          </div>
+        </slide>
+
+        <template #addons>
+          <navigation />
+        </template>
+      </carousel>
     </div>
   </div>
 </template>
@@ -74,8 +74,7 @@ import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
-  name: "Trending Products",
+  name: "TrendingProduct",
   components: {
     Carousel,
     Slide,
@@ -191,11 +190,11 @@ export default {
           itemsToShow: 2,
           snapAlign: "start",
         },
-        800: {
+        1100: {
           itemsToShow: 3,
           snapAlign: "start",
         },
-        1024: {
+        1200: {
           itemsToShow: 4,
           snapAlign: "start",
         },
@@ -209,4 +208,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style>
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  background-color: #bdb76b;
+}
+</style>

@@ -43,10 +43,12 @@ h1 {
 
 h2 {
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
 h4 {
@@ -61,14 +63,15 @@ h4 {
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  color: #494945;
 }
 
 .background-yellow {
-  background: #bdb76b;
+  background: #C79E2A
 }
 
 .background-navbar {
-  background-color: #bdb76b;
+  background-color: #C79E2A
 }
 
 .background-gray {
@@ -76,15 +79,15 @@ p {
 }
 
 .pcolor {
-  color: #bdb76b;
+  color: #C79E2A
 }
 
 ::placeholder {
-  color: #bdb76b;
+  color: #C79E2A
 }
 
 :-ms-input-placeholder {
-  color: #bdb76b;
+  color: #C79E2A
 }
 
 .card-color-satu {
@@ -131,29 +134,8 @@ p {
 
 .border-yellow {
   border-style: solid;
-  border-color: #bdb76b;
+  border-color: #C79E2A
 }
-
-.carousel-indicators [data-bs-target] {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  -webkit-text-indent: -999px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: black !important;
-  background-clip: padding-box;
-  border: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  opacity: 0.5;
-  transition: opacity 0.6s ease;
-}
-
 
 .fade-enter-active {
   animation: coming 0.5s;
@@ -186,4 +168,177 @@ p {
     transform: translateX(0px);
     opacity: 1;
   }
+}
+
+:root {
+  /* Color */
+  --vc-clr-primary: #000;
+  --vc-clr-secondary: #090f207f;
+  --vc-clr-white: #ffffff;
+  /* Icon */
+  --vc-icn-width: 1.2em;
+  /* Navigation */
+  --vc-nav-width: 30px;
+  --vc-nav-height: 30px;
+  --vc-nav-border-radius: 0;
+  --vc-nav-color: var(--vc-clr-primary);
+  --vc-nav-color-hover: var(--vc-clr-secondary);
+  --vc-nav-background: transparent;
+  /* Pagination */
+  --vc-pgn-width: 12px;
+  --vc-pgn-height: 4px;
+  --vc-pgn-margin: 4px;
+  --vc-pgn-border-radius: 0;
+  --vc-pgn-background-color: var(--vc-clr-secondary);
+  --vc-pgn-active-color: var(--vc-clr-primary);
+}
+
+.carousel__item {
+  min-height: 200px;
+  width: 100%;
+  background-color: var(--vc-clr-primary);
+  color: var(--vc-clr-white);
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  background: var(--vc-nav-background);
+  border-radius: var(--vc-nav-border-radius);
+  width: var(--vc-nav-width);
+  height: var(--vc-nav-height);
+  text-align: center;
+  font-size: var(--vc-nav-height);
+  padding: 0;
+  color: var(--vc-nav-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: revert;
+  position: absolute;
+  border: 0;
+  cursor: pointer;
+  margin: 0 5px;
+  top: 33% !important;
+  transform: translateY(-50%);
+}
+
+.carousel__prev:hover,
+.carousel__next:hover {
+  color: var(--vc-nav-color-hover);
+}
+
+.carousel__next--disabled,
+.carousel__prev--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.carousel__next {
+  right: -10px;
+  background-color: #bdb76b !important;
+}
+
+.carousel__prev {
+  left: -10px;
+  background-color: #bdb76b !important;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .carousel__next {
+    right: -20px !important;
+  }
+
+  .carousel__prev {
+    left: -20px !important;
+  }
+}
+
+.carousel--rtl .carousel__prev {
+  left: auto;
+  right: 0;
+}
+
+.carousel--rtl .carousel__next {
+  right: auto;
+  left: 0;
+}
+
+.carousel {
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  touch-action: pan-y;
+  overscroll-behavior: none;
+}
+
+.carousel.is-dragging {
+  touch-action: none;
+}
+
+.carousel * {
+  box-sizing: border-box;
+}
+
+.carousel__track {
+  display: flex;
+  padding: 0 !important;
+  position: relative;
+}
+
+.carousel__viewport {
+  overflow: hidden;
+}
+
+.carousel__sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.carousel__icon {
+  width: 30px;
+  height: 30px;
+  fill: white !important;
+}
+
+.carousel__slide {
+  scroll-snap-stop: auto;
+  flex-shrink: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Fix iOS scrolling #22 */
+  transform: translateZ(0);
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  -webkit-text-indent: -999px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: black !important;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
 }
