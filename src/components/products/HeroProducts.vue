@@ -1,31 +1,28 @@
 <template>
-  <section class="">
+  <section>
     <div
-      class="z relative w-full height-banner background flex items-center justify-center text-center bg-cover bg-center opacity-75"
+      class="relative w-full height-banner background flex items-center justify-center text-center bg-cover bg-center opacity-75"
     >
-      <main class="px-4 sm:px-6 lg:px-8">
-        <div class="text-center border-h2 p-2">
+      <div class="text-center bg-recipe p-2">
+        <div class="border-h2 px-4 py-3">
           <h2
-            class="text-4xl tracking-tight leading-10 font-medium sm:text-5xl text-white sm:leading-none md:text-6xl"
+            class="text-2xl md:text-3xl tracking-tight text-white sm:leading-none"
           >
-            Genova Indonesia Product
+            Genova Product
           </h2>
         </div>
-      </main>
+      </div>
     </div>
   </section>
 </template>
 <script>
 export default {
   components: {},
-  data() {
-    return {};
-  },
 };
 </script>
 <style scoped>
 .background {
-  background-image: url(../../assets/images/banner/product-page-banner.png);
+  background-image: url(../../assets/images/banner/Product/product-page-banner.jpg);
 }
 .border-h2 {
   border: 2px solid #997f11;
@@ -35,8 +32,9 @@ h2 {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 43px;
-  line-height: 160%;
   color: #997f11;
+}
+.bg-recipe {
+  background: rgba(255, 255, 255, 0.65);
 }
 </style>

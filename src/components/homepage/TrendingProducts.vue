@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-12">
+  <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
     <div class="flex flex-col gap-4 md:gap-8 lg:gap-12">
       <div class="flex flex-col items-center lg:items-start">
         <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">
@@ -15,7 +15,7 @@
             <img
               :src="product.image"
               :alt="product.name"
-              class="w-auto h-60 md:h-64 object-cover"
+              class="w-auto h-60 lg:h-64 object-cover"
             />
             <div class="flex flex-col items-center px-4 py-4 md:py-6 gap-5">
               <div class="flex flex-col gap-1">

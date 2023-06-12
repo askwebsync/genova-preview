@@ -124,9 +124,9 @@ export default {
 
 .dot {
   cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
   background: #c79e2a;
   border: 1px solid #ffffff;
   box-shadow: 0px 0px 2px #000000;

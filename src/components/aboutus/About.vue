@@ -90,7 +90,8 @@
 
 <style scoped>
 .about-section {
-  background: url(/homepage-banner.png) no-repeat left;
+  background: url(../../../public/assets/images/banner/About/About-Banner.jpeg)
+    no-repeat left;
   background-size: fill;
   background-position: center center;
   background-color: #fdfdfd;
