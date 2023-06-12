@@ -1,6 +1,6 @@
 <template>
   <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
-    <div class="flex flex-col gap-4 md:gap-8 lg:gap-12">
+    <div class="flex flex-col gap-8 lg:gap-12">
       <div class="flex flex-col items-center lg:items-start">
         <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">New Flavour</h1>
         <hr

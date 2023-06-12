@@ -31,7 +31,7 @@ export default {
       function () {
         this.isLoaded = !this.isLoaded;
       }.bind(this),
-      2500
+      2000
     );
   },
 };

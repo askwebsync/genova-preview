@@ -63,9 +63,9 @@
         </li>
       </ul>
       <div class="contain md:w-1/6">
-        <div class="pt-3 relative w-full">
+        <div class="pt-5 md:pt-0 relative w-full">
           <input
-            class="border-2 border-yellow h-10 px-5 rounded-lg text-sm hover:outline-none focus:outline-none"
+            class="border-2 border-yellow h-12 px-5 rounded-lg text-sm hover:outline-none focus:outline-none"
             placeholder="Search Item"
             type="text"
             v-model="search"
@@ -73,7 +73,10 @@
             @blur="toggle = false"
             @focus="toggle = true"
           />
-          <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+          <button
+            type="submit"
+            class="absolute right-0 top-0 mt-8 md:mt-3 mr-4 md:mr-2"
+          >
             <svg
               class="pcolor h-4 w-4 fill-current"
               xmlns="http://www.w3.org/2000/svg"

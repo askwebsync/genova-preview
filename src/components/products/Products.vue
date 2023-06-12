@@ -10,16 +10,13 @@
             class="h-1 rounded w-full lg:w-32 bg-black border-0 mx-auto lg:mx-0"
           />
         </div>
-        <div
-          class="grid grid-cols-1 gap-12 lg:gap-24 md:grid-cols-3 px-10 sm:px-20 md:px-0"
-        >
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-3 lg:gap-24">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home px-2 py-2"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home px-5 py-10"
           >
             <router-link :to="{ name: 'fruit-bland' }">
               <div class="cursor-pointer">
                 <figure>
-                  <!-- Image -->
                   <img
                     src="/assets/images/product/fruit-bland/fruitbland_pineapple.png"
                     alt="Product"
@@ -27,7 +24,6 @@
                   />
 
                   <figcaption class="p-4 center">
-                    <!-- Title -->
                     <h2
                       class="mb-2 text-lg lg:text-xl tracking-tight text-black"
                     >
@@ -39,7 +35,7 @@
             </router-link>
           </div>
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home px-2 py-2"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home px-5 py-10"
           >
             <router-link :to="{ name: 'flavoured-syrup' }">
               <div class="cursor-pointer">
@@ -64,12 +60,11 @@
             </router-link>
           </div>
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home px-2 py-2"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home px-5 py-10"
           >
             <router-link :to="{ name: 'powder-syrup' }">
               <div class="cursor-pointer">
                 <figure>
-                  <!-- Image -->
                   <img
                     src="/assets/images/product/powder/powder_tiramisu.png"
                     alt="Product"
@@ -96,14 +91,5 @@
 <script>
 export default {
   components: {},
-  data() {
-    return {};
-  },
 };
 </script>
-<style scoped>
-.shadow-page-product {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-</style>
