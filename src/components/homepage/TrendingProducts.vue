@@ -12,14 +12,16 @@
       <carousel :settings="settings" :breakpoints="breakpoints">
         <slide v-for="product in products" :key="product.id">
           <div class="flex flex-col items-center px-4 py-4 md:py-5">
-            <img
-              :src="product.image"
-              :alt="product.name"
-              class="w-auto h-52 lg:h-56 object-cover"
-            />
+            <div class="product-container">
+              <img
+                :src="product.image"
+                :alt="product.name"
+                class="w-auto h-52 lg:h-56 object-cover"
+              />
+            </div>
             <div class="flex flex-col items-center px-4 py-4 md:py-6 gap-5">
               <div class="flex flex-col gap-1">
-                <h3 class="text-lg lg:text-xl tracking-tighter text-black">
+                <h3 class="text-lg lg:text-xl">
                   {{ product.name }}
                 </h3>
                 <p class="text-md md:text-lg lg:text-xl">
@@ -49,7 +51,7 @@
                 }"
               >
                 <button
-                  class="rounded px-3 py-2 md:px-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold border-radius-6"
+                  class="rounded px-3 py-2 md:px-4 bg-button-homepage hover:bg-yellow-600 duration-300 text-white font-bold border-radius-6"
                 >
                   Buy Now
                 </button>
@@ -205,11 +207,19 @@ export default {
 };
 </script>
 
-<style>
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  background-color: #bdb76b;
+<style scoped>
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  color: #2b2b28;
+}
+.product-container {
+  transition: all 0.3s;
+}
+
+.product-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 2px #ccc;
 }
 </style>

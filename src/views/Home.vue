@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="bg-gray-50">
+  <section class="bg-gray-100">
     <HomepageBanner />
     <TrendingProducts />
     <NewProducts />

@@ -9,14 +9,13 @@
         <hr
           class="h-1 rounded w-full lg:w-40 background-yellow border-0 mx-auto lg:mx-0"
         />
-        <!-- <img src="/assets/images/icon/star.png" class="ml-4" /> -->
       </div>
       <div
-        class="grid grid-cols-1 gap-12 px-10 sm:px-20 md:px-0 sm:grid-cols-2 md:grid-cols-3 lg:gap-24"
+        class="grid grid-cols-1 gap-12 px-10 sm:px-20 md:px-0 sm:grid-cols-2 md:grid-cols-3 lg:gap-36"
       >
         <router-link :to="{ name: 'fruit-bland' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home px-2 py-3 md:px-4 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:px-4 md:py-6 gap-6"
           >
             <img
               src="/assets/images/product/fruit-bland/fruitbland_pineapple.png"
@@ -36,7 +35,7 @@
         </router-link>
         <router-link :to="{ name: 'flavoured-syrup' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home px-2 py-3 md:px-4 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:px-4 md:py-6 gap-6"
           >
             <img
               src="/assets/images/product/syrup/syrup_bluecuracao.png"
@@ -56,7 +55,7 @@
         </router-link>
         <router-link :to="{ name: 'powder-syrup' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home px-2 py-3 md:px-4 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:px-4 md:py-6 gap-6"
           >
             <img
               src="/assets/images/product/powder/powder_tiramisu.png"
@@ -91,5 +90,11 @@ h2 {
   font-style: normal;
   font-weight: 500;
   color: #2b2b28;
+}
+.container-animation {
+  transition: opacity 0.3s ease;
+}
+.container-animation:hover {
+  opacity: 0.8;
 }
 </style>
