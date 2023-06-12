@@ -23,7 +23,7 @@
               <img
                 src="/assets/images/product/fruit-bland/fruitbland_pineapple.png"
                 alt="Product"
-                class="w-auto h-60 lg:h-64 object-cover"
+                class="w-auto h-52 lg:h-56 object-cover"
               />
               <figcaption class="flex flex-col py-4 px-2 center">
                 <!-- Title -->
@@ -49,7 +49,7 @@
               <img
                 src="/assets/images/product/syrup/syrup_bluecuracao.png"
                 alt="Product"
-                class="w-auto h-60 lg:h-64 object-cover"
+                class="w-auto h-52 lg:h-56 object-cover"
               />
               <figcaption class="flex flex-col py-4 px-2 center">
                 <h2 class="text-lg lg:text-xl tracking-tighter text-black">
@@ -74,7 +74,7 @@
               <img
                 src="/assets/images/product/powder/powder_tiramisu.png"
                 alt="Product"
-                class="w-auto h-60 lg:h-64 object-cover"
+                class="w-auto h-52 lg:h-56 object-cover"
               />
 
               <figcaption class="flex flex-col py-4 px-2 center">

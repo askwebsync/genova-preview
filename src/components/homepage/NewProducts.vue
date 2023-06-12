@@ -13,7 +13,7 @@
             <img
               :src="product.image"
               :alt="product.name"
-              class="w-auto h-60 lg:h-64 object-cover"
+              class="w-auto h-52 lg:h-56 object-cover"
             />
             <div class="flex flex-col items-center px-4 py-6 gap-5">
               <div class="flex flex-col gap-1">

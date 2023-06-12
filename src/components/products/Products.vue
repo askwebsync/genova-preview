@@ -23,7 +23,7 @@
                   <img
                     src="/assets/images/product/fruit-bland/fruitbland_pineapple.png"
                     alt="Product"
-                    class="w-auto h-60 lg:h-64 object-cover"
+                    class="w-auto h-52 lg:h-56 object-cover"
                   />
 
                   <figcaption class="p-4 center">
@@ -48,7 +48,7 @@
                   <img
                     src="/assets/images/product/syrup/syrup_bluecuracao.png"
                     alt="Product"
-                    class="w-auto h-60 lg:h-64 object-cover"
+                    class="w-auto h-52 lg:h-56 object-cover"
                   />
 
                   <figcaption class="p-4 center">
@@ -73,7 +73,7 @@
                   <img
                     src="/assets/images/product/powder/powder_tiramisu.png"
                     alt="Product"
-                    class="w-auto h-60 lg:h-64 object-cover"
+                    class="w-auto h-52 lg:h-56 object-cover"
                   />
 
                   <figcaption class="p-4 center">
