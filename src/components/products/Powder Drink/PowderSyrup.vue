@@ -138,7 +138,7 @@ export default {
         {
           id: 1,
           name: "Powder Avocado",
-          image: "/assets/images/product/powder/powder_avocado.jpg",
+          image: "/assets/images/product/powder/powder_avocado.png",
           price: "150,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -155,7 +155,7 @@ export default {
         {
           id: 2,
           name: "Powder Cappuccino",
-          image: "/assets/images/product/powder/powder_cappuccino.jpg",
+          image: "/assets/images/product/powder/powder_cappuccino.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -172,7 +172,7 @@ export default {
         {
           id: 3,
           name: "Powder Charcoal",
-          image: "/assets/images/product/powder/powder_charcoal.jpg",
+          image: "/assets/images/product/powder/powder_charcoal.png",
           price: "159,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -189,7 +189,7 @@ export default {
         {
           id: 4,
           name: "Powder Chocolate",
-          image: "/assets/images/product/powder/powder_chocolateclassic.jpg",
+          image: "/assets/images/product/powder/powder_chocolateclassic.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -206,7 +206,7 @@ export default {
         {
           id: 5,
           name: "Powder Cookies",
-          image: "/assets/images/product/powder/powder_cookiescream.jpg",
+          image: "/assets/images/product/powder/powder_cookiescream.png",
           price: "155,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -223,7 +223,7 @@ export default {
         {
           id: 6,
           name: "Powder Cotton Candy",
-          image: "/assets/images/product/powder/powder_cottoncandy.jpg",
+          image: "/assets/images/product/powder/powder_cottoncandy.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -240,7 +240,7 @@ export default {
         {
           id: 7,
           name: "Powder Dark Chocolate",
-          image: "/assets/images/product/powder/powder_darkchocolate.jpg",
+          image: "/assets/images/product/powder/powder_darkchocolate.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -257,7 +257,7 @@ export default {
         {
           id: 8,
           name: "Powder Frappe Base",
-          image: "/assets/images/product/powder/powder_frappebase.jpg",
+          image: "/assets/images/product/powder/powder_frappebase.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -274,7 +274,7 @@ export default {
         {
           id: 9,
           name: "Powder Greentea",
-          image: "/assets/images/product/powder/powder_greentea.jpg",
+          image: "/assets/images/product/powder/powder_greentea.png",
           price: "150,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -291,7 +291,7 @@ export default {
         {
           id: 10,
           name: "Powder Macchiato",
-          image: "/assets/images/product/powder/powder_macchiato.jpg",
+          image: "/assets/images/product/powder/powder_macchiato.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -308,7 +308,7 @@ export default {
         {
           id: 11,
           name: "Powder Matcha Latte",
-          image: "/assets/images/product/powder/powder_matchalatte.jpg",
+          image: "/assets/images/product/powder/powder_matchalatte.png",
           price: "169,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -325,7 +325,7 @@ export default {
         {
           id: 12,
           name: "Powder Matcha Premium",
-          image: "/assets/images/product/powder/powder_matchapremium.jpg",
+          image: "/assets/images/product/powder/powder_matchapremium.png",
           price: "245,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -342,7 +342,7 @@ export default {
         {
           id: 13,
           name: "Powder Mocha",
-          image: "/assets/images/product/powder/powder_mocha.jpg",
+          image: "/assets/images/product/powder/powder_mocha.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -359,7 +359,7 @@ export default {
         {
           id: 14,
           name: "Powder Mochaccino",
-          image: "/assets/images/product/powder/powder_mochaccino.jpg",
+          image: "/assets/images/product/powder/powder_mochaccino.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -376,7 +376,7 @@ export default {
         {
           id: 15,
           name: "Powder Red Velvet",
-          image: "/assets/images/product/powder/powder_redvelvet.jpg",
+          image: "/assets/images/product/powder/powder_redvelvet.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -393,7 +393,7 @@ export default {
         {
           id: 16,
           name: "Powder Swiss Chocholate",
-          image: "/assets/images/product/powder/powder_swisschocholate.jpg",
+          image: "/assets/images/product/powder/powder_swisschocholate.png",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk : - Untuk Meng-explore Minuman Terkini - Pembuatan Kue - Pembuatan Minuman - Aneka Olahan Lainnya, Brand : Genova - Naturally Flavored Sertifikat Halal MUI : YA",
@@ -408,7 +408,7 @@ export default {
         {
           id: 17,
           name: "Powder Taro",
-          image: "/assets/images/product/powder/powder_taro.jpg",
+          image: "/assets/images/product/powder/powder_taro.png",
           price: "139,000",
           category: 0,
           info: "Cocok Digunakan untuk : - Untuk Meng-explore Minuman Terkini - Pembuatan Kue - Pembuatan Minuman - Aneka Olahan Lainnya, Brand : Genova - Naturally Flavored Sertifikat Halal MUI : YA",
@@ -423,7 +423,7 @@ export default {
         {
           id: 18,
           name: "Powder Thai Tea",
-          image: "/assets/images/product/powder/powder_thaitea.jpg",
+          image: "/assets/images/product/powder/powder_thaitea.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
@@ -440,7 +440,7 @@ export default {
         {
           id: 19,
           name: "Powder Tiramisu",
-          image: "/assets/images/product/powder/powder_tiramisu.jpg",
+          image: "/assets/images/product/powder/powder_tiramisu.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",

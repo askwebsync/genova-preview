@@ -168,7 +168,7 @@ export default {
         {
           id: 26,
           name: "Syrup Pineapple",
-          image: "/assets/images/product/syrup/syrup_pineapple.jpg",
+          image: "/assets/images/product/syrup/syrup_pineapple.png",
           price: "105,000",
           category: "Flavoured",
           info: "Nanas diyakini berasal dari hutan hujan Brasil. Nanas dipanen oleh suku asli dan menyebar ke seluruh Amerika Selatan dan Tengah. Ketika Christopher Columbus mendarat di dunia baru pada tahun 1493, orang Spanyol menamai buah itu 'piña' karena kemiripannya dengan biji pinus dari pohon konifer. Nanas adalah buah oval besar yang tumbuh di negara-negara tropis. Buah ini manis, berair, dan kuning di dalamnya, dan memiliki kulit kecoklatan yang tebal. Sirup Pineapple GENOVA dibuat untuk menambahkan minuman anda dengan sentuhan tropis pada banyak minuman dingin, soda, dan teh.",
@@ -185,7 +185,7 @@ export default {
         {
           id: 27,
           name: "Syrup Raspberry",
-          image: "/assets/images/product/syrup/syrup_raspberry.jpg",
+          image: "/assets/images/product/syrup/syrup_raspberry.png",
           price: "105,000",
           category: "Flavoured",
           info: "Raspberry adalah buah yang asam dan manis juga lezat secara bersamaan, dan mereka tidak terlalu asam seperti blackberry. Namun, mereka bisa menjadi sedikit asam, terutama jika dipetik sebelum matang sepenuhnya. Semakin manis dan kuat rasanya, semakin matang mereka. Berry kecil berwarna dalam yang memiliki tekstur lembut, rasa manis yang lembut dan aroma yang menyenangkan. Musim puncak raspberry adalah selama pertengahan musim panas, tetapi mereka tersedia sepanjang tahun di beberapa pasar baik segar maupun beku. Varietas yang paling umum dan paling banyak dibudidayakan adalah Raspberry merah. Rasa sirup GENOVA Raspberry yang matang dan seimbang menjadikannya tambahan yang lezat untuk mocktail, soda, dan minuman kopi. Sirup Raspberry GENOVA menghadirkan cita rasa yang luar biasa pada es teh, mocktail special, atau minuman dingin",
@@ -202,7 +202,7 @@ export default {
         {
           id: 28,
           name: "Syrup Banana",
-          image: "/assets/images/product/syrup/syrup_banana.jpg",
+          image: "/assets/images/product/syrup/syrup_banana.png",
           price: "105,000",
           category: "Flavoured",
           info: "Buah pisang awalnya ditemukan di Asia Tenggara, terutama di India. Mereka dibawa ke barat oleh penakluk Arab pada 327 SM. dan dipindahkan dari Asia Kecil ke Afrika dan akhirnya dibawa ke Dunia Baru oleh para penjelajah dan misionaris pertama ke Karibia. Ada banyak alasan untuk menyukai pisang. Mereka mudah dibawa-bawa untuk camilan, rasanya enak, dan sarat dengan gula. Pisang tidak hanya membuat Anda tetap berenergi, tetapi juga dapat mengangkat suasana hati Anda/assets/images/product/syrup Sirup Banana GENOVA cocok untuk di buat rangkaian mocktail, minuman pencuci mulut, smoothie, kopi, cokelat, minuman susu beraroma, dan minuman buah lainnya",
@@ -218,7 +218,7 @@ export default {
         {
           id: 29,
           name: "Syrup Blue Curacao",
-          image: "/assets/images/product/syrup/syrup_bluecuracao.jpg",
+          image: "/assets/images/product/syrup/syrup_bluecuracao.png",
           price: "105,000",
           category: "Flavoured",
           info: "Konon tempat kelahiran minuman ini adalah pulau Curacao, yang terletak di Laut Karibia dan merupakan bagian dari Kepulauan Belanda. Di sanalah jeruk pahit tumbuh - komponen minuman tak terpisahkan. Tapi di pasar dunia, minuman itu muncul tidak begitu lama - pertama kali diluncurkan pada tahun 1920 oleh De Kiper. Syrup Blue Curaçao dikenal dengan warna biru tua, rasa jeruk asam, dan ciri khas tropis. Warna biru tua yang menakjubkan dari sirup GENOVA Blue Curaçao membangkitkan lautan yang mengarungi pantai-pantai Curaçao yang indah dan menambahkan sentuhan eksotis pada mocktail dan soda dengan aroma kulit jeruk yang aromatik dan rasa manis yang sedikit asam.",
@@ -234,7 +234,7 @@ export default {
         {
           id: 30,
           name: "Syrup Bubblegum",
-          image: "/assets/images/product/syrup/syrup_bubblegum.jpg",
+          image: "/assets/images/product/syrup/syrup_bubblegum.png",
           price: "105,000",
           category: "Flavoured",
           info: "Dalam warna biru muda yang lucu, sirup GENOVA Bubble Gum mengemas rasa nostalgia masa kanak-kanak dan faktor kesenangan yang terkait dengan penganan yang selalu populer ini. Terinspirasi oleh permen karet Babol asal Indonesia yang legendaris, GENOVA Bubble Gum menghadirkan rasa permen karet asli yang kuat dan manis.\nSyrup GENOVA Bubble Gum memungkinkan Anda membuat kombinasi mocktail baru yang tak ada habisnya. Berani tampil beda dengan sirup GENOVA Bubble Gum dan biarkan imajinasi Anda menjadi liar dengan menambahkan gelembung Anda sendiri untuk membuat soda permen karet untuk pesta anak-anak atau penembak biru cantik untuk malam anak perempuan.",
@@ -251,7 +251,7 @@ export default {
         {
           id: 31,
           name: "Syrup Butterscotch",
-          image: "/assets/images/product/syrup/syrup_butterscotch.jpg",
+          image: "/assets/images/product/syrup/syrup_butterscotch.png",
           price: "105,000",
           category: "Flavoured",
           info: "Syrup Butterscotch sebagian besar terbuat dari mentega dan gula merah, itulah sebabnya rasanya luar biasa enak. Krim kental, vanila, dan garam juga bisa ditambahkan. Gula merah memberikan rasa yang lebih kompleks karena molase yang dikandungnya, dibandingkan dengan gula pasir, yang digunakan karamel. Resep paling awal yang diketahui, pada pertengahan abad ke-19 Yorkshire, bekas tetes (molase) sebagai pengganti atau sebagai tambahan gula. Butterscotch mirip dengan gula-gula, tetapi untuk butterscotch, gula direbus hingga menjadi retak lembut panggang, tidak retak keras seperti toffee. Sering dikreditkan dengan penemuan mereka, Parkinson of Doncaster membuat permen rebus butterscotch dan menjualnya dalam kaleng, yang menjadi salah satu ekspor kota yang paling terkenal. Mereka menjadi terkenal pada tahun 1851 ketika Ratu Victoria disajikan dengan kaleng ketika dia mengunjungi kota. Saus butterscotch, terbuat dari butterscotch dan krim, digunakan sebagai taburan es krim (terutama sundae ). Sempurna sebagai topping es krim sundae yang indah, sirup GENOVA Butterscotch juga akan menciptakan minuman pencuci mulut panas dan dingin yang mewah",
@@ -267,7 +267,7 @@ export default {
         {
           id: 32,
           name: "Syrup Caramel",
-          image: "/assets/images/product/syrup/syrup_caramel.jpg",
+          image: "/assets/images/product/syrup/syrup_caramel.png",
           price: "105,000",
           category: "Flavoured",
           info: "Sirup Caramel GENOVA adalah flavour yang harus dimiliki oleh para profesional minuman, rasa karamel menghadirkan kombinasi rasa asin manis yang menggoda. Ada yang mengatakan, bahwa sejarah karamel bermula lebih dari seribu tahun yang lalu ke tahun 1000 M ketika suguhan manis itu ditemukan. Nama karamel pada saat itu adalah 'kurat al milh', yang berarti 'bola garam yang manis'. Versi asli ini adalah jenis karamel renyah yang dibuat dengan mengkristalkan gula dalam air mendidih, yang lebih mirip dengan apa yang dikenal sebagai toffee renyah saat ini. Sekarang, banyak digunakan untuk membumbui puding, kue, dan es krim, menambahkan sentuhan kesenangan yang manis, dengan sedikit rasa asin, kombinasi menarik yang meningkatkan dan meningkatkan rasa dan aroma. GENOVA mencoba menangkap kombinasi rasa yang memabukkan ini dalam sirup terbarunya, yang sangat cocok untuk kopi dan cokelat, serta dalam mocktail dan minuman pencuci mulut. Sirup Karamel GENOVA akan menambahkan rasa yang canggih dan tak tertahankan pada minuman khas Anda dan membuat pelanggan datang kembali untuk membeli lebih banyak lagi. Syrup Genova Caramel akan menambah sentuhan pada kopi klasik Anda. Kami suka kombinasi bau gula gosong dan rasa asin di lidah saya, unik.",
@@ -284,7 +284,7 @@ export default {
         {
           id: 33,
           name: "Syrup Coconut",
-          image: "/assets/images/product/syrup/syrup_coconut.jpg",
+          image: "/assets/images/product/syrup/syrup_coconut.png",
           price: "105,000",
           category: "Flavoured",
           info: "Terinspirasi dari kelapa asli yang berasal dari negara tropis dan sub-tropis seperti Indonesia, India dan Thailand, di mana kelapa dianggap sangat diperlukan dan berguna dalam banyak hal. Rasanya yang serbaguna menyegarkan. Juga rasa manis dan intensnya cocok untuk berbagai minuman tropis. Nikmati cita rasa minuman tropis ini dengan menambahkan sirup Coconut GENOVA ke dalam mocktail, kopi, smoothie, dan fruit punch, lalu hanyut di bawah naungan pohon kelapa",
@@ -301,7 +301,7 @@ export default {
         {
           id: 34,
           name: "Syrup Ginger",
-          image: "/assets/images/product/syrup/syrup_ginger.jpg",
+          image: "/assets/images/product/syrup/syrup_ginger.png",
           price: "105,000",
           category: "Flavoured",
           info: "Sirup Genova merupakan sirup yang biasa digunakan di hotel, restaurant, dan cafe sebagai sirup gourmet. Rasa jahe yang khas dan pedas serta menghangatkan ini cocok jika dicampur dengan soda. Sirup GENOVA Ginger ini menghadirkan kepedasannya yang berani untuk dicampur mocktail, limun, es teh, dan soda buah yang eksotis. Aduk Dalam Beberapa Campuran: Sirup Jahe GENOVA menghadirkan rasa yang berani dan eksotis pada teh, limun, soda, dan koktail.",
@@ -317,7 +317,7 @@ export default {
         {
           id: 35,
           name: "Syrup Green Apple",
-          image: "/assets/images/product/syrup/syrup_greenapple.jpg",
+          image: "/assets/images/product/syrup/syrup_greenapple.png",
           price: "105,000",
           category: "Flavoured",
           info: "Buah apel adalah salah satu buah yang banyak digemari oleh masyarakat dunia. Rasanya yang manis dan segar adalah alasan yang membuat buah ini istimewa. Varietas yang paling terkenal dari jenis buah apel yaitu apel hijau yang buahnya renyah, berair dan manis asam dan sangat baik dimakan mentah atau dimasak dalam puding. Sirup apel hijau yang menyegarkan dapat lebih dinikmati dengan mencampur sirup varian asam atau manis lainnya dari Syrup Genova Syrup Green Apple GENOVA cocok juga untuk mocktail buah segar, limun, soda, dan teh dengan rasa buah apel yang menyegarkan",
@@ -334,7 +334,7 @@ export default {
         {
           id: 36,
           name: "Syrup Hazelnut",
-          image: "/assets/images/product/syrup/syrup_hazelnut.jpg",
+          image: "/assets/images/product/syrup/syrup_hazelnut.png",
           price: "105,000",
           category: "Flavoured",
           info: "Syrup Hazelnut GENOVA adalah salah satu dari tiga rasa flavour kopi spesial teratas, bersama dengan vanilla dan karamel, sirup GENOVA Hazelnut menghadirkan rasa dan aroma hazelnut yang segar dengan sentuhan almond dan vanilla. Rasanya yang gurih dan manis seringkali memanjakan lidah kita sebagai pilihan yang pas untuk mocktail penutup atau minuman manis di saat santai. Seringkali beberapa orang pasti merasa bahwa rasa hazelnut hampir mirip dengan coklat yang sama manisnya. Tanaman ini banyak tumbuh di Turki, Italia, Yunani, Spanyol, Inggris, Amerika Serikat khususnya di Washington. Saat ini produsen terbesar penghasil hazelnut di dunia adalah negara Turki. Sempurnakan minuman kopi, cokelat, dan susu Anda serta ciptakan minuman pencuci mulut yang canggih dengan rasa kacang GENOVA Hazelnut yang lebih kaya.",
@@ -351,7 +351,7 @@ export default {
         {
           id: 37,
           name: "Syrup Irish",
-          image: "/assets/images/product/syrup/syrup_irish.jpg",
+          image: "/assets/images/product/syrup/syrup_irish.png",
           price: "105,000",
           category: "Flavoured",
           info: "Syrup GENOVA Irish memiliki profil rasa yang mirip dengan krim Irlandia, minuman krim Irlandia ini cocok untuk campuran minuman kopi dan campuran susu. Syrup GENOVA Irish ini sempurna untuk membuat kopi hitam, kopi spesial, kopi susu, mocktail pencuci mulut, dan smoothie, sirup GENOVA Irish akan menambah cita rasa Irlandia pada minuman Anda!",
@@ -368,7 +368,7 @@ export default {
         {
           id: 38,
           name: "Syrup Kiwi",
-          image: "/assets/images/product/syrup/syrup_kiwi.jpg",
+          image: "/assets/images/product/syrup/syrup_kiwi.png",
           price: "105,000",
           category: "Flavoured",
           info: "Buah kiwi ini aslinya dari negeri China, menjadi populer dengan nama Kiwi karena benih ini ditanam pada 1906 oleh seorang perawat di Whanganui New Zealand, Alexander Allison dan baru pertama panen pada 1910. Pada tahun 1959, Jack Turner mengusulkan nama kiwifruit yang digunakan di seluruh dunia. Ini karena Selanida Baru dikenal dengan burung Kiwi. Tidak ada buah lain yang menawarkan warna hijau zamrud yang lebih intens daripada kiwi. Dagingnya hampir lembut dalam konsistensi dengan rasa menyegarkan yang mengingatkan pada stroberi, melon, dan pisang, namun dengan rasa manis dan sedikit asam yang unik. Cobalah Sirup GENOVA Kiwi untuk menikmati rasa buah kiwi yang unik dan warna hijau yang indah pada minuman Anda.",
@@ -384,7 +384,7 @@ export default {
         {
           id: 39,
           name: "Syrup Lemon",
-          image: "/assets/images/product/syrup/syrup_lemon.jpg",
+          image: "/assets/images/product/syrup/syrup_lemon.png",
           price: "105,000",
           category: "Flavoured",
           info: "Dari beberapa data diterangkan jika minuman lemon ini sebenarnya berasal dari Mesir yang pertama kali dibuat oleh bangsa Mesir sekitar 1.500 tahun yang lalu. Namun, ada keterangan lainnya yang berpendapat, jika minuman lemon pertama kali diperkenalkan di Perancis pada abad ke-16. Buah yang konon berasal dari kaki bukit Himalaya, timur laut India ini kemudian tersebar ke seluruh daerah Timur Tengah, Cina, Burma, benua Eropa, Amerika, bahkan juga sampai benua Afrika. Sedangkan di Irak dan Mesir, mulai 700 tahun sebelum Masehi. Syrup GENOVA Lemon ini sangat dibutuhkan oleh para bartender yang menggunakan rasa dan kenyamanan yang sebenarnya sebagai pengganti jus lemon.",
@@ -401,7 +401,7 @@ export default {
         {
           id: 40,
           name: "Syrup Lemongrass",
-          image: "/assets/images/product/syrup/syrup_lemongrass.jpg",
+          image: "/assets/images/product/syrup/syrup_lemongrass.png",
           price: "105,000",
           category: "Flavoured",
           info: "Sirup Genova merupakan sirup yang biasa digunakan di hotel, restaurant, dan cafe sebagai sirup gourmet. Dengan aroma serai yang otentik, sirup GENOVA Lemongrass ini memberikan rasa otentik yang menyegarkan, cocok untuk membuat minuman dengan sentuhan Asia! Serai adalah bahan umum yang ada di seluruh masakan Asia Tenggara, serai menjadi semakin populer di seluruh dunia. Sirup GENOVA Lemongrass memiliki aroma herbal yang menarik untuk menciptakan kelezatan yang menyegarkan. Cocok untuk dicampur dengan syrup mojito mint yg inovatif, es teh, dan banyak lagi!",
@@ -418,7 +418,7 @@ export default {
         {
           id: 41,
           name: "Syrup Lychee",
-          image: "/assets/images/product/syrup/syrup_lychee.jpg",
+          image: "/assets/images/product/syrup/syrup_lychee.png",
           price: "105,000",
           category: "Flavoured",
           info: "Lychee atau Litchi atau Buah leci adalah buah yang berasal dari pohon tropis dan sub tropis yang berasal dari daerah provinsi Fujian dan Guangdong, Cina. Kabarnya, pohon leci sudah dikembangbiakkan sejak abad ke-11 silam. Selain Cina, kawasan penghasil buah leci terbesar di dunia adalah India, Madagaskar, dan Afrika Selatan. Syrup GENOVA Lychee memiliki rasa aroma lychee yang kuat dan sensasi asam manis layaknya menikmati buah leci sehingga memiliki cita rasa sendiri khas product Genova Indonesia. Syrup GENOVA Lychee saat ini sudah menjadi sirup pilihan ter favorit pilihan customer setia Genova Indonesia. Tambahkan sirup ini untuk berbagai minuman teh, moctail, susu yakult, serta minuman dingin lainnya.",
@@ -435,7 +435,7 @@ export default {
         {
           id: 42,
           name: "Syrup Mango",
-          image: "/assets/images/product/syrup/syrup_mango.jpg",
+          image: "/assets/images/product/syrup/syrup_mango.png",
           price: "105,000",
           category: "Flavoured",
           info: "Buah mangga ternyata berasal dari India yang ditemukan oleh Alexander Agung pada tahun 327 SM yang menemukan tanaman mangga di lembah Indus, India. Hal ini mendasari anggapan bahwa mangga berasal dari India dan menyebar ke Semenanjung Malaysia, Indonesia dan sekitarnya. Buah mangga di Indonesia tidak ada setiap saat karena biasanya hanya musim di sekitar bulan Oktober hingga Desember. Sirup Mango GENOVA hadir sebagai terobosan pelengkap sempurna cita rasa sensasi tropis buah mangga. Sirup Mango GENOVA berpadu sempurna dengan campuran mocktail tropis, soda, limun, dan minuman spesial favorit Anda.",
@@ -452,7 +452,7 @@ export default {
         {
           id: 43,
           name: "Syrup Mojito",
-          image: "/assets/images/product/syrup/syrup_mojitomint.jpg",
+          image: "/assets/images/product/syrup/syrup_mojitomint.png",
           price: "105,000",
           category: "Flavoured",
           info: "Sirup Genova merupakan sirup yang biasa digunakan di hotel, restaurant, dan cafe sebagai sirup gourmet. Dengan minuman rasa Mojito Mint ini membuat pencampuran Mojito lebih mudah. Dengan sirup GENOVA Mojito Mint anda dapat mengurangi waktu dan persiapan, dan mulai menikmati minuman campuran atau minuman dingin favorit Anda. Sirup GENOVA Mojito Mint adalah tambahan yang sempurna untuk mocktail dingin, dan minuman segar lainnya",
@@ -469,7 +469,7 @@ export default {
         {
           id: 44,
           name: "Syrup Pandan",
-          image: "/assets/images/product/syrup/syrup_pandan.jpg",
+          image: "/assets/images/product/syrup/syrup_pandan.png",
           price: "105,000",
           category: "Flavoured",
           info: "Pandan di perkirakan berasal dari kepulauan di Lautan Pasifik, dengan penyebaran terbesar di Madagaskar dan Malesia. Untuk penyebarannya, Terdapat hampir di seluruh Indonesia, karena tumbuhan ini mudah tumbuh. Pandan banyak dibudidayakan karena biasa digunakan sebagai penambah rasa di banyak hidangan manis dan gurih. Sirup GENOVA Pandan memiliki aroma ringan dan menyegarkan dengan sentuhan aroma yang manis. Sangat cocok untuk membuat minuman teh susu, atau es teh sederhana dengan rasa manis yang seimbang. Sirup ini menjadi viral untuk campuran teh di Asia Tenggara hari ini dan menciptakan resep unik dengan rasa yang luar biasa.",
@@ -486,7 +486,7 @@ export default {
         {
           id: 45,
           name: "Syrup Passion Fruit",
-          image: "/assets/images/product/syrup/syrup_passionfruit.jpg",
+          image: "/assets/images/product/syrup/syrup_passionfruit.png",
           price: "105,000",
           category: "Flavoured",
           info: "Buah markisa adalah buah tropis seukuran telur dengan cangkang lunak berwarna kuning kemerahan yang membungkus biji renyah dan daging berair lembut, yang memiliki sensasi rasa yang unik juga rasa yang kuat dan harum. Buah markisa berasal dari Amerika Latin, terutama Brasil, kemudian menyebar ke daerah-daerah tropis di dunia termasuk Indonesia. Di Indonesia, markisa banyak ditanam di dataran tinggi di Goa, Malino (Sulawesi Selatan) dan Brastagi (Sumatera Utara). Untuk sensasi rasa tropis, tambahkan aroma buah dan rasa manis dan asam dari sirup Passion Fruit GENOVA ke mocktail, soda, limun, fruit punch, dan smoothie.",
@@ -503,7 +503,7 @@ export default {
         {
           id: 46,
           name: "Syrup Peach",
-          image: "/assets/images/product/syrup/syrup_peach.jpg",
+          image: "/assets/images/product/syrup/syrup_peach.png",
           price: "105,000",
           category: "Flavoured",
           info: "Buah Persik (Prunus persica) merupakan tanaman yang diperkirakan oleh para ilmuwan berasal dari Cina lebih dari 8000 tahun yang lalu. Buah persik memiliki kulit buah yang tipis dan terasa halus karena terdapat bulu halus pada permukaannya. Setiap tahun, saat musim panas menandakan kedatangan buah peach yang manis dan berair. Tetapi dengan mencampurkan resep Anda dengan rasa manis yang tidak salah lagi dari Sirup Peach GENOVA warna keemasan yang kaya, tidak harus berakhir ketika hari-hari panjang musim panas memudar. Temukan bagaimana GENOVA Peach dapat menyempurnakan minuman Anda dengan rasa buah yang lezat!",
@@ -519,7 +519,7 @@ export default {
         {
           id: 47,
           name: "Syrup Peppermint",
-          image: "/assets/images/product/syrup/syrup_peppermint.jpg",
+          image: "/assets/images/product/syrup/syrup_peppermint.png",
           price: "105,000",
           category: "Flavoured",
           info: "Salah satu rasa paling populer di dunia mixologist, sirup GENOVA Peppermint digunakan untuk membuat campuran air atau limun dan sirup yang menyegarkan Daun mint memiliki asal-usul di Eropa dan Mediterania. Orang Romawi menggunakan mint untuk bumbu masakan dan digunakan untuk menjamu tamu-tamu mereka. Ramuan segar, manis, aromatik dengan rasa dingin, mint digunakan secara luas dalam hidangan, sebagai jeli atau saus, sebagai manisan, atau untuk meningkatkan makanan penutup buah seperti, es krim atau sebagai teh. Warna beningnya dan rasa aromatik alami dari sirup GENOVA Peppermint akan membuat mocktail berlapis yang menakjubkan, teh yang menyegarkan, serta minuman cokelat dan moka yang lezat.",
@@ -536,7 +536,7 @@ export default {
         {
           id: 48,
           name: "Syrup Strawberry",
-          image: "/assets/images/product/syrup/syrup_strawberry.jpg",
+          image: "/assets/images/product/syrup/syrup_strawberry.png",
           price: "105,000",
           category: "Flavoured",
           info: "Stroberi merupakan buah yang berasal dari daerah subtropics dimana pertama kali ditemukan di daerah Chili, Amerika Serikat. Memiliki warna, rasa dan aroma yang begitu kuat ketika dirasakan. Sirup stroberi GENOVA cocok ditambahkan ke air, mint hijau, dan limun untuk membuat mixologist Strawberry serta minuman susu rasa. Buah pertama Musim Semi, stroberi kebun dibudidayakan di seluruh dunia tetapi pertama kali diperkirakan tumbuh di Brittany, Prancis pada tahun 1750-an. Strawberry adalah rasa populer dalam produk susu seperti es krim, milkshake, smoothie, dan yogurt dengan stroberi dan krim sebagai hidangan penutup musim panas terbaik, yang terkenal di konsumsi di Kejuaraan Tenis di Inggris. Tambahkan rasa suguhan musim panas klasik ini dengan mencampur sirup GENOVA Strawberry untuk membuat mocktail pencuci mulut yang memanjakan, limun yang menyegarkan, dan milkshake yang menggugah selera.",
@@ -553,7 +553,7 @@ export default {
         {
           id: 49,
           name: "Syrup Tiramisu",
-          image: "/assets/images/product/syrup/syrup_tiramisu.jpg",
+          image: "/assets/images/product/syrup/syrup_tiramisu.png",
           price: "105,000",
           category: "Flavoured",
           info: "Syrup Tiramisu awalnya terinspirasi dari sebuah cake legendaris yang nikmat yg berasal dari Siena, Italy. Syrup Tiramisu adalah krim yang nikmat dan simbol kesenangan masyarakat Italia dalam pengetahuan kuliner saat ini. Resepnya cukup sederhana, memadukan rasa biskuit, kopi, kakao, rasa marsala dan mascarpone, untuk hasil yang kaya dan creamy, penuh rasa. Sirup GENOVA Tiramisu menawarkan rasa tiramisu asli, dengan perpaduan aroma yang lembut dan menggugah selera untuk minuman istimewa yang tiada bandingnya.",

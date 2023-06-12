@@ -12,8 +12,8 @@
         :class="{ active: index + 1 === slideIndex }"
       ></span>
     </div>
-    <a class="prev" @click="plusSlides(-1)">&#10094;</a>
-    <a class="next" @click="plusSlides(1)">&#10095;</a>
+    <!-- <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+    <a class="next" @click="plusSlides(1)">&#10095;</a> -->
   </div>
 </template>
 

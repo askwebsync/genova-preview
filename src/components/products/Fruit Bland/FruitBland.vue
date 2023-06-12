@@ -136,7 +136,7 @@ export default {
         {
           id: 20,
           name: "Fruit Blend Kiwi",
-          image: "/assets/images/product/fruit-bland/fruitbland_kiwi.jpg",
+          image: "/assets/images/product/fruit-bland/fruitbland_kiwi.png",
           price: "115,000",
           category: "fruitBlend",
           info: "Velvety, sedikit asam, dan asam, buah kecil ini merupakan pemberi semangat revitalisasi yang menjadikannya sebagai tambahan yang bagus untuk menu minuman musim panas.  Bagikan keceriaan dan kesenangan dari GENOVA Fruit Blend Kiwi dalam minuman dingin, es teh, smoothie, dan soda, paling cocok untuk hari-hari ekstra panas sebagai minuman bermanfaat. Sedikit Tips dari kami Kita suka memadukannya dengan buah markisa dan irisan jeruk untuk mengawinkan rasa eksotis semuanya dalam campuran sebuah gelas.",
@@ -152,7 +152,7 @@ export default {
         {
           id: 21,
           name: "Fruit Blend Mango",
-          image: "/assets/images/product/fruit-bland/fruitbland_mango.jpg",
+          image: "/assets/images/product/fruit-bland/fruitbland_mango.png",
           price: "115,000",
           category: "fruitBlend",
           info: "Buah Tropis, manis dan sangat lezat. Kita bersyukur mangga tumbuh di pohon.  Cabut cabangnya dan nikmati rasa mangga segar yang otentik dan baru ketika Anda menambahkan GENOVA Fruit Blend Mango ke dalam teh, lemonade, smoothie, atau koktail. Jadikan minuman mu itu mangga-licious/assets/images/product/fruit-bland! GENOVA Fruit Blend Mango menghadirkan rasa mangga matang tropis dan tekstur lembut ke teh, limun, smoothie, mocktail, dan banyak lagi.",
@@ -169,7 +169,7 @@ export default {
           id: 22,
           name: "Fruit Blend Passion Fruit",
           image:
-            "/assets/images/product/fruit-bland/fruitbland_passionfruit.jpg",
+            "/assets/images/product/fruit-bland/fruitbland_passionfruit.png",
           price: "115,000",
           category: "fruitBlend",
           info: "Tidak ada yang bisa meniru cita rasa tropis seperti rasa eksotis dari buah Markisa. Buah kaya yang manis, tajam dan wangi pada dasarnya adalah rasa yang menyenangkan untuk selera anda dan GENOVA Fruit Blend Passion Fruit akan membawa kesegaran pada mocktail, lemonade, es teh, dan smoothie dalam perjalanan sensasi menyenangkan dahaga anda. Passion Fruit is Perfection/assets/images/product/fruit-bland!",
@@ -185,7 +185,7 @@ export default {
         {
           id: 23,
           name: "Fruit Blend Pineapple",
-          image: "/assets/images/product/fruit-bland/fruitbland_pineapple.jpg",
+          image: "/assets/images/product/fruit-bland/fruitbland_pineapple.png",
           price: "115,000",
           category: "fruitBlend",
           info: "Buah Nanas mencuri perhatian, bukan hanya oleh penampilan saja tetapi juga oleh jus rasa yang kuat dan asam yang membawa sensasi tropis anda di manapun anda berada di dunia. Temukan sensasi sinar matahari di GENOVA Fruit Blend Pineapple dan campur menjadi lemonade, es teh, dan smoothie untuk sentuhan tropis yang lembut.",
@@ -201,7 +201,7 @@ export default {
         {
           id: 24,
           name: "Fruit Blend Raspberry",
-          image: "/assets/images/product/fruit-bland/fruitbland_raspberry.jpg",
+          image: "/assets/images/product/fruit-bland/fruitbland_raspberry.png",
           price: "115,000",
           category: "fruitBlend",
           info: "Halus dan lezat. Selembut rasa asli, fruit blend raspberry benar-benar memberikan rasa yang luar biasa.  Nikmati rasa juicy segar dan manis dari raspberry segar ketika Anda menggunakan GENOVA Fruit Blend Raspberry untuk membuat lemonade, teh, smoothie, mocktail, dan banyak lagi. GENOVA Fruit Blend Raspberry adalah minuman lezat buah berry yang tak tertahankan segarnya dan aromanya untuk diaplikasikan pada minuman-minuman segar anda",
@@ -217,7 +217,7 @@ export default {
         {
           id: 25,
           name: "Fruit Blend Strawberry",
-          image: "/assets/images/product/fruit-bland/fruitbland_strawberry.jpg",
+          image: "/assets/images/product/fruit-bland/fruitbland_strawberry.png",
           price: "115,000",
           category: "fruitBlend",
           info: "Juicy, cerah, dan rasa manis yang tepat;  tidak heran jika stroberi segar adalah favorit di musim panas.  Nikmati sensasi musim panas sepanjang tahun ketika Anda menggunakan Genova Fruit Blend Strawberry untuk membuat mocktail, lemonade, es teh, dan smoothie. GENOVA Fruit Blend Strawberry memberikan rasa strawberry yang menyegarkan dan juicy/assets/images/product/fruit-bland!",

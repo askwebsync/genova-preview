@@ -78,6 +78,11 @@ p {
   background: lightslategray;
 }
 
+.bg-product-home {
+  background: #FFF2BB;
+  border-radius: 6px;
+}
+
 .pcolor {
   color: #C79E2A
 }
@@ -102,6 +107,10 @@ p {
 .shadow-navbar {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.shadow-home-product {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .map-responsive {
@@ -250,11 +259,31 @@ p {
 
 @media only screen and (max-width: 800px) and (min-width: 600px) {
   .carousel__next {
-    right: -20px !important;
+    right: -5px !important;
   }
 
   .carousel__prev {
-    left: -20px !important;
+    left: -5px !important;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .carousel__next {
+    right: -15px !important;
+  }
+
+  .carousel__prev {
+    left: -15px !important;
+  }
+}
+
+@media only screen and (max-width: 2400px) and (min-width: 1200px) {
+  .carousel__next {
+    right: -25px !important;
+  }
+
+  .carousel__prev {
+    left: -25px !important;
   }
 }
 

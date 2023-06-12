@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 py-3 md:py-6 md:px-8 lg:px-24 lg:py-12">
+  <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-12">
     <div class="flex flex-col gap-4 md:gap-8 lg:gap-12">
       <div class="flex flex-col items-center lg:items-start">
         <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">
@@ -11,14 +11,14 @@
       </div>
       <carousel :settings="settings" :breakpoints="breakpoints">
         <slide v-for="product in products" :key="product.id">
-          <div class="flex flex-col items-center px-4 py-5 gap-5">
+          <div class="flex flex-col items-center px-4 py-4 md:py-5">
             <img
               :src="product.image"
               :alt="product.name"
-              class="w-full h-64 object-cover rounded-t-xl"
+              class="w-auto h-60 md:h-64 object-cover"
             />
-            <div class="flex flex-col items-center px-4 py-6 gap-5">
-              <div class="">
+            <div class="flex flex-col items-center px-4 py-4 md:py-6 gap-5">
+              <div class="flex flex-col gap-1">
                 <h3 class="text-lg lg:text-xl tracking-tighter text-black">
                   {{ product.name }}
                 </h3>
@@ -26,7 +26,6 @@
                   RP.{{ product.price }}
                 </p>
               </div>
-
               <router-link
                 class="focus:outline-none"
                 :to="{
@@ -49,13 +48,11 @@
                   },
                 }"
               >
-                <div class="">
-                  <button
-                    class="rounded-lg px-3 py-2 md:px-4 md:py-3 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold"
-                  >
-                    Buy Now
-                  </button>
-                </div>
+                <button
+                  class="rounded px-3 py-2 md:px-4 background-yellow hover:bg-yellow-600 duration-300 text-white font-bold border-radius-6"
+                >
+                  Buy Now
+                </button>
               </router-link>
             </div>
           </div>
@@ -86,7 +83,7 @@ export default {
         {
           id: 11,
           name: "Powder Matcha Latte",
-          image: "/assets/images/product/powder/powder_matchalatte.jpg",
+          image: "/assets/images/product/powder/powder_matchalatte.png",
           price: "169,000",
           categoryId: "powder",
           info: "Cocok digunakan untuk:\n-Untuk Meng-explore minuman Terkini \n- Pembuatan kue \n- Pembuatan minuman \n- Aneka olahan lainnya",
@@ -103,7 +100,7 @@ export default {
         {
           id: 39,
           name: "Syrup Lychee",
-          image: "/assets/images/product/syrup/syrup_lychee.jpg",
+          image: "/assets/images/product/syrup/syrup_lychee.png",
           price: "105,000",
           category: "Flavoured",
           info: "Lychee atau Litchi atau Buah leci adalah buah yang berasal dari pohon tropis dan sub tropis yang berasal dari daerah provinsi Fujian dan Guangdong, Cina. Kabarnya, pohon leci sudah dikembangbiakkan sejak abad ke-11 silam. Selain Cina, kawasan penghasil buah leci terbesar di dunia adalah India, Madagaskar, dan Afrika Selatan. Syrup GENOVA Lychee memiliki rasa aroma lychee yang kuat dan sensasi asam manis layaknya menikmati buah leci sehingga memiliki cita rasa sendiri khas product Genova Indonesia. Syrup GENOVA Lychee saat ini sudah menjadi sirup pilihan ter favorit pilihan customer setia Genova Indonesia. Tambahkan sirup ini untuk berbagai minuman teh, moctail, susu yakult, serta minuman dingin lainnya.",
@@ -120,7 +117,7 @@ export default {
         {
           id: 7,
           name: "Powder Dark Chocolate",
-          image: "/assets/images/product/powder/powder_darkchocolate.jpg",
+          image: "/assets/images/product/powder/powder_darkchocolate.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
@@ -137,7 +134,7 @@ export default {
         {
           id: 15,
           name: "Powder Red Velvet",
-          image: "/assets/images/product/powder/powder_redvelvet.jpg",
+          image: "/assets/images/product/powder/powder_redvelvet.png",
           price: "139,000",
           categoryId: "powder",
           info: "Cocok Digunakan untuk : \n- Untuk Meng-explore Minuman Terkini \n- Pembuatan Kue \n- Pembuatan Minuman \n- Aneka Olahan Lainnya",
@@ -154,7 +151,7 @@ export default {
         {
           id: 42,
           name: "Syrup Pandan",
-          image: "/assets/images/product/syrup/syrup_pandan.jpg",
+          image: "/assets/images/product/syrup/syrup_pandan.png",
           price: "105,000",
           category: "Flavoured",
           info: "Pandan di perkirakan berasal dari kepulauan di Lautan Pasifik, dengan penyebaran terbesar di Madagaskar dan Malesia. Untuk penyebarannya, Terdapat hampir di seluruh Indonesia, karena tumbuhan ini mudah tumbuh. Pandan banyak dibudidayakan karena biasa digunakan sebagai penambah rasa di banyak hidangan manis dan gurih. Sirup GENOVA Pandan memiliki aroma ringan dan menyegarkan dengan sentuhan aroma yang manis. Sangat cocok untuk membuat minuman teh susu, atau es teh sederhana dengan rasa manis yang seimbang. Sirup ini menjadi viral untuk campuran teh di Asia Tenggara hari ini dan menciptakan resep unik dengan rasa yang luar biasa.",
@@ -171,7 +168,7 @@ export default {
         {
           id: 23,
           name: "Fruit Blend Strawberry",
-          image: "/assets/images/product/fruit-bland/fruitbland_strawberry.jpg",
+          image: "/assets/images/product/fruit-bland/fruitbland_strawberry.png",
           price: "115,000",
           category: "fruitBlend",
           info: "Juicy, cerah, dan rasa manis yang tepat;  tidak heran jika stroberi segar adalah favorit di musim panas.  Nikmati sensasi musim panas sepanjang tahun ketika Anda menggunakan Genova Fruit Blend Strawberry untuk membuat mocktail, lemonade, es teh, dan smoothie. GENOVA Fruit Blend Strawberry memberikan rasa strawberry yang menyegarkan dan juicy/assets/images/product/powder!",
