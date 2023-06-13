@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <template>
   <nav
-    class="container px-4 md:px-8 lg:px-24 py-2 mx-auto md:flex md:justify-between md:items-center"
+    class="container px-4 md:px-8 lg:px-24 py-4 mx-auto md:flex md:justify-between md:items-center"
   >
     <div class="flex items-center justify-between">
       <router-link :to="{ name: 'home' }"
