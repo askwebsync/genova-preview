@@ -23,10 +23,10 @@ export default {
     return {
       slideIndex: 1,
       slides: [
-        { src: "/assets/images/banner/Homepage/1.jpg", alt: "Image1" },
-        { src: "/assets/images/banner/Homepage/2.jpg", alt: "Image2" },
-        { src: "/assets/images/banner/Homepage/3.jpg", alt: "Image3" },
-        { src: "/assets/images/banner/Homepage/4.jpg", alt: "Image4" },
+        { src: "/assets/images/banner/Homepage/3b.jpg", alt: "Image1" },
+        { src: "/assets/images/banner/Homepage/4b.jpg", alt: "Image2" },
+        { src: "/assets/images/banner/Homepage/5.jpg", alt: "Image3" },
+        { src: "/assets/images/banner/Homepage/5b.jpg", alt: "Image4" },
       ],
     };
   },
@@ -72,7 +72,6 @@ export default {
 .slideshow-container {
   position: relative;
   margin: auto;
-  max-height: 400px;
 }
 
 .image-css {
