@@ -1,66 +1,19 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="container mx-auto">
-    <nav class="flex ml-3 mt-4 ml-5" aria-label="Breadcrumb">
-      <ol class="inline-flex items-center space-x-1 md:space-x-3">
-        <li class="inline-flex items-center">
-          <a
-            href="/"
-            class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
-          >
-            <svg
-              class="w-4 h-4 mr-2"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-              ></path>
-            </svg>
-            Home
-          </a>
-        </li>
-        <li aria-current="page">
-          <div class="flex items-center">
-            <svg
-              class="w-6 h-6 text-gray-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span
-              class="ml-1 text-sm font-medium md:ml-2 pcolor hover:text-yellow-600"
-              >Recype</span
-            >
-          </div>
-        </li>
-      </ol>
-    </nav>
-    <div class="p-4 lg:p-6 lg:pt-10 pb-12 xl:p-12">
-      <div class="flex flex-row">
-        <h1 class="pcolor mb-2 text-lg md:text-xl lg:text-xxl">
-          Standart Recipe
-        </h1>
-        <!-- <div class="rating space-y-6">
-          <p class="slider1"></p>
-          <p class="slider2"></p>
-          <p class="slider3"></p>
-        </div> -->
+  <section>
+    <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+      <div class="flex flex-col items-center lg:items-start">
+        <h1 class="mb-1 text-xl lg:text-2xl uppercase">Standard Recipe</h1>
+        <hr
+          class="h-1 rounded w-full lg:w-40 bg-black border-0 mx-auto lg:mx-0"
+        />
       </div>
-      <hr class="h-1 rounded w-32 background-navbar border-0" />
       <div class="flex flex-col my-12 gap-8">
         <div
-          class="flex flex-col border md:flex p-4 gap-12 items-center md:px-6"
+          class="flex flex-col md:flex-row justify-betweeen border md:flex p-4 gap-12 items-center md:px-6 lg:gap-20"
         >
-          <div class="max-w-lg my-2">
-            <h3 class="text-xl md:text-xxl">Ice Shakes</h3>
+          <div class="max-w-sm my-2">
+            <h3 class="text-xl md:text-2xl">Ice Shakes</h3>
           </div>
           <div
             class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
@@ -106,10 +59,10 @@
           </div>
         </div>
         <div
-          class="flex flex-col border md:flex p-4 gap-12 items-center md:px-6"
+          class="flex flex-col md:flex-row justify-betweeen border md:flex p-4 gap-12 items-center md:px-6 lg:gap-20"
         >
           <div class="max-w-lg my-2">
-            <h3 class="text-xl md:text-xxl">Ice Blended</h3>
+            <h3 class="text-xl md:text-2xl">Ice Blended</h3>
           </div>
           <div
             class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
@@ -155,10 +108,10 @@
           </div>
         </div>
         <div
-          class="flex flex-col border md:flex p-4 gap-12 items-center md:px-6"
+          class="flex flex-col md:flex-row justify-betweeen border md:flex p-4 gap-12 items-center md:px-6 lg:gap-20"
         >
           <div class="max-w-lg my-2">
-            <h3 class="text-xl md:text-xxl">Mocktail</h3>
+            <h3 class="text-xl md:text-2xl">Mocktail</h3>
           </div>
           <div
             class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
@@ -204,10 +157,10 @@
           </div>
         </div>
         <div
-          class="flex flex-col border md:flex p-4 gap-12 items-center md:px-6"
+          class="flex flex-col md:flex-row justify-betweeen border md:flex p-4 gap-12 items-center md:px-6 lg:gap-20"
         >
           <div class="max-w-lg my-2">
-            <h3 class="text-xl md:text-xxl">Fruit Smoothies</h3>
+            <h3 class="text-xl md:text-2xl">Fruit Smoothies</h3>
           </div>
           <div
             class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
@@ -253,10 +206,10 @@
           </div>
         </div>
         <div
-          class="flex flex-col border md:flex p-4 gap-12 items-center md:px-6"
+          class="flex flex-col md:flex-row justify-betweeen border md:flex p-4 gap-12 items-center md:px-6 lg:gap-20"
         >
           <div class="max-w-lg my-2">
-            <h3 class="text-xl md:text-xxl">Special Tea</h3>
+            <h3 class="text-xl md:text-2xl">Special Tea</h3>
           </div>
           <div
             class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
@@ -315,7 +268,13 @@ export default {
 
 <style scoped>
 .border {
-  border-style: solid 2px;
-  border-color: #bdb76b;
+  border: 4px solid #c79e2a;
+  border-radius: 6px;
+}
+h1 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  color: #2b2b28;
 }
 </style>

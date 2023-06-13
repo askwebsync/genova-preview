@@ -5,13 +5,19 @@
     </div>
 
     <div v-else>
-      <AppHeader class="bg-white border-b-2 sticky top-0 z-10" />
-      <router-view v-slot="{ Component }" :key="$route.fullPath">
-        <transition name="fade">
-          <component :is="Component" />
-        </transition>
-      </router-view>
-      <AppFooter class="app-footer" />
+      <header class="bg-white border-b-2 sticky top-0 z-10">
+        <app-header />
+      </header>
+      <main class="app-main">
+        <router-view v-slot="{ Component }" :key="$route.fullPath">
+          <transition name="fade" mode="out-in">
+            <component :is="Component"></component>
+          </transition>
+        </router-view>
+      </main>
+      <footer class="app-footer">
+        <app-footer />
+      </footer>
     </div>
   </div>
 </template>
@@ -23,8 +29,8 @@ import PageLoader from "./components/PageLoader.vue";
 
 export default {
   components: {
-    AppHeader,
-    AppFooter,
+    "app-header": AppHeader,
+    "app-footer": AppFooter,
     PageLoader,
   },
   data() {

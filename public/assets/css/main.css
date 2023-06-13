@@ -193,13 +193,6 @@ p {
   --vc-nav-color: var(--vc-clr-primary);
   --vc-nav-color-hover: var(--vc-clr-secondary);
   --vc-nav-background: transparent;
-  /* Pagination */
-  --vc-pgn-width: 12px;
-  --vc-pgn-height: 4px;
-  --vc-pgn-margin: 4px;
-  --vc-pgn-border-radius: 0;
-  --vc-pgn-background-color: var(--vc-clr-secondary);
-  --vc-pgn-active-color: var(--vc-clr-primary);
 }
 
 .carousel__item {

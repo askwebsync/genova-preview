@@ -76,7 +76,7 @@ export default {
 
 .image-css {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 

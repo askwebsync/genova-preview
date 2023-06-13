@@ -1,10 +1,12 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="bg-gray-100">
+  <section>
     <HomepageBanner />
-    <TrendingProducts />
-    <NewProducts />
-    <HomepageProducts />
+    <div class="container mx-auto">
+      <TrendingProducts />
+      <NewProducts />
+      <HomepageProducts />
+    </div>
   </section>
 </template>
 

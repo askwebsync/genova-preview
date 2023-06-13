@@ -20,7 +20,7 @@
             <img
               src="/assets/images/product/fruit-bland/fruitbland_pineapple.png"
               alt="Product"
-              class="w-auto h-52 lg:h-56 object-cover"
+              class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
             <div class="flex flex-col gap-4 center">
               <h2 class="text-lg lg:text-xl">Fruit Blend</h2>
@@ -40,7 +40,7 @@
             <img
               src="/assets/images/product/syrup/syrup_bluecuracao.png"
               alt="Product"
-              class="w-auto h-52 lg:h-56 object-cover"
+              class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
             <div class="flex flex-col gap-4 center">
               <h2 class="text-lg lg:text-xl">Flavoured Syrup</h2>
@@ -60,7 +60,7 @@
             <img
               src="/assets/images/product/powder/powder_tiramisu.png"
               alt="Product"
-              class="w-auto h-52 lg:h-56 object-cover"
+              class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
 
             <div class="flex flex-col gap-4 center">
