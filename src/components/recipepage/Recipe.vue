@@ -1,106 +1,198 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section>
-    <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+  <div class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+    <div class="flex flex-col gap-8 lg:gap-10">
       <div class="flex flex-col items-center lg:items-start">
         <h1 class="mb-1 text-xl lg:text-2xl uppercase">Standard Recipe</h1>
         <hr
           class="h-1 rounded w-full lg:w-40 bg-black border-0 mx-auto lg:mx-0"
         />
       </div>
-      <div class="flex flex-col my-12 gap-8">
+      <div class="flex flex-col gap-8 px-8 md:px-0">
         <div
-          class="flex flex-col md:flex-row justify-betweeen border md:flex p-4 gap-12 items-center md:px-6 lg:gap-20"
+          class="flex flex-col px-4 py-6 md:flex-row justify-between border md:flex gap-12 items-center lg:gap-20"
         >
-          <div class="max-w-sm my-2">
-            <h3 class="text-xl md:text-2xl">Ice Shakes</h3>
+          <div class="max-w-xs">
+            <h3 class="text-2xl md:text-3xl max-w-full">Ice Shakes</h3>
           </div>
           <div
-            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
+            class="flex flex-col py-6 items-center center md:flex-row gap-2 lg:gap-5"
           >
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-powder.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Powder</h2>
-                <p class="text-lg lg:text-xl text-gray-600">30gr</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-powder.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Powder</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">30gr</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-hot-water.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Hot Water</h2>
-                <p class="text-lg lg:text-xl text-gray-600">30ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-hot-water.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Hot Water</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">30ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-milk.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Fresh Milk</h2>
-                <p class="text-lg lg:text-xl text-gray-600">90ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-milk.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Fresh Milk</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">90ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-ice-cube.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Ice</h2>
-                <p class="text-lg lg:text-xl text-gray-600">1 Glass</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-ice-cube.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Ice</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">1 Glass</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center flex-grow">
               <img src="/assets/images/recipes/recipe-shakes.png" />
               <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Shakes</h2>
+                <h2 class="text-lg lg:text-xl">Shakes All</h2>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="flex flex-col md:flex-row justify-betweeen border md:flex p-4 gap-12 items-center md:px-6 lg:gap-20"
+          class="flex flex-col px-4 py-6 md:flex-row justify-between border md:flex gap-12 items-center lg:gap-20"
         >
-          <div class="max-w-lg my-2">
-            <h3 class="text-xl md:text-2xl">Ice Blended</h3>
+          <div class="max-w-xs">
+            <h3 class="text-2xl md:text-3xl max-w-full">Ice Blended</h3>
           </div>
           <div
-            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
+            class="flex flex-col py-6 items-center center md:flex-row gap-2 lg:gap-5"
           >
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-powder.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Powder</h2>
-                <p class="text-lg lg:text-xl text-gray-600">30gr</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-powder.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Powder</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">30gr</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-sugar.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Sugar Flavoured</h2>
-                <p class="text-lg lg:text-xl text-gray-600">15ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-sugar.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Sugar Liquid</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">15ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-milk.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Fresh Milk</h2>
-                <p class="text-lg lg:text-xl text-gray-600">90ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-milk.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Fresh Milk</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">90ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-ice-cube.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Ice</h2>
-                <p class="text-lg lg:text-xl text-gray-600">1 Glass</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-ice-cube.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Ice</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">1 Glass</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-blender.png" />
+            <div class="flex flex-col items-center flex-grow">
+              <img
+                src="/assets/images/recipes/recipe-blender.png"
+                class=""
+                alt="Blended"
+              />
               <div class="flex flex-col my-2 gap-1">
                 <h2 class="text-lg lg:text-xl">Blends All</h2>
               </div>
@@ -108,155 +200,287 @@
           </div>
         </div>
         <div
-          class="flex flex-col md:flex-row justify-betweeen border md:flex p-4 gap-12 items-center md:px-6 lg:gap-20"
+          class="flex flex-col px-4 py-6 md:flex-row justify-between border md:flex gap-12 items-center lg:gap-20"
         >
-          <div class="max-w-lg my-2">
-            <h3 class="text-xl md:text-2xl">Mocktail</h3>
+          <div class="max-w-xs">
+            <h3 class="text-2xl md:text-3xl max-w-full">Mocktail</h3>
           </div>
           <div
-            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
+            class="flex flex-col py-6 items-center center md:flex-row gap-2 lg:gap-5"
           >
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-fruit-blend.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Fruit Blend</h2>
-                <p class="text-lg lg:text-xl text-gray-600">40ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-fruit-blend.png"
+                  class="object-cover"
+                  alt="fruitblends"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Fruit Blends</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">30ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-syrup.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Syrup</h2>
-                <p class="text-lg lg:text-xl text-gray-600">30ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-syrup.png"
+                  class="object-cover"
+                  alt="syrup"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Syrup</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">30ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-soda.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Soda</h2>
-                <p class="text-lg lg:text-xl text-gray-600">+-90ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-soda.png"
+                  class="object-cover"
+                  alt="soda"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Soda</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">+- 90ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-ice-cube.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Ice</h2>
-                <p class="text-lg lg:text-xl text-gray-600">1 Glass</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-ice-cube.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Ice</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">1 Glass</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center flex-grow">
               <img src="/assets/images/recipes/recipe-shakes.png" />
               <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Shakes</h2>
+                <h2 class="text-lg lg:text-xl">Shakes All</h2>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="flex flex-col md:flex-row justify-betweeen border md:flex p-4 gap-12 items-center md:px-6 lg:gap-20"
+          class="flex flex-col px-4 py-6 md:flex-row justify-between border md:flex gap-12 items-center lg:gap-20"
         >
-          <div class="max-w-lg my-2">
-            <h3 class="text-xl md:text-2xl">Fruit Smoothies</h3>
+          <div class="max-w-xs">
+            <h3 class="text-2xl md:text-3xl max-w-full">Fruit Smoothies</h3>
           </div>
           <div
-            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
+            class="flex flex-col py-6 items-center center md:flex-row gap-2 lg:gap-5"
           >
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-fruit-blend.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Fruit Blend</h2>
-                <p class="text-lg lg:text-xl text-gray-600">40ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-fruit-blend.png"
+                  class="object-cover"
+                  alt="fruitblends"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Fruit Blends</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">30ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-frape-base.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Frape Base</h2>
-                <p class="text-lg lg:text-xl text-gray-600">10gr</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-frape-base.png"
+                  class="object-cover"
+                  alt="frapebase"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Frape Base</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">10gr</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-water.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Water</h2>
-                <p class="text-lg lg:text-xl text-gray-600">90ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-water.png"
+                  class="object-cover"
+                  alt="water"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Water</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">90ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-ice-cube.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Ice</h2>
-                <p class="text-lg lg:text-xl text-gray-600">1 Glass</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-ice-cube.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Ice</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">1 Glass</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center flex-grow">
               <img src="/assets/images/recipes/recipe-shakes.png" />
               <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Shakes</h2>
+                <h2 class="text-lg lg:text-xl">Shakes All</h2>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="flex flex-col md:flex-row justify-betweeen border md:flex p-4 gap-12 items-center md:px-6 lg:gap-20"
+          class="flex flex-col px-4 py-6 md:flex-row justify-between border md:flex gap-12 items-center lg:gap-20"
         >
-          <div class="max-w-lg my-2">
-            <h3 class="text-xl md:text-2xl">Special Tea</h3>
+          <div class="max-w-xs">
+            <h3 class="text-2xl md:text-3xl max-w-full">Special Tea</h3>
           </div>
           <div
-            class="flex flex-col my-2 md:mx-5 md:flex-row gap-2 lg:gap-12 items-center center"
+            class="flex flex-col py-6 items-center center md:flex-row gap-2 lg:gap-5"
           >
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-syrup.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Syrup</h2>
-                <p class="text-lg lg:text-xl text-gray-600">30ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-syrup.png"
+                  class="object-cover"
+                  alt="syrup"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Syrup</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">30ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-sugar.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Sugar Flavoured</h2>
-                <p class="text-lg lg:text-xl text-gray-600">10gr</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-sugar.png"
+                  class="object-cover"
+                  alt="Sugar"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Sugar Flavoured</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">10gr</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-green-tea.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Tea Water</h2>
-                <p class="text-lg lg:text-xl text-gray-600">+-90ml</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-green-tea.png"
+                  class="object-cover"
+                  alt="tea"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Tea</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">+-90ml</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
-              <img src="/assets/images/recipes/recipe-ice-cube.png" />
-              <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Ice</h2>
-                <p class="text-lg lg:text-xl text-gray-600">1 Glass</p>
+            <div class="flex flex-col md:flex-row justify-end gap-5">
+              <div class="flex flex-col items-center px-1 py-2 gap-3">
+                <img
+                  src="/assets/images/recipes/recipe-ice-cube.png"
+                  class="object-cover"
+                  alt="powder"
+                />
+                <div class="flex flex-col items-center gap-1">
+                  <h2 class="text-lg lg:text-xl">Ice</h2>
+                  <p class="text-lg lg:text-xl text-gray-600">1 Glass</p>
+                </div>
+              </div>
+              <div class="flex items-center self-center">
+                <img
+                  src="/assets/images/icon/recipe_plus.png"
+                  class="object-cover h-6 w-6"
+                />
               </div>
             </div>
-            <img src="/assets/images/icon/recipe_plus.png" class="my-2" />
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center flex-grow">
               <img src="/assets/images/recipes/recipe-shakes.png" />
               <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Shakes</h2>
+                <h2 class="text-lg lg:text-xl">Shakes All</h2>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 <script>
 export default {
@@ -276,5 +500,11 @@ h1 {
   font-style: normal;
   font-weight: 500;
   color: #2b2b28;
+}
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  color: #000000;
 }
 </style>

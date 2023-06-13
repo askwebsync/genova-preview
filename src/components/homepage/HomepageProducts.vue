@@ -7,7 +7,7 @@
           Product Category
         </h1>
         <hr
-          class="h-1 rounded w-full lg:w-52 background-yellow border-0 mx-auto lg:mx-0"
+          class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
         />
       </div>
       <div
