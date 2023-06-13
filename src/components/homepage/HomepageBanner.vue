@@ -1,7 +1,9 @@
 <template>
   <div class="slideshow-container">
-    <div v-for="(slide, index) in slides" :key="index" class="mySlides fade">
-      <img :src="slide.src" :alt="slide.alt" class="image-css" />
+    <div v-for="(slide, index) in slides" :key="index" class="mySlides">
+      <div class="image-container">
+        <img :src="slide.src" :alt="slide.alt" class="image-css" />
+      </div>
     </div>
     <div class="dot-container">
       <span
@@ -12,8 +14,6 @@
         :class="{ active: index + 1 === slideIndex }"
       ></span>
     </div>
-    <!-- <a class="prev" @click="plusSlides(-1)">&#10094;</a>
-    <a class="next" @click="plusSlides(1)">&#10095;</a> -->
   </div>
 </template>
 
@@ -61,6 +61,8 @@ export default {
       dots[this.slideIndex - 1].className += " active";
     },
     startAutoSlide() {
+      // Set initial slide index
+      this.slideIndex = 1;
       setInterval(() => {
         this.plusSlides(1);
       }, 4000); // Adjust the interval time (in milliseconds) as needed
@@ -68,16 +70,32 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .slideshow-container {
   position: relative;
   margin: auto;
+}
+
+.image-container {
+  position: relative;
 }
 
 .image-css {
   width: 100%;
   height: 500px;
   object-fit: cover;
+  z-index: 1;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity value as needed */
+  z-index: 0;
 }
 
 .mySlides {
@@ -137,20 +155,5 @@ export default {
 .active,
 .dot:hover {
   background-color: #717171;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 </style>

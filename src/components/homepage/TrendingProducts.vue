@@ -1,12 +1,12 @@
 <template>
   <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
-    <div class="flex flex-col gap-8 lg:gap-12">
+    <div class="flex flex-col gap-8 lg:gap-10">
       <div class="flex flex-col items-center lg:items-start">
         <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">
           Trending Flavour
         </h1>
         <hr
-          class="h-1 rounded w-full lg:w-40 background-yellow border-0 mx-auto lg:mx-0"
+          class="h-1 rounded w-full lg:w-52 background-yellow border-0 mx-auto lg:mx-0"
         />
       </div>
       <carousel :settings="settings" :breakpoints="breakpoints">
