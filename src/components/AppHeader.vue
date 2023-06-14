@@ -196,10 +196,10 @@ export default {
 <style scoped>
 input {
   width: 100%;
-  height: 38px;
+  height: 35px;
   padding-left: 10px;
   padding-right: -10px;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.2s ease;
 }
 .contain input:focus {

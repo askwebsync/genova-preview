@@ -130,7 +130,7 @@
             <div class="cursor-pointer">
               <!-- Image -->
               <img
-                :src="`/assets/images/product/powder/${product.image}`"
+                :src="`/assets/images/product/${product.image}`"
                 :alt="product.name"
                 class="rounded-t h-56 md:h-64 w-full object-contain"
               />
