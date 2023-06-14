@@ -77,8 +77,6 @@
           <select
             class="p-2 md:p-3 w-full md:w-64 h-42 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent"
           >
-            <option value="asc">A-Z</option>
-            <option value="desc">Z-A</option>
             <option value="low">Low to High</option>
             <option value="high">High to Low</option>
             <option value="new">New</option>
@@ -102,7 +100,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <div
           v-for="product in resultQuery"
           :key="product.id"

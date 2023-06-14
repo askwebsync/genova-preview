@@ -1,6 +1,6 @@
 <template>
-  <section class="container mx-auto">
-    <nav class="flex ml-3 mt-5 mb-10 md:ml-10" aria-label="Breadcrumb">
+  <section class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+    <nav class="flex mb-24" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">
           <a
@@ -62,25 +62,49 @@
         </li>
       </ol>
     </nav>
-    <div class="p-4 lg:p-6 lg:pt-10 pb-12">
-      <div
-        class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
-      >
-        <div class="p-2">
-          <h1 class="pcolor mb-1 text-lg md:text-xl lg:text-2xl">
+    <div class="flex flex-col gap-8 lg:gap-10">
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-col items-center lg:items-start">
+          <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">
             Powder Drink
           </h1>
-          <hr class="h-1 rounded w-28 background-navbar border-0" />
+          <hr
+            class="h-1 rounded w-full lg:w-44 background-yellow border-0 mx-auto lg:mx-0"
+          />
+        </div>
+
+        <div class="relative">
+          <select
+            class="p-2 md:p-3 w-full md:w-64 h-42 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent"
+          >
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+            <option value="new">New</option>
+            <option value="old">Old</option>
+          </select>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
+          >
+            <svg
+              class="w-5 h-5 text-gray-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9 13l-4-4 4-4 1.41 1.42L8.83 8H14v2H8.83l2.58 2.58L9 13z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
         </div>
       </div>
 
-      <div
-        class="p-2 mt-2 grid grid-flow-row gap-12 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-      >
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <div
           v-for="product in resultQuery"
           :key="product.id"
-          class="bg-white center shadow"
+          class="bg-product-home center shadow-md"
         >
           <router-link
             :to="{
@@ -104,23 +128,19 @@
             }"
           >
             <div class="cursor-pointer">
-              <figure>
-                <!-- Image -->
-                <img
-                  :src="product.image + '?auto=format&fit=crop&w=400&q=50'"
-                  :alt="product.name"
-                  class="rounded-t h-56 md:h-64 w-full object-contain"
-                />
-
-                <figcaption class="p-2 md:p-3">
-                  <!-- Title -->
-                  <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
-                    {{ product.name }}
-                  </h2>
-
-                  <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
-                </figcaption>
-              </figure>
+              <!-- Image -->
+              <img
+                :src="`/assets/images/product/powder/${product.image}`"
+                :alt="product.name"
+                class="rounded-t h-56 md:h-64 w-full object-contain"
+              />
+              <div class="p-2 md:p-3">
+                <!-- Title -->
+                <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
+                  {{ product.name }}
+                </h2>
+                <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
+              </div>
             </div>
           </router-link>
         </div>
@@ -128,364 +148,18 @@
     </div>
   </section>
 </template>
-
 <script>
+import allProducts from "../../../../src/product/allProduct";
 export default {
-  components: {},
-  data: () => {
+  data() {
     return {
-      products: [
-        {
-          id: 1,
-          name: "Powder Avocado",
-          image: "/assets/images/product/powder/powder_avocado.png",
-          price: "150,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-avocado-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 2,
-          name: "Powder Cappuccino",
-          image: "/assets/images/product/powder/powder_cappuccino.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-cappuccino-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 3,
-          name: "Powder Charcoal",
-          image: "/assets/images/product/powder/powder_charcoal.png",
-          price: "159,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-charcoal-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "-Masukkan 20-30 Gram Powder\n-Dicampur 120-150ML Susu\n-Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 4,
-          name: "Powder Chocolate",
-          image: "/assets/images/product/powder/powder_chocolateclassic.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-chocolate-classic-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 5,
-          name: "Powder Cookies",
-          image: "/assets/images/product/powder/powder_cookiescream.png",
-          price: "155,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-cookies-cream-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 6,
-          name: "Powder Cotton Candy",
-          image: "/assets/images/product/powder/powder_cottoncandy.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-cotton-candy-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 7,
-          name: "Powder Dark Chocolate",
-          image: "/assets/images/product/powder/powder_darkchocolate.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-dark-chocolate-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 8,
-          name: "Powder Frappe Base",
-          image: "/assets/images/product/powder/powder_frappebase.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-base-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 9,
-          name: "Powder Greentea",
-          image: "/assets/images/product/powder/powder_greentea.png",
-          price: "150,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-greentea-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 10,
-          name: "Powder Macchiato",
-          image: "/assets/images/product/powder/powder_macchiato.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-macchiato-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 11,
-          name: "Powder Matcha Latte",
-          image: "/assets/images/product/powder/powder_matchalatte.png",
-          price: "169,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-latte-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 12,
-          name: "Powder Matcha Premium",
-          image: "/assets/images/product/powder/powder_matchapremium.png",
-          price: "245,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-premium-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 13,
-          name: "Powder Mocha",
-          image: "/assets/images/product/powder/powder_mocha.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-mocha-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 14,
-          name: "Powder Mochaccino",
-          image: "/assets/images/product/powder/powder_mochaccino.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-mochaccino-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 15,
-          name: "Powder Red Velvet",
-          image: "/assets/images/product/powder/powder_redvelvet.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-red-velvet-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 16,
-          name: "Powder Swiss Chocholate",
-          image: "/assets/images/product/powder/powder_swisschocholate.png",
-          price: "139,000",
-          category: 0,
-          info: "Cocok Digunakan untuk : - Untuk Meng-explore Minuman Terkini - Pembuatan Kue - Pembuatan Minuman - Aneka Olahan Lainnya, Brand : Genova - Naturally Flavored Sertifikat Halal MUI : YA",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-swiss-chocolate-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-        },
-        {
-          id: 17,
-          name: "Powder Taro",
-          image: "/assets/images/product/powder/powder_taro.png",
-          price: "139,000",
-          category: 0,
-          info: "Cocok Digunakan untuk : - Untuk Meng-explore Minuman Terkini - Pembuatan Kue - Pembuatan Minuman - Aneka Olahan Lainnya, Brand : Genova - Naturally Flavored Sertifikat Halal MUI : YA",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-taro-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-        },
-        {
-          id: 18,
-          name: "Powder Thai Tea",
-          image: "/assets/images/product/powder/powder_thaitea.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-thai-tea-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 19,
-          name: "Powder Tiramisu",
-          image: "/assets/images/product/powder/powder_tiramisu.png",
-          price: "139,000",
-          categoryId: "powder",
-          info: "Cocok Digunakan untuk :\n- Untuk Meng-explore Minuman Terkini\n- Pembuatan Kue\n- Pembuatan Minuman\n- Aneka Olahan Lainnya",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-tiramisu-frappe-powder-1000-gram?extParam=whid%3D8872969",
-          packaging: "1 Pack Powder",
-          weight: "1000 Gram",
-          serving:
-            "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-          color: "",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-      ],
-      searchQuery: "",
+      products: allProducts,
     };
   },
   computed: {
-    // Get the filtered projects
+    // Get the filtered products with "Powder" category
     resultQuery() {
-      if (this.searchQuery) {
-        return this.products.filter((item) => {
-          return this.searchQuery
-            .toLowerCase()
-            .split(" ")
-            .every((v) => item.name.toLowerCase().includes(v));
-        });
-      } else {
-        return this.products;
-      }
-    },
-  },
-  methods: {
-    shareData() {
-      // this.$router.push({
-      //   name: "detail-product",
-      //   // eslint-disable-next-line no-undef
-      //   params: JSON.stringify(product),
-      // });
-      this.$router.push({
-        name: "detail-product",
-        // params: {
-        //   objectParam: JSON.stringify({ a: "a" }),
-        // },
-      });
+      return this.products.filter((product) => product.category === "powder");
     },
   },
 };
