@@ -1,7 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <HeroProducts />
-  <Products></Products>
+  <section>
+    <HeroProducts />
+    <Products></Products>
+  </section>
 </template>
 
 <script>

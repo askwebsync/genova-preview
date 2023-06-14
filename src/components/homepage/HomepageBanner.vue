@@ -28,11 +28,15 @@ export default {
         { src: "/assets/images/banner/Homepage/5.jpg", alt: "Image3" },
         { src: "/assets/images/banner/Homepage/5b.jpg", alt: "Image4" },
       ],
+      slideInterval: null, // Store the interval ID
     };
   },
   mounted() {
     this.showSlides();
     this.startAutoSlide();
+  },
+  beforeUnmount() {
+    clearInterval(this.slideInterval); // Clear the interval when the component is unmounted
   },
   methods: {
     plusSlides(n) {
@@ -45,6 +49,9 @@ export default {
       let i;
       const slides = document.getElementsByClassName("mySlides");
       const dots = document.getElementsByClassName("dot");
+      if (slides.length === 0 || dots.length === 0) {
+        return; // Return if the elements don't exist
+      }
       if (n > slides.length) {
         this.slideIndex = 1;
       }
@@ -61,11 +68,10 @@ export default {
       dots[this.slideIndex - 1].className += " active";
     },
     startAutoSlide() {
-      // Set initial slide index
       this.slideIndex = 1;
-      setInterval(() => {
+      this.slideInterval = setInterval(() => {
         this.plusSlides(1);
-      }, 4000); // Adjust the interval time (in milliseconds) as needed
+      }, 4000);
     },
   },
 };

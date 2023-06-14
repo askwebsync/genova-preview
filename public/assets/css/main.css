@@ -10,10 +10,20 @@
   src: url("../logo/Qaligo.otf") format("opentype");
 }
 
-* {
+/* Box sizing */
+*,
+:after,
+:before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .app-main {
@@ -22,13 +32,6 @@
 
 .app-footer {
   margin-top: auto;
-}
-
-/* Layout */
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 li>a {

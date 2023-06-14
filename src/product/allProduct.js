@@ -1,4 +1,4 @@
-[
+const allProducts = [
   {
     id: 1,
     name: "Powder Avocado",
@@ -816,3 +816,5 @@
       "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
   },
 ];
+
+export default allProducts;

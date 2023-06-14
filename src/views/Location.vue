@@ -1,8 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <!-- Tabs -->
   <section class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
-    <div class="">
+    <div class="mb-6">
       <ul class="flex flex-row justify-center">
         <li class="text-center mx-6" @click.prevent="tab = 'offline'">
           <h2
@@ -34,7 +33,6 @@
         </li>
       </ul>
     </div>
-
     <FindOffline v-if="tab === 'offline'" />
     <FindOnline v-else />
   </section>
@@ -52,9 +50,4 @@ export default {
 };
 </script>
 
-<style scoped>
-ul li.active-link > h2 {
-  text-decoration: underline;
-  color: YOUR-LINK-COLOR;
-}
-</style>
+<style scoped></style>

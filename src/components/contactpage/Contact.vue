@@ -14,7 +14,7 @@
 
       <div class="grid md:grid-cols-2 xl:grid-cols-3 self-center gap-12">
         <div
-          class="flex flex-col items-center gap-4 bg-product-home p-8 rounded-lg shadow-lg max-w-sm"
+          class="flex flex-col items-center gap-4 bg-product-home p-5 md:p-8 rounded-lg shadow-lg max-w-sm"
         >
           <i class="card-icon far fa-envelope text-yellow-500"></i>
           <h3 class="text-black font-bold whitespace-normal">
@@ -22,7 +22,7 @@
           </h3>
         </div>
         <div
-          class="flex flex-col items-center gap-4 bg-product-home p-8 rounded-lg shadow-lg max-w-sm"
+          class="flex flex-col items-center gap-4 bg-product-home p-5 md:p-8 rounded-lg shadow-lg max-w-sm"
         >
           <i class="card-icon fas fa-phone text-yellow-500"></i>
           <h3 class="text-black font-bold">
@@ -30,7 +30,7 @@
           </h3>
         </div>
         <div
-          class="flex flex-col items-center gap-4 bg-product-home p-8 rounded-lg shadow-lg max-w-sm"
+          class="flex flex-col items-center gap-4 bg-product-home p-5 md:p-8 rounded-lg shadow-lg max-w-sm"
         >
           <i class="card-icon fas fa-map-marker-alt text-yellow-500"></i>
           <h3 class="text-black font-bold">
