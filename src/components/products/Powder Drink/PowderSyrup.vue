@@ -106,43 +106,21 @@
           :key="product.id"
           class="bg-product-home center shadow-md"
         >
-          <router-link
-            :to="{
-              name: 'productDetailPage',
-              query: {
-                dataProduk: JSON.stringify({
-                  name: product.name,
-                  price: product.price,
-                  category: product.category,
-                  info: product.info,
-                  packaging: product.packaging,
-                  weight: product.weight,
-                  color: product.color,
-                  image: product.image,
-                  link: product.link,
-                  serving: product.serving,
-                  tasting: product.tasting,
-                  penyimpanan: product.penyimpanan,
-                }),
-              },
-            }"
-          >
-            <div class="cursor-pointer">
-              <!-- Image -->
-              <img
-                :src="`/assets/images/product/${product.image}`"
-                :alt="product.name"
-                class="rounded-t h-56 md:h-64 w-full object-contain"
-              />
-              <div class="p-2 md:p-3">
-                <!-- Title -->
-                <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
-                  {{ product.name }}
-                </h2>
-                <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
-              </div>
+          <div class="cursor-pointer" @click="navigateToProductDetail(product)">
+            <!-- Image -->
+            <img
+              :src="`/assets/images/product/${product.image}`"
+              :alt="product.name"
+              class="rounded-t h-56 md:h-64 w-full object-contain"
+            />
+            <div class="p-2 md:p-3">
+              <!-- Title -->
+              <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
+                {{ product.name }}
+              </h2>
+              <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
             </div>
-          </router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -160,6 +138,29 @@ export default {
     // Get the filtered products with "Powder" category
     resultQuery() {
       return this.products.filter((product) => product.category === "powder");
+    },
+  },
+  methods: {
+    navigateToProductDetail(product) {
+      this.$router.push({
+        name: "productDetailPage",
+        query: {
+          dataProduk: JSON.stringify({
+            name: product.name,
+            price: product.price,
+            category: product.category,
+            info: product.info,
+            packaging: product.packaging,
+            weight: product.weight,
+            color: product.color,
+            image: product.image,
+            link: product.link,
+            serving: product.serving,
+            tasting: product.tasting,
+            penyimpanan: product.penyimpanan,
+          }),
+        },
+      });
     },
   },
 };

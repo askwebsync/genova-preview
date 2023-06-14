@@ -28,7 +28,7 @@
     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
     <ul
       :class="showMenu ? 'flex' : 'hidden'"
-      class="flex-col mt-8 space-y-4 items-center md:flex md:space-y-0 md:flex-row md:space-x-5 xl:space-x-12 md:mt-0"
+      class="flex-col my-2 space-y-4 items-center md:flex md:space-y-0 md:flex-row md:space-x-5 xl:space-x-12 md:mt-0"
     >
       <li
         @click="showMenu = !showMenu"
@@ -62,7 +62,7 @@
       </li>
     </ul>
     <div class="contain md:w-1/6" @click="clickSearchBar()">
-      <div class="pb-2 relative w-full">
+      <div class="py-2 relative w-full">
         <input
           class="border-2 border-yellow h-12 px-5 rounded-lg text-sm hover:outline-none focus:outline-none text-black"
           placeholder="Search Item"
@@ -72,7 +72,7 @@
           @blur="toggle = false"
           @focus="toggle = true"
         />
-        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4 md:mr-2">
+        <button type="submit" class="absolute right-0 top-0 mt-4 mr-4 md:mr-2">
           <svg
             class="pcolor h-4 w-4 fill-current"
             xmlns="http://www.w3.org/2000/svg"
