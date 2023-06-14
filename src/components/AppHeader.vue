@@ -1,13 +1,13 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <template>
   <nav
-    class="container px-4 md:px-8 lg:px-24 py-4 mx-auto md:flex md:justify-between md:items-center"
+    class="container px-4 md:px-8 lg:px-24 py-2 mx-auto md:flex md:justify-between md:items-center"
   >
     <div class="flex items-center justify-between">
       <router-link :to="{ name: 'home' }"
         ><img
-          src="/assets/images/logo/logo.webp"
-          class="w-28 h-12 object-contain focus:outline-none"
+          src="/assets/images/logo/logo 128x128.png"
+          class="w-full h-24 object-contain focus:outline-none"
         />
       </router-link>
       <!-- Mobile menu button -->
@@ -62,9 +62,9 @@
       </li>
     </ul>
     <div class="contain md:w-1/6" @click="clickSearchBar()">
-      <div class="pt-5 md:pt-0 relative w-full">
+      <div class="pb-2 relative w-full">
         <input
-          class="border-2 border-yellow h-12 px-5 rounded-lg text-sm hover:outline-none focus:outline-none"
+          class="border-2 border-yellow h-12 px-5 rounded-lg text-sm hover:outline-none focus:outline-none text-black"
           placeholder="Search Item"
           type="text"
           v-model="search"
@@ -72,10 +72,7 @@
           @blur="toggle = false"
           @focus="toggle = true"
         />
-        <button
-          type="submit"
-          class="absolute right-0 top-0 mt-8 md:mt-3 mr-4 md:mr-2"
-        >
+        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4 md:mr-2">
           <svg
             class="pcolor h-4 w-4 fill-current"
             xmlns="http://www.w3.org/2000/svg"
@@ -220,9 +217,9 @@ input {
   background: #efefef;
 }
 ::placeholder {
-  color: #bdb76b;
+  color: rgba(0, 0, 0, 0.6);
 }
 :-ms-input-placeholder {
-  color: #bdb76b;
+  color: rgba(0, 0, 0, 0.8);
 }
 </style>

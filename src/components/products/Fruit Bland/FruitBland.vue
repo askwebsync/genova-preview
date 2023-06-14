@@ -1,6 +1,6 @@
 <template>
-  <section class="container mx-auto">
-    <nav class="flex ml-3 mt-5 mb-10 md:ml-10" aria-label="Breadcrumb">
+  <section class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+    <nav class="flex mb-24" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">
           <a
@@ -62,25 +62,51 @@
         </li>
       </ol>
     </nav>
-    <div class="p-4 md:p-6 lg:p-6 lg:pt-10">
-      <div
-        class="flex flex-col gap-y-12 md:flex md:flex-row md:justify-between md:gap-x-2"
-      >
-        <div class="p-2">
-          <h1 class="pcolor mb-1 text-lg md:text-xl lg:text-2xl">
-            Fruit Blend
+    <div class="flex flex-col gap-8 lg:gap-10">
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-col items-center lg:items-start">
+          <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">
+            Product Category
           </h1>
-          <hr class="h-1 rounded w-28 background-navbar border-0" />
+          <hr
+            class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
+          />
+        </div>
+
+        <div class="relative">
+          <select
+            class="p-2 md:p-3 w-full md:w-64 h-42 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent"
+          >
+            <option value="asc">A-Z</option>
+            <option value="desc">Z-A</option>
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+            <option value="new">New</option>
+            <option value="old">Old</option>
+          </select>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
+          >
+            <svg
+              class="w-5 h-5 text-gray-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9 13l-4-4 4-4 1.41 1.42L8.83 8H14v2H8.83l2.58 2.58L9 13z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
         </div>
       </div>
 
-      <div
-        class="p-2 mt-2 grid grid-flow-row gap-12 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-      >
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
         <div
           v-for="product in resultQuery"
           :key="product.id"
-          class="bg-white center shadow"
+          class="bg-product-home center shadow-md"
         >
           <router-link
             :to="{
@@ -104,23 +130,19 @@
             }"
           >
             <div class="cursor-pointer">
-              <figure>
-                <!-- Image -->
-                <img
-                  :src="product.image + '?auto=format&fit=crop&w=400&q=50'"
-                  :alt="product.name"
-                  class="rounded-t h-56 md:h-64 w-full object-contain"
-                />
-
-                <figcaption class="p-2 md:p-3">
-                  <!-- Title -->
-                  <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
-                    {{ product.name }}
-                  </h2>
-
-                  <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
-                </figcaption>
-              </figure>
+              <!-- Image -->
+              <img
+                :src="`/assets/images/product/fruit-bland/${product.image}`"
+                :alt="product.name"
+                class="rounded-t h-56 md:h-64 w-full object-contain"
+              />
+              <div class="p-2 md:p-3">
+                <!-- Title -->
+                <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
+                  {{ product.name }}
+                </h2>
+                <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
+              </div>
             </div>
           </router-link>
         </div>
@@ -129,127 +151,21 @@
   </section>
 </template>
 <script>
+import allProducts from "@/product/allProduct";
 export default {
   data() {
     return {
-      products: [
-        {
-          id: 20,
-          name: "Fruit Blend Kiwi",
-          image: "/assets/images/product/fruit-bland/fruitbland_kiwi.png",
-          price: "115,000",
-          category: "fruitBlend",
-          info: "Velvety, sedikit asam, dan asam, buah kecil ini merupakan pemberi semangat revitalisasi yang menjadikannya sebagai tambahan yang bagus untuk menu minuman musim panas.  Bagikan keceriaan dan kesenangan dari GENOVA Fruit Blend Kiwi dalam minuman dingin, es teh, smoothie, dan soda, paling cocok untuk hari-hari ekstra panas sebagai minuman bermanfaat. Sedikit Tips dari kami Kita suka memadukannya dengan buah markisa dan irisan jeruk untuk mengawinkan rasa eksotis semuanya dalam campuran sebuah gelas.",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-fruit-blend-kiwi-750-ml-fruit-puree?extParam=whid%3D8872969",
-          packaging: "Botol 750 ml",
-          weight: "1.4 kg",
-          serving: "20 ml",
-          color: "Hijau gelap intens, deep undertone",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 21,
-          name: "Fruit Blend Mango",
-          image: "/assets/images/product/fruit-bland/fruitbland_mango.png",
-          price: "115,000",
-          category: "fruitBlend",
-          info: "Buah Tropis, manis dan sangat lezat. Kita bersyukur mangga tumbuh di pohon.  Cabut cabangnya dan nikmati rasa mangga segar yang otentik dan baru ketika Anda menambahkan GENOVA Fruit Blend Mango ke dalam teh, lemonade, smoothie, atau koktail. Jadikan minuman mu itu mangga-licious/assets/images/product/fruit-bland! GENOVA Fruit Blend Mango menghadirkan rasa mangga matang tropis dan tekstur lembut ke teh, limun, smoothie, mocktail, dan banyak lagi.",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-fruit-blend-mango-750-ml-fruit-puree?extParam=whid%3D8872969",
-          packaging: "Botol 750 ml",
-          weight: "1.4 kg",
-          serving: "20 ml",
-          color: "Oranye terang dengan kilau kuning",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 22,
-          name: "Fruit Blend Passion Fruit",
-          image:
-            "/assets/images/product/fruit-bland/fruitbland_passionfruit.png",
-          price: "115,000",
-          category: "fruitBlend",
-          info: "Tidak ada yang bisa meniru cita rasa tropis seperti rasa eksotis dari buah Markisa. Buah kaya yang manis, tajam dan wangi pada dasarnya adalah rasa yang menyenangkan untuk selera anda dan GENOVA Fruit Blend Passion Fruit akan membawa kesegaran pada mocktail, lemonade, es teh, dan smoothie dalam perjalanan sensasi menyenangkan dahaga anda. Passion Fruit is Perfection/assets/images/product/fruit-bland!",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-fruit-blend-passion-fruit-750-ml-fruit-puree?extParam=whid%3D8872969",
-          packaging: "Botol 750 ml",
-          weight: "1.4 kg",
-          serving: "20 ml",
-          color: "Oranye tua",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 23,
-          name: "Fruit Blend Pineapple",
-          image: "/assets/images/product/fruit-bland/fruitbland_pineapple.png",
-          price: "115,000",
-          category: "fruitBlend",
-          info: "Buah Nanas mencuri perhatian, bukan hanya oleh penampilan saja tetapi juga oleh jus rasa yang kuat dan asam yang membawa sensasi tropis anda di manapun anda berada di dunia. Temukan sensasi sinar matahari di GENOVA Fruit Blend Pineapple dan campur menjadi lemonade, es teh, dan smoothie untuk sentuhan tropis yang lembut.",
-          link: "https://www.tokopedia.com/genovaindonesia/syrup-genova-pineapple-750-ml?extParam=whid%3D8872969",
-          packaging: "Botol 750 ml",
-          weight: "1.4 kg",
-          serving: "20 ml",
-          color: "Kuning bertekstur cerah",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 24,
-          name: "Fruit Blend Raspberry",
-          image: "/assets/images/product/fruit-bland/fruitbland_raspberry.png",
-          price: "115,000",
-          category: "fruitBlend",
-          info: "Halus dan lezat. Selembut rasa asli, fruit blend raspberry benar-benar memberikan rasa yang luar biasa.  Nikmati rasa juicy segar dan manis dari raspberry segar ketika Anda menggunakan GENOVA Fruit Blend Raspberry untuk membuat lemonade, teh, smoothie, mocktail, dan banyak lagi. GENOVA Fruit Blend Raspberry adalah minuman lezat buah berry yang tak tertahankan segarnya dan aromanya untuk diaplikasikan pada minuman-minuman segar anda",
-          link: "https://www.tokopedia.com/genovaindonesia/syrup-genova-pineapple-750-ml?extParam=whid%3D8872969",
-          packaging: "Botol 750 ml",
-          weight: "1.4 kg",
-          serving: "20 ml",
-          color: "Merah gelap dengan ungu, kilau merah muda.",
-          tasting: "",
-          penyimpanan:
-            "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
-        },
-        {
-          id: 25,
-          name: "Fruit Blend Strawberry",
-          image: "/assets/images/product/fruit-bland/fruitbland_strawberry.png",
-          price: "115,000",
-          category: "fruitBlend",
-          info: "Juicy, cerah, dan rasa manis yang tepat;  tidak heran jika stroberi segar adalah favorit di musim panas.  Nikmati sensasi musim panas sepanjang tahun ketika Anda menggunakan Genova Fruit Blend Strawberry untuk membuat mocktail, lemonade, es teh, dan smoothie. GENOVA Fruit Blend Strawberry memberikan rasa strawberry yang menyegarkan dan juicy/assets/images/product/fruit-bland!",
-          link: "https://www.tokopedia.com/genovaindonesia/genova-fruit-blend-strawberry-750-ml-fruit-puree?extParam=whid%3D8872969",
-          packaging: "Botol 750 ml",
-          weight: "1.4 kg",
-          serving: "20 ml",
-          color: "Merah ruby tua dengan beberapa kilau merah tembaga",
-          tasting: "",
-          penyimpanan:
-            "-Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n-Hindari dari tempat yang berbau tajam.",
-        },
-      ],
-      searchQuery: "",
+      products: allProducts,
     };
   },
   computed: {
-    // Get the filtered projects
+    // Get the filtered products with "Fruit Blend" category
     resultQuery() {
-      if (this.searchQuery) {
-        return this.products.filter((item) => {
-          return this.searchQuery
-            .toLowerCase()
-            .split(" ")
-            .every((v) => item.name.toLowerCase().includes(v));
-        });
-      } else {
-        return this.products;
-      }
+      return this.products.filter(
+        (product) => product.category === "fruitBlend"
+      );
     },
   },
-  methods: {},
 };
 </script>
 
