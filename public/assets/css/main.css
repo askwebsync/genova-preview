@@ -33,6 +33,7 @@
 
 .app-footer {
   margin-top: auto;
+
 }
 
 li>a {
@@ -72,6 +73,10 @@ p {
 
 .background-yellow {
   background: #C79E2A
+}
+
+.bg-footer {
+  background-color: #ebebeb;
 }
 
 .bg-button-homepage {

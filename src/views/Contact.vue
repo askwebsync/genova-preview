@@ -8,10 +8,5 @@ import Contact from "../components/contactpage/Contact.vue";
 
 export default {
   components: { Contact },
-  data() {
-    return {};
-  },
 };
 </script>
-
-<style scoped></style>

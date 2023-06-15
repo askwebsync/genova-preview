@@ -7,12 +7,7 @@
         class="mySlides"
         ref="slide"
       >
-        <div
-          class="image-container"
-          @touchstart="touchStart"
-          @touchmove="touchMove"
-          @touchend="touchEnd"
-        >
+        <div class="image-container">
           <img :src="slide.src" :alt="slide.alt" class="image-css" />
         </div>
       </div>

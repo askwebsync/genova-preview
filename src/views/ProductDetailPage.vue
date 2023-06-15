@@ -312,7 +312,6 @@
 import PageLoader from "../components/PageLoader.vue";
 export default {
   name: "ProductDetailPage",
-
   props: {
     dataProduk: String,
   },

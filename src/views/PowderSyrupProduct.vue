@@ -7,9 +7,6 @@ import PowderSyrup from "../components/products/Powder Drink/PowderSyrup.vue";
 
 export default {
   components: { PowderSyrup },
-  data() {
-    return {};
-  },
 };
 </script>
 

@@ -2,7 +2,7 @@
   <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
     <div class="flex flex-col gap-8 lg:gap-10">
       <div class="flex flex-col items-center lg:items-start">
-        <h1 class="pcolor mb-1 text-md md:text-lg lg:text-2xl uppercase">
+        <h1 class="pcolor mb-1 text-lg lg:text-2xl uppercase">
           Trending Flavour
         </h1>
         <hr

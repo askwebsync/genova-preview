@@ -3,7 +3,7 @@
   <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
     <div class="flex flex-col gap-8 lg:gap-10">
       <div class="flex flex-col items-center lg:items-start">
-        <h1 class="pcolor mb-1 text-md md:text-lg lg:text-2xl uppercase">
+        <h1 class="pcolor mb-1 text-lg lg:text-2xl uppercase">
           Product Category
         </h1>
         <hr
@@ -11,7 +11,7 @@
         />
       </div>
       <div
-        class="grid grid-cols-1 gap-12 px-10 md:px-0 md:gap-10 sm:grid-cols-2 md:grid-cols-3 lg:gap-36"
+        class="grid grid-cols-1 gap-12 px-10 sm:grid-cols-2 md:px-0 md:gap-10 md:grid-cols-3 lg:gap-24 xl:gap-36"
       >
         <router-link :to="{ name: 'fruit-bland' }">
           <div

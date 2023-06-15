@@ -77,6 +77,7 @@
           <select
             class="filter-text-size p-2 md:p-3 w-full md:w-64 h-42 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent"
           >
+            <option disabled selected value="">Filter</option>
             <option value="low">Low to High</option>
             <option value="high">High to Low</option>
             <option value="new">New</option>
@@ -100,7 +101,9 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+      >
         <div
           v-for="product in resultQuery"
           :key="product.id"
@@ -111,14 +114,16 @@
             <img
               :src="`/assets/images/product/${product.image}`"
               :alt="product.name"
-              class="rounded-t h-56 md:h-64 w-full object-contain"
+              class="rounded-t h-48 sm:h-56 md:h-64 w-full object-contain"
             />
-            <div class="p-2 md:p-3">
+            <div class="p-3 md:p-4">
               <!-- Title -->
-              <h2 class="mb-2 text-lg lg:text-xl tracking-tight text-black">
+              <h2 class="mb-1 text-lg lg:text-xl tracking-tight text-black">
                 {{ product.name }}
               </h2>
-              <p class="text-xl text-gray-600">RP. {{ product.price }}</p>
+              <p class="text-lg md:text-xl text-gray-600">
+                RP. {{ product.price }}
+              </p>
             </div>
           </div>
         </div>

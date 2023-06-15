@@ -13,8 +13,5 @@ import Recipe from "../components/recipepage/Recipe.vue";
 export default {
   // eslint-disable-next-line vue/no-unused-components
   components: { HeroRecipe, Recipe },
-  data() {
-    return {};
-  },
 };
 </script>

@@ -68,14 +68,7 @@
 <script>
 export default {
   components: {},
-  data() {
-    return {};
-  },
 };
 </script>
 
-<style scoped>
-.bg-footer {
-  background-color: #ebebeb;
-}
-</style>
+<style scoped></style>
