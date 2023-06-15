@@ -1,6 +1,14 @@
 <template>
-  <div class="slideshow-container">
-    <div v-for="(slide, index) in slides" :key="index" class="mySlides">
+  <div class="slideshow-container" ref="slideshow">
+    <div
+      v-for="(slide, index) in slides"
+      :key="index"
+      class="mySlides"
+      ref="slide"
+      @touchstart="touchStart"
+      @touchmove="touchMove"
+      @touchend="touchEnd"
+    >
       <div class="image-container">
         <img :src="slide.src" :alt="slide.alt" class="image-css" />
       </div>
@@ -29,6 +37,9 @@ export default {
         { src: "/assets/images/banner/Homepage/5b.jpg", alt: "Image4" },
       ],
       slideInterval: null, // Store the interval ID
+      touchStartX: 0,
+      touchEndX: 0,
+      touchThreshold: 50, // Minimum distance to trigger a swipe
     };
   },
   mounted() {
@@ -47,7 +58,7 @@ export default {
     },
     showSlides(n) {
       let i;
-      const slides = document.getElementsByClassName("mySlides");
+      const slides = this.$refs.slide;
       const dots = document.getElementsByClassName("dot");
       if (slides.length === 0 || dots.length === 0) {
         return; // Return if the elements don't exist
@@ -72,6 +83,20 @@ export default {
       this.slideInterval = setInterval(() => {
         this.plusSlides(1);
       }, 4000);
+    },
+    touchStart(e) {
+      this.touchStartX = e.touches[0].clientX;
+    },
+    touchMove(e) {
+      this.touchEndX = e.touches[0].clientX;
+    },
+    touchEnd() {
+      const distance = this.touchEndX - this.touchStartX;
+      if (distance > this.touchThreshold) {
+        this.plusSlides(-1); // Swipe to the right
+      } else if (distance < -this.touchThreshold) {
+        this.plusSlides(1); // Swipe to the left
+      }
     },
   },
 };
