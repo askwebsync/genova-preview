@@ -6,7 +6,7 @@
     <div class="flex items-center justify-between">
       <router-link :to="{ name: 'home' }"
         ><img
-          src="/assets/images/logo/logo 128x128.png"
+          src="/assets/images/logo/logo128.png"
           class="w-full h-24 object-contain focus:outline-none"
         />
       </router-link>

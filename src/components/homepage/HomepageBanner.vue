@@ -109,7 +109,7 @@ export default {
   width: 100%;
 }
 
-.prev,
+/* .prev,
 .next {
   cursor: pointer;
   position: absolute;
@@ -122,20 +122,20 @@ export default {
   font-size: 15px;
   transition: 0.6s ease;
   background: rgba(43, 43, 40, 0.8);
-  border-radius: 50%; /* Use 50% to create a full circle */
+  border-radius: 50%;
   user-select: none;
-  margin-left: 10px; /* Add left margin of 10px */
-  margin-right: 10px; /* Add right margin of 10px */
-}
+  margin-left: 10px; 
+  margin-right: 10px; 
+} */
 
-.next {
+/* .next {
   right: 0;
 }
 
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 .dot-container {
   text-align: center;

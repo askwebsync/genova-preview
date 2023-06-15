@@ -65,7 +65,7 @@
     <div class="flex flex-col gap-8 lg:gap-10">
       <div class="flex flex-row justify-between">
         <div class="flex flex-col items-center lg:items-start">
-          <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">
+          <h1 class="pcolor mb-1 text-md md:text-lg lg:text-2xl uppercase">
             Powder Drink
           </h1>
           <hr
@@ -75,7 +75,7 @@
 
         <div class="relative">
           <select
-            class="p-2 md:p-3 w-full md:w-64 h-42 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent"
+            class="filter-text-size p-2 md:p-3 w-full md:w-64 h-42 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent"
           >
             <option value="low">Low to High</option>
             <option value="high">High to Low</option>
@@ -100,7 +100,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <div
           v-for="product in resultQuery"
           :key="product.id"
@@ -127,7 +127,7 @@
   </section>
 </template>
 <script>
-import allProducts from "../../../../src/product/allProduct";
+import allProducts from "@/product/allProduct";
 export default {
   data() {
     return {

@@ -1,13 +1,13 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+  <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
     <div class="flex flex-col gap-8 lg:gap-10">
       <div class="flex flex-col items-center lg:items-start">
         <h1 class="mb-1 text-xl lg:text-2xl uppercase">Products</h1>
         <hr class="h-1 rounded w-full lg:w-32 hrborder mx-auto lg:mx-0" />
       </div>
       <div
-        class="grid grid-cols-1 gap-12 px-10 sm:px-20 md:px-0 sm:grid-cols-2 md:grid-cols-3 lg:gap-36"
+        class="grid grid-cols-1 gap-12 px-10 sm:px-20 md:gap-10 md:px-0 sm:grid-cols-2 md:grid-cols-3 lg:gap-36"
       >
         <router-link :to="{ name: 'fruit-bland' }">
           <div
@@ -53,7 +53,7 @@
         </router-link>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 <script>
 export default {
@@ -77,11 +77,5 @@ h2 {
   font-style: normal;
   font-weight: 500;
   color: #2b2b28;
-}
-.container-animation {
-  transition: opacity 0.3s ease;
-}
-.container-animation:hover {
-  opacity: 0.8;
 }
 </style>

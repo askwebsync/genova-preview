@@ -2,7 +2,9 @@
   <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
     <div class="flex flex-col gap-8 lg:gap-10">
       <div class="flex flex-col items-center lg:items-start">
-        <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">New Flavour</h1>
+        <h1 class="pcolor mb-1 text-md md:text-lg lg:text-2xl uppercase">
+          New Flavour
+        </h1>
         <hr
           class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
         />
@@ -73,7 +75,7 @@
 </template>
 
 <script>
-import allProducts from "../../../src/product/allProduct";
+import allProducts from "@/product/allProduct";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 
@@ -88,7 +90,6 @@ export default {
     return {
       products: allProducts,
       activeSlideIndex: 0, // Track the active slide index
-
       breakpoints: {
         600: {
           itemsToShow: 2,
@@ -115,7 +116,6 @@ export default {
       const newProducts = this.products.filter(
         (product) => product.new === "yes"
       );
-
       // Return the New products
       return newProducts;
     },
@@ -140,13 +140,5 @@ h3 {
   font-style: normal;
   font-weight: 500;
   color: #2b2b28;
-}
-.product-container {
-  transition: all 0.3s;
-}
-
-.product-container:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px 2px #ccc;
 }
 </style>
