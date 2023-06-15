@@ -47,7 +47,7 @@
                       packaging: product.packaging,
                       weight: product.weight,
                       color: product.color,
-                      image: product.image,
+                      image: getImageSource(product),
                       link: product.link,
                       serving: product.serving,
                       tasting: product.tasting,

@@ -158,7 +158,7 @@ export default {
             packaging: product.packaging,
             weight: product.weight,
             color: product.color,
-            image: product.image,
+            image: `/assets/images/product/${product.image}`,
             link: product.link,
             serving: product.serving,
             tasting: product.tasting,
