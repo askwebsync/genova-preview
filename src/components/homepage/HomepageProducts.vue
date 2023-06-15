@@ -11,7 +11,7 @@
         />
       </div>
       <div
-        class="grid grid-cols-1 gap-12 px-20 sm:px-10 md:px-0 md:gap-10 sm:grid-cols-2 md:grid-cols-3 lg:gap-36"
+        class="grid grid-cols-1 gap-12 px-10 md:px-0 md:gap-10 sm:grid-cols-2 md:grid-cols-3 lg:gap-36"
       >
         <router-link :to="{ name: 'fruit-bland' }">
           <div

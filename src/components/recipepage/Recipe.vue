@@ -12,7 +12,7 @@
         <div
           class="flex flex-col px-4 py-5 md:flex-row justify-between border md:flex gap-12 items-center lg:gap-20"
         >
-          <div class="max-w-xs">
+          <div class="max-w-xs w-24">
             <h3 class="text-xl md:text-2xl">Ice Shakes</h3>
           </div>
           <div
@@ -21,7 +21,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-powder.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -35,14 +35,14 @@
               <div class="flex items-center self-center">
                 <img
                   src="/assets/images/icon/recipe_plus.png"
-                  class="object-cover h-8 w-8"
+                  class="object-cover h-6 w-6"
                 />
               </div>
             </div>
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-hot-water.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -63,7 +63,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-milk.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -84,7 +84,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-ice-cube.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -116,7 +116,7 @@
         <div
           class="flex flex-col px-4 py-5 md:flex-row justify-between border md:flex gap-12 items-center lg:gap-20"
         >
-          <div class="max-w-xs">
+          <div class="max-w-xs w-24">
             <h3 class="text-xl md:text-2xl">Ice Blended</h3>
           </div>
           <div
@@ -125,7 +125,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-powder.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -146,7 +146,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-sugar.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -167,7 +167,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-milk.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -188,7 +188,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-ice-cube.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -221,7 +221,7 @@
         <div
           class="flex flex-col px-4 py-5 md:flex-row justify-between border md:flex gap-12 items-center lg:gap-20"
         >
-          <div class="max-w-xs">
+          <div class="max-w-xs w-24">
             <h3 class="text-xl md:text-2xl">Mocktail</h3>
           </div>
           <div
@@ -230,7 +230,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-fruit-blend.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -251,7 +251,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-syrup.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -272,7 +272,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-soda.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -293,7 +293,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-ice-cube.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -312,9 +312,13 @@
               </div>
             </div>
             <div class="flex flex-col items-center flex-grow">
-              <img src="/assets/images/recipes/recipe-shakes.png" />
+              <img
+                src="/assets/images/recipes/recipe-blender.png"
+                class=""
+                alt="Blended"
+              />
               <div class="flex flex-col my-2 gap-1">
-                <h2 class="text-lg lg:text-xl">Shakes All</h2>
+                <h2 class="text-lg lg:text-xl">Blends All</h2>
               </div>
             </div>
           </div>
@@ -322,7 +326,7 @@
         <div
           class="flex flex-col px-4 py-5 md:flex-row justify-between border md:flex gap-12 items-center lg:gap-20"
         >
-          <div class="max-w-xs">
+          <div class="max-w-xs w-24">
             <h3 class="text-xl md:text-2xl">Fruit Smoothies</h3>
           </div>
           <div
@@ -331,7 +335,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-fruit-blend.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -352,7 +356,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-frape-base.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -373,7 +377,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-water.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -394,7 +398,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-ice-cube.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -423,7 +427,7 @@
         <div
           class="flex flex-col px-4 py-5 md:flex-row justify-between border md:flex gap-12 items-center lg:gap-20"
         >
-          <div class="max-w-xs">
+          <div class="max-w-xs w-24">
             <h3 class="text-xl md:text-2xl">Special Tea</h3>
           </div>
           <div
@@ -432,7 +436,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-syrup.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -453,7 +457,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-sugar.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -474,7 +478,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-green-tea.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
@@ -495,7 +499,7 @@
             <div
               class="flex flex-col md:flex-row justify-end gap-3 md:gap-4 h-44"
             >
-              <div class="flex flex-col items-center px-1 py-2 gap-3">
+              <div class="flex flex-col items-center px-1 py-2 gap-3 w-24">
                 <img
                   src="/assets/images/recipes/recipe-ice-cube.png"
                   class="object-cover w-12 h-12 md:w-14 md:h-14"
