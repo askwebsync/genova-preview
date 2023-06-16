@@ -32,8 +32,8 @@ export default {
       slides: [
         { src: "/assets/images/banner/Homepage/3b.jpg", alt: "Image1" },
         { src: "/assets/images/banner/Homepage/4b.jpg", alt: "Image2" },
-        { src: "/assets/images/banner/Homepage/5b.jpg", alt: "Image3" },
-        { src: "/assets/images/banner/Homepage/7b.jpg", alt: "Image4" },
+        { src: "/assets/images/banner/Homepage/5.jpg", alt: "Image3" },
+        { src: "/assets/images/banner/Homepage/5b.jpg", alt: "Image4" },
       ],
       slideInterval: null, // Store the interval ID
       touchStartX: 0,
@@ -81,7 +81,7 @@ export default {
       this.slideIndex = 1;
       this.slideInterval = setInterval(() => {
         this.plusSlides(1);
-      }, 6000);
+      }, 4000);
     },
     touchStart(e) {
       this.touchStartX = e.touches[0].clientX;

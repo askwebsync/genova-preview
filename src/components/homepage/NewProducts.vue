@@ -25,7 +25,7 @@
             </div>
             <div class="flex flex-col items-center py-4 md:py-6 gap-5">
               <div class="flex flex-col gap-1">
-                <h3 class="text-lg lg:text-xl">
+                <h3 class="text-lg lg:text-xl tracking-tight">
                   {{ product.name }}
                 </h3>
                 <p class="text-md md:text-lg lg:text-xl">

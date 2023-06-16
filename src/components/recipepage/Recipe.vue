@@ -12,10 +12,10 @@
       </div>
       <div class="flex flex-col gap-8 px-12 md:px-0">
         <div
-          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center"
+          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-footer"
         >
           <div class="max-w-xs w-20">
-            <h3 class="text-xl md:text-2xl mb-4">Ice Shakes</h3>
+            <h3 class="text-xl md:text-lg lg:text-xl mb-4">Ice Shakes</h3>
           </div>
           <div
             class="flex flex-col items-center px-2 py-3 md:px-4 md:py-5 center md:flex-row md:gap-0 gap-1 lg:gap-1 xl:gap-5"
@@ -125,10 +125,10 @@
           </div>
         </div>
         <div
-          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center"
+          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-footer"
         >
           <div class="max-w-xs w-20">
-            <h3 class="text-xl md:text-2xl mb-4">Ice Blended</h3>
+            <h3 class="text-xl md:text-lg lg:text-xl mb-4">Ice Blended</h3>
           </div>
           <div
             class="flex flex-col items-center px-2 py-3 md:px-4 md:py-5 center md:flex-row md:gap-0 gap-1 lg:gap-1 xl:gap-5"
@@ -238,10 +238,10 @@
           </div>
         </div>
         <div
-          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center"
+          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-footer"
         >
           <div class="max-w-xs w-20">
-            <h3 class="text-xl md:text-2xl mb-4">Mocktail</h3>
+            <h3 class="text-xl md:text-lg lg:text-xl mb-4">Mocktail</h3>
           </div>
           <div
             class="flex flex-col items-center px-2 py-3 md:px-4 md:py-5 center md:flex-row md:gap-0 gap-1 lg:gap-1 xl:gap-5"
@@ -351,10 +351,10 @@
           </div>
         </div>
         <div
-          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center"
+          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-footer"
         >
           <div class="max-w-xs w-20">
-            <h3 class="text-xl md:text-2xl mb-4">Fruit Smoothies</h3>
+            <h3 class="text-xl md:text-lg lg:text-xl mb-4">Fruit Smoothies</h3>
           </div>
           <div
             class="flex flex-col items-center px-2 py-3 md:px-4 md:py-5 center md:flex-row md:gap-0 gap-1 lg:gap-1 xl:gap-5"
@@ -464,10 +464,10 @@
           </div>
         </div>
         <div
-          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center"
+          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-footer"
         >
           <div class="max-w-xs w-20">
-            <h3 class="text-xl md:text-2xl mb-4">Special Tea</h3>
+            <h3 class="text-xl md:text-lg lg:text-xl mb-4">Special Tea</h3>
           </div>
           <div
             class="flex flex-col items-center px-2 py-3 md:px-4 md:py-5 center md:flex-row md:gap-0 gap-1 lg:gap-1 xl:gap-5"
@@ -581,11 +581,7 @@
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {};
-  },
-};
+export default {};
 </script>
 
 <style scoped>
