@@ -1,5 +1,11 @@
 <template>
-  <div class="slideshow-container" ref="slideshow">
+  <div
+    class="slideshow-container"
+    ref="slideshow"
+    @mousedown="mouseDown"
+    @mouseup="mouseUp"
+    @mouseleave="mouseLeave"
+  >
     <div
       v-for="(slide, index) in slides"
       :key="index"
@@ -40,6 +46,8 @@ export default {
       touchStartX: 0,
       touchEndX: 0,
       touchThreshold: 50, // Minimum distance to trigger a swipe
+      isMouseDown: false,
+      mouseDownX: 0,
     };
   },
   mounted() {
@@ -97,6 +105,24 @@ export default {
       } else if (distance < -this.touchThreshold) {
         this.plusSlides(1); // Swipe to the left
       }
+    },
+    mouseDown(e) {
+      this.isMouseDown = true;
+      this.mouseDownX = e.clientX;
+    },
+    mouseUp(e) {
+      if (this.isMouseDown) {
+        const distance = e.clientX - this.mouseDownX;
+        if (distance > this.touchThreshold) {
+          this.plusSlides(-1); // Swipe to the right
+        } else if (distance < -this.touchThreshold) {
+          this.plusSlides(1); // Swipe to the left
+        }
+      }
+      this.isMouseDown = false;
+    },
+    mouseLeave() {
+      this.isMouseDown = false;
     },
   },
 };
