@@ -1,17 +1,18 @@
 <template>
   <div class="slideshow-container" ref="slideshow">
-    <transition-group name="slide" tag="div">
-      <div
-        v-for="(slide, index) in slides"
-        :key="index"
-        class="mySlides"
-        ref="slide"
-      >
-        <div class="image-container">
-          <img :src="slide.src" :alt="slide.alt" class="image-css" />
-        </div>
+    <div
+      v-for="(slide, index) in slides"
+      :key="index"
+      class="mySlides"
+      ref="slide"
+      @touchstart="touchStart"
+      @touchmove="touchMove"
+      @touchend="touchEnd"
+    >
+      <div class="image-container">
+        <img :src="slide.src" :alt="slide.alt" class="image-css" />
       </div>
-    </transition-group>
+    </div>
     <div class="dot-container">
       <span
         v-for="(slide, index) in slides"
@@ -32,8 +33,8 @@ export default {
       slides: [
         { src: "/assets/images/banner/Homepage/3b.jpg", alt: "Image1" },
         { src: "/assets/images/banner/Homepage/4b.jpg", alt: "Image2" },
-        { src: "/assets/images/banner/Homepage/5.jpg", alt: "Image3" },
-        { src: "/assets/images/banner/Homepage/5b.jpg", alt: "Image4" },
+        { src: "/assets/images/banner/Homepage/5b.jpg", alt: "Image3" },
+        { src: "/assets/images/banner/Homepage/7b.jpg", alt: "Image4" },
       ],
       slideInterval: null, // Store the interval ID
       touchStartX: 0,
@@ -81,7 +82,7 @@ export default {
       this.slideIndex = 1;
       this.slideInterval = setInterval(() => {
         this.plusSlides(1);
-      }, 4000);
+      }, 5000);
     },
     touchStart(e) {
       this.touchStartX = e.touches[0].clientX;
@@ -124,19 +125,6 @@ export default {
 .mySlides {
   display: none;
   width: 100%;
-}
-
-.slide-enter-active,
-.slide-leave-active {
-  transition: transform 0.6s ease;
-}
-
-.slide-enter {
-  transform: translateX(100%);
-}
-
-.slide-leave-to {
-  transform: translateX(-100%);
 }
 
 .dot-container {
