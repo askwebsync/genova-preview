@@ -3,11 +3,13 @@
   <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
     <div class="flex flex-col gap-8 lg:gap-10">
       <div class="flex flex-col items-center lg:items-start">
-        <h1 class="mb-1 text-xl lg:text-2xl uppercase">Products</h1>
-        <hr class="h-1 rounded w-full lg:w-32 hrborder mx-auto lg:mx-0" />
+        <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">Products</h1>
+        <hr
+          class="h-1 rounded w-full lg:w-32 background-yellow border-0 mx-auto lg:mx-0"
+        />
       </div>
       <div
-        class="grid grid-cols-1 gap-12 px-10 sm:px-20 md:gap-10 md:px-0 sm:grid-cols-2 md:grid-cols-3 lg:gap-36"
+        class="grid grid-cols-1 gap-12 px-10 sm:grid-cols-2 md:px-0 md:gap-10 md:grid-cols-3 lg:gap-20 xl:gap-32"
       >
         <router-link :to="{ name: 'fruit-bland' }">
           <div
@@ -70,7 +72,6 @@ h1 {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 500;
-  color: #2b2b28;
 }
 h2 {
   font-family: "Roboto";

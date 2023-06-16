@@ -11,22 +11,22 @@
         />
       </div>
       <div
-        class="grid grid-cols-1 gap-12 px-10 sm:grid-cols-2 md:px-0 md:gap-10 md:grid-cols-3 lg:gap-24 xl:gap-36"
+        class="grid grid-cols-1 gap-12 px-10 sm:grid-cols-2 md:px-0 md:gap-10 md:grid-cols-3 lg:gap-20 xl:gap-32"
       >
         <router-link :to="{ name: 'fruit-bland' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:px-4 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:py-6 gap-6"
           >
             <img
               src="/assets/images/product/fruit-bland/fruitbland_pineapple.png"
               alt="Product"
               class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
-            <div class="flex flex-col gap-4 center">
-              <h2 class="text-lg lg:text-xl">Fruit Blend</h2>
+            <div class="flex flex-col gap-4 center w-32 md:w-40">
+              <h2 class="text-lg lg:text-xl tracking-tight">Fruit Blend</h2>
 
               <button
-                class="rounded-lg px-3 py-2 md:px-4 background-yellow hover:bg-yellow-600 duration-300 text-white"
+                class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
               >
                 See More
               </button>
@@ -35,18 +35,18 @@
         </router-link>
         <router-link :to="{ name: 'flavoured-syrup' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:px-4 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:py-6 gap-6"
           >
             <img
               src="/assets/images/product/syrup/syrup_bluecuracao.png"
               alt="Product"
               class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
-            <div class="flex flex-col gap-4 center">
-              <h2 class="text-lg lg:text-xl">Flavoured Syrup</h2>
+            <div class="flex flex-col gap-4 center w-32 md:w-40">
+              <h2 class="text-lg lg:text-xl tracking-tight">Flavoured Syrup</h2>
 
               <button
-                class="rounded-lg px-3 py-2 md:px-4 background-yellow hover:bg-yellow-600 duration-300 text-white"
+                class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
               >
                 See More
               </button>
@@ -55,7 +55,7 @@
         </router-link>
         <router-link :to="{ name: 'powder-syrup' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:px-4 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:py-6 gap-6"
           >
             <img
               src="/assets/images/product/powder/powder_tiramisu.png"
@@ -63,11 +63,11 @@
               class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
 
-            <div class="flex flex-col gap-4 center">
-              <h2 class="text-lg lg:text-xl">Powder Drink</h2>
+            <div class="flex flex-col gap-4 center w-32 md:w-40">
+              <h2 class="text-lg lg:text-xl tracking-tight">Powder Drink</h2>
 
               <button
-                class="rounded-lg px-3 py-2 md:px-4 background-yellow hover:bg-yellow-600 duration-300 text-white"
+                class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
               >
                 See More
               </button>

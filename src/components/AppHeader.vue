@@ -28,35 +28,35 @@
     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
     <ul
       :class="showMenu ? 'flex' : 'hidden'"
-      class="flex-col my-2 space-y-4 items-center md:flex md:space-y-0 md:flex-row md:space-x-5 xl:space-x-12 md:mt-0"
+      class="flex-col my-2 space-y-4 items-center md:flex md:space-y-0 md:flex-row md:space-x-6 md:my-0 xl:space-x-10"
     >
       <li
         @click="showMenu = !showMenu"
-        class="text-sm lg:text-md pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-md xl:text-lg pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'products' }">Product</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm lg:text-md pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-md xl:text-lg pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'recipe' }">Recipe</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm lg:text-md pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-md xl:text-lg pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'about' }">About Us</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm lg:text-md pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-md xl:text-lg pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'contact' }">Contact</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm lg:text-md pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-md xl:text-lg pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'location' }">Location</router-link>
       </li>

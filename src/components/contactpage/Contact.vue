@@ -3,7 +3,7 @@
   <section class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
     <div class="flex flex-col gap-8 lg:gap-10">
       <div class="flex flex-col items-center text-center">
-        <h1 class="mb-1 text-xl lg:text-2xl uppercase">Contact Us</h1>
+        <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">Contact Us</h1>
         <hr
           class="h-1 rounded w-full lg:w-40 bg-black border-0 mx-auto lg:mx-0"
         />
