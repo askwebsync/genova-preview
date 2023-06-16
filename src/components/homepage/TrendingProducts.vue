@@ -137,7 +137,6 @@ export default {
 
 <style scoped>
 h3 {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   color: #2b2b28;
