@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <template>
   <nav
-    class="container px-4 md:px-8 lg:px-24 py-2 mx-auto md:flex md:justify-between md:items-center"
+    class="container px-4 md:px-8 lg:px-24 py-2 md:py-0 mx-auto md:flex md:justify-between md:items-center"
   >
     <div class="flex items-center justify-between">
       <router-link :to="{ name: 'home' }"
@@ -32,31 +32,31 @@
     >
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-md xl:text-lg pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-md pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'products' }">Product</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-md xl:text-lg pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-md pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'recipe' }">Recipe</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-md xl:text-lg pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-md pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'about' }">About Us</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-md xl:text-lg pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-md pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'contact' }">Contact</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-md xl:text-lg pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-md pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'location' }">Location</router-link>
       </li>
