@@ -6,7 +6,7 @@
         <div class="flex flex-col items-center text-center">
           <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">About</h1>
           <hr
-            class="h-1 rounded w-full lg:w-40 bg-black border-0 mx-auto lg:mx-0"
+            class="h-1 rounded w-full lg:w-40 background-yellow border-0 mx-auto lg:mx-0"
           />
         </div>
         <div class="about-section">
@@ -58,7 +58,7 @@
   background-position: center center;
   background-color: #fdfdfd;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 25px 0;
   border-radius: 10px;
 }
 .inner-container {

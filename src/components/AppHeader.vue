@@ -32,31 +32,31 @@
     >
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-md pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'products' }">Product</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-md pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'recipe' }">Recipe</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-md pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'about' }">About Us</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-md pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'contact' }">Contact</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-md pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm md:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'location' }">Location</router-link>
       </li>

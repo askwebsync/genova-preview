@@ -7,12 +7,12 @@
           Standard Recipe
         </h1>
         <hr
-          class="h-1 rounded w-full lg:w-52 background-yellow border-0 mx-auto lg:mx-0"
+          class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
         />
       </div>
       <div class="flex flex-col gap-8 px-12 md:px-0">
         <div
-          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-footer"
+          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-gray-50"
         >
           <div class="max-w-xs w-20">
             <h3 class="text-xl md:text-lg lg:text-xl mb-4">Ice Shakes</h3>
@@ -125,7 +125,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-footer"
+          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-gray-50"
         >
           <div class="max-w-xs w-20">
             <h3 class="text-xl md:text-lg lg:text-xl mb-4">Ice Blended</h3>
@@ -238,7 +238,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-footer"
+          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-gray-50"
         >
           <div class="max-w-xs w-20">
             <h3 class="text-xl md:text-lg lg:text-xl mb-4">Mocktail</h3>
@@ -351,7 +351,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-footer"
+          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-gray-50"
         >
           <div class="max-w-xs w-20">
             <h3 class="text-xl md:text-lg lg:text-xl mb-4">Fruit Smoothies</h3>
@@ -464,7 +464,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-footer"
+          class="flex flex-col p-4 md:flex-row justify-between border md:flex gap-8 md:gap-6 lg:gap-12 items-center bg-gray-50"
         >
           <div class="max-w-xs w-20">
             <h3 class="text-xl md:text-lg lg:text-xl mb-4">Special Tea</h3>
