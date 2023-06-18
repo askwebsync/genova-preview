@@ -7,6 +7,7 @@
 import Contact from "../components/contactpage/Contact.vue";
 
 export default {
+  name: "ContactPage",
   components: { Contact },
 };
 </script>

@@ -43,6 +43,7 @@ import FindOffline from "../components/location/FindOffline.vue";
 import FindOnline from "../components/location/FindOnline.vue";
 
 export default {
+  name: "LocationPage",
   components: { FindOffline, FindOnline },
   data() {
     return { tab: "offline" };

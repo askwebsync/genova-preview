@@ -11,6 +11,7 @@ import HeroRecipe from "../components/recipepage/HeroRecipe.vue";
 import Recipe from "../components/recipepage/Recipe.vue";
 
 export default {
+  name: "RecipePage",
   // eslint-disable-next-line vue/no-unused-components
   components: { HeroRecipe, Recipe },
 };
