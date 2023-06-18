@@ -36,6 +36,33 @@
 
 }
 
+#scroll {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #C79E2A;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+#scroll span {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: 17px auto;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+#scroll:hover {
+  background-color: #555;
+}
+
 li>a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;

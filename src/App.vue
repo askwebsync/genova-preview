@@ -18,6 +18,9 @@
       <footer class="app-footer">
         <app-footer />
       </footer>
+      <a href="#" id="scroll" v-show="showScroll" @click="scrollToTop">
+        <span></span>
+      </a>
     </div>
   </div>
 </template>
@@ -36,12 +39,32 @@ export default {
   data() {
     return {
       isLoaded: true,
+      showScroll: false,
     };
   },
   mounted() {
+    window.addEventListener("scroll", this.handleScroll);
     setTimeout(() => {
       this.isLoaded = !this.isLoaded;
     }, 1000);
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (window.pageYOffset > 100) {
+        this.showScroll = true;
+      } else {
+        this.showScroll = false;
+      }
+    },
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },
   },
 };
 </script>
