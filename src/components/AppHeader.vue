@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <template>
   <nav
-    class="container px-4 md:px-8 lg:px-24 py-1 md:py-0 mx-auto md:flex md:justify-between md:items-center"
+    class="container px-4 md:px-8 lg:px-24 mx-auto md:flex md:justify-between md:items-center"
   >
     <div class="flex items-center justify-between">
       <router-link :to="{ name: 'home' }"
@@ -16,7 +16,7 @@
         class="flex md:hidden focus:outline-none"
       >
         <button type="button" class="hover:text-gray-700 focus:outline-none">
-          <svg viewBox="0 0 24 24" class="w-8 h-8 fill-current">
+          <svg viewBox="0 0 24 24" class="w-7 h-7 fill-current">
             <path
               fill-rule="evenodd"
               d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
@@ -61,8 +61,8 @@
         <router-link :to="{ name: 'location' }">Location</router-link>
       </li>
     </ul>
-    <div class="contain md:w-1/6" @click="clickSearchBar()">
-      <div class="py-2 relative w-full">
+    <div class="contain pb-2 md:w-1/6" @click="clickSearchBar()">
+      <div class="relative w-full">
         <input
           class="border-2 border-yellow h-12 px-5 rounded-lg text-sm hover:outline-none focus:outline-none text-black"
           placeholder="Search Item"
@@ -72,7 +72,7 @@
           @blur="toggle = false"
           @focus="toggle = true"
         />
-        <button type="submit" class="absolute right-0 top-0 mt-4 mr-4 md:mr-2">
+        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4 md:mr-2">
           <svg
             class="pcolor h-4 w-4 fill-current"
             xmlns="http://www.w3.org/2000/svg"
