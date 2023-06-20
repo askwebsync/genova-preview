@@ -16,28 +16,36 @@
 
       <div class="grid md:grid-cols-2 xl:grid-cols-3 self-center gap-12">
         <div
-          class="flex flex-col items-center gap-5 bg-footer p-4 md:p-8 rounded-lg max-w-sm"
+          class="flex flex-col items-center gap-5 bg-container p-4 md:p-8 rounded-lg max-w-sm shadow-md"
         >
-          <i class="card-icon far fa-envelope text-yellow-500"></i>
-          <h3 class="text-black font-medium text-center whitespace-normal">
-            <a href="mailto:genovaindonesiaofficial@gmail.com" class="">
-              genovaindonesiaofficial@gmail.com</a
+          <i
+            class="card-icon far fa-envelope text-yellow-500 transform hover:scale-110 transition-transform duration-300"
+          ></i>
+          <h3
+            class="text-black font-medium text-center md:text-lg whitespace-normal"
+          >
+            <a href="mailto:genovaindonesiaofficial@gmail.com" class=""
+              >genovaindonesiaofficial@gmail.com</a
             >
           </h3>
         </div>
         <div
-          class="flex flex-col items-center gap-5 bg-footer p-4 md:p-8 rounded-lg max-w-sm"
+          class="flex flex-col items-center gap-5 bg-container p-4 md:p-8 rounded-lg max-w-sm shadow-md"
         >
-          <i class="card-icon fas fa-phone text-yellow-500"></i>
-          <h3 class="text-black font-medium text-center">
-            <a href="tel:081212128171" class=""> +62 812-1212-8171 </a>
+          <i
+            class="card-icon fas fa-phone text-yellow-500 transform hover:scale-110 transition-transform duration-300"
+          ></i>
+          <h3 class="text-black font-medium text-center md:text-lg leading-2">
+            <a href="tel:081212128171" class="">+62 812-1212-8171</a>
           </h3>
         </div>
         <div
-          class="flex flex-col items-center gap-5 bg-footer p-4 md:p-8 rounded-lg max-w-sm"
+          class="flex flex-col items-center gap-5 bg-container p-4 md:p-8 rounded-lg max-w-sm shadow-md"
         >
-          <i class="card-icon fas fa-map-marker-alt text-yellow-500"></i>
-          <h3 class="text-black font-medium text-center">
+          <i
+            class="card-icon fas fa-map-marker-alt text-yellow-500 transform hover:scale-110 transition-transform duration-300"
+          ></i>
+          <h3 class="text-black font-medium text-center md:text-lg">
             Komplek PU Jl. B No. 18 RC Veteran - Tanah Kusir, Jakarta Selatan
             12330
           </h3>
@@ -49,6 +57,9 @@
 <script></script>
 
 <style scoped>
+.bg-container {
+  background: #fffbe8;
+}
 .card-icon {
   margin-top: 12px;
   font-size: 28px;
@@ -62,9 +73,5 @@
 }
 .card:hover .card-icon {
   transform: scale(1.4);
-}
-
-h3 {
-  font-size: 1rem;
 }
 </style>
