@@ -9,43 +9,59 @@
             class="h-1 rounded w-full lg:w-40 background-yellow border-0 mx-auto lg:mx-0"
           />
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div
-            class="container-about justify-center p-12 col-span-2 md:col-span-1 md:order-1"
-          >
-            <!-- Content for the first column -->
+        <div class="container-background-about">
+          <!--First Col-->
+          <div class="container-about p-8 md:p-10">
             <div class="flex flex-col gap-8">
-              <p class="leading-6 tracking-normal font-medium">
-                GENOVA saat ini adalah perusahaan yang bergerak memproduksi
-                Premium Syrup, Powder Drink dan Fruitblend dengan harga yang
-                terjangkau. Menggunakan bahan baku impor berkualitas,
-                bersertifikasi halal serta diproduksi di Jakarta,
-                Indonesia.Sehingga ketersediaan stock untuk pasokan bahan baku
-                minuman selalu terjaga.
-              </p>
-              <p class="leading-6 tracking-normal font-medium">
-                Produk Genova juga sudah memiliki sertifikat BPOM di beberapa
-                produk unggulan dan terus mengupdate semua produknya agar
-                memiliki sertifikat BPOM. Sehingga produk kami aman untuk
-                digunakan sebagai bahan baku minuman
-              </p>
-              <p class="leading-6 tracking-normal font-medium">
-                Berdiri sejak tahun 2016, GENOVA saat ini sudah dipercaya oleh
-                lebih dari 1000 pelanggan setia dari hotel bintang lima maupun
-                cafe papan atas di seluruh Indonesia. Product GENOVA banyak
-                digunakan untuk campuran pembuatan mocktail, cocktail,
-                milkshake, ice blend, hot drink dan lain-lain. Tersedia dalam
-                ragam varian rasa.
-              </p>
+              <div class="flex flex-col gap-4">
+                <h2
+                  class="tracking-tight text-xl md:text-2xl font-medium md:font-semibold"
+                >
+                  GENOVA
+                </h2>
+                <p
+                  class="text-sm md:text-base lg:text-lg leading-6 tracking-normal"
+                >
+                  Saat ini, GENOVA adalah perusahaan yang memproduksi Premium
+                  Syrup, Powder Drink, dan Fruitblend dengan harga terjangkau.
+                  Kami menggunakan bahan baku impor berkualitas, bersertifikasi
+                  halal, dan diproduksi di Jakarta, Indonesia. Ketersediaan stok
+                  untuk pasokan bahan baku minuman selalu terjaga.
+                </p>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h2
+                  class="tracking-tight text-xl md:text-2xl font-medium md:font-semibold"
+                >
+                  Produk Genova
+                </h2>
+                <p
+                  class="text-sm md:text-base lg:text-lg leading-6 tracking-normal"
+                >
+                  Produk Genova telah memiliki sertifikat BPOM pada beberapa
+                  produk unggulan kami dan kami terus melakukan pembaruan untuk
+                  memastikan semua produk kami memiliki sertifikat BPOM.
+                  Sehingga, produk kami aman digunakan sebagai bahan baku
+                  minuman.
+                </p>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h2
+                  class="tracking-tight text-xl md:text-2xl font-medium md:font-semibold"
+                >
+                  Kepercayaan dan Penggunaan
+                </h2>
+                <p
+                  class="text-sm md:text-base lg:text-lg leading-6 tracking-normal"
+                >
+                  Sejak tahun 2016, GENOVA telah dipercaya oleh lebih dari 1000
+                  pelanggan setia dari hotel bintang lima dan cafe papan atas di
+                  seluruh Indonesia. Produk GENOVA banyak digunakan untuk
+                  campuran pembuatan mocktail, cocktail, milkshake, ice blend,
+                  hot drink, dan lain-lain. Tersedia dalam beragam varian rasa.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="md:order-2">
-            <!-- Image for the second column -->
-            <img
-              src="/assets/images/banner/Homepage/homepage-banner.png"
-              alt="backgroundAbout"
-              class="w-full h-auto object-cover"
-            />
           </div>
         </div>
       </div>
@@ -54,8 +70,15 @@
 </template>
 
 <style scoped>
+.container-background-about {
+  background-image: url("/assets/images/banner/Homepage/homepage-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+}
 .container-about {
-  background: #e5e7eb;
+  background: #ebebeb;
   border-radius: 6px;
 }
 p {

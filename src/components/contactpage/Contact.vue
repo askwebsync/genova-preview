@@ -16,26 +16,28 @@
 
       <div class="grid md:grid-cols-2 xl:grid-cols-3 self-center gap-12">
         <div
-          class="flex flex-col items-center gap-4 bg-product-home p-5 md:p-8 rounded-lg shadow-lg max-w-sm"
+          class="flex flex-col items-center gap-5 bg-footer p-4 md:p-8 rounded-lg max-w-sm"
         >
           <i class="card-icon far fa-envelope text-yellow-500"></i>
-          <h3 class="text-black font-medium whitespace-normal">
-            genovaindonesiaofficial@gmail.com
+          <h3 class="text-black font-medium text-center whitespace-normal">
+            <a href="mailto:genovaindonesiaofficial@gmail.com" class="">
+              genovaindonesiaofficial@gmail.com</a
+            >
           </h3>
         </div>
         <div
-          class="flex flex-col items-center gap-4 bg-product-home p-5 md:p-8 rounded-lg shadow-lg max-w-sm"
+          class="flex flex-col items-center gap-5 bg-footer p-4 md:p-8 rounded-lg max-w-sm"
         >
           <i class="card-icon fas fa-phone text-yellow-500"></i>
-          <h3 class="text-black font-medium">
+          <h3 class="text-black font-medium text-center">
             <a href="tel:081212128171" class=""> +62 812-1212-8171 </a>
           </h3>
         </div>
         <div
-          class="flex flex-col items-center gap-4 bg-product-home p-5 md:p-8 rounded-lg shadow-lg max-w-sm"
+          class="flex flex-col items-center gap-5 bg-footer p-4 md:p-8 rounded-lg max-w-sm"
         >
           <i class="card-icon fas fa-map-marker-alt text-yellow-500"></i>
-          <h3 class="text-black font-medium">
+          <h3 class="text-black font-medium text-center">
             Komplek PU Jl. B No. 18 RC Veteran - Tanah Kusir, Jakarta Selatan
             12330
           </h3>
@@ -50,7 +52,7 @@
 .card-icon {
   margin-top: 12px;
   font-size: 28px;
-  background-color: whitesmoke;
+  background-color: white;
   width: 60px;
   height: 60px;
   text-align: center;
