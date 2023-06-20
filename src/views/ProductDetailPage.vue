@@ -45,7 +45,7 @@
             </li>
             <li
               class="inline-flex items-center"
-              v-if="productShow[1].category === 'fruitBlend'"
+              v-if="productShow.category === 'fruitBlend'"
             >
               <a
                 href="/products/fruit-bland"
@@ -68,7 +68,7 @@
             </li>
             <li
               class="inline-flex items-center"
-              v-if="productShow[1].category === 'powder'"
+              v-if="productShow.category === 'powder'"
             >
               <a
                 href="/products/powder-syrup"
@@ -91,7 +91,7 @@
             </li>
             <li
               class="inline-flex items-center"
-              v-if="productShow[1].category === 'Flavoured'"
+              v-if="productShow.category === 'Flavoured'"
             >
               <a
                 href="/products/flavoured-syrup"
@@ -128,7 +128,7 @@
                 </svg>
                 <span
                   class="ml-1 text-sm font-medium md:ml-2 pcolor hover:text-yellow-600"
-                  >{{ productShow[1].name }}</span
+                  >{{ productShow.name }}</span
                 >
               </div>
             </li>
@@ -139,8 +139,8 @@
             <!-- Item Image -->
             <div class="flex justify-center bg-gray-50 shadow">
               <img
-                :src="productShow[1].image"
-                :alt="productShow[1].name"
+                :src="productShow.image"
+                :alt="productShow.name"
                 class="object-cover object-center h-72 md:h-96 rounded-t-xl"
               />
             </div>
@@ -151,7 +151,7 @@
                   <h1
                     class="text-black mb-1 text-lg lg:text-2xl uppercase font-semibold"
                   >
-                    {{ productShow[1].name }}
+                    {{ productShow.name }}
                   </h1>
                   <hr
                     class="h-1 rounded bg-yellow-500 w-full lg:w-56 mx-auto lg:mx-0"
@@ -159,16 +159,16 @@
                 </div>
                 <div>
                   <p class="text-2xl text-black font-medium">
-                    {{ "Rp" + productShow[1].price }}
+                    {{ "Rp" + productShow.price }}
                   </p>
                 </div>
               </div>
 
               <p class="text-lg lg:text-xl text-gray-700 whitespace-pre-line">
-                {{ productShow[1].info }}
+                {{ productShow.info }}
               </p>
               <div>
-                <a :href="productShow[1].link" class="w-full">
+                <a :href="productShow.link" class="w-full">
                   <button
                     class="bg-black hover:text-white p-3 lg:p-4 text-white hover:border-transparent rounded-lg w-full font-semibold"
                   >
@@ -178,7 +178,6 @@
               </div>
             </div>
           </div>
-          <!-- Item Detail Info -->
           <div class="self-start w-full mt-8">
             <div>
               <h1
@@ -200,9 +199,9 @@
                 <td class="text-left px-4 lg:px-6">
                   <p class="m-3 text-lg md:text-xl">
                     {{
-                      productShow[1].category === "fruitBlend"
+                      productShow.category === "fruitBlend"
                         ? "Fruit Blend"
-                        : productShow[1].category === "Flavoured"
+                        : productShow.category === "Flavoured"
                         ? "Flavoured Syrup"
                         : "Powder"
                     }}
@@ -217,7 +216,7 @@
                 </td>
                 <td class="text-left px-4 lg:px-6">
                   <p class="my-6 text-lg md:text-xl">
-                    {{ productShow[1].packaging }}
+                    {{ getFieldValue(productShow.packaging) }}
                   </p>
                 </td>
               </tr>
@@ -229,7 +228,7 @@
                 </td>
                 <td class="text-left px-4 lg:px-6">
                   <p class="my-6 text-lg md:text-xl">
-                    {{ productShow[1].weight }}
+                    {{ getFieldValue(productShow.weight) }}
                   </p>
                 </td>
               </tr>
@@ -241,7 +240,7 @@
                 </td>
                 <td class="text-left px-4 lg:px-6">
                   <p class="my-6 text-lg md:text-xl">
-                    {{ productShow[1].color }}
+                    {{ getFieldValue(productShow.color) }}
                   </p>
                 </td>
               </tr>
@@ -252,7 +251,9 @@
                   </p>
                 </td>
                 <td class="text-left px-4 lg:px-6">
-                  <p class="my-6 text-lg md:text-xl">{{ isON2() }}</p>
+                  <p class="my-6 text-lg md:text-xl">
+                    {{ getFieldValue(productShow.tasting) }}
+                  </p>
                 </td>
               </tr>
               <tr class="border-b-2 h-16 border-[#bdb76b]">
@@ -262,7 +263,9 @@
                   </p>
                 </td>
                 <td class="text-left px-4 lg:px-6">
-                  <p class="my-6 text-lg md:text-xl">{{ isON() }}</p>
+                  <p class="my-6 text-lg md:text-xl">
+                    {{ productShow.serving }}
+                  </p>
                 </td>
               </tr>
               <tr class="h-16">
@@ -273,7 +276,7 @@
                 </td>
                 <td class="text-left px-4 lg:px-6">
                   <p class="my-6 text-lg md:text-xl">
-                    {{ productShow[1].penyimpanan }}
+                    {{ getFieldValue(productShow.keeping) }}
                   </p>
                 </td>
               </tr>
@@ -290,7 +293,10 @@ import PageLoader from "../components/PageLoader.vue";
 export default {
   name: "ProductDetailPage",
   props: {
-    dataProduk: String,
+    dataProduk: {
+      type: String,
+      required: true,
+    },
   },
   components: {
     PageLoader,
@@ -298,66 +304,39 @@ export default {
   data() {
     return {
       isLoaded: true,
-      products: [],
-      productID: 0,
-      productShow: [
-        {
-          id: 0,
-          name: "",
-          image: "",
-          imageDetail: "",
-          price: "",
-          categoryId: 0,
-          productInfo: "",
-          productLink: "",
-        },
-      ],
+      productShow: null,
     };
   },
   created() {
-    this.productShow.push(JSON.parse(this.dataProduk));
+    this.loadProduct();
     // Fetch additional data or perform any other necessary actions
-    // ...
     // Set isLoaded to false once all data has been loaded
     this.isLoaded = false;
+    this.updateDocumentTitle();
   },
-  mounted() {
-    if (this.productShow.length != 0) {
-      this.products.push(this.productShow.slice(-1));
-      console.log(this.products);
-      this.productShow.push(JSON.parse(this.dataProduk));
-      console.log(this.productShow);
-      return this.productShow[this.productShow.length - 1];
-    }
-  },
+
   methods: {
-    parsingProduct() {
-      if (this.productShow.length != 0) {
-        this.products.push(this.productShow.slice(-1));
-        console.log(this.products);
-        this.productShow.push(JSON.parse(this.dataProduk));
-        console.log(this.productShow);
-        return this.productShow;
+    updateDocumentTitle() {
+      if (this.productShow && this.productShow.name) {
+        const productName = this.productShow.name;
+        document.title = productName;
+      } else {
+        console.log("productShow or productShow.name is undefined");
       }
     },
-    checkID() {
-      if (this.productShow.length != 0) {
-        this.products.push(this.productShow.slice(-1));
+    loadProduct() {
+      try {
+        const data = JSON.parse(this.dataProduk);
+        // Now you can access the product data using the "data" variable
+        this.productShow = data;
+        this.isLoaded = true;
+      } catch (error) {
+        console.error("Invalid product data:", error);
       }
-      console.log(this.products);
-      return this.products;
     },
-    isON() {
-      if (this.productShow[1].serving) {
-        return this.productShow[1].serving;
-      }
-      return "-";
-    },
-    isON2() {
-      if (this.productShow[1].tasting) {
-        return this.productShow[1].tasting;
-      }
-      return "-";
+
+    getFieldValue(field) {
+      return field ? field : "-";
     },
   },
 };

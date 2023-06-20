@@ -10,8 +10,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-avocado-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -28,7 +31,7 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-cappuccino-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
+    servqing:
       "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
     color: "",
     tasting: "",
@@ -64,8 +67,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-chocolate-classic-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -83,8 +89,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-cookies-cream-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -101,8 +110,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-cotton-candy-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -119,8 +131,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-dark-chocolate-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -137,8 +152,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-base-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -155,8 +173,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-greentea-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -173,8 +194,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-macchiato-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -191,8 +215,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-latte-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -209,8 +236,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-premium-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -227,8 +257,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-mocha-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -245,8 +278,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-mochaccino-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -263,8 +299,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-red-velvet-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -311,8 +350,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-thai-tea-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
@@ -329,8 +371,11 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-tiramisu-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: "1000 Gram",
-    serving:
-      "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
+    serving: [
+      "Masukkan 20-30 Gram Powder",
+      "Dicampur 120-150ML Susu",
+      "Aduk/shake hingga tercampur rata dan sajikan",
+    ],
     color: "",
     tasting: "",
     penyimpanan:
