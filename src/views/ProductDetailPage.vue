@@ -334,7 +334,6 @@ export default {
         console.error("Invalid product data:", error);
       }
     },
-
     getFieldValue(field) {
       return field ? field : "-";
     },
