@@ -35,7 +35,7 @@
                 >
                   Powder
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">30gr</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">30gr</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -54,7 +54,7 @@
                 >
                   Hot Water
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">30ml</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">30ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -73,7 +73,7 @@
                 >
                   Fresh Milk
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">90ml</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">90ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -92,7 +92,7 @@
                 >
                   Ice
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">
                   1 Glass
                 </p>
               </div>
@@ -142,7 +142,7 @@
                 >
                   Powder
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">30gr</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">30gr</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -161,7 +161,7 @@
                 >
                   Sugar
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">15ml</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">15ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -180,7 +180,7 @@
                 >
                   Fresh Milk
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">90ml</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">90ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -199,7 +199,7 @@
                 >
                   Ice
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">
                   1 Glass
                 </p>
               </div>
@@ -249,7 +249,7 @@
                 >
                   Fruit Blends
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">30ml</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">30ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -268,7 +268,7 @@
                 >
                   Syrup
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">30ml</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">30ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -287,7 +287,7 @@
                 >
                   Soda
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">
                   +- 90ml
                 </p>
               </div>
@@ -308,7 +308,7 @@
                 >
                   Ice
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">
                   1 Glass
                 </p>
               </div>
@@ -360,7 +360,7 @@
                 >
                   Fruit Blends
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">30ml</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">30ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -379,7 +379,7 @@
                 >
                   Frape Base
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">10gr</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">10gr</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -398,7 +398,7 @@
                 >
                   Water
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">90ml</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">90ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -417,7 +417,7 @@
                 >
                   Ice
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">
                   1 Glass
                 </p>
               </div>
@@ -467,7 +467,7 @@
                 >
                   Syrup
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">30ml</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">30ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -486,7 +486,7 @@
                 >
                   Sugar
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">10gr</p>
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">10gr</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -505,7 +505,7 @@
                 >
                   Tea
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">
                   +- 90ml
                 </p>
               </div>
@@ -526,7 +526,7 @@
                 >
                   Ice
                 </h2>
-                <p class="text-md lg:text-lg h-full font-medium md:h-8">
+                <p class="text-md xl:text-lg h-full font-medium md:h-8">
                   1 Glass
                 </p>
               </div>
