@@ -12,12 +12,12 @@ const routes = [
         {
           name: "description",
           content:
-            "Welcome to Genova Indonesia! Discover our range of premium syrups, powder drinks, and fruit blends. Explore our trending and new products, and browse through various product categories to find your favorite flavors. Join us and elevate your beverage experience.",
+            "Selamat datang di Genova Indonesia! Nikmati beragam varian sirup premium, minuman bubuk, dan campuran buah berkualitas terbaik. Telusuri koleksi produk terbaru dan populer kami, dan temukan rasa favorit Anda dalam berbagai kategori produk. Ayo bergabung dan tambahkan kesempurnaan pada pengalaman minuman Anda",
         },
         {
           name: "keywords",
           content:
-            "Genova Indonesia, premium syrup, powder drink, fruit blend, trending product, new product, product categories",
+            "Genova, Genova Indonesia, sirup premium, minuman bubuk, campuran buah, produk populer, produk baru, kategori produk",
         },
       ],
     },
@@ -28,14 +28,14 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Contact" */ "../views/About.vue"),
     meta: {
-      title: "About Us", // Set the page title for the About page
+      title: "Tentang Kami", // Set the page title for the About page
       metaTags: [
         // Define the meta tags for the About page
         {
           name: "description",
-          content: "This is the About Us page of our website",
+          content:
+            "Selamat datang di halaman Tentang Kami. Temukan sejarah dan kualitas Genova Indonesia. Kami hadir dengan komitmen untuk menyajikan produk berkualitas terbaik kepada Anda. Temukan lebih lanjut tentang perjalanan kami dan bagaimana kami memberikan pengalaman minuman terbaik bagi pelanggan kami.",
         },
-        // Add more meta tags as needed
       ],
     },
   },
@@ -45,14 +45,14 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Contact" */ "../views/Contact.vue"),
     meta: {
-      title: "Contact Us", // Set the page title for the Contact page
+      title: "Hubungi Kami", // Set the page title for the Contact page
       metaTags: [
         // Define the meta tags for the Contact page
         {
           name: "description",
-          content: "Get in touch with us through our contact form",
+          content:
+            "Hubungi kami melalui kartu kontak untuk pertanyaan atau informasi lebih lanjut. Temukan alamat email, nomor telepon, dan lokasi toko utama kami. Kami siap membantu Anda!",
         },
-        // Add more meta tags as needed
       ],
     },
   },
@@ -62,75 +62,66 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "projects" */ "../views/Products.vue"),
     meta: {
-      title: "Product Categories", // Set the page title for the Products page
+      title: "Kategori Produk", // Set the page title for the Products page
       metaTags: [
         // Define the meta tags for the Products page
         {
           name: "description",
-          content: "Explore our wide range of product categories",
+          content:
+            "Jelajahi berbagai kategori produk kami yang lengkap. Temukan kategori sirup premium, minuman bubuk, dan campuran buah. Pilih kategori favorit Anda dan temukan produk-produk berkualitas dari Genova Indonesia.",
         },
-        // Add more meta tags as needed
       ],
     },
   },
   {
     path: "/recipe",
     name: "recipe",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Recipe.vue"),
+    component: () => import("../views/Recipe.vue"),
     meta: {
-      title: "Recipe Collection", // Set the page title for the Recipe page
+      title: "Koleksi Resep Genova", // Set the page title for the Recipe page
       metaTags: [
         // Define the meta tags for the Recipe page
         {
           name: "description",
-          content: "Explore our collection of delicious recipes",
+          content:
+            "Jelajahi koleksi resep lezat kami. Temukan resep-resep Ice Shakes, Ice Blended, Mocktail, Fruit Smoothies, dan Special Tea yang menggunakan produk-produk Genova Indonesia.",
         },
-        // Add more meta tags as needed
       ],
     },
   },
   {
     path: "/location",
     name: "location",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Location.vue"),
+    component: () => import("../views/Location.vue"),
     meta: {
-      title: "Our Locations", // Set the page title for the Location page
+      title: "Lokasi Kami",
       metaTags: [
-        // Define the meta tags for the Location page
         {
           name: "description",
-          content: "Find our nearest locations and visit us",
+          content:
+            "Temukan lokasi terdekat kami dan kunjungi kami. Belanja online melalui Tokopedia atau kunjungi salah satu dari 4 toko offline kami yang tersebar di seluruh Indonesia.",
         },
-        // Add more meta tags as needed
       ],
     },
   },
   {
     path: "/products/flavoured-syrup",
     name: "flavoured-syrup",
-    component: () =>
-      import(
-        /* webpackChunkName: "about" */ "../views/FlavouredSyrupProduct.vue"
-      ),
+    component: () => import("../views/FlavouredSyrupProduct.vue"),
     meta: {
-      title: "Flavoured Syrup", // Set the page title for the Flavoured Syrup product page
+      title: "Flavoured Syrup",
       metaTags: [
-        // Define the meta tags for the Flavoured Syrup product page
         {
           name: "description",
           content: "Explore our range of flavoured syrups",
         },
-        // Add more meta tags as needed
       ],
     },
   },
   {
     path: "/products/fruit-bland",
     name: "fruit-bland",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/FruitBlandProduct.vue"),
+    component: () => import("../views/FruitBlandProduct.vue"),
     meta: {
       title: "Fruit Blend", // Set the page title for the Fruit Blend product page
       metaTags: [
@@ -139,15 +130,13 @@ const routes = [
           name: "description",
           content: "Discover our delicious fruit blend products",
         },
-        // Add more meta tags as needed
       ],
     },
   },
   {
     path: "/products/powder-syrup",
     name: "powder-syrup",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/PowderSyrupProduct.vue"),
+    component: () => import("../views/PowderSyrupProduct.vue"),
     meta: {
       title: "Powder Syrup", // Set the page title for the Powder Syrup product page
       metaTags: [
@@ -156,7 +145,6 @@ const routes = [
           name: "description",
           content: "Browse our selection of powder syrups",
         },
-        // Add more meta tags as needed
       ],
     },
   },

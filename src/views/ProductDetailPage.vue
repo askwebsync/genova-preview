@@ -158,19 +158,18 @@
                   />
                 </div>
                 <div>
-                  <p class="text-2xl text-black font-medium">
-                    {{ "Rp" + productShow.price }}
-                  </p>
+                  <ul>
+                    <li v-for="info in productShow.info" :key="info" class="">
+                      <p class="text-lg md:text-xl my-1">{{ info }}</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
-              <p class="text-lg lg:text-xl text-gray-700 whitespace-pre-line">
-                {{ productShow.info }}
-              </p>
               <div>
                 <a :href="productShow.link" class="w-full">
                   <button
-                    class="bg-black hover:text-white p-3 lg:p-4 text-white hover:border-transparent rounded-lg w-full font-semibold"
+                    class="bg-black hover:text-white p-3 text-white hover:border-transparent w-full font-semibold"
                   >
                     Buy Now
                   </button>
@@ -178,109 +177,107 @@
               </div>
             </div>
           </div>
-          <div class="self-start w-full mt-8">
-            <div>
+          <div class="self-start w-full">
+            <div class="">
               <h1
-                class="text-center text-xl lg:text-2xl rounded-t-lg bg-[#bdb76b] text-white py-2"
+                class="text-center text-xl lg:text-2xl background-yellow text-white py-2"
               >
                 Details
               </h1>
-              <hr
-                class="border border-solid border-2 border-[#bdb76b] border-black"
-              />
             </div>
-            <table class="m-1 md:m-2 lg:m-3">
-              <tr class="border-b-2 h-auto border-[#bdb76b]">
-                <td class="w-1/2 md:w-1/6 text-left">
-                  <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
-                    Category
-                  </p>
-                </td>
-                <td class="text-left px-4 lg:px-6">
-                  <p class="m-3 text-lg md:text-xl">
-                    {{
-                      productShow.category === "fruitBlend"
-                        ? "Fruit Blend"
-                        : productShow.category === "Flavoured"
-                        ? "Flavoured Syrup"
-                        : "Powder"
-                    }}
-                  </p>
-                </td>
-              </tr>
-              <tr class="border-b-2 h-auto border-[#bdb76b]">
-                <td class="w-1/2 md:w-1/6 text-left py-2">
-                  <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
-                    Packaging
-                  </p>
-                </td>
-                <td class="text-left px-4 lg:px-6">
-                  <p class="my-6 text-lg md:text-xl">
-                    {{ getFieldValue(productShow.packaging) }}
-                  </p>
-                </td>
-              </tr>
-              <tr class="border-b-2 h-16 border-[#bdb76b]">
-                <td class="w-1/2 md:w-1/6 text-left py-2">
-                  <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
-                    Weight
-                  </p>
-                </td>
-                <td class="text-left px-4 lg:px-6">
-                  <p class="my-6 text-lg md:text-xl">
-                    {{ getFieldValue(productShow.weight) }}
-                  </p>
-                </td>
-              </tr>
-              <tr class="border-b-2 h-16 border-[#bdb76b]">
-                <td class="w-1/2 md:w-1/6 text-left py-2">
-                  <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
-                    Color
-                  </p>
-                </td>
-                <td class="text-left px-4 lg:px-6">
-                  <p class="my-6 text-lg md:text-xl">
-                    {{ getFieldValue(productShow.color) }}
-                  </p>
-                </td>
-              </tr>
-              <tr class="border-b-2 h-16 border-[#bdb76b]">
-                <td class="w-1/2 md:w-1/6 text-left py-2">
-                  <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
-                    Tasting
-                  </p>
-                </td>
-                <td class="text-left px-4 lg:px-6">
-                  <p class="my-6 text-lg md:text-xl">
-                    {{ getFieldValue(productShow.tasting) }}
-                  </p>
-                </td>
-              </tr>
-              <tr class="border-b-2 h-16 border-[#bdb76b]">
-                <td class="w-1/2 md:w-1/6 text-left py-2">
-                  <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
-                    Serving Suggestions
-                  </p>
-                </td>
-                <td class="text-left px-4 lg:px-6">
-                  <p class="my-6 text-lg md:text-xl">
-                    {{ productShow.serving }}
-                  </p>
-                </td>
-              </tr>
-              <tr class="h-16">
-                <td class="w-1/2 md:w-1/6 text-left py-2">
-                  <p class="m-4 text-lg md:text-xl md:m-5 details font-bold">
-                    Keeping Suggestions
-                  </p>
-                </td>
-                <td class="text-left px-4 lg:px-6">
-                  <p class="my-6 text-lg md:text-xl">
-                    {{ getFieldValue(productShow.keeping) }}
-                  </p>
-                </td>
-              </tr>
-            </table>
+            <div class="overflow-x-auto">
+              <table class="table-auto bg-white">
+                <tbody>
+                  <tr class="border h-auto border-[#bdb76b]">
+                    <td
+                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
+                    >
+                      Category
+                    </td>
+                    <td class="px-4 lg:px-6 py-3">
+                      {{
+                        productShow.category === "fruitBlend"
+                          ? "Fruit Blend"
+                          : productShow.category === "Flavoured"
+                          ? "Flavoured Syrup"
+                          : "Powder"
+                      }}
+                    </td>
+                  </tr>
+                  <!-- Add styling for other rows -->
+                  <tr class="border h-auto border-[#bdb76b]">
+                    <td
+                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
+                    >
+                      Packaging
+                    </td>
+                    <td class="px-4 lg:px-6 py-3">
+                      {{ getFieldValue(productShow.packaging) }}
+                    </td>
+                  </tr>
+                  <tr class="border h-auto border-[#bdb76b]">
+                    <td
+                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
+                    >
+                      Weight
+                    </td>
+                    <td class="px-4 lg:px-6 py-3">
+                      {{ getFieldValue(productShow.weight) }}
+                    </td>
+                  </tr>
+                  <tr class="border h-auto border-[#bdb76b]">
+                    <td
+                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
+                    >
+                      Color
+                    </td>
+                    <td class="px-4 lg:px-6 py-3">
+                      {{ getFieldValue(productShow.color) }}
+                    </td>
+                  </tr>
+                  <tr class="border h-auto border-[#bdb76b]">
+                    <td
+                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
+                    >
+                      Tasting
+                    </td>
+                    <td class="px-4 lg:px-6 py-3">
+                      {{ getFieldValue(productShow.tasting) }}
+                    </td>
+                  </tr>
+                  <tr class="border h-auto border-[#bdb76b]">
+                    <td
+                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
+                    >
+                      Serving Suggestions
+                    </td>
+                    <td class="px-4 lg:px-6 py-3">
+                      <ul>
+                        <li
+                          v-for="suggestion in productShow.serving"
+                          :key="suggestion"
+                          class="list-disc my-1"
+                        >
+                          <p class="">
+                            {{ suggestion }}
+                          </p>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="border h-auto border-[#bdb76b]">
+                    <td
+                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
+                    >
+                      Keeping Suggestions
+                    </td>
+                    <td class="px-4 lg:px-6 py-3">
+                      {{ getFieldValue(productShow.keeping) }}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

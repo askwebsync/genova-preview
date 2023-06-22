@@ -25,7 +25,7 @@ export default {
   background-image: url(../../assets/images/banner/Recipe/recipe-page-banner.jpg);
 }
 .border-h2 {
-  border: 2px solid #997f11;
+  border: 3px solid #c79e2a;
   border-radius: 8px;
 }
 h2 {
