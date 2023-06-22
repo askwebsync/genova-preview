@@ -31,11 +31,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Powder
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">30gr</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">30gr</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -50,11 +50,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Hot Water
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">30ml</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">30ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -69,11 +69,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Fresh Milk
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">90ml</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">90ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -88,11 +88,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Ice
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">
                   1 Glass
                 </p>
               </div>
@@ -109,7 +109,7 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Shakes All
                 </h2>
@@ -138,11 +138,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Powder
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">30gr</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">30gr</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -157,11 +157,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Sugar
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">15ml</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">15ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -176,11 +176,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Fresh Milk
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">90ml</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">90ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -195,11 +195,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Ice
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">
                   1 Glass
                 </p>
               </div>
@@ -216,7 +216,7 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Blends All
                 </h2>
@@ -245,11 +245,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Fruit Blends
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">30ml</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">30ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -264,11 +264,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Syrup
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">30ml</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">30ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -283,11 +283,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Soda
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">
                   +- 90ml
                 </p>
               </div>
@@ -304,11 +304,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Ice
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">
                   1 Glass
                 </p>
               </div>
@@ -325,7 +325,7 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Blends All
                 </h2>
@@ -356,11 +356,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Fruit Blends
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">30ml</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">30ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -375,11 +375,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Frape Base
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">10gr</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">10gr</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -394,11 +394,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Water
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">90ml</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">90ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -413,11 +413,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Ice
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">
                   1 Glass
                 </p>
               </div>
@@ -434,7 +434,7 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Shakes All
                 </h2>
@@ -463,11 +463,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Syrup
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">30ml</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">30ml</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -482,11 +482,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Sugar
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">10gr</p>
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">10gr</p>
               </div>
             </div>
             <span class="text-2xl font-bold pcolor">+</span>
@@ -501,11 +501,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Tea
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">
                   +- 90ml
                 </p>
               </div>
@@ -522,11 +522,11 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Ice
                 </h2>
-                <p class="text-lg lg:text-xl h-full font-medium md:h-8">
+                <p class="text-md lg:text-lg h-full font-medium md:h-8">
                   1 Glass
                 </p>
               </div>
@@ -543,7 +543,7 @@
               />
               <div class="flex flex-col items-center gap-1 h-full">
                 <h2
-                  class="text-lg lg:text-xl h-full md:h-12 lg:h-9 tracking-tight"
+                  class="text-md lg:text-lg xl:text-xl h-full md:h-12 lg:h-9 tracking-tight"
                 >
                   Shakes All
                 </h2>

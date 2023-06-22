@@ -15,7 +15,7 @@
       >
         <router-link :to="{ name: 'fruit-bland' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-4 gap-4"
           >
             <img
               src="/assets/images/product/fruit-bland/fruitbland_pineapple.png"
@@ -35,7 +35,7 @@
         </router-link>
         <router-link :to="{ name: 'flavoured-syrup' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-4 gap-4"
           >
             <img
               src="/assets/images/product/syrup/syrup_bluecuracao.png"
@@ -55,7 +55,7 @@
         </router-link>
         <router-link :to="{ name: 'powder-syrup' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-3 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-4 gap-4"
           >
             <img
               src="/assets/images/product/powder/powder_tiramisu.png"

@@ -116,7 +116,6 @@ export default {
       const trendingProducts = this.products.filter(
         (product) => product.trending === "yes"
       );
-
       // Return the trending products
       return trendingProducts;
     },

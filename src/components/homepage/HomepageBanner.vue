@@ -141,6 +141,13 @@ export default {
   transition: transform 0.6s ease;
 }
 
+@media only screen and (max-width: 600px) {
+  .image-container {
+    position: relative;
+    height: 400px;
+    transition: transform 0.6s ease;
+  }
+}
 .image-css {
   width: 100%;
   height: 100%;
