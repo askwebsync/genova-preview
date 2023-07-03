@@ -58,7 +58,7 @@
 
 <style scoped>
 .bg-container {
-  background: #fffbe8;
+  background: #fff2bb;
 }
 .card-icon {
   margin-top: 12px;

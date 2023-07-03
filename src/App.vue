@@ -4,7 +4,7 @@
       <PageLoader />
     </div>
 
-    <div v-else>
+    <div v-else class="app-container">
       <header class="bg-white border-b-2 sticky top-0 z-10">
         <app-header />
       </header>
@@ -68,3 +68,20 @@ export default {
   },
 };
 </script>
+
+<style>
+/* Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.app-footer {
+  margin-top: auto;
+}
+</style>
