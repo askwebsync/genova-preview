@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import ProductDetailPage from "@/views/ProductDetailPage.vue";
 
 const routes = [
   {
@@ -149,16 +150,9 @@ const routes = [
     },
   },
   {
-    path: "/product/detail-product",
+    path: "/product/:productId", // dynamic route parameter :productId
     name: "productDetailPage",
-    props: (route) => ({
-      dataProduk: route.query.dataProduk,
-      ...route.query,
-    }),
-    component: () => import("../views/ProductDetailPage.vue"),
-    meta: {
-      dynamicTitle: true, // Set the dynamicTitle flag to indicate that the title will be dynamically generated
-    },
+    component: ProductDetailPage,
   },
 ];
 

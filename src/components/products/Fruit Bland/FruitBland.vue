@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
-    <nav class="flex mb-24" aria-label="Breadcrumb">
+    <nav class="flex mb-24 md:mb-20 lg:mb-12" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">
           <a
@@ -105,11 +105,18 @@
         class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
       >
         <div
-          v-for="product in resultQuery"
+          v-for="product in fruitBlendProducts"
           :key="product.id"
           class="bg-product-home center shadow-md"
         >
-          <div class="cursor-pointer" @click="navigateToProductDetail(product)">
+          <router-link
+            class="focus:outline-none"
+            :to="{
+              name: 'productDetailPage',
+              params: { productId: product.id },
+            }"
+            @click="selectProduct(product)"
+          >
             <!-- Image -->
             <img
               :src="`/assets/images/product/${product.image}`"
@@ -125,49 +132,29 @@
                 Rp. {{ product.price }}
               </p>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
     </div>
   </section>
 </template>
 <script>
-import allProducts from "@/product/allProduct";
+import { mapState, mapActions, mapMutations } from "vuex";
 export default {
   data() {
-    return {
-      products: allProducts,
-    };
+    return {};
   },
   computed: {
-    // Get the filtered products with "Fruit Blend" category
-    resultQuery() {
-      return this.products.filter(
-        (product) => product.category === "fruitBlend"
-      );
-    },
+    ...mapState(["fruitBlendProducts"]),
+  },
+  mounted() {
+    this.fetchFruitBlendProducts();
   },
   methods: {
-    navigateToProductDetail(product) {
-      this.$router.push({
-        name: "productDetailPage",
-        query: {
-          dataProduk: JSON.stringify({
-            name: product.name,
-            price: product.price,
-            category: product.category,
-            info: product.info,
-            packaging: product.packaging,
-            weight: product.weight,
-            color: product.color,
-            image: `/assets/images/product/${product.image}`,
-            link: product.link,
-            serving: product.serving,
-            tasting: product.tasting,
-            penyimpanan: product.penyimpanan,
-          }),
-        },
-      });
+    ...mapActions(["fetchFruitBlendProducts"]),
+    ...mapMutations(["setSelectedProduct"]),
+    selectProduct(product) {
+      this.setSelectedProduct(product);
     },
   },
 };

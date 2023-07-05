@@ -1,8 +1,10 @@
 import { createApp } from "vue";
-import { createStore } from "vuex";
 
 import App from "./App.vue";
 import router from "./router";
 import "../public/assets/css/main.css";
-const store = createStore();
+
+// Import your Vuex store file
+import store from "../src/store/store";
+
 createApp(App).use(store).use(router).mount("#app");

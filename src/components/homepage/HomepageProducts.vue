@@ -18,7 +18,7 @@
             class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-4 gap-4"
           >
             <img
-              src="/assets/images/product/fruit-bland/fruitbland_pineapple.png"
+              src="/assets/images/product/fruitbland_pineapple.png"
               alt="Product"
               class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
@@ -38,7 +38,7 @@
             class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-4 gap-4"
           >
             <img
-              src="/assets/images/product/syrup/syrup_bluecuracao.png"
+              src="/assets/images/product/syrup_bluecuracao.png"
               alt="Product"
               class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
@@ -58,7 +58,7 @@
             class="flex flex-col items-center justify-center cursor-pointer shadow-md bg-product-home container-animation px-2 py-4 gap-4"
           >
             <img
-              src="/assets/images/product/powder/powder_tiramisu.png"
+              src="/assets/images/product/powder_tiramisu.png"
               alt="Product"
               class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />

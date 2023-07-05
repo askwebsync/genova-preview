@@ -1,9 +1,8 @@
 <template>
   <div>
-    <PageLoader v-if="isLoaded" />
     <section class="container mx-auto">
-      <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10" v-if="!isLoaded">
-        <nav class="flex mb-24" aria-label="Breadcrumb">
+      <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+        <nav class="flex mb-24 md:mb-20 lg:mb-12" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-3">
             <li class="inline-flex items-center">
               <a
@@ -45,10 +44,10 @@
             </li>
             <li
               class="inline-flex items-center"
-              v-if="productShow.category === 'fruitBlend'"
+              v-if="productShow && productShow.category === 'fruitBlend'"
             >
               <a
-                href="/products/fruit-bland"
+                href="/products/fruit-blend"
                 class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
               >
                 <svg
@@ -68,7 +67,7 @@
             </li>
             <li
               class="inline-flex items-center"
-              v-if="productShow.category === 'powder'"
+              v-if="productShow && productShow.category === 'powder'"
             >
               <a
                 href="/products/powder-syrup"
@@ -91,7 +90,7 @@
             </li>
             <li
               class="inline-flex items-center"
-              v-if="productShow.category === 'Flavoured'"
+              v-if="productShow && productShow.category === 'flavoured'"
             >
               <a
                 href="/products/flavoured-syrup"
@@ -128,7 +127,7 @@
                 </svg>
                 <span
                   class="ml-1 text-sm font-medium md:ml-2 pcolor hover:text-yellow-600"
-                  >{{ productShow.name }}</span
+                  >{{ productShow ? productShow.name : "" }}</span
                 >
               </div>
             </li>
@@ -158,11 +157,16 @@
                   />
                 </div>
                 <div>
-                  <ul>
-                    <li v-for="info in productShow.info" :key="info" class="">
-                      <p class="text-lg md:text-xl my-1">{{ info }}</p>
-                    </li>
-                  </ul>
+                  <template v-if="Array.isArray(productShow.info)">
+                    <ul>
+                      <li v-for="info in productShow.info" :key="info" class="">
+                        <p class="text-lg md:text-xl my-1">{{ info }}</p>
+                      </li>
+                    </ul>
+                  </template>
+                  <template v-else>
+                    <p class="text-lg md:text-xl">{{ productShow.info }}</p>
+                  </template>
                 </div>
               </div>
 
@@ -252,17 +256,16 @@
                       Serving Suggestions
                     </td>
                     <td class="px-4 lg:px-6 py-3">
-                      <ul>
+                      <ul v-if="Array.isArray(productShow.serving)">
                         <li
                           v-for="suggestion in productShow.serving"
                           :key="suggestion"
                           class="list-disc my-1"
                         >
-                          <p class="">
-                            {{ suggestion }}
-                          </p>
+                          <p class="">{{ suggestion }}</p>
                         </li>
                       </ul>
+                      <p v-else>{{ productShow.serving }}</p>
                     </td>
                   </tr>
                   <tr class="border h-auto border-[#bdb76b]">
@@ -286,32 +289,30 @@
 </template>
 
 <script>
-import PageLoader from "../components/PageLoader.vue";
+import { mapState } from "vuex";
+
 export default {
   name: "ProductDetailPage",
-  props: {
-    dataProduk: {
-      type: String,
-      required: true,
+  components: {},
+  computed: {
+    ...mapState(["selectedProduct"]),
+    productShow() {
+      if (this.selectedProduct) {
+        // Create a copy of the selectedProduct object
+        const product = { ...this.selectedProduct };
+        // Modify the image path in the copied object
+        if (product.image) {
+          product.image = "/assets/images/product" + product.image;
+        }
+        return product;
+      }
+      return null;
     },
   },
-  components: {
-    PageLoader,
-  },
-  data() {
-    return {
-      isLoaded: true,
-      productShow: null,
-    };
-  },
   created() {
-    this.loadProduct();
-    // Fetch additional data or perform any other necessary actions
-    // Set isLoaded to false once all data has been loaded
-    this.isLoaded = false;
-    this.updateDocumentTitle();
+    console.log("ProductDetailPage created");
+    this.updateDocumentTitle(); // Call the method to update the document title
   },
-
   methods: {
     updateDocumentTitle() {
       if (this.productShow && this.productShow.name) {
@@ -321,16 +322,7 @@ export default {
         console.log("productShow or productShow.name is undefined");
       }
     },
-    loadProduct() {
-      try {
-        const data = JSON.parse(this.dataProduk);
-        // Now you can access the product data using the "data" variable
-        this.productShow = data;
-        this.isLoaded = true;
-      } catch (error) {
-        console.error("Invalid product data:", error);
-      }
-    },
+
     getFieldValue(field) {
       return field ? field : "-";
     },

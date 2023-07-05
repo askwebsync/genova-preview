@@ -16,7 +16,7 @@
         v-bind="settings"
         @after-slide="afterSlide"
       >
-        <slide v-for="product in resultQuery" :key="product.id">
+        <slide v-for="product in trendingProducts" :key="product.id">
           <div class="flex flex-col items-center px-4 py-4 md:py-5">
             <div class="product-container">
               <img
@@ -38,23 +38,9 @@
                 class="focus:outline-none"
                 :to="{
                   name: 'productDetailPage',
-                  query: {
-                    dataProduk: JSON.stringify({
-                      name: product.name,
-                      price: product.price,
-                      category: product.category,
-                      info: product.info,
-                      packaging: product.packaging,
-                      weight: product.weight,
-                      color: product.color,
-                      image: getImageSource(product),
-                      link: product.link,
-                      serving: product.serving,
-                      tasting: product.tasting,
-                      penyimpanan: product.penyimpanan,
-                    }),
-                  },
+                  params: { productId: product.id },
                 }"
+                @click="selectProduct(product)"
               >
                 <button
                   class="rounded px-3 py-2 md:px-4 bg-button-homepage hover:bg-yellow-600 duration-300 text-white font-bold border-radius-6"
@@ -75,7 +61,7 @@
 </template>
 
 <script>
-import allProducts from "@/product/allProduct";
+import { mapState, mapActions, mapMutations } from "vuex";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 
@@ -88,7 +74,6 @@ export default {
   },
   data() {
     return {
-      products: allProducts,
       activeSlideIndex: 0, // Track the active slide index
       breakpoints: {
         600: {
@@ -111,25 +96,24 @@ export default {
     };
   },
   computed: {
-    // Get the filtered products with "Yes" category trending
-    resultQuery() {
-      const trendingProducts = this.products.filter(
-        (product) => product.trending === "yes"
-      );
-      // Return the trending products
-      return trendingProducts;
-    },
+    ...mapState(["trendingProducts"]),
   },
   methods: {
+    ...mapActions(["fetchTrendingProducts"]),
+    ...mapMutations(["setSelectedProduct"]),
+    selectProduct(product) {
+      this.setSelectedProduct(product);
+    },
     getImageSource(product) {
-      // Construct the image source path
       const imagePath = `/assets/images/product/${product.image}`;
-      // Return the image source path
       return imagePath;
     },
     afterSlide(index) {
       this.activeSlideIndex = index;
     },
+  },
+  mounted() {
+    this.fetchTrendingProducts();
   },
 };
 </script>
