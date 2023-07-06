@@ -1,16 +1,24 @@
 <template>
   <div>
-    <section class="container mx-auto">
+    <div v-if="loading">
+      <!-- Show loading state -->
+      <div class="flex justify-center items-center h-screen">
+        <div
+          class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-gray-900"
+        ></div>
+      </div>
+    </div>
+    <section class="container mx-auto" v-else>
       <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
         <nav class="flex mb-24 md:mb-20 lg:mb-12" aria-label="Breadcrumb">
-          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+          <ol class="inline-flex items-center">
             <li class="inline-flex items-center">
               <a
                 href="/"
                 class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
               >
                 <svg
-                  class="w-4 h-4 mr-2"
+                  class="w-4 h-4 mr-1"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +134,7 @@
                   ></path>
                 </svg>
                 <span
-                  class="ml-1 text-sm font-medium md:ml-2 pcolor hover:text-yellow-600"
+                  class="text-sm font-medium pcolor hover:text-yellow-600"
                   >{{ productShow ? productShow.name : "" }}</span
                 >
               </div>
@@ -293,7 +301,17 @@ import { mapState } from "vuex";
 
 export default {
   name: "ProductDetailPage",
+  data() {
+    return {
+      loading: true,
+    };
+  },
   components: {},
+  mounted() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 2000);
+  },
   computed: {
     ...mapState(["selectedProduct"]),
     productShow() {

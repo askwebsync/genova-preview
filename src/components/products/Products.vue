@@ -13,42 +13,42 @@
       >
         <router-link :to="{ name: 'fruit-bland' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer bg-product-home shadow-md bg-gray-100 hover:bg-gray-200 transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer bg-white shadow-card-items transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-2 uppercase"
           >
             <img
               src="/assets/images/product/fruitbland_pineapple.png"
               alt="Product"
               class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
-            <div class="flex flex-col gap-4 items-center">
+            <div class="flex flex-col items-center">
               <h2 class="text-lg lg:text-xl">Fruit Blend</h2>
             </div>
           </div>
         </router-link>
         <router-link :to="{ name: 'flavoured-syrup' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer bg-product-home shadow-md bg-gray-100 hover:bg-gray-200 transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointer bg-white shadow-card-items transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-2 uppercase"
           >
             <img
               src="/assets/images/product/syrup_bluecuracao.png"
               alt="Product"
               class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
-            <div class="flex flex-col gap-4 items-center">
+            <div class="flex flex-col items-center">
               <h2 class="text-lg lg:text-xl">Flavoured Syrup</h2>
             </div>
           </div>
         </router-link>
         <router-link :to="{ name: 'powder-syrup' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer bg-product-home shadow-md bg-gray-100 hover:bg-gray-200 transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-6"
+            class="flex flex-col items-center justify-center cursor-pointerbg-white shadow-card-items transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-2 uppercase"
           >
             <img
               src="/assets/images/product/powder_tiramisu.png"
               alt="Product"
               class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
-            <div class="flex flex-col gap-4 items-center">
+            <div class="flex flex-col items-center">
               <h2 class="text-lg lg:text-xl">Powder Drink</h2>
             </div>
           </div>

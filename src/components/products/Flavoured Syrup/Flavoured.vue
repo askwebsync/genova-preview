@@ -2,14 +2,14 @@
 <template>
   <section class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
     <nav class="flex mb-24 md:mb-20 lg:mb-12" aria-label="Breadcrumb">
-      <ol class="inline-flex items-center space-x-1 md:space-x-3">
+      <ol class="inline-flex items-center">
         <li class="inline-flex items-center">
           <a
             href="/"
             class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
           >
             <svg
-              class="w-4 h-4 mr-2"
+              class="w-4 h-4 mr-1"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -55,9 +55,8 @@
                 clip-rule="evenodd"
               ></path>
             </svg>
-            <span
-              class="ml-1 text-sm font-medium md:ml-2 pcolor hover:text-yellow-600"
-              >Fruit Blend</span
+            <span class="text-sm font-medium pcolor hover:text-yellow-600"
+              >Flavoured Syrup</span
             >
           </div>
         </li>
@@ -73,32 +72,37 @@
             class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
           />
         </div>
-      </div>
-      <div class="flex flex-row justify-between">
-        <h2>
-          Menampilkan 1389534 produk untuk "Power Bank" (1 - 60 of 1389534)
-        </h2>
         <div class="relative">
           <select
-            class="filter-text-size p-2 md:p-3 w-full md:w-64 h-42 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent"
+            v-model="sortOrder"
+            @change="sortProducts"
+            class="filter-text-size p-2 w-32 h-10 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent focus:bg-transparent"
           >
-            <option disabled selected value="">Filter</option>
-            <option value="low">Low to High</option>
-            <option value="high">High to Low</option>
-            <option value="new">New</option>
-            <option value="old">Old</option>
+            <option disabled selected value="">Sort Items</option>
+            <option
+              value="high"
+              class="focus:outline-none bg-transparent focus:bg-transparent"
+            >
+              Harga Tertinggi
+            </option>
+            <option
+              value="low"
+              class="focus:outline-none bg-transparent focus:bg-transparent"
+            >
+              Harga Terendah
+            </option>
           </select>
           <div
             class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
           >
             <svg
-              class="w-5 h-5 text-gray-500"
+              class="w-5 h-5 text-gray-500 transform rotate-0"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
               <path
                 fill-rule="evenodd"
-                d="M9 13l-4-4 4-4 1.41 1.42L8.83 8H14v2H8.83l2.58 2.58L9 13z"
+                d="M11 7l-4 4-4-4 1.41-1.42L6 8.17V3h2v5.17l2.59-2.58L11 7z"
                 clip-rule="evenodd"
               />
             </svg>
@@ -106,11 +110,13 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6"
+      >
         <div
           v-for="product in flavouredProducts"
           :key="product.id"
-          class="bg-product-home center shadow-md"
+          class="bg-white center shadow-card-items"
         >
           <router-link
             class="focus:outline-none"
@@ -145,19 +151,27 @@
 import { mapState, mapActions, mapMutations } from "vuex";
 export default {
   data() {
-    return {};
+    return { sortOrder: "" };
   },
   computed: {
     ...mapState(["flavouredProducts"]),
   },
   mounted() {
     this.fetchFlavouredProducts();
+    this.sortProducts();
   },
   methods: {
     ...mapActions(["fetchFlavouredProducts"]),
     ...mapMutations(["setSelectedProduct"]),
     selectProduct(product) {
       this.setSelectedProduct(product);
+    },
+    sortProducts() {
+      if (this.sortOrder === "high") {
+        this.flavouredProducts.sort((a, b) => b.price - a.price);
+      } else if (this.sortOrder === "low") {
+        this.flavouredProducts.sort((a, b) => a.price - b.price);
+      }
     },
   },
 };

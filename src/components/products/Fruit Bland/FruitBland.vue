@@ -1,14 +1,14 @@
 <template>
   <section class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
     <nav class="flex mb-24 md:mb-20 lg:mb-12" aria-label="Breadcrumb">
-      <ol class="inline-flex items-center space-x-1 md:space-x-3">
+      <ol class="inline-flex items-center">
         <li class="inline-flex items-center">
           <a
             href="/"
             class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
           >
             <svg
-              class="w-4 h-4 mr-2"
+              class="w-4 h-4 mr-1"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -54,8 +54,7 @@
                 clip-rule="evenodd"
               ></path>
             </svg>
-            <span
-              class="ml-1 text-sm font-medium md:ml-2 pcolor hover:text-yellow-600"
+            <span class="text-sm font-medium pcolor hover:text-yellow-600"
               >Fruit Blend</span
             >
           </div>
@@ -63,7 +62,7 @@
       </ol>
     </nav>
     <div class="flex flex-col gap-8 lg:gap-10">
-      <div class="flex flex-row justify-center md:justify-between">
+      <div class="flex flex-row justify-between">
         <div class="flex flex-col items-center lg:items-start">
           <h1 class="pcolor mb-1 text-md md:text-lg lg:text-2xl uppercase">
             Fruit Blend
@@ -72,48 +71,40 @@
             class="h-1 rounded w-full lg:w-38 background-yellow border-0 mx-auto lg:mx-0"
           />
         </div>
-      </div>
-      <div class="flex flex-row justify-center md:justify-between items-center">
-        <h2 class="text-xs md:text-md hidden md:block">
-          Menampilkan 6 produk untuk "Power Bank"
-        </h2>
-        <div class="relative flex items-center">
-          <span
-            class="sort-label text-sm text-gray-600 md:text-lg mr-2 hidden md:block"
-            >Sort:</span
+        <div class="relative">
+          <select
+            v-model="sortOrder"
+            @change="sortProducts"
+            class="filter-text-size p-2 w-32 h-10 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent focus:bg-transparent"
           >
-          <div class="relative">
-            <select
-              class="filter-text-size p-2 w-40 h-10 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent focus:bg-transparent"
+            <option disabled selected value="">Sort Items</option>
+            <option
+              value="high"
+              class="focus:outline-none bg-transparent focus:bg-transparent"
             >
-              <option
-                value="low"
-                class="focus:outline-none bg-transparent focus:bg-transparent"
-              >
-                Harga Tertinggi
-              </option>
-              <option
-                value="high"
-                class="focus:outline-none bg-transparent focus:bg-transparent"
-              >
-                Harga Terendah
-              </option>
-            </select>
-            <div
-              class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
+              Harga Tertinggi
+            </option>
+            <option
+              value="low"
+              class="focus:outline-none bg-transparent focus:bg-transparent"
             >
-              <svg
-                class="w-5 h-5 text-gray-500 transform rotate-180"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M9 13l-4-4 4-4 1.41 1.42L8.83 8H14v2H8.83l2.58 2.58L9 13z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
+              Harga Terendah
+            </option>
+          </select>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
+          >
+            <svg
+              class="w-5 h-5 text-gray-500 transform rotate-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11 7l-4 4-4-4 1.41-1.42L6 8.17V3h2v5.17l2.59-2.58L11 7z"
+                clip-rule="evenodd"
+              />
+            </svg>
           </div>
         </div>
       </div>
@@ -124,7 +115,7 @@
         <div
           v-for="product in fruitBlendProducts"
           :key="product.id"
-          class="bg-white center shadow-md"
+          class="bg-white center shadow-card-items"
         >
           <router-link
             class="focus:outline-none"
@@ -159,19 +150,27 @@
 import { mapState, mapActions, mapMutations } from "vuex";
 export default {
   data() {
-    return {};
+    return { sortOrder: "" };
   },
   computed: {
     ...mapState(["fruitBlendProducts"]),
   },
   mounted() {
     this.fetchFruitBlendProducts();
+    this.sortProducts();
   },
   methods: {
     ...mapActions(["fetchFruitBlendProducts"]),
     ...mapMutations(["setSelectedProduct"]),
     selectProduct(product) {
       this.setSelectedProduct(product);
+    },
+    sortProducts() {
+      if (this.sortOrder === "high") {
+        this.fruitBlendProducts.sort((a, b) => b.price - a.price);
+      } else if (this.sortOrder === "low") {
+        this.fruitBlendProducts.sort((a, b) => a.price - b.price);
+      }
     },
   },
 };
