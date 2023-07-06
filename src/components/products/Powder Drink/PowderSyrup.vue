@@ -101,13 +101,11 @@
         </div>
       </div>
 
-      <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
-      >
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
         <div
           v-for="product in powderSyrupProducts"
           :key="product.id"
-          class="bg-product-home center shadow-md"
+          class="bg-white center shadow-md"
         >
           <router-link
             class="focus:outline-none"
@@ -121,7 +119,7 @@
             <img
               :src="`/assets/images/product/${product.image}`"
               :alt="product.name"
-              class="rounded-t h-48 sm:h-56 md:h-64 w-full object-contain"
+              class="rounded-t h-48 sm:h-56 md:h-60 w-full object-contain"
             />
             <div class="p-3 md:p-4">
               <!-- Title -->

@@ -58,7 +58,7 @@
           <img src="/assets/images/icon/youtube.png" />
         </a>
       </div>
-      <p class="mt-8 text-base leading-6 text-center text-gray-400">
+      <p class="mt-8 text-base leading-6 text-center text-gray-800">
         © 2021 Genova Indonesia, Inc. All rights reserved.
       </p>
     </div>

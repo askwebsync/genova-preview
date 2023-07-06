@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/valid-v-for -->
 <!-- eslint-disable vue/require-v-for-key -->
 <template>
   <nav
@@ -7,15 +8,16 @@
       <router-link :to="{ name: 'home' }"
         ><img
           src="/assets/images/logo/logo128.png"
-          class="w-full h-24 object-contain focus:outline-none"
+          class="w-full h-20 md:h-24 object-contain focus:outline-none"
         />
       </router-link>
       <!-- Mobile menu button -->
-      <div
-        @click="showMenu = !showMenu"
-        class="flex md:hidden focus:outline-none"
-      >
-        <button type="button" class="hover:text-gray-700 focus:outline-none">
+      <div class="flex md:hidden">
+        <button
+          type="button"
+          class="hover:text-gray-700 focus:outline-none"
+          @click="toggleMenu"
+        >
           <svg viewBox="0 0 24 24" class="w-7 h-7 fill-current">
             <path
               fill-rule="evenodd"
@@ -28,53 +30,56 @@
     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
     <ul
       :class="showMenu ? 'flex' : 'hidden'"
-      class="flex-col my-2 space-y-4 items-center md:flex md:space-y-0 md:flex-row md:space-x-6 md:my-0 xl:space-x-10"
+      class="flex-col my-1 space-y-3 items-center md:flex md:space-y-0 md:flex-row md:space-x-6 md:my-0 xl:space-x-10"
     >
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-base pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm lg:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'products' }">Product</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-base pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm lg:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'recipe' }">Recipe</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-base pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm lg:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'about' }">About Us</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-base pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm lg:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'contact' }">Contact</router-link>
       </li>
       <li
         @click="showMenu = !showMenu"
-        class="text-sm md:text-base pcolor hover:text-yellow-600 focus:outline-none"
+        class="text-sm lg:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'location' }">Location</router-link>
       </li>
     </ul>
-    <div class="contain pb-2 md:w-1/6" @click="clickSearchBar()">
-      <div class="relative w-full">
+    <div class="contain pt-1 pb-3 md:pb-0 md:pt-0 md:w-1/5 xl:w-1/6 relative">
+      <div class="relative">
         <input
-          class="border-2 border-yellow h-12 px-5 rounded-lg text-sm hover:outline-none focus:outline-none text-black"
-          placeholder="Search Item"
+          class="h-10 px-5 text-sm border-yellow focus:border-yellow-700 focus:border-2"
+          placeholder="Search Product"
           type="text"
           v-model="search"
           @input="onQueryChange"
-          @blur="toggle = false"
+          @mousedown="toggle = true"
           @focus="toggle = true"
+          @keydown.enter="handleEnterKey"
+          ref="searchInput"
         />
-        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4 md:mr-2">
+
+        <button type="submit" class="absolute right-0 top-0 mt-3 mr-3">
           <svg
-            class="pcolor h-4 w-4 fill-current"
+            class="pcolor h-4 w-4 text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             version="1.1"
@@ -94,112 +99,90 @@
         </button>
       </div>
       <div
-        class="results relative cursor-pointer overflow-y-scroll h-32 w-full zterang md:absolute md:w-[30%]"
-        v-if="toggle"
+        class="results relative cursor-pointer overflow-y-scroll w-full bg-white shadow-md"
+        v-if="toggle && search.length > 0 && filteredProducts.length > 0"
+        :style="{ height: `${filteredProducts.length * 40}px` }"
       >
-        <div class="result" v-for="(product, id) in newProducts" :key="id">
-          <div @click="selectResult(product)" @mousedown.prevent>
-            <router-link
-              :to="{
-                name: 'productDetailPage',
-                query: {
-                  dataProduk: JSON.stringify({
-                    name: product.name,
-                    price: product.price,
-                    info: product.info,
-                    packaging: product.packaging,
-                    weight: product.weight,
-                    color: product.color,
-                    size: product.size,
-                    image: product.image,
-                    link: product.link,
-                    serving: product.serving,
-                  }),
-                },
-              }"
-            >
-              <div class="">
-                {{ product.name }}
-              </div>
-            </router-link>
-          </div>
+        <div
+          class="result"
+          v-for="(product, index) in filteredProducts"
+          :key="index"
+        >
+          <router-link
+            class="focus:outline-none"
+            :to="{
+              name: 'productDetailPage',
+              params: { productId: product.id },
+            }"
+            @click="selectProduct(product)"
+          >
+            {{ product.name }}</router-link
+          >
         </div>
       </div>
     </div>
   </nav>
 </template>
 <script>
-import allProducts from "@/product/allProduct";
+import { mapState, mapMutations } from "vuex";
+
 export default {
-  watch: {
-    search(val) {
-      this.newProducts = [];
-      this.products.forEach((element) => {
-        if (
-          element.name.toLowerCase().includes(val.toLowerCase()) &&
-          val != ""
-        ) {
-          this.newProducts.push(element);
-        }
-      });
-    },
-  },
   data() {
     return {
       search: "",
       toggle: false,
-      products: allProducts,
-      newProducts: [],
       showMenu: false,
-      showDiv: false,
     };
   },
   computed: {
-    // Get the filtered projects
-    resultQuery() {
-      if (this.searchQuery) {
-        return this.products.filter((item) => {
-          return this.searchQuery
-            .toLowerCase()
-            .split(" ")
-            .every((v) => item.name.toLowerCase().includes(v));
-        });
-      } else {
-        return this.products;
-      }
+    ...mapState(["products"]),
+    filteredProducts() {
+      return this.products.filter((product) =>
+        product.name.toLowerCase().includes(this.search.toLowerCase())
+      );
     },
-  },
-  mounted() {
-    document.addEventListener("mousemove", this.hideResultsContainer);
-  },
-  unmounted() {
-    document.removeEventListener("mousemove", this.hideResultsContainer);
-  },
-  toggleNav: function () {
-    this.showMenu = !this.showMenu;
-    this.showDiv = !this.showDiv;
   },
   methods: {
-    clickSearchBar() {
+    ...mapMutations(["setSelectedProduct"]),
+    handleEnterKey() {
+      if (this.isSelected) {
+        const selectedProduct = this.filteredProducts;
+        this.selectProduct(selectedProduct);
+        this.$router.push({
+          name: "productDetailPage",
+          params: { productId: selectedProduct.id },
+        });
+        this.search = ""; // Reset the search bar value
+      } else if (this.search.length > 0) {
+        alert("Performing a generic search...");
+        // Do something else (e.g., perform a generic search)
+        this.search = ""; // Reset the search bar value
+      }
+    },
+    onQueryChange() {
       this.toggle = true;
-      this.newProducts = this.products;
     },
-    selectResult(product) {
-      this.search = product.name;
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
     },
-    hideResultsContainer() {
-      this.toggle = false;
+
+    selectProduct(product) {
+      if (product) {
+        this.setSelectedProduct(product);
+      }
+      this.search = ""; // Clear the search input field
+      this.toggle = false; // Close the search results list
     },
   },
 };
 </script>
+
 <style scoped>
 input {
   width: 100%;
   height: 35px;
   padding-left: 10px;
   padding-right: -10px;
-  border-radius: 6px;
   transition: all 0.2s ease;
 }
 .contain input:focus {
@@ -209,6 +192,10 @@ input {
   background: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  position: absolute; /* Add this line */
+  width: 100%; /* Add this line */
+  top: calc(100% + 10px); /* Add this line */
+  left: 0; /* Add this line */
 }
 .results .result {
   padding: 10px;

@@ -19,8 +19,9 @@
   padding: 0;
 }
 
-
-
+select {
+  background: transparent !important;
+}
 
 #scroll {
   position: fixed;
@@ -166,8 +167,17 @@ p {
 }
 
 .border-yellow {
+  border-width: 1px;
   border-style: solid;
-  border-color: #C79E2A
+  border-color: #ca8a04;
+  /* rounded-md */
+  border-radius: 0.5rem;
+  /* appearance-none */
+  appearance: none;
+  /* focus:outline-none */
+  outline: none;
+  /* bg-transparent */
+  background-color: transparent;
 }
 
 .fade-enter-active {

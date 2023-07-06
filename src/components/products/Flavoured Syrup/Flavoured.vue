@@ -73,7 +73,11 @@
             class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
           />
         </div>
-
+      </div>
+      <div class="flex flex-row justify-between">
+        <h2>
+          Menampilkan 1389534 produk untuk "Power Bank" (1 - 60 of 1389534)
+        </h2>
         <div class="relative">
           <select
             class="filter-text-size p-2 md:p-3 w-full md:w-64 h-42 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent"
@@ -102,9 +106,7 @@
         </div>
       </div>
 
-      <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
-      >
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
         <div
           v-for="product in flavouredProducts"
           :key="product.id"

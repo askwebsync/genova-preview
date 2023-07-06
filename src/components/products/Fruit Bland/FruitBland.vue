@@ -63,51 +63,68 @@
       </ol>
     </nav>
     <div class="flex flex-col gap-8 lg:gap-10">
-      <div class="flex flex-row justify-between">
+      <div class="flex flex-row justify-center md:justify-between">
         <div class="flex flex-col items-center lg:items-start">
           <h1 class="pcolor mb-1 text-md md:text-lg lg:text-2xl uppercase">
-            Product Category
+            Fruit Blend
           </h1>
           <hr
-            class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
+            class="h-1 rounded w-full lg:w-38 background-yellow border-0 mx-auto lg:mx-0"
           />
         </div>
-
-        <div class="relative">
-          <select
-            class="filter-text-size p-2 md:p-3 w-full md:w-64 h-42 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent"
+      </div>
+      <div class="flex flex-row justify-center md:justify-between items-center">
+        <h2 class="text-xs md:text-md hidden md:block">
+          Menampilkan 6 produk untuk "Power Bank"
+        </h2>
+        <div class="relative flex items-center">
+          <span
+            class="sort-label text-sm text-gray-600 md:text-lg mr-2 hidden md:block"
+            >Sort:</span
           >
-            <option disabled selected value="">Filter</option>
-            <option value="low">Low to High</option>
-            <option value="high">High to Low</option>
-            <option value="new">New</option>
-            <option value="old">Old</option>
-          </select>
-          <div
-            class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
-          >
-            <svg
-              class="w-5 h-5 text-gray-500"
-              fill="currentColor"
-              viewBox="0 0 20 20"
+          <div class="relative">
+            <select
+              class="filter-text-size p-2 w-40 h-10 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent focus:bg-transparent"
             >
-              <path
-                fill-rule="evenodd"
-                d="M9 13l-4-4 4-4 1.41 1.42L8.83 8H14v2H8.83l2.58 2.58L9 13z"
-                clip-rule="evenodd"
-              />
-            </svg>
+              <option
+                value="low"
+                class="focus:outline-none bg-transparent focus:bg-transparent"
+              >
+                Harga Tertinggi
+              </option>
+              <option
+                value="high"
+                class="focus:outline-none bg-transparent focus:bg-transparent"
+              >
+                Harga Terendah
+              </option>
+            </select>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500 transform rotate-180"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9 13l-4-4 4-4 1.41 1.42L8.83 8H14v2H8.83l2.58 2.58L9 13z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
 
       <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6"
       >
         <div
           v-for="product in fruitBlendProducts"
           :key="product.id"
-          class="bg-product-home center shadow-md"
+          class="bg-white center shadow-md"
         >
           <router-link
             class="focus:outline-none"
