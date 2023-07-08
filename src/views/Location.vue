@@ -1,6 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+  <section
+    class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10"
+  >
     <div class="mb-6">
       <ul class="flex flex-row justify-center">
         <li class="text-center mx-6" @click.prevent="tab = 'offline'">

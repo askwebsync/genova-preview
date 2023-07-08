@@ -171,7 +171,7 @@ p {
 }
 
 .border-yellow {
-  border-width: 1px;
+  border-width: 1.5px;
   border-style: solid;
   border-color: #ca8a04;
   /* rounded-md */
@@ -279,12 +279,12 @@ p {
 }
 
 .carousel__next {
-  right: -10px;
+  right: -15px;
   background-color: #bdb76b !important;
 }
 
 .carousel__prev {
-  left: -10px;
+  left: -15px;
   background-color: #bdb76b !important;
 }
 
@@ -409,7 +409,7 @@ p {
 
 .product-container:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px 2px #ccc;
+
 }
 
 .container-animation {

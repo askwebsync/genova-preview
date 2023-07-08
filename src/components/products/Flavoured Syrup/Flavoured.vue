@@ -1,6 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+  <section
+    class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10"
+  >
     <nav class="flex mb-24 md:mb-20 lg:mb-12" aria-label="Breadcrumb">
       <ol class="inline-flex items-center">
         <li class="inline-flex items-center">

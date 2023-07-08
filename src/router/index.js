@@ -29,7 +29,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Contact" */ "../views/About.vue"),
     meta: {
-      title: "Tentang Kami", // Set the page title for the About page
+      title: "Tentang Kami - Genova", // Set the page title for the About page
       metaTags: [
         // Define the meta tags for the About page
         {
@@ -46,7 +46,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Contact" */ "../views/Contact.vue"),
     meta: {
-      title: "Hubungi Kami", // Set the page title for the Contact page
+      title: "Hubungi Kami - Genova", // Set the page title for the Contact page
       metaTags: [
         // Define the meta tags for the Contact page
         {
@@ -63,7 +63,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "projects" */ "../views/Products.vue"),
     meta: {
-      title: "Kategori Produk", // Set the page title for the Products page
+      title: "Kategori Produk - Genova", // Set the page title for the Products page
       metaTags: [
         // Define the meta tags for the Products page
         {
@@ -79,7 +79,7 @@ const routes = [
     name: "recipe",
     component: () => import("../views/Recipe.vue"),
     meta: {
-      title: "Koleksi Resep Genova", // Set the page title for the Recipe page
+      title: "Koleksi Resep - Genova", // Set the page title for the Recipe page
       metaTags: [
         // Define the meta tags for the Recipe page
         {
@@ -95,7 +95,7 @@ const routes = [
     name: "location",
     component: () => import("../views/Location.vue"),
     meta: {
-      title: "Lokasi Kami",
+      title: "Lokasi Kami - Genova",
       metaTags: [
         {
           name: "description",
@@ -165,14 +165,12 @@ const router = createRouter({
 });
 
 export default router;
-
 /**
  * Below code will display the component/active page title
  */
 
 // This callback runs before every route change, including on page load.
 // ...
-
 router.beforeEach((to, from, next) => {
   const nearestWithTitle = to.matched
     .slice()

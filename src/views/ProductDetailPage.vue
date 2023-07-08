@@ -9,7 +9,7 @@
       </div>
     </div>
     <section class="container mx-auto" v-else>
-      <div class="px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+      <div class="px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10">
         <nav class="flex mb-24 md:mb-20 lg:mb-12" aria-label="Breadcrumb">
           <ol class="inline-flex items-center">
             <li class="inline-flex items-center">
@@ -155,9 +155,7 @@
             <div class="flex flex-col justify-between gap-6">
               <div class="flex flex-col gap-4">
                 <div class="flex flex-col">
-                  <h1
-                    class="text-black mb-1 text-lg lg:text-2xl uppercase font-semibold"
-                  >
+                  <h1 class="text-black mb-1 text-lg lg:text-2xl font-semibold">
                     {{ productShow.name }}
                   </h1>
                   <hr
@@ -166,9 +164,16 @@
                 </div>
                 <div>
                   <template v-if="Array.isArray(productShow.info)">
-                    <ul>
-                      <li v-for="info in productShow.info" :key="info" class="">
-                        <p class="text-lg md:text-xl my-1">{{ info }}</p>
+                    <h2 class="text-lg md:text-xl mb-1">
+                      Cocok Digunakan Untuk:
+                    </h2>
+                    <ul
+                      class="list-disc list-inside"
+                      v-for="info in productShow.info"
+                      :key="info"
+                    >
+                      <li class="text-md lg:text-lg my-1 text-gray-600">
+                        {{ info }}
                       </li>
                     </ul>
                   </template>

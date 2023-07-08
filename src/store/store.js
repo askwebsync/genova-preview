@@ -1,4 +1,5 @@
 import { createStore } from "vuex";
+import { formatPrice } from "@/helpers/helper";
 import allProducts from "@/product/allProduct";
 
 export default createStore({
@@ -7,8 +8,8 @@ export default createStore({
     trendingProducts: [],
     newProducts: [],
     powderSyrupProducts: [],
-    fruitBlendProducts: [], // Added a new state for fruitBlendProducts
-    flavouredProducts: [], // Added a new state for flavouredProducts
+    fruitBlendProducts: [],
+    flavouredProducts: [],
     selectedProduct: null,
   },
   mutations: {
@@ -25,10 +26,9 @@ export default createStore({
       state.fruitBlendProducts = products;
     },
     setFlavouredProducts(state, products) {
-      state.flavouredProducts = products; // Added a new mutation for flavouredProducts
+      state.flavouredProducts = products;
     },
     setSelectedProduct(state, product) {
-      console.log("Product selected:", product);
       state.selectedProduct = product;
     },
     clearSelectedProduct(state) {
@@ -37,34 +37,48 @@ export default createStore({
   },
   actions: {
     fetchTrendingProducts({ commit, state }) {
-      const trendingProducts = state.products.filter(
-        (product) => product.trending === "yes"
-      );
+      const trendingProducts = state.products
+        .filter((product) => product.trending === "yes")
+        .map((product) => ({
+          ...product,
+          price: formatPrice(product.price),
+        }));
       commit("setTrendingProducts", trendingProducts);
     },
     fetchPowderSyrupProducts({ commit, state }) {
-      const powderSyrupProducts = state.products.filter(
-        (product) => product.category === "powder"
-      );
+      const powderSyrupProducts = state.products
+        .filter((product) => product.category === "powder")
+        .map((product) => ({
+          ...product,
+          price: formatPrice(product.price),
+        }));
       commit("setPowderSyrupProducts", powderSyrupProducts);
     },
     fetchNewProducts({ commit, state }) {
-      const newProducts = state.products.filter(
-        (product) => product.new === "yes"
-      );
+      const newProducts = state.products
+        .filter((product) => product.new === "yes")
+        .map((product) => ({
+          ...product,
+          price: formatPrice(product.price),
+        }));
       commit("setNewProducts", newProducts);
     },
     fetchFruitBlendProducts({ commit, state }) {
-      const fruitBlendProducts = state.products.filter(
-        (product) => product.category === "fruitBlend"
-      );
+      const fruitBlendProducts = state.products
+        .filter((product) => product.category === "fruitBlend")
+        .map((product) => ({
+          ...product,
+          price: formatPrice(product.price),
+        }));
       commit("setFruitBlendProducts", fruitBlendProducts);
     },
     fetchFlavouredProducts({ commit, state }) {
-      // Added a new action for fetching flavouredProducts
-      const flavouredProducts = state.products.filter(
-        (product) => product.category === "Flavoured"
-      );
+      const flavouredProducts = state.products
+        .filter((product) => product.category === "Flavoured")
+        .map((product) => ({
+          ...product,
+          price: formatPrice(product.price),
+        }));
       commit("setFlavouredProducts", flavouredProducts);
     },
   },
@@ -76,7 +90,6 @@ export default createStore({
       return state.fruitBlendProducts;
     },
     flavouredProducts(state) {
-      // Added a new getter for flavouredProducts
       return state.flavouredProducts;
     },
   },

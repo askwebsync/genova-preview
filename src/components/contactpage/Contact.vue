@@ -1,7 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
-    <div class="flex flex-col gap-8 lg:gap-10">
+  <section
+    class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10"
+  >
+    <div class="flex flex-col gap-10 lg:gap-12">
       <div class="flex flex-col items-center text-center">
         <h1 class="pcolor mb-1 text-xl lg:text-2xl uppercase">Contact Us</h1>
         <hr
@@ -13,42 +15,52 @@
           </p>
         </div> -->
       </div>
-
-      <div class="grid md:grid-cols-2 xl:grid-cols-3 self-center gap-12">
+      <div class="grid md:grid-cols-2 self-center gap-8">
         <div
-          class="flex flex-col items-center gap-5 bg-container p-4 md:p-8 rounded-lg max-w-sm shadow-md"
+          class="flex flex-col gap-6 rounded-lg shadow-card-items mx-3 p-5 lg:p-6 relative"
         >
-          <i
-            class="card-icon far fa-envelope text-yellow-500 transform hover:scale-110 transition-transform duration-300"
-          ></i>
-          <h3
-            class="text-black font-medium text-center md:text-lg whitespace-normal"
-          >
-            <a href="mailto:genovaindonesiaofficial@gmail.com" class=""
-              >genovaindonesiaofficial@gmail.com</a
+          <h3 class="text-gray-800 text-xl md:text-2xl lg:text-3xl text-left">
+            Bantuan
+          </h3>
+          <div class="my-3 h-20 md:h-28">
+            <h2
+              class="font-medium text-gray-500 text-left tracking-tight lg:tracking-wide"
             >
-          </h3>
+              Punya pertanyaan atau butuh bantuan? Tim ahli kami siap memberikan
+              jawaban dan dukungan yang Anda butuhkan. Jangan ragu untuk
+              menghubungi kami dengan mengklik tombol di bawah ini.
+            </h2>
+          </div>
+          <button
+            class="bg-transparent border-yellow pcolor font-semibold hover:border-2 py-2 px-4 rounded lg:py-3 lg:px-6 lg:text-lg lg:w-full md:mt-20 lg:mt-14 xl:mt-0"
+          >
+            <a href="tel:+6281212128171">Call</a>
+          </button>
+          <span class="bg-yellow-500 absolute top-0 left-0 w-1 h-12"></span>
         </div>
+
         <div
-          class="flex flex-col items-center gap-5 bg-container p-4 md:p-8 rounded-lg max-w-sm shadow-md"
+          class="flex flex-col gap-6 rounded-lg shadow-card-items mx-3 p-5 lg:p-6 relative"
         >
-          <i
-            class="card-icon fas fa-phone text-yellow-500 transform hover:scale-110 transition-transform duration-300"
-          ></i>
-          <h3 class="text-black font-medium text-center md:text-lg leading-2">
-            <a href="tel:081212128171" class="">+62 812-1212-8171</a>
+          <h3 class="text-gray-800 text-xl md:text-2xl lg:text-3xl text-left">
+            Kerjasama
           </h3>
-        </div>
-        <div
-          class="flex flex-col items-center gap-5 bg-container p-4 md:p-8 rounded-lg max-w-sm shadow-md"
-        >
-          <i
-            class="card-icon fas fa-map-marker-alt text-yellow-500 transform hover:scale-110 transition-transform duration-300"
-          ></i>
-          <h3 class="text-black font-medium text-center md:text-lg">
-            Komplek PU Jl. B No. 18 RC Veteran - Tanah Kusir, Jakarta Selatan
-            12330
-          </h3>
+          <div class="my-3 h-20 md:h-28">
+            <h2
+              class="font-medium text-gray-500 text-left tracking-tight lg:tracking-wide"
+            >
+              Jika Anda tertarik untuk menjalin kerjasama dengan kami atau
+              menggunakan produk sirup berkualitas tinggi kami, kami mengundang
+              Anda untuk menemukan berbagai kemungkinan kolaborasi menarik yang
+              menanti. Klik tombol di bawah ini untuk mengetahui lebih lanjut.
+            </h2>
+          </div>
+          <button
+            class="bg-transparent border-yellow pcolor font-semibold hover:border-2 py-2 px-4 rounded lg:py-3 lg:px-6 lg:text-lg lg:w-full md:mt-20 lg:mt-14 xl:mt-0"
+          >
+            <a href="mailto:genovaindonesiaofficial@gmail.com">Email</a>
+          </button>
+          <span class="bg-yellow-500 absolute top-0 left-0 w-1 h-12"></span>
         </div>
       </div>
     </div>
@@ -57,21 +69,7 @@
 <script></script>
 
 <style scoped>
-.bg-container {
-  background: #fff2bb;
-}
-.card-icon {
-  margin-top: 12px;
-  font-size: 28px;
-  background-color: white;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 60px !important;
-  border-radius: 50%;
-  transition: 0.3s linear;
-}
-.card:hover .card-icon {
-  transform: scale(1.4);
+h3 {
+  font-weight: 500;
 }
 </style>

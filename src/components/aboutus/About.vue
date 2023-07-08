@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section>
-    <div class="container mx-auto px-4 py-6 md:px-8 lg:px-24 lg:py-10">
+    <div class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10">
       <div class="container-background-about">
         <div class="container-about p-8 md:p-10">
           <div class="flex flex-col gap-8">

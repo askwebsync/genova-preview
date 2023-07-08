@@ -3,10 +3,10 @@
     <div
       class="relative w-full height-banner background flex items-center justify-center text-center bg-cover bg-center"
     >
-      <div class="text-center bg-recipe p-2">
+      <div class="text-center bg-recipe p-2 md:p-3">
         <div class="border-h2 px-4 py-3">
           <h2
-            class="pcolor text-2xl md:text-3xl tracking-tight sm:leading-none"
+            class="pcolor text-2xl md:text-3xl lg:text-4xl tracking-tight sm:leading-none"
           >
             About Genova
           </h2>
@@ -25,7 +25,7 @@ export default {
   background-image: url(../../../public/assets/images/banner/Product/product-page-banner.jpg);
 }
 .border-h2 {
-  border: 3px solid #c79e2a;
+  border: 2px solid #c79e2a;
   border-radius: 8px;
 }
 h2 {

@@ -7,11 +7,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-avocado-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -21,10 +20,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 2,
@@ -34,21 +34,21 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-cappuccino-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: 1, //kg
     serving:
       "- Masukkan 20-30 Gram Powder\n- Dicampur 120-150ML Susu\n- Aduk/shake hingga tercampur rata dan sajikan",
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 3,
@@ -58,21 +58,21 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-charcoal-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
     weight: 1,
     serving:
       "-Masukkan 20-30 Gram Powder\n-Dicampur 120-150ML Susu\n-Aduk/shake hingga tercampur rata dan sajikan",
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 4,
@@ -82,11 +82,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-chocolate-classic-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -96,10 +95,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 5,
@@ -110,11 +110,10 @@ const allProduct = [
     new: "yes",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-cookies-cream-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -124,10 +123,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 6,
@@ -137,11 +137,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-cotton-candy-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -151,10 +150,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 7,
@@ -164,11 +164,10 @@ const allProduct = [
     trending: "yes",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-dark-chocolate-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -178,10 +177,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 8,
@@ -191,11 +191,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-base-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -205,10 +204,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 9,
@@ -218,11 +218,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-greentea-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -232,10 +231,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 10,
@@ -245,11 +245,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-macchiato-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -259,10 +258,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 11,
@@ -272,11 +272,10 @@ const allProduct = [
     trending: "yes",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-latte-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -286,10 +285,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 12,
@@ -299,11 +299,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-matcha-premium-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -313,10 +312,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 13,
@@ -326,11 +326,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-mocha-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -340,10 +339,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 14,
@@ -353,11 +353,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-mochaccino-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -367,10 +366,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 15,
@@ -380,11 +380,10 @@ const allProduct = [
     trending: "yes",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-red-velvet-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -394,10 +393,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 16,
@@ -411,8 +411,6 @@ const allProduct = [
     weight: 1,
     serving:
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
-    color: "",
-    tasting: "",
   },
   {
     id: 17,
@@ -426,8 +424,6 @@ const allProduct = [
     weight: 1,
     serving:
       "- Masukkan 20-30 Gram Powder - Dicampur 120-150ML Susu - Aduk/shake hingga tercampur rata dan sajikan",
-    color: "",
-    tasting: "",
   },
   {
     id: 18,
@@ -437,11 +433,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-thai-tea-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -451,10 +446,10 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 19,
@@ -464,11 +459,10 @@ const allProduct = [
     trending: "no",
     category: "powder",
     info: [
-      "Cocok Digunakan untuk",
-      "-Untuk Meng-explore Minuman Terkini",
-      "-Pembuatan Kue",
-      "-Pembuatan Minuman",
-      "-Aneka Olahan Lainnya",
+      "Untuk Meng-explore Minuman Terkini",
+      "Pembuatan Kue",
+      "Pembuatan Minuman",
+      "Aneka Olahan Lainnya",
     ],
     link: "https://www.tokopedia.com/genovaindonesia/genova-tiramisu-frappe-powder-1000-gram?extParam=whid%3D8872969",
     packaging: "1 Pack Powder",
@@ -478,10 +472,11 @@ const allProduct = [
       "Dicampur 120-150ML Susu",
       "Aduk/shake hingga tercampur rata dan sajikan",
     ],
-    color: "",
-    tasting: "",
+
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 20,
@@ -496,9 +491,10 @@ const allProduct = [
     weight: 1.4,
     serving: 20,
     color: "Hijau gelap intens, deep undertone",
-    tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 21,
@@ -513,9 +509,10 @@ const allProduct = [
     weight: 1.4,
     serving: 20,
     color: "Oranye terang dengan kilau kuning",
-    tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 22,
@@ -530,9 +527,10 @@ const allProduct = [
     weight: 1.4,
     serving: 20,
     color: "Oranye tua",
-    tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 23,
@@ -547,9 +545,10 @@ const allProduct = [
     weight: 1.4,
     serving: 20,
     color: "Kuning bertekstur cerah",
-    tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 24,
@@ -564,9 +563,10 @@ const allProduct = [
     weight: 1.4,
     serving: 20,
     color: "Merah gelap dengan ungu, kilau merah muda.",
-    tasting: "",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 25,
@@ -581,7 +581,6 @@ const allProduct = [
     weight: 1.4,
     serving: 20,
     color: "Merah ruby tua dengan beberapa kilau merah tembaga",
-    tasting: "",
     penyimpanan:
       "-Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n-Hindari dari tempat yang berbau tajam.",
   },
@@ -602,7 +601,9 @@ const allProduct = [
     tasting:
       "Awal: Nanas segar\nTengah: Rasa nanas yang juicy dan segar\nPanjang di Mulut: Buah dengan rasa sedikit asam",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 27,
@@ -621,7 +622,9 @@ const allProduct = [
     tasting:
       "Awal: raspberry matang\nTengah: sedikit asam\nPanjang di mulut: rasa permen raspberry.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 28,
@@ -638,7 +641,9 @@ const allProduct = [
     color: "Emas terang bening",
     tasting: "Awal: rasa yang kuat dari pisang matang",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 29,
@@ -655,7 +660,9 @@ const allProduct = [
     color: "Biru tua bahkan ketika diencerkan",
     tasting: "Rasa kulit jeruk, permen rasa jeruk segar",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 30,
@@ -673,7 +680,9 @@ const allProduct = [
     tasting:
       "Rasa awal permen, rasa Bubble Gum yang kuat dan manis mengingatkan Anda akan masa kecil Anda.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 31,
@@ -691,7 +700,9 @@ const allProduct = [
     color: "Warna bening dengan kilau kuning",
     tasting: "Awal: Mentega dan karamel",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 32,
@@ -709,7 +720,9 @@ const allProduct = [
     tasting:
       "Awal: Karamel yang intens dengan nada bulat dari permen karamel\nTengah: Kaya dan rasa krim dengan nada asin\nPanjang di mulut: karamel mentega asin",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 33,
@@ -728,7 +741,9 @@ const allProduct = [
     tasting:
       "Rasa kelapa yang sangat kuat, pekat, dan tahan lama yang membawa Anda pergi ke daerah tropis, di bawah rayuan pohon kelapa.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 34,
@@ -745,7 +760,9 @@ const allProduct = [
     color: "Sedikit berawan",
     tasting: "Sedikit berawan",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 35,
@@ -763,7 +780,9 @@ const allProduct = [
     tasting:
       "Hidung apel hijau yang baru dipotong; asam, manis dan juicy rasa apel hijau, sangat menyegarkan",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 36,
@@ -781,7 +800,9 @@ const allProduct = [
     tasting:
       "Awal: Kacang segar dan bunga\nTengah: Rasa hazelnut segar dan nabati\nPanjang di Mulut: Sentuhan halus almond dan vanila",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 37,
@@ -799,7 +820,9 @@ const allProduct = [
     tasting:
       "Awal: mentega dengan sedikit kopi panggang\nTengah: lembut dengan kopi panggang yang kuat\nPanjang di Mulut: mocha",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 38,
@@ -816,7 +839,9 @@ const allProduct = [
     color: "Hijau terang",
     tasting: "Rasa awal kiwi matang, rasa kiwi juicy dan menyegarkan",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 39,
@@ -835,7 +860,9 @@ const allProduct = [
     tasting:
       "Hidung: Seimbang antara rasa lemon dan jeruk nipis segar\nTengah: Asam, perasan jeruk nipis\nPanjang di Mulut: Menyegarkan",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 40,
@@ -853,7 +880,9 @@ const allProduct = [
     tasting:
       "Genova Lemongrass adalah pendamping yang hebat untuk membuat mocktail dan banyak lagi. Di Asia Tenggara, kami senang memadukannya dengan jeruk nipis, daun jeruk purut, mint, asam untuk menciptakan pengalaman Asia yang otentik.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 41,
@@ -871,7 +900,9 @@ const allProduct = [
     tasting:
       "Awal: Aroma buah\nTengah: Rasa leci asli sedikit asam\nPanjang di Mulut: halus manis",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 42,
@@ -889,7 +920,9 @@ const allProduct = [
     tasting:
       "Rasa awal buah mangga eksotis ringan, rasa mangga manis dengan sedikit keasaman",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 43,
@@ -907,7 +940,9 @@ const allProduct = [
     tasting:
       "Aroma spearmint, rasa gula tebu dan spearmint yang sangat seimbang.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 44,
@@ -925,7 +960,9 @@ const allProduct = [
     tasting:
       "Awal: aroma nabati yang wangi\nTengah: pandan masak hijau manis\nPanjang di Mulut: tradisional daun pandan",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 45,
@@ -943,7 +980,9 @@ const allProduct = [
     tasting:
       "Aroma buah yang eksotis, rasa manis dan asam yang akan membuat Anda merasa ingin memakan buah markisa yang segar.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 46,
@@ -960,7 +999,9 @@ const allProduct = [
     color: "Cemerlang, warna oranye emas muda",
     tasting: "Sensasi dan rasa persik putih tahan lama",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 47,
@@ -977,7 +1018,9 @@ const allProduct = [
     color: "Bening",
     tasting: "Bau peppermint yang kuat, rasa mint yang menyegarkan di mulut",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 48,
@@ -995,7 +1038,9 @@ const allProduct = [
     tasting:
       "Rasa stroberi segar yang kaya, rasa lembut dan lembut dengan sentuhan rasa stroberi.",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 49,
@@ -1014,7 +1059,9 @@ const allProduct = [
     tasting:
       "Awal: Cokelat dengan sedikit biskuit\nTengah: Cokelat dengan aroma kacang\nBelakang: Terasa panjang rasa kacang di mulut",
     penyimpanan:
-      "- Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+      "Simpan Produk ditempat yang sejuk dan terhindar dari Sinar Matahari langsung\n- Hindari dari tempat yang berbau tajam.",
+    halal: "Ya",
+    kondisi: "Baru",
   },
 ];
 
