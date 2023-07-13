@@ -64,10 +64,6 @@ export default {
 };
 </script>
 <style scoped>
-.hrborder {
-  background: #2b2b28;
-  border: 3px solid #2b2b28;
-}
 h1 {
   font-family: "Josefin Sans";
   font-style: normal;

@@ -148,7 +148,7 @@
               <img
                 :src="productShow.image"
                 :alt="productShow.name"
-                class="object-contain object-center w-full h-64 md:h-full rounded-t-xl"
+                class="object-cover object-center w-full h-64 md:h-full rounded-t-xl"
               />
             </div>
             <!-- Item Info -->
@@ -160,7 +160,7 @@
                   </h1>
                   <div class="flex flex-col">
                     <h2 class="pcolor text-xl lg:text-lg font-medium">Harga</h2>
-                    <h2 class="pcolor text-2xl lg:text-2xl font-semibold">
+                    <h2 class="pcolor text-2xl lg:text-3xl font-semibold">
                       {{ "Rp" + productShow.price }}
                     </h2>
                   </div>
@@ -187,7 +187,7 @@
                           activeTab !== 'keterangan',
                       }"
                       @click="activeTab = 'keterangan'"
-                      class="block px-4 md:px-5 pb-3.5 pt-2 text-lg font-medium"
+                      class="block px-4 md:px-5 pb-3.5 pt-2 text-xl font-medium"
                     >
                       Keterangan
                     </a>
@@ -201,7 +201,7 @@
                           activeTab !== 'saran-penyajian',
                       }"
                       @click="activeTab = 'saran-penyajian'"
-                      class="block px-4 md:px-5 pb-3.5 pt-2 text-xlg font-medium"
+                      class="block px-4 md:px-5 pb-3.5 pt-2 text-xl font-medium"
                     >
                       Saran Penyajian
                     </a>
@@ -230,6 +230,11 @@
                         <li class="text-lg text-gray-600">
                           <span class="ml-[-0.45em]">
                             Etalase : {{ productShow.category }}</span
+                          >
+                        </li>
+                        <li class="text-lg text-gray-600">
+                          <span class="ml-[-0.45em]">
+                            Halal : {{ productShow.halal }}</span
                           >
                         </li>
                       </ul>
@@ -275,7 +280,7 @@
                           v-for="penyajian in productShow.penyajian"
                           :key="penyajian"
                         >
-                          <li class="text-md text-gray-600">
+                          <li class="text-lg text-gray-600">
                             <span class="ml-[-0.45em]"> {{ penyajian }}</span>
                           </li>
                         </ul>
