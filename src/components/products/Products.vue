@@ -11,7 +11,7 @@
       <div
         class="grid grid-cols-1 gap-12 px-10 sm:grid-cols-2 md:px-0 md:gap-10 md:grid-cols-3 lg:gap-20 xl:gap-32"
       >
-        <router-link :to="{ name: 'fruit-bland' }">
+        <router-link :to="{ name: 'fruit-blend' }">
           <div
             class="flex flex-col items-center justify-center cursor-pointer bg-white shadow-card-items transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-2 uppercase"
           >
