@@ -654,11 +654,13 @@ const allProduct = [
     trending: "no",
     new: "yes",
     category: "syrup",
-    info: "Nanas diyakini berasal dari hutan hujan Brasil. Nanas dipanen oleh suku asli dan menyebar ke seluruh Amerika Selatan dan Tengah. Ketika Christopher Columbus mendarat di dunia baru pada tahun 1493, orang Spanyol menamai buah itu 'piña' karena kemiripannya dengan biji pinus dari pohon konifer. Nanas adalah buah oval besar yang tumbuh di negara-negara tropis. Buah ini manis, berair, dan kuning di dalamnya, dan memiliki kulit kecoklatan yang tebal. Sirup Pineapple GENOVA dibuat untuk menambahkan minuman anda dengan sentuhan tropis pada banyak minuman dingin, soda, dan teh.",
+    info: "Nanas diyakini berasal dari hutan hujan Brasil. Nanas dipanen oleh suku asli dan menyebar ke seluruh Amerika Selatan dan Tengah. Ketika Christopher Columbus mendarat di dunia baru pada tahun 1493, orang Spanyol menamai buah itu 'piña' karena kemiripannya dengan biji pinus dari pohon konifer. Nanas adalah buah oval besar yang tumbuh di negara-negara tropis. Buah ini manis, berair, dan kuning di dalamnya, dan memiliki kulit kecoklatan yang tebal.",
     link: "https://www.tokopedia.com/genovaindonesia/syrup-genova-pineapple-750-ml?extParam=whid%3D8872969",
     packaging: 750,
     weight: 1.4,
-    penyajian: 20,
+    penyajian: [
+      "Sirup Pineapple GENOVA dibuat untuk menambahkan minuman anda dengan sentuhan tropis pada banyak minuman dingin, soda, dan teh.",
+    ],
     color: "Kuning berawan",
     tasting: [
       "Awal: Nanas segar",
@@ -680,11 +682,13 @@ const allProduct = [
     trending: "no",
     new: "yes",
     category: "syrup",
-    info: "Raspberry adalah buah yang asam dan manis juga lezat secara bersamaan, dan mereka tidak terlalu asam seperti blackberry. Namun, mereka bisa menjadi sedikit asam, terutama jika dipetik sebelum matang sepenuhnya. Semakin manis dan kuat rasanya, semakin matang mereka. Berry kecil berwarna dalam yang memiliki tekstur lembut, rasa manis yang lembut dan aroma yang menyenangkan. Musim puncak raspberry adalah selama pertengahan musim panas, tetapi mereka tersedia sepanjang tahun di beberapa pasar baik segar maupun beku. Varietas yang paling umum dan paling banyak dibudidayakan adalah Raspberry merah. Rasa sirup GENOVA Raspberry yang matang dan seimbang menjadikannya tambahan yang lezat untuk mocktail, soda, dan minuman kopi. Sirup Raspberry GENOVA menghadirkan cita rasa yang luar biasa pada es teh, mocktail special, atau minuman dingin",
+    info: "Raspberry adalah buah yang asam dan manis juga lezat secara bersamaan, dan mereka tidak terlalu asam seperti blackberry. Namun, mereka bisa menjadi sedikit asam, terutama jika dipetik sebelum matang sepenuhnya. Semakin manis dan kuat rasanya, semakin matang mereka. Berry kecil berwarna dalam yang memiliki tekstur lembut, rasa manis yang lembut dan aroma yang menyenangkan. Musim puncak raspberry adalah selama pertengahan musim panas, tetapi mereka tersedia sepanjang tahun di beberapa pasar baik segar maupun beku. Varietas yang paling umum dan paling banyak dibudidayakan adalah Raspberry merah.",
     link: "https://www.tokopedia.com/genovaindonesia/genova-rasbery-syrup-750-ml?extParam=whid%3D8872969",
     packaging: 750,
     weight: 1.4,
-    penyajian: 20,
+    penyajian: [
+      " Rasa sirup GENOVA Raspberry yang matang dan seimbang menjadikannya tambahan yang lezat untuk mocktail, soda, dan minuman kopi. Sirup Raspberry GENOVA menghadirkan cita rasa yang luar biasa pada es teh, mocktail special, atau minuman dingin",
+    ],
     color: "Warna alami jus raspberry",
     tasting: [
       "Awal: raspberry matang",
@@ -705,11 +709,13 @@ const allProduct = [
     price: 105000,
     trending: "no",
     category: "syrup",
-    info: "Buah pisang awalnya ditemukan di Asia Tenggara, terutama di India. Mereka dibawa ke barat oleh penakluk Arab pada 327 SM. dan dipindahkan dari Asia Kecil ke Afrika dan akhirnya dibawa ke Dunia Baru oleh para penjelajah dan misionaris pertama ke Karibia. Ada banyak alasan untuk menyukai pisang. Mereka mudah dibawa-bawa untuk camilan, rasanya enak, dan sarat dengan gula. Pisang tidak hanya membuat Anda tetap berenergi, tetapi juga dapat mengangkat suasana hati Anda Sirup Banana GENOVA cocok untuk di buat rangkaian mocktail, minuman pencuci mulut, smoothie, kopi, cokelat, minuman susu beraroma, dan minuman buah lainnya",
+    info: "Buah pisang awalnya ditemukan di Asia Tenggara, terutama di India. Mereka dibawa ke barat oleh penakluk Arab pada 327 SM. dan dipindahkan dari Asia Kecil ke Afrika dan akhirnya dibawa ke Dunia Baru oleh para penjelajah dan misionaris pertama ke Karibia. Ada banyak alasan untuk menyukai pisang. Mereka mudah dibawa-bawa untuk camilan, rasanya enak, dan sarat dengan gula. Pisang tidak hanya membuat Anda tetap berenergi, tetapi juga dapat mengangkat suasana hati Anda.",
     link: "https://www.tokopedia.com/genovaindonesia/genova-banana-syrup-750-ml?extParam=whid%3D8872969",
     packaging: 750,
     weight: 1.4,
-    penyajian: 20,
+    penyajian: [
+      "Sirup Banana GENOVA cocok untuk di buat rangkaian mocktail, minuman pencuci mulut, smoothie, kopi, cokelat, minuman susu beraroma, dan minuman buah lainnya",
+    ],
     color: "Emas terang bening",
     tasting: ["Awal: rasa yang kuat dari pisang matang"],
     penyimpanan: [
@@ -730,7 +736,7 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-blue-curacao-syrup-750-ml?extParam=whid%3D8872969",
     packaging: 750,
     weight: 1.4,
-    penyajian: 20,
+    penyajian: [""],
     color: "Biru tua bahkan ketika diencerkan",
     tasting: ["Rasa kulit jeruk, permen rasa jeruk segar"],
     penyimpanan: [
@@ -747,11 +753,13 @@ const allProduct = [
     price: 105000,
     trending: "no",
     category: "syrup",
-    info: "Dalam warna biru muda yang lucu, sirup GENOVA Bubble Gum mengemas rasa nostalgia masa kanak-kanak dan faktor kesenangan yang terkait dengan penganan yang selalu populer ini. Terinspirasi oleh permen karet Babol asal Indonesia yang legendaris, GENOVA Bubble Gum menghadirkan rasa permen karet asli yang kuat dan manis.\nSyrup GENOVA Bubble Gum memungkinkan Anda membuat kombinasi mocktail baru yang tak ada habisnya. Berani tampil beda dengan sirup GENOVA Bubble Gum dan biarkan imajinasi Anda menjadi liar dengan menambahkan gelembung Anda sendiri untuk membuat soda permen karet untuk pesta anak-anak atau penembak biru cantik untuk malam anak perempuan.",
+    info: "Dalam warna biru muda yang lucu, sirup GENOVA Bubble Gum mengemas rasa nostalgia masa kanak-kanak dan faktor kesenangan yang terkait dengan penganan yang selalu populer ini. Terinspirasi oleh permen karet Babol asal Indonesia yang legendaris, GENOVA Bubble Gum menghadirkan rasa permen karet asli yang kuat dan manis.\nSyrup GENOVA Bubble Gum memungkinkan Anda membuat kombinasi mocktail baru yang tak ada habisnya.",
     link: "https://www.tokopedia.com/genovaindonesia/genova-bubble-gum-syrup-750-ml?extParam=whid%3D8872969",
     packaging: 750,
     weight: 1.4,
-    penyajian: 20,
+    penyajian: [
+      "Berani tampil beda dengan sirup GENOVA Bubble Gum dan biarkan imajinasi Anda menjadi liar dengan menambahkan gelembung Anda sendiri untuk membuat soda permen karet untuk pesta anak-anak atau penembak biru cantik untuk malam anak perempuan.",
+    ],
     color: "Biru muda mencolok",
     tasting: [
       "Rasa awal permen, rasa Bubble Gum yang kuat dan manis mengingatkan Anda akan masa kecil Anda.",
@@ -772,11 +780,13 @@ const allProduct = [
     trending: "no",
     new: "yes",
     category: "syrup",
-    info: "Syrup Butterscotch sebagian besar terbuat dari mentega dan gula merah, itulah sebabnya rasanya luar biasa enak. Krim kental, vanila, dan garam juga bisa ditambahkan. Gula merah memberikan rasa yang lebih kompleks karena molase yang dikandungnya, dibandingkan dengan gula pasir, yang digunakan karamel. Resep paling awal yang diketahui, pada pertengahan abad ke-19 Yorkshire, bekas tetes (molase) sebagai pengganti atau sebagai tambahan gula. Butterscotch mirip dengan gula-gula, tetapi untuk butterscotch, gula direbus hingga menjadi retak lembut panggang, tidak retak keras seperti toffee. Sering dikreditkan dengan penemuan mereka, Parkinson of Doncaster membuat permen rebus butterscotch dan menjualnya dalam kaleng, yang menjadi salah satu ekspor kota yang paling terkenal. Mereka menjadi terkenal pada tahun 1851 ketika Ratu Victoria disajikan dengan kaleng ketika dia mengunjungi kota. Saus butterscotch, terbuat dari butterscotch dan krim, digunakan sebagai taburan es krim (terutama sundae ). Sempurna sebagai topping es krim sundae yang indah, sirup GENOVA Butterscotch juga akan menciptakan minuman pencuci mulut panas dan dingin yang mewah",
+    info: "Syrup Butterscotch sebagian besar terbuat dari mentega dan gula merah, itulah sebabnya rasanya luar biasa enak. Krim kental, vanila, dan garam juga bisa ditambahkan. Gula merah memberikan rasa yang lebih kompleks karena molase yang dikandungnya, dibandingkan dengan gula pasir, yang digunakan karamel. Resep paling awal yang diketahui, pada pertengahan abad ke-19 Yorkshire, bekas tetes (molase) sebagai pengganti atau sebagai tambahan gula. Butterscotch mirip dengan gula-gula, tetapi untuk butterscotch, gula direbus hingga menjadi retak lembut panggang, tidak retak keras seperti toffee. Sering dikreditkan dengan penemuan mereka, Parkinson of Doncaster membuat permen rebus butterscotch dan menjualnya dalam kaleng, yang menjadi salah satu ekspor kota yang paling terkenal. Mereka menjadi terkenal pada tahun 1851 ketika Ratu Victoria disajikan dengan kaleng ketika dia mengunjungi kota. Saus butterscotch, terbuat dari butterscotch dan krim, digunakan sebagai taburan es krim (terutama sundae ).",
     link: "https://www.tokopedia.com/genovaindonesia/genova-butterscotch-syrup-750-ml",
     packaging: 750,
     weight: 1.4,
-    penyajian: 20,
+    penyajian: [
+      "Sempurna sebagai topping es krim sundae yang indah, sirup GENOVA Butterscotch juga akan menciptakan minuman pencuci mulut panas dan dingin yang mewah",
+    ],
     color: "Warna bening dengan kilau kuning",
     tasting: ["Awal: Mentega dan karamel"],
     penyimpanan: [
@@ -797,7 +807,7 @@ const allProduct = [
     link: "https://www.tokopedia.com/genovaindonesia/genova-caramel-syrup-750-ml?extParam=whid%3D8872969",
     packaging: 750,
     weight: 1.4,
-    penyajian: 20,
+    penyajian: [""],
     color: "Warna kuning mengkilap dengan kilau kuning tembaga",
     tasting: [
       "Awal: Karamel yang intens dengan nada bulat dari permen karamel",
@@ -819,11 +829,13 @@ const allProduct = [
     trending: "no",
     new: "yes",
     category: "syrup",
-    info: "Terinspirasi dari kelapa asli yang berasal dari negara tropis dan sub-tropis seperti Indonesia, India dan Thailand, di mana kelapa dianggap sangat diperlukan dan berguna dalam banyak hal. Rasanya yang serbaguna menyegarkan. Juga rasa manis dan intensnya cocok untuk berbagai minuman tropis. Nikmati cita rasa minuman tropis ini dengan menambahkan sirup Coconut GENOVA ke dalam mocktail, kopi, smoothie, dan fruit punch, lalu hanyut di bawah naungan pohon kelapa",
+    info: "Terinspirasi dari kelapa asli yang berasal dari negara tropis dan sub-tropis seperti Indonesia, India dan Thailand, di mana kelapa dianggap sangat diperlukan dan berguna dalam banyak hal. Rasanya yang serbaguna menyegarkan. Juga rasa manis dan intensnya cocok untuk berbagai minuman tropis.",
     link: "https://www.tokopedia.com/genovaindonesia/genova-coconut-syrup-750-ml?extParam=whid%3D8872969",
     packaging: 750,
     weight: 1.4,
-    penyajian: 20,
+    penyajian: [
+      "Nikmati cita rasa minuman tropis ini dengan menambahkan sirup Coconut GENOVA ke dalam mocktail, kopi, smoothie, dan fruit punch, lalu hanyut di bawah naungan pohon kelapa",
+    ],
     color: "Putih berawan",
     tasting: [
       "Rasa kelapa yang sangat kuat, pekat, dan tahan lama yang membawa Anda pergi ke daerah tropis, di bawah rayuan pohon kelapa.",
