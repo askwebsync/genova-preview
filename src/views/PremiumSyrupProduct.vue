@@ -1,12 +1,12 @@
 <template>
-  <Flavoured />
+  <PremiumSyrup />
 </template>
 
 <script>
-import Flavoured from "../components/products/Flavoured Syrup/Flavoured.vue";
+import PremiumSyrup from "../components/products/PremiumSyrup/PremiumSyrup.vue";
 
 export default {
-  name: "FlavouredSyrupPage",
-  components: { Flavoured },
+  name: "PremiumSyrupPage",
+  components: { PremiumSyrup },
 };
 </script>
