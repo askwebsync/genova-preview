@@ -9,7 +9,7 @@ export default createStore({
     newProducts: [],
     powderSyrupProducts: [],
     fruitBlendProducts: [],
-    flavouredProducts: [],
+    premiumSyrupProducts: [],
     selectedProduct: null,
   },
   mutations: {
@@ -25,8 +25,8 @@ export default createStore({
     setFruitBlendProducts(state, products) {
       state.fruitBlendProducts = products;
     },
-    setFlavouredProducts(state, products) {
-      state.flavouredProducts = products;
+    setPremiumSyrupProducts(state, products) {
+      state.syrupProducts = products;
     },
     setSelectedProduct(state, product) {
       state.selectedProduct = product;
@@ -72,14 +72,14 @@ export default createStore({
         }));
       commit("setFruitBlendProducts", fruitBlendProducts);
     },
-    fetchFlavouredProducts({ commit, state }) {
-      const flavouredProducts = state.products
-        .filter((product) => product.category === "Flavoured")
+    fetchPremiumSyrupProducts({ commit, state }) {
+      const PremiumSyrupProducts = state.products
+        .filter((product) => product.category === "syrup")
         .map((product) => ({
           ...product,
           price: formatPrice(product.price),
         }));
-      commit("setFlavouredProducts", flavouredProducts);
+      commit("setPremiumSyrupProducts", PremiumSyrupProducts);
     },
   },
   getters: {
@@ -89,7 +89,7 @@ export default createStore({
     fruitBlendProducts(state) {
       return state.fruitBlendProducts;
     },
-    flavouredProducts(state) {
+    PremiumSyrupProducts(state) {
       return state.flavouredProducts;
     },
   },

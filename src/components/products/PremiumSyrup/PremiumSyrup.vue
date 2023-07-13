@@ -1,7 +1,8 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div>
     <section class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24">
-      <nav class="flex" aria-label="Breadcrumb">
+      <nav class="flex mb-24 md:mb-20 lg:mb-12" aria-label="Breadcrumb">
         <ol class="inline-flex items-center">
           <li class="inline-flex items-center">
             <a
@@ -55,9 +56,9 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <p class="text-sm font-medium pcolor hover:text-yellow-600">
-                Powder Drink
-              </p>
+              <span class="text-sm font-medium pcolor hover:text-yellow-600"
+                >Premium Syrup</span
+              >
             </div>
           </li>
         </ol>
@@ -70,17 +71,17 @@
         <div class="flex flex-row justify-between">
           <div class="flex flex-col items-center lg:items-start">
             <h1 class="pcolor mb-1 text-md md:text-lg lg:text-2xl uppercase">
-              Powder Drinks
+              Premium Syrup
             </h1>
             <hr
-              class="h-1 rounded w-full lg:w-44 background-yellow border-0 mx-auto lg:mx-0"
+              class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
             />
           </div>
-          <div class="relative flex items-center">
+          <div class="relative">
             <select
               v-model="sortOrder"
               @change="sortProducts"
-              class="filter-text-size p-2 w-36 h-10 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent focus:bg-transparent"
+              class="filter-text-size p-2 w-32 h-10 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent focus:bg-transparent"
             >
               <option disabled selected value="">Sort Items</option>
               <option
@@ -99,7 +100,17 @@
             <div
               class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
             >
-              <i class="fas fa-chevron-down text-sm"></i>
+              <svg
+                class="w-5 h-5 text-gray-500 transform rotate-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11 7l-4 4-4-4 1.41-1.42L6 8.17V3h2v5.17l2.59-2.58L11 7z"
+                  clip-rule="evenodd"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -108,7 +119,7 @@
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6"
         >
           <div
-            v-for="product in powderSyrupProducts"
+            v-for="product in premiumSyrupProducts"
             :key="product.id"
             class="bg-white center shadow-card-items"
           >
@@ -124,19 +135,15 @@
               <img
                 :src="`/assets/images/product/${product.image}`"
                 :alt="product.name"
-                class="rounded-t h-48 sm:h-56 md:h-60 w-full object-contain"
+                class="rounded-t h-48 sm:h-56 md:h-64 w-full object-contain"
               />
               <div class="p-3 md:p-4">
                 <!-- Title -->
-                <h2
-                  class="mb-1 text-lg lg:text-xl font-medium tracking-tighter"
-                >
+                <h2 class="mb-1 text-lg lg:text-xl tracking-tight text-black">
                   {{ product.name }}
                 </h2>
-                <p
-                  class="text-lg md:text-xl tracking-tight text-black font-semibold"
-                >
-                  Rp{{ product.price }}
+                <p class="text-lg md:text-xl text-gray-600">
+                  Rp. {{ product.price }}
                 </p>
               </div>
             </router-link>
@@ -153,32 +160,25 @@ export default {
     return { sortOrder: "" };
   },
   computed: {
-    ...mapState(["powderSyrupProducts"]),
+    ...mapState(["premiumSyrupProducts"]),
   },
   mounted() {
-    this.fetchPowderSyrupProducts();
+    this.fetchPremiumSyrupProducts();
     this.sortProducts();
   },
   methods: {
-    ...mapActions(["fetchPowderSyrupProducts"]),
+    ...mapActions(["fetchPremiumSyrupProducts"]),
     ...mapMutations(["setSelectedProduct"]),
     selectProduct(product) {
       this.setSelectedProduct(product);
     },
     sortProducts() {
       if (this.sortOrder === "high") {
-        this.powderSyrupProducts.sort((a, b) => b.price - a.price);
+        this.premiumSyrupProducts.sort((a, b) => b.price - a.price);
       } else if (this.sortOrder === "low") {
-        this.powderSyrupProducts.sort((a, b) => a.price - b.price);
+        this.premiumSyrupProducts.sort((a, b) => a.price - b.price);
       }
     },
   },
 };
 </script>
-
-<style scoped>
-h2 {
-  color: #212121;
-  font-weight: 400;
-}
-</style>

@@ -106,30 +106,30 @@ const routes = [
     },
   },
   {
-    path: "/products/flavoured-syrup",
-    name: "flavoured-syrup",
-    component: () => import("../views/FlavouredSyrupProduct.vue"),
+    path: "/products/premium-syrup",
+    name: "premium-syrup",
+    component: () => import("../views/PremiumSyrupProduct.vue"),
     meta: {
-      title: "Flavoured Syrup",
+      title: "Premium Syrup",
       metaTags: [
         {
           name: "description",
-          content: "Explore our range of flavoured syrups",
+          content: "Temukan beragam pilihan sirup premium terbaik",
         },
       ],
     },
   },
   {
-    path: "/products/fruit-bland",
-    name: "fruit-bland",
-    component: () => import("../views/FruitBlandProduct.vue"),
+    path: "/products/fruit-blend",
+    name: "fruit-blend",
+    component: () => import("../views/FruitBlendProduct.vue"),
     meta: {
       title: "Fruit Blend", // Set the page title for the Fruit Blend product page
       metaTags: [
         // Define the meta tags for the Fruit Blend product page
         {
           name: "description",
-          content: "Discover our delicious fruit blend products",
+          content: "Temukan beragam pilihan fruit blend terbaik",
         },
       ],
     },
@@ -139,12 +139,12 @@ const routes = [
     name: "powder-syrup",
     component: () => import("../views/PowderSyrupProduct.vue"),
     meta: {
-      title: "Powder Syrup", // Set the page title for the Powder Syrup product page
+      title: "Powder Drinks", // Set the page title for the Powder Syrup product page
       metaTags: [
         // Define the meta tags for the Powder Syrup product page
         {
           name: "description",
-          content: "Browse our selection of powder syrups",
+          content: "Temukan beragam pilihan bubuk syrup terbaik",
         },
       ],
     },

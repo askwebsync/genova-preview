@@ -8,7 +8,7 @@
           <h2
             class="text-2xl md:text-3xl lg:text-4xl tracking-tight text-white sm:leading-none"
           >
-            Genova Product
+            Genova Products
           </h2>
         </div>
       </div>

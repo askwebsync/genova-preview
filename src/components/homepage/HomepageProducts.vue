@@ -43,7 +43,7 @@
               class="w-auto h-48 md:h-52 lg:h-56 object-cover"
             />
             <div class="flex flex-col gap-4 center w-32 md:w-40">
-              <h2 class="text-lg lg:text-xl tracking-tight">Flavoured Syrup</h2>
+              <h2 class="text-lg lg:text-xl tracking-tight">Premium Syrup</h2>
 
               <button
                 class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"
@@ -64,7 +64,7 @@
             />
 
             <div class="flex flex-col gap-4 center w-32 md:w-40">
-              <h2 class="text-lg lg:text-xl tracking-tight">Powder Drink</h2>
+              <h2 class="text-lg lg:text-xl tracking-tight">Powder Drinks</h2>
 
               <button
                 class="rounded-lg px-3 py-2 background-yellow hover:bg-yellow-600 duration-300 text-white"

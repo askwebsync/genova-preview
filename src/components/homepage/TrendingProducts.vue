@@ -30,8 +30,8 @@
                 <h3 class="text-lg lg:text-xl tracking-tight">
                   {{ product.name }}
                 </h3>
-                <p class="text-md md:text-lg lg:text-xl">
-                  Rp. {{ product.price }}
+                <p class="text-md md:text-lg lg:text-xl font-semibold">
+                  Rp{{ product.price }}
                 </p>
               </div>
               <router-link
@@ -121,7 +121,7 @@ export default {
 <style scoped>
 h3 {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   color: #2b2b28;
 }
 </style>

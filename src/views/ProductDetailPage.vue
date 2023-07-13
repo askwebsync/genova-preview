@@ -15,7 +15,7 @@
             <li class="inline-flex items-center">
               <a
                 href="/"
-                class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
+                class="inline-flex items-center text-xs md:text-sm font-medium hover:text-yellow-600"
               >
                 <svg
                   class="w-4 h-4 mr-1"
@@ -33,10 +33,10 @@
             <li class="inline-flex items-center">
               <a
                 href="/products"
-                class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
+                class="inline-flex items-center text-xs md:text-sm font-medium hover:text-yellow-600"
               >
                 <svg
-                  class="w-6 h-6 text-gray-400"
+                  class="w-5 h-5 md:w-6 md:h-6 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,10 +56,10 @@
             >
               <a
                 href="/products/fruit-blend"
-                class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
+                class="inline-flex items-center text-xs md:text-sm font-medium hover:text-yellow-600"
               >
                 <svg
-                  class="w-6 h-6 text-gray-400"
+                  class="w-5 h-5 md:w-6 md:h-6 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,10 +79,10 @@
             >
               <a
                 href="/products/powder-syrup"
-                class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
+                class="inline-flex items-center text-xs md:text-sm font-medium hover:text-yellow-600"
               >
                 <svg
-                  class="w-6 h-6 text-gray-400"
+                  class="w-5 h-5 md:w-6 md:h-6 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -102,10 +102,10 @@
             >
               <a
                 href="/products/flavoured-syrup"
-                class="inline-flex items-center text-sm font-medium hover:text-yellow-600"
+                class="inline-flex items-center text-xs md:text-sm font-medium hover:text-yellow-600"
               >
                 <svg
-                  class="w-6 h-6 text-gray-400"
+                  class="w-5 h-5 md:w-6 md:h-6 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@
             <li aria-current="page">
               <div class="flex items-center">
                 <svg
-                  class="w-6 h-6 text-gray-400"
+                  class="w-5 h-5 md:w-6 md:h-6 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -142,157 +142,153 @@
           </ol>
         </nav>
         <div class="flex flex-col gap-y-12" v-if="productShow">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
             <!-- Item Image -->
             <div class="flex justify-center bg-gray-50 shadow">
               <img
                 :src="productShow.image"
                 :alt="productShow.name"
-                class="object-cover object-center h-72 md:h-96 rounded-t-xl"
+                class="object-contain object-center w-full h-64 md:h-full rounded-t-xl"
               />
             </div>
             <!-- Item Info -->
-            <div class="flex flex-col justify-between gap-6">
-              <div class="flex flex-col gap-4">
-                <div class="flex flex-col">
-                  <h1 class="text-black mb-1 text-lg lg:text-2xl font-semibold">
-                    {{ productShow.name }}
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-2">
+                  <h1 class="text-xl lg:text-2xl tracking-wide font-semibold">
+                    GENOVA {{ productShow.name }}
                   </h1>
-                  <hr
-                    class="h-1 rounded bg-yellow-500 w-full lg:w-56 mx-auto lg:mx-0"
-                  />
-                </div>
-                <div>
-                  <template v-if="Array.isArray(productShow.info)">
-                    <h2 class="text-lg md:text-xl mb-1">
-                      Cocok Digunakan Untuk:
+                  <div class="flex flex-col">
+                    <h2 class="pcolor text-xl lg:text-lg font-medium">Harga</h2>
+                    <h2 class="pcolor text-2xl lg:text-2xl font-semibold">
+                      {{ "Rp" + productShow.price }}
                     </h2>
-                    <ul
-                      class="list-disc list-inside"
-                      v-for="info in productShow.info"
-                      :key="info"
+                  </div>
+                </div>
+
+                <div>
+                  <a :href="productShow.link">
+                    <button
+                      class="bg-yellow-600 hover:text-white px-4 py-2 rounded text-white text-md hover:border-transparent font-medium"
                     >
-                      <li class="text-md lg:text-lg my-1 text-gray-600">
-                        {{ info }}
-                      </li>
-                    </ul>
-                  </template>
-                  <template v-else>
-                    <p class="text-lg md:text-xl">{{ productShow.info }}</p>
-                  </template>
+                      Go To Marketplace
+                    </button>
+                  </a>
                 </div>
               </div>
-
               <div>
-                <a :href="productShow.link" class="w-full">
-                  <button
-                    class="bg-black hover:text-white p-3 text-white hover:border-transparent w-full font-semibold"
+                <!-- Tabs navigation -->
+                <ul class="w-full flex list-none flex-row border-b-0 pl-0">
+                  <li class="flex-1 cursor-pointer">
+                    <a
+                      :class="{
+                        'border-t-2 border-black': activeTab === 'keterangan',
+                        'border-t-2 border-gray-300':
+                          activeTab !== 'keterangan',
+                      }"
+                      @click="activeTab = 'keterangan'"
+                      class="block px-4 md:px-5 pb-3.5 pt-2 text-lg font-medium"
+                    >
+                      Keterangan
+                    </a>
+                  </li>
+                  <li class="flex-1 cursor-pointer">
+                    <a
+                      :class="{
+                        'border-t-2 border-black':
+                          activeTab === 'saran-penyajian',
+                        'border-t-2 border-gray-300':
+                          activeTab !== 'saran-penyajian',
+                      }"
+                      @click="activeTab = 'saran-penyajian'"
+                      class="block px-4 md:px-5 pb-3.5 pt-2 text-xlg font-medium"
+                    >
+                      Saran Penyajian
+                    </a>
+                  </li>
+                </ul>
+
+                <!--Tabs content-->
+                <div class="my-6">
+                  <div
+                    v-if="activeTab === 'keterangan'"
+                    class="flex flex-col gap-6 md:gap-8 block opacity-100 transition-opacity duration-150 ease-linear"
                   >
-                    Buy Now
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="self-start w-full">
-            <div class="">
-              <h1
-                class="text-center text-xl lg:text-2xl background-yellow text-white py-2"
-              >
-                Details
-              </h1>
-            </div>
-            <div class="overflow-x-auto">
-              <table class="table-auto bg-white">
-                <tbody>
-                  <tr class="border h-auto border-[#bdb76b]">
-                    <td
-                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
-                    >
-                      Category
-                    </td>
-                    <td class="px-4 lg:px-6 py-3">
-                      {{
-                        productShow.category === "fruitBlend"
-                          ? "Fruit Blend"
-                          : productShow.category === "Flavoured"
-                          ? "Flavoured Syrup"
-                          : "Powder"
-                      }}
-                    </td>
-                  </tr>
-                  <!-- Add styling for other rows -->
-                  <tr class="border h-auto border-[#bdb76b]">
-                    <td
-                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
-                    >
-                      Packaging
-                    </td>
-                    <td class="px-4 lg:px-6 py-3">
-                      {{ getFieldValue(productShow.packaging) }}
-                    </td>
-                  </tr>
-                  <tr class="border h-auto border-[#bdb76b]">
-                    <td
-                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
-                    >
-                      Weight
-                    </td>
-                    <td class="px-4 lg:px-6 py-3">
-                      {{ getFieldValue(productShow.weight) }}
-                    </td>
-                  </tr>
-                  <tr class="border h-auto border-[#bdb76b]">
-                    <td
-                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
-                    >
-                      Color
-                    </td>
-                    <td class="px-4 lg:px-6 py-3">
-                      {{ getFieldValue(productShow.color) }}
-                    </td>
-                  </tr>
-                  <tr class="border h-auto border-[#bdb76b]">
-                    <td
-                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
-                    >
-                      Tasting
-                    </td>
-                    <td class="px-4 lg:px-6 py-3">
-                      {{ getFieldValue(productShow.tasting) }}
-                    </td>
-                  </tr>
-                  <tr class="border h-auto border-[#bdb76b]">
-                    <td
-                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
-                    >
-                      Serving Suggestions
-                    </td>
-                    <td class="px-4 lg:px-6 py-3">
-                      <ul v-if="Array.isArray(productShow.serving)">
-                        <li
-                          v-for="suggestion in productShow.serving"
-                          :key="suggestion"
-                          class="list-disc my-1"
-                        >
-                          <p class="">{{ suggestion }}</p>
+                    <div>
+                      <h2 class="text-lg mb-1 font-medium">Kondisi Produk</h2>
+                      <ul class="list-disc list-inside">
+                        <li class="text-lg text-gray-600">
+                          <span class="ml-[-0.45em]">
+                            {{ productShow.kondisi }}</span
+                          >
+                        </li>
+                        <li class="text-lg text-gray-600">
+                          <span class="ml-[-0.45em]">
+                            Min.Pemesanan: 1 Buah</span
+                          >
+                        </li>
+                        <li class="text-lg text-gray-600">
+                          <span class="ml-[-0.45em]">
+                            Etalase : {{ productShow.category }}</span
+                          >
                         </li>
                       </ul>
-                      <p v-else>{{ productShow.serving }}</p>
-                    </td>
-                  </tr>
-                  <tr class="border h-auto border-[#bdb76b]">
-                    <td
-                      class="w-1/2 md:w-1/6 px-4 lg:px-6 py-3 font-semibold text-lg md:text-xl"
-                    >
-                      Keeping Suggestions
-                    </td>
-                    <td class="px-4 lg:px-6 py-3">
-                      {{ getFieldValue(productShow.keeping) }}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
+                    <!-- Keterangan tab content -->
+                    <div>
+                      <template v-if="Array.isArray(productShow.info)">
+                        <h2 class="text-lg mb-1 font-medium">
+                          Cocok Digunakan Untuk
+                        </h2>
+                        <ul
+                          class="list-disc list-inside"
+                          v-for="info in productShow.info"
+                          :key="info"
+                        >
+                          <li class="text-lg text-gray-600">
+                            <span class="ml-[-0.45em]"> {{ info }}</span>
+                          </li>
+                        </ul>
+                      </template>
+                      <template v-else>
+                        <h2 class="text-lg mb-1 font-medium">
+                          Informasi Produk
+                        </h2>
+                        <p class="text-lg text-gray-600">
+                          {{ productShow.info }}
+                        </p>
+                      </template>
+                    </div>
+                  </div>
+                  <div
+                    v-if="activeTab === 'saran-penyajian'"
+                    class="flex flex-col gap-4 block opacity-100 transition-opacity duration-150 ease-linear"
+                  >
+                    <!-- Saran Penyajian tab content -->
+                    <div>
+                      <template v-if="Array.isArray(productShow.penyajian)">
+                        <h2 class="text-lg mb-1 font-medium">
+                          Saran Penyajian
+                        </h2>
+                        <ul
+                          class="list-disc list-inside"
+                          v-for="penyajian in productShow.penyajian"
+                          :key="penyajian"
+                        >
+                          <li class="text-md text-gray-600">
+                            <span class="ml-[-0.45em]"> {{ penyajian }}</span>
+                          </li>
+                        </ul>
+                      </template>
+                      <template v-else>
+                        <p class="text-lg md:text-xl">
+                          {{ productShow.penyajian }}
+                        </p>
+                      </template>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -309,6 +305,7 @@ export default {
   data() {
     return {
       loading: true,
+      activeTab: "keterangan",
     };
   },
   components: {},

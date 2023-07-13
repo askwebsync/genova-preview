@@ -112,13 +112,18 @@ p {
   color: #C79E2A
 }
 
-::placeholder {
+.product-name-style {
+  color: #212121;
+  font-weight: 400;
+}
+
+/* ::placeholder {
   color: #000 !important
 }
 
 :-ms-input-placeholder {
   color: #000 !important
-}
+} */
 
 .card-color-satu {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
