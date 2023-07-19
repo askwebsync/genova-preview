@@ -3,14 +3,14 @@
   <section
     class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10"
   >
-    <div class="grid md:grid-cols-2 self-center gap-8">
+    <div class="grid md:grid-cols-2 self-center gap-6">
       <div
-        class="flex flex-col gap-6 rounded-lg shadow-card-items mx-3 p-5 lg:p-6 relative"
+        class="flex flex-col gap-6 rounded-lg shadow-card-items mx-3 p-5 relative"
       >
         <h3 class="text-black text-xl md:text-2xl lg:text-3xl text-left">
           Bantuan
         </h3>
-        <div class="my-3 h-20 md:h-28">
+        <div class="my-2 h-20 md:h-28">
           <h2 class="text-left tracking-tight lg:tracking-wide">
             Punya pertanyaan atau butuh bantuan? Tim ahli kami siap memberikan
             jawaban dan dukungan yang Anda butuhkan. Jangan ragu untuk
@@ -22,16 +22,15 @@
         >
           <a href="tel:+6281212128171">Call</a>
         </button>
-        <span class="bg-span-custom absolute top-0 left-0 w-1 h-16"></span>
+        <span class="bg-span-custom absolute top-0 left-0 w-1 h-20"></span>
       </div>
-
       <div
-        class="flex flex-col gap-6 rounded-lg shadow-card-items mx-3 p-5 lg:p-6 relative"
+        class="flex flex-col gap-6 rounded-lg shadow-card-items mx-3 p-5 relative"
       >
         <h3 class="text-black text-xl md:text-2xl lg:text-3xl text-left">
           Kerjasama
         </h3>
-        <div class="my-3 h-20 md:h-28">
+        <div class="my-2 h-20 md:h-28">
           <h2 class="text-left tracking-tight lg:tracking-wide">
             Jika Anda tertarik untuk menjalin kerjasama dengan kami atau
             menggunakan produk sirup berkualitas tinggi kami, kami mengundang
@@ -44,7 +43,7 @@
         >
           <a href="mailto:genovaindonesiaofficial@gmail.com">Email</a>
         </button>
-        <span class="bg-span-custom absolute top-0 left-0 w-1 h-16"></span>
+        <span class="bg-span-custom absolute top-0 left-0 w-1 h-20"></span>
       </div>
     </div>
   </section>
@@ -64,6 +63,6 @@ h2 {
   font-weight: 400;
 }
 .bg-span-custom {
-  color: #c79e2a;
+  background-color: #c79e2a;
 }
 </style>

@@ -3,10 +3,10 @@
     <div
       class="relative w-full height-banner background flex items-center justify-center text-center bg-cover bg-center opacity-75"
     >
-      <div class="text-center bg-recipe p-2 md:p-3">
-        <div class="border-h2 px-4 py-3">
+      <div class="text-center bg-recipe px-4 py-2">
+        <div class="border-h2 px-10 py-3">
           <h2
-            class="pcolor text-2xl md:text-3xl lg:text-4xl tracking-tight sm:leading-none"
+            class="text-2xl md:text-3xl lg:text-4xl tracking-tight sm:leading-none"
           >
             Genova Recipe
           </h2>
@@ -32,6 +32,7 @@ h2 {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
+  color: #997f11;
 }
 .bg-recipe {
   background: rgba(255, 255, 255, 0.65);
