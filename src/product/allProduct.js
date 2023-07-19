@@ -645,6 +645,8 @@ const allProduct = [
       "Simpan Produk ditempat yang sejuk dan terhindar dari sinar matahari",
       "Hindari dari tempat yang berbau tajam.",
     ],
+    halal: "Ya",
+    kondisi: "Baru",
   },
   {
     id: 26,

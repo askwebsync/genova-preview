@@ -10,6 +10,7 @@ export default createStore({
     powderSyrupProducts: [],
     fruitBlendProducts: [],
     premiumSyrupProducts: [],
+    sameCategoryProducts: [],
     selectedProduct: null,
   },
   mutations: {
@@ -30,6 +31,9 @@ export default createStore({
     },
     setSelectedProduct(state, product) {
       state.selectedProduct = product;
+    },
+    setSameCategoryProducts(state, product) {
+      state.sameCategoryProducts = product;
     },
     clearSelectedProduct(state) {
       state.selectedProduct = null;
@@ -80,6 +84,17 @@ export default createStore({
           price: formatPrice(product.price),
         }));
       commit("setPremiumSyrupProducts", PremiumSyrupProducts);
+    },
+    fetchSameCategoryProducts({ commit, state }, category) {
+      const sameCategoryProducts = state.products
+        .filter((product) => product.category === category)
+        .map((product) => ({
+          ...product,
+          price: formatPrice(product.price),
+        }))
+        .slice(0, 4); // Limit the number of recommended products to 4
+
+      commit("setSameCategoryProducts", sameCategoryProducts);
     },
   },
   getters: {

@@ -1,11 +1,5 @@
 <template>
-  <div
-    class="slideshow-container"
-    ref="slideshow"
-    @mousedown="mouseDown"
-    @mouseup="mouseUp"
-    @mouseleave="mouseLeave"
-  >
+  <div class="slideshow-container" ref="slideshow">
     <div
       v-for="(slide, index) in slides"
       :key="index"
@@ -27,6 +21,18 @@
         @click="currentSlide(index + 1)"
         :class="{ active: index + 1 === slideIndex }"
       ></span>
+    </div>
+    <div class="controls">
+      <button class="control control-previous" @click="plusSlides(-1)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+        </svg>
+      </button>
+      <button class="control control-next" @click="plusSlides(1)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+        </svg>
+      </button>
     </div>
   </div>
 </template>
@@ -184,5 +190,41 @@ export default {
 .active,
 .dot:hover {
   background-color: #717171;
+}
+.controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.control {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(43, 43, 40, 0.8);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  padding: 5px;
+  margin: 0 25px;
+}
+
+.control svg {
+  width: 28px;
+  height: 28px;
+  fill: #ffffff;
+}
+
+.control:hover {
+  background-color: #b28620;
 }
 </style>

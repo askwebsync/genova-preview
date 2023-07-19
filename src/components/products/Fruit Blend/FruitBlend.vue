@@ -142,7 +142,7 @@
                   {{ product.name }}
                 </h2>
                 <p class="text-lg md:text-xl text-gray-600">
-                  Rp. {{ product.price }}
+                  Rp{{ product.price }}
                 </p>
               </div>
             </router-link>

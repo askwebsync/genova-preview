@@ -284,13 +284,13 @@ p {
 }
 
 .carousel__next {
-  right: -15px;
-  background-color: #bdb76b !important;
+  right: 0px;
+  background-color: #c79e2a !important;
 }
 
 .carousel__prev {
-  left: -15px;
-  background-color: #bdb76b !important;
+  left: 0px;
+  background-color: #c79e2a !important;
 }
 
 @media only screen and (max-width: 800px) and (min-width: 600px) {
@@ -410,6 +410,9 @@ p {
 
 .product-container {
   transition: all 0.3s;
+  padding: 16px;
+  gap: 10px;
+  background: #F8F8F8;
 }
 
 .product-container:hover {

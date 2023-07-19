@@ -1,13 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <Contact />
+  <div><HeroContact /> <Contact /></div>
 </template>
 
 <script>
 import Contact from "../components/contactpage/Contact.vue";
+import HeroContact from "../components/contactpage/HeroContact.vue";
 
 export default {
   name: "ContactPage",
-  components: { Contact },
+  components: { Contact, HeroContact },
 };
 </script>

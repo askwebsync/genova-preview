@@ -4,33 +4,31 @@
       <div class="flex flex-col items-center lg:items-start">
         <h1 class="pcolor mb-1 text-lg lg:text-2xl uppercase">New Flavour</h1>
         <hr
-          class="h-1 rounded w-full lg:w-40 background-yellow border-0 mx-auto lg:mx-0"
+          class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
         />
       </div>
       <carousel
         :items-to-show="2.5"
-        v-bind="settings"
-        :breakpoints="breakpoints"
         :wrap-around="true"
+        :breakpoints="breakpoints"
+        v-bind="settings"
         @after-slide="afterSlide"
       >
         <slide v-for="product in newProducts" :key="product.id">
-          <div class="flex flex-col items-center px-4 py-4 md:py-5">
-            <div class="product-container">
+          <div class="flex flex-col items-center gap-5 px-4 py-4 md:py-5">
+            <div class="product-container p-3">
               <img
                 :src="getImageSource(product)"
                 :alt="product.name"
                 class="w-auto h-48 md:h-52 lg:h-56 object-cover"
               />
             </div>
-            <div class="flex flex-col items-center py-4 md:py-6 gap-5">
-              <div class="flex flex-col gap-1">
-                <h3 class="text-lg lg:text-xl tracking-tight">
-                  {{ product.name }}
+            <div class="flex flex-col items-center gap-5 px-4 py-4 md:py-5">
+              <div class="flex flex-col">
+                <h3 class="text-lg lg:text-xl tracking-tighter">
+                  {{ truncateProductName(product.name) }}
                 </h3>
-                <p class="text-md md:text-lg lg:text-xl font-semibold">
-                  Rp{{ product.price }}
-                </p>
+                <p class="text-lg lg:text-xl">Rp{{ product.price }}</p>
               </div>
               <router-link
                 class="focus:outline-none"
@@ -41,9 +39,9 @@
                 @click="selectProduct(product)"
               >
                 <button
-                  class="rounded px-3 py-2 md:px-4 bg-button-homepage hover:bg-yellow-600 duration-300 text-white font-bold border-radius-6"
+                  class="rounded px-4 py-2 md:px-5 bg-button-homepage hover:bg-yellow-600 duration-300 text-white font-bold border-radius-6"
                 >
-                  Buy Now
+                  Go To Marketplace
                 </button>
               </router-link>
             </div>
@@ -109,6 +107,14 @@ export default {
     afterSlide(index) {
       this.activeSlideIndex = index;
     },
+    truncateProductName(name) {
+      const maxLength = 20;
+      if (name.length <= maxLength) {
+        return name;
+      } else {
+        return name.substring(0, maxLength) + "...";
+      }
+    },
   },
   mounted() {
     this.fetchNewProducts();
@@ -119,7 +125,14 @@ export default {
 <style scoped>
 h3 {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   color: #2b2b28;
+}
+p {
+  color: #494945;
+  /* Body/Body 1/Reguler */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
 }
 </style>
