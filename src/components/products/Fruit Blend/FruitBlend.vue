@@ -76,11 +76,11 @@
               class="h-1 rounded w-full lg:w-38 background-yellow border-0 mx-auto lg:mx-0"
             />
           </div>
-          <div class="relative">
+          <div class="relative flex items-center">
             <select
               v-model="sortOrder"
               @change="sortProducts"
-              class="filter-text-size p-2 w-32 h-10 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent focus:bg-transparent"
+              class="filter-text-size p-2 w-36 h-10 border border-solid border-yellow-600 rounded-md appearance-none focus:outline-none bg-transparent focus:bg-transparent"
             >
               <option disabled selected value="">Sort Items</option>
               <option
@@ -99,17 +99,7 @@
             <div
               class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
             >
-              <svg
-                class="w-5 h-5 text-gray-500 transform rotate-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M11 7l-4 4-4-4 1.41-1.42L6 8.17V3h2v5.17l2.59-2.58L11 7z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+              <i class="fas fa-chevron-down text-sm"></i>
             </div>
           </div>
         </div>
@@ -136,14 +126,12 @@
                 :alt="product.name"
                 class="rounded-t h-48 sm:h-56 md:h-64 w-full object-contain"
               />
-              <div class="p-3 md:p-4">
+              <div class="flex flex-col items-center gap-1 px-4 py-4 md:py-5">
                 <!-- Title -->
-                <h2 class="mb-1 text-lg lg:text-xl tracking-tight text-black">
+                <h3 class="text-lg lg:text-xl tracking-tighter">
                   {{ product.name }}
-                </h2>
-                <p class="text-lg md:text-xl text-gray-600">
-                  Rp{{ product.price }}
-                </p>
+                </h3>
+                <p class="text-lg lg:text-xl">Rp{{ product.price }}</p>
               </div>
             </router-link>
           </div>
@@ -182,4 +170,17 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  color: #2b2b28;
+}
+p {
+  color: #494945;
+  /* Body/Body 1/Reguler */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+</style>

@@ -189,7 +189,7 @@
                       <a
                         :class="{
                           'border-t-2 border-black': activeTab === 'keterangan',
-                          'border-t-2 border-gray-300':
+                          'border-t-2 border-gray-400 text-gray-400':
                             activeTab !== 'keterangan',
                         }"
                         @click="activeTab = 'keterangan'"

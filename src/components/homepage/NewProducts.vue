@@ -4,7 +4,7 @@
       <div class="flex flex-col items-center lg:items-start">
         <h1 class="pcolor mb-1 text-lg lg:text-2xl uppercase">New Flavour</h1>
         <hr
-          class="h-1 rounded w-full lg:w-56 background-yellow border-0 mx-auto lg:mx-0"
+          class="h-1 rounded w-full lg:w-40 background-yellow border-0 mx-auto lg:mx-0"
         />
       </div>
       <carousel

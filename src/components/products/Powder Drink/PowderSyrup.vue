@@ -126,18 +126,12 @@
                 :alt="product.name"
                 class="rounded-t h-48 sm:h-56 md:h-60 w-full object-contain"
               />
-              <div class="p-3 md:p-4">
+              <div class="flex flex-col items-center gap-1 px-4 py-4 md:py-5">
                 <!-- Title -->
-                <h2
-                  class="mb-1 text-lg lg:text-xl font-medium tracking-tighter"
-                >
+                <h3 class="text-lg lg:text-xl tracking-tighter">
                   {{ product.name }}
-                </h2>
-                <p
-                  class="text-lg md:text-xl tracking-tight text-black font-semibold"
-                >
-                  Rp{{ product.price }}
-                </p>
+                </h3>
+                <p class="text-lg lg:text-xl">Rp{{ product.price }}</p>
               </div>
             </router-link>
           </div>
@@ -177,8 +171,16 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  color: #212121;
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  color: #2b2b28;
+}
+p {
+  color: #494945;
+  /* Body/Body 1/Reguler */
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 400;
 }
 </style>

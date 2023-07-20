@@ -1112,7 +1112,7 @@ const allProduct = [
   {
     id: 45,
     name: "Syrup Passion Fruit",
-    image: "/syrup_passion_fruit.png",
+    image: "/syrup_passionfruit.png",
     price: 105000,
     trending: "no",
     category: "syrup",

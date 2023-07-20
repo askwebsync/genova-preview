@@ -27,7 +27,7 @@ export default createStore({
       state.fruitBlendProducts = products;
     },
     setPremiumSyrupProducts(state, products) {
-      state.syrupProducts = products;
+      state.premiumSyrupProducts = products;
     },
     setSelectedProduct(state, product) {
       state.selectedProduct = product;
@@ -77,13 +77,13 @@ export default createStore({
       commit("setFruitBlendProducts", fruitBlendProducts);
     },
     fetchPremiumSyrupProducts({ commit, state }) {
-      const PremiumSyrupProducts = state.products
+      const premiumSyrupProducts = state.products
         .filter((product) => product.category === "syrup")
         .map((product) => ({
           ...product,
           price: formatPrice(product.price),
         }));
-      commit("setPremiumSyrupProducts", PremiumSyrupProducts);
+      commit("setPremiumSyrupProducts", premiumSyrupProducts);
     },
     fetchSameCategoryProducts({ commit, state }, category) {
       const sameCategoryProducts = state.products

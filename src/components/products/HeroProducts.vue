@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="relative w-full height-banner background flex items-center justify-center text-center bg-cover bg-center opacity-75"
+      class="relative w-full height-banner background flex items-center justify-center text-center bg-cover bg-center"
     >
       <div class="text-center bg-recipe px-4 py-2">
         <div class="border-h2 px-10 py-3">
