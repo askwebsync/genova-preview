@@ -472,6 +472,10 @@ h1 {
 .container-img-product {
   width: 372.255px;
   height: 530px;
+  transition: all 0.3s;
+  background: #f8f8f8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 h3 {
   font-style: normal;
