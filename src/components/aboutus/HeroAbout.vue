@@ -22,7 +22,7 @@ export default {
 </script>
 <style scoped>
 .background {
-  background-image: url(../../../public/assets/images/banner/Product/product-page-banner.jpg);
+  background-image: url(../../../public/assets/images/banner/About/about-page-banner.png);
 }
 .border-h2 {
   border: 2px solid #997f11;
