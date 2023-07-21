@@ -343,7 +343,7 @@
                       <button
                         class="rounded px-4 py-2 md:px-5 bg-button-homepage hover:bg-yellow-600 duration-300 text-white font-bold border-radius-6"
                       >
-                        Go To Marketplace
+                        See Details
                       </button>
                     </router-link>
                   </div>
