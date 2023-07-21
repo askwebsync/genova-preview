@@ -55,9 +55,9 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <p class="text-sm font-medium pcolor hover:text-yellow-600">
+              <span class="text-sm font-medium pcolor hover:text-yellow-600">
                 Powder Drink
-              </p>
+              </span>
             </div>
           </li>
         </ol>

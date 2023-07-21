@@ -41,7 +41,7 @@
                 <button
                   class="rounded px-4 py-2 md:px-5 bg-button-homepage hover:bg-yellow-600 duration-300 text-white font-bold border-radius-6"
                 >
-                  Go To Marketplace
+                  See Details
                 </button>
               </router-link>
             </div>
@@ -108,7 +108,7 @@ export default {
       this.activeSlideIndex = index;
     },
     truncateProductName(name) {
-      const maxLength = 20;
+      const maxLength = 16;
       if (name.length <= maxLength) {
         return name;
       } else {

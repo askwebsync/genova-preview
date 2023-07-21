@@ -100,7 +100,7 @@ const routes = [
         {
           name: "description",
           content:
-            "Temukan lokasi terdekat kami dan kunjungi kami. Belanja online melalui Tokopedia atau kunjungi salah satu dari 4 toko offline kami yang tersebar di seluruh Indonesia.",
+            "Temukan lokasi terdekat kami dan kunjungi kami. Belanja online melalui Tokopedia atau kunjungi salah satu dari 4 toko kami yang tersebar di seluruh Indonesia.",
         },
       ],
     },
@@ -168,7 +168,6 @@ export default router;
 /**
  * Below code will display the component/active page title
  */
-
 // This callback runs before every route change, including on page load.
 // ...
 router.beforeEach((to, from, next) => {
