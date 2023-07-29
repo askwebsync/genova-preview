@@ -45,7 +45,7 @@
           </router-link>
         </div>
       </nav>
-      <div class="flex justify-center mt-8 space-x-6">
+      <div class="flex justify-center mt-4 space-x-6">
         <a
           href="https://www.instagram.com/genova_indonesia/?next=%2F"
           class="text-gray-400 hover:text-gray-500"
@@ -58,7 +58,7 @@
           <img src="/assets/images/icon/youtube.png" />
         </a>
       </div>
-      <p class="mt-8 text-base leading-6 text-center text-gray-800">
+      <p class="text-base leading-6 text-center text-gray-800">
         © 2021 Genova Indonesia, Inc. All rights reserved.
       </p>
     </div>
