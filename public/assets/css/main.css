@@ -43,9 +43,8 @@ select {
   margin: 22px auto;
   border-left: 2px solid #fff;
   border-top: 2px solid #fff;
-  /* Changed from border-bottom to border-top */
   transform: rotate(45deg);
-  /* Changed from rotate(-45deg) to rotate(45deg) */
+
 }
 
 #scroll:hover {

@@ -35,11 +35,12 @@
           </div>
         </div> -->
         <div
-          class="group flex flex-col items-start bg-white gap-3 p-4 w-full border border-transparent rounded-lg hover:border-yellow-location cursor-pointer"
           @click.prevent="showMap('utama')"
+          class="group flex flex-col items-start bg-white gap-3 p-4 w-full border border-transparent rounded-lg hover:border-yellow-location cursor-pointer"
         >
           <div class="flex flex-row justify-between items-center self-stretch">
             <h3 class="text-lg lg:text-xl tracking-tight">Genova Jakarta</h3>
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -47,6 +48,7 @@
               viewBox="0 0 24 25"
               fill="none"
               title="Information"
+              @click="showModalJakarta($event)"
             >
               <g clip-path="url(#clip0_1194_1838)">
                 <path
@@ -65,6 +67,92 @@
                 </clipPath>
               </defs>
             </svg>
+
+            <div
+              v-if="modalJakarta"
+              class="fixed top-0 left-0 right-0 z-50 w-full h-full flex items-center justify-center cursor-auto"
+            >
+              <div class="relative max-w-md md:max-w-2xl mx-4">
+                <div class="relative bg-white rounded-lg shadow-custom-modal">
+                  <div
+                    class="flex items-start justify-between border-b rounded-t p-4 md:p-6"
+                  >
+                    <div class="flex flex-col gap-2">
+                      <h3
+                        class="text-xl font-semibold text-gray-900 dark:text-white"
+                      >
+                        Genova Jakarta
+                      </h3>
+                      <p class="text-black text-sm md:text-md max-w-md">
+                        JL Komplek PU jln B no 18 RC Veteran, Tanah kusir,
+                        Jakarta Selatan 12330
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      @click="showModalJakarta($event)"
+                      class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-3 h-3"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                        />
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <div>
+                    <div class="bg-gray-300 px-6 py-3">
+                      <h4
+                        class="text-base lg:text-lg leading-relaxed text-black"
+                      >
+                        STORE HOURS
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <p
+                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+                      >
+                        Monday - Friday
+                      </p>
+                      <p
+                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+                      >
+                        10:00 AM - 17:00 PM
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="bg-gray-300 px-6 py-3">
+                      <h4
+                        class="text-base lg:text-lg leading-relaxed text-black"
+                      >
+                        CONTACT PERSON
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <a
+                        href="tel:+6281212128171"
+                        class="text-base leading-relaxed text-black hover:opacity-75"
+                      >
+                        +6281212128171
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="max-w-sm">
             <p class="text-black text-sm md:text-md">
@@ -86,6 +174,7 @@
               viewBox="0 0 24 25"
               fill="none"
               title="This is an icon tooltip"
+              @click="showModalBogor($event)"
             >
               <g clip-path="url(#clip0_1194_1838)">
                 <path
@@ -104,6 +193,91 @@
                 </clipPath>
               </defs>
             </svg>
+            <div
+              v-if="modalBogor"
+              class="fixed top-0 left-0 right-0 z-50 w-full h-full flex items-center justify-center cursor-auto"
+            >
+              <div class="relative max-w-md md:max-w-2xl mx-4">
+                <div class="relative bg-white rounded-lg shadow-custom-modal">
+                  <div
+                    class="flex items-start justify-between border-b rounded-t p-4 md:p-6"
+                  >
+                    <div class="flex flex-col gap-2">
+                      <h3
+                        class="text-xl font-semibold text-gray-900 dark:text-white"
+                      >
+                        Genova Bogor
+                      </h3>
+                      <p class="text-black text-sm md:text-md max-w-md">
+                        Jl. Raya Bojong Koneng No.157, Bojong Koneng, Kec.
+                        Babakan Madang, Kabupaten Bogor, Jawa Barat 16810
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      @click="showModalBogor($event)"
+                      class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-3 h-3"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                        />
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <div>
+                    <div class="bg-gray-300 px-6 py-3">
+                      <h4
+                        class="text-base lg:text-lg leading-relaxed text-black"
+                      >
+                        STORE HOURS
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <p
+                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+                      >
+                        Monday - Friday
+                      </p>
+                      <p
+                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+                      >
+                        10:00 AM - 17:00 PM
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="bg-gray-300 px-6 py-3">
+                      <h4
+                        class="text-base lg:text-lg leading-relaxed text-black"
+                      >
+                        CONTACT PERSON
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <a
+                        href="tel:+6281380367558"
+                        class="text-base leading-relaxed text-black hover:opacity-75"
+                      >
+                        +6281380367558
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="max-w-sm">
             <p class="text-black text-sm md:text-md">
@@ -124,6 +298,7 @@
               height="25"
               viewBox="0 0 24 25"
               fill="none"
+              @click="showModalPalangkaraya"
             >
               <g clip-path="url(#clip0_1194_1838)">
                 <path
@@ -142,6 +317,94 @@
                 </clipPath>
               </defs>
             </svg>
+            <div
+              v-if="modalPalangkaraya"
+              class="fixed top-0 left-0 right-0 z-50 w-full h-full flex items-center justify-center cursor-auto"
+            >
+              <div class="relative max-w-md md:max-w-2xl mx-4">
+                <div class="relative bg-white rounded-lg shadow-custom-modal">
+                  <div
+                    class="flex items-start justify-between border-b rounded-t p-4 md:p-6"
+                  >
+                    <div class="flex flex-col gap-2">
+                      <h3
+                        class="text-xl font-semibold text-gray-900 dark:text-white"
+                      >
+                        Genova Palangkaraya
+                      </h3>
+                      <div class="flex flex-col max-w-sm mt-1">
+                        <h2 class="text-md">About Something Coffee Rostery</h2>
+                        <p class="text-black text-sm md:text-md">
+                          Jl. Cut Nyak Dien, Menteng, Kec. Jekan Raya, Kota
+                          Palangka Raya, Kalimantan Tengah 74784
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      @click="showModalPalangkaraya($event)"
+                      class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-3 h-3"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                        />
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <div>
+                    <div class="bg-gray-300 px-6 py-3">
+                      <h4
+                        class="text-base lg:text-lg leading-relaxed text-black"
+                      >
+                        STORE HOURS
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <p
+                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+                      >
+                        Monday - Friday
+                      </p>
+                      <p
+                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+                      >
+                        10:00 AM - 17:00 PM
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="bg-gray-300 px-6 py-3">
+                      <h4
+                        class="text-base lg:text-lg leading-relaxed text-black"
+                      >
+                        CONTACT PERSON
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <a
+                        href="tel:+628121747275"
+                        class="text-base leading-relaxed text-black hover:opacity-75"
+                      >
+                        +628121747275
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="flex flex-col max-w-sm mt-1">
             <h2 class="text-md">About Something Coffee Rostery</h2>
@@ -157,13 +420,13 @@
         >
           <div class="flex flex-row justify-between items-center self-stretch">
             <h3 class="text-lg lg:text-xl">Genova Riau</h3>
-
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="25"
               viewBox="0 0 24 25"
               fill="none"
+              @click="showModalRiau"
             >
               <g clip-path="url(#clip0_1194_1838)">
                 <path
@@ -182,6 +445,94 @@
                 </clipPath>
               </defs>
             </svg>
+            <div
+              v-if="modalRiau"
+              class="fixed top-0 left-0 right-0 z-50 w-full h-full flex items-center justify-center cursor-auto"
+            >
+              <div class="relative max-w-md md:max-w-2xl mx-4">
+                <div class="relative bg-white rounded-lg shadow-custom-modal">
+                  <div
+                    class="flex items-start justify-between border-b rounded-t p-4 md:p-6"
+                  >
+                    <div class="flex flex-col gap-2">
+                      <h3
+                        class="text-xl font-semibold text-gray-900 dark:text-white"
+                      >
+                        Genova Riau
+                      </h3>
+                      <div class="flex flex-col max-w-sm mt-1">
+                        <h2 class="text-md">Samula Coffee & Eatery</h2>
+                        <p class="text-black text-sm md:text-md">
+                          Jl. Wisma PGRI No.29, Delima, Kec. Tampan, Kota
+                          Pekanbaru, Riau 28292
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      @click="showModalRiau($event)"
+                      class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-3 h-3"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                        />
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <div>
+                    <div class="bg-gray-300 px-6 py-3">
+                      <h4
+                        class="text-base lg:text-lg leading-relaxed text-black"
+                      >
+                        STORE HOURS
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <p
+                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+                      >
+                        Monday - Friday
+                      </p>
+                      <p
+                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
+                      >
+                        10:00 AM - 17:00 PM
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="bg-gray-300 px-6 py-3">
+                      <h4
+                        class="text-base lg:text-lg leading-relaxed text-black"
+                      >
+                        CONTACT PERSON
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <a
+                        href="tel:+6281399021010"
+                        class="text-base leading-relaxed text-black hover:opacity-75"
+                      >
+                        +6281399021010
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="flex flex-col max-w-sm mt-1">
             <h2 class="text-md">Samula Coffee & Eatery</h2>
@@ -256,6 +607,10 @@ export default {
     return {
       map: "utama",
       search: "",
+      modalJakarta: false,
+      modalBogor: false,
+      modalRiau: false,
+      modalPalangkaraya: false,
     };
   },
   // computed: {
@@ -271,6 +626,26 @@ export default {
     showMap(map) {
       this.map = map;
     },
+    showModalJakarta(event) {
+      event.stopPropagation();
+      this.modalJakarta = !this.modalJakarta;
+      console.log("modalJakarta is now:", this.modalJakarta);
+    },
+    showModalBogor(event) {
+      event.stopPropagation();
+      this.modalBogor = !this.modalBogor;
+      console.log("modalBogor is now:", this.modalBogor);
+    },
+    showModalRiau(event) {
+      event.stopPropagation();
+      this.modalRiau = !this.modalRiau;
+      console.log("modalRiau is now:", this.modalRiau);
+    },
+    showModalPalangkaraya(event) {
+      event.stopPropagation();
+      this.modalPalangkaraya = !this.modalPalangkaraya;
+      console.log("modalPalangkaraya is now:", this.modalPalangkaraya);
+    },
   },
 };
 </script>
@@ -285,12 +660,16 @@ td {
 }
 h3 {
   color: #000;
-  /* Body/Body 1/Bold */
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
 }
 h2 {
+  font-weight: 500;
+  font-style: normal;
+}
+h4 {
+  font-family: Josefin Sans;
   font-weight: 500;
   font-style: normal;
 }
@@ -301,27 +680,23 @@ p {
   font-weight: 300;
 }
 input::placeholder {
-  color: gray; /* Set the initial placeholder color to gray */
+  color: gray;
 }
 input:focus::placeholder {
-  color: black; /* Set the focused placeholder color to black */
+  color: black;
 }
-/* .border-search-bar {
-  border-bottom: 1px solid #c79e2a;
-} */
 .map-section {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-/* Responsive style for the map iframe */
+
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
 }
-
 .map-responsive iframe {
   left: 0;
   top: 0;
@@ -329,8 +704,10 @@ input:focus::placeholder {
   width: 100%;
   position: absolute;
 }
-
-/* Add the hover:border-yellow style for the .group container */
+.shadow-custom-modal {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
 .group:hover {
   border-width: 1.5px;
   border-style: solid;
@@ -340,16 +717,4 @@ input:focus::placeholder {
   outline: none;
   background-color: transparent;
 }
-
-/* Add the specific style for the .hover:border-yellow-location class */
-/* .hover\:border-yellow-location:hover {
-  border-color: #c79e2a;
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: #ca8a04;
-  border-radius: 0.5rem;
-  appearance: none;
-  outline: none;
-  background-color: transparent;
-} */
 </style>
