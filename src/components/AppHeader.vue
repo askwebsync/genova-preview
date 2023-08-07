@@ -66,7 +66,7 @@
         >
       </li>
     </ul>
-    <div class="contain pb-3 md:pb-0 md:pt-0 md:w-1/5 xl:w-1/6 relative">
+    <div class="contain py-2 md:pb-0 md:pt-0 md:w-1/5 xl:w-1/6">
       <div class="relative">
         <input
           class="bg-white h-10 px-5 text-sm border-yellow focus:border-yellow-700 focus:border-2"
@@ -79,7 +79,6 @@
           @keydown.enter="handleEnterKey"
           ref="searchInput"
         />
-
         <button type="submit" class="absolute right-0 top-0 mt-3 mr-3">
           <svg
             class="h-4 w-4"
