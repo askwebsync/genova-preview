@@ -65,7 +65,6 @@ p {
 }
 h2 {
   color: #2b2b28;
-  /* Heading/Heading 5/Medium */
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;

@@ -10,7 +10,7 @@
   src: url("../logo/Qaligo.otf") format("opentype");
 }
 
-/* Box sizing */
+
 *,
 :after,
 :before {
@@ -44,7 +44,6 @@ select {
   border-left: 2px solid #fff;
   border-top: 2px solid #fff;
   transform: rotate(45deg);
-
 }
 
 #scroll:hover {
@@ -76,10 +75,6 @@ h4 {
   font: 400;
 }
 
-.text-price {
-  color: #494945;
-}
-
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -98,10 +93,6 @@ p {
   background-color: #C79E2A
 }
 
-.background-gray {
-  background: lightslategray;
-}
-
 .bg-product-home {
   background: #FFF2BB;
   border-radius: 6px;
@@ -114,24 +105,6 @@ p {
 .product-name-style {
   color: #212121;
   font-weight: 400;
-}
-
-.card-color-satu {
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-}
-
-.card-shadow-tiga {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-}
-
-.shadow-navbar {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-
-.shadow-home-product {
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .shadow-card-items {
@@ -155,57 +128,17 @@ p {
   border-width: 1.5px;
   border-style: solid;
   border-color: #ca8a04;
-  /* rounded-md */
   border-radius: 0.5rem;
-  /* appearance-none */
   appearance: none;
-  /* focus:outline-none */
   outline: none;
-  /* bg-transparent */
   background-color: transparent;
 }
 
-.fade-enter-active {
-  animation: coming 0.5s;
-  animation-delay: 0.3s;
-  opacity: 0;
-}
-
-.fade-leave-active {
-  animation: going 0.5s;
-}
-
-@keyframes going {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-15px);
-    opacity: 0;
-  }
-}
-
-@keyframes coming {
-  from {
-    transform: translateX(-10px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
 :root {
-  /* Color */
   --vc-clr-primary: #000;
   --vc-clr-secondary: #090f207f;
   --vc-clr-white: #ffffff;
-  /* Icon */
   --vc-icn-width: 1.2em;
-  /* Navigation */
   --vc-nav-width: 30px;
   --vc-nav-height: 30px;
   --vc-nav-border-radius: 0;
@@ -267,36 +200,6 @@ p {
 .carousel__prev {
   left: 0px;
   background-color: #c79e2a !important;
-}
-
-@media only screen and (max-width: 800px) and (min-width: 600px) {
-  .carousel__next {
-    right: -5px !important;
-  }
-
-  .carousel__prev {
-    left: -5px !important;
-  }
-}
-
-@media only screen and (min-width: 1100px) {
-  .carousel__next {
-    right: -15px !important;
-  }
-
-  .carousel__prev {
-    left: -15px !important;
-  }
-}
-
-@media only screen and (max-width: 2400px) and (min-width: 1200px) {
-  .carousel__next {
-    right: -25px !important;
-  }
-
-  .carousel__prev {
-    left: -25px !important;
-  }
 }
 
 .carousel--rtl .carousel__prev {
@@ -407,4 +310,67 @@ p {
 
 .filter-text-size {
   font-size: 14px;
+}
+
+.fade-enter-active {
+  animation: coming 0.5s;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.fade-leave-active {
+  animation: going 0.5s;
+}
+
+@keyframes going {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+}
+
+@keyframes coming {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .carousel__next {
+    right: -5px !important;
+  }
+
+  .carousel__prev {
+    left: -5px !important;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .carousel__next {
+    right: -15px !important;
+  }
+
+  .carousel__prev {
+    left: -15px !important;
+  }
+}
+
+@media only screen and (max-width: 2400px) and (min-width: 1200px) {
+  .carousel__next {
+    right: -25px !important;
+  }
+
+  .carousel__prev {
+    left: -25px !important;
+  }
 }

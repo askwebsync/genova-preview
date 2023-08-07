@@ -32,7 +32,7 @@ h2 {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
-  color: var(--accents-yellow-7, #997f11);
+  color: #997f11;
 }
 .bg-recipe {
   background: rgba(255, 255, 255, 0.65);

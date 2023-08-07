@@ -56,41 +56,9 @@
         </div>
       </div>
       <div class="flex flex-col items-start md:w-2/5">
-        <!-- <div class="py-1 px-4 w-full border-search-bar mb-2">
-          <div class="relative w-full">
-            <input
-              class="bg-white h-10 text-lg focus:border-2"
-              :placeholder="placeholderText"
-              type="text"
-              ref="searchInput"
-            />
-
-            <button type="submit" class="absolute right-0 top-0 mt-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_1186_1217)">
-                  <path
-                    d="M15.4996 14.0001H14.7096L14.4296 13.7301C15.6296 12.3301 16.2496 10.4201 15.9096 8.39014C15.4396 5.61014 13.1196 3.39014 10.3196 3.05014C6.08965 2.53014 2.52965 6.09014 3.04965 10.3201C3.38965 13.1201 5.60965 15.4401 8.38965 15.9101C10.4196 16.2501 12.3296 15.6301 13.7296 14.4301L13.9996 14.7101V15.5001L18.2496 19.7501C18.6596 20.1601 19.3296 20.1601 19.7396 19.7501C20.1496 19.3401 20.1496 18.6701 19.7396 18.2601L15.4996 14.0001ZM9.49965 14.0001C7.00965 14.0001 4.99965 11.9901 4.99965 9.50014C4.99965 7.01014 7.00965 5.00014 9.49965 5.00014C11.9896 5.00014 13.9996 7.01014 13.9996 9.50014C13.9996 11.9901 11.9896 14.0001 9.49965 14.0001Z"
-                    fill="#848480"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1186_1217">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </div>
-        </div> -->
         <div
           @click.prevent="scrollToMap('utama')"
-          class="group flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg hover:border-yellow-location cursor-pointer"
+          class="group-yellow flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
         >
           <div class="flex flex-row justify-between items-center self-stretch">
             <h3 class="text-lg lg:text-xl tracking-tight">Genova Jakarta</h3>
@@ -209,7 +177,7 @@
           </div>
         </div>
         <div
-          class="group flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg hover:border-yellow-location cursor-pointer"
+          class="hover:group-yellow active:grou-yellow flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
           @click.prevent="scrollToMap('bogor')"
         >
           <div class="flex flex-row justify-between items-center self-stretch">
@@ -327,7 +295,7 @@
           </div>
         </div>
         <div
-          class="group flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg hover:border-yellow-location cursor-pointer"
+          class="hover:group-yellow active:grou-yellow flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
           @click.prevent="scrollToMap('palangkaraya')"
         >
           <div class="flex flex-row justify-between items-center self-stretch">
@@ -448,7 +416,7 @@
           </div>
         </div>
         <div
-          class="group flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg hover:border-yellow-location cursor-pointer"
+          class="hover:group-yellow active:grou-yellow flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
           @click.prevent="scrollToMap('riau')"
         >
           <div class="flex flex-row justify-between items-center self-stretch">
@@ -585,22 +553,11 @@ export default {
       modalPalangkaraya: false,
     };
   },
-  // computed: {
-  //   placeholderText() {
-  //     if (this.search === "") {
-  //       return "Find Store";
-  //     } else {
-  //       return this.search === "" ? "Find Store" : "";
-  //     }
-  //   },
-  // },
+
   methods: {
     async scrollToMap(map) {
       this.map = map;
-
-      // Wait for a brief moment to ensure DOM update
       await new Promise((resolve) => setTimeout(resolve, 50));
-
       const mapContainer = this.$refs[`mapContainer${map}`];
       if (mapContainer) {
         mapContainer.scrollIntoView({ behavior: "smooth" });
@@ -688,7 +645,8 @@ input:focus::placeholder {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-.group:hover {
+.group-yellow:active,
+.group-yellow {
   border-width: 1.5px;
   border-style: solid;
   border-color: #ca8a04;

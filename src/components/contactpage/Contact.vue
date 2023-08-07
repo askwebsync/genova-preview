@@ -49,17 +49,13 @@
   </section>
 </template>
 
-<script></script>
-
 <style scoped>
 h3 {
   font-weight: 400;
 }
 h2 {
-  color: var(--accents-black-3, #676763);
-  /* Body/Body 1/Reguler */
+  color: #676763;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 400;
 }
 .bg-span-custom {
