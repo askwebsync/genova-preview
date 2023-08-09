@@ -58,7 +58,8 @@
       <div class="flex flex-col items-start md:w-2/5">
         <div
           @click.prevent="scrollToMap('utama')"
-          class="group-yellow flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
+          :class="{ 'group-yellow': map === 'utama' }"
+          class="flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
         >
           <div class="flex flex-row justify-between items-center self-stretch">
             <h3 class="text-lg lg:text-xl tracking-tight">Genova Jakarta</h3>
@@ -132,7 +133,7 @@
                     </button>
                   </div>
                   <div>
-                    <div class="bg-gray-300 px-6 py-3">
+                    <div class="bg-gray-location px-6 py-3">
                       <h4
                         class="text-base lg:text-lg leading-relaxed text-black"
                       >
@@ -149,7 +150,7 @@
                     </div>
                   </div>
                   <div>
-                    <div class="bg-gray-300 px-6 py-3">
+                    <div class="bg-gray-location px-6 py-3">
                       <h4
                         class="text-base lg:text-lg leading-relaxed text-black"
                       >
@@ -177,8 +178,9 @@
           </div>
         </div>
         <div
-          class="hover:group-yellow active:grou-yellow flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
+          class="flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
           @click.prevent="scrollToMap('bogor')"
+          :class="{ 'group-yellow': map === 'bogor' }"
         >
           <div class="flex flex-row justify-between items-center self-stretch">
             <h3 class="text-lg lg:text-xl tracking-tight">Genova Bogor</h3>
@@ -250,7 +252,7 @@
                     </button>
                   </div>
                   <div>
-                    <div class="bg-gray-300 px-6 py-3">
+                    <div class="bg-gray-location px-6 py-3">
                       <h4
                         class="text-base lg:text-lg leading-relaxed text-black"
                       >
@@ -267,7 +269,7 @@
                     </div>
                   </div>
                   <div>
-                    <div class="bg-gray-300 px-6 py-3">
+                    <div class="bg-gray-location px-6 py-3">
                       <h4
                         class="text-base lg:text-lg leading-relaxed text-black"
                       >
@@ -295,8 +297,9 @@
           </div>
         </div>
         <div
-          class="hover:group-yellow active:grou-yellow flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
+          class="flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
           @click.prevent="scrollToMap('palangkaraya')"
+          :class="{ 'group-yellow': map === 'palangkaraya' }"
         >
           <div class="flex flex-row justify-between items-center self-stretch">
             <h3 class="text-lg lg:text-xl">Genova Palangkaraya</h3>
@@ -370,7 +373,7 @@
                     </button>
                   </div>
                   <div>
-                    <div class="bg-gray-300 px-6 py-3">
+                    <div class="bg-gray-location px-6 py-3">
                       <h4
                         class="text-base lg:text-lg leading-relaxed text-black"
                       >
@@ -387,7 +390,7 @@
                     </div>
                   </div>
                   <div>
-                    <div class="bg-gray-300 px-6 py-3">
+                    <div class="bg-gray-location px-6 py-3">
                       <h4
                         class="text-base lg:text-lg leading-relaxed text-black"
                       >
@@ -416,8 +419,9 @@
           </div>
         </div>
         <div
-          class="hover:group-yellow active:grou-yellow flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
+          class="flex flex-col items-start bg-white gap-3 p-3 md:p-4 w-full border border-transparent rounded-lg cursor-pointer"
           @click.prevent="scrollToMap('riau')"
+          :class="{ 'group-yellow': map === 'riau' }"
         >
           <div class="flex flex-row justify-between items-center self-stretch">
             <h3 class="text-lg lg:text-xl">Genova Riau</h3>
@@ -491,7 +495,7 @@
                     </button>
                   </div>
                   <div>
-                    <div class="bg-gray-300 px-6 py-3">
+                    <div class="bg-gray-location px-6 py-3">
                       <h4
                         class="text-base lg:text-lg leading-relaxed text-black"
                       >
@@ -508,7 +512,7 @@
                     </div>
                   </div>
                   <div>
-                    <div class="bg-gray-300 px-6 py-3">
+                    <div class="bg-gray-location px-6 py-3">
                       <h4
                         class="text-base lg:text-lg leading-relaxed text-black"
                       >
@@ -654,5 +658,9 @@ input:focus::placeholder {
   appearance: none;
   outline: none;
   background-color: transparent;
+}
+
+.bg-gray-location {
+  background-color: #e5e5e5;
 }
 </style>
