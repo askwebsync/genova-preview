@@ -55,6 +55,12 @@
           ></iframe>
         </div>
       </div>
+      <div
+        class="overlay"
+        :class="{
+          active: modalJakarta || modalBogor || modalRiau || modalPalangkaraya,
+        }"
+      ></div>
       <div class="flex flex-col items-start md:w-2/5">
         <div
           @click.prevent="scrollToMap('utama')"
@@ -93,9 +99,9 @@
 
             <div
               v-if="modalJakarta"
-              class="fixed top-0 left-0 right-0 z-50 w-full h-full flex items-center justify-center cursor-auto"
+              class="fixed top-0 left-0 right-0 z-100 w-full h-full flex items-center justify-center cursor-auto"
             >
-              <div class="relative max-w-md md:max-w-3xl mx-4">
+              <div class="relative max-w-md md:max-w-4xl mx-4">
                 <div class="relative bg-white rounded-lg shadow-custom-modal">
                   <div
                     class="flex items-start justify-between border-b rounded-t p-3 md:p-4 lg:p-6"
@@ -140,7 +146,7 @@
                         STORE HOURS
                       </h4>
                     </div>
-                    <div class="flex flex-col gap-1 px-6 py-3">
+                    <div class="flex flex-col gap-1 px-6 py-4">
                       <p class="text-base leading-relaxed text-gray-500">
                         Monday - Friday
                       </p>
@@ -157,7 +163,13 @@
                         CONTACT PERSON
                       </h4>
                     </div>
-                    <div class="flex flex-col gap-1 px-6 py-3">
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <a
+                        href="mailto:genovaindonesiaofficial@gmail.com"
+                        class="text-base leading-relaxed text-black hover:opacity-75"
+                      >
+                        genovaindonesiaofficial@gmail.com
+                      </a>
                       <a
                         href="tel:+6281212128171"
                         class="text-base leading-relaxed text-black hover:opacity-75"
@@ -214,7 +226,7 @@
               v-if="modalBogor"
               class="fixed top-0 left-0 right-0 z-50 w-full h-full flex items-center justify-center cursor-auto"
             >
-              <div class="relative max-w-md md:max-w-3xl mx-4">
+              <div class="relative max-w-md md:max-w-4xl mx-4">
                 <div class="relative bg-white rounded-lg shadow-custom-modal">
                   <div
                     class="flex items-start justify-between border-b rounded-t p-3 md:p-4 lg:p-6"
@@ -259,7 +271,7 @@
                         STORE HOURS
                       </h4>
                     </div>
-                    <div class="flex flex-col gap-1 px-6 py-3">
+                    <div class="flex flex-col gap-1 px-6 py-4">
                       <p class="text-base leading-relaxed text-gray-500">
                         Monday - Friday
                       </p>
@@ -276,7 +288,13 @@
                         CONTACT PERSON
                       </h4>
                     </div>
-                    <div class="flex flex-col gap-1 px-6 py-3">
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <a
+                        href="mailto:genovaindonesiaofficial@gmail.com"
+                        class="text-base leading-relaxed text-black hover:opacity-75"
+                      >
+                        genovaindonesiaofficial@gmail.com
+                      </a>
                       <a
                         href="tel:+6281380367558"
                         class="text-base leading-relaxed text-black hover:opacity-75"
@@ -332,7 +350,7 @@
               v-if="modalPalangkaraya"
               class="fixed top-0 left-0 right-0 z-50 w-full h-full flex items-center justify-center cursor-auto"
             >
-              <div class="relative max-w-md md:max-w-3xl mx-4">
+              <div class="relative max-w-md md:max-w-4xl mx-4">
                 <div class="relative bg-white rounded-lg shadow-custom-modal">
                   <div
                     class="flex items-start justify-between border-b rounded-t p-3 md:p-4 lg:p-6"
@@ -380,7 +398,7 @@
                         STORE HOURS
                       </h4>
                     </div>
-                    <div class="flex flex-col gap-1 px-6 py-3">
+                    <div class="flex flex-col gap-1 px-6 py-4">
                       <p class="text-base leading-relaxed text-gray-500">
                         Monday - Friday
                       </p>
@@ -397,7 +415,13 @@
                         CONTACT PERSON
                       </h4>
                     </div>
-                    <div class="flex flex-col gap-1 px-6 py-3">
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <a
+                        href="mailto:genovaindonesiaofficial@gmail.com"
+                        class="text-base leading-relaxed text-black hover:opacity-75"
+                      >
+                        genovaindonesiaofficial@gmail.com
+                      </a>
                       <a
                         href="tel:+628121747275"
                         class="text-base leading-relaxed text-black hover:opacity-75"
@@ -454,7 +478,7 @@
               v-if="modalRiau"
               class="fixed top-0 left-0 right-0 z-50 w-full h-full flex items-center justify-center cursor-auto"
             >
-              <div class="relative max-w-md md:max-w-3xl mx-4">
+              <div class="relative max-w-md md:max-w-4xl mx-4">
                 <div class="relative bg-white rounded-lg shadow-custom-modal">
                   <div
                     class="flex items-start justify-between border-b rounded-t p-3 md:p-4 lg:p-6"
@@ -502,7 +526,7 @@
                         STORE HOURS
                       </h4>
                     </div>
-                    <div class="flex flex-col gap-1 px-6 py-3">
+                    <div class="flex flex-col gap-1 px-6 py-4">
                       <p class="text-base leading-relaxed text-gray-500">
                         Monday - Friday
                       </p>
@@ -519,7 +543,13 @@
                         CONTACT PERSON
                       </h4>
                     </div>
-                    <div class="flex flex-col gap-1 px-6 py-3">
+                    <div class="flex flex-col gap-1 px-6 py-4">
+                      <a
+                        href="mailto:genovaindonesiaofficial@gmail.com"
+                        class="text-base leading-relaxed text-black hover:opacity-75"
+                      >
+                        genovaindonesiaofficial@gmail.com
+                      </a>
                       <a
                         href="tel:+6281399021010"
                         class="text-base leading-relaxed text-black hover:opacity-75"
@@ -659,8 +689,21 @@ input:focus::placeholder {
   outline: none;
   background-color: transparent;
 }
-
 .bg-gray-location {
   background-color: #e5e5e5;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+  z-index: 40px; /* Ensure the overlay is above everything else */
+  display: none; /* Initially hide the overlay */
+}
+
+.overlay.active {
+  display: block; /* Show the overlay when it's active */
 }
 </style>

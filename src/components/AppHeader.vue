@@ -66,7 +66,7 @@
         >
       </li>
     </ul>
-    <div class="contain py-2 md:pb-0 md:pt-0 md:w-1/5 xl:w-1/6 relative">
+    <div class="contain pb-3 md:pb-0 md:pt-0 md:w-1/5 xl:w-1/6 relative">
       <div class="relative">
         <input
           class="bg-white h-10 px-5 text-sm border-yellow focus:border-yellow-700 focus:border-2"
