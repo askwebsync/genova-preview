@@ -130,7 +130,6 @@ h3 {
 }
 p {
   color: #494945;
-  /* Body/Body 1/Reguler */
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;

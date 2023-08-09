@@ -111,7 +111,7 @@
           <div
             v-for="product in premiumSyrupProducts"
             :key="product.id"
-            class="bg-white center shadow-card-items"
+            class="product-container"
           >
             <router-link
               class="focus:outline-none"

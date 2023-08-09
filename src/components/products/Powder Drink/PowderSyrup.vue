@@ -110,7 +110,7 @@
           <div
             v-for="product in powderSyrupProducts"
             :key="product.id"
-            class="bg-white center shadow-card-items"
+            class="product-container"
           >
             <router-link
               class="focus:outline-none"

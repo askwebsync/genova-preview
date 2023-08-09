@@ -13,7 +13,7 @@
       >
         <router-link :to="{ name: 'fruit-blend' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer bg-white shadow-card-items transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-2 uppercase"
+            class="flex flex-col items-center justify-center cursor-pointer product-container transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-2 uppercase"
           >
             <img
               src="/assets/images/product/fruitbland_pineapple.png"
@@ -27,7 +27,7 @@
         </router-link>
         <router-link :to="{ name: 'premium-syrup' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointer bg-white shadow-card-items transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-2 uppercase"
+            class="flex flex-col items-center justify-center cursor-pointer product-container transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-2 uppercase"
           >
             <img
               src="/assets/images/product/syrup_bluecuracao.png"
@@ -41,7 +41,7 @@
         </router-link>
         <router-link :to="{ name: 'powder-syrup' }">
           <div
-            class="flex flex-col items-center justify-center cursor-pointerbg-white shadow-card-items transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-2 uppercase"
+            class="flex flex-col items-center justify-center cursor-pointer product-container transition-opacity duration-300 ease-in-out px-2 py-3 md:px-4 md:py-6 gap-2 uppercase"
           >
             <img
               src="/assets/images/product/powder_tiramisu.png"
