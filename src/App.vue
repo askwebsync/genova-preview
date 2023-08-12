@@ -5,6 +5,7 @@
     </div>
 
     <div v-else class="app-container">
+      <AllowCookies />
       <header class="bg-white border-b-2 sticky top-0 z-10">
         <app-header />
       </header>
@@ -29,12 +30,14 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 import PageLoader from "./components/PageLoader.vue";
+import AllowCookies from "./components/AllowCookies.vue"; // Import the AllowCookies component
 
 export default {
   components: {
     "app-header": AppHeader,
     "app-footer": AppFooter,
     PageLoader,
+    AllowCookies,
   },
   data() {
     return {

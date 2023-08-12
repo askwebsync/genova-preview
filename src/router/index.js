@@ -29,7 +29,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Contact" */ "../views/About.vue"),
     meta: {
-      title: "Tentang Kami - Genova", // Set the page title for the About page
+      title: "Tentang Kami - Genova",
       metaTags: [
         // Define the meta tags for the About page
         {
@@ -46,7 +46,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Contact" */ "../views/Contact.vue"),
     meta: {
-      title: "Hubungi Kami - Genova", // Set the page title for the Contact page
+      title: "Hubungi Kami - Genova",
       metaTags: [
         // Define the meta tags for the Contact page
         {
@@ -63,7 +63,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "projects" */ "../views/Products.vue"),
     meta: {
-      title: "Kategori Produk - Genova", // Set the page title for the Products page
+      title: "Kategori Produk - Genova",
       metaTags: [
         // Define the meta tags for the Products page
         {
@@ -79,7 +79,7 @@ const routes = [
     name: "recipe",
     component: () => import("../views/Recipe.vue"),
     meta: {
-      title: "Koleksi Resep - Genova", // Set the page title for the Recipe page
+      title: "Koleksi Resep - Genova",
       metaTags: [
         // Define the meta tags for the Recipe page
         {

@@ -10,7 +10,7 @@
         <h3 class="text-black text-xl md:text-2xl lg:text-3xl text-left">
           Bantuan
         </h3>
-        <div class="my-2 h-20 md:h-28">
+        <div class="my-2 h-56 md:h-32">
           <h2 class="text-left tracking-tight lg:tracking-wide">
             Punya pertanyaan atau butuh bantuan? Tim ahli kami siap memberikan
             jawaban dan dukungan yang Anda butuhkan. Jangan ragu untuk
@@ -30,7 +30,7 @@
         <h3 class="text-black text-xl md:text-2xl lg:text-3xl text-left">
           Kerjasama
         </h3>
-        <div class="my-2 h-20 md:h-28">
+        <div class="my-2 h-56 md:h-32">
           <h2 class="text-left tracking-tight lg:tracking-wide">
             Jika Anda tertarik untuk menjalin kerjasama dengan kami atau
             menggunakan produk sirup berkualitas tinggi kami, kami mengundang
