@@ -78,7 +78,7 @@ export default {
           itemsToShow: 2,
           snapAlign: "start",
         },
-        1100: {
+        1000: {
           itemsToShow: 3,
           snapAlign: "start",
         },

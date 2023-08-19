@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto">
     <div class="flex flex-col md:flex-row gap-3 md:p-4">
-      <div class="map-section p-3 md:p-4 md:w-3/5">
+      <div class="map-section md:w-3/5">
         <div
           class="map-responsive flex-grow"
           v-if="map === 'utama'"
@@ -101,10 +101,12 @@
               v-if="modalJakarta"
               class="fixed top-0 left-0 right-0 z-100 w-full h-full flex items-center justify-center cursor-auto"
             >
-              <div class="relative max-w-md md:max-w-4xl mx-4">
+              <div
+                class="relative max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+              >
                 <div class="relative bg-white rounded-lg shadow-custom-modal">
                   <div
-                    class="flex items-start justify-between border-b rounded-t p-3 md:p-4 lg:p-6"
+                    class="flex items-start justify-between border-b rounded-t px-6 py-3"
                   >
                     <div class="flex flex-col gap-2">
                       <h3 class="text-xl font-semibold text-gray-900">

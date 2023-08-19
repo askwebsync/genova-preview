@@ -193,7 +193,7 @@
                             activeTab !== 'keterangan',
                         }"
                         @click="activeTab = 'keterangan'"
-                        class="block px-4 md:px-5 pb-3.5 pt-2 text-xl font-medium"
+                        class="block px-4 pb-3.5 pt-2 text-sm md:text-lg font-medium"
                       >
                         Keterangan
                       </a>
@@ -207,7 +207,7 @@
                             activeTab !== 'saran-penyajian',
                         }"
                         @click="activeTab = 'saran-penyajian'"
-                        class="block px-4 md:px-5 pb-3.5 pt-2 text-xl font-medium"
+                        class="block px-4 pb-3.5 pt-2 text-sm md:text-lg font-medium"
                       >
                         Saran Penyajian
                       </a>
@@ -221,24 +221,26 @@
                       class="flex flex-col gap-6 block opacity-100 transition-opacity duration-150 ease-linear"
                     >
                       <div>
-                        <h2 class="text-lg mb-1 font-medium">Kondisi Produk</h2>
+                        <h2 class="text-base md:text-lg mb-1 font-semibold">
+                          Kondisi Produk
+                        </h2>
                         <ul class="list-disc list-inside">
-                          <li class="text-lg text-gray-600">
+                          <li class="text-base md:text-lg text-gray-600">
                             <span class="ml-[-0.45em]">
                               {{ productShow.kondisi }}</span
                             >
                           </li>
-                          <li class="text-lg text-gray-600">
+                          <li class="text-base md:text-lg text-gray-600">
                             <span class="ml-[-0.45em]">
                               Min.Pemesanan: 1 Buah</span
                             >
                           </li>
-                          <li class="text-lg text-gray-600">
+                          <li class="text-base md:text-lg text-gray-600">
                             <span class="ml-[-0.45em]">
                               Etalase : {{ productShow.category }}</span
                             >
                           </li>
-                          <li class="text-lg text-gray-600">
+                          <li class="text-base md:text-lg text-gray-600">
                             <span class="ml-[-0.45em]">
                               Halal : {{ productShow.halal }}</span
                             >
@@ -256,16 +258,18 @@
                             v-for="info in productShow.info"
                             :key="info"
                           >
-                            <li class="text-lg text-gray-600">
+                            <li class="text-base md:text-lg text-gray-600">
                               <span class="ml-[-0.45em]"> {{ info }}</span>
                             </li>
                           </ul>
                         </template>
                         <template v-else>
-                          <h2 class="text-lg mb-1 font-medium">
+                          <h2 class="text-base md:text-lg mb-1 font-semibold">
                             Informasi Produk
                           </h2>
-                          <p class="text-lg text-gray-600 leading-6">
+                          <p
+                            class="text-base md:text-lg text-gray-600 leading-6 tracking-tight"
+                          >
                             {{ productShow.info }}
                           </p>
                         </template>
@@ -286,7 +290,7 @@
                             v-for="penyajian in productShow.penyajian"
                             :key="penyajian"
                           >
-                            <li class="text-lg text-gray-600">
+                            <li class="text-base md:text-lg text-gray-600">
                               <span class="ml-[-0.45em]"> {{ penyajian }}</span>
                             </li>
                           </ul>
@@ -372,7 +376,7 @@ export default {
     return {
       loading: true,
       activeTab: "keterangan",
-      activeSlideIndex: 0, // Track the active slide index
+      activeSlideIndex: 0,
       breakpoints: {
         600: {
           itemsToShow: 2,
@@ -404,9 +408,8 @@ export default {
     ...mapState(["sameCategoryProducts"]),
     productShow() {
       if (this.selectedProduct) {
-        // Create a copy of the selectedProduct object
         const product = { ...this.selectedProduct };
-        // Modify the image path in the copied object
+
         if (product.image) {
           product.image = "/assets/images/product" + product.image;
         }

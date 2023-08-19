@@ -150,7 +150,7 @@ const routes = [
     },
   },
   {
-    path: "/product/:productId", // dynamic route parameter :productId
+    path: "/product/:productId",
     name: "productDetailPage",
     component: ProductDetailPage,
   },
@@ -165,11 +165,6 @@ const router = createRouter({
 });
 
 export default router;
-/**
- * Below code will display the component/active page title
- */
-// This callback runs before every route change, including on page load.
-// ...
 router.beforeEach((to, from, next) => {
   const nearestWithTitle = to.matched
     .slice()

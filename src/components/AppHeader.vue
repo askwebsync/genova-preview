@@ -28,7 +28,7 @@
     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
     <ul
       :class="showMenu ? 'flex' : 'hidden'"
-      class="flex-col my-1 space-y-3 items-center md:flex md:space-y-0 md:flex-row md:space-x-6 md:my-0 xl:space-x-10"
+      class="flex-col my-1 space-y-3 items-center md:flex md:space-y-0 md:flex-row md:space-x-4 lg:space-x-6 md:my-0 xl:space-x-10"
     >
       <li
         class="text-sm lg:text-base pcolor hover:text-yellow-600 focus:outline-none"
@@ -48,7 +48,7 @@
         class="text-sm lg:text-base pcolor hover:text-yellow-600 focus:outline-none"
       >
         <router-link :to="{ name: 'about' }" @click="toggleMenu()"
-          >About Us</router-link
+          >About</router-link
         >
       </li>
       <li
@@ -69,7 +69,7 @@
     <div class="contain pb-3 md:pb-0 md:pt-0 md:w-1/5 xl:w-1/6 relative">
       <div class="relative">
         <input
-          class="bg-white h-10 px-5 text-sm border-yellow focus:border-yellow-700 focus:border-2"
+          class="bg-white h-10 px-10 lg:px-5 text-sm border-yellow focus:border-yellow-700 focus:border-2"
           :placeholder="placeholderText"
           type="text"
           v-model="search"

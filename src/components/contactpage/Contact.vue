@@ -3,14 +3,14 @@
   <section
     class="container mx-auto px-4 py-6 md:px-8 lg:px-12 xl:px-24 lg:py-10"
   >
-    <div class="grid md:grid-cols-2 self-center gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 self-center gap-6">
       <div
         class="flex flex-col gap-6 rounded-lg shadow-card-items mx-3 p-5 relative"
       >
         <h3 class="text-black text-xl md:text-2xl lg:text-3xl text-left">
           Bantuan
         </h3>
-        <div class="my-2 h-56 md:h-32">
+        <div class="my-2">
           <h2 class="text-left tracking-tight lg:tracking-wide">
             Punya pertanyaan atau butuh bantuan? Tim ahli kami siap memberikan
             jawaban dan dukungan yang Anda butuhkan. Jangan ragu untuk
@@ -30,12 +30,11 @@
         <h3 class="text-black text-xl md:text-2xl lg:text-3xl text-left">
           Kerjasama
         </h3>
-        <div class="my-2 h-56 md:h-32">
+        <div class="my-2">
           <h2 class="text-left tracking-tight lg:tracking-wide">
-            Jika Anda tertarik untuk menjalin kerjasama dengan kami atau
-            menggunakan produk sirup berkualitas tinggi kami, kami mengundang
-            Anda untuk menemukan berbagai kemungkinan kolaborasi menarik yang
-            menanti. Klik tombol di bawah ini untuk mengetahui lebih lanjut.
+            Jika Anda tertarik bekerja sama dengan kami atau gunakan produk
+            sirup berkualitas kami, temukan peluang menarik bersama kami.
+            hubungi kami via email dengan mengklik tombol dibawah ini
           </h2>
         </div>
         <button

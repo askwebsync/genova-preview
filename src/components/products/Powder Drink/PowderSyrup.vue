@@ -105,7 +105,7 @@
         </div>
 
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6"
+          class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 md:gap-8"
         >
           <div
             v-for="product in powderSyrupProducts"
@@ -120,14 +120,14 @@
               }"
               @click="selectProduct(product)"
             >
-              <!-- Image -->
               <img
                 :src="`/assets/images/product/${product.image}`"
                 :alt="product.name"
                 class="rounded-t h-48 sm:h-56 md:h-60 w-full object-contain"
               />
-              <div class="flex flex-col items-center gap-1 px-4 py-4 md:py-5">
-                <!-- Title -->
+              <div
+                class="flex flex-col items-center gap-1 px-4 py-4 md:py-5 text-center"
+              >
                 <h3 class="text-lg lg:text-xl tracking-tighter">
                   {{ product.name }}
                 </h3>
