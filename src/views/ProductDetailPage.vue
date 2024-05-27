@@ -145,14 +145,14 @@
           <div class="flex flex-col gap-y-12" v-if="productShow">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
               <!-- Item Image -->
-              <div class="flex justify-center">
-                <div class="bg-gray-100 p-3 container-img-product">
-                  <img
-                    :src="productShow.image"
-                    :alt="productShow.name"
-                    class="img-product object-cover"
-                  />
-                </div>
+              <div
+                class="flex justify-center text-center container-img-product"
+              >
+                <img
+                  :src="productShow.image"
+                  :alt="productShow.name"
+                  class="img-product object-contain"
+                />
               </div>
 
               <!-- Item Info -->
@@ -237,12 +237,12 @@
                           </li>
                           <li class="text-base md:text-lg text-gray-600">
                             <span class="ml-[-0.45em]">
-                              Etalase : {{ productShow.category }}</span
+                              Etalase: {{ productShow.category }}</span
                             >
                           </li>
                           <li class="text-base md:text-lg text-gray-600">
                             <span class="ml-[-0.45em]">
-                              Halal : {{ productShow.halal }}</span
+                              Halal: {{ productShow.halal }}</span
                             >
                           </li>
                         </ul>
@@ -369,6 +369,7 @@
 import { mapState, mapActions, mapMutations } from "vuex";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
+import allProduct from "../product/allProduct";
 
 export default {
   name: "ProductDetailPage",
@@ -378,7 +379,7 @@ export default {
       activeTab: "keterangan",
       activeSlideIndex: 0,
       breakpoints: {
-        600: {
+        640: {
           itemsToShow: 2,
           snapAlign: "start",
         },
@@ -407,24 +408,23 @@ export default {
     ...mapState(["selectedProduct"]),
     ...mapState(["sameCategoryProducts"]),
     productShow() {
-      if (this.selectedProduct) {
-        const product = { ...this.selectedProduct };
-
-        if (product.image) {
-          product.image = "/assets/images/product" + product.image;
-        }
-        return product;
+      const productId = parseInt(this.$route.params.productId, 10);
+      const product = allProduct.find((p) => p.id === productId);
+      if (product) {
+        return {
+          ...product,
+          image: "/assets/images/product" + product.image,
+        };
       }
       return null;
     },
   },
   created() {
-    console.log("ProductDetailPage created");
-    if (this.selectedProduct && this.selectedProduct.category) {
-      this.fetchSameCategoryProducts(this.selectedProduct.category);
-    }
+    // console.log("ProductDetailPage created");
+    const productId = parseInt(this.$route.params.productId, 10);
+    this.fetchSameCategoryProducts(productId);
     this.updateDocumentTitle(); // Call the method to update the document title
-    console.log(this.selectedProduct);
+    // console.log(this.selectedProduct + " ada");
   },
   methods: {
     ...mapActions(["fetchSameCategoryProducts"]),
@@ -437,7 +437,6 @@ export default {
         console.log("productShow or productShow.name is undefined");
       }
     },
-
     getFieldValue(field) {
       return field ? field : "-";
     },
@@ -468,23 +467,37 @@ h1 {
   color: var(--primary-black, #2b2b28);
   font-weight: 500;
 }
+
 .img-product {
-  width: 352.255px;
-  height: 500px;
+  width: 200px;
+  height: 350px;
 }
+
 .container-img-product {
-  width: 372.255px;
-  height: 530px;
+  width: 350px;
+  height: 400px;
   transition: all 0.3s;
-  background: #f8f8f8;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
+@media (min-width: 640px) {
+  .img-product {
+    width: 352.255px;
+    height: 350px;
+  }
+
+  .container-img-product {
+    width: 352.255px;
+    height: 400px;
+    transition: all 0.3s;
+  }
+}
+
 h3 {
   font-style: normal;
   font-weight: 500;
   color: #2b2b28;
 }
+
 p {
   color: #494945;
   /* Body/Body 1/Reguler */
@@ -492,6 +505,7 @@ p {
   font-style: normal;
   font-weight: 400;
 }
+
 .bg-button {
   border-radius: 6px;
   padding: 12px 20px;

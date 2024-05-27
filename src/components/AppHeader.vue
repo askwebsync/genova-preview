@@ -3,19 +3,27 @@
     class="container px-4 md:px-8 lg:px-12 xl:px-24 mx-auto md:flex md:justify-between md:items-center"
   >
     <div class="flex items-center justify-between">
-      <router-link :to="{ name: 'home' }" @click="this.showMenu = false">
+      <router-link
+        :to="{ name: 'home' }"
+        @click="this.showMenu = false"
+        aria-label="Home"
+      >
         <img
           src="/assets/images/logo/logo128.png"
           class="w-full h-20 md:h-24 object-contain focus:outline-none"
+          alt="Genova Indonesia Logo"
         />
       </router-link>
       <!-- Mobile menu button -->
       <div class="flex md:hidden">
         <button
           type="button"
+          aria-expanded="false"
+          aria-label="Toggle Mobile Menu"
           class="hover:text-gray-700 focus:outline-none"
           @click="toggleMenu"
         >
+          <span class="sr-only">Toggle Mobile Menu</span>
           <svg viewBox="0 0 24 24" class="w-7 h-7 fill-current">
             <path
               fill-rule="evenodd"
@@ -28,7 +36,7 @@
     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
     <ul
       :class="showMenu ? 'flex' : 'hidden'"
-      class="flex-col my-1 space-y-3 items-center md:flex md:space-y-0 md:flex-row md:space-x-4 lg:space-x-6 md:my-0 xl:space-x-10"
+      class="flex-col mt-1 mb-3 space-y-3 items-center md:flex md:space-y-0 md:flex-row md:space-x-4 lg:space-x-6 md:my-0 xl:space-x-10"
     >
       <li
         class="text-sm lg:text-base pcolor hover:text-yellow-600 focus:outline-none"
@@ -68,6 +76,7 @@
     </ul>
     <div class="contain pb-3 md:pb-0 md:pt-0 md:w-1/5 xl:w-1/6 relative">
       <div class="relative">
+        <label for="searchInput" class="sr-only">Search for products</label>
         <input
           class="bg-white h-10 px-10 lg:px-5 text-sm border-yellow focus:border-yellow-700 focus:border-2"
           :placeholder="placeholderText"
@@ -79,7 +88,11 @@
           @keydown.enter="handleEnterKey"
           ref="searchInput"
         />
-        <button type="submit" class="absolute right-0 top-0 mt-3 mr-3">
+        <button
+          type="submit"
+          aria-label="Search"
+          class="absolute right-0 top-0 mt-3 mr-3"
+        >
           <svg
             class="h-4 w-4"
             xmlns="http://www.w3.org/2000/svg"
@@ -210,9 +223,11 @@ input {
   padding-right: -10px;
   transition: all 0.2s ease;
 }
+
 .contain input:focus {
   outline: none;
 }
+
 .contain .results {
   background-color: white;
   position: absolute;
@@ -223,21 +238,25 @@ input {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
+
 .contain .results .result {
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
+
 .contain .results .result:hover,
 .contain .results .result.selected {
   background-color: #f5f5f5;
 }
 
 input::placeholder {
-  color: gray; /* Set the initial placeholder color to gray */
+  color: gray;
+  /* Set the initial placeholder color to gray */
 }
 
 input:focus::placeholder {
-  color: black; /* Set the focused placeholder color to black */
+  color: black;
+  /* Set the focused placeholder color to black */
 }
 </style>

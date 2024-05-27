@@ -10,7 +10,6 @@
   src: url("../logo/Qaligo.otf") format("opentype");
 }
 
-
 *,
 :after,
 :before {
@@ -29,7 +28,7 @@ select {
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: #C79E2A;
+  background-color: #c79e2a;
   border-radius: 50%;
   text-align: center;
   color: #fff;
@@ -50,7 +49,7 @@ select {
   background-color: #555;
 }
 
-li>a {
+li > a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
@@ -82,7 +81,7 @@ p {
 }
 
 .background-yellow {
-  background: #C79E2A
+  background: #c79e2a;
 }
 
 .bg-footer {
@@ -90,16 +89,16 @@ p {
 }
 
 .bg-button-homepage {
-  background-color: #C79E2A
+  background-color: #c79e2a;
 }
 
 .bg-product-home {
-  background: #FFF2BB;
+  background: #fff2bb;
   border-radius: 6px;
 }
 
 .pcolor {
-  color: #C79E2A
+  color: #c79e2a;
 }
 
 .product-name-style {
@@ -108,7 +107,8 @@ p {
 }
 
 .shadow-card-items {
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .center {
@@ -289,15 +289,13 @@ p {
 
 .product-container {
   transition: all 0.3s;
-  padding: 16px;
-  gap: 10px;
-  background: #F8F8F8;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: #f8f8f8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .product-container:hover {
   transform: scale(1.1);
-
 }
 
 .container-animation {

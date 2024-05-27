@@ -49,7 +49,7 @@ export default {
     window.addEventListener("scroll", this.handleScroll);
     setTimeout(() => {
       this.isLoaded = !this.isLoaded;
-    }, 2000);
+    }, 1000);
   },
   beforeUnmount() {
     window.removeEventListener("scroll", this.handleScroll);

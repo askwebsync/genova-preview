@@ -20,6 +20,9 @@ export default createStore({
     setNewProducts(state, products) {
       state.newProducts = products;
     },
+    setSelectedProduct(state, product) {
+      state.selectedProduct = product;
+    },
     setPowderSyrupProducts(state, products) {
       state.powderSyrupProducts = products;
     },
@@ -28,9 +31,6 @@ export default createStore({
     },
     setPremiumSyrupProducts(state, products) {
       state.premiumSyrupProducts = products;
-    },
-    setSelectedProduct(state, product) {
-      state.selectedProduct = product;
     },
     setSameCategoryProducts(state, product) {
       state.sameCategoryProducts = product;
@@ -49,15 +49,6 @@ export default createStore({
         }));
       commit("setTrendingProducts", trendingProducts);
     },
-    fetchPowderSyrupProducts({ commit, state }) {
-      const powderSyrupProducts = state.products
-        .filter((product) => product.category === "powder")
-        .map((product) => ({
-          ...product,
-          price: formatPrice(product.price),
-        }));
-      commit("setPowderSyrupProducts", powderSyrupProducts);
-    },
     fetchNewProducts({ commit, state }) {
       const newProducts = state.products
         .filter((product) => product.new === "yes")
@@ -66,6 +57,19 @@ export default createStore({
           price: formatPrice(product.price),
         }));
       commit("setNewProducts", newProducts);
+    },
+    fetchProductById({ commit }, productId) {
+      const product = allProducts.find((p) => p.id === productId);
+      commit("setSelectedProduct", product);
+    },
+    fetchPowderSyrupProducts({ commit, state }) {
+      const powderSyrupProducts = state.products
+        .filter((product) => product.category === "powder")
+        .map((product) => ({
+          ...product,
+          price: formatPrice(product.price),
+        }));
+      commit("setPowderSyrupProducts", powderSyrupProducts);
     },
     fetchFruitBlendProducts({ commit, state }) {
       const fruitBlendProducts = state.products
@@ -85,9 +89,25 @@ export default createStore({
         }));
       commit("setPremiumSyrupProducts", premiumSyrupProducts);
     },
-    fetchSameCategoryProducts({ commit, state }, category) {
-      const sameCategoryProducts = state.products
-        .filter((product) => product.category === category)
+    fetchSameCategoryProducts({ commit, state }, productId) {
+      let selectedProduct = state.selectedProduct;
+
+      // If selectedProduct is not defined, find it using productId from route params
+      if (!selectedProduct) {
+        selectedProduct = allProducts.find((p) => p.id === productId);
+        if (selectedProduct) {
+          commit("setSelectedProduct", selectedProduct);
+        } else {
+          return; // If product is not found, exit early
+        }
+      }
+
+      const category = selectedProduct.category;
+      const sameCategoryProducts = allProducts
+        .filter(
+          (product) =>
+            product.category === category && product.id !== selectedProduct.id
+        )
         .map((product) => ({
           ...product,
           price: formatPrice(product.price),

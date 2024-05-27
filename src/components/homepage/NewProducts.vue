@@ -15,8 +15,8 @@
         @after-slide="afterSlide"
       >
         <slide v-for="product in newProducts" :key="product.id">
-          <div class="flex flex-col items-center gap-5 px-4 py-4 md:py-5">
-            <div class="product-container p-3">
+          <div class="flex flex-col items-center">
+            <div class="product-container p-4">
               <img
                 :src="getImageSource(product)"
                 :alt="product.name"
@@ -39,7 +39,9 @@
                 @click="selectProduct(product)"
               >
                 <button
+                  type="button"
                   class="rounded px-4 py-2 md:px-5 bg-button-homepage hover:bg-yellow-600 duration-300 text-white font-bold border-radius-6"
+                  aria-label="See Product Details"
                 >
                   See Details
                 </button>
@@ -72,7 +74,7 @@ export default {
     return {
       activeSlideIndex: 0, // Track the active slide index
       breakpoints: {
-        600: {
+        700: {
           itemsToShow: 2,
           snapAlign: "start",
         },

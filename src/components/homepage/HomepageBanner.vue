@@ -23,13 +23,26 @@
       ></span>
     </div>
     <div class="controls">
+      <!-- Previous Button -->
       <button class="control control-previous" @click="plusSlides(-1)">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <span class="sr-only">Previous Slide</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
           <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
         </svg>
       </button>
+
+      <!-- Next Button -->
       <button class="control control-next" @click="plusSlides(1)">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <span class="sr-only">Next Slide</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
           <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
         </svg>
       </button>
