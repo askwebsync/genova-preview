@@ -130,6 +130,7 @@ h3 {
   font-weight: 500;
   color: #2b2b28;
 }
+
 p {
   color: #494945;
   font-family: Roboto;

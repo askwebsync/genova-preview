@@ -10,7 +10,12 @@
       @touchend="touchEnd"
     >
       <div class="image-container">
-        <img :src="slide.src" :alt="slide.alt" class="image-css" />
+        <img
+          :src="slide.src"
+          :alt="slide.alt"
+          class="image-css"
+          :loading="index === 0 ? 'eager' : 'lazy'"
+        />
       </div>
     </div>
     <div class="dot-container">
@@ -34,7 +39,6 @@
           <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
         </svg>
       </button>
-
       <!-- Next Button -->
       <button class="control control-next" @click="plusSlides(1)">
         <span class="sr-only">Next Slide</span>
@@ -72,11 +76,19 @@ export default {
   mounted() {
     this.showSlides();
     this.startAutoSlide();
+    this.preloadImage(this.slides[0].src); // Preload the first image
   },
   beforeUnmount() {
     clearInterval(this.slideInterval); // Clear the interval when the component is unmounted
   },
   methods: {
+    preloadImage(src) {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = src;
+      document.head.appendChild(link);
+    },
     plusSlides(n) {
       this.showSlides((this.slideIndex += n));
     },
@@ -204,6 +216,7 @@ export default {
 .dot:hover {
   background-color: #717171;
 }
+
 .controls {
   position: absolute;
   top: 50%;
